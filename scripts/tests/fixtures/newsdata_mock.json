@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "totalResults": 3,
+  "results": [
+    {
+      "title": "ChatGPT新機能「Projects」発表 — 会話履歴を整理する新機能が登場",
+      "description": "OpenAIはChatGPTの新機能「Projects」を発表しました。ユーザーはチャット履歴をプロジェクトごとに整理でき、特定のコンテキストを保持したまま複数の会話を管理できるようになります。",
+      "link": "https://example-mock.com/chatgpt-projects-announcement",
+      "pubDate": "2026-08-18 10:00:00",
+      "source_id": "newsdata_mock",
+      "language": "japanese",
+      "category": ["technology"]
+    },
+    {
+      "title": "生成AI市場が2026年に急成長 — 国内企業の導入率が60%超え",
+      "description": "調査会社のレポートによると、2026年の国内生成AI市場は前年比150%成長を記録。特に中小企業での業務効率化ツールとしての需要が急増しており、AI議事録・AIライティングツールが人気を集めています。",
+      "link": "https://example-mock.com/generative-ai-market-2026",
+      "pubDate": "2026-08-17 09:00:00",
+      "source_id": "newsdata_mock",
+      "language": "japanese",
+      "category": ["technology", "business"]
+    },
+    {
+      "title": "Anthropic Claude 4 Sonnetが画像認識精度で新記録を達成",
+      "description": "Anthropicが開発する大規模言語モデルClaude 4 Sonnetが、画像認識ベンチマークで最高精度を達成したと発表。マルチモーダル対応の強化により、文書解析や図表の理解能力が大幅に向上しています。",
+      "link": "https://example-mock.com/claude-4-sonnet-image-recognition",
+      "pubDate": "2026-08-16 08:00:00",
+      "source_id": "newsdata_mock",
+      "language": "japanese",
+      "category": ["technology"]
+    }
+  ]
+}

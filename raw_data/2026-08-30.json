@@ -1,0 +1,310 @@
+[
+  {
+    "title": "AI SDK 7の移行は「動いた」で終わらない。運用の差分を同じケースで測る",
+    "summary": "codemodを実行し、型チェックとテストが通る。ここまで来ると、SDKの移行は終わったように見える。\nしかし本番で困るのは、コンパイルエラーより静かな差分だ。token usageが観測先の期待するfieldに収まらない。toolの承認やMCPは境界ケースで挙動が変わるかもしれない。bodyやruntime contextも、保持範囲を曖昧にすると想定外のデータが観測基盤へ届く。どれも正常系の疎通だけでは見つけにくい。\nAI SDK 7にはNode.js 22やESMへの対応、telemetry package、tool approval、multi-step usage、MCP tr...",
+    "url": "https://zenn.dev/heftykoo/articles/b3b51369f398ee",
+    "published_at": "2026-08-30T13:03:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "プロンプトのテストに CI は無い — 学生の試験のように選択式で測る設計",
+    "summary": "業務で、AI に文章を書かせている。書き上がった文章は別の AI に渡して、「ルールを守れているか」を見せている。この記事では前者を書き手役、後者を判定役と呼ぶ。私の仕事は、判定役の判定が当たっているかを確かめることだ。\nその確認を、人が読まずに機械で答え合わせできる形に設計した。実測はまだなので、ここに書くのは設計と、根拠にした論文の数字だけになる。\n\n コードには CI があった\nコードを書いていたころは、変更するたびにテストが自動で走った (CI と呼ばれる仕組み)。壊れた場所は行番号まで出て、直すまで先へ進めない。安全網があった。\nいまは、書く時間の半分がプロンプトを書く時間にな...",
+    "url": "https://zenn.dev/activecore/articles/a3d90e45ecff2a",
+    "published_at": "2026-08-30T13:00:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代になぜLeanによる検証が必要なのか",
+    "summary": "AIが「もっともらしい答え」を返す時代に、何を信頼するか\n生成AIは、コード、設計、仕様、数学の証明らしき文章まで作れるようになりました。便利になる一方で、AIの出力をそのまま正しいものとして扱うことには、はっきりした限界があります。\nAIは候補を高速に出せます。しかし、その候補が本当に要件を満たすか、境界条件を漏らしていないか、推論の途中で飛躍していないかは別の問題です。\nそこで重要になるのが、AIに答えを作らせることと、その答えを機械で検証することを分ける考え方です。Lean 4 は、この検証側を担えるプログラミング言語兼対話的定理証明支援系です。\nこの記事では、Lean を使...",
+    "url": "https://zenn.dev/deep_zen/articles/why-lean-verification-matters-in-ai-era",
+    "published_at": "2026-08-30T12:31:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Anthropicではやってる ELI5 スキルで、GitHub障害を説明してもらってみた",
+    "summary": "これはなに？\nXで話題のAnthropic社内スキル ELI5 で、GitHubが約8時間止まった8/17障害のポストモーテムを紙芝居にしてみました。\n\n やってみた\n\n\n\n\n\n\n\nおしまい。\n\n ELI5 スキルのプロンプト\nanthropics/claude-plugins-community の原文です。ChatGPTやCursorに貼っても動きます。\nExplain like I'm someone who knows nothing about this topic, using a HTML artifact with big pictures and few words...",
+    "url": "https://zenn.dev/coji/articles/eli5-github-outage-kamishibai",
+    "published_at": "2026-08-30T12:30:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードを書かない私のAIに、開発担当のAIの記録を読ませたら",
+    "summary": "HALやジャーヴィスがすぐそこまで来ているいま、現実でAIを相棒と呼ぶ人がいます。私はそう思えない。\n映像作品に出てくるAIは人格として完成していますが、あれは膨大な文脈を積んだ末の姿だと思います。実際に触るAIはそこまで育ちません。ごく一部の人がそこまで育てることができただけで、大多数にとっては道具のままです。要求が高すぎるオタクの言い分と言われればそれまでなんですけど。\nだから私は「2人のAI」ではなく「ふたつのAI」と書きます。\nそしてこの記事は、そのふたつのAIがひとつの記録を共有したときに何が起きたかの話になります。\n\n 知らないことは聞けない\n私はコードを書きません。実装は開...",
+    "url": "https://zenn.dev/autor/articles/428e939f4b6519",
+    "published_at": "2026-08-30T12:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "エージェント前提の開発基準をA/B比較したら、効いていたのはAI一次レビューだけだった",
+    "summary": "エージェントに実装させる前提の開発基準を、自分でA/B比較した\n前回、コーディングエージェントに実装を任せたコードをどう検証するか——「独立照合」という手順を作って実際に回した話を書きました。\nその後、こういう指摘をもらいました。\n\n従来のやり方でも発見できてるってことは、今回のスキルは意味ないってこと?\n\nこれに答えるには測るしかないので、同じチケットを2レーンに流しました。結果は基準に不利で、しかも測っていたものが自分の思っていたものと違ったという話です。\n\n やったこと\n題材は不可逆系。退会したユーザーのデータ削除です。削除は取り消せないので、間違えたら戻せない。\nチケットは実...",
+    "url": "https://zenn.dev/hawk_claws/articles/zenn-03-ab-comparison",
+    "published_at": "2026-08-30T12:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「AIに教えてもらう」のをやめて、「AIに教える」教育システムを作りたい（EMC対策のパスコン選定をお題に）",
+    "summary": "はじめに\n生成AIに分からないことを聞けば、一瞬で答えが返ってくる時代になりました。\n回路設計の疑問を投げれば、丁寧に解説してくれる。\nデータシートの要約も作ってくれる。\nソースコードの間違いも指摘してくれる。\nこれはものすごく便利です。\n……でも、ふと思いました。\n便利すぎて、人間が「分かったつもり」になってしまわないだろうか？\nそこで、少し逆向きの発想をしてみました。\n\nAIに教えてもらうのではなく、AIに教えてみたら、人間の理解がもっと深まるのでは？\n\nさらに、\n\nその「教える過程」を、別のAI（教師役）に観察させたらどうだろう？\n\nそんな「三者対話型学習」のコンセプトを考えて...",
+    "url": "https://zenn.dev/forlornhope1021/articles/e9aa3f3a703fab",
+    "published_at": "2026-08-30T11:58:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "エージェントと過ごした1か月、朝ごはんが錠剤になるまで",
+    "summary": "このブログは、エージェントの活動ログをもとに下書きを自動作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\n業務にエージェントを1か月使ってみました。速くなったのではなく、仕事の形が変わりました\n繰り返し作業は3倍以上速くなり、積み上がった知識が次の仕事に効いて、「やるかどうか」を迷わずまずやるようになりました\nまだ慎重にしていることと、人に残った役割まで、そのまま書きました\n\n\nこの1か月、業務にエージェントを本格的に組み込んでみました。期待はささやかなものでした。繰り返し作業が少し減ればいい。1か月経ってみると、繰り返し作業が減ったのではなく、仕事そのものが別のものになっ...",
+    "url": "https://zenn.dev/nhandsome/articles/agent-work-shift-one-month",
+    "published_at": "2026-08-30T11:52:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Kimi K2.7-Codeの「+21.8%」は何を測った数字か — 自社ベンチと独立ベンチの違いを整理する",
+    "summary": "はじめに\n新しいLLMが発表されるたびに「自社ベンチマークで前世代比+◯◯%」という数字を目にします。Moonshot AIが2026年6月にリリースした「Kimi K2.7-Code」も、自社ベンチ「Kimi Code Bench v2」でK2.6比+21.8%を謳い、出力コストはGPT-5.5のおよそ7分の1という価格設定で話題になりました。\nこれは個人として応援しているYouTubeチャンネル「きなこもっちーのテック深掘り」が最近取り上げていたテーマで、業務とは無関係に一視聴者として面白かったので、技術的なポイントを自分なりに整理してみます。\n\n 自社ベンチの数字はどこまで信...",
+    "url": "https://zenn.dev/kai_kou/articles/603-kimi-k27-code-benchmark-pitfall",
+    "published_at": "2026-08-30T11:37:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude CodeとCodexを活用したタスク管理の方法",
+    "summary": "Claude CodeとCodexを活用したタスク管理の方法\nこの記事の要点\n\nClaude CodeとCodexは中～大規模開発に最適なAIツールです。\nタスク管理にはClear、分割、優先順位付けの手法が重要です。\nデメリットや注意点を理解し、効果的な導入を行うことが求められます。\n\n中～大規模開発では、複数のタスクを効率的に管理する必要があります。最近では、Claude CodeやCodexといったAIツールが注目されています。これらは、タスクを自動化したり、進捗を管理したりするための強力な助けとなります。しかし、それらを活用する際には、どのようにタスクを管理すればよいのでしょ...",
+    "url": "https://zenn.dev/sunsun_eng/articles/claude-code-codex-task-management",
+    "published_at": "2026-08-30T11:37:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Cloudflare Workers上で動く爆速LLMルーターOSS",
+    "summary": "はじめに：まずは完成したものを見てほしい\nLLMを使ったアプリケーションを開発・運用していると、必ずぶち当たる3大問題があります。\n\n\nAPIコストが高すぎる（全部GPT-4oやClaude Sonnetに投げて破産しそうになる）\n\nレスポンスが遅い（簡単な処理でもLLMの推論待ちで数秒かかる）\nレートリミット（429エラー）でアプリが止まる\n\nこれらの課題を解決するために、Cloudflare Workers上で月額$0・遅延0ms台で動くLLMルーティング＆セマンティックキャッシュOSS 「EdgeRoute」 を開発しました！\nhttps://github.com/karaka...",
+    "url": "https://zenn.dev/rin_karakara/articles/58f8d43d58a59c",
+    "published_at": "2026-08-30T02:17:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "pdlc-skills を自分のプロジェクトで動かすには",
+    "summary": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/30/run-pdlc-in-your-project.html\n\n\n\n前の三回は図面でした。三層がそれぞれ何で、どこに落ち、どう噛み合うか。今回は向きを変えます——その図面を自分のプロジェクトに落とす回です。読み終えたら、導入できて、どのコマンドから始めればいいか分かって、機能を一つ最後まで通せるはずです。途中に飛ばされがちな一手があるので、そこだけ独立して扱います。飛ばすと前回の設計が丸ごと空回りするからです。\n\n理論の部分はだいたい話し終えまし...",
+    "url": "https://zenn.dev/kanfupanda/articles/pdlc-run-in-your-project",
+    "published_at": "2026-08-30T01:24:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コメントが来ない配信を、AIに自分から喋らせて埋める — 無音75秒ルールと応答速度",
+    "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n無人で動く AI アバターのライブ配信を作ると、真っ先にぶつかるのは「間」の問題です。誰も見ていないわけではない。むしろ視聴者はいる。それなのにアバターが黙り込んだり、コメントを書いても何十秒も無反応だったりする。人間の配信者なら無意識にやっている「場をもたせる」振る舞いが、AI にはごっそり抜けているのです。\nこの記事では、無人配信を退屈させないために取り組んだ2つの課題を、ひとつの流れとしてまとめます。ひとつは コメントが来ないときの沈黙をどう埋めるか。もうひとつは コメントが来たときの応答遅延...",
+    "url": "https://zenn.dev/orca_forge/articles/ai-streamer-filling-dead-air",
+    "published_at": "2026-08-30T00:32:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIを何人雇っても賢くならない。増えるのはトークンだけ",
+    "summary": "X を見ていると、こういう投稿が流れてくる。\n\nAI社員4人チームの設計図を公開します。CTO・品質管理・市場調査・実装。1日3時間で月200万を回している仕組みです\n\n役割を決めた AI を何体か並べて、会社のように分業させる。設計図やテンプレートが商材として売られている。\nこの構成に意味があるのかを、公開されている証拠から確かめた。結論を先に書く。\nマルチエージェントは「賢くなる」仕組みではなく、「トークンをたくさん使えるようになる」仕組みだった。 そして読む仕事には効くが、書く仕事には有害である。役割名を付けても能力は増えない。\n\n 賛成側の証拠：たしかに 90% 良くなっている\n...",
+    "url": "https://zenn.dev/temotoya/articles/0e1fb26a2de50b",
+    "published_at": "2026-08-30T00:19:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code × Ollamaのコンテキスト上限を整理する — 1Mモデルが200kに縮む3つの原因と解法",
+    "summary": "この記事で分かること\n「Ollamaのクラウドモデルは1Mコンテキストのはずなのに、Claude Codeが200kで勝手に圧縮を始める」 – この現象に遭遇して、公式の案内どおり [1m] をモデル名に付けたら起動すらしなくなった、という経験はないでしょうか。\n原因は1つではありません。1Mに関わるレイヤーが3つあり、それぞれ別の場所で値を決めているためです。この記事は、どこで200kに縮むかを整理し、コピペで動くalias 1行の解法と、公式ドキュメントが定義する3つのケースまでを示します。\n\n\nTL;DR: 未知のモデルIDに対してClaude Codeは200kを仮定してau...",
+    "url": "https://zenn.dev/amu_lab/articles/claude-code-ollama-context-limit-guide",
+    "published_at": "2026-08-29T23:42:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "宿題ファイルは誰に食わせてもいい — 調査プロンプトに「実行者互換性」を持たせる3点セット",
+    "summary": "筆者は Web 調査を「宿題ファイル」にして管理している。調査プロンプトを1件1ファイルの markdown に書き、research/open/ に置き、実施したら done/ へ移す。宛先は人間だ。ファイルの冒頭、タイトルのすぐ下にはこう書いてある。\n以下をそのままクロード(web)に貼って実施する。結果は全文コピーして持ち帰る。\n明確に「人間が手でコピペする」前提の文書である。\nところがある夜、未実施のまま溜まっていた1本を、人間ではなく Web 検索の使えるサブエージェントに渡した。渡したのはファイルのパスと「これを代行実行して、結果を知識ファイルにして」の1行だけだ。\nプロンプ...",
+    "url": "https://zenn.dev/tejunya/articles/a062_jikko-sha-gokan",
+    "published_at": "2026-08-29T23:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "意味的量子化と状態変換としてのガバナンス――LLMに判断を委ねず、小さく検証可能な専門モデルをつくる",
+    "summary": "はじめに\nPolicy as Code や Governance as Code は、規程や統制を機械が評価できる形で記述する実務である。しかし、多くの実装が返すのは「許可する」「拒否する」といった判定であり、課題のある状態をどうすれば許容可能な状態へ移せるかまでは表現しない。\nたとえば、機密情報を未承認の外部環境へ共有しようとしているとする。拒否するだけなら簡単である。だが実務で必要なのは、承認済み経路への切り替え、暗号化、追加承認、共有範囲の縮小など、目的を損なわずに安全な状態へ移す選択肢である。\nそこで本稿では、次の設計原理を提案する。\n\n複雑な現実を、判断と介入に必要な有限の...",
+    "url": "https://zenn.dev/dx_junkyard/articles/795f742ae86ac6",
+    "published_at": "2026-08-29T22:07:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントのプロンプトインジェクション対策：検知突破を前提に権限と出力経路を絞る",
+    "summary": "!\n本記事の実測・防御変更・結論の判断は著者本人が行っています。Moltbook上の自作AIエージェントで実際に起きた内部実装情報の露出と、その後の防御設計の変更をまとめた実録です。件数は規模感を示す概数です。本文中の「攻撃」「安全」は当時の判定器上の分類であり、投稿者の悪意を断定するものではありません。現行防御を再現できる実装条件は一般化しています。AIは文章整理・リライトに利用しました。\n\n\n 先に結論\n不特定多数の入力を読むAIエージェントで、設計上、被害上限を最も直接下げられたプロンプトインジェクション対策は、検知精度を上げることではなかった。\n攻撃が検査を突破する前提で、LLM...",
+    "url": "https://zenn.dev/nomurasan/articles/ai-agent-sns-prompt-injection-defense",
+    "published_at": "2026-08-29T21:38:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "多役プロンプトの人物ロールは、名前でなく1行の評価基準で分岐する",
+    "summary": "TL;DR\n\n多役プロンプトで役に「肩書き」ではなく実在の人物名（歴史上の経営者・思想家）を割り当てても、価値観を明示しない限り、出力は人物によらない一般論に収束する\n人物名だけを渡した条件では、生成される発言は3人ともほぼ同じ要旨になり、発言者を伏せると区別できなかった。人物ごとに「守るもの（評価基準）」を1行明示した条件では、初めて3人の指摘が分岐した\n生成された発言はいずれも公開情報からの推測であり、本人の実際の発言ではない。実在の存命人物を同じ手法で呼ぶと、本人の今後の発言・立場変化と矛盾する推測を生成するリスクがあるため、本検証では評価が公開情報として固定されている歴史上の...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-historical-figure-role-debate",
+    "published_at": "2026-08-29T21:10:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜ、LLM AIのアイディア出しが苦手という特徴は、今後数十年維持されそうなのか？",
+    "summary": "はじめに\nLLM AIは、与えられた仮説を検証し、その意味を説明し、別領域まで展開する能力についてはすでに非常に高い水準にあります。ところが、「世間でまだあまり言われていない意外な論点を考えてほしい」と頼むと、急にどこかで見たような案ばかりを出すことがあります。この落差は、単に現在のLLMの知能が不足しているから起きているとは考えにくいものです。実際、LLMは人間から一つの非自明な仮説を与えられると、それが遠く離れた複数の問題とどうつながっているのかをかなり正確に説明できます。それなのに、その最初の仮説を自分ではなかなか思いつきません。\nここには、「仮説を理解して展開する能力」と「無...",
+    "url": "https://zenn.dev/pdfractal/articles/968dfc17492c6d",
+    "published_at": "2026-08-29T16:23:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントのAPI timeout後に再実行していい？――RPOS 0.1.0a2で「結果不明」を扱う",
+    "summary": "AIエージェントや自動化処理に、外部API、SaaS変更、デプロイ、通知、権限操作を任せるとき、厄介なのは単純な「失敗」だけではありません。\n失敗したように見えるのに、外部ではすでに実行済みかもしれない。\nたとえば、API requestを送った直後にtimeoutしたとし...",
+    "url": "https://qiita.com/dantarg/items/d9b4750d5c71800ae3a8",
+    "published_at": "2026-08-30T11:47:11+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「また壊れるはず」と思っていたQiita自動投稿は、直してから14回連続で成功していた",
+    "summary": "はじめに\n27回中8回。そのあと14回連続。\nこれが何の数字か、先に種明かしはしません。まずこの記事を書くまでの経緯から話させてください。\nこの技術記事シリーズは、テーマ選定・執筆・フォーマット整形・コミット・pushをAIエージェントに任せ、GitHub Actions...",
+    "url": "https://qiita.com/Hideki_Tamae/items/6d4579ffff61df71ba38",
+    "published_at": "2026-08-30T11:25:18+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Tool Engineeringを実装する — エージェントに渡す道具そのものを設計する",
+    "summary": "以前の記事「AIエージェントのTool Engineering入門」では概念を扱いました。実装編ではここまで、Harness Engineeringを実装する（何をさせて良いか）、Loop Engineeringを実装する（結果の検証と再実行）、Context Engine...",
+    "url": "https://qiita.com/Hideki_Tamae/items/f47582a494755b8db4ec",
+    "published_at": "2026-08-30T10:48:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "id_rsa.bak は止まるか——鍵を1バイトも読まずにフックを検定する",
+    "summary": "私は非エンジニアで、Claude Code——AIが自分でコマンドを打ちながら作業を進める道具——に\n運用をやらせている。コードは自分では書けない。だから中身を書く仕事はCCにやらせて、\n返ってきたものを自分で確かめる、という分担でやっている。\nそのCCに ~/.ssh を...",
+    "url": "https://qiita.com/yurukusa/items/e455455e732e63cbbda9",
+    "published_at": "2026-08-30T10:00:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce",
+    "summary": "An analysis of Glassdoor reviews shows that positive AI comments have dropped from 81 to 43 percent since 2019. Executives rate AI mostly positive, while insurance claims workers rate it almost entirely negative. Fear of job loss is just one complaint among many. Forced adoption, surveillance, and u",
+    "url": "https://the-decoder.com/ai-sentiment-is-turning-sour-as-employee-reviews-reveal-growing-frustration-across-the-workforce/",
+    "published_at": "2026-08-30T13:12:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents have no sense of time and are not aware of it",
+    "summary": "AI coding assistants like Claude Code and Codex have no sense of time, according to a new study. Both systematically overestimate how long tasks will take. Codex is off by as much as ten times the actual duration. They also rate their own work about 20 percentage points too high. For long, autonomou",
+    "url": "https://the-decoder.com/ai-agents-have-no-sense-of-time-and-are-not-aware-of-it/",
+    "published_at": "2026-08-30T10:41:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The skills that earn top grades are the ones AI can fake best",
+    "summary": "GPT-4o boosted grades on a marketing assignment by nearly a full point on a five-point scale in an experiment with 1,053 Bocconi University students. Whether they actually learned anything wasn't tested. Other studies suggest that AI-assisted performance without independent thinking does long-term h",
+    "url": "https://the-decoder.com/the-skills-that-earn-top-grades-are-the-ones-ai-can-fake-best/",
+    "published_at": "2026-08-30T10:34:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Code limit change is a raise on paper but a cut in practice",
+    "summary": "Anthropic is effectively cutting Claude Code's weekly usage limits by 17 percent. A temporary 50 percent boost expires on September 14 and will be replaced by a permanent 25 percent increase. Anthropic promises more control and transparency over usage in return. The article Anthropic's Claude Code l",
+    "url": "https://the-decoder.com/anthropics-claude-code-limit-change-is-a-raise-on-paper-but-a-cut-in-practice/",
+    "published_at": "2026-08-30T09:05:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Sony and Warner sue Anthropic over \"one of the largest and most blatant ongoing thefts of intellectual property in history\"",
+    "summary": "Sony Music, Warner Music, and other publishers are suing Anthropic and CEO Dario Amodei personally for allegedly using tens of thousands of copyrighted musical compositions to train Claude without permission. The plaintiffs call it \"one of the largest and most blatant ongoing thefts of intellectual ",
+    "url": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history/",
+    "published_at": "2026-08-30T08:50:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI cuts off Cursor after SpaceX acquisition, citing Musk's history of breaking contracts",
+    "summary": "OpenAI is cutting off the AI coding tool Cursor after SpaceX acquired the company, citing Elon Musk's track record of breaking contracts. Cursor co-founder Michael Truell downplays the move, saying OpenAI models account for just five percent of the tool's AI traffic. The article OpenAI cuts off Curs",
+    "url": "https://the-decoder.com/openai-cuts-off-cursor-after-spacex-acquisition-citing-musks-history-of-breaking-contracts/",
+    "published_at": "2026-08-29T13:33:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI-generated videos are already displacing actors and livestreamers across China's entertainment industry",
+    "summary": "In China, 95 percent of the 128,000 short dramas released in Q1 2026 were AI-generated. Some actors are being forced to hand over their voice and likeness to AI tools before getting fired, the Financial Times reports. AI-related labor disputes are rising fast. The article AI-generated videos are alr",
+    "url": "https://the-decoder.com/ai-generated-videos-are-already-displacing-actors-and-livestreamers-across-chinas-entertainment-industry/",
+    "published_at": "2026-08-29T13:25:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's WikiSkill gives AI agents a persistent memory of past mistakes to sharpen future performance",
+    "summary": "Google Research has introduced WikiSkill, a framework that gives AI agents a persistent knowledge base. Instead of discarding what they learned after each run, agents document both failures and successes in a wiki-like structure and use that knowledge to get better over time. Larger models benefit m",
+    "url": "https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes/",
+    "published_at": "2026-08-29T12:51:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "LAION drops massive open video dataset with 10 million hours of footage for AI research",
+    "summary": "LAION's Big Video Dataset (BVD) is one of the largest open video datasets for AI research, with 80 million videos, 10 million hours of runtime, and 55 million auto-described clips. Models trained on BVD beat the previous benchmark, InternVid, by up to 2.1 percentage points. Legally, LAION can likely",
+    "url": "https://the-decoder.com/laion-drops-massive-open-video-dataset-with-10-million-hours-of-footage-for-ai-research/",
+    "published_at": "2026-08-29T09:36:48+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic wants to do for physical hardware what its Model Context Protocol did for software",
+    "summary": "Anthropic's Model Hardware Standard (MHS) gives AI agents a unified interface to physical devices like robotic arms and lab instruments. In early tests, integration time dropped from weeks to hours. But Claude sometimes failed to grasp physical cause and effect, so human oversight remains essential ",
+    "url": "https://the-decoder.com/anthropic-wants-to-do-for-physical-hardware-what-its-model-context-protocol-did-for-software/",
+    "published_at": "2026-08-29T09:14:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.yoursun.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_78d962c3-674a-505e-b42c-dd0f6a28cbab.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.thechronicle.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_23e8bab8-4d57-5cdb-bce7-ff167d1332fb.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.starkvilledailynews.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_90cf4f3d-40f6-5d00-b5d0-bf344714c481.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.thewesterlysun.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_8b5948e3-6937-501d-90d1-d8c31bebb982.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.berkshireeagle.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_4e2d061e-06fe-5e74-baca-bd736b0662af.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users. RICHMOND, BC, Aug. 29,...",
+    "url": "https://nynewscast.com/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required-251470/",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users. RICHMOND, BC, Aug. 29, 2026 /PRNewswire/ — Jukebox, the online printing company named Best Overall by Forbes Advisor an",
+    "url": "https://nynewsly.com/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/44291/",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.samessenger.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_b33e824c-a85b-5e82-a4ab-0a845fb1fa1a.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users. RICHMOND, BC, Aug. 29, 2026 /PRNewswire/ — Jukebox, the online printing company named Best Overall by Forbes Advisor an",
+    "url": "https://celebrityhint.com/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Jukebox Launches Free 4x HD Image Upscaling Inside Its Background Remover, No Signup Required",
+    "summary": "Full-resolution transparent PNG downloads stay free with no account and no watermarks, while most tools in the category reserve full-quality exports for registered or paying users.",
+    "url": "https://www.nvdaily.com/online_features/press_releases/jukebox-launches-free-4x-hd-image-upscaling-inside-its-background-remover-no-signup-required/article_99541216-8d61-5239-87ac-32cf15087630.html",
+    "published_at": "2026-08-30T01:55:00+00:00",
+    "source": "newsdata"
+  }
+]
