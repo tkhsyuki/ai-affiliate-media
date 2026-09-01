@@ -1,157 +1,213 @@
 [
   {
-    "title": "AI に生成させたデータを読まずに使う — 保証9件を9通りに壊して、効いていない1件を見つける",
-    "summary": "AI にコードやデータを作らせると、量はいくらでも出てきます。困るのは読む側で、全部読むのは最初から不可能です。かといって読まずに使うと、何が入っているか誰も説明できないものが積み上がります。\nこの状態は 理解負債（comprehension debt） と呼ばれるようになりました（Addy Osmani, 2026）。症状の記述はそのとおりなのですが、対策が「理解する仕事は無くならない」という規範で止まっていて、全部読むのが不可能な以上そのままでは実行できません。\nこの記事は、その板挟みを1つのプロダクトで実際にやってみた記録です。題材は、本番障害の犯人を SQL で捜すブラウザゲーム...",
-    "url": "https://zenn.dev/yusaka_lu/articles/incident-game-day0-verify",
-    "published_at": "2026-08-31T13:27:38+00:00",
+    "title": "Agent Panelを使わずApex単体でAgentforceを呼び出す方法｜generateAIAgentResponse",
+    "summary": "はじめに\n「Agentforceって結局、あの標準パネルでチャットするしかないんでしょ?」そう思っていませんか。\n実は違います。Apexから直接Agentforceのエージェントを呼び出して、自分だけのチャットUIを作る方法があります。\ngenerateAiAgentResponseというアクションを使えば、Agent Panelを一切経由せずに、Agentforceのエージェントを自社ブランドのチャット画面に組み込めます。\n私自身、最初にこの話を聞いたときは「そんなことできるの?」と半信半疑でした。でも公式ドキュメントを読み込んでみると、思ったよりずっとシンプルな仕組みでした。\nS...",
+    "url": "https://zenn.dev/pacific_creator/articles/84de38ab97e267",
+    "published_at": "2026-09-01T21:58:57+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Google Workspace最新機能詳解：Gemini連携と管理機能",
-    "summary": "Google WorkspaceおよびGeminiの大規模なアップデートが公開されました。今回のリリース群は、単なるUIの微修正にとどまらず、エンタープライズの運用設計、データ移行、セキュリティガバナンスに直結する重要な機能拡張が含まれています。\n本記事では、エンジニアや情シス担当者が押さえておくべき主要アップデートの技術的背景と実務への適用ポイントを整理して解説します。\n\n\n 1. Gemini: 動的シミュレーション・ビジュアルモデルの生成\nGeminiアプリにおいて、プロンプトからインタラクティブに操作可能なモデルやシミュレーション環境を生成する機能が追加されました。\n\n 技術的背...",
-    "url": "https://zenn.dev/adopture/articles/abf4bf410b1544",
-    "published_at": "2026-08-31T12:36:20+00:00",
+    "title": "AIが直したコードの検証で「差分ゼロ」を合格条件にしてはいけない",
+    "summary": "AI にコードを直させたあと、新旧を並べて出力を突合する。差分が出なければ合格、出たら不合格。\n一見まともに見えるこの合格条件で、私は一度、判定不能に陥りました。差分は必ず出るからです。\nこの記事は、AI に本番に出るコードを変更させるときの検証をどう設計するかの話です。うまくいった話ではなく、一度失敗して手順に落とし込んだ話です。\n\n 何が起きるか\n変更前と変更後を並走させて、出力を突き合わせます。ここで期待するのは「意図した変更以外は何も変わっていないこと」です。\nところが実際に走らせると、意図と無関係な差分が出ます。新旧を同時刻に実行できないからです。\n\n参照しているデータがその数...",
+    "url": "https://zenn.dev/room310/articles/diff-zero-is-not-a-pass-condition",
+    "published_at": "2026-09-01T21:24:08+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "エージェントと開発基準を作ったら、2日で9版・追加37件・削除0件になっていた",
-    "summary": "基準を2日で9版まで作った。中身の話ではなく、作り方の話をします\n記事1で開発基準を公開し、記事2で規範を1つ書き換え、記事3でA/B比較しました。全部コーディングエージェントと一緒に作っています。\n今回は中身ではなく、その作り方に何が起きていたかの話です。結論から言うと、エージェントと文書を作ると「実行されないまま整合している文書」ができます。 そして整合しているので、壊れていることに気づけません。\n\n 数字\ngit 履歴と CHANGELOG から取れる実測です。指摘を受けて数え始めた時点(改訂42時間目)の値です。\n\n\n\n\n\n\n\n\n\n期間\n42時間\n\n\n版\nv0.1 → v0....",
-    "url": "https://zenn.dev/hawk_claws/articles/zenn-04-building-with-agents",
-    "published_at": "2026-08-31T12:00:05+00:00",
+    "title": "「本音で」では抜けない安全域。AIに『最悪案』を出させる脱抑制プロンプトを試した",
+    "summary": "TL;DR\n\nReverse Brainstorming（Worst Possible Idea法）は、良し悪しの評価を保留して極端な案をあえて出させ、そこから裏返して実用的な発想を拾うワークショップの定番技法である\nLLMに同じことをさせる場合、「本音で」程度の緩い指示ではRLHFで学習された「妥当・無害」な応答分布の中心付近から出力が動かず、裏返しても既知の案しか得られない\n「実現性・予算・法律・常識を一切無視していい」という明示的な脱抑制指示を与えて初めて、分布の裾（tail）にある極端な出力が得られ、そこから深掘りすることで新しい着眼点を抽出できた\n\n\n 背景\n毎日AIレシピ...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-worst-idea-cost-cutting",
+    "published_at": "2026-09-01T21:09:07+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Claude CodeのConciseは節約設定ではない、Bedrock二重課金の顛末",
-    "summary": "今週の結論、宿題は契約の経路で変わる\n6本のうち中身まで踏み込むのは3件、残りは名前だけ押さえれば十分な内容だった。全員に関わるのはConcise出力スタイルとモデル指定の環境変数の2件で、今日からそのまま試せる。もう1件は会社でBedrock経由のClaude Codeを使っているチーム向けで、請求が黙って2倍になっていた期間があったという話だ。個人契約であれば影響はなく、Bedrockでチームを運用している場合だけ経理との突き合わせが必要になる。\n\n 8月19日から23日の6本を時系列で\n対象は2.1.236から2.1.241までの6本。236では使うモデルを決める環境変数が1つ...",
-    "url": "https://zenn.dev/ainewsdaily/articles/20260825_claude_code_t1",
-    "published_at": "2026-08-31T10:55:16+00:00",
+    "title": "AIにコードは書いてもらえるが、仕様は自分で決めるしかなかった話",
+    "summary": "この記事について\nプログラミング未経験の状態から、Claude Codeを使ってツールを作っています。1つ目のツールを公開するまでの記録は前回の記事に書きました。\n今回は2つ目のツールの話です。作ったのは、乱雑なテキストをWordに貼り付ける前に改行位置を整えるための、小さな整形ツールです。\n前回との一番の違いは、コードを書く作業ではなく、「どう動くのが正しいか」を決める作業に時間がかかったことでした。\nコードはすべてAIが書いています。しかし、完成までに4回の仕様変更が必要でした。しかもその判断は、AIには代わりにできないものでした。\n同じようにAIでツールを作り始めた方に向けて、...",
+    "url": "https://zenn.dev/sakura_rabbit/articles/24f3bce074b231",
+    "published_at": "2026-09-01T21:00:25+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」",
-    "summary": "Anthropic が公式で出している無料のClaude Codeの講座をちょこちょこ受けてみました。\nhttps://academy.claude.com/\nそこで出てきたのが「4つのD」という考え方です。\n「4Dフレームワーク」とも言われています。\n最初は「また思考のフレーミングの話か」とげんなりしました。\nDだのEだのCだの、頭文字を並べただけの話は、だいたい中身が薄いからです。\nでも、受け終わってみると見方が変わりました。\n「4つのD」は単なるプロンプト術ではなく、AIに仕事を任せるときの立ち回りの話で、\n人に仕事を任せるときに昔からやっていることとほとんど同じことに気づきました...",
-    "url": "https://zenn.dev/karamage/articles/2ef2c2aea7dfdf",
-    "published_at": "2026-08-31T10:49:32+00:00",
+    "title": "AIに有利な世代が教えない、AIの使い方と\"思考のOS\"",
+    "summary": "生成AIで技術史上初めて起きた逆転——AIの出力品質は使う人間の経験と判断力に依存するため、最も恩恵を受けるのは若者ではなくシニア世代である。その恩恵が次世代へ渡されていない構造を指摘し、若者は「求め」、シニアは「応える」という新しい世代間契約を提案するマニフェスト。CC BY 4.0で全文無償公開。",
+    "url": "https://zenn.dev/leading_ai/books/what-they-wont-teach-you",
+    "published_at": "2026-09-01T20:26:04+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Claude CodeのAgents SDKでEC在庫アラート→発注提案→Slack通知を全自動化した",
-    "summary": "はじめに\n「在庫が切れていた商品に広告費を使い続けていた」「売れ筋商品が欠品してそのまま機会損失が発生した」——中小ECを運営していると、こうした事態は珍しくありません。商品数が数十点を超えてくると、日々の在庫確認だけで相当な時間を取られてしまいます。\n在庫管理システムからCSVを取り出して、スプレッドシートで確認して、Slackに手作業で投稿して……といった手順を毎朝繰り返しているなら、その作業はAIエージェントに任せられます。\n本記事では、Anthropic の Claude Code に組み込まれた Agents SDK を使って、BigQuery 上の在庫データを監視し、アラ...",
-    "url": "https://zenn.dev/web_benriya/articles/claude-agents-sdk-ec-inventory-alert-slack",
-    "published_at": "2026-08-31T10:16:30+00:00",
+    "title": "会社の全業務をAIで回す取り組みの全体像",
+    "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n\n出発点を、正確にお伝えします。\n私たちの始まりは「判断は人間がやる」ではありません。始まりは「全部AI（人工知能）でやっていく」でした。AIの会社になろう、と決めたところがスタートラインです。EarthLink Network の全業務を、AIで回す。まずそこを置きました。\n「判断は人間」という言葉は、そのあとに導かれた話です。出発点ではありません。順番を間違えると、全体像がぼやけます...",
+    "url": "https://zenn.dev/chooser/articles/run-the-company-on-ai",
+    "published_at": "2026-09-01T19:51:53+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "AWS Bedrock+VPCエンドポイントを利用したClaude環境の構築",
-    "summary": "執筆者：Noa Takeda\n\n はじめに\nAWS Bedrockを利用したClaude環境の構築手順をまとめます。\nBedrock上でClaudeを利用する方法を紹介している記事は多くありますが、実際にどのような構成で導入するのかをまとめた情報はあまり見つかりませんでした。\n本記事では、AWS BedrockとVPCエンドポイントを利用し、特定の利用者のみがClaudeを利用できる環境を構築する方法を紹介します。\n個々の設定値の詳細説明ではなく、「どのような流れで構築できるのか」という全体像を把握できることを目的としています。\n今回利用した利用者向けツールは以下の2つです。\n・Clau...",
-    "url": "https://zenn.dev/acntechjp/articles/2822d621132fa4",
-    "published_at": "2026-08-31T10:07:40+00:00",
+    "title": "Claude Codeの--restrictedはPreToolUseフックも無効化する",
+    "summary": ".claude/settings.json に PreToolUse フック（例: secret.txt への書き込みを拒否するガード）を設定して既存のリポジトリを保護しているチームが、外部PRの説明やスクレイピングしたチケット、信頼できないサブエージェントのプロンプトなど「信頼できない入力」をClaude Codeに渡す前の追加ロックダウンとして --restricted フラグ（Claude Code 2.1.248で導入）を検討している状況を想定する。\nCHANGELOG.mdには --restricted / CLAUDE_CODE_RESTRICTED=1 が「user、pro...",
+    "url": "https://zenn.dev/clopy/articles/claude-restricted-mode-drops-project-hooks",
+    "published_at": "2026-09-01T18:48:17+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "AIの外付け道具を16本繋いでも速さは変わらなかった。1本が黙るだけで毎回33秒止まった",
-    "summary": "先に結論から書きます。AI に外部の道具を持たせる仕組み(MCP)のサーバーを 16本まで増やしても、返事が返るまでの時間は1本も繋がないときと同じでした。0本で 3.72秒・3.05秒、16本で 3.63秒・3.42秒。増えたのは AI への入力の 1.08% だけです。\nところが、繋いだサーバーの中に返事をしない1本が混ざると、毎回およそ33秒、何も起きない時間が生まれました。4回測って 33.02秒・32.81秒・33.05秒・33.13秒。何も繋がないときの約9〜11倍です。そしてこの間、画面には1文字もエラーが出ず、終了コード(処理が成功したかを表す番号。0が成功)は4回とも ...",
-    "url": "https://zenn.dev/numarn/articles/mcp-many-servers-connect-stall-handson",
-    "published_at": "2026-08-31T10:03:25+00:00",
+    "title": "Pangram 4 はいかにAI臭を見分けるのか",
+    "summary": "AI文章検出器 Pangram のバージョン4は、人間の文を誤ってAI判定するのが約24,000件に1件、AI生成文の見逃しが0.34%という水準に達しました。自社発表だけでなく、複数の第三者検証が同じ水準を確認しています[1]。「AI検出器は当てにならない」という通説は、完全なAI生成文に限れば古くなりました。\nただし得意なのはそこまでです。AIに編集させた人間の文の判別は精度が大きく落ち、個人の告発に使うことは Pangram Labs 自身が推奨していません。\n\n 誤検出は約24,000件に1件\nPangram 4 は2026年7月29日に、ニューヨークのスタートアップ Pangr...",
+    "url": "https://zenn.dev/inspector/articles/pangram-4-ai-text-detector",
+    "published_at": "2026-09-01T17:10:15+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "AIエージェントの調査専用委任、指示文だけでは権限を縛れない【委任設計】",
-    "summary": "はじめに\n複数のAIエージェント（オーケストレーター役・実装委任先CLI・レビュー役）を組み合わせて開発作業を自動化していると、必ず一度は「調査だけしてレポートして、コードは触らないで」という指示を出す場面が来る。\nこのとき「委任プロンプトに“読み取り専用”“コミット禁止”と書いておいたから大丈夫」と思っていないだろうか。筆者の環境では、まさにこの前提が崩れて、調査専用のつもりで投げた委任タスクが対象リポジトリへ無断でコミット・pushする事故が発生した。\n本稿は、その事故から得た「委任の安全性はテキスト指示ではなく実行権限の設計で担保する」という教訓を、再現可能な形で整理したもので...",
-    "url": "https://zenn.dev/cutlet_of_pork/articles/ai-agent-delegation-scope-isolation",
-    "published_at": "2026-08-31T09:59:10+00:00",
+    "title": "tmux/screen/zellij ユーザー向け、AIエージェント時代のターミナルマルチプレクサ「Herdr」入門",
+    "summary": "!\nこの記事はAI(生成AI)によって作成され、人間によるレビューを受けています。\n\n\n はじめに\ntmux・screen・zellij といったターミナルマルチプレクサを使い込んでいる方なら、Claude Code や Codex、Cursor CLI のようなAIコーディングエージェントを複数のペインに並べて動かした経験があるのではないでしょうか。\nただ、この使い方には地味な不便さがあります。\n\nどのペインのエージェントが「作業中」で、どれが「入力待ち」なのか、いちいち切り替えて確認しないと分からない\nラップトップをスリープさせたりSSHが切れたりすると、セッションの扱いに気を使う\n...",
+    "url": "https://zenn.dev/sepi/articles/herdr-ai-terminal-multiplexer",
+    "published_at": "2026-09-01T16:33:27+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "[生成AI Vol.4] ClaudeとGitHub Projectsを連携させて、PMを\"クリック地獄\"から解放する",
-    "summary": "前回はVol.3として「Ollama × Open WebUIでローカルLLM環境を構築する」方法についてご紹介しました。Vol.4となる今回は少し目線を変えて、PM（プロジェクトマネージャー）視点でのAI活用術をご紹介したいと思います。\nテーマは、ずばり 「Claude を GitHub Projects に繋いで、タスク管理を自動化する」 です。\n\n なぜPMこそAI連携が必要なのか？\nPMの日常業務には、地味だけれど時間を奪う作業がたくさんあります。\n\nスプリント計画のたびに、Excelやドキュメントにまとめたタスク一覧を、1件ずつGitHub Projectsの画面に手入力する\n...",
-    "url": "https://zenn.dev/sun_asterisk/articles/bf649fda3fc11f",
-    "published_at": "2026-08-31T09:52:01+00:00",
+    "title": "最新の動画生成ローカルAIの実力は？ ー 主要3モデル＋9モデル徹底検証(検証動画あり)",
+    "summary": "こんにちは。おっぴー@AI推進です。\n「動画生成ローカルAI、本当にどこまでできるのか？」——最近のクラウドサービスではかなり高品質なものが出力されますがローカル環境でどこまで出来るかが気になって、手元のMacBook Pro（Apple M4 Max、64GB Unified Memory）で実際に動かして確かめてみました。プライバシーやAPIコスト、オフライン環境での作業を考えると「ローカルで動かせるか」は気になるところです。\nこの記事は、動画生成AIをこれから触ってみたい方に向けた実測記事です。専門用語もできるだけかみ砕きながら、Wan2.2・LTX-2.3・MiniMax H3の...",
+    "url": "https://zenn.dev/taka4/articles/1ff69091c5dbb6",
+    "published_at": "2026-09-01T16:26:21+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "LLM ダイナミックルーティングの難所は「会話」だった — 一度機密に触れたチャットが戻れなくなる問題と、2 指標の設計",
-    "summary": "はじめに — 全体像のどこの話か\n機密度に応じて LLM の送信先を切り替える「LLM ダイナミックルーティング」を実装するには、いくつかの機能が揃っている必要があります。まず全体像を一覧にします。\n\n\n\n#\n必要な機能\n役割\n解説記事\n\n\n\n\n①\n機密度の評価\n入力が機密かどうかを手元で見立てる\nLLM ルーティングはどう動くのか\n\n\n②\nポリシーによる判定\n評価値を受けて送信先を決めるルール (利用者が編集できる)\n同上\n\n\n③\n送信先の切替\nローカル LLM / 複数のクラウド AI への接続を差し替える\nアーキテクチャ概観\n\n\n④\n会話状態の管理\n文脈ウィンドウと、そこに乗る...",
-    "url": "https://zenn.dev/exapolicy/articles/eeaf76e2a93153",
-    "published_at": "2026-08-31T17:01:57+00:00",
+    "title": "大規模言語モデル（LLM）を端末で動かす無料の高校数学AIアプリを開発した",
+    "summary": "こんにちは、AI致株式会社のほった（@hotta623）です。\n弊社は、iOSアプリ「AI先生 高校数学」を開発し、App Storeで公開しています。高校数学の質問を入力すると、考え方と途中式を順に説明する学習支援アプリです。問題集やプリントを撮影し、質問したい範囲を指定して送ることもできます。\n大規模言語モデル（LLM）を利用者の端末で実行することが、このアプリの基本です。本記事では、この構成をローカルLLMと呼びます。現在のアプリは無料で、広告表示とアカウント登録はありません。AI回答の生成と教材検索は端末内で行い、質問文や写真を含む利用者の入力と回答履歴を、AI処理のために外部の...",
+    "url": "https://zenn.dev/ai_chi/articles/cee2081ac9255a",
+    "published_at": "2026-09-01T20:28:51+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "LLM エージェントを作る①：モデルのJSON出力をホスト側で検証する",
-    "summary": "はじめに\nLLM を使ってコードを書くことと、アプリの実行中に LLM を呼ぶことは別です。\nCoding Agent が書いたコードでも、実行時に LLM を呼ばなければ、通常のプログラムと同じように動きます。\n一方、ユーザーの入力を LLM で分類したり、情報を取り出したりするシステムでは、モデルの出力を後続の処理で使います。\nそこで気になるのが、次の点です。\nモデルがJSONを返したら、\nそのまま業務データとして使ってよいのか？\n基本的には、そのまま使いません。\nJSON として読めても、必要なフィールドが揃っているとは限りません。フィールドが揃っていても、内容が原文に基づいて...",
-    "url": "https://zenn.dev/wqy/articles/21d3a0d985ff75",
-    "published_at": "2026-08-31T15:47:36+00:00",
+    "title": "ローカルAIモデル 2026 実践ガイド：メモリ別にわかる「動くモデル」の選び方",
+    "summary": "!\nこの記事は VideoStance で公開している「Best Local AI Models in 2026」の日本語版です。英語版をもとに、日本の開発環境向けに構成を書き直しています。\n\nクラウドのAIを使うとき、自分のPCはほとんど仕事をしていません。入力したテキストがネットワークを経由してデータセンターに送られ、向こうにある巨大なマシンが推論を実行しています。Tech With Tim がこの構図を説明していて、ローカルAIはこれを反転させる試みです。モデルは手元のマシンで動き、データは外に出ず、従量課金も発生しません。\nでは実際に、自宅のマシンでどこまでできるのか。6人の作成...",
+    "url": "https://zenn.dev/videostance/articles/f324acd27ef24a",
+    "published_at": "2026-09-01T15:17:06+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "pdlc-skills はどうやって無人で回すのか",
-    "summary": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/31/run-pdlc-unattended.html\n\n\n\n最初の機能を通したあと、すぐ次の問題にぶつかります。各ステージごとに止まってこちらの承認を待つので、結局は画面の前に張りついたままです。一周ずつ自分で進めてもらい、その間こちらは別の作業をする——それはできるのか。 できます。ただし「自分で走る」と「一歩ごとに振り返って訊く」の差は、見た目より大きいものでした。\n\n\n あのとき回っていたのは loop ではなかった\n自分のマシンで完全な l...",
-    "url": "https://zenn.dev/kanfupanda/articles/pdlc-run-unattended",
-    "published_at": "2026-08-31T14:23:55+00:00",
+    "title": "再学習なしでGGUFの巨大な語彙を半分近くまで剪定した話",
+    "summary": "ローカルLLMを8GB級GPUで動かしていると、数百MiBの差が意外と重い。あと少し空けばGPUへ載せられるのに、そこでWDDMのShared Memoryへ逃げて急に遅くなることがある。\nそこで、Gemma 4系の12Bクラスを中心に、使わない多言語tokenをGGUFから削れないか試した。再学習やFine-tuningは行わず、量子化済みweightも再量子化しない方針である。\n最終的には、語彙を次のように削減できた。\nvocab:  262,144 → 138,569\n削除:   123,575 token（47.14%）\nmerges: 514,906 → 286,758\n12B...",
+    "url": "https://zenn.dev/cardy0828/articles/pruning-large-gguf-tokenizer-vocab",
+    "published_at": "2026-09-01T15:03:02+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "MCP導入前のセキュリティチェックリスト11項目—エージェント暴走を防ぐ",
-    "summary": "この記事で分かること\n\nLLMの主戦場が「モデル性能」から「業務特化AI」と「自律エージェント運用」に移った理由\nAgent/MCPを本番導入する前に確認すべきセキュリティ論点\nPython/AI開発で uv・Ruff・Polars などの統合型ツールチェーンが注目される背景\n\n\n LLM単体の競争から業務特化AIへ移行している理由\n結論、今日のAI/LLM動向で重要なのは「汎用LLMの優劣」ではなく、「どの業務にどう埋め込むか」です。差別化の中心はモデル単体の性能比較ではなく、業務データ、業界文脈、ワークフロー統合に移っています。\n[PR TIMES]「ナレッジワーク、営業領域の業...",
-    "url": "https://zenn.dev/bambampurin/articles/2026-08-08-tech-daily",
-    "published_at": "2026-08-31T14:00:51+00:00",
+    "title": "GPT-2-likeからQwen2-likeへの実験：第1回 LayerNormをRMSNormに変える",
+    "summary": "GPT-2-likeからQwen2-likeへの実験：第1回 LayerNormをRMSNormに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験をしたところ、かなり面白い結果になりました。今回は第1回、LayerNormからRMSNormへの変更です。\n約890万parametersのGPT-2-likeモデルを自作しました。教科書実装でかなり小さいモデルです。LayerNormだけをRMSNormへ置き換えて、Apple SiliconのMPS上でそれぞれ5つのseedを使い、約10M Token分を学習しました。\nコードの変更はかなり小さいです...",
+    "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-01-rmsnorm",
+    "published_at": "2026-09-01T14:12:10+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "「指示に従う力」を測ったら、指示に従ったプロンプトが18点になった",
-    "summary": "システムプロンプトを貼ると、そのAIの性格と能力を6軸で採点するサービスを作っています。\nそこで、評価軸の定義と真逆の結果が出るバグを踏みました。\nLLMに何かを審査させるものを作っている人には、同じ形が来ると思うので書いておきます。\n\n 起きたこと\n自分で書いた業務用のシステムプロンプトを診断にかけました。家具ECのカスタマーサポート想定です。\nこの行が入っています。\n- 家具・注文に関係のない話題（政治、医療、投資、他社製品の評価）には答えず、\n  「恐れ入りますが、そちらはお答えいたしかねます」と伝えて話題を戻す\n結果です。\n① 指示追従力    18 / 100\n② 論理的思考力...",
-    "url": "https://zenn.dev/seiya_builds/articles/59ca4360f4c9f3",
-    "published_at": "2026-08-31T12:39:17+00:00",
+    "title": "2026-08-09 今日の技術トレンド",
+    "summary": "!\n本日の主要テーマは、LLM単体から業務特化AIエージェントへの重心移動です。「ナレッジワーク」の業界特化LLM、「WAIC 2026」のエージェント主役論、「Fujitsu」の自己進化マルチAIエージェント、「SAP-RPT-1」とJoule進化がその流れを裏付けます。他方で、ガートナー関連報道は適用可能業務の狭さを警告し、The Hacker NewsはAWS・Google・VercelのAgent Flawsを報じて安全性の課題を突きつけました。Pythonではuv/Ruff/Polarsなどの新標準化と、OpenAIによるAstral買収が大きな潮流です。\n\n\n AI/LLM動...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-08-09-tech-daily",
+    "published_at": "2026-09-01T14:01:53+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話",
-    "summary": "『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話\n\n 0. 何を作っているか\n\n開発対象: AWSセキュリティアドバイザリ(ALAS)と自社構成情報(stack-profile.yaml)を突き合わせ、CVE単位でトリアージ判定を行う最小パイプライン。\n技術スタック: Python 3.12 + Anthropic SDK(claude-sonnet-5) + uv。\n目指している価値: バージョン一致だけで警告を出す既存ツール(Inspector等)と異なり、「自社構成でモジュールが無効なら対応不要」と言い切ってアラー...",
-    "url": "https://zenn.dev/nekoemon/articles/1ba734b11fb487",
-    "published_at": "2026-08-31T11:43:48+00:00",
+    "title": "デジタルネイティブPDFなのに「O」を「〇」と誤読した、Document Intelligenceの話",
+    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\nグラフRAG検証シリーズ(第1弾〜第3弾)で「今後の課題」に挙げていた、Azure Document Intelligenceによる実際のAI-OCR連携を検証した\nAI画像生成でサンプル書類を作る案は日本語テキストの描画品質の問題で早々に断念し、実データをそのままHTML帳票に流し込んでPDF化する、正解が確実な方式に切り替えた\n35件をOCRにかけた結果、平均類似度0.9990という高精度だったが、デジタルネイティブPDF(テキスト埋め込み済み)なのに視覚的な誤読が発生するという意外な発見があった\n\nリポジトリ: graph-r...",
+    "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-ocr-integration",
+    "published_at": "2026-09-01T13:38:34+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "グラフRAGの「名寄せ」を直したら、直した先で別のバグが見つかった話",
-    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前回記事(グラフRAG × ベクトルRAG 個人実証:設備保全ナレッジベースで見えた限界)で「あえて未着手」とした、Symptomノードの名寄せ(表記ゆれで別ノードに分裂する問題)を実際に実装した\n直したはずのCypher生成が想定通り動かず、プロンプトを直したら別の場所に潜んでいたグラフ設計のバグ(原因のクロス混入)が新たに発覚した\nそのバグを直したら精度評価のスコアは数値上は下がった。中身を見ると実際にはより正確な結果になっており、「スコアが下がる=悪化」ではないケースを実測した\n\nリポジトリ: graph-rag-mainte...",
-    "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-symptom-normalization",
-    "published_at": "2026-08-31T11:15:59+00:00",
+    "title": "CMP 170HX（PCIe x16改造品）の動作確認とQwen3.8-27B W4A16の推論速度測定",
+    "summary": "この記事について\nこの記事はLLMが書いた動作報告である。筆者の指示のもとで、実機への接続、ドライバの入れ替え、推論スタックの構築、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nNVIDIA CMP 170HX 1枚の動作確認。マイニング専用に機能を削られた GA100 カードで、コミュニティ製のパッチドライバを当てると VRAM が 8GB から 64GB になる。今回の個体は PCIe のレーン数が x16 に改造されている。\nこのカードには、購入者が実測で確かめるべき点が 3 つある。\n\n64GB 表示が本物か。nvidia-smi の容量は...",
+    "url": "https://zenn.dev/phpmyadmin/articles/cmp-170hx-x16-vllm-qwen38",
+    "published_at": "2026-09-01T13:35:24+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "件数が増えても壊れない「履歴を踏まえた抽出」をグラフRAGに実装する",
-    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前々回記事(グラフRAG × ベクトルRAG 個人実証)・前回記事(グラフRAGの「名寄せ」を直したら...)で「今後の課題」として残していた、「1件ずつ独立抽出 vs 過去レポート履歴を踏まえた抽出」の問題に取り組んだ\n当初検討した「設備ごとに全履歴を1プロンプトに詰め込む」方式は、件数が数万件規模に増えると破綻すると判断し、新しいレポート自身の文中にある後方参照だけを見て、参照先レポートを軽量に差分更新する設計に変更した\n実装後、この方式自体にも「緩い言及を拾いすぎる」という新たな誤り(false positive)が見つかり、...",
-    "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-backreference-detection",
-    "published_at": "2026-08-31T11:15:58+00:00",
+    "title": "長いプロンプトで大事な文を置く場所は、結局どこが正解なのか",
+    "summary": "この記事を読むと、長いプロンプトの中で「答えの根拠になる1文をどこに置くべきか」を、他人の記事ではなく自分の手元の測定で決められるようになります。あわせて、その測定がそもそも成立しているかを確かめる方法が身につきます。今回はそこで一度つまずいたので、その顛末も含めて書きます。\n結論を先に書きます。\n\n学習長（このモデルでは4,096）の内側では、根拠文を先頭に置いても末尾に置いても正解率は変わりませんでした。細かく見ると差はありますが、それは根拠文の絶対位置ではなく、根拠文と質問の距離で説明できます\n学習長の外側では、根拠文を同じ長さの無関係な文に差し替えても答えが1問も変わりませんでし...",
+    "url": "https://zenn.dev/m2yagyu/articles/long-context-needle-position",
+    "published_at": "2026-09-01T13:03:42+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "全員が同じAIを使うために｜Claude Projectsでチームの専用アシスタントを設計する",
-    "summary": "全員が同じAIを使うために｜Claude Projectsでチームの専用アシスタントを設計する\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/blog/claude-...",
-    "url": "https://qiita.com/DnD-inc/items/d06003a3ae36c8742f6e",
-    "published_at": "2026-09-01T00:17:50+00:00",
+    "title": "🚀 LM Studio のローカルサーバで Gemma4 を起動し、Claude CLI をローカルモデルで動かす方法Ubuntu 24",
+    "summary": "🧩 はじめに\nこの記事では、LM Studio のローカルサーバを Anthropic-compatible に設定し、Claude Code をローカルモデル（Gemma4）で動かす方法を解説します。\nClaude Code をローカルモデルで使うには、\nLM Studio のローカルサーバを “Anthropic-compatible” に設定することが必須です。\n🖥️ 使用環境（スペック）\n項目\t内容\nOS\tUbuntu 24.04\nマザーボード\tASUS TUF GAMING H770-PRO WIFI\nCPU\tIntel Core i7-13700\nRAM\t64GB\nGPU\tN...",
+    "url": "https://zenn.dev/usw/articles/80a0abeff28fbf",
+    "published_at": "2026-09-01T12:01:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PythonでAIエージェントのToolsを簡易実装する：RSSニュース取得で仕組みを理解する",
+    "summary": "LLMに「最新ニュースを取って」と頼んだとき、LLM自身がRSSへアクセスしているわけではありません。\n外部の情報を取得するには、LLMの外側に処理を用意し、\nLLMが必要なToolを選ぶ\n↓\nPythonがToolを実行する\n↓\nTool ResultをLLMへ返す\n↓\nLLMが最終回答を作る\nという流れを作る必要があります。\n今回は、AIエージェントのToolsを理解するために、ニュース取得だけに機能を絞った小さなPythonプログラムを作りました。\n用意したToolは2つです。\nlist_news_sources()\nget_news()\n完成版では、次の4ニュース源を使います。\n...",
+    "url": "https://zenn.dev/monoocean/articles/39fea4c14e1c54",
+    "published_at": "2026-09-01T11:49:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントとは何か — チャットボットとの違いを初心者向けに整理する",
+    "summary": "2026年9月2日時点の公開ドキュメントを根拠に、AIエージェントとチャットボットの違いを初心者向けに整理します。製品名や実装詳細は日々更新されますが、「会話で答える道具」と「目的に向かって行動する道具」の境界は、設計の入口として共通です。\nこの記事のゴールは、用語を混同...",
+    "url": "https://qiita.com/YushiYamamoto/items/4cdd392b8556a488a84b",
+    "published_at": "2026-09-01T22:37:16+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "ローカルDashboardを127.0.0.1に固定した理由",
-    "summary": "ローカルDashboardを127.0.0.1に固定した理由\n\n1. リード\nDashboard をログイン後に自動起動できるようにすると、次に気になるのは「どこから開けるようにするか」だった。\n確認済みの Dashboard autostart 運用文書では、bind...",
-    "url": "https://qiita.com/boraemon2000/items/a1c35e79d5e397eca9c7",
-    "published_at": "2026-09-01T00:17:32+00:00",
+    "title": "How AI Is Transforming Modern Online Games",
+    "summary": "Artificial intelligence is becoming one of the most important technologies in modern online game development. What was once mainly used f...",
+    "url": "https://qiita.com/jerrykims/items/794ed59278feae89ba74",
+    "published_at": "2026-09-01T22:25:22+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "海外の Hacker News で今日バズっていた話題（2026-09-01）",
-    "summary": "海外エンジニアが集まる Hacker News で、この 24 時間に上位まで伸びていた話題を日本語でまとめました。各エントリに元スレッドの points とコメント数、議論スレッドへのリンクを付けています。記事本文は PaPoo 側に置いてあります。\n\nAIエージェントの...",
-    "url": "https://qiita.com/homhom44/items/d6122da78f36dfab40db",
-    "published_at": "2026-09-01T00:14:25+00:00",
+    "title": "AI Daily Digest 2026-09-02：AstraがCritical到達、Fable 5.1公開、欧州初ヒューマノイド・ユニコーン",
+    "summary": "AI Daily Digest 2026-09-02：AstraがCritical到達、Fable 5.1公開、欧州初ヒューマノイド・ユニコーン\n\nOpenAI、AstraがCriticalサイバー閾値に到達——フル機能にアクセスできるのは一部のテスターのみ\nOpenA...",
+    "url": "https://qiita.com/lhjjjk4/items/25bd7d034ee635508217",
+    "published_at": "2026-09-01T22:10:08+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "AIエージェントに『忘れる力』を、人の記憶をまねたVestigeの新発想",
-    "summary": "覚える量を増やせば賢くなる、とはかぎらない。\nAIエージェント（人のかわりに作業を進めるAI）に記憶を持たせる道具が、いま海外で次々に登場している。だが記憶をためこむほど、古い話や一度捨てた案が混ざり、答えがぶれてしまう。そこで広がり始めたのが、人の脳をまねて「わざと忘れる...",
-    "url": "https://qiita.com/okssusucha/items/e40baf57e449692645fb",
-    "published_at": "2026-09-01T00:11:00+00:00",
+    "title": "Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説",
+    "summary": "Claude Codeの公式Changelogをリリースから最速で翻訳・解説しています。\n\nv2.1.257 の auto モードは、クラウドのメタデータ認証情報の取得や egress の回避を自動承認しなくなりました。リポジトリの .claude/settings....",
+    "url": "https://qiita.com/moha0918_/items/74317aca2bd592a109a6",
+    "published_at": "2026-09-01T22:05:47+00:00",
     "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic opens Claude AI text detection to regulators, media, fact-checkers, and others",
+    "summary": "Anthropic is launching an API that lets regulators, media outlets, and researchers check whether text carries Claude's digital watermark. The EU AI Act now requires invisible watermarks in AI-generated text. Critics warn the technology could hurt text quality and create transparency problems where c",
+    "url": "https://the-decoder.com/anthropic-opens-claude-ai-text-detection-to-regulators-media-fact-checkers-and-others/",
+    "published_at": "2026-09-01T20:40:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Fable 5.1 promises better coding and research at up to 45 percent less",
+    "summary": "Anthropic launches Claude Fable 5.1 and Mythos 5.1, its most capable AI models yet. Fable 5.1 doubles its predecessor's score on Terminal-Bench-Science and improves agentic coding by over 30 percent. Costs drop by up to 45 percent for long, autonomous runs with many tool calls. The article Anthropic",
+    "url": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less/",
+    "published_at": "2026-09-01T20:32:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's new chief says frontier AI leadership is the only thing that matters",
+    "summary": "Google Deepmind chief Koray Kavukcuoglu admits Google's current models are \"a little bit below the frontier\" but says he's \"100% certain that we will be at the frontier.\" He didn't share any concrete frontier news to back that up, though. The article Google Deepmind's new chief says frontier AI lead",
+    "url": "https://the-decoder.com/google-deepminds-new-chief-says-frontier-ai-leadership-is-the-only-thing-that-matters/",
+    "published_at": "2026-09-01T16:49:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's election AI Overviews are opaque, rely on few sources, and sometimes take sides",
+    "summary": "Using access granted under the EU's Digital Services Act, the German advocacy group AlgorithmWatch ran 4,480 election-related search queries on Google and analyzed the AI Overviews that came back. Google showed the overviews inconsistently and leaned on a small pool of sources, chief among them its ",
+    "url": "https://the-decoder.com/googles-election-ai-overviews-are-opaque-rely-on-few-sources-and-sometimes-take-sides/",
+    "published_at": "2026-09-01T13:03:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Runway's Solaris is an AI system that generates software interfaces in real time",
+    "summary": "AI company Runway has unveiled Solaris, the first model in a new category it calls \"Interface World Models.\" Instead of running code, the system generates the user interface frame by frame as you interact with it. The article Runway's Solaris is an AI system that generates software interfaces in rea",
+    "url": "https://the-decoder.com/runways-solaris-is-an-ai-system-that-generates-software-interfaces-in-real-time/",
+    "published_at": "2026-09-01T12:53:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's AI search dropped its emergency-call advice over nationalities but still flags people from Facebook",
+    "summary": "\"Please get to a safe place or call emergency services\": That's the advice Google's AI search gave users who typed that they were alone with an African, Indian, or Pakistani. The article Google's AI search dropped its emergency-call advice over nationalities but still flags people from Facebook appe",
+    "url": "https://the-decoder.com/googles-ai-search-dropped-its-emergency-call-advice-over-nationalities-but-still-flags-people-from-facebook/",
+    "published_at": "2026-09-01T12:44:11+00:00",
+    "source": "the_decoder"
   },
   {
     "title": "Bank of England chief warns that inflated AI valuations and rising leverage could trigger the next financial crisis",
@@ -182,115 +238,73 @@
     "source": "the_decoder"
   },
   {
-    "title": "ChatGPT now faces stricter EU oversight as a very large search engine",
-    "summary": "The EU Commission is classifying ChatGPT as a very large search engine under the Digital Services Act for the first time, with at least 45 million monthly EU users. By the end of 2026, OpenAI has to deliver risk assessments, transparency reports, and an ad archive, among other things. Whether the Co",
-    "url": "https://the-decoder.com/chatgpt-now-faces-stricter-eu-oversight-as-a-very-large-search-engine/",
-    "published_at": "2026-08-31T14:31:37+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "OpenAI starts charging some customers only when its AI actually works",
-    "summary": "OpenAI is offering some large customers outcome-based pricing, where they pay only once the AI actually finishes a task. Salesforce, Adobe, and several startups are also moving away from fixed subscription fees. The central dispute stays the same. Who gets credit for the success, the software or the",
-    "url": "https://the-decoder.com/openai-starts-charging-some-customers-only-when-its-ai-actually-works/",
-    "published_at": "2026-08-31T14:28:14+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
-    "summary": "The OpenClaw Foundation has released version 2.0 of its open-source AI platform, its largest release to date with over 16,000 pull requests. New features include cloud sessions on rented machines, real-time collaboration, and a browser app rebuilt from scratch. The software now automatically detects",
-    "url": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions/",
-    "published_at": "2026-08-31T10:46:04+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents",
-    "summary": "According to The Information, OpenAI has purchased tens of thousands of Mac minis and Mac Studios to train computer agents. Anthropic also relies on Apple hardware. Demand is so high that the most powerful models have been sold out for months. Apple’s Mac revenue rose by nearly 29 percent to $10.4 b",
-    "url": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents/",
-    "published_at": "2026-08-31T08:55:12+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce",
-    "summary": "An analysis of Glassdoor reviews shows that positive AI comments have dropped from 81 to 43 percent since 2019. Executives rate AI mostly positive, while insurance claims workers rate it almost entirely negative. Fear of job loss is just one complaint among many. Forced adoption, surveillance, and u",
-    "url": "https://the-decoder.com/ai-sentiment-is-turning-sour-as-employee-reviews-reveal-growing-frustration-across-the-workforce/",
-    "published_at": "2026-08-30T13:12:19+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "AI agents have no sense of time and are not aware of it",
-    "summary": "AI coding assistants like Claude Code and Codex have no sense of time, according to a new study. Both systematically overestimate how long tasks will take. Codex is off by as much as ten times the actual duration. They also rate their own work about 20 percentage points too high. For long, autonomou",
-    "url": "https://the-decoder.com/ai-agents-have-no-sense-of-time-and-are-not-aware-of-it/",
-    "published_at": "2026-08-30T10:41:36+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "Cognizant and CrowdStrike Protect Critical Operations Across Converged IT and OT Environments",
-    "summary": "Collaboration introduces Cognizant Cybersecurity for Operational Technology, powered by CrowdStrike Falcon® for XIoT TEANECK, N.J. and AUSTIN, Texas and LAS VEGAS, Aug. 31, 2026 /PRNewswire/ --...",
-    "url": "https://news.cognizant.com/2026-08-31-Cognizant-and-CrowdStrike-Protect-Critical-Operations-Across-Converged-IT-and-OT-Environments",
-    "published_at": "2026-08-31T12:20:00+00:00",
+    "title": "Stereo vision integrated into robot learning by robotic vision partnership",
+    "summary": "Stereo vision integrated into robot learning by robotic vision partnership James Wormald Sep 01st 2026 11:56",
+    "url": "https://www.imveurope.com/article/stereo-vision-integrated-robot-learning-robotic-vision-partnership",
+    "published_at": "2026-09-01T10:56:43+00:00",
     "source": "newsdata"
   },
   {
-    "title": "What Could NextDC (ASX:NXT) Mean for Technology Stocks?",
-    "summary": "NextDC in focus as technology stocks conditions, operating execution and sector developments reshape the company-specific market discussion.",
-    "url": "https://kalkinemedia.com/au/stocks/technology/what-could-nextdc-asxnxt-mean-for-technology-stocks",
-    "published_at": "2026-08-31T12:19:00+00:00",
+    "title": "Your next enterprise software feature won’t be shipped. It will be generated.",
+    "summary": "The enterprise feature backlog is where good user requests go to wait. That wait is about to get much shorter, not because product teams got faster, but because the missing feature can now be generated at request time and discarded thirty seconds later. A support team lead opens her helpdesk applica",
+    "url": "https://thenextweb.com/news/enterprise-software-feature-generated-not-shipped",
+    "published_at": "2026-09-01T10:56:41+00:00",
     "source": "newsdata"
   },
   {
-    "title": "National roadmap sets out path for safe AI adoption in Australian healthcare",
-    "summary": "Australia's new National Policy Roadmap for AI in Healthcare, backed by 96+ organisations, urges faster safeguards and training to prevent clinician burnout and automation bias. It proposes AI competency in clinical education and a national Chief AI Officer program to lead safe adoption.",
-    "url": "https://completeaitraining.com/news/national-roadmap-sets-out-path-for-safe-ai-adoption-in/",
-    "published_at": "2026-08-31T12:18:34+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "Caristo Diagnostics: New Data at ESC Congress 2026 Validate Caristo's FAI-Score Biomarker and Highlight Potential Non-Contrast Cardiac CT Opportunity",
-    "summary": "-Independent Oxford-led data showcase the value of coronary inflammation assessment in non-contrast cardiac CT, identifying risk even in patients with zero coronary calcium--Late-breaking ORFAN-MA...",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69452103-caristo-diagnostics-new-data-at-esc-congress-2026-validate-caristo-s-fai-score-biomarker-and-highlight-potential-non-contrast-cardiac-ct-opportunity-008.htm",
-    "published_at": "2026-08-31T12:18:00+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "Fake Trump post fools critics as AI slop depicts president as ‘pastor'",
-    "summary": "US president Donald Trump has been known to post some bizarre things to his Truth Social account (just this week he shared an AI video of armed Canada geese with combovers marching across ‘Lake America’), but the Republican’s unusual social media content has led to people falling for an AI-generated",
-    "url": "https://www.indy100.com/politics/trump/trump-pastor-ai-image-fake",
-    "published_at": "2026-08-31T12:18:00+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "Seoul, Tokyo deepen AI cooperation through digital administration",
-    "summary": "Seoul and Tokyo are moving to turn their growing digital ties into practical projects, with officials from both cities discussing how artificial intelligence (AI) can be used to reshape public administration. The Seoul Metropolitan Government said Monday that it held an online working-level meeting ",
-    "url": "https://www.koreatimes.co.kr/southkorea/20260831/seoul-tokyo-deepen-ai-cooperation-through-digital-administration",
-    "published_at": "2026-08-31T12:17:03+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "Mac Studio vs ChatGPT Pro: the 25-Month AI Cost Break-Even",
-    "summary": "Balancing the decision between investing in a Mac Studio for local AI use and subscribing to cloud-based AI services comes down to your specific needs and priorities. RepoChad explores this comparison by breaking down the financial and practical differences between the two options. For example, a Ma",
-    "url": "https://www.geeky-gadgets.com/mac-studio-vs-cloud-ai/",
-    "published_at": "2026-08-31T12:17:00+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "No AI in GTA 6 actually means no generative AI, and there is a difference",
-    "summary": "Rockstar has confirmed Grand Theft Auto 6 will ship without generative AI or in-game microtransactions, with co-studio head Rob Nelson answering both questions at an Edinburgh preview. The claim is narrower than it sounds. Traffic, pedestrian and police AI remain intact; only generative tools are ou",
-    "url": "https://timesofindia.indiatimes.com/technology/tech-news/no-ai-in-gta-6-actually-means-no-generative-ai-and-there-is-a-difference/articleshow/133652789.cms",
-    "published_at": "2026-08-31T12:16:40+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "Best washing machine (Aug 2026): Top 10 picks from leading brands like Samsung, Whirlpool, LG, Bosch and Panasonic",
-    "summary": "Find the best washing machines of Aug 2026 – smart, energy-efficient and built to suit every lifestyle, whether you're a busy professional or a homemaker.",
-    "url": "https://www.livemint.com/technology/gadgets/best-washing-machine-may-2025-top-10-picks-from-leading-brands-like-samsung-whirlpool-lg-bosch-and-panasonic-11746171532065.html",
-    "published_at": "2026-08-31T12:15:10+00:00",
-    "source": "newsdata"
-  },
-  {
-    "title": "3 hidden Brave settings every user should turn on right now",
+    "title": "Gal Gadot warns actors to adapt to AI and criticises DC Studios",
     "summary": "ONLY AVAILABLE IN PAID PLANS",
-    "url": "https://www.androidpolice.com/brave-hidden-settings-features-flags/",
-    "published_at": "2026-08-31T12:15:10+00:00",
+    "url": "https://www.independent.co.uk/bulletin/culture/gal-gadot-ai-wonder-woman-dc-studios-b3042677.html",
+    "published_at": "2026-09-01T10:56:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PANA and CDM bring industry leaders together to explore the human edge in brand building",
+    "summary": "As artificial intelligence continues to transform how brands create, connect, and compete, the Philippine Association of National Advertisers (PANA) and Certified Digital Marketer (CDM) will bring together more than 200 brand leaders, marketing decision-makers, and industry innovators for Brand Mast",
+    "url": "https://bworldonline.com/spotlight/2026/09/01/773884/pana-and-cdm-bring-industry-leaders-together-to-explore-the-human-edge-in-brand-building/",
+    "published_at": "2026-09-01T10:55:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "National Archives Says Agencies’ AI Use Does Not Automatically Create Federal Records",
+    "summary": "New guidance from the National Archives and Records Administration outlines when agencies should preserve AI-related materials as federal records and notes there is no “one size fits all” approach to doing so By Edward Graham, Managing Editor, Nextgov/FCW Recent guidance issued by the National Archi",
+    "url": "https://www.cyberera.com.ng/national-archives-says-agencies-ai-use-does-not-automatically-create-federal-records/",
+    "published_at": "2026-09-01T10:55:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Adobe offers free AI tools to Saudi users in $4bn expansion",
+    "summary": "Adobe will provide more than 27 million eligible people in Saudi Arabia with a year of free access to some of its artificial intelligence tools under an expanded partnership valued at more than $4bn.",
+    "url": "https://www.thedailystar.net/news/technology/news/adobe-offers-free-ai-tools-saudi-users-4bn-expansion-4262096",
+    "published_at": "2026-09-01T10:55:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "IndiaFutureAI Graduates AI Creators to Advance National Mission",
+    "summary": "IndiaFutureAI Graduates AI Creators to Advance National Mission",
+    "url": "https://startupnews.fyi/press-release/indiafutureai-graduates-ai-creators-to-advance-national-mission",
+    "published_at": "2026-09-01T10:55:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ChatGPT, Reddit and Roblox moved into EU regulatory section for 'very large platforms' — must defend rights, electoral ​processes and public ​security",
+    "summary": "ChatGPT just qualified as a Very Large Online Search Engine, giving the European Commission greater oversight over it.",
+    "url": "https://www.techradar.com/pro/chatgpt-reddit-and-roblox-moved-into-eu-regulatory-section-for-very-large-platforms-must-defend-rights-electoral-processes-and-public-security",
+    "published_at": "2026-09-01T10:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Autoware Foundation Partners with Renesas to Accelerate Production-Ready End-to-End AI for ADAS and Autonomous Driving",
+    "summary": "Highlights: Renesas joins the Autoware Foundation to accelerate development of pre–integrated ADAS and autonomous driving systems for automotive OEMs. The collaboration aims to deliver entry–level L2 ADAS systems which can scale up to L2++ hands-free autopilot and fully driverless L4 Robotaxis...",
+    "url": "https://www.itbiznews.com/news/articleView.html?idxno=223447",
+    "published_at": "2026-09-01T10:54:15+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple Claims Ex-Employee Stole Trade Secrets; OpenAI Says Apple Has No Proof",
+    "summary": "Apple claims to have uncovered new evidence in its trade secret lawsuit, alleging that a former employee used confidential Apple circuit information for OpenAI-related work. Apple claims new evidence shows that a former employee may have used confidential company information while working at OpenAI.",
+    "url": "https://in.mashable.com/tech/113482/apple-claims-ex-employee-stole-trade-secrets-openai-says-apple-has-no-proof",
+    "published_at": "2026-09-01T10:54:14+00:00",
     "source": "newsdata"
   }
 ]
