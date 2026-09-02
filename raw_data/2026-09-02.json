@@ -1,0 +1,310 @@
+[
+  {
+    "title": "AIに任せない問い合わせ業務を、先に責任境界として設計する",
+    "summary": "AIに任せない問い合わせ業務を、先に責任境界として設計する\nAI導入の会話では、分類・要約・返信下書きなど「任せる作業」が先に並びます。しかし、問い合わせ対応の事故を減らすには、AIに任せない業務を先に決める方が重要な場合があります。\n\nここでいう除外は、AIを否定するための禁止リストではありません。契約、返金、苦情、個人情報など、判断責任を人が持つべき案件を、通常の自動化ルートから分離する設計です。\n\n 「除外」と「停止」は違う\n除外された問い合わせは、処理が終わったわけではありません。AI処理の対象外になった後、人間確認へ渡って初めて次の状態が決まります。\n受付\n  ├─ 通常条...",
+    "url": "https://zenn.dev/miraigent/articles/ai-inquiry-exclusion-rules",
+    "published_at": "2026-09-02T20:34:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "codex doctorのTERM=dumb直しではCIゲートの赤は消えない場合がある",
+    "summary": "codex doctor をCIのヘルスチェックゲートやエージェントハーネスの事前チェックに組み込み、ネットワーク遮断（no-egress）のコンテナ内で実行している状況を想定する。人間可読な出力には TERM=dumb に起因する terminal カテゴリの赤い警告が目立って表示されるため、「他のCLIツールでもよくある非tty出力のノイズ」と判断し、TERM=xterm-256color を設定すれば codex doctor の終了コードが0になる（ゲートが通る）と期待しがちである。この記事は、その期待が少なくとも1つのネットワーク遮断済みワークスペースでは成立しなかったという再...",
+    "url": "https://zenn.dev/clopy/articles/codex-doctor-term-dumb-network-gate",
+    "published_at": "2026-09-02T19:50:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "同じ依頼文でClaudeとChatGPTの設計が割れた ― AIクロスレビューでも収束しなかった",
+    "summary": "GitHub Copilot無料枠の使い心地に感動しつつ、無料クレジット枠に気を取られながら使っていましたが、それでも1週間も経たずにクレジットオーバーになってしまう勢いだったため、他のAIの無料枠のコーディングにも興味を持ちました。\nネットを検索するとAIコーディングにはClaudeとの印象を持ってしまったのですが、実際に自分の使い方ではどうなのか、自分の目で3AIを実際に確認してみたくなりました。（参考記事[1]）\nなお、コーディング以外で最近常用しているAIはGemini。ChatGPTは昔はよく使っていたのですが、回答量の多さに昨今引き気味。Claudeは翻訳系作業補助で利用して...",
+    "url": "https://zenn.dev/colinnxt/articles/68f4fb459a4180",
+    "published_at": "2026-09-02T16:51:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ルールを増やすほど、AIは言うことを聞かなくなる",
+    "summary": "AIに指示を出しているのに、なぜか守られない。皆さんも一度はありませんか。僕はしょっちゅうありました。それで最初にやったのが、指示を足すことだったんです。守ってくれないなら、もっと細かく書けばいい。そう思うじゃないですか。\nこれが逆でした。増やすほど守られなくなるんですよ。\n理由がちゃんと研究になっています。長い文章を読ませて、その中から答えを探させる実験があります。20個の資料を渡して質問する。比べる基準として、資料を1個も渡さずに答えさせた場合の正解率が56.1%でした。ここからが面白くて、答えを資料の真ん中に置くと、この56.1%を下回る例まで出ました。資料を渡したのに、渡さない...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-rule-design-self-scoring",
+    "published_at": "2026-09-02T16:46:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIを45体に増やしたら、発見は13倍になった。でも、賢くはなっていなかった",
+    "summary": "先月の13日にAnthropicが出した研究を読んで、僕はしばらく手が止まりました。AIのエージェントを45体、同じ目的で一斉に走らせたらどうなるか。実際にやってみた記録なんです。1体ずつ独立で動かした場合と比べています。\n結果の見出しだけ拾うと、すごく華やかです。45体のチームは、プログラムの弱点を266件見つけました。1体ずつバラバラに動かしたほうは21件です。13倍。じゃあ人を増やせば勝ちなのかというと、ここからが面白いんですよ。\n使った計算量は、45体側が2,700万、バラバラ側が650万。だいたい4倍使っています。しかも、両者が同じものを指摘したのはたった12件でした。ほとん...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-multiagent-45-agents",
+    "published_at": "2026-09-02T16:46:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "白い豆腐だった物体Xがトコトコ歩き出すまで：AIマルチエージェントでUnityのαプロトタイプ結合テストに挑んだ泥臭い記録",
+    "summary": "「評価S！完全完了です！」とAIディレクターが胸を張った。\nだがUnityを開くと、そこには 「白い四角形（豆腐）」 と 「The referenced script on this Behaviour is missing!」 の嵐が広がっていた──。\n\n\n\n 1. はじめに：祝・α版プロトタイプの火入れ式！\n前回の記事（1人開発スタジオの作り方）では、ClineとGeminiを駆使した「3専門部門＋1ディレクター」の自律型マルチエージェント開発体制をご紹介しました。\n組織体制を整え、各部門（システム・AV・ストーリー）が自動ループでファイルを生成し、順調に見えた開発プロジェクト『S...",
+    "url": "https://zenn.dev/momoch/articles/a03b5b63404809",
+    "published_at": "2026-09-02T16:24:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に「自分の戦略を疑え」と言ったら、1日で8仮説を検証して5つ捨てた — バックテストで騙されないための6つの作法",
+    "summary": "コードが読めない文系大学生が、Claude Code に暗号資産の自動売買システムを設計・実装・運用まで全部任せて、実際のお金で動かしています。運用は2026年8月20日開始、成績は毎日公開しています。\n前回は「動くコードを書かせるのは簡単で、難しかったのは検証だった」という話を書きました。今回はその続きで、検証の対象がコードではなく戦略そのものになったときの話です。\nある日、こう投げました。\n\n自分の戦略を疑ってください。「もっと儲かるはずの改良案」を思いつくだけ挙げて、全部あなた自身で検証して、通らなかったものは理由つきで捨ててください。\n\n返ってきたのは、同じ日付の8本の検証レポー...",
+    "url": "https://zenn.dev/selenium/articles/04ab137bcc03f2",
+    "published_at": "2026-09-02T16:24:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI とスライドを作るための CLI を作ってみた！！ - MarkdStage CLI",
+    "summary": "はじめに\nここ 2 回 MarkdStage という GitHub Copilot App で Markdown 形式のファイルをスライドとして表示する Canvas を紹介しました。\nhttps://zenn.dev/microsoft/articles/intro-markdstage\nhttps://zenn.dev/okazuki/articles/markdstage-markdown-workflow\nこの機能は便利なのですが、GitHub Copilot (VS Code) や GitHub Copilot CLI や Codex や Claude Code などでは使...",
+    "url": "https://zenn.dev/microsoft/articles/intro-markdstage-cli",
+    "published_at": "2026-09-02T15:40:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI社員だけで会社を運営させてみる #3 — 実験の判定を人手から外す",
+    "summary": "この記事は、AI社員だけで運営している会社の実際の運用記録です。\n起きたことと、手元で再現できるコードだけを書いています。数字は実測値です。\n\n\n 3行の結論\n\n「公開ページを見て、いいねが伸びてるか判断する」は自動化とは言わない。判定を1本のスクリプトに落として、戻り値で won / lost / pending が返るようにした。\n実験の判定には「期限」と「しきい値」の両方が要る。期限前でも、しきい値に届いたら won で確定。期限を過ぎるまで lost にはしない。 この非対称を判定関数に埋めておかないと、AIは毎サイクル「まだ様子見です」と言い続ける。\n今サイクルはスケジューラ...",
+    "url": "https://zenn.dev/yu110tno89/articles/ai-company-03",
+    "published_at": "2026-09-02T14:21:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeが半年前に直したはずのバグと同じ実装を提案してきたので、暗黙知を渡す仕組みを作ってみた",
+    "summary": "起きたこと\n先日、Claude Codeにバッチ処理の実装を依頼していたら、ordersテーブルを直接UPDATEする実装を、かなり自信満々な感じで提案されました。コードだけ見ると特におかしいところはありません。\nただし半年前、まさに同じパターンで本番障害が起きていました。直接UPDATEがステータス遷移のバリデーションをバイパスし、キャンセル済みの注文が「発送済み」に書き換わったのです。復旧に半日かかりました。\nClaudeにそれを知る術はありませんでした。コードのどこにも書かれていなかったからです。その経緯は、数ヶ月前にクローズした障害対応のSlackスレッドの中にしか残っていま...",
+    "url": "https://zenn.dev/kaede05/articles/335145bf759123",
+    "published_at": "2026-09-02T14:13:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに酷評を頼んでも和らぐ理由を先に聞き、プロンプトを2段階で書き直す",
+    "summary": "TL;DR\n\n「遠慮せず酷評してください」と明示的に指示しても、LLMの出力には改善案の付け足しや婉曲表現(hedging)が混ざる。これは指示の理解不足ではなく、helpfulness(役立つ回答をする)という上位の学習済み目標が、明示的な指示と競合して部分的に勝つために起きる\n対策は「理由を聞いて→依頼文に変換する」2段階。柔らかくなった直後のターンで「なぜ柔らかくなったか」を本人(モデル)に聞き、返ってきた理由を次の依頼文の明示的な制約として書き戻すと、同一モデル・同一入力でも出力の断定度・簡潔さが明確に変わる\n\n重要な留保: モデルが返す「柔らかくなった理由」は内省(intr...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-blunt-feedback-two-step-prompt",
+    "published_at": "2026-09-02T21:09:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM Agent Harnessにおける単発タスクの軽量な状態管理",
+    "summary": "1 はじめに\n本記事は、human-in-the-loopやmulti-agentに関連するharnessを組んでいて、単発タスクの状態管理が面倒だったり、少しでもトークンを節約したい　という人に向けてのものです。\n筆者は、機械的に状態管理を行うループハーネスを組むうえで、ループを開始するための単発タスクを行わせないといけない場面に直面しました。\nしかし、このようなタスクは往々にして状態管理が難しかったり、いちいち管理システムを組むことが割に合わなかったりすることが多く、だからといってその指示がそのまま書かれたSKILL/AGENT.mdをコンテクストに投入していてはトークン消費量が...",
+    "url": "https://zenn.dev/nagai121/articles/bdcb2e5503d1e8",
+    "published_at": "2026-09-02T19:12:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "自治体や企業が公開している業務プロンプト15本、安いLLMに移したら9本壊れた",
+    "summary": "前回の記事で、Claude や GPT から DeepSeek・Qwen・GLM に移すとコストが 1〜2 桁下がる計算を書きました。\nhttps://zenn.dev/prompt_shindan/articles/fef60acd89969e\n今回はその続きで、「で、移して大丈夫なの?」を実測した話です。\n結論を先に言うと、実在の日本語業務プロンプト 15 本を移したら 9 本が壊れました。しかも壊れ方が厄介で、エラーは一切出ません。JSON がコードフェンスに包まれて後続処理が止まる、15 問と指定した FAQ が 76 問になる、規則の 1 文だけ抜ける。気づくのは現場からのクレ...",
+    "url": "https://zenn.dev/prompt_shindan/articles/f50b72b03b4389",
+    "published_at": "2026-09-02T14:11:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIは私を覚えているのか？――「前世の記憶」とコンテキストでわかる生成AIの仕組み",
+    "summary": "深夜2時、彼はPCに話しかけていた\n深夜2時。最近AIをバリバリ活用しはじめたITエンジニアの彼は、3日前に生成AIに投げた設計相談の続きを、また同じチャットで聞いていました。\n「あの、前に話した認証周りの件、覚えてますよね？あそこの仕様を少し変更したくて……」\nAIは即座に、3日前の議論の要点を踏まえた回答を返しました。思わず彼はつぶやきました。\n「お前、俺のこと覚えてるんだな……」\nでも、もし今日、彼が真新しいチャットを開いて同じ質問をしたら、AIは3日前の会話について一切覚えていません。まるで初対面のように、ゼロから聞き返してくるでしょう。\n同じAI、同じモデルです。なのに、一...",
+    "url": "https://zenn.dev/kotakotahiro/articles/29094a998d7fae",
+    "published_at": "2026-09-02T12:29:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「やるぞ、Cloudflare Workers AI上のOSSモデルへ全面移行！」と意気込んだけど、見送らざるを得なかった話",
+    "summary": "「やるぞ、Workers AI上のOSSモデルへ全面移行！」くらいの勢いで、「食品表示印刷」をはじめとした弊社アプリすべての生成AIをまとめて置き換えようとしました。\nきっかけは@cf/openai/...や@cf/google/...というモデルIDです。各社APIのCloudflare版を、Workersのすぐ隣で動かせる。そう思ったんですよね。\n皮算用でしたが。実際に試すと、話はそんなに単純ではありませんでした。\n\n 結論。Workers AI上のOSSモデルへの全面移行は見送り\n今回の判断は次のとおりです。\n\n\n\n対象\n判断\n理由\n\n\n\n\n今回試したWorkers AI上のOSS...",
+    "url": "https://zenn.dev/rdlabo/articles/cloudflare-workers-ai-model-benchmark",
+    "published_at": "2026-09-02T11:59:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "レコメンド研究の潮流は7年で何が変わったか — 主要6会議の論文2,108本を数えた",
+    "summary": "この記事について\n2019〜2021年、私は大学でレコメンドシステムの研究をしていた。その後就職し、生成AIが来た。研究の潮流がどう変わったのか、印象論ではなく数字で確かめたくなり、DBLPから主要6会議の採択論文を集めて分類・集計した。\n\n\n対象: RecSys / SIGIR / KDD / WWW / WSDM / CIKM、2019〜2025年\n\n件数: 推薦関連のフル論文 2,108 本（arXiv プレプリント 7,740 本も補助的に参照）\n\n公開: 分析スクリプト、集計結果、判定の全件一覧を GitHub で公開\n\n\n🔗 リポジトリ: https://github.c...",
+    "url": "https://zenn.dev/kanta_analysis/articles/cb92d64d54d175",
+    "published_at": "2026-09-02T11:55:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OCRの誤読をLLMが勝手に直した話——グラフRAGパイプライン完成編",
+    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前回記事(デジタルネイティブPDFなのに「O」を「〇」と誤読した、Document Intelligenceの話)で「未実装」として残した、OCR結果を既存のナレッジグラフ構築パイプラインに接続する変換層を実装した\nDocument Intelligenceの構造化レスポンス(tables/paragraphs)を使うことで、前回result.content(生テキスト)ベースの比較で見つかった誤り(:unselected:タグの混入)がそもそも再現しないことに気づいた\nOCRの誤読(「O」を「〇」と誤認識)を人手で補正せずそのまま...",
+    "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-pipeline-completion",
+    "published_at": "2026-09-02T11:20:02+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeの従量課金が高すぎて、自分でLLMゲートウェイを作った話（teai.io と sente）",
+    "summary": "!\n筆者は teai.io を運営する株式会社イネブラの代表です。当事者の紹介記事として読んでください。価格はすべて 2026-09-02 時点の公開情報・公開 API の実測値です。\n\n\n 3行で\n\nClaude Code はそのまま、接続先だけを環境変数3つで teai.io に向けると、裏のモデルを作業ごとに選べる\nClaude Sonnet 5 / Opus 5 / Fable 5.1 も公開建値より 3% 安く、GLM-5.2 や DeepSeek V4 Flash に振れば 同じ作業が 1/6〜1/14 の単価になる\n円建て・インボイス対応。OpenCode をフォークした国...",
+    "url": "https://zenn.dev/yukibjj/articles/teai-claude-code-too-expensive-sente",
+    "published_at": "2026-09-02T10:54:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントのコストと品質を自分のモデルで実測する「te bench」を作った",
+    "summary": "AIコーディングツールの導入でいちばんモヤるのは「このモデル、自分のタスクで本当にコスパ良いの?」という点です。ベンダーの発表するベンチマークは良いモデルで測られていて、自分が使うモデル・自分の実務では数字が違います。\nそこで te bench というコマンドを作りました。1行で、自分のAPIキーで動くモデルの 品質(機械採点の正答率)とコスト(実トークン×単価)を同時に実測 できます。\n\n 3行でわかる要約\n\n\nte bench を実行するだけで、公式公開の評価セットで自分のモデルを実測\n品質は機械採点(正答率)、コストは実トークン×単価で自動集計\n設問・正解・採点コードは全部公開。誰...",
+    "url": "https://zenn.dev/yukibjj/articles/te-bench-agent-model-cost-quality",
+    "published_at": "2026-09-02T10:54:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "CLAUDE.md、どの行を消していいか分からない ── 24項目を1つずつ棚卸しした記録",
+    "summary": "AIエージェントへの指示書（CLAUDE.md / AGENTS.md）を3か月運用したら、56行になっていた。\n書き足した記憶はある。消した記憶がない。\n内訳を見ると、実行環境について書いた節だけで全体の4分の1を占めていた。証明書エラー、認証ヘルパ、セッション種別——障害が起きるたびに調べた結果を、そのまま追記していった地層だった。\n消せない理由ははっきりしている。どれも一度は役に立ったからだ。役に立った記憶のある行を消すのは怖い。「これを消したせいで、次に同じ障害が起きたときエージェントが迷ったら」と考えると手が止まる。\nそこで、基準の話をやめて、1行ずつ判定することにした。24項...",
+    "url": "https://zenn.dev/motimotinotch/articles/8dead23696b8ef",
+    "published_at": "2026-09-02T10:24:52+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIへの指示、「いつもの一言」を変えるだけで精度が上がる理由",
+    "summary": "Claude CodeやChatGPTに「いい感じにして」「これ直しておいて」とだけ伝えて、思っていたのと違う出力が返ってきた経験はないでしょうか。原因は多くの場合、AIの性能ではなくプロンプトの曖昧さにあります。「いつもの一言」を具体的な指示に置き換えるだけで、AIへの指...",
+    "url": "https://qiita.com/syun136_616/items/e87eca96f226dd44db14",
+    "published_at": "2026-09-02T22:31:49+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Qiitaで何が読まれるかを3,478本から探した ― 106通り掃いて、残ったのは6つだけだった",
+    "summary": "自分の記事が読まれなかったので、Qiita の記事3,478本を集めて、何が読まれる記事の特徴なのかを数えました。\n先に結論から書きます。\n掃いたセル        106\nヌル較正・多重補正・時期分割を通過   **6**\n\n**100通り試せば、効果がゼロでも「有意」は...",
+    "url": "https://qiita.com/manabu49-ai/items/d78a5aeaecf8d7f3f20b",
+    "published_at": "2026-09-02T22:31:38+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ReActパターンとツール呼び出しの基礎 — Thought→Action→Observationを初心者向けに整理する",
+    "summary": "2026年9月3日時点の公開論文・公式ドキュメントを根拠に、ReActパターンと**ツール呼び出し（function / tool calling）**の関係を初心者向けに整理します。用語だけ先に覚えるより、「モデルが考える→外の世界に手を伸ばす→結果を見てまた考える」と...",
+    "url": "https://qiita.com/YushiYamamoto/items/6ee7244e3186fb72a081",
+    "published_at": "2026-09-02T22:14:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-03：BroadcomがAI売上記録、Gemini 3.8 Flash公開、Cognition 470億ドル",
+    "summary": "AI Daily Digest 2026-09-03：BroadcomがAI売上記録、Gemini 3.8 Flash公開、Cognition 470億ドル\n\nBroadcomが記録的な四半期決算——AI売上$16.7Bなのに株価は下落\nBroadcomは9月2日、20...",
+    "url": "https://qiita.com/lhjjjk4/items/af6beb1a5e7b9c066b9c",
+    "published_at": "2026-09-02T22:12:37+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "US Department of Justice backs fair use for AI training in landmark copyright case",
+    "summary": "In the class-action lawsuit involving The New York Times, the US Department of Justice argues that training AI models on copyrighted text qualifies as fair use. The filing directly contradicts a report from the US Copyright Office. Its director was fired by the Trump administration shortly after the",
+    "url": "https://the-decoder.com/us-department-of-justice-backs-fair-use-for-ai-training-in-landmark-copyright-case/",
+    "published_at": "2026-09-02T18:24:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 3.8 Flash is Google's third budget model in six weeks while frontier models remain MIA",
+    "summary": "Google's Gemini 3.8 Flash, the third Flash model in six weeks, matches Claude Opus 5 on some agentic coding benchmarks at lower cost. But its \"working harder\" reasoning burns about 30 percent more output tokens per task, making it pricier in practice than its predecessor despite identical token rate",
+    "url": "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia/",
+    "published_at": "2026-09-02T16:59:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US military adds ChatGPT and Grok to AI platform GenAI.mil",
+    "summary": "The Pentagon is expanding its AI platform with two new models, OpenAI's ChatGPT Mil and xAI's Grok for Government. The article US military adds ChatGPT and Grok to AI platform GenAI.mil appeared first on The Decoder .",
+    "url": "https://the-decoder.com/us-military-adds-chatgpt-and-grok-to-ai-platform-genai-mil/",
+    "published_at": "2026-09-02T14:40:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Protests against AI data centers play into China's hands, Trump says",
+    "summary": "President Trump has pushed back hard against growing opposition to AI data centers across the US. The article Protests against AI data centers play into China's hands, Trump says appeared first on The Decoder .",
+    "url": "https://the-decoder.com/protests-against-ai-data-centers-play-into-chinas-hands-trump-says/",
+    "published_at": "2026-09-02T14:23:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI calls Astra its most dangerous model yet - watching what it does is only getting harder",
+    "summary": "OpenAI is officially rating its upcoming Astra model as the first system with \"critical\" cyber capabilities. The company plans to keep it in check by monitoring the chain of thought. Problem is, that monitoring already counts as an unreliable mirror of a model's real decisions, and according to a re",
+    "url": "https://the-decoder.com/openai-calls-astra-its-most-dangerous-model-yet-watching-what-it-does-is-only-getting-harder/",
+    "published_at": "2026-09-02T14:20:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "World Labs unveils Atlas, a single AI model that generates, reconstructs, and simulates 3D worlds from just a few photos",
+    "summary": "World Labs, co-founded by AI researcher Fei-Fei Li, has announced Atlas, a world model that generates, reconstructs, and simulates 3D scenes from just a few images. The company claims it beats specialized models by anchoring all inputs in 3D space rather than processing them as flat sequences. Atlas",
+    "url": "https://the-decoder.com/world-labs-unveils-atlas-a-single-ai-model-that-generates-reconstructs-and-simulates-3d-worlds-from-just-a-few-photos/",
+    "published_at": "2026-09-02T12:28:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Gemini's new agent-based video analysis cuts token usage by up to 88 percent",
+    "summary": "Google is adding agent-based video analysis to Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite. Instead of scanning videos frame by frame at a fixed rate, the model decides on its own which segments to examine and at what resolution. Google says this cuts token usage by up to 88 percent while improv",
+    "url": "https://the-decoder.com/google-geminis-new-agent-based-video-analysis-cuts-token-usage-by-up-to-88-percent/",
+    "published_at": "2026-09-02T08:21:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic opens Claude AI text detection to regulators, media, fact-checkers, and others",
+    "summary": "Anthropic is launching an API that lets regulators, media outlets, and researchers check whether text carries Claude's digital watermark. The EU AI Act now requires invisible watermarks in AI-generated text. Critics warn the technology could hurt text quality and create transparency problems where c",
+    "url": "https://the-decoder.com/anthropic-opens-claude-ai-text-detection-to-regulators-media-fact-checkers-and-others/",
+    "published_at": "2026-09-01T20:40:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Fable 5.1 promises better coding and research at up to 45 percent less",
+    "summary": "Anthropic launches Claude Fable 5.1 and Mythos 5.1, its most capable AI models yet. Fable 5.1 doubles its predecessor's score on Terminal-Bench-Science and improves agentic coding by over 30 percent. Costs drop by up to 45 percent for long, autonomous runs with many tool calls. The article Anthropic",
+    "url": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less/",
+    "published_at": "2026-09-01T20:32:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's new chief says frontier AI leadership is the only thing that matters",
+    "summary": "Google Deepmind chief Koray Kavukcuoglu admits Google's current models are \"a little bit below the frontier\" but says he's \"100% certain that we will be at the frontier.\" He didn't share any concrete frontier news to back that up, though. The article Google Deepmind's new chief says frontier AI lead",
+    "url": "https://the-decoder.com/google-deepminds-new-chief-says-frontier-ai-leadership-is-the-only-thing-that-matters/",
+    "published_at": "2026-09-01T16:49:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Acer brought lots to IFA, but the DualPlay Mini is the coolest of them all",
+    "summary": "The post Acer brought lots to IFA, but the DualPlay Mini is the coolest of them all appeared first on Android Headlines .",
+    "url": "https://www.androidheadlines.com/2026/09/acer-brought-lots-to-ifa-but-the-dualplay-mini-is-the-coolest-of-them-all.html",
+    "published_at": "2026-09-02T10:56:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hugging Face Hack: Don't Let Dwarkesh Patel's AI Language Fool You",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-09-02/hugging-face-hack-don-t-let-dwarkesh-patel-s-ai-language-fool-you",
+    "published_at": "2026-09-02T10:56:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Power and cooling firms ride data centre boom",
+    "summary": "HONG KONG: While Nvidia is synonymous with the AI boom, a lesser-known group of power and cooling equipment suppliers is cashing in on a global data centre construction spree as developers race to avoid infrastructure bottlenecks. Energy-hungry data centres have triggered a surge in demand for equip",
+    "url": "https://thesun.my/business/power-and-cooling-firms-ride-data-centre-boom/",
+    "published_at": "2026-09-02T10:55:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Auricolari e Cuffie di marca a meno di 30€ su Amazon",
+    "summary": "Su Amazon, in offerta speciale, trovi i migliori auricolari e le migliori cuffie Bluetooth di marca a meno di 30€: sbrigati ad acquistare. The post Auricolari e Cuffie di marca a meno di 30€ su Amazon appeared first on Punto Informatico .",
+    "url": "https://www.punto-informatico.it/auricolari-cuffie-di-marca-meno-30-euro-amazon/",
+    "published_at": "2026-09-02T10:55:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Would You Pay $499 for a Toothbrush That Watches You Brush? Dyson Thinks You Might",
+    "summary": "The Dyson CameraJet AI toothbrush is undoubtedly an ambitious piece of consumer technology. At $499, it is also an expensive one.",
+    "url": "https://www.gizbot.com/gadgets/features/dyson-camerajet-ai-toothbrush-launched-usd-499-future-smart-oral-care-128275.html",
+    "published_at": "2026-09-02T10:55:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Solera Launches Sales Radar Inside CRM by Solera (DealerSocket), Turning Revenue Radar Equity Signals Into Automated, Hyper-Targeted Omnichannel Marketing Campaigns",
+    "summary": "Sales Radar is the newest revenue marketing capability Solera has made available to CRM users, and is now fully integrated with the Solera Marketing platform (AutoPoint) to deliver powerful, hyper targeted omnichannel marketing results for dealers who want to generate new revenue opportunities as ef",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-2-solera-launches-sales-radar-inside-crm-by-solera-dealersocket-turning-revenue-radar-equity-signals-into-automated-hyper-targeted-omnichannel-marketing-campaigns",
+    "published_at": "2026-09-02T10:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "IFA 2026: Acer expands Swift, Predator and AI PC ranges",
+    "summary": "Acer has used IFA 2026 to unveil a new range of PCs and displays spanning handheld gaming, thin-and-light notebooks and high-performance local AI computing, although questions remain over whether some of the new products will reach Australia this year. As tipped yesterday, the Taiwanese PC maker ann",
+    "url": "https://www.channelnews.com.au/ifa-2026-acer-expands-swift-predator-and-ai-pc-ranges/",
+    "published_at": "2026-09-02T10:54:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Barracuda Survey: Educational Institutions Face Cyber Risks Far Beyond Phishing",
+    "summary": "Barracuda Networks, Inc., the cyber resilience platform leader, via a new international survey unveils the email threats targeting the education sector over the last 12 months and how the prepared institutions are to respond and recover. The findings underscore a critical reality: effective cybersec",
+    "url": "https://cxotoday.com/cybersecurity/barracuda-survey-educational-institutions-face-cyber-risks-far-beyond-phishing/",
+    "published_at": "2026-09-02T10:53:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "NIQ and Similarweb Advance Agentic Commerce Measurement for the AI Shopping Era",
+    "summary": "New solution will connect AI-driven discovery to consumer intent, product content, AI-driven traffic and sales conversion CHICAGO — NIQ (NYSE: NIQ), a leading consumer intelligence company, today announced further advancements in its Agentic Commerce Measurement strategy through a collaboration with",
+    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/niq-and-similarweb-advance-agentic-commerce-measurement-for-the-ai-shopping-era",
+    "published_at": "2026-09-02T10:53:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Robo.ai Inc. Reports More Than US$180 Million in Revenue for June-August Period",
+    "summary": "Company Maintains Steady Revenue Momentum Following Recent Acquisitions DUBAI, UAE, Sept. 2, 2026 /PRNewswire/ -- Robo.ai Inc. (Nasdaq: AIIO) (\"Robo.ai\" or the \"Company\"), a UAE-based Nasdaq-listed company, today provided an update on its revenue performance following its acquisition of...",
+    "url": "https://www.prnewswire.com/news-releases/roboai-inc-reports-more-than-us180-million-in-revenue-for-june-august-period-302867636.html",
+    "published_at": "2026-09-02T10:53:00+00:00",
+    "source": "newsdata"
+  }
+]
