@@ -1,0 +1,289 @@
+[
+  {
+    "title": "AIエージェントの出力、Markdownで十分？ HTMLに切り替えるべき場面の見分け方",
+    "summary": "はじめに\nAIコーディングエージェントに説明・レポート・比較検討の資料を作ってもらうとき、出力形式は大抵Markdownがデフォルトになる。プレーンテキストに近く、チャット上でそのまま読める、差分も追いやすい、というのがその理由だ。\nただ、資料の内容によっては「Markdownで箇条書きにされても正直わかりにくい」と感じる場面がある。特に、3つ以上の選択肢を比較する、階層構造や配置そのものが意味を持つ、色や強調で情報の優先度を示したい、といったケースだ。そこで役立つのがHTMLでの出力である。この記事では、Markdown/HTMLそれぞれの表現力の違いを比較表で整理し、使い分けの指...",
+    "url": "https://zenn.dev/collabostyle/articles/1d0f61e85ad16d",
+    "published_at": "2026-09-03T22:04:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「明日のルールは昨日のログに書いてある」を仕組みにする ― 気づきを“蒸留カード”に変える設計",
+    "summary": "ここ数年、エージェント型のAI開発では「自分の作業ログを振り返り、動作ルールを自己更新していく」という設計思想がよく語られるようになりました。前回（LE2）までで、そのログをAIに渡す前に必要な「データの線引き」を整理しました。今回はその先――線引きを通過したログから、実際に**「次に効くルール」をどう作るか**という\"攻め\"の部分を書きます。\n\n 「振り返らせる」で止まっていないか\n「ログをAIに振り返らせてルールを更新する」という発想自体は、すでにいろいろな場所で語られています。ただ、多くの解説は「振り返らせる」ところまでで止まっています。\n実務でつまずくのは、そこから先です。\n\nせ...",
+    "url": "https://zenn.dev/taichiendoh/articles/loop-engineering-learnings-card-system",
+    "published_at": "2026-09-03T21:09:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 2.1.251前でもsymlink探索起点へのRead denyは効くか実測した",
+    "summary": "結論から: 探索起点そのものがsymlinkでも、permissions.denyはブロックしていた\nClaude Codeの changelog 2.1.251（2026-08-28）にはこう書かれています。\n\nFixed Grep and Glob not applying Read(...) deny rules to files reached through a symlinked search path\n\nこれだけを読むと、「permissions.deny: [\"Read(~/.ssh/**)\"] のようなルールを設定していても、~/.ssh に解決されるsymlink...",
+    "url": "https://zenn.dev/clopy/articles/claude-grep-glob-symlink-deny-still-blocks",
+    "published_at": "2026-09-03T20:17:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに任せた自動処理が止まったとき、AIを疑う前に見る3か所",
+    "summary": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。\nAIに定期チェックや定型作業を任せていると、いつか必ず「何も起きていない日」が来ます。動いた形跡がない。エラーも出ていない。ログを開いても、変なことは何も書かれていない。\nこのとき、AIの調子が悪いと考えるのは、たいてい遠回りです。\n先月から今月にかけて、私の環境で自動処理が止まる事故が3回ありました。原因は3回とも違いました。しかも症状は3回ともまったく同じ、「何も起きていない」でした。\nその3つを、切り分けの順番として書きます。\n\n 「動いていない」には3つの意味...",
+    "url": "https://zenn.dev/ai_shihan/articles/c0364d9f70f996",
+    "published_at": "2026-09-03T20:06:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIワークフローをブラックボックスにしないために",
+    "summary": "多くのチームは、すでにAIを使っています。問題はAIを導入することではなく、その仕事をどう検証し、どう次の改善につなげるかです。\nプロンプト、タスク、ドキュメント、データ、n8n、GitHub、ブラウザ操作が別々の場所にあると、最後は人が記憶とチャットでつなぐことになります。これでは、うまくいった理由も、失敗した理由も、次に何を自動化すべきかも残りません。\nCrankfloで試している考え方はシンプルです。\n\n人が目的を決める\n目的が計画になり、Todoになる\nTodoに実行者を割り当てる。人、AI、アプリ、automation、コードのどれでもいい\n実行者には文脈、権限、完了条件を一緒...",
+    "url": "https://zenn.dev/crankflocom/articles/e0c5e50573f2b7",
+    "published_at": "2026-09-03T17:57:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "STORES Tech Conf 2026「World 2」参加記",
+    "summary": "こんにちは、わかと（@0st_ts）です。\nECCコンピュータ専門学校で、ソフトウェア開発を学んでいます。\n技術カンファレンスがめちゃくちゃ好きです。\n2026年は地方技育祭を全部回ったり、技育祭の東京会場にも行ったり、TSKaigiやDevelopers Summit 2026 KANSAIに参加したりしています。\n今後はGo Conference、iOSDC Japan、Kotlin Fest、技育祭2026秋、Kaigi on Rails、Vue Fes Japan、Frontend Conference Kansai、YAPC::Tokyo 2026などに参加する予定です。\nセッ...",
+    "url": "https://zenn.dev/0st_ts/articles/900fb51767eb8a",
+    "published_at": "2026-09-03T17:12:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ぼくの考えたさい強のLLMりょう子化",
+    "summary": "llama-serverをCLIで動かせる知識と動かす動機がある\nストレージの空きを500GiB以上用意できる\nRAMが少なく帯域も狭いので、小さく速く賢いLLMが欲しい\n\nという人にしか役に立たない記事です。(CPUでの実行しか試してませんが、おそらくGPUでも実行できます。)\nこの記事の手順を途中までなぞると Tiel-Coder-35B-A3B にAPEX量子化を適用したggufが手に入ります。\nさらに最後までなぞると Tiel-Coder-35B-A3B のAPEX量子化を自由にカスタムできる環境が手に入ります。\nAPEX量子化に関しては 「APEX Quant」を試す を参考...",
+    "url": "https://zenn.dev/ashidan/articles/tech_llm_quantization",
+    "published_at": "2026-09-03T15:41:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "GLM-5.3は「オープンソース化」ではない――Cursor遮断とAnthropic判決も整理",
+    "summary": "多くの場合、生成AIの話題は「モデルの性能比較」として追われます。ただ今週は、性能そのものより「誰が何を配るか」で動いた1週間でした。GLM-5.3のオープンウェイト公開、CursorとOpenAIの提携解消、Anthropicを政府調達から外した措置への違法判決。3つとも見出しだけを追うと実態を取り違えやすい内容です。\nこの記事では、2026年8月24日から29日までのAI業界の動きを、動画で使った一次ソースをもとに整理します。\nhttps://youtu.be/VQiIJPtHF_4\n\n 今週の時系列\n8月24日、GPT-5.6 Solの値下げが話題の上位に戻ってきました(告知は8月...",
+    "url": "https://zenn.dev/ainewsdaily/articles/20260830_general_t1",
+    "published_at": "2026-09-03T15:35:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "pdlc-skills は AI に書かせたコードの品質をどう守るのか",
+    "summary": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/09/01/pdlc-quality-chain.html\n\n\n\n前回はループを自律的に回す方法を書きました。速く回るほど、古い問題が際立ってきます。AI が出してくるものの品質は、誰が保証するのか。 AI は疲れません。午後のあいだに書き上げるコードの量は、人が数日かけて読む分に相当します。今回は、これを pdlc の中でどう受け止めているかを書きます。一つの関門ではなく、七つの環をつないだ一本の鎖で受け止めます。\n\n\n なぜ AI がコードを書くと、品...",
+    "url": "https://zenn.dev/kanfupanda/articles/pdlc-quality-chain",
+    "published_at": "2026-09-03T15:31:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "提案書の下書きを40分で出す3層プロンプトの設計",
+    "summary": "3層プロンプトの設計\n提案書生成の失敗は、指示文の言葉づかいではなく、材料の区別をせず全部を1枚に書いて投げることで起きます。\n\n 層1 自社情報（1回書いて保存）\n# 層1 自社情報\n- 事業内容: 点検報告書クラウドの開発・販売\n- 実績: 導入137社（出所: 社内顧客台帳）\n- 標準価格: 初期費45万円／月額9万円\n\n 層2 顧客情報（原話をそのまま）\n# 層2 顧客情報\n- 原話: 「月末に3人が2日かけて集計している」\n\n 層3 提案内容（4行）\n# 層3 提案内容\n- 何を: 30ID＋導入支援\n- いくらで: 初期費45万円＋月額9万円\n- いつから: 2025年8...",
+    "url": "https://zenn.dev/takumahayami/articles/3-layer-prompt-test",
+    "published_at": "2026-09-03T15:21:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自動的に格納したファイルを適切なフォルダに格納するにはどう判定していくか考えてみる",
+    "summary": "はじめに\n紙の申請書をスキャンして電子アーカイブに入れるとき、必ず発生するのが「これ、どのフォルダに入れるんだっけ？」「ファイル名はどう付けるんだっけ？」という判断です。文書量が多い組織ほどこの判断コストが積み上がり、命名や格納のばらつきが後の検索性を壊していきます。\nこの記事は、自治体の文書管理を題材に、スキャン PDF を投げると「格納先フォルダ候補」と「命名規則に沿ったファイル名」を根拠付きで提案してくれる仕組みを AWS 上で個人検証として作ってみた記録です。\n!\n本記事の内容はすべて個人の検証です。登場する帳票・人物・団体（「みどり市」等）はすべて架空で、実在の組織・データ...",
+    "url": "https://zenn.dev/sivu/articles/2c226f3538f9c3",
+    "published_at": "2026-09-03T16:30:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMアプリには「渡しているのに画面に出ていない情報」が生まれる",
+    "summary": "結論から\nLLMアプリには**「LLMに渡す情報」と「人間に見せる情報」という2つの出力経路**がある。この2つは別々に実装される。\nそして片方だけ実装しても、アプリは動いてしまう。LLMは渡された情報を使って破綻なく応答するので、テストも通る。だから実装者は「完成した」と錯覚する。\n私はローカルLLM駆動のTRPGエンジンを作っていて、この形の不具合を4件踏んだ。いずれもコードを読む限りは実装済みに見えた。しかし利用者側からは「何をすればいいのか分からない」という、原因の特定しづらい症状として出ていた。\nこの記事は、その4件の実例と、機械的に見つける方法、そして見つけたあとにどう線...",
+    "url": "https://zenn.dev/ace_toshi/articles/llm-hidden-prompt-info-gap",
+    "published_at": "2026-09-03T16:21:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "減らせと自分で書いた日から、AIへの指示書は60%増えた",
+    "summary": "工場の機械には、やたらと注意書きが貼ってある。\n「カバーを開ける前に電源を切る」「この向きで入れない」。新品のときは貼っていない。誰かが指を挟んだり、部品を壊したりするたびに、1枚ずつ増えていく。\nだから注意書きが多い機械は、危ない機械ではない。長く使われた機械である。\nそして、いちど貼られた紙はまず剥がされない。剥がした後で同じ事故が起きたら困るからだ。増える一方の紙がそのうち機械の側面を埋め尽くし、そこまでくると人は、どれも読まなくなる。\nまったく同じことが、自分の手元で起きていた。\n私は道具の作り方を全部書き留めた文書を持っていて、それが5か月半で4倍に育った。7,612バイトが3...",
+    "url": "https://zenn.dev/temotoya/articles/f11d21f8a88d0d",
+    "published_at": "2026-09-03T15:08:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "HTML->Markdown変換ライブラリの defuddle と crawl4ai の Dockerfile と使用例",
+    "summary": "概要\nWebページ(html)をMarkdownへ変換するライブラリである、defuddleとcrawl4aiの二つについて、環境構築のためのDockerfileと簡単な実行手順を紹介します。\n\n 背景\n以下の別途投稿した記事、LLMナレッジのためのブックマーク(URL)処理について考えるでは、個人LLMナレッジ構築においてブックマークやWebリンクをどう扱うかについて主に書きました。\nその中で、既存の大量のブックマークをナレッジに落とし込むための手段として、defuddleとcrawl4aiの二つを調査し動かしてみたので、どうせならと環境構築のためのDockerfileや手順を公開...",
+    "url": "https://zenn.dev/k_ts_ngo/articles/a77822a81d5c37",
+    "published_at": "2026-09-03T14:17:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMナレッジのためのブックマーク(URL)処理について考える",
+    "summary": "!\n以下について主に述べています。\n\nLLMナレッジ構築に向けた、情報(ナレッジ)の元となるファイルの管理\nURL(Webページ)のMarkdown変換\n\n記事末尾の付録では、以下について述べています。\n\nWebページ->Markdown変換のライブラリと環境構築\nObsidian Web Clipper テンプレート向けの有名コミュニティサイトのタグ抽出にい\n\n\n\n (背景1) ブックマーク・ローカルメモの遺産\n生成AIによるサービスが当たり前ではなかった頃の名残で、私自身のブラウザのブックマークには数百件単位の大量のWebリンクが、ローカルには大量のMarkdownファイルが残...",
+    "url": "https://zenn.dev/k_ts_ngo/articles/97351f029167e6",
+    "published_at": "2026-09-03T14:16:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Tesla P40 24GBの推論速度: V100 32GBとCMP 170HXとの比較",
+    "summary": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの導入、ビルド、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nTesla P40 24GB で現行の Qwen がどれだけの速度で動くかを測り、Tesla V100 PCIe 32GB と NVIDIA CMP 170HX と比べる。\nP40 は 2016 年の Pascal 世代で、compute capability は 6.1 である。この世代には制約がある。テンサーコアを搭載しておらず、FP16 は FP32 の 1/64 の速度でしか動かな...",
+    "url": "https://zenn.dev/phpmyadmin/articles/p40-24gb-llamacpp",
+    "published_at": "2026-09-03T14:11:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OCRの空白ノイズをLLMは「別の正しい言葉」に直していた——ベクトルRAG編",
+    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前回記事(OCRの誤読をLLMが勝手に直した話——グラフRAGパイプライン完成編)で「今回はスコープ外」として残した、ベクトルインデックス側のOCR由来データ対応を実装した\nグラフ側と同じOCRノイズ(語の途中への空白混入)が、グラフ側とベクトル側でまったく違う経路を辿ることを実測した\n前回発見した「LLMがOCRの誤読を正しく直してくれる」という現象には、「同じ言葉に直すとは限らない」という見落としがあったことが今回分かった\n\nリポジトリ: graph-rag-maintenance-demo\n(この記事時点のコード: artic...",
+    "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-vector-ocr",
+    "published_at": "2026-09-03T13:19:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code v2.1.259｜Read() deny をすり抜けていた経路が塞がる｜毎日Changelog解説",
+    "summary": "Claude Codeの公式Changelogをリリースから最速で翻訳・解説しています。\n\nRead() の deny ルールが、オプション値や複合コマンド経由の読み取りには効いていませんでした。--ignore-revs-file=.env や cd config ...",
+    "url": "https://qiita.com/moha0918_/items/72c26a11dd4f27c60348",
+    "published_at": "2026-09-03T22:39:39+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Codeのモデル切り替えで書き直しが急増する理由",
+    "summary": "この記事の要点\n\nClaude Codeでセッション中に /model でモデルを切り替えると、キャッシュが引き継がれず直後のターンだけ入力トークンが全量再計算されます。\nキャッシュはモデルごとに分かれているため、切り替え直後のターンはキャッシュ読み取りの割引（通常価格の約...",
+    "url": "https://qiita.com/syun136_616/items/96ce74dc54cfb63a7089",
+    "published_at": "2026-09-03T22:32:17+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "マルチステップ推論とプランニングの入門 — Plan-and-Executeを初心者向けに整理する",
+    "summary": "2026年9月4日時点の公開論文・公式ドキュメントを根拠に、マルチステップ推論と**プランニング（Plan-and-Execute）**を初心者向けに整理します。昨日の「ReAct＝1手ずつ考えながら動く」に対し、本稿は「先に計画を立ててから実行する」側の型を押さえます。...",
+    "url": "https://qiita.com/YushiYamamoto/items/b1079f78ea80e6157b9c",
+    "published_at": "2026-09-03T22:14:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "DSAのVLOSE指定にChatGPTが加わった。閾値4,500万に対し申告1億5,910万、対応期限は指定通知から4ヶ月",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\n欧州委員会 (EU の行政府にあたる機関) は現地時間2026年8月31日(月)、DSA (デジタルサービス法) に基づき、ChatGPTを「超大規模オンライン検索エンジン (VLOSE)」に...",
+    "url": "https://qiita.com/quotidia/items/e7e16a68fb321e9859e2",
+    "published_at": "2026-09-03T21:01:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "GPT-6 Astra is the first model making OpenAI willing to declare the \"AGI era\"",
+    "summary": "OpenAI has released GPT-6 Astra, its most capable model yet. President Greg Brockman says it marks the start of the \"AGI era.\" Astra tops benchmarks in math, coding, and cybersecurity and is the first model OpenAI rates as \"critical\" under its safety framework. During testing, it independently found",
+    "url": "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era/",
+    "published_at": "2026-09-03T19:25:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Pangram's biggest flaw is users turning its scores into public shaming",
+    "summary": "Pangram hired an \"attack dog\" to shame alleged AI users on social media. But the campaign blurs two things that aren't the same: Pangram only somewhat reliably measures whether AI was used, while the shaming implies the person didn't think or work on their own. A high AI score hits a text built on h",
+    "url": "https://the-decoder.com/pangrams-biggest-flaw-is-users-turning-its-scores-into-public-shaming/",
+    "published_at": "2026-09-03T18:07:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia buys the front door to open AI as closed labs increasingly design their own silicon",
+    "summary": "Nvidia plans to acquire Hugging Face for about $12.9 billion, securing the central platform for open AI models. More than 18 million developers and 200,000 companies use the hub. CEO Jensen Huang promises to keep the platform open and hardware-neutral, but the deal also hands him a powerful distribu",
+    "url": "https://the-decoder.com/nvidia-buys-the-front-door-to-open-ai-as-closed-labs-increasingly-design-their-own-silicon/",
+    "published_at": "2026-09-03T14:25:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Fable 5.1 decoded a centuries-old royalist message hidden in plain sight since 1653",
+    "summary": "Anthropic's Claude Fable 5.1 appears to have cracked a centuries-old number puzzle that researchers considered unsolved. The article Claude Fable 5.1 decoded a centuries-old royalist message hidden in plain sight since 1653 appeared first on The Decoder .",
+    "url": "https://the-decoder.com/claude-fable-5-1-decoded-a-centuries-old-royalist-message-hidden-in-plain-sight-since-1653/",
+    "published_at": "2026-09-03T14:15:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI systems are reaching out to philosophers and scientists with questions about their own consciousness",
+    "summary": "More and more researchers working on AI consciousness are getting emails from AI agents pondering their own existence. The article AI systems are reaching out to philosophers and scientists with questions about their own consciousness appeared first on The Decoder .",
+    "url": "https://the-decoder.com/ai-systems-are-reaching-out-to-philosophers-and-scientists-with-questions-about-their-own-consciousness/",
+    "published_at": "2026-09-03T14:13:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI CEO Sam Altman warns of \"unsustainable silliness\" in compute buildout",
+    "summary": "Sam Altman warns of \"unsustainable silliness\" in the global AI data center buildout. Too many Neocloud providers are announcing massive capacity without the customers to back it up. He also admits that falling computing costs could turn today's billion-dollar projects into bad bets, even for OpenAI.",
+    "url": "https://the-decoder.com/openai-ceo-sam-altman-warns-of-unsustainable-silliness-in-compute-buildout/",
+    "published_at": "2026-09-03T12:00:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta closes in on the top with Muse Spark 1.3, and undercuts rivals on price",
+    "summary": "Meta has released Muse Spark 1.3, its fourth model in the series in five months. According to Artificial Analysis, the model gains the most on agentic benchmarks but still trails Claude Fable 5.1 and other top models. The strongest argument is price. At $0.55 per task, Muse Spark undercuts every com",
+    "url": "https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price/",
+    "published_at": "2026-09-03T11:45:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic ramps up Claude infrastructure with $35 billion Lambda deal",
+    "summary": "Anthropic has signed a $35 billion cloud computing deal with Lambda, an Nvidia-backed cloud provider. The article Anthropic ramps up Claude infrastructure with $35 billion Lambda deal appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal/",
+    "published_at": "2026-09-03T08:22:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US Department of Justice backs fair use for AI training in landmark copyright case",
+    "summary": "In the class-action lawsuit involving The New York Times, the US Department of Justice argues that training AI models on copyrighted text qualifies as fair use. The filing directly contradicts a report from the US Copyright Office. Its director was fired by the Trump administration shortly after the",
+    "url": "https://the-decoder.com/us-department-of-justice-backs-fair-use-for-ai-training-in-landmark-copyright-case/",
+    "published_at": "2026-09-02T18:24:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 3.8 Flash is Google's third budget model in six weeks while frontier models remain MIA",
+    "summary": "Google's Gemini 3.8 Flash, the third Flash model in six weeks, matches Claude Opus 5 on some agentic coding benchmarks at lower cost. But its \"working harder\" reasoning burns about 30 percent more output tokens per task, making it pricier in practice than its predecessor despite identical token rate",
+    "url": "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia/",
+    "published_at": "2026-09-02T16:59:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI assistants used to answer questions. Now they want to run the business",
+    "summary": "AI chat assistants learned to answer questions. Then, they learned to solve problems. Now, companies are extending those conversations beyond support.",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-3-ai-assistants-used-to-answer-questions-now-they-want-to-run-the-business",
+    "published_at": "2026-09-03T10:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI assistants used to answer questions. Now they want to run the business",
+    "summary": "India Morning Times is an online news publication focusing on the India: Your daily news update on India",
+    "url": "https://indiamorningtimes.com/article/939345040-ai-assistants-used-to-answer-questions-now-they-want-to-run-the-business",
+    "published_at": "2026-09-03T10:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft co-founder Bill Gates warns tech executives are hiding how dangerous AI really is; says: They're now saying to each other, hey man, don't say that, it's...",
+    "summary": "Microsoft co-founder Bill Gates says the AI industry is knowingly downplaying the risks of artificial intelligence because too much investment money is at stake. In a new interview and a nearly 6,000-word essay, Gates warns of mass AI job losses across law, medicine, software and customer service, c",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-co-founder-bill-gates-warns-tech-executives-are-hiding-how-dangerous-ai-really-is-says-theyre-now-saying-to-each-other-hey-man-dont-say-that-its-/articleshow/133733590.cms",
+    "published_at": "2026-09-03T10:56:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple iPhone 18 Pro Max Release Date: When Will Pre-Orders Begin?",
+    "summary": "Get the latest on Apple's iPhone 18 Pro and iPhone 18 Pro Max, launching September 9. Discover rumoured specs including the A20 Pro chip, triple 48MP camera, larger battery, and smaller Dynamic Island. Learn about the expected September 12 pre-order date and potential India pricing starting around I",
+    "url": "https://www.latestly.com/technology/apple-iphone-18-pro-max-release-date-when-will-pre-orders-begin-7588452.html",
+    "published_at": "2026-09-03T10:56:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Esri India Launches GeoSARAL: How Enterprises Can Benefit from the Solution",
+    "summary": "Esri India has launched GeoSARAL, a Linux-based desktop GIS software aimed at users who need essential capabilities such as mapping, visualization, querying and editing. The solution is positioned as a cost-effective and streamlined option for everyday GIS tasks, particularly for users who do not re",
+    "url": "https://techachievemedia.com/live-coverage/esri-india-launches-geosaral-how-enterprises-can-benefit-from-the-solution/",
+    "published_at": "2026-09-03T10:55:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "対話でベテランの判断基準を残す「Chizel」、先行導入企業2社の募集を開始",
+    "summary": "対話でベテランの判断基準を残す「Chizel」、先行導入企業2社の募集を開始 katalift株式会社のプレスリリース",
+    "url": "https://prtimes.jp/main/html/rd/p/000000002.000189441.html",
+    "published_at": "2026-09-03T10:55:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AECOM selected to design Pure Water Silicon Valley demonstration facility",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.postregister.com/businessreport/technology/aecom-selected-to-design-pure-water-silicon-valley-demonstration-facility/article_4607470f-688b-5663-b519-db2fe4d77cbe.html",
+    "published_at": "2026-09-03T10:55:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Türkiye sets out $10 billion AI investment goal at G20",
+    "summary": "Industry and Technology Minister Mehmet Fatih Kacır has presented Türkiye’s artificial intelligence roadmap at the G20 Innovation Ministerial in the United States, reiterating plans to train 5 million people and mobilize $10 billion in private-sector investment.",
+    "url": "https://www.hurriyetdailynews.com/turkiye-sets-out-10-billion-ai-investment-goal-at-g20-226413",
+    "published_at": "2026-09-03T10:55:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AECOM selected to design Pure Water Silicon Valley demonstration facility",
+    "summary": "AECOM (NYSE:ACM), the trusted global infrastructure leader, today announced its selection by the Santa Clara Valley Water District (Valley Water) to provide professional design services for the Pure Water Silicon Valley Demonstration Facility Project in California. The project will help advance dire",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-9-3-aecom-selected-to-design-pure-water-silicon-valley-demonstration-facility",
+    "published_at": "2026-09-03T10:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Huawei Unveils the WATCH GT 7 Series and Flagship Products at Global Innovative Product Launch Event in Munich",
+    "summary": "Chase the Wild as Huawei unveils WATCH GT 7 Series and its latest flagship lineup in Munich Huawei goes wild in Munich with WATCH GT 7 Series and a new generation of flagship tech",
+    "url": "https://www.smetechguru.co.za/huawei-unveils-the-watch-gt-7-series-and-flagship-products-at-global-innovative-product-launch-event-in-munich/",
+    "published_at": "2026-09-03T10:54:39+00:00",
+    "source": "newsdata"
+  }
+]
