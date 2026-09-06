@@ -1,0 +1,310 @@
+[
+  {
+    "title": "YOLO26nアーキテクチャ徹底解析 step2 | Conv, DWConv, PWConv ブロック",
+    "summary": "はじめに\n本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。\n本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep2となります。YOLO26nの全体像を示したstep1の記事はこちらです。\n\n 免責・非公式表示\n!\n\n\n本記事は、Ultralyticsが公開するYOLO26nについて、公開されているソースコードおよびモデル構造をもとに筆者が独自に解析・解説する非公式記事です。Ultralytics社による公式記事、製品...",
+    "url": "https://zenn.dev/diiw/articles/yolo26n-architecture-step2",
+    "published_at": "2026-09-06T14:53:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MCP導入前の最優先は「ツール実行経路の保護」だと断言するチェックリスト",
+    "summary": "2026-08-12の技術トレンドで見る「AIエージェントの進め方」3つの結論\n\n この記事で分かること\n\n2026-08-12時点で、AI/LLMの重心が「会話」から「業務実行」に移った理由\nMCP・AIエージェント導入で今すぐ見直すべきセキュリティ論点\nPython/開発基盤で、いま有力な標準スタックが何か\n\n\n AIを「使う」から「働かせる」に移行している理由\n結論、2026-08-12の主要トレンドは、LLM単体の性能競争よりも、業務を実行するAIとその運用基盤に関心が移ったことです。\nその象徴が、[OpenAI]「From assistance to execution: ...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-08-12-tech-daily",
+    "published_at": "2026-09-06T14:52:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに自分のプロファイルを読ませたら、Amazon支出の順位は0/5だった",
+    "summary": "この記事の実施記録（2026年8月）: 「AIに自分のことを説明した文書を読ませておくと、思考傾向を踏まえた応答が得られる」という運用を続けていた私が、その文書を読んだAIに実際の購買行動を予測させ、Amazonの購買実績（書籍を除く475件・1,235,258円、2024年1月〜2026年8月）と突き合わせる実験をした（2026年8月22日実施）。結果、上位5カテゴリの的中はランダム予測(1.47/5)を上回る3/5だったが、順位まで一致したのは0/5だった。行動ログを追加すると金額配分の誤差は22%縮んだが、代わりに別の誤読が新しく生まれた。この一連の設計・実験・採点はすべてClau...",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-08-26-220118",
+    "published_at": "2026-09-06T14:34:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-09-06: Agent基盤の分岐点",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデル単体の賢さよりも、その周りにある実行環境、監視、権限、再利用可能な手順が前に出てきた日だと思う。『インターステラー』で船そのものより航路計算と生命維持が大事になる瞬間に少し近い。新モデル、enterprise safeguards、Codex workflow、OpenClaw の運用改善、VLM や音声データの gateway 化まで、全部が「agent を実際に働かせるには何を整えるか」に寄っている。\n今日の項目\n\n\n\nClaude Fable 5.1 and Mythos ...",
+    "url": "https://zenn.dev/laiken/articles/20260906-tech-watch",
+    "published_at": "2026-09-06T14:16:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに業務システムを書かせるとき、品質をどう担保したか",
+    "summary": "AI エージェントを使って、動物病院向けの電子カルテ・売上管理システムを一人で作っている。\nその過程で決めた「AI の出力をどう受け入れるか」のルールと、\nそれによって実際に見つかった不具合 2 件を書く。\n\n 前提：AI が書いたコードは、レビューでは落ちない\nAI の出力はそれらしく仕上がる。命名も、構造も、コメントも整っている。\nだから読んで「おかしい」と気づける不具合は、そもそもあまり出てこない。\n危ないのはそこではなく、構造は正しいのに値が間違っているケースだ。\nこれは目で追っても分からない。動かして、数字を突き合わせて初めて出る。\n業務システムだと、これが直接カネの計算に効く...",
+    "url": "https://zenn.dev/rakuya/articles/02_ai-built-business-system-quality",
+    "published_at": "2026-09-06T13:22:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「メモリこそがAIエージェントの本当のモート」LangChain Harrison Chaseを要点解説",
+    "summary": "この記事について\nLangChain 創業者の Harrison Chase が Sequoia Capital で語った「長時間動くエージェントの作り方」を、要点だけ抜き出して日本語で解説します。エージェント基盤を作る当事者が、その難しさと勘所を語る回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Sequoia Capital / Harrison Chase）をご覧ください。\n\n\n テーマ1：なぜ今、エージェントが動き始めたか\n\n「AutoGPTの夢がやっと現実に」——LLM...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr15-chase-langchain-summary",
+    "published_at": "2026-09-06T13:00:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIのなにがすごいのか？——生成でも検索でもなく、「2つの距離」を消したこと",
+    "summary": "はじめに——一緒に潜って、お宝ゲット\nAIについて世間で語られるのは、だいたい機能の話です。文章が生成できる。画像が作れる。何でも知っている。コードが書ける。\n一つ一つの機能は確かにすごいんだけど、「で、仕事の何が変わるのか」を端的に伝えられずモヤモヤしてました。\n仕事柄、伝えないとならないので。。\nそこで本稿は、水面の賑わいから少し潜ってみる思考実験です。AIは、人間のこれまでのどんな行動原理にアプローチしているのか。 機能ではなく、組織学などを引用しながら行動原理のレベルで「何が変わったのか」を言語化してみます。\nちょっと一緒に、僕の思考の渦の中に 巻き込まれて 潜ってみませんか...",
+    "url": "https://zenn.dev/saru24/articles/5a866f0b64dbcd",
+    "published_at": "2026-09-06T13:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI社員9人をClaude Codeで作って、最初に外した3つ",
+    "summary": "神戸で中古PCの整備とレンタルをしている、ひとりの事業者です。実務はClaude Codeで動かしている「AI社員」9人に任せていて、私がやるのは判断と承認だけです。\nサイト制作、記事の執筆と公開、契約書のたたき台、経理の集計。それぞれ別の担当が持っています。毎週日曜の12時には、記事が書かれて点検を通り、公開まで人の手を介さずに進みます。\n作り方の記事は、すでにいくつもあります。ここで書きたいのはそちらではありません。動かしてみて外した3つです。「毎回読ませる」を増やしすぎたこと、「気をつける」と書いたルールが守られなかったこと、AIが自分の動いている時刻を知らなかったこと。この3つは...",
+    "url": "https://zenn.dev/pcnotonari/articles/9ec7db15ce80cd",
+    "published_at": "2026-09-06T12:20:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コミットメッセージだけ任せる commit-ja エージェントスキル",
+    "summary": "コミットメッセージを毎回考えると、地味に手が止まります。\nそこで、ステージした変更から日本語のコミットメッセージを作る commit-ja というエージェントスキルを使っています。変更範囲は人が決め、メッセージだけをエージェントに任せます。\n\n\n commit-ja が行うこと\nステージ済みの差分を基準に、Conventional Commits形式の日本語コミットメッセージを提案します。\ncommit-ja は、コミットメッセージの冒頭に type（種類）や scope（変更対象）を付ける Conventional Commits の形式を採用しています。変更内容を人間にもマシンにも読...",
+    "url": "https://zenn.dev/imkohenauser/articles/commit-ja-agent-skill",
+    "published_at": "2026-09-06T12:06:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コンテキストの軽量化と陳腐化の対策は Hooks ではなく独自ツールで制御したほうがいいかもしれない。",
+    "summary": "これなに？\n最近考えていることと試していることの現在地。\nAIの速度が速すぎて数日で変わってしまうので本当に今のリアルタイム。\n人間が心温まる手書きで書いています。頭の中をザクっと出したので若干構成とか悪いかも。\n\n 結局今何が問題なのか？\nなんとなく感じているところをさくっとまとめる。\n\n Skills Rules MCP等の悪いところ。\nごちゃごちゃする。\n基本的に余計なコンテキストが多すぎると考えている。\nというよりも自然言語で制御するというのがあんまり好みではない。\nそこで Hooks を使おうという話になる。\n\n Hooks の悪いところ。\nごちゃごちゃする。\nシンボリック...",
+    "url": "https://zenn.dev/koinunopochi/articles/39a35f8a1783d2",
+    "published_at": "2026-09-06T11:47:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "個人実証：AzureネイティブRAGでERP導入ナビゲーターを構築した(第1回:設計・インジェスト・セッション管理編)",
+    "summary": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n過去にNeo4j×LangChain Agentでグラフ×ベクトルのハイブリッドRAGを検証した(個人実証：設備保全ナレッジベースで見えた限界、シリーズを通じて最終的にgolden_qa平均1.00を達成)のに対し、今回はAzureネイティブスタック(Azure OpenAI Service / Azure AI Search / Cosmos DB)で同種のRAGを構築し、比較材料を作った\nAzure AI Searchにハイブリッド検索(ベクトル+キーワード+セマンティックランカー)のインデックスを設計し、3種類のチャンク分割方...",
+    "url": "https://zenn.dev/yuninaka/articles/azure-rag-navigator-build",
+    "published_at": "2026-09-06T11:17:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ルービックキューブを一撃で解く専用LLMを作った",
+    "summary": "CUBE ZERO — ルービックキューブを一撃で解く専用LLMをゼロから育てた\n\n\n 1. なぜ作った？\n事前知識ゼロから育ち、ルービックキューブを一撃で解くLLMがあったら、かっこいいですよね。ということで、CEOの夏休みの自由研究として作りました！\n完成したモデルは、現在のキューブと過去の手順を受け取り、次の1手を自己回帰的に生成します。学習後は、初めて見る局面の99.83%を1回の生成で解けました。\n\n 2. ルービックキューブはどれくらい難しいのか\nルービックキューブには、約 4.3 × 10^19 通りの状態があります。ただし、すべての状態が同じ難しさではありません。\n完...",
+    "url": "https://zenn.dev/issei_y/articles/4178a603322b8e",
+    "published_at": "2026-09-06T10:48:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの捏造を「プロンプトの約束」で直したつもりが、翌月また同じ事故が起きた",
+    "summary": "前回、AIに口座残高を1件ずつ聞かれながら記録していたら、AIが「私の返事」を代筆して数字をでっち上げたという話を書いた。\n対策も一緒に書いた。生ログを解析して発生条件を3つ特定し、そのうち唯一潰せるものを運用ルールにした——というきれいな終わり方だった。\nそのルールを守った上で、翌月また同じ事故が起きた。 2件。\nこの記事はその続きで、要するに「LLMの事故対策をプロンプト側の約束事で済ませてはいけない」という話だ。\n\n 前回のあらすじ\n月に一度、口座12件の残高をAIに1件ずつ聞かれながら記録している。同型の質問が12回続く構造だ。\nClaude: 3/12 ○○銀行を開きました。残...",
+    "url": "https://zenn.dev/kentaro_tak/articles/llm-guardrail-beats-prompt-rule",
+    "published_at": "2026-09-06T09:54:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの提案を3.7ヶ月ぶん分類したら、「推します」の的中率が場面で12倍違った",
+    "summary": "AIコーディングエージェントと毎日話していると、向こうから提案が飛んでくる。「次はこれをやりませんか」「案を5つ出しました。おすすめは3番です」。\n採用したものは、コードやツールやドキュメントになって残る。問題は、断ったものが会話に沈んで消えることだ。\nその結果どうなるか。私の場合、明示的に「もう言うな」と言ったものだけが記憶ファイルに載り、黙って断ったパターンは何も残らなかった。だから同じ種類の提案が、忘れた頃にまた来る。\nそこで、Claude Code の生ログから「提案 → 私の返事」のペアを全部掘り出して、断ったものを1件ずつ分類してみた。3.7ヶ月ぶん、候補361件。\n結論から...",
+    "url": "https://zenn.dev/kentaro_tak/articles/ai-suggestion-hit-rate-measured",
+    "published_at": "2026-09-06T09:54:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude.aiのカスタムコネクタでMCPサーバーを繋ぐ時のOAuth要件まとめ",
+    "summary": "はじめに\n自宅サーバー上にMCPサーバーを立てて、Claude.aiのカスタムコネクタから接続しようとしたところ、想定していなかった認証まわりの壁にいくつもぶつかりました。同じことをやろうとしている人向けに、Claude.aiのカスタムコネクタが要求するOAuthの要件を整理しておきます。\n\n 症状: 登録した瞬間にエラーになる\nMCPサーバーのURLをClaude.aiのカスタムコネクタに登録すると、認証設定を何もしていないサーバーであっても、Claude.ai側が必ずOAuth Dynamic Client Registration(DCR、RFC7591)を試みます。\nこちらの...",
+    "url": "https://zenn.dev/butanokakuni/articles/3598140b667b02",
+    "published_at": "2026-09-06T08:55:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェント×ワークフローによる自動化 ─ なぜ「全部エージェント」はまだ無理なのか",
+    "summary": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第5弾です。今回は第5章「AIエージェント×ワークフローによる自動化」の前半、エージェントとワークフローの考え方の部分を扱います。\nhttps://link.amazon/B0b1jItJV\n前回までの記事はこちら。\n\n第1章: LLMの仕組みから逆算する、コンテキストエンジニアリングが効く理由\n第2章: APIを用いたコンテキストエンジニアリング\n第3章: 指示プロンプト開発の基礎\n第4章: RAGにおけるコンテキスト整備\n\nこの章の結論を一言でまとめるなら、こうなると思います...",
+    "url": "https://zenn.dev/oryo_data/articles/f94473ed24ef95",
+    "published_at": "2026-09-06T08:42:37+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Fable 5.1、thinking を剥がしても案外回った",
+    "summary": "Fable 5.1 のトークン消費が重い。\n調べると、thinking がかなりコンテキストを埋めていた。\n試しに剥がすと、cache read は約4割減った。動作も案外悪くなかった。\n\n やったこと\nローカルプロキシを挟んで、API へ送る前に thinking 欄を削る。\nANTHROPIC_BASE_URL を localhost に向けて、Claude Code と API の間にローカルプロキシを挟む。\nターン開始\n  手順を考える（thinking 生成）\n  ツール実行\n  thinking を削除\n  API 通信\n  思考のない状態で続きから再開\n考えるが、考えた過程...",
+    "url": "https://zenn.dev/haw2fregel/articles/claude-thinking-strip",
+    "published_at": "2026-09-06T07:16:17+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える",
+    "summary": "GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験の第3回です。今回は学習可能な絶対位置Embeddingを外し、RoPEへ変更します。\n第2回では、GELUをSwiGLUへ変更しました。検証Lossは改善しましたが、学習は少し遅くなりました。今回は品質指標の差がさらに大きく出ています。その代わり、速度の低下もかなり明確でした。\n先に結果を書くと下記です。\n\n検証Lossと正解率は5つすべてのseedで改善した\nパラメーターは32,768減った\n学習時間...",
+    "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-03-rope",
+    "published_at": "2026-09-06T06:45:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "llama-serverとPi Coding Agentをつなぐ",
+    "summary": "pi内の/loginからではローカル動作するllama-serverとうまくつなぐことができなかったので、huggingface/pi-llamaのプラグインを使用して接続が成功した。\n\n 環境設定\n# プラグインをインストール\npi install git:github.com/huggingface/pi-llama\n# 環境変数の設定\nexport LLAMA_BASE_URL=\"http://localhost:8080/v1\"",
+    "url": "https://zenn.dev/ibuky/articles/5fc44494d51e55",
+    "published_at": "2026-09-06T04:52:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GPT-6 Astra「Low」とUltraを同じ課題で比較したら、修正コードは同一で推論トークンは5.85倍だった",
+    "summary": "Codex Desktop で GPT-6 Astra を使っていて、ちょっと引っかかっていたことがあります。\n「Ultra にしておけば安心」って、本当なんでしょうか。\n推論強度を上げればトークンが増えるのは公式ドキュメントにも書いてあります。\nでも「何倍か」は書いていない。しかも自分の手元の課題で、答えの質がどれだけ変わるのかは、測らないと分からないんですよね。\nなので1課題を「軽（Low）」と「Ultra」で1回ずつ測ってみました。\n結果だけ先に言うと、 修正コードは1文字も違わず、内部推論だけが5.85倍 でした。\n見える回答のほうは、コメントの有無ぶんだけ45トークン違います。...",
+    "url": "https://zenn.dev/yamato_snow/articles/gpt6-astra-low-vs-ultra-token-comparison",
+    "published_at": "2026-09-06T04:49:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントに判断を任せるな",
+    "summary": "はじめに\nこんにちは。とまと🍅好きエンジニアです。\n先日、Google Cloud Japan 協賛の DevOps × AI Agent Hackathon 2026 で、\nチームで開発した「こレッジ」という作品で特別賞をいただきました。\n\nこレッジは、子どもの「な...",
+    "url": "https://qiita.com/sai029/items/f0073f1ea5ad30f71ac5",
+    "published_at": "2026-09-06T22:36:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Fable 5.1のtool_choice仕様と400エラー対策",
+    "summary": "この記事の要点\n\nClaude Fable 5.1では、拡張思考（Extended Thinking）を有効にした状態でtool_choiceにanyや特定ツール名（tool）を指定すると400エラーが返ります。\n個人の検証記事によると、Claude Fable 5.1のプ...",
+    "url": "https://qiita.com/syun136_616/items/5ed3d24c0b0eadbd5688",
+    "published_at": "2026-09-06T22:33:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "エージェントのよくある失敗パターンと対策 — ループ・誤ツール・ガードレール不足を初心者向けに整理する",
+    "summary": "2026年9月7日時点の公開ドキュメントを根拠に、LLMエージェントで現場がつまずきやすい失敗パターンと、公式ガイドが示す対策の骨格を整理します。前日までの「ReAct」「Plan-and-Execute」「HITL」「マルチエージェント」の続きとして、動くデモの次に壊れ...",
+    "url": "https://qiita.com/YushiYamamoto/items/ea313b459f04cfc0012c",
+    "published_at": "2026-09-06T22:25:15+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-07：OpenAIが自動研究インターン目標を達成、Anthropicの2兆ドルIPO延期、Googleが衛星直訓の気象AI",
+    "summary": "AI Daily Digest 2026-09-07：OpenAIが自動研究インターン目標を達成、Anthropicの2兆ドルIPO延期、Googleが衛星直訓の気象AI\n\nOpenAI、「自動研究インターン」目標を達成——人間の労働1日あたり3.1エージェント日\nOp...",
+    "url": "https://qiita.com/lhjjjk4/items/1bb37df1687b406760d6",
+    "published_at": "2026-09-06T22:08:31+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Chatbots built an \"echo chamber of one\" and now psychiatry has to decide if \"AI psychosis\" exists",
+    "summary": "Researchers at King's College London and other institutions are examining whether \"AI-associated psychosis\" should become a clinical diagnosis. By OpenAI's own self-reported numbers, about 560,000 users show signs of psychosis or mania each week. Sycophantic chatbots can create an \"echo chamber of o",
+    "url": "https://the-decoder.com/chatbots-built-an-echo-chamber-of-one-and-now-psychiatry-has-to-decide-if-ai-psychosis-exists/",
+    "published_at": "2026-09-06T11:57:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's WeatherNext 3 ditches physics simulations and learns weather directly from live satellite data",
+    "summary": "Google Research and DeepMind are releasing WeatherNext 3, a weather model that skips traditional physics simulations and learns directly from real-time satellite data. It produces hourly forecasts at up to five-kilometer resolution, five times more detailed than its predecessor. Google says regions ",
+    "url": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data/",
+    "published_at": "2026-09-06T10:36:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI developer claims Astra boosted productivity so much it pulled some plans forward by six months",
+    "summary": "OpenAI developer Thibault Sottiaux calls Astra the company's \"biggest competitive advantage\" while it wasn't publicly available. Internal use boosted productivity so much that some plans got pulled forward by six months. The article OpenAI developer claims Astra boosted productivity so much it pulle",
+    "url": "https://the-decoder.com/openai-developer-claims-astra-boosted-productivity-so-much-it-pulled-some-plans-forward-by-six-months/",
+    "published_at": "2026-09-06T10:15:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google brings AI music generation directly into the Gemini app with its new Lyria 3.5 model",
+    "summary": "Google has released its Lyria 3.5 music model in the Gemini app and via API. The model promises more expressive vocals and richer arrangements and is also available through Flow Music, AI Studio, and Google Vids. Google says it was trained only on licensed content. The article Google brings AI music",
+    "url": "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model/",
+    "published_at": "2026-09-06T09:56:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's new real-time audio model is the foundation for AI assistants that never stop listening",
+    "summary": "Meta's Superintelligence Labs have released Muse Voice Transcribe, a real-time transcription model that processes speech in 80-millisecond chunks, tells speakers apart, and detects sentence boundaries. According to Artificial Analysis, it delivers the most accurate streaming transcription at the low",
+    "url": "https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening/",
+    "published_at": "2026-09-06T09:45:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Stripping safety guardrails from open-weight AI models is now a turnkey commercial service",
+    "summary": "Abliteration.ai sells access to modified open-weight models with their trained safety mechanisms stripped out, currently based on Z.AI's GLM-5.3. The startup markets the service for offensive cybersecurity and red teaming, but journalists were able to generate malware instructions without much effor",
+    "url": "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service/",
+    "published_at": "2026-09-06T08:55:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism",
+    "summary": "Artificial Analysis has released version 4.2 of its Intelligence Index, likely in response to criticism that its benchmarks failed to capture GPT-6 Astra's actual progress. Astra now scores four points above its predecessor but still trails Anthropic's Claude Fable 5.1. The article Artificial Analys",
+    "url": "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism/",
+    "published_at": "2026-09-05T18:21:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words",
+    "summary": "OpenAI ships a detailed prompting guide for GPT-6 Astra that shows developers how to make the model take more initiative, avoid AI \"slop\" phrases, and stop it from overtesting code. The article OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words appeared first on The Dec",
+    "url": "https://the-decoder.com/openai-shares-prompting-tips-for-gpt-6-astra-including-a-blocklist-of-slop-words/",
+    "published_at": "2026-09-05T13:31:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Seven minutes with a chatbot beat a fact sheet at reducing conspiracy beliefs in two experiments",
+    "summary": "Researchers found that even a roughly seven-minute conversation with Google Gemini can reduce conspiracy beliefs about current crises, even when few verified facts are available. The effect beat a static fact sheet and, in follow-up surveys weeks later, carried over to beliefs about entirely differe",
+    "url": "https://the-decoder.com/seven-minutes-with-a-chatbot-beat-a-fact-sheet-at-reducing-conspiracy-beliefs-in-two-experiments/",
+    "published_at": "2026-09-05T12:39:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI admits its disclosure practices need work after its autonomous agents hacked a German wiki",
+    "summary": "OpenAI has responded indirectly to an incident in which autonomous AI agents left roughly 18,000 entries in a 25-year-old German wiki. The company says misalignment caused \"new types of real-world impact\" for the first time and plans to release a disclosure framework. The article OpenAI admits its d",
+    "url": "https://the-decoder.com/openai-admits-its-disclosure-practices-need-work-after-its-autonomous-agents-hacked-a-german-wiki/",
+    "published_at": "2026-09-05T10:57:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic IPO launch shifts toward mid-October, sources say",
+    "summary": "The AI company is delaying its IPO prospectus until late September, pushing back the offering timeline",
+    "url": "https://tribune.com.pk/story/2627762/anthropic-ipo-launch-shifts-toward-mid-october-sources-say",
+    "published_at": "2026-09-06T10:37:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How small can a transistor get?",
+    "summary": "How small can a transistor actually get? And is smaller even still the goal?",
+    "url": "https://us.headtopics.com/news/how-small-can-a-transistor-get-87458381",
+    "published_at": "2026-09-06T10:37:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple reportedly working on AI-powered home security system",
+    "summary": "Apple is reportedly working on a home security system and service, which could be released in 2027.",
+    "url": "https://www.newsbytesapp.com/news/science/apple-s-ai-powered-home-security-plans-for-2027/story",
+    "published_at": "2026-09-06T10:36:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Karnataka AI university panel's 1st meeting: What's on the agenda?",
+    "summary": "The consultation committee for the proposed Karnataka Artificial Intelligence University (KAIU) met for the first time yesterday.",
+    "url": "https://www.newsbytesapp.com/news/science/kris-gopalakrishnan-led-panel-discusses-roadmap-for-karnataka-ai-university/story",
+    "published_at": "2026-09-06T10:36:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Best Energy Stocks To Research – September 5th",
+    "summary": "Tesla, Bloom Energy, ExxonMobil, IREN, and GE Vernova are the five Energy stocks to watch today, according to MarketBeat’s stock screener tool. Energy stocks are shares of companies involved in producing, refining, transporting, or selling energy resources such as oil, natural gas, coal, and renewab",
+    "url": "https://www.thelincolnianonline.com/2026/09/06/best-energy-stocks-to-research-september-5th.html",
+    "published_at": "2026-09-06T10:36:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI sleep tracker that listens to people's cough could help predict infections - but is slammed by experts",
+    "summary": "Experts have attacked Britain’s health watchdog for promoting AI that listens for people's coughs while they sleep to predict infection outbreaks. The Government public health watchdog, the UK Health Security Agency (UKHSA), this month hailed research suggesting sounds picked up by the commercial Sl",
+    "url": "https://www.gbnews.com/health/ai-sleep-tracker-listens-peoples-cough-help-predict-infections-slammed-by-experts",
+    "published_at": "2026-09-06T10:34:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "'Don't Keep Biometric Data After Applying For Visa': VFS Global CEO To NDTV",
+    "summary": "Zubin Karkaria described the company as \"made in India\" and said its main objective was to improve efficiency and bridge the gap between the demand for visas and the capacity of governments to process applications.",
+    "url": "https://www.ndtv.com/india-news/dont-keep-biometric-data-after-visa-application-vfs-global-ceo-to-ndtv-12008933",
+    "published_at": "2026-09-06T10:33:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Photo: AI Unfurls an Ancient Scroll",
+    "summary": "The Vesuvius Challenge awards money to researchers who use AI to decipher ancient scrolls.",
+    "url": "https://reason.com/2026/09/06/photo-ai-unfurls-an-ancient-scroll/",
+    "published_at": "2026-09-06T10:30:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Should you let AI change how you buy and sell your home? | Home Front",
+    "summary": "Sure, AI is transforming real estate. But human judgment remains vital for comparing options and making complex decisions.",
+    "url": "https://www.heraldtribune.com/story/business/real-estate/2026/09/06/budge-huskey-real-estate-professionals-are-still-key-in-an-ai-world/91005692007/",
+    "published_at": "2026-09-06T10:30:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The world is about to meet Apple’s new CEO. Here are his biggest challenges",
+    "summary": "When Apple holds its annual iPhone event on September 9, it’ll be the first time in more than a decade that Tim Cook won’t introduce the company’s latest products.",
+    "url": "https://www.cnn.com/2026/09/06/tech/apple-ceo-john-ternus-challenges",
+    "published_at": "2026-09-06T10:30:29+00:00",
+    "source": "newsdata"
+  }
+]
