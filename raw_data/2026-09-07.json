@@ -1,0 +1,303 @@
+[
+  {
+    "title": "AI時代のSIerに生まれる5つの新職種と、SIerが消えない1つの理由",
+    "summary": "0. はじめに\n2040年の日本のIT業界に、こんな求人が出ていると想像してほしい。\n\n会社規模拡大のため【AI管理責任者】募集しています。数名程度。\n\n\n【オントロジスト】 / 【インテントエンジニア】 としてお客様と共に新しい業務を作っていきませんか。ユーザー企業出身の方大歓迎。詳細は\"対象詳細\"をご確認ください。\n\n\n部署新設にあたり【開発オーケストレーター】としてシステム開発推進するポジションを募集しています。モダナイ案件はゼロ、新規開発案件です。Webアプリケーション開発案件が多いですが、可能であればインフラまで広くお任せしたいです。利用AIツールの選定からお任せします。\n...",
+    "url": "https://zenn.dev/tabetaaaaaaa/articles/0d402c8d1b91a6",
+    "published_at": "2026-09-07T13:55:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Codex が自律的にモデルと effort を切り替えられるようにした",
+    "summary": "!\n今回実装したのは Codex 向けで、Claude Code 向けには実装していません\n\n\n 結論から\nユーザーが場面ごとにモデルを選び直したり「続けて」と入力することはせずに、Codex のメインエージェントが、これから行う作業に応じてモデルと effort を自律的に判断・切り替えて、そのまま同じタスクを続行するようにしたかった。\nこれを行うローカル中継ツールとして model-router というものを作り、Codex の CLI とデスクトップアプリで使えるようにした。\n\n 作ろうと思った理由\n最近発表された GPT-6 Astra をいくつかのタスクで使ってみたところ、感触...",
+    "url": "https://zenn.dev/toybox19/articles/13c0ca2afaa8e0",
+    "published_at": "2026-09-07T13:27:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントに自分の業務を渡して、何を渡さなかったか",
+    "summary": "はじめに\nチャットは即応のための道具のはずですが、私は往復が1日1回で終わってしまうことがありました。\nAlt + Tab でウィンドウを切り替えた拍子に既読になり、未読が消えます。読んでいないのに気づけません。Gmail、Google Chat、Slack で通知の仕組みが違うことを、忘れている瞬間もありました。自分の作業に没頭していて、深夜になってようやく気づく日も何度かありました。\nそれで、見張る仕事を AI エージェントに任せました。3週間ほど動かしています。\n\n tl;dr\n\n見張る仕事を3本、AI エージェントに任せています。任せたのは検知と集約と記録までで、返信や条件の...",
+    "url": "https://zenn.dev/kurow/articles/agent-delegation",
+    "published_at": "2026-09-07T13:22:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CodexのPetsはいらないと思っていたけれど、開発中の心の平穏に役立っている",
+    "summary": "Codexのペットを使用していますか？\n私はずっと、「開発ツールにペットって、いらないのでは？」と思っていました。コードを書いてもらって、変更を確認して、テストを回す。そのために使っているツールなので、画面にキャラクターを表示する機能には、あまり関心がありませんでした。\nところが、最近になって使い始めました。\n理由は単純で、好きなイラストを画面の最前面に出せるのが、思っていた以上によかった からです。開発中に好きな絵が目に入るだけで、少し気持ちが和らぐ。今では、開発中の心の平穏に役立っています。\n\n 好きなイラストが、作業中も画面にいる\nPetsは、作業中の画面にアニメーションするペット...",
+    "url": "https://zenn.dev/t_tokunaga/articles/2026-09-07-codex-pets",
+    "published_at": "2026-09-07T13:07:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに「いつかやりたい」を貯めさせても動けなかった。表を地図に変えたら、次の行き先が決まった",
+    "summary": "家の面倒ごとを自作ツールで潰す作業を1年ほど続けていて、その大半をAIと一緒にやっている。会話の中で決めたこと、踏んだ罠、本人の好みは、Claude Code の memory に貯まっていく。\nそこに「いつかやりたい」も混ざる。「今度この趣味を再開したい」「これは秋になったら声をかけて」。会話の流れで出てきたものを、その場で覚えさせていた。\n半年ぶんくらい貯まったところで気づいた。私はそれを一度も読み返していない。\n読み返していないのではなく、読めない。memoryはAI側のファイルで、開くにはPCの前に座ってエディタでディレクトリを漁ることになる。思い出したいのはたいてい外出先で、手...",
+    "url": "https://zenn.dev/kentaro_tak/articles/ai-wishlist-table-to-map",
+    "published_at": "2026-09-07T12:53:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIコーディングエージェントにIssueを読ませるだけで秘密が漏れる。GitHub Actionsの失敗例",
+    "summary": "どうもー！たまです。\n最近、AIコーディングエージェントの話を見ていると、どのモデルが賢いかより先に、何を読ませて、何を実行させているのかを考えた方がいいなと思うことが増えました。\nGitHub IssueやPull Requestの本文みたいな普通の文章が、そのまま攻撃の入口になる失敗例が続いているんです。\n\n Issue本文はただのテキストではなかった\nGitHubのgh-awで報告されていたケースでは、pull_request_targetを使うワークフローの中で、AIエージェントに--env-allで環境変数をまとめて渡していました。\nそこにはCOPILOT_GITHUB_TOK...",
+    "url": "https://zenn.dev/tama_program/articles/4c8c7ada73aa41",
+    "published_at": "2026-09-07T12:28:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Astra時代のコードファースト3Dモデリング",
+    "summary": "GPT-6 Astraがリリースされ、XはAstraが作ったハイクオリティ3Dシーンの動画であふれています。それらの多くは、MCP経由でAstraにBlenderなどの3Dモデリングソフトを使わせ実現されたものです。アプリの中で直接コードによって3Dシーンを作らせればより手軽ですが、やはりBlenderなどを使った場合よりクオリティが落ちてしまいがちです。\nそこで、週末の2日間、Astraにコードだけで3Dモデリングさせる「コードファースト3Dモデリング」の可能性を探ってみました。その結果、ある程度の成果が得られたので、知見を共有します。\n\n\nGPT-6 AstraがSwiftのコードだ...",
+    "url": "https://zenn.dev/koher/articles/code-first-3d-modeling",
+    "published_at": "2026-09-07T12:10:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Fable 5.1のtool_choice仕様と400エラー対策",
+    "summary": "Claude Fable 5.1のtool_choice仕様と400エラー対策\nこの記事の要点\n\nClaude Fable 5.1では、拡張思考（Extended Thinking）を有効にした状態でtool_choiceにanyや特定ツール名（tool）を指定すると400エラーが返ります。\n個人の検証記事によると、Claude Fable 5.1のプロンプトキャッシュ読み取りコストは、従来モデルの目安である入力トークンの10分の1から、4分の1程度に変わったと報告されています（詳細は末尾の出典を参照）。\n400エラーを避けるには、拡張思考を使うリクエストではtool_choiceを...",
+    "url": "https://zenn.dev/sunsun_eng/articles/claude-fable-5-1-tool-choice-error",
+    "published_at": "2026-09-07T11:52:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "アイアンマンのジャービスを作ろうとしたら、賢さの問題じゃなかった",
+    "summary": "アイアンマンのジャービスをご存知だろうか。\nトニー・スタークの屋敷とスーツに住んでいる、声だけのAIだ。計算をやり、状況を報告し、スーツの製造を回し、ときどき皮肉を言う。\n先に断っておくと、この記事は夏休みの自由研究くらいの温度感で読んでほしい。厳密な検証でも実装ガイドでもない。映画を1本見直して、手元の環境と突き合わせて、足りないものを数えただけの話だ。\nあと、ここで見ているのは1作目（2008年）のジャービスだけにしている。続編まで広げると論点が散るので。\n\n あの頃、あれは完全に絵空事だった\n撮影は2007年3月から6月、公開は2008年5月。\nこの年号が効いてくる。Transfo...",
+    "url": "https://zenn.dev/motimotinotch/articles/548af60e4059c4",
+    "published_at": "2026-09-07T11:42:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "限られた時間で丁寧に作るため、最初に諦めていること",
+    "summary": "「もう少しきれいにできる」が、いちばん困ります。\n責務は分けた。名前も考えた。必要な振る舞いを確認するテストもある。それでも、もう一段整理できそうな気がする。共通化できそうな処理も見つかります。\nそこへAIエージェントがいると、「この部分も整理して」と頼めるようになります。自分で書く手間を考えて見送っていた変更にも、手が届きそうです。\n助かります。かなり助かります。その一方で、頼めることが増えるほど、どこで終えるかは難しくなりました。\n丁寧に作りたい気持ちには、終業時刻がありません。\n作る側にはあります。気になるところがなくなるまで続ける、という進め方は私には少し難しいです。気になるとこ...",
+    "url": "https://zenn.dev/bitou_engineer/articles/606094da119cc5",
+    "published_at": "2026-09-07T11:30:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "# くらべたら爆速 - Appleの新「Core AI」を実機ベンチ",
+    "summary": "Appleの新フレームワークでオンデバイスLLMをMLXと比較した\n実際に比較してみるのって大切ですね。\nどうせ遅いと思ってた。\n使いやすいようにぬるい感じになってるんでしょって。\nゴリゴリ最適化されてるMLXとかの方が速いんでしょって。\n結果で度肝を抜かれた。\n\nクソ速えやん!!\n🐥\nWWDC 2026 で発表された Core AI（Core ML の後継）で LLM を iPhone 17 Pro 実機で動かし、MLX・CoreML と同一モデル・同一ハーネスで比較しました。\niPhone 17 Pro・Qwen3-0.6B・short-chat・warm デコード tok/s（...",
+    "url": "https://zenn.dev/mlboydaisuke/articles/f19d0e81ffbe5ce5672e",
+    "published_at": "2026-09-07T10:25:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code は計画とレビューに残し、実装は安いモデルへ渡す",
+    "summary": "「Claude Code のトークンが足りない」の答えは、上位プランでなく隣の席で持て余していた Cursor の契約だった。\nある日、同僚が Claude Code のトークンを使い切って手が止まったと言った。トークンは AI に読ませる文章量の単位だ。私はそのころ、会社でメルマガ制作を自動化する仕組みを作っていて、企画・文章・画像・HTML の各工程を AI に担わせ、作業時間の大半は AI への指示を書く時間になっていた。同じ枠を、私も毎日削っていた。その一方で、会社で契約している Cursor は、あまり使えていなかった。\n遊んでいる契約があるなら、そこに実装を回せば、高い方の枠...",
+    "url": "https://zenn.dev/activecore/articles/claude-plans-cursor-builds",
+    "published_at": "2026-09-07T10:00:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RTX 5090でllm-jp-4-33b-thinkingをEXL3量子化・評価した2日間の振り返り",
+    "summary": "LLM-jpから公開されてる llm-jp/llm-jp-4-33b-thinking を、手元のRTX 5090搭載PCでEXL3へ量子化しました。\n2.5〜8.0bpwの8種類作成し、その後QBenchによるBF16への忠実度評価とllm-jp-judgeを使ったMT-Bench JA/ENを実施しました。\n今回行ったことは次の通りです。\n\nBF16の33B thinking modelをEXL3へ量子化\n2.5 / 3.0 / 3.5 / 4.0 / 4.5 / 5.0 / 6.0 / 8.0bpwの8 variantを作成\nExLlamaV3とTabbyAPIで生成、thinki...",
+    "url": "https://zenn.dev/shunmoridev/articles/46394a41674c0c",
+    "published_at": "2026-09-07T07:39:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Langfuse v3 から v4 への移行で、既存のトレースと親子関係はどう変わるのか",
+    "summary": "はじめに\nLangfuse の v3 は、セキュリティ修正の提供が 2027 年 1 月末で終了します。セルフホストで運用している環境は、それまでに v4 へアップグレードすることになります。\n検証環境でアップグレードを実施し、既存の trace がどのように変換されたかを確認しました。その過程で見つかった instrumentation の問題を修正し、新規 trace の親子関係も検証しました。\nアップグレードの手順の全体は移行ガイドに、データモデルを変更した理由は公式の技術解説に記載があります。この記事で手順に触れるのは、書き込みモードと過去データの移行の切り替え順など、確認し...",
+    "url": "https://zenn.dev/acntechjp/articles/0408954d7abd6a",
+    "published_at": "2026-09-07T07:09:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【SALT2 エンジニアリング勉強会】ワークフローからAI Agentへ：仕事を任せるための境界と検証の設計",
+    "summary": "2026年9月2日にSALT2で開催された社内勉強会「ワークフロー型のAI活用から、真のエージェント構築へ」で、鬼澤さんがAI Agentの仕組みと設計の前提を解説しました。本稿では、ワークフローとの違いを起点に、仕事を任せられるAgentを構築するための設計を整理します。\n\n LLMを使うだけではAgentにならない\nLLMを組み込んだシステムが、すべてAgentになるわけではありません。区別する軸は、実行結果を受け取ったあと、次に何をするかを誰が決めるのかです。\nChatでは、回答を読んだ人間が次の質問を決めます。Workflowでは、検索、要約、構成、執筆、校正といった処理順序をコ...",
+    "url": "https://zenn.dev/salt2/articles/salt2-ai-agent-8a1b5781",
+    "published_at": "2026-09-07T07:06:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに却下済みの設計を3回蒸し返されたので、「前例」を配るMCPサーバーを作った",
+    "summary": "AIは過去の議論を覚えていない\nAIエージェントで開発していると、必ずこれが起きます。3週間前に検討して却下した設計を、新しいセッションのエージェントが「良い案があります」と提案してくる。優秀なエージェントほど、良かれと思って蒸し返してくる。\n対策として、CLAUDE.mdに「保留中・提案しないことリスト」を手作業で育てている人は多いはずです。私も9つのリポジトリでそれをやっていました。しかしこの方式には限界があります。全文が毎セッション注入されるので、記録するほどトークン課金が増え、エージェントが遅くなるのです。実際、あるプロジェクトではCLAUDE.mdの肥大化がエージェント動作...",
+    "url": "https://zenn.dev/pikonori/articles/zenrei-decision-memory-mcp",
+    "published_at": "2026-09-07T06:07:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "2026年9月版：主要LLM 料金・スペック・共通ベンチマーク比較",
+    "summary": "この記事について\n本記事はClaudeに調査を依頼してまとめた内容です。自分用の備忘録として作成しており、書いてある内容は一次情報を都度参照するようにはしていますが、鵜呑みにせず参考程度にご覧ください。\nClaude・GPT・Gemini・Grok・DeepSeekなど主要LLMについて、2026年9月時点の料金・コンテキストサイズ・性能を横並びで整理します。\n性能比較で厄介なのが、各社が公表するSWE-bench VerifiedやGPQA Diamondといった個別ベンチマークは、評価ハーネス（足場ソフト）・測定日・推論強度（reasoning effort）の設定がモデルごとに...",
+    "url": "https://zenn.dev/okikusan/articles/14f30fcd3202e7",
+    "published_at": "2026-09-07T05:40:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【2026年版】生成AIを学ぶための51冊 ― LLM・RAG・AIエージェント・LLMOps・Physical AIまで",
+    "summary": "1. 本記事の目当て\n生成AIを単に使うだけであればWeb上の情報もあり、書籍は不要と思います。本記事の対象読者は\n\n生成AIの組織導入を検討している方\n一歩進んだ・踏み込んだ使い方を模索している方\n生成AI開発・運用のために理論を知る必要がある方\n生成AI開発・運用のために開発方法や運用法を知る必要がある方\n\nなどです。\n!\n\n内容につきまして\n\n生成AI活用全般をご紹介しておりますが、本記事著者青木は最近は動向調査などがメインでAI開発・運用はあまりしておりません\n開発・運用周りは生成AIの動向を知るために最低限押さえておくべきことは押さえておこう、というスタンスです\n開発・運用...",
+    "url": "https://zenn.dev/aokikenichi/articles/0e8c7dd1b66bc0",
+    "published_at": "2026-09-07T02:40:37+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "自然言語仕様をコンパイルする──Compile by Trainingで再利用可能な神経関数を生成する",
+    "summary": "自然言語仕様をコンパイルする──Compile by Trainingで再利用可能な神経関数を生成する\n\n TL;DR\n「メールの件名を見て即時対応か待機かを判定する関数」──こうした反復的テキスト関数は、ルールで書くには曖昧すぎ、毎回大規模LLMを呼ぶには重すぎる。本論文はCompile by Trainingを提案する：自然言語仕様を与えると、コンパイル時に教師モデルが例を合成し、その例でコンパクトな解釈器に小さなアダプタを学習させる。出力は.pawファイルとして保存・版管理・合成可能な神経関数であり、実行時は教師モデルを一切呼ばない。FuzzyBench-Hard（従来の高速コ...",
+    "url": "https://zenn.dev/lixian/articles/compile-by-training-neural-functions",
+    "published_at": "2026-09-07T02:28:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "エージェントのコストとレイテンシを抑える基本 — ターン上限・モデル階層・プロンプトキャッシュ",
+    "summary": "2026年9月8日時点の公開ドキュメントを根拠に、LLMエージェントのコストとレイテンシを抑える基本を初心者向けに整理します。前日までの「失敗パターン」「HITL」「マルチエージェント」の続きとして、課金と待ち時間が膨らむ場所を先に潰す観点です。\nこの記事のゴールは、「モ...",
+    "url": "https://qiita.com/YushiYamamoto/items/a6b0df35f0d9723f90db",
+    "published_at": "2026-09-07T23:10:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-08：OpenAIの「ベンチマーク改ざん」疑惑、Crusoe 300億ドル、DeepSeekが昇騰16万基を発注",
+    "summary": "AI Daily Digest 2026-09-08：OpenAIの「ベンチマーク改ざん」疑惑、Crusoe 300億ドル、DeepSeekが昇騰16万基を発注\n\nOpenAIのGPT-6Astra発表でベンチマークが3度動く——「ベンチマックスシング」議論\nOpenA...",
+    "url": "https://qiita.com/lhjjjk4/items/be44daadede8ba5f9373",
+    "published_at": "2026-09-07T22:08:52+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Select AIが Metadataから SQLを生成する仕組みと AI Ready Dataを整理してみてみた",
+    "summary": "Select AIを使用すると、例えば次のように業務用語でDatabaseへ問い合わせできます。\nSELECT AI RUNSQL\n関東の有効顧客について、確定済み売上金額を顧客別に表示してください;\n\nここで気になるのは、LLMが「有効顧客」や「確定済み売上」を、どの情...",
+    "url": "https://qiita.com/shirok/items/3cb311b037a975739948",
+    "published_at": "2026-09-07T21:37:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "GitHub Copilot は、速いモデルを繰り返せば十分なのか? 7つのモデルを実測して考えたこと",
+    "summary": "背景\n最近、GitHub Copilotで作業をしていて、モデルの回答を待つ時間が少し気になっていました。\n私がよく依頼するのは、要求定義の矛盾調査、変更計画、コード修正とテスト、UIや配布方法の検討です。高性能なモデルを選ぶ理由はありますが、毎回その能力が必要なのかは気...",
+    "url": "https://qiita.com/dahatake/items/c4f466a89d0c5dee65c3",
+    "published_at": "2026-09-07T21:10:10+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic reportedly signs $517 billion in compute deals after Dario Amodei warned rivals about reckless risk",
+    "summary": "Anthropic signed compute contracts worth up to $517 billion in eleven months but still trails OpenAI's $750 billion plan through 2030. In early 2026, CEO Dario Amodei warned against investing too fast. Now Anthropic is racing to catch up, while Sam Altman warns about \"unsustainable silliness\" in the",
+    "url": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk/",
+    "published_at": "2026-09-07T18:12:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra beat Portal start to finish without human help in under 24 hours",
+    "summary": "GPT-6 Astra beat the puzzle game Portal entirely on its own in about 24 hours, with zero human help after the initial goal was set. Developer cozyblaze published the code and docs on GitHub. His takeaway: Astra is \"the worst model we'll ever get.\" The article GPT-6 Astra beat Portal start to finish ",
+    "url": "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours/",
+    "published_at": "2026-09-07T17:39:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback fades",
+    "summary": "ChatGPT has pushed its share of AI chatbot website traffic back up to 55.5 percent, according to Similarweb. Year-over-year, though, its lead shrank sharply from 73.3 percent as Gemini doubled its share and Claude grew nearly fivefold. Mobile apps and desktop clients aren't included. The article Cha",
+    "url": "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/",
+    "published_at": "2026-09-07T16:54:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI-designed drug appears to turn back the body's biological clock in early trial",
+    "summary": "A study in Nature Biotechnology suggests that rentosertib, a drug designed with AI by Insilico Medicine, may reverse markers of biological aging. Six independent aging clocks predicted that treated patients were biologically up to six years younger than the placebo group. The trial covered just 42 p",
+    "url": "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial/",
+    "published_at": "2026-09-07T16:34:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "How AI wiped out an entire industry in Nairobi",
+    "summary": "In Kenya, ChatGPT wiped out an entire business model: writing academic papers for foreign students. The article How AI wiped out an entire industry in Nairobi appeared first on The Decoder .",
+    "url": "https://the-decoder.com/how-ai-wiped-out-an-entire-industry-in-nairobi/",
+    "published_at": "2026-09-07T13:18:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "At UBS, AI skills are now a condition for landing a job",
+    "summary": "Swiss banking giant UBS is making AI skills a required qualification from 2027 for graduates and interns in Global Banking and Markets, with applicants having to show in interviews how they use AI to improve outcomes and efficiency. Santander is already looking for advanced AI users too, while Morga",
+    "url": "https://the-decoder.com/at-ubs-ai-skills-are-now-a-condition-for-landing-a-job/",
+    "published_at": "2026-09-07T13:13:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI reports AI \"research interns\" and warns about its own pace at the same time",
+    "summary": "OpenAI reports that AI agents in its own research already handle 3.1 workdays for every human workday, and it says it has reached its goal of an \"automated research intern.\" But chief scientist Pachocki warns that no lab has a good enough grip on alignment and monitoring to keep scaling at maximum s",
+    "url": "https://the-decoder.com/openai-reports-ai-research-interns-and-warns-about-its-own-pace-at-the-same-time/",
+    "published_at": "2026-09-07T13:05:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New York City bans AI tools from public schools through eighth grade",
+    "summary": "New York City bans AI use in public schools through the end of middle school. The article New York City bans AI tools from public schools through eighth grade appeared first on The Decoder .",
+    "url": "https://the-decoder.com/new-york-city-bans-ai-tools-from-public-schools-through-eighth-grade/",
+    "published_at": "2026-09-07T13:00:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Qwen-Drive 1.0 tells you why it brakes, just don't expect the explanation to match the maneuver",
+    "summary": "Alibaba's research arm has released Qwen-Drive 1.0, an AI model that handles environmental perception, traffic Q&A, and route planning in one system. The researchers show that text-image models don't automatically understand three-dimensional space. Spatial awareness has to be trained on purpose. Th",
+    "url": "https://the-decoder.com/qwen-drive-1-0-tells-you-why-it-brakes-just-dont-expect-the-explanation-to-match-the-maneuver/",
+    "published_at": "2026-09-07T12:15:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chatbots built an \"echo chamber of one\" and now psychiatry has to decide if \"AI psychosis\" exists",
+    "summary": "Researchers at King's College London and other institutions are examining whether \"AI-associated psychosis\" should become a clinical diagnosis. By OpenAI's own self-reported numbers, about 560,000 users show signs of psychosis or mania each week. Sycophantic chatbots can create an \"echo chamber of o",
+    "url": "https://the-decoder.com/chatbots-built-an-echo-chamber-of-one-and-now-psychiatry-has-to-decide-if-ai-psychosis-exists/",
+    "published_at": "2026-09-06T11:57:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Camera-Free MemoMind One Smart Glasses Prioritize Privacy",
+    "summary": "The MemoMind One smart glasses prioritize privacy and functionality by omitting a camera, a feature often found in similar devices. As noted by Huson DIY, these glasses weigh just 42 grams and feature titanium temples, providing both durability and comfort for extended wear. The dual micro-LED displ",
+    "url": "https://www.geeky-gadgets.com/memomind-one-review/",
+    "published_at": "2026-09-07T11:15:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hemodialysis and Peritoneal Dialysis Market: How Technology Is Transforming Treatment",
+    "summary": "The Hemodialysis and Peritoneal Dialysis Market is moving through a major transformation as the global burden of kidney disease continues to increase and healthcare systems [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/09/07/1770806",
+    "published_at": "2026-09-07T11:14:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | Bizgurukul Brings Its Global Freelancing Model in Regional Languages with New Freelancing with AI Course",
+    "summary": "Get latest articles and stories on Business at LatestLY. New Delhi [India], September 7: Bizgurukul, the Delhi-based digital freelance school that has a freelancer network now spans in more than 180 countries, is bringing that same model closer to home. The company announced today that its newest pr",
+    "url": "https://www.latestly.com/agency-news/business-news-bizgurukul-brings-its-global-freelancing-model-in-regional-languages-with-new-freelancing-with-ai-course-7593852.html",
+    "published_at": "2026-09-07T11:14:24+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A2RL Sets New International Benchmark with Europe’s First Five-Car Autonomous Race",
+    "summary": "The Abu Dhabi Autonomous Racing League (A2RL) completed the first-ever multi-car autonomous race in Europe at the Imola Circuit in Italy on 5 September 2026, as part of ACI Racing Weekend. Kinetiz (UAE) won the League’s inaugural international race, across 12 laps of one of the most technically dema",
+    "url": "https://gnnliberia.com/a2rl-sets-new-international-benchmark-with-europes-first-five-car-autonomous-race/",
+    "published_at": "2026-09-07T11:14:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "US market open to Indian space startups, investors watching: Sergio Gor",
+    "summary": "US Ambassador Sergio Gor says American market is open to Indian space startups, as NASA invites ISRO to join the Moon base program.",
+    "url": "https://www.newkerala.com/news/a/us-market-open-indian-space-startups-investors-watching-626.htm",
+    "published_at": "2026-09-07T11:14:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CyberFest to showcase region’s digital ambitions",
+    "summary": "The North East is set to take centre stage in the UK’s cyber security and secure AI conversation as a month-long festival returns with a national and international focus. CyberFest will take place throughout October, bringing together more than 1000 people from business, government and the technolog",
+    "url": "https://bdaily.co.uk/articles/2026/09/07/cyberfest-to-showcase-regions-digital-ambitions",
+    "published_at": "2026-09-07T11:13:15+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "‘Godfather of AI’ warns of catastrophic consequences for humanity",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.thetimes.com/business/technology/article/ai-godfather-catastrophic-end-humanity-legislation-npzvb7hxp",
+    "published_at": "2026-09-07T11:12:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Time calls for extreme caution, warns OpenAI chief scientist, pushes for broader interventions as AI capabilities surge",
+    "summary": "NEW DELHI: Warning that the “time calls for extreme caution,” OpenAI chief scientist Jakub Pachocki believes broader interventions are required for AI capabilities as machine systems begin to exceed human abilities across transformative domains. Pachocki cautioned that society remains unprepared for",
+    "url": "https://english.publictv.in/time-calls-for-extreme-caution-warns-openai-chief-scientist-pushes-for-broader-interventions-as-ai-capabilities-surge/",
+    "published_at": "2026-09-07T11:11:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Huawei Pura X View launches as the world’s first wide-screen phone with a 7,000mAh battery",
+    "summary": "Huawei has finally confirmed the price of the Pura X View, ending the wait since the wide-screen phone was first shown last month. The announcement was made at Huawei’s event today, and pre-orders are set to begin on September 9. The Pura X View comes in three storage options. The 12GB RAM + 256GB m",
+    "url": "https://www.gizmochina.com/2026/09/07/huawei-pura-x-view-launches-as-the-worlds-first-wide-screen-phone-with-a-7000mah-battery/",
+    "published_at": "2026-09-07T11:11:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Oil, AI pick-and-shovels, and the yen - Monday morning thoughts + news highlights",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://vitalknowledge.net/article/2026/09/07/oil-ai-pick-and-shovels-and-the-yen-monday-morning-thoughts-news-highlights",
+    "published_at": "2026-09-07T11:10:44+00:00",
+    "source": "newsdata"
+  }
+]
