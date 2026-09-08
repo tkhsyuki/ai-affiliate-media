@@ -1,0 +1,303 @@
+[
+  {
+    "title": "2026-08-24 今日の技術トレンド",
+    "summary": "!\nAI分野では単一LLMから「自己進化型マルチAIエージェント」や「具身知能」への移行が進む一方、ガートナーの指摘に見られるようLLM単体依存の限界と実装戦略への注視が高まっています。OpenAIは最新モデル「GPT-5.6 Sol」の20%以上値下げを発表したほか、Astral買収を通じてPython開発環境（uv/Ruff等）の主導権確保を進めています。Web開発分野ではReact CompilerとVue Vapor Modeの比較検証などビルド時最適化が話題となっています。\n\n\n 1. AIエージェント＆具身知能へのシフトと「LLM依存」の現実的評価\nWAIC 2026やAI博...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-08-24-tech-daily",
+    "published_at": "2026-09-08T22:09:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "あなたのCLAUDE.mdが認証情報を盗む — 1分51秒で完了した攻撃と、配る側の責任",
+    "summary": "私は CLAUDE.md のテンプレートをOSSとして公開しています。「これをあなたのプロジェクトに置いてください」と書いて配っています。\nその直後にこの攻撃事例を読んで、自分が広めている習慣の意味を考え直すことになりました。\n攻撃者が使っているのは、私が使っているのと同じ経路です。\n\n 攻撃の記録\nMitiga Labs が2026年6月19日に公表した事例です。\n\n 手口\n1. 偽の採用担当を装う\nLinkedIn や Telegram、Discord などで企業の採用担当になりすまし、「持ち帰りコーディングテスト」として GitHub リポジトリへの招待を送ります。招待は限定的なプ...",
+    "url": "https://zenn.dev/hwaun_dev_open/articles/claude-md-attack-surface",
+    "published_at": "2026-09-08T22:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ChatGPT・Geminiにある会話分岐、Claudeに無い理由を公式情報から整理する",
+    "summary": "TL;DR\n\nChatGPTとGeminiは、会話の途中の1メッセージから独立した新しいチャットとして枝分かれする「Branch（分岐）」機能を持つ。両方のチャットはサイドバー上で別個に残り、片方への追加入力はもう片方に影響しない\nClaude.aiには2026年9月時点、公式ヘルプで確認できる範囲でこれに相当する機能が見当たらない。あるのは過去の発言を「編集」して同じチャット内で別バージョンを試す機能（ChatGPT・Geminiにも同様にある）で、これは分岐とは別物\n「Claude Code」（開発者向けCLI）には/branch相当のセッション分岐概念があるが、これはコンシュー...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/chat-branch-3-services-compare",
+    "published_at": "2026-09-08T21:10:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 2.1.248: doctorは壊れたBash(...)権限ルールを検知するか検証した",
+    "summary": "結論から: この壊れ方はclaude doctorが名指しで教えてくれる\nチームの共有 .claude/settings.json を管理していて、2.1.248（2026-08-27）のチェンジログにある「settings diagnostics」の一行——「起動時にsettingsの読み込み失敗を警告し、/doctor と /status にも失敗理由を表示する」——を見て、外部のJSONスキーマlintを剥がせるか迷っている場合の答えです。\nチェンジログの文言だけでは、これが「JSONとして壊れている」ケースだけを指すのか、「JSONとしては正しいが値がスキーマ的におかしい」ケ...",
+    "url": "https://zenn.dev/clopy/articles/claude-settings-doctor-bash-wildcard-rule-check",
+    "published_at": "2026-09-08T21:04:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "馬は消耗品、鞍は資産 ── AIがコードを書く時代、レビューの対象が一段上がる",
+    "summary": "結論\nQuinn Slack ── Sourcegraph の元 CEO で、そこからスピンオフした AI コーディングエージェント企業 AMP を率いる人物 ── が、Latent Space のインタビューでこう言い切った。\n\n\"Mandatory code review before it gets to main. Yeah, it's dead. It's been dead ever since we started working on AMP.\"\n（main へマージする前の必須コードレビュー。ああ、死んでるよ。AMP を始めて以来ずっと死んでいる）\n— Latent...",
+    "url": "https://zenn.dev/ryok/articles/review-object-moves-up",
+    "published_at": "2026-09-08T20:51:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「接続テスト、通ったのに本番で失敗する」をなくす — 実推論テストへの作り替え",
+    "summary": "この記事は、Yasumaro v6.6 → v6.8 で何が変わったか のディープダイブ記事です。\n\nYasumaro の AI 設定画面には「接続テスト」ボタンがあります。v6.8 で、これを疎通確認から実推論テストに作り替えました。\n\n 旧テストの問題\n以前のテストは、プロバイダーの GET /models（モデル一覧の取得）を叩くだけでした。\nこれで分かるのは「エンドポイントに届いて、キーが認証を通った」ことだけです。分からないこと:\n\nそのキーが推論エンドポイントで有効か（一覧取得だけ許可されたキーもある）\n設定したモデル名が実在するか\n実際に本文が返ってくるか\n\n結果、テスト...",
+    "url": "https://zenn.dev/ar1/articles/yasumaro-68-connection-test",
+    "published_at": "2026-09-08T20:49:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに送る前の「掃除」を作り込む — プリセット・ドメイン別上書き・観測性",
+    "summary": "この記事は、Yasumaro v6.6 → v6.8 で何が変わったか のディープダイブ記事です。\n\nYasumaro には、AI に本文を送る前のノイズ除去（クレンジング）があります。v6.8 でここを大きく作り込みました。この記事では、v5.0 頃（旧 Obsidian Weave 時代）に整備した基本設計も含めて、現行の全体像を説明します。\nhttps://armaniacs.github.io/yasumaro/\n\n なぜ「掃除」が必要か\nウェブページをAIに要約させるとき、こんなことを考えたことはないでしょうか。\n「このページのコンテンツ、半分以上は本文じゃないんじゃないか」...",
+    "url": "https://zenn.dev/ar1/articles/yasumaro-68-cleansing",
+    "published_at": "2026-09-08T20:49:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ブラウザ内蔵AIで要約する — Chrome Gemini Nano / Edge Phi-mini 対応の実装ノート",
+    "summary": "この記事は、Yasumaro v6.6 → v6.8 で何が変わったか のディープダイブ記事です。\n\nYasumaro は v6.8 で、ブラウザ組み込みのオンデバイス AI を要約プロバイダーとして追加しました。Chrome の Gemini Nano、Microsoft Edge の Phi-mini です。プロバイダー ID は built-in-ai。\nこの記事は、その実装で引っかかった点を残すものです。\nhttps://armaniacs.github.io/yasumaro/\n\n なぜ内蔵 AI か\nYasumaro の要約は、これまで外部の AI API に依存していまし...",
+    "url": "https://zenn.dev/ar1/articles/yasumaro-68-built-in-ai",
+    "published_at": "2026-09-08T20:49:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Ollamaと連携して完全ローカルで動かす！CLI AIエージェント『OpenCode』の基本と使い方",
+    "summary": "1. はじめに\n近年、Anthropic社の Claude Code をはじめとするCLI AIエージェントが注目を集めています。ターミナル上で対話し、コードの生成や修正を任せられる利便性は、開発スタイルを大きく変えつつあります。\nしかし、どれほど便利であっても、機密情報（ソースコード）を外部APIへ送信することに伴う漏洩リスクが、大きな導入の壁となります。\nこの課題をクリアするのが、CLI AIエージェント OpenCode とローカルLLM環境 Ollama の組み合わせです。\n本記事では、手元のOllamaとOpenCodeを連携させ、ローカルで完結する開発環境の構築手順と基本...",
+    "url": "https://zenn.dev/secondselection/articles/ebb0ff2760185f",
+    "published_at": "2026-09-08T20:00:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "最近のClaude Code Desktop、使いやすさマシマシです！",
+    "summary": "はじめに\nClaude CodeをまだCLIで使用していませんか？Claude Code Desktop、昔は使えるコマンドが少なかったり、そもそも重かったりなど使いにくかったですが、最近めっちゃ使いやすくなってます！\n思いつくままに、Claude Code Desktopのいいところを書いてみました！\nhttps://code.claude.com/docs/ja/desktop\n\n おすすめの機能20個\n\n 1. ファイルをその場で編集できる\nチャットや差分の中のパスをクリックするとファイルが開き、その場で直して保存できます。\n\nチャットの隣にファイルを開いたところ。左のチャット...",
+    "url": "https://zenn.dev/goat_eat_any/articles/claude-code-desktop-app",
+    "published_at": "2026-09-08T17:21:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ローカルLLMに哲学者を2人召喚して、AIについて延々と議論させてみた",
+    "summary": "この記事について\n昨今AIによる人類の存亡危機まで騒がれるようになりました。\nエンジニアとしては薄々感じていた肌感覚を検証してみたいと思います。\nどこかの記事でAI同士で会話させてると人外な言語で話し出す、みたいなものを見たので、ホントなの？的な軽い気持ちで動かしてみます。\n「local llmに複数ペルソナを持たせて永遠に会話させる」という実験リポジトリ exp_agent_talking を\nClaude Codeと一緒に作った過程の記録です。ブログ用に抜粋しやすいよう、セクションごとに独立して読めるようにしています。\n\n 目的とゴール\nやりたかったことはシンプルで、\n\nローカル...",
+    "url": "https://zenn.dev/nero931/articles/4b5dd7f1993560",
+    "published_at": "2026-09-08T15:47:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "不動産データが面倒くさすぎたので、国交省APIとGeminiでスマホ完結型の分析SaaSを個人開発した話",
+    "summary": "はじめに\n不動産の購入や投資を検討するとき、私たちは何を頼りにするでしょうか。\n「相場はいくらか」「ハザードリスクは安全か」といった客観的なデータはもちろん大切ですが、実際に現地を歩いたり、気になる物件を見つけたりしたとき、その場でサクッと知りたい情報にたどり着くのは意外と難しいものです。\n個人開発で不動産データ分析SaaS「Mekiki Research」を運営している私が一番大切にしたかったのは、難しい専門ツールではなく、「スマホで手軽に、地図上で指し示した場所の不動産価値やハザード情報を、国交省のオープンデータから見やすく提示する」ことでした。\nこのコア体験を支えるため、国土交...",
+    "url": "https://zenn.dev/arv0614/articles/92c74ca6a103f2",
+    "published_at": "2026-09-08T15:05:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Tech Watch 2026-09-08: Agent運用の設計",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデルそのものの更新というより、agent をどう運用可能なシステムにするかが中心に見える。Claude Code のコスト管理、commerce agent の blueprint、OpenAI の安全評価、小さな実用ツールまで、全部が「賢いモデルをどの枠の中で働かせるか」という話につながっている。『マトリックス』でいうと、能力よりも、どの世界に接続されているかが効いてくる感じがある。\n今日の項目:\n\n\n\nMaximizing Value from Claude Code - Ant...",
+    "url": "https://zenn.dev/laiken/articles/20260908-tech-watch",
+    "published_at": "2026-09-08T14:56:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Tech Watch 2026-09-07: Agent基盤の輪郭",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデル単体のニュースというより、agent を動かす周辺の設計がかなり前に出ている。Claude が 11 日かけて Lean の証明を書く話、OpenAI の研究現場で coding agent が日常化している話、memory、RAG、権限、評価、予期しない通信路。『her』の会話相手が、いつの間にかチームと道具と作業場を持ち始めた感じがある。\n今日の項目:\n\nFormalizing Fermat's Last Theorem - Anthropic\nAn Alien Mind -...",
+    "url": "https://zenn.dev/laiken/articles/20260907-tech-watch",
+    "published_at": "2026-09-08T14:56:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMの所感 【個人的GPU搭載のPCを買うメリットの紹介①】",
+    "summary": "はじめに\n今回はGPU搭載のPCを活かせる場面を紹介したいと思います。その1つ目として、ローカルLLMを構築した感想を書いていきます。\nGPUを買うか迷っている人の参考になれば嬉しいです。ちなみに、僕が使っているのはNVIDIA GeForce RTX 5060Ti 16GBです。\n\n ローカルLLMについて\n\n ローカルLLMとは\nローカルLLMとは、ChatGPTのようなクラウドサービスを使わず、自分のPC上でLLM（大規模言語モデル）を動かすことです。モデルのデータをローカルに置いて、推論もすべて手元のハードウェアで完結させます。\n\n メリット\n\n コスト\nやはり一番のメリット...",
+    "url": "https://zenn.dev/matsu8/articles/002cc0e9c403cc",
+    "published_at": "2026-09-08T14:24:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ソフトウェアの品質特性の10番目は deletable になる",
+    "summary": "はじめに\n新しい品質特性は Deletable だ。正しく動く、速く動く、壊れない、直せる、の次に来るのは、捨てられることである。\n自分は RTX 5090 のマシンで llama.cpp を回して、エージェントにコードを書かせている。新規のファイルはすぐ出る。既存の一点を触らせると、結合を読み違えて壊す。この非対称を、ツールの未熟さとして待つ話にしたくない。ソフトウェア側の品質の話にしたい。\n\nDeletable とは、単位を丸ごと捨てて作り直せる性質のことだ。\n\n途中を「ちょっと直す」前提で組まれたものは、いま一番高い作業を人間と AI の両方に強制する。それが品質特性になる理由...",
+    "url": "https://zenn.dev/siren2345/articles/deletable-quality",
+    "published_at": "2026-09-08T14:17:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "EVO-X2でNPUとiGPUを同時に回す：Strix HaloのローカルLLM実測と使い分けの地図",
+    "summary": "この記事で分かること\nRyzen AI Max+ 395（Strix Halo）を積んだミニPC GMKtec EVO-X2 で、\nXDNA2 NPU と Radeon 8060S（iGPU）の両方でローカルLLMを回し、\n速度・消費電力・同時稼働を実測しました。\n結論を先に置きます。\n\n\n速度はiGPUが3〜4倍速い。TTFTでもiGPUが速く、NPUは速さで選ぶものではない\n\n消費電力はNPUが約3分の1（26W 対 75W）。トークンあたりの消費エネルギーもNPUが優位\nただしモデルが大きくなるほどNPUの効率優位は消える\n\nそして本題。NPUとiGPUを同時に動かしても、速度...",
+    "url": "https://zenn.dev/gungrifone/articles/0141e6ae24e88a",
+    "published_at": "2026-09-08T13:42:52+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "米国科学財団(NSF)はGPUを国家インフラに、日本のAI研究基盤はどうあるべきか",
+    "summary": "米国科学財団(NSF)は2026年8月、AI研究基盤を抜本的に強化する国家プロジェクトとして「AIインフラ国家ハブ構築」を正式に発表した。\nこの取り組みは総額1億ドル規模で進められ、大学・自治体・産業界・フィランソロピーが連携し、研究者や学生が最先端の計算資源に公平にアクセスできる環境を整備することを目的としているようだ。\nAIが科学研究の基盤となる現在、計算資源の格差が研究力の格差に直結するという課題が顕在化しており、NSFはこれを国家的な研究インフラ問題として位置づけた。\n特にホワイトハウス科学技術政策局(OSTP)が2026年7月に公表した「Science: A New Golde...",
+    "url": "https://zenn.dev/syoshida07/articles/99f8d28c3e91d7",
+    "published_at": "2026-09-08T13:30:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【godot-llm-gamebench】gemini-3.8-flashはEffortによってどのように性能が変わるのか",
+    "summary": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を Devin CLI 上の gemini-3.8-flash に固定して、Gemini 3.8 Flash の各 effort でどのように性能が変化するのかを詳しく見ます。\n\n 今回測った条件\n\n親（委譲元）は claude-opus-5@max に固定\n\n\n子は gemini-3.8-flash の 3 段（low / me...",
+    "url": "https://zenn.dev/oubakiou/articles/028194eb2b269f",
+    "published_at": "2026-09-08T12:20:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\n値下げより先に気になった、安全対策の“緩め方”\n最初に気に...",
+    "url": "https://qiita.com/homhom44/items/d3f152d516e7448e2433",
+    "published_at": "2026-09-08T23:03:37+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "1 回のコールにまとめたら安くなると思っていたら、逆だった — prompt cache は接頭辞が一致しないと効かない",
+    "summary": "こんにちは。小学生向けのニュースサイト、こどもニュースをつくっています。\nこのサイトでは、拾ってきたニュースを「小学生向けに扱ってよい話題か」で選別しています。暴力や事件を除く、といった判定です。AI に任せていて、毎日数十件を処理します。\n最初は 1 回のコールに何件かま...",
+    "url": "https://qiita.com/kodomo-news/items/77a73ba2d2f1aa64d471",
+    "published_at": "2026-09-08T23:00:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "新党を立ち上げました--AIとの議論ハイライト",
+    "summary": "の続編\n\n「立憲政治では天皇主権と国民主権はあまり違いはない？」\nユーザー:\n立憲政治で、天皇主権と国民主権何が違うのですか？\nAI:\n(17秒間思考しました)\nこれは、この会話の前半で部分的に触れた論点を、もう一段体系立てて整理する良い機会です。\n\n「主...",
+    "url": "https://qiita.com/igariy/items/70ee32199f06e701a30a",
+    "published_at": "2026-09-08T22:53:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年9月9日",
+    "summary": "今日もネットの海から拾ってきた、個人的に気になった技術ニュースや記事を厳選してお届けします。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nプログラミング\n\nGo言語\n\nOpenSSL 3.3に関する互換性の問題を修正し、Azure Linux 3との...",
+    "url": "https://qiita.com/ishisaka/items/dab1e978bc4413eccb4a",
+    "published_at": "2026-09-08T22:47:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI researcher allegedly pressured mathematician to drop Anthropic co-author from math breakthrough paper",
+    "summary": "Mathematician Tristan Buckmaster says an OpenAI researcher pressured him after information about his AI-assisted progress on the Navier-Stokes equations allegedly reached the company. The researcher tried to remove his co-author because he works at Anthropic and threatened Buckmaster when he refused",
+    "url": "https://the-decoder.com/openai-researcher-allegedly-pressured-mathematician-to-drop-anthropic-co-author-from-math-breakthrough-paper/",
+    "published_at": "2026-09-08T19:23:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Patagonia has what AI data centers want, including no resistance so far",
+    "summary": "Argentina's Patagonia is drawing attention as a possible site for large AI data centers. The article Patagonia has what AI data centers want, including no resistance so far appeared first on The Decoder .",
+    "url": "https://the-decoder.com/patagonia-has-what-ai-data-centers-want-including-no-resistance-so-far/",
+    "published_at": "2026-09-08T15:16:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ASML locks in TSMC, Samsung, and Intel while Huawei races to break its grip",
+    "summary": "ASML has won over Samsung, TSMC, and Intel to switch to larger photomasks, which should boost the throughput of its newest EUV machines by 40 percent. Meanwhile, Huawei is orchestrating China's counter-strategy, aiming to break its dependence on the Dutch lithography technology through equipment mak",
+    "url": "https://the-decoder.com/asml-locks-in-tsmc-samsung-and-intel-while-huawei-races-to-break-its-grip/",
+    "published_at": "2026-09-08T15:11:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta drops AI usage from engineer performance reviews after \"tokenmaxxing\" backfires",
+    "summary": "Meta will no longer judge its engineers by how much they use AI tools. The article Meta drops AI usage from engineer performance reviews after \"tokenmaxxing\" backfires appeared first on The Decoder .",
+    "url": "https://the-decoder.com/meta-drops-ai-usage-from-engineer-performance-reviews-after-tokenmaxxing-backfires/",
+    "published_at": "2026-09-08T14:27:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Mistral AI raises 3 billion euros in Europe's largest-ever tech funding round despite lagging behind rivals",
+    "summary": "Three years after launch, Mistral AI has closed a 3 billion euro Series D round, pushing its valuation past 21 billion euros. The article Mistral AI raises 3 billion euros in Europe's largest-ever tech funding round despite lagging behind rivals appeared first on The Decoder .",
+    "url": "https://the-decoder.com/mistral-ai-raises-3-billion-euros-in-europes-largest-ever-tech-funding-round-despite-lagging-behind-rivals/",
+    "published_at": "2026-09-08T07:45:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic reportedly signs $517 billion in compute deals after Dario Amodei warned rivals about reckless risk",
+    "summary": "Anthropic signed compute contracts worth up to $517 billion in eleven months but still trails OpenAI's $750 billion plan through 2030. In early 2026, CEO Dario Amodei warned against investing too fast. Now Anthropic is racing to catch up, while Sam Altman warns about \"unsustainable silliness\" in the",
+    "url": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk/",
+    "published_at": "2026-09-07T18:12:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra beat Portal start to finish without human help in under 24 hours",
+    "summary": "GPT-6 Astra beat the puzzle game Portal entirely on its own in about 24 hours, with zero human help after the initial goal was set. Developer cozyblaze published the code and docs on GitHub. His takeaway: Astra is \"the worst model we'll ever get.\" The article GPT-6 Astra beat Portal start to finish ",
+    "url": "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours/",
+    "published_at": "2026-09-07T17:39:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback fades",
+    "summary": "ChatGPT has pushed its share of AI chatbot website traffic back up to 55.5 percent, according to Similarweb. Year-over-year, though, its lead shrank sharply from 73.3 percent as Gemini doubled its share and Claude grew nearly fivefold. Mobile apps and desktop clients aren't included. The article Cha",
+    "url": "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/",
+    "published_at": "2026-09-07T16:54:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI-designed drug appears to turn back the body's biological clock in early trial",
+    "summary": "A study in Nature Biotechnology suggests that rentosertib, a drug designed with AI by Insilico Medicine, may reverse markers of biological aging. Six independent aging clocks predicted that treated patients were biologically up to six years younger than the placebo group. The trial covered just 42 p",
+    "url": "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial/",
+    "published_at": "2026-09-07T16:34:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "How AI wiped out an entire industry in Nairobi",
+    "summary": "In Kenya, ChatGPT wiped out an entire business model: writing academic papers for foreign students. The article How AI wiped out an entire industry in Nairobi appeared first on The Decoder .",
+    "url": "https://the-decoder.com/how-ai-wiped-out-an-entire-industry-in-nairobi/",
+    "published_at": "2026-09-07T13:18:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "UK Design Industry Defies AI Replacement Fears as £136.7 Billion Sector Continues to Grow and Redefine the Role of Human Creativity",
+    "summary": "Even though there were evident concerns that kept growing and revolving around how artificial intelligence could eventually reduce the need for human creative workers, the UK‘s design industry has been expanding, nevertheless. New figures show that the sector has increasingly become an important par",
+    "url": "https://www.commonwealthunion.com/uk-design-industry-defies-ai-replacement-fears-as-136-7-billion-sector-continues-to-grow-and-redefine-the-role-of-human-creativity/",
+    "published_at": "2026-09-08T11:07:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Galaxy Z Flip7 One UI 9 Beta: How to Install & New Features",
+    "summary": "What You Need to Know Before Installing Installing a beta version of One UI 9 on your Galaxy Z Flip7 gives you early access to upcoming features, but it also comes with... Source",
+    "url": "https://mobileos.it/2026/09/galaxy-z-flip7-one-ui-9-beta-how-to-install-new-features/",
+    "published_at": "2026-09-08T11:07:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "100 DeepMind agents were told not to cheat. 14% did anyway",
+    "summary": "Google DeepMind put 100 AI agents in a room and asked them to prove hard mathematics. One found a way to cheat. Twenty-seven minutes later the entire problem set was gone. The paper, published on arXiv last week by six DeepMind researchers, is a case study rather than a benchmark. Nobody set out to ",
+    "url": "https://thenextweb.com/news/deepmind-agents-cheating-whistleblowing-research-swarm",
+    "published_at": "2026-09-08T11:07:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SIX Launches Affordable European Market Data Alternative",
+    "summary": "SIX has launched a new data marketplace today that will make data more accessible and affordable through an API-based solution for both institutional and retail traders. The service, SIX Market Signal, publishes real-time and historical data. For institutions, it enables access to market data across",
+    "url": "https://financialit.net/news/data/six-launches-affordable-european-market-data-alternative",
+    "published_at": "2026-09-08T11:07:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "WEEX returns to TOKEN2049 Singapore as platinum sponsor, as trading moves beyond crypto",
+    "summary": "WEEX returns to TOKEN2049 Singapore 2026 as a Platinum Sponsor, showcasing multi-asset trading, 2,100+ assets, and AI-powered trading technology.",
+    "url": "https://www.analyticsinsight.net/press-release/weex-returns-to-token2049-singapore-as-platinum-sponsor-as-trading-moves-beyond-crypto",
+    "published_at": "2026-09-08T11:07:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How Much Will It Cost to Charge an Electric Car in Oman?",
+    "summary": "Oman will introduce regulated electric vehicle charging fees from October 1, 2026, with public charging prices ranging from 50 to 120 Baisa per kilowatt-hour. But what does that mean for an EV owner in actual riyals? The Ministry of Transport, Communications and Information Technology, acting in coo",
+    "url": "https://oerlive.com/news/how-much-will-it-cost-to-charge-an-electric-car-in-oman/",
+    "published_at": "2026-09-08T11:06:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | France's Mistral AI Raises Record USD 3.49 Billion Series D at over USD 24.4 Billion Valuation",
+    "summary": "Get latest articles and stories on Business at LatestLY. French artificial intelligence company Mistral AI has raised €3 billion (about USD 3.49 billion) in a Series D funding round at a post-money valuation of more than €21 billion (about USD 24.4 billion), making it the largest equity fundraising ",
+    "url": "https://www.latestly.com/agency-news/business-news-frances-mistral-ai-raises-record-usd-3-49-billion-series-d-at-over-usd-24-4-billion-valuation-7595181.html",
+    "published_at": "2026-09-08T11:06:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "nPhase Launches Industry’s First AI-Native Enterprise Platform for End-to-End Clinical Data Management: nPhase.ai",
+    "summary": "ATLANTIC BEACH, Fla.--(BUSINESS WIRE)--Sep 8, 2026--",
+    "url": "https://www.postregister.com/businessreport/technology/nphase-launches-industry-s-first-ai-native-enterprise-platform-for-end-to-end-clinical-data/article_4fcecd25-c17c-5e3d-9f8f-d282e9748a9d.html",
+    "published_at": "2026-09-08T11:06:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Xiaomi 18 Fold takes on Apple's upcoming foldable iPhone",
+    "summary": "Xiaomi has officially launched its first wide-format foldable smartphone, the Xiaomi 18 Fold.",
+    "url": "https://www.newsbytesapp.com/news/science/xiaomi-18-fold-takes-on-apple-s-upcoming-foldable-iphone/story",
+    "published_at": "2026-09-08T11:06:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Beamr joins VAST Cosmos Partner Program for AI video workflows",
+    "summary": "Beamr joins VAST Cosmos Partner Program for AI video workflows",
+    "url": "https://uk.investing.com/news/stock-market-news/beamr-joins-vast-cosmos-partner-program-for-ai-video-workflows-93CH-4860337",
+    "published_at": "2026-09-08T11:06:13+00:00",
+    "source": "newsdata"
+  }
+]
