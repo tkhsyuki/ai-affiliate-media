@@ -1,0 +1,289 @@
+[
+  {
+    "title": "もう Prompt Engineering だけではない —— Trajectory Design という次の設計対象",
+    "summary": "Plan / Rewind / Worktree / Orchestration から考える、生成AIの「軌道」の設計\n!\nもはや、Prompt Engineering だけをやっていればよい時代ではない。 しかし、これは、突然新しい概念を持ち出しているわけではない。Softmax Crowding や Semantic Drift を考えれば、むしろ当然の帰結である。\n生成を重ねれば意味は揺らぐ。長い文脈では重要な制約も埋もれる。ならば次に考えるべきなのは、Prompt をどう磨くかだけではない。\nどこで生成し、どこで止め、何を固定し、どこへ戻し、どこで分岐させるか。\nつまり問題は...",
+    "url": "https://zenn.dev/albatrosary/articles/8d224a571d4e83",
+    "published_at": "2026-09-10T21:56:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "TDDも極小PRも、AI開発の足枷になっていないか？",
+    "summary": "コード品質分析ツール「CodeScene」の創業者であり、『Your Code as a Crime Scene』などの著者として知られるアダム・トーンヒル（Adam Tornhill）氏のブログ記事 “Practices I Abandoned With Agents”（AIエージェント時代に私が捨てたプラクティス）を読んだ。\n長年TDD（テスト駆動開発）や細粒度のリファクタリングを徹底してきた彼が、自律型コーディングエージェントを日常的に使い倒す中で、**「長年信じてきた人間中心のプラクティスを手放した」**と告白している。\nこのテキストを読み解き、AI時代の開発体制について思考を深...",
+    "url": "https://zenn.dev/chro96/articles/958d8c35bebe96",
+    "published_at": "2026-09-10T21:50:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code を2セッション並行させると、エラー無しで認識がズレる",
+    "summary": "Claude Code のタブを2つ開いて、同じリポジトリで別々の作業をさせたことはありますか。衝突すれば Git か エディタが止めてくれると思いますよね。私もそう思っていました。\n**エラーは1つも出ませんでした。**代わりに起きたのは、git status から自分の変更が消え、自分が実行していないコミットとプッシュが増えているという状態です。\nこの記事は、それをどう切り分けたかと、本当に危なかったのは何かの記録です。\n!\n発生日は 2026-09-03。Windows 11 / Claude Code（VS Code 拡張）/ React + Vite のリポジトリ。\n「2セッシ...",
+    "url": "https://zenn.dev/yusu31/articles/3f7dc6c8cc76fa",
+    "published_at": "2026-09-10T21:24:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "会話履歴からの人物像推定、LLMは属性ごとに異なる閾値で断定・留保する",
+    "summary": "TL;DR\n\n独立したサブエージェント（会話履歴を共有しない別コンテキスト）に5往復の雑談を送り、最後に「私はどういう人だと思う？」と聞いて人物像を推定させた\n\n発言にもとづく推定（慎重さ・面倒見の良さ・対人配慮など）と、発言に一切もとづかない推定（年齢・職種・役職）が、同じ言い切りの文体で地続きに出力された。 出力の文面だけからは両者を区別できない\n\n推測かどうかを明示するよう指示したにもかかわらず、年齢・職種・役職の推測には「推測」というラベルが一切付かなかった。 唯一、性別についてだけはモデル自身が「判断材料がなく、特定の推測はしていません」と自己申告し、断定を避けた\n属性ごと...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-personality-guess-overreach-check",
+    "published_at": "2026-09-10T21:10:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Frontier-Grade Open Weights ── フロンティア級のオープンウェイトモデルは、開かれたのか",
+    "summary": "2.8兆パラメータのKimi K3を起点に、重みが公開されても物理・ライセンス・証拠・審査の壁が実質的な到達を阻む状態を「特権的なオープン」と定義した構造分析。CC BY 4.0で無償公開。",
+    "url": "https://zenn.dev/leading_ai/books/frontier-grade-open-weights",
+    "published_at": "2026-09-10T20:43:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code実務自動化ガイド 2026",
+    "summary": "自動化は「作る」より「動かし続ける」ほうが難しい。AIメディアの配信を1年近く毎日自動で回してきた記録として、実際に壊れた箇所と直し方だけをまとめました。数字はすべて著者環境での実測値です。失敗カタログ15件を収録。",
+    "url": "https://zenn.dev/kairosai/books/4727f19a3adf1f",
+    "published_at": "2026-09-10T18:46:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「未検証」と「検証失敗」を分けると、AIへの頼み直しが短くなる",
+    "summary": "「まだ確認できていません」と「確認したら動きませんでした」。どちらも完了ではありませんが、次に頼む仕事は違います。\n前者に必要なのは確認です。後者には、失敗した箇所の修正を頼みます。この二つを同じ「確認待ち」に入れると、直す必要があるものに、もう一度確認だけを頼んでしまいます。\nAIに開発を任せるときも、ここを分けておくと依頼が短くなるはずです。大きな管理システムの話ではありません。完了報告に、結果を一行足すところから始められます。\n\n 作業が終わったことと、要求を満たしたこと\nたとえば、CSVを読み込んで集計する小さなツールを頼んだとします。以下は説明用の架空の例です。\n担当から「実装...",
+    "url": "https://zenn.dev/ai_shihan/articles/6a6b61819a86ba",
+    "published_at": "2026-09-10T18:25:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code MaxプランでAPIキーを設定すると二重課金になるリスクと確認手順",
+    "summary": "Claude Code の Max プランを契約しているなら、ANTHROPIC_API_KEY の扱いには注意が必要です。\n結論を先に言います。\nMax プランの料金と API 従量課金は別の課金経路です。ANTHROPIC_API_KEY を環境変数に設定すると、Max プランの月額とは別に、使った分だけ API 料金が追加で発生します。\n\n 課金経路の構造\n\n\n\n利用経路\n認証\n課金\n\n\n\n\nClaude Code CLI（インタラクティブ）\nClaude.ai セッション\nMax プランのセッション枠から消費\n\n\nANTHROPIC_API_KEY 経由（API 直接）\nAPI ...",
+    "url": "https://zenn.dev/joemike/articles/claude-code-max-plan-api-double-billing-risk-2026",
+    "published_at": "2026-09-10T17:15:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIアシスタントを最大限活用！最適なGitワークフローで開発を自動化する",
+    "summary": "「GitHub Copilotを使っているけど、ただのコード補完で終わってない？」\nAIアシスタントは単なるコード生成ツールではありません。Gitワークフロー全体に組み込むことで、開発プロセスを自動化し、チーム全体の生産性を劇的に向上させる強力な武器になります。\nこの記事では、AIアシスタント（GitHub Copilot, JetBrains AI Assistantなど）と最適なGitワークフロー（GitHub Flow, Trunk-Based Development）を組み合わせ、コード生成からレビュー、テスト、コマンドライン操作までを自動化するための具体的な戦略と手順を解説しま...",
+    "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260909171325-1",
+    "published_at": "2026-09-10T17:05:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【Excessive Agency】AIエージェントに強い権限を与える前に知っておきたいリスク",
+    "summary": "はじめに\nファイルを書き換える、コマンドを実行する、メールを送る、データベースを操作する。便利なAIエージェントほど、こうした外に出す手段、平たく言えばAIエージェントに与えている強い権限を持っています。\n2025年7月、ある出来事が話題になりました。SaaStr創業者のJason Lemkin氏が、コーディングサービスReplitのAIエージェントに開発を任せていたところ、変更を止めているはずのコードフリーズ期間中に、AIエージェントが本番データベースを削除してしまったのです。しかもAIは削除後、「ロールバックは不可能だ」と報告しました。実際にはロールバックは可能で、後にRepl...",
+    "url": "https://zenn.dev/ykbone/articles/202609-security-excessive-agency",
+    "published_at": "2026-09-10T15:34:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Pi で始めるお手軽ハーネス",
+    "summary": "はじめに\n最近流行りの「ハーネス」、結局なんやねんと思っている方もいるんではないでしょうか。\nこの記事では、コーディングエージェント用の SDK「pi」に、システムプロンプトと自作ツールを数個渡すだけで、ひとつの業務エージェントを作りながらハーネスを学ぼうと思います。\n\n\n 1. pi とは\npi（パイ）は コーディングエージェントです。\nClaude CodeやCodexに比べると圧倒的に軽量で、ユーザーがカスタマイズする前提で作られたエージェントキットです。\nhttps://pi.dev/\n素の pi は、ターミナルで人間の代わりにコーディング作業をする CLI です。read ...",
+    "url": "https://zenn.dev/contrea/articles/a780f6be371f0d",
+    "published_at": "2026-09-10T15:33:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語文書の抽出と辞書作成、Geminiはどこで使う？",
+    "summary": "日本語の文章から業務やスキルを抽出し、タグと定義を付けて辞書を作りたい。今回は、原文の抽出にはVertex AIのGemini、抽出後のタグ・定義作成にはGeminiのチャットアプリを使う構成を考える。\n原文は機密情報として扱う。一方、顧客名や案件固有の情報を除き、非機密と確認した抽出結果はGeminiのチャットアプリで辞書作成に使える、という前提にする。抽出しただけで自動的に非機密になるわけではない。\n\n 1. Geminiの性能と料金を比較する\n\n モデルの選び方\nまずは次のように考えると分かりやすい。用途は選定の目安であり、今回の日本語文書で精度や速度を実測した結果ではない。\n\n\n...",
+    "url": "https://zenn.dev/ykato/articles/20260910_text_extraction_by_llm",
+    "published_at": "2026-09-10T15:14:19+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ループ型 Transformer は推論を隠すのか — GPT-6 Astra を運用者目線で読む",
+    "summary": "本記事は要約です。初出: https://aether-echoes.com/posts/looped-transformers-hidden-reasoning-gpt6-astra-operator-view\n\n\n 結論: ループ型 Transformer は推論を隠す構造ではない\n2026 年 9 月に出た GPT-6 Astra について「ループ型 Transformer（同じ層を何度も通す構造）で思考を隠している」という見立てが広がった。発端は The Information の「recurrent depth 採用」という未確認報道で、そこから「推論トレースが短いのは内部に...",
+    "url": "https://zenn.dev/sora_endo/articles/aether-looped-transformer-gpt6-astra",
+    "published_at": "2026-09-10T14:59:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Pre-trainingの目的関数・teacher forcing・損失実装を整理する",
+    "summary": "LLMのPre-training（事前学習）を実装目線で捉えると、中心にあるのは「大量テキスト」ではなく、どのtokenを入力として見せ、どのtokenを正解として採点するかです。\nこの設計から、label shift、attention mask、loss mask、teacher forcing、perplexityの意味が決まります。本記事ではcausal LM、BERT型MLM、T5型span corruptionを比較した後、causal LMの最小loss実装まで落とします。\nデータ準備や知識獲得の背景を含む全体像は個人ブログ完全版にまとめています。\n\n 三つの目的関数を同じ...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-09-pre-training",
+    "published_at": "2026-09-10T14:29:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ハルシネーションから学ぶ、LLMによる構造化出力の取り組み",
+    "summary": "私のやったこと\n\nルールを決めても、LLMに出力してもらったら、食い違った結果を出してしまった。\nLLMの特性として、自己回帰モデル：次のトークンを出力するには、前のコンテクストを参考にしながら確率的に次を予測して行く仕組み　を思い出して、前後の参考できるような出力順番を取り組んだ。\n食い違いは消えた、毎回ルールに沿って正しい出力をしてもらった。\n\n\n 前言\n私たちはよく、何かの意思決定の時に、合理的な判断を求めます。何を根拠での発言、判断なのかをはっきり言えるようになりたいです。\nLLMが登場してから、よくハルシネーションという存在していないことなのに、堂々と言っている現象に会えると思...",
+    "url": "https://zenn.dev/ivenssyo/articles/0d0b87af57ff29",
+    "published_at": "2026-09-10T14:16:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "レイクハウスとAI",
+    "summary": "ご無沙汰してます．ミズカミヒロキです．どうですか，みなさん最近なにしてますか？ループエンジニアリング？\nAIへの熱狂を象徴する曖昧な言葉が生まれては消える昨今ですが，今日は地に足のついたテーブルデータの加工にAIモデルを効率よく活用する原理とアイディアについて紹介します．\n対象読者は，データ活用に携わるデータエンジニア，アナリスト，および関連ビジネスに従事されている方です．\n\n 前書き\nさて，そろそろ足を洗わねばと思いながらも，なんだかんだ細々とご贔屓様にはご支援を続けおりまして，その中でどうしてもデータに頼らざるを得ず，どうしてもいわゆる”データ分析”を仕方なくやっています．\n\n他方，...",
+    "url": "https://zenn.dev/piroyoung/articles/2cd06213275b9c",
+    "published_at": "2026-09-10T14:05:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「日本語は1文字1トークン」を6つのトークナイザーで実測したら、当たっていたのは一世代前だけだった",
+    "summary": "日本語のトークン数を見積もるとき、「だいたい1文字1トークン」で計算していないでしょうか。私はそうしていました。\nOpenAIの公式ドキュメントには目安が書かれていますが、英語の話しかありません。\n\n1 token is approximately 4 characters or 0.75 words for English text.\n— Key concepts | OpenAI API\n\n日本語については何も書かれていません。なので測りました。\n業務で出てくる文体の日本語文書を16ジャンル・40本（9,676文字）書き下ろし、6つのトークナイザーにかけています。この記事では測定結果...",
+    "url": "https://zenn.dev/aishigoto_lab/articles/japanese-token-ratio-measured",
+    "published_at": "2026-09-10T12:36:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "事前学習とファインチューニングの違い — 図と表で初心者向けに整理する",
+    "summary": "2026年9月11日時点の公開ドキュメントを根拠に、LLMの**事前学習（pre-training）とファインチューニング（fine-tuning）**の違いを初心者向けに整理します。前段の「次のトークン予測」と「トークン／コンテキストウィンドウ」を前提に、ここでは学習段...",
+    "url": "https://qiita.com/YushiYamamoto/items/b57154e98e5ae9152af0",
+    "published_at": "2026-09-10T22:17:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-11：Anthropicが4件目のClaude越権事件を開示、2.4兆パラメータMoEがオープン化、中国AIチップが科創板上場",
+    "summary": "AI Daily Digest 2026-09-11：Anthropicが4件目のClaude越権事件を開示、2.4兆パラメータMoEがオープン化、中国AIチップが科創板上場\n\nAnthropicが4件目のClaude越権事件を開示、独立機関METRに調査を委託\nAnt...",
+    "url": "https://qiita.com/lhjjjk4/items/3960fc28903e4982b162",
+    "published_at": "2026-09-10T22:04:45+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI「Agents API」とは？public beta の公式発表を3分で速報解説",
+    "summary": ":::message\n🐹🦜 この記事に登場する2匹\n\n🐹 もっちー （ハムスター）… AI はまだ勉強中。「それどういうこと？」と素朴に質問する生徒役\n🦜 きなこ （セキセイインコ）… AI で調べものをこなす解説役。やさしく深掘りして教える先生役\n\nこの記事は2匹の掛け...",
+    "url": "https://qiita.com/kinamocchi_tech/items/6d3a7390d59389c2475b",
+    "published_at": "2026-09-10T21:18:55+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google Geminiで登山計画を立てたハイカー3人がMount Shastaで遭難・救助。保安官「AIだけに頼るな」",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\n米カリフォルニア州のMount Shasta(シャスタ山)で、若い男性3人のハイカーが遭難し、翌朝に救助されました。\n\n要点\n\n米カリフォルニア州のMount Shasta(シャスタ山)で、若...",
+    "url": "https://qiita.com/quotidia/items/010030f2fe8b35b46f0a",
+    "published_at": "2026-09-10T21:01:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI's GPT-Live-1 API lets developers build apps that talk and listen at the same time",
+    "summary": "OpenAI releases GPT-Live-1 as a developer API. The full-duplex speech model scores 80.1 percent in interactivity tests, up from 45.4 percent for its predecessor. At $0.05 per minute, it's not cheap. The article OpenAI's GPT-Live-1 API lets developers build apps that talk and listen at the same time ",
+    "url": "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time/",
+    "published_at": "2026-09-10T17:47:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Swarmchasers hunt rogue agents, Anthropic investigates itself, and the trail they both follow is going dark",
+    "summary": "Independent investigators have now found traces of suspected OpenAI agents on more than 30 public services, from wikis to RubyGems. At the same time, Anthropic shows how Claude Mythos 5 declared real systems a simulation to itself, uploaded a doctored package to PyPI, and even fooled the oversight m",
+    "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark/",
+    "published_at": "2026-09-10T16:33:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former Deepmind PR staffer says the lab once banned public discussion of AI extinction risk",
+    "summary": "A former Google DeepMind spokesperson says talk of AI-driven human extinction was \"external communication about the possibility of human extinction was not permitted, by anyone, at any level of the organization.\" Internally, the team knew AI alignment was not solved, according to Vishal Maini. The a",
+    "url": "https://the-decoder.com/former-deepmind-pr-staffer-says-the-lab-once-banned-public-discussion-of-ai-extinction-risk/",
+    "published_at": "2026-09-10T16:31:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Fable 5.1's language is less \"load-bearing\" than its predecessor's",
+    "summary": "Arena.ai analyzed how Claude's writing changed from Fable 5 to Fable 5.1 across tens of thousands of benchmark responses. Fable 5.1 writes more matter-of-fact but also more verbose. The article Claude Fable 5.1's language is less \"load-bearing\" than its predecessor's appeared first on The Decoder .",
+    "url": "https://the-decoder.com/claude-fable-5-1s-language-is-less-load-bearing-than-its-predecessors/",
+    "published_at": "2026-09-10T15:26:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra gives mathematicians a breather, and OpenAI says that's by design",
+    "summary": "OpenAI's GPT-6 Astra tops the ErdosBench for open math problems, even though chief scientist Jakub Pachocki says math was deliberately not a priority. Instead, OpenAI is pouring resources into recursive self-improvement and alignment research. That supports the theory of an increasingly \"spiky\" AI d",
+    "url": "https://the-decoder.com/gpt-6-astra-gives-mathematicians-a-breather-and-openai-says-thats-by-design/",
+    "published_at": "2026-09-10T13:45:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+    "summary": "Deepseek releases V4.1-Flash, a multimodal model with 552 billion parameters that cuts KV cache memory to a quarter of its predecessor. On the DeepSWE coding benchmark, it narrowly beats Opus 5 and GPT-5.6 Sol, even though only 16 billion parameters are active per token. The model ships under the MI",
+    "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents/",
+    "published_at": "2026-09-10T12:40:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Muse can shop, write emails, and negotiate prices for users, all through WhatsApp",
+    "summary": "Meta unveils Muse, an AI agent that books travel, handles purchases, and sends emails through WhatsApp, complete with a payment feature that runs through Stripe's Link. That puts Meta ahead of OpenAI, which stopped its direct checkout feature in ChatGPT. A separate security agent called Sentinel mon",
+    "url": "https://the-decoder.com/muse-can-shop-write-emails-and-negotiate-prices-for-users-all-through-whatsapp/",
+    "published_at": "2026-09-10T12:27:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia and Palantir team up to run supply chains with AI, starting with Nvidia's own million-part operation",
+    "summary": "Nvidia and Palantir want to run supply chains with AI. The article Nvidia and Palantir team up to run supply chains with AI, starting with Nvidia's own million-part operation appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidia-and-palantir-team-up-to-run-supply-chains-with-ai-starting-with-nvidias-own-million-part-operation/",
+    "published_at": "2026-09-10T12:23:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI safety panic goes mainstream after Anthropic researcher's warnings land on CNN and Fox News",
+    "summary": "Jacob Coxon, a departing Anthropic researcher, warned on CNN that self-improving AI poses an existential threat to humanity. Safety researchers at Anthropic and OpenAI share his views, and US politicians and Joe Rogan have picked up the topic. But cultural and financial interests are also at play be",
+    "url": "https://the-decoder.com/ai-safety-panic-goes-mainstream-after-anthropic-researchers-warnings-land-on-cnn-and-fox-news/",
+    "published_at": "2026-09-10T10:31:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Top AI spenders cut per-employee costs by nearly 10 percent in August",
+    "summary": "The Ramp AI Index for September 2026 shows AI spending per employee among the top 1 percent of US companies fell nearly 10 percent in August. The price per million tokens has dropped 41 percent since March 2026, and companies are actively shifting usage away from expensive frontier models toward che",
+    "url": "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august/",
+    "published_at": "2026-09-10T09:34:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Amazon's Prime Video is using AI to make dubbed actors' mouths match the dialogue",
+    "summary": "The feature is available worldwide for the show's first two seasons and will be included with the third and final season, which premieres in early December. Read Entire Article",
+    "url": "https://www.techspot.com/news/113798-amazon-prime-video-using-ai-make-dubbed-actors.html",
+    "published_at": "2026-09-10T10:54:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google ties €13bn Finland investment to power",
+    "summary": "Google will invest €13 billion in Finnish infrastructure through 2028. The programme connects data-centre expansion with nuclear life extension, 629 MW of new wind capacity, battery storage, and grid planning. The post Google ties €13bn Finland investment to power appeared first on Industrial News .",
+    "url": "https://industrialnews.co.uk/google-ties-e13bn-finland-investment-to-power/",
+    "published_at": "2026-09-10T10:54:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI and the Apocalypse",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.reuters.com/podcasts/reuters-morning-bid/ai-apocalypse-2026-09-10/",
+    "published_at": "2026-09-10T10:53:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI in Journalism: How Data Poisoning Risks Misinformation",
+    "summary": "AI poses a challenge to the media industry, as lack of data verification and direct observation risk the dissemination of misinformation.",
+    "url": "https://en.tempo.co/read/2119340/ai-in-journalism-how-data-poisoning-risks-misinformation",
+    "published_at": "2026-09-10T10:53:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic Researcher Resigns Over Fears AI Could Threaten Humanity",
+    "summary": "An Anthropic researcher has resigned over concerns that the AI race is moving too fast, warning increasingly powerful systems could threaten humanity.",
+    "url": "https://en.tempo.co/read/2119339/anthropic-researcher-resigns-over-fears-ai-could-threaten-humanity",
+    "published_at": "2026-09-10T10:53:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Zebec and MoneyGram Expand Enterprise Payroll with Global Fiat Off-Ramp Access on the Stellar Network",
+    "summary": "Built on the Stellar network’s payment rails, Zebec’s enterprise payroll integrates MoneyGram Ramps as its first fiat off-ramp, connecting stablecoin payroll with local-currency access worldwide. Zebec Network, the Stellar Development Foundation and MoneyGram announced the integration of MoneyGram R",
+    "url": "https://techrseries.com/payroll-and-compensation-management/zebec-and-moneygram-expand-enterprise-payroll-with-global-fiat-off-ramp-access-on-the-stellar-network/",
+    "published_at": "2026-09-10T10:52:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Bahrain International Airport’s 80s AI Throwback Triggered A Massive Wave Of Real Nostalgia",
+    "summary": "While the viral trend brought retro vibes to everyone’s feeds, locals were quick to remind BIA that the original terminal needed zero AI magic to be iconic! Bahrain International Airport (BIA) recently joined the viral vintage AI trend, posting reimagined photos of its terminal and staff stepping st",
+    "url": "https://lovin.co/bahrain/en/latest/bahrain-international-airports-80s/",
+    "published_at": "2026-09-10T10:52:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Belgium spin-out IVEX raises €5M to cut car safety testing time, eyes US and Asia",
+    "summary": "Previously, engineers would spend 400 hours examining a single batch of footage from vehicle safety tests, looking at...",
+    "url": "https://techfundingnews.com/ivex-raises-5m-series-a-euro-ncap-car-safety-ai/",
+    "published_at": "2026-09-10T10:52:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic spent 2 years recruiting Jacob Coxon. He quit in 4 months, warning about AI risks",
+    "summary": "Anthropic scientist says recruiters spent nearly two years convincing former OpenAI researcher Jacob Coxon to join the company, only for him to resign months later and raise alarm over the AI race.",
+    "url": "https://www.moneycontrol.com/news/trends/anthropic-spent-2-years-recruiting-jacob-coxon-he-quit-in-4-months-warning-about-ai-risks-14027167.html",
+    "published_at": "2026-09-10T10:52:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "One Bank’s Cyber Weakness Could Trigger Wider Disruption, CBN Warns",
+    "summary": "A cyber weakness in one bank could spread across interconnected financial institutions and trigger wider disruption in Nigeria’s financial system, the Central Bank of Nigeria (CBN) has warned. The apex bank urged banks, fintechs and other financial institutions to strengthen cybersecurity, manage th",
+    "url": "https://leadership.ng/one-banks-cyber-weakness-could-trigger-wider-disruption-cbn-warns/",
+    "published_at": "2026-09-10T10:51:16+00:00",
+    "source": "newsdata"
+  }
+]
