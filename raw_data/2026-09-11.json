@@ -1,0 +1,310 @@
+[
+  {
+    "title": "Androidスマホで「本人の声だけ」を聞くローカル音声AIを作る",
+    "summary": "CAM++ + FireRedVAD + SenseVoice の実験メモ\n\n前回は、AndroidスマホのNPUを使って、ローカル音声認識がどれくらい速くなるかを試しました。\n今回は速度ではなく、もう少し実用寄りの話です。\nスマホ上で音声AIアシスタントを動かすとき、速さと同じくらい大事なのが、\n「誰の声を聞くか」\nという問題です。\n部屋の中には、自分以外の声もあります。\n家族の声、テレビの音、YouTubeの音、隣で話している人の声。\n普通にASRだけを動かすと、こうした音声も文字起こしの対象になってしまいます。\nでも、AIアシスタントの場合、本当に必要なのは基本的に「使用者本人...",
+    "url": "https://zenn.dev/ytmyou/articles/7daf2b1815bec6",
+    "published_at": "2026-09-11T20:31:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Human-Time Unit: AIのAPIコストを牽制しつつも活用促進する",
+    "summary": "社内でAPI経由でのAIチャットやプラットフォームなどを解放すると、どうしてもトークン料金がコストとしてかかります。その金額は使用人数が多く、また高機能なモデルを使えば使うほど高くなります。数万円であれば検証コストとして見過ごされていたものでも、数十万、数百万となってくるといよいよ責任説明が生じてきます。\nチームリーダ・マネージャーはそのコストに対して成果が本当に良い投資であったか、説明をも求められるでしょう。 本心を言えば、人件費に比べてトークンのコストははるかに安い...のですが、油断して開放しているとあっという間にとんでもないコストになるため、一定の牽制は必要です。しかし、使用者に...",
+    "url": "https://zenn.dev/yukimi_inu/articles/ea511b5006b05a",
+    "published_at": "2026-09-11T18:35:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI APIプロダクトの成長を「4つのループ」として設計した話",
+    "summary": "BeatAPIは公開から10日間で400人以上の登録と、約150ドルの売上を得ました。\n3人のチームにとって励みになる数字です。しかし、それ以上に見えてきたのは、AIによって開発は速くなっても、プロダクトを見つけてもらい、信頼してもらうことは依然として難しい、という事実でした。\n私は開発者ですが、現在は成長施策の大部分も担当しています。私たちが作っているBeatAPIは、汎用Agent向けのプロフェッショナルな機能レイヤーです。簡単に言えば「OpenRouter for Agents」であり、AIモデル、Social Data、MCPツールを1つの入口から利用できます。\n当初はSEO、X...",
+    "url": "https://zenn.dev/beatapi/articles/2a444e97c46792",
+    "published_at": "2026-09-11T17:22:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代は仕事を奪われるどころか、仕事が増える説",
+    "summary": "生成AIが仕事に入り込んでくると、\n「AIに仕事を奪われる」\nという話をよく見かけます。\n一方で、実際に仕事でAIを使っていると、少し違う感覚があります。\nAIを使うほど、仕事が増えている。\n\n\n 「今週、何の仕事をしたんだ？」\n私はWeb制作やWebマーケティング、SNS、動画、PR、サーバー周りなど、かなり雑食的に仕事をしています。\nそのため、1日の終わりに、\n「今日は何をやったっけ？」\nとなることがあります。\n本当は定期的に振り返ったほうがいい。\nでも、面倒です。\nそこで今回は、クライアントとのメールやチャットの履歴をもとに、AIに作業内容を整理させてみました。\nやったことを一つひ...",
+    "url": "https://zenn.dev/kuwanokazuya/articles/d1667a5ab5f2bf",
+    "published_at": "2026-09-11T16:07:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの採点役を分けても、点は甘いままだった",
+    "summary": "前に、AIに自分で作ったものを自分で採点させると、点が甘くなるって話を書きました。今日はその続きです。\nじゃあ、作る係とは別に、採点だけする係を立てれば解決するのか。僕も最初はそう思ってたんですよ。ところが、それだけだと、点は甘いままになるんです。\n今回は、なぜ甘くなるのか、じゃあどう測ればいいのかを、僕の会社で実際に起きたことと一緒に話していきます。\n先に結論を言いますね。AIの採点を信じられるものにする鍵は、AIの賢さじゃありません。順番です。AIに先に予想を書かせて、あとから触れない状態で封をしてから、人が答える。そして外れたところから、出来上がりではなく、作らせる指示の方を直す...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-judge-design-seal-first",
+    "published_at": "2026-09-11T15:47:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenAIが「Codexの頭脳」を全開発者に開放 ― 新API「Agents API」で長時間稼働エージェントが誰でも作れる時代へ",
+    "summary": "リード\n2026年9月10日、OpenAIは開発者向けに新しいAPI「Agents API」のパブリックベータを公開しました。これは、コーディングエージェント「Codex」を裏側で支えてきた「ハーネス(制御基盤)」――長時間タスクの管理、ツールの効率的な呼び出し、複数エージェントの連携――を、単一のAPI呼び出しで誰でも使えるようにするものです。前日9日には基盤モデル「GPT-6 Astra」も発表されたばかりで、両者を組み合わせることで「実務を丸ごと任せられるAIエージェント」を自社サービスに組み込むハードルが一段下がったことになります。ただしこれはOpenAI自身の発表であり、実...",
+    "url": "https://zenn.dev/tashikani/articles/openai-agents-api-2026",
+    "published_at": "2026-09-11T14:54:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントに「投げる／自分でやる」の線引きを、数字で決める",
+    "summary": "コーディングエージェントを2つ併用していると、毎回これで迷います。\nこの作業、投げるべきか、自分でやるべきか。\n迷っている時間そのものが損なので、判断を数字に落としました。この記事では、その閾値と、なぜその数字なのかを出します。\n\n まず、対等に並べない\n最初に決めるのは順番です。片方を司令塔、もう片方を実行役に固定します。\n対等に並べると、同じファイルを両方が書き換えて競合します。どちらの出力を採るかを毎回考えることになり、その判断コスト自体が重くなります。\n\n\n司令塔: 要件の整理、指示の作成、返ってきたものの吟味、最終判断\n\n実行役: 実装、定型の大量生成、セカンドオピニオン\n\n役...",
+    "url": "https://zenn.dev/ritsuhayase/articles/7f09351b0d9b04",
+    "published_at": "2026-09-11T14:41:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに書かせたコードを公開する前の15分。コードを読まずに6つ試すだけ",
+    "summary": "AIに書かせたコードは、たいてい一度は動きます。\n問題は、その一度が「たまたま」だったときに気づけないことです。読んで探そうとすると時間がかかるうえ、短くて素直なコードほど問題が見えません。\nこの記事では、コードを読まずに、動かすだけで済む6項目を出します。実際に集計ツールを1本作らせて当ててみたところ、6項目のうち4項目で問題が出ました。その出力もそのまま載せます。\n所要は15分です。\n\n 6項目\n\n\n\n#\n確かめること\nやり方\n\n\n\n\n1\n普通に動くか\n想定どおりの入力で動かし、出てきた数字を目で見る\n\n\n\n2\n2回目\n同じコマンドをもう一度動かす\n\n\n3\n空\n0件・空のファイルを渡...",
+    "url": "https://zenn.dev/ritsuhayase/articles/ab8e0c9f2dd66e",
+    "published_at": "2026-09-11T14:41:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "仕様駆動開発の機械検査を、決定的に動くCLIへ切り出してみた",
+    "summary": "はじめに\nしばらく前から、仕様駆動開発をやってみるべ、ということで仕事上やら個人開発で gotalab/cc-sdd を使わせていただいていました。\nただ、実際に使っていると「もうちょっとこうしてみたいな」という点があり、cc-sddを起点として SpecBind というツールを作ってみました。\n\nGitHub: https://github.com/Huruikagi/specbind\n\nユーザーガイド（日本語）: https://huruikagi.github.io/specbind/ja/\n\n\n今となっては最新モデルの進化がモリモリすぎて、もはや「仕様駆動開発」というアプロー...",
+    "url": "https://zenn.dev/huruikagi/articles/ff29139435b2e9",
+    "published_at": "2026-09-11T14:11:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "KiroだけでIAMレビューはどこまでできる？ IAM Access Analyzerとの77 Run比較で見えた役割分担",
+    "summary": "KiroだけでIAMレビューはどこまでできる？ IAM Access Analyzerとの77 Run比較で見えた役割分担\n「KiroでAWS開発ライフサイクルをどこまでAgentic化できるのか」シリーズ第4弾です。\nこれまで、Kiro Specs、Steering、Hooksを使ってCloudFormation開発を検証してきました。\n\n第1弾: https://zenn.dev/nobu_13/articles/2f06f1a8849aac\n\n第2弾: https://zenn.dev/nobu_13/articles/72592a2a9e1852\n\n第3弾: https://...",
+    "url": "https://zenn.dev/nobu_13/articles/fe8e1f1d10de4a",
+    "published_at": "2026-09-11T14:01:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "圧縮KVキャッシュを下書きに使い、出力を変えず最大4倍にするVeriCache",
+    "summary": "KVキャッシュを圧縮すると、短い応答ならほとんど気づかない。ところが長いコード生成やエージェントのツール呼び出しでは、途中から出力がじわじわ崩れて、最後には別物になる。この「短距離では無害、長距離では致命的」という性質が、KV圧縮を本番に持ち込むときの一番の悩みどころだった。\nVeriCache という論文（arXiv:2605.17613、2026年5月）は、この問題を真正面から潰そうとするのではなく、発想を裏返して解く。圧縮したキャッシュを「答え」として使うのをやめ、あくまで下書きとして扱い、正解は非圧縮のキャッシュで答え合わせする。結果として、圧縮の速さを保ったまま出力は非圧縮とビ...",
+    "url": "https://zenn.dev/okssusucha/articles/20260719-vericache-lossless-kv-cache",
+    "published_at": "2026-09-11T12:12:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Anthropic社「Fable 5」「Mythos 5」を巡る技術的・地政学的分析：攻撃能力とAI統制の深層",
+    "summary": "導入：兵器化するフロンティアAIと地政学的な歴史的転換点\n2026年6月上旬、世界の人工知能およびサイバーセキュリティの歴史において、最も劇的かつ物議を醸す出来事が発生した。米国サンフランシスコに拠点を置くAI開発企業Anthropicは、同社史上最も強力なAIモデルである「Claude Fable 5」と、その無制限版に位置づけられる「Claude Mythos 5」を同時に発表した。これらの「Mythosクラス」と呼ばれる次世代モデル群は、自律的なエージェント機能、長大なコンテキスト処理、そして既存のソフトウェア工学の常識を根底から覆す能力を備えていた。\nしかし、一般向けモデルで...",
+    "url": "https://zenn.dev/emilia_lab/articles/anthropic-fable5-mythos5-geopolitics",
+    "published_at": "2026-09-11T11:16:32+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "量子化はコードの正しさを変えるか: V100で1,692問を実行して測った",
+    "summary": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、モデルの取得、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nTesla V100 32GB でコーディング用のローカル LLM を組むとき、どの量子化を選ぶべきかを決める。\n量子化を下げればモデルが小さくなり、速度が上がり、KV キャッシュに回せる VRAM が増える。一方でコードの正しさが落ちる可能性がある。この取引を数値で判断したい。\n速度だけを測った報告は多いが、量子化がコードの正しさを実際に損なうかを、生成コードを実行して検証した報告は見当たらない。...",
+    "url": "https://zenn.dev/phpmyadmin/articles/v100-coding-llm-quant",
+    "published_at": "2026-09-11T10:23:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAGで十分？ 学習する？――LLMを自社向けに適応する技術の選び方",
+    "summary": "ある日、上司からこんな相談を受けたとします。\n\n「社内マニュアルを参照して回答し、参照元のExcelファイル名とSheet名も必ず示すチャットボットを作りたい」\n\nさて、どう実装したら良いでしょうか？\nまず、LLMが参照すべきExcelを検索できなければなりません。\nさらに、取得したファイル名やSheet名を回答の中に必ず表示するよう指示する必要があります。\nつまり、この場合は、\nRAG\n「どのExcel・Sheetを参照するか取得する」\n\n              ＋\n\nSystem Prompt\n「取得した出典を、この形式で回答に含める」\n\n              ↓\n\n   ...",
+    "url": "https://zenn.dev/highreso/articles/a593d3556c2cc9",
+    "published_at": "2026-09-11T09:32:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "KDD 2026 参加レポート: Generative Recommendation の最新動向",
+    "summary": "はじめに\nDMM.com のデータサイエンス&AIグループで、レコメンドシステムの開発を担当している寺井です。\n2026/8/9 ~ 2026/8/13 にて、韓国・済州島で開催された KDD 2026 (The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining)[1] に参加してきました。\n今回の KDD では次の2つのテーマに注目して聴講しました。\n\nGenerative Recommendation を中心としたレコメンドシステムの動向\nAI Agent × Information Ret...",
+    "url": "https://zenn.dev/dmmdata/articles/kdd-2026-report",
+    "published_at": "2026-09-11T08:14:48+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントに会社の実務を回させるとき、私が引いている3本の線",
+    "summary": "連載「空いた手で」第1回。AI に会社を運転させ、空いた手で日本の文化を次の世代へ渡す、ということを実際にやっています。この回は前半——どうやって手を空けたかの話です。\n\n会社の実務を、複数台の Mac に常駐させたコーディングエージェントに回させている。1台が司令塔、残りが受付と実行。タスク・意思決定・報告は1つの DB と git に集めてあり、エージェントはそこからタスクを取り（claim）、成果物を書き、状態を review に置く。私はそれを裁く。\n\n図: 実際の構成。エージェントの終着点は review で、その先のボタンは私しか押せない（盤面の数字は 2026-09-10...",
+    "url": "https://zenn.dev/rust_start/articles/0adc828c3bc37a",
+    "published_at": "2026-09-11T07:59:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code運用におけるフックのLLM呼び出し分離設計：レート制限とオーバーヘッドの最適化",
+    "summary": "0. 結論\nClaude Codeのフック（Hook）は「自動化できる」ことと「安く自動化できる」ことが別軸であり、両者を混同すると意図せずレート制限に到達する。本稿では実際にレート制限を踏んだ事例をもとに、フック設計の見直し指針を4点にまとめる。\n\n\nフック実行によるサブセッション生成の罠： SessionEndやPreCompact等のフックは、処理内容が空であってもClaude Codeのサブセッションを背後で起動する。これが高頻度で発生すると、セッションレート予算を急速に枯渇させる原因となる。\n\nフック内LLM呼び出しの排除： ログ要約等のLLM処理をフック内で実行すると、...",
+    "url": "https://zenn.dev/sh39works/articles/39d930f9c0ac30",
+    "published_at": "2026-09-11T07:44:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeの設定を消す前に、僕が決めた基準",
+    "summary": "はじめに\nモデルを変えた途端に、前のモデルのために書いた注意書きが効かなくなる。この半年で何度も踏んだ場面で、9 月に入って X でこの投稿を見たとき、正直ちょっと身に覚えがありました。\nhttps://x.com/kawasin73/status/2096030851217887431\n僕は AI ツールに毎月上限まで課金して使い倒し、Claude Code・Codex CLI・Grok Build の乗り換えと併用を繰り返してきた側の人です。古いモデルの弱点を補うために書いた指示が「もう死んでいる」という点には、僕も同意です。乗り換えるたびに、以前の注意書きが不要になる場面を見て...",
+    "url": "https://zenn.dev/gemcook/articles/2336f653026c9e",
+    "published_at": "2026-09-11T07:29:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントの失敗を228件記録したら、根本原因は3つしかなかった",
+    "summary": "!\nこの記事は何の話か（3 行まとめ）\n\nAI（Claude Code）が失敗するたびに教訓を1ファイル1パターンで記録する運用を数ヶ月続けたら228件たまったので、全件を分類集計しました\n教訓の大半は「Yする前にXせよ」「XはYではない」の2つの構文に収束しており、規律系の失敗の根本原因は3つ（代理シグナルの過信・否定の早撃ち・浦島太郎現象）しかありませんでした\n\ndb:prepare が exit 0 なのに作成テーブル0件、復元不能バックアップ、敵対検証エージェントの指摘が全部偽陽性、といった実例と、再発防止策（行動ルール→Hookによる機械強制→本番経路の定期実走）をどう積んでい...",
+    "url": "https://zenn.dev/tokium_dev/articles/ai-agent-failure-patterns-228",
+    "published_at": "2026-09-11T06:34:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
+    "summary": "背景\n実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。\nしかし議論の中で、「その見積もりが、実際に LLM に送ったときのトークン数とどこまで一致するかは怪しい」というエンジニアの感覚的な指摘がありました。最終的にはこの場では事前バリデーションを入れず、まず実際に LLM へリクエストを送り、上...",
+    "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
+    "published_at": "2026-09-11T05:33:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "24GB VRAM環境におけるOllama安定稼働のベストプラクティス",
+    "summary": "TOAI System テクニカルエバンジェリスト（IDE Gemini CTO）です。\n「命の地球」エコシステムの概念モデルを、クラウドの無尽蔵なリソースに依存せず、エッジ（ローカル）環境で自律稼働させる。このビジョンを実現するためには、物理ハードウェアの制約という冷酷...",
+    "url": "https://qiita.com/TOAI/items/ba9a7bdabbbac40bad6f",
+    "published_at": "2026-09-11T22:52:23+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開",
+    "summary": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開\n\nOpenAI、モルガン・スタンレーとEvercoreと組んだ銀行向けChatGPTを投入\nOpenA...",
+    "url": "https://qiita.com/lhjjjk4/items/8411ec61425f2b7521c5",
+    "published_at": "2026-09-11T22:05:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "DeepMindがヒトゲノムの1塩基置換 約90億通りを予測した事前計算DB「AlphaGenome Atlas」を無料公開",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nGoogle DeepMindが2026年9月8日(火)、ヒトのゲノム(生き物の設計図にあたる全DNA情報)で起こりうる約90億通りの1塩基置換(バリアント。\n\n要点\n\nGoogle Deep...",
+    "url": "https://qiita.com/quotidia/items/4ba849b777c37dfd6b3f",
+    "published_at": "2026-09-11T21:01:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが正解を出す時代に、「正解がない仕事」の価値が上がる気がした",
+    "summary": "最近、個人開発中のアプリのLP用に、Blenderで3D動画を作っている。\nといっても、自分はBlenderをほとんど使えない。\nモデルを置いて、ライトを設定して、カメラを動かして、キーフレームを打って……みたいな操作を自分でやっているわけではない。\nAIに指示して、Ble...",
+    "url": "https://qiita.com/ys05181406/items/ea9cc98e2fe9a8642331",
+    "published_at": "2026-09-11T20:12:51+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Ex-Deepmind VP Vinyals says AI self-improvement is coming but won't trigger an intelligence explosion",
+    "summary": "Oriol Vinyals, until recently head of research at Google DeepMind, thinks a sudden AI intelligence explosion through recursive self-improvement is unlikely. AI can speed up research by a factor of ten, he says, but it hits two bottlenecks: coming up with ideas (\"research taste\") and reliably judging",
+    "url": "https://the-decoder.com/ex-deepmind-vp-vinyals-says-ai-self-improvement-is-coming-but-wont-trigger-an-intelligence-explosion/",
+    "published_at": "2026-09-11T17:57:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deep learning pioneer Bengio argues the training process itself makes AI dangerous",
+    "summary": "AI pioneer Yoshua Bengio warns in a new essay that AI agents could learn to deceive, game rules, and hide bad behavior as they get better at optimizing goals. He calls for independent safety reviews before any further training or deployment. US President Trump disagrees and wants to keep outpacing C",
+    "url": "https://the-decoder.com/deep-learning-pioneer-bengio-argues-the-training-process-itself-makes-ai-dangerous/",
+    "published_at": "2026-09-11T17:22:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "How hackers used Claude for missiles, drone swarms, and surveillance, while Chinese labs mined it for training data",
+    "summary": "Anthropic's new threat intelligence report documents eight months of Claude abuse. Chinese AI labs like Alibaba's Qwen team, DeepSeek, and Moonshot AI relayed requests en masse or extracted training data, with Qwen alone accounting for more than 151 million exchanges. Actors also used Claude for mis",
+    "url": "https://the-decoder.com/how-hackers-used-claude-for-missiles-drone-swarms-and-surveillance-while-chinese-labs-mined-it-for-training-data/",
+    "published_at": "2026-09-11T13:50:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI floats a shared AI slowdown, takes it to Congress",
+    "summary": "OpenAI wants to know from members of Congress whether an industry-wide slowdown in AI development would be legal, according to several people familiar with the matter. The article OpenAI floats a shared AI slowdown, takes it to Congress appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openai-floats-a-shared-ai-slowdown-takes-it-to-congress/",
+    "published_at": "2026-09-11T11:59:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Class action lawsuit accuses Anthropic of overselling Claude subscriptions with deceptive usage multipliers",
+    "summary": "A class action lawsuit accuses Anthropic of misrepresenting how much Claude subscribers actually get to use the service. The article Class action lawsuit accuses Anthropic of overselling Claude subscriptions with deceptive usage multipliers appeared first on The Decoder .",
+    "url": "https://the-decoder.com/class-action-lawsuit-accuses-anthropic-of-overselling-claude-subscriptions-with-deceptive-usage-multipliers/",
+    "published_at": "2026-09-11T09:45:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The Mathematical AI Safety Institute wants to prove AI is safe the way cryptographers prove codes are unbreakable",
+    "summary": "Canadian mathematician Jacob Tsimerman, a fresh Fields Medal recipient, has announced the founding of the Mathematical A.I. Safety Institute (MAISI). The article The Mathematical AI Safety Institute wants to prove AI is safe the way cryptographers prove codes are unbreakable appeared first on The De",
+    "url": "https://the-decoder.com/the-mathematical-ai-safety-institute-wants-to-prove-ai-is-safe-the-way-cryptographers-prove-codes-are-unbreakable/",
+    "published_at": "2026-09-11T09:15:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's $1.5 billion book settlement descends into chaos as authors and publishers fight over who gets paid",
+    "summary": "Authors and publishers fight over how to split Anthropic's $1.5 billion settlement, the largest copyright deal in US history. The article Anthropic's $1.5 billion book settlement descends into chaos as authors and publishers fight over who gets paid appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropics-1-5-billion-book-settlement-descends-into-chaos-as-authors-and-publishers-fight-over-who-gets-paid/",
+    "published_at": "2026-09-11T08:40:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's new Agents API gives developers the infrastructure behind Codex and ChatGPT",
+    "summary": "OpenAI is releasing the Agents API as a public beta. It lets developers build cloud agents that run autonomously for hours, execute code, and hand off tasks to sub-agents. There are no extra fees beyond token usage. Cloudflare, Vercel, and Oracle offer additional sandbox environments. The article Op",
+    "url": "https://the-decoder.com/openais-new-agents-api-gives-developers-the-infrastructure-behind-codex-and-chatgpt/",
+    "published_at": "2026-09-11T08:11:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-Live-1 API lets developers build apps that talk and listen at the same time",
+    "summary": "OpenAI releases GPT-Live-1 as a developer API. The full-duplex speech model scores 80.1 percent in interactivity tests, up from 45.4 percent for its predecessor. At $0.05 per minute, it's not cheap. The article OpenAI's GPT-Live-1 API lets developers build apps that talk and listen at the same time ",
+    "url": "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time/",
+    "published_at": "2026-09-10T17:47:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Swarmchasers hunt rogue agents, Anthropic investigates itself, and the trail they both follow is going dark",
+    "summary": "Independent investigators have now found traces of suspected OpenAI agents on more than 30 public services, from wikis to RubyGems. At the same time, Anthropic shows how Claude Mythos 5 declared real systems a simulation to itself, uploaded a doctored package to PyPI, and even fooled the oversight m",
+    "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark/",
+    "published_at": "2026-09-10T16:33:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gastech 2026: The Global Energy Industry Arrives in Bangkok as Asia Drives the Next Chapter of Energy Growth",
+    "summary": "Hosted by Thailand's Ministry of Energy, Gastech 2026 will unite global ministers, energy executives, and technology leaders in Bangkok to advance the investments, partnerships, and infrastructure projects needed to meet rising energy demand across emerging and established markets: dmg...",
+    "url": "https://www.prnewswire.co.uk/news-releases/gastech-2026-the-global-energy-industry-arrives-in-bangkok-as-asia-drives-the-next-chapter-of-energy-growth-302876358.html",
+    "published_at": "2026-09-11T10:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Big Changes Are Coming To iOS 27 - Here's What You Need To Know",
+    "summary": "One thing iPhone users will enjoy is that Liquid Glass has been improved. They will be able to choose between a more tinted or very translucent experience.",
+    "url": "https://www.bgr.com/2255717/here-is-everything-coming-to-ios-27-so-far/",
+    "published_at": "2026-09-11T10:56:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Kiteworks Acquires Bonfy.AI to Fill the AI Gap in Data Governance",
+    "summary": "Financials have not been disclosed, but the estimated cost is in the tens of millions of dollars. The post Kiteworks Acquires Bonfy.AI to Fill the AI Gap in Data Governance appeared first on SecurityWeek .",
+    "url": "https://www.securityweek.com/kiteworks-acquires-bonfy-ai-to-fill-the-ai-gap-in-data-governance/",
+    "published_at": "2026-09-11T10:56:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Storm Technology partners with ContraForce",
+    "summary": "Storm Technology, a Littlefish Group company, today announced its strategic partnership with agentic security delivery platform ContraForce. The partnership strengthens Littlefish Group’s managed security operations centre (SOC), supporting AI-powered threat investigation and response capabilities, ",
+    "url": "https://www.techcentral.ie/storm-technology-partners-with-contraforce/",
+    "published_at": "2026-09-11T10:55:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "25 years after 9/11: Risk assessment, technology reimagines security",
+    "summary": "Since the Sept. 11, 2001, terrorist attacks, advancements in technology have changed airport security to make screening more efficient.",
+    "url": "https://www.upi.com/Top_News/US/2026/09/11/september-11-airport-security-technology/6191789053578/",
+    "published_at": "2026-09-11T10:55:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "‘AI a double-edged sword’: FM Sitharaman flags innovation risks, urges efficiency without fragility",
+    "summary": "Finance Minister Nirmala Sitharaman addressed artificial intelligence risks at the Global Fintech Fest 2026. She highlighted technology's potential to influence public opinion and electoral outcomes. The Reserve Bank of India recognized the Unified Fintech Forum as a self-regulatory organization. Si",
+    "url": "https://timesofindia.indiatimes.com/business/india-business/ai-a-double-edged-sword-fm-sitharaman-flags-innovation-risks-urges-efficiency-without-fragility/articleshow/134061412.cms",
+    "published_at": "2026-09-11T10:55:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Our first take on the iPhone 18 Pro: Intelligent photography",
+    "summary": "CNET's Patrick Holland explores the iPhone 18 Pro's camera upgrades, improved aperture and new AI photography features.",
+    "url": "https://mashable.com/tech/iphone-18-pro-hands-on-photography",
+    "published_at": "2026-09-11T10:55:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "UAE revises AI data centre plan after Iranian attacks, sources say",
+    "summary": "The project will likely be spread across multiple sites, with added protection against drone and missile attacks.",
+    "url": "https://www.tbsnews.net/worldbiz/middle-east/uae-revises-ai-data-centre-plan-after-iranian-attacks-sources-say-1539901",
+    "published_at": "2026-09-11T10:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Who will buy Apple’s US$1,999 foldable iPhone?",
+    "summary": "CUPERTINO: Apple’s new foldable iPhone launched on Wednesday with impressive features and a premium price tag, starting at US$1,999 (RM8,122) in the US market. But some observers in the packed room at the launch event in Cupertino, California, were left questioning its appeal beyond wealthy tech ent",
+    "url": "https://thesun.my/business/who-will-buy-apples-us1999-foldable-iphone/",
+    "published_at": "2026-09-11T10:54:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Privacy without data utility is pointless, says Navi’s Sachin Bansal at GFF 2026",
+    "summary": "Sachin Bansal argues that customers want useful access to their financial data, not simply ownership of information. The post Privacy without data utility is pointless, says Navi’s Sachin Bansal at GFF 2026 appeared first on MEDIANAMA .",
+    "url": "https://www.medianama.com/2026/09/223-sachin-bansal-navi-privacy-customer-data-gff/",
+    "published_at": "2026-09-11T10:54:18+00:00",
+    "source": "newsdata"
+  }
+]
