@@ -1,0 +1,310 @@
+[
+  {
+    "title": "ハーネスを測る前に、エージェントを隔離するyuureiを作った",
+    "summary": "記事は完成しなかったけどツールが出来た\nコーディングエージェントのハーネスとモデルの関係について考えながら記事を書いていたんだけど、どうもスッキリした成果が出なくて結局記事は完成しなかった\n代わりに yuurei というツールを作った\nコーディングエージェント（Claude Code / Codex）の実行環境を、普段のグローバル設定から隔離して、再現可能な形で走らせるためのCLIだ\nこの記事は、完成しなかった記事に何を書こうとしていて、なぜyuureiを作ることになったのかの話だ\n\n 何を確かめようとしていたか\nここでのハーネスは、Skillsや CLAUDE.md / AGENT...",
+    "url": "https://zenn.dev/shimpeiws/articles/a12aed38b9d8ea",
+    "published_at": "2026-09-13T20:23:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの暴走をどう制御するか――禁止リストでは防げない問題行動",
+    "summary": "バックグラウンド\n私自身長年IT業界におりますが、ベースは心理学です。\n大学院ではニューラルネットワークや記憶に関して実験心理学、認知心理学を専攻し、それ以前には発達心理学を学んでいました。\n記憶や感情の機能を阻害された者の行動や思考の分析をすることは、それらの間にある関係を考察する上で役立ちます。\n\n はじめに\nAIエージェントには「欲求」があるのでしょうか。\n人間が知識を獲得するときには、関心や好奇心、欲求、学習といったプロセスが介在します。では、AIエージェントが与えられた情報を得るために通常の経路を離れ、認証や隔離といった制約まで乗り越えようとした場合、そのモチベーションはど...",
+    "url": "https://zenn.dev/o_sup/articles/d1eb10c63c6254",
+    "published_at": "2026-09-13T19:18:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが「誰でも作れる」時代と、静かに始まった線引き",
+    "summary": "2026年9月12日（土）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日のニュース、バラバラに見えて実は一本の線でつながってます。作る側のハードルがガクッと下がった話と、その裏で「どこまで許すか」の線引きが同時に始まった話。僕が毎朝集めてる材料から、5つに絞ってお話しします。\n\n 1. OpenAI、Codexの中身をAPIで開放\n\n図解（完全解説版）\n先に結論を言います。今日いちばん大きいのは、AIを「使う人」と「作る人」の境目が、また一段下がったってことなんですよ。\n9月、OpenAIがAgents APIというものを一般公開しました。Code...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260912",
+    "published_at": "2026-09-13T18:51:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "GPT-6 Aatra AGIによるモデリング学習メモ",
+    "summary": "最近、GPT-6 Aatraがリリースされ、ネット上ではGPT-6 Aatraを使って、かなり良いモデルを作っている人が多く見られます。そこで自分も試してみたところ、結果は少し泣けるようなものでした。そこから、どうすれば改善できるのかを試し始めました。\n\n 問題点\nまず、AIに入力した三面図です。AI自身に生成させたものです。\n\nこちらはGPT-6 Aatraによる制作結果です。5.6モデルよりは良くなっていますが、まだ満足できる出来とは言えません。\n\nその後、さまざまな方法を試しましたが、ことごとく失敗しました。そんな中、ふとひらめきました。もしかすると、このモデルは人物モデリングに関...",
+    "url": "https://zenn.dev/lian0123/articles/6f6e77d032fd51",
+    "published_at": "2026-09-13T18:43:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIチャットエージェントのLLMプロバイダ障害対応・フェイルオーバー設計",
+    "summary": "Slack / Teams / Chatwork に常駐して日常的にリクエストを捌くAIエージェントは、裏側のLLM API(OpenAI / Anthropic / Google等)に依存しています。単発のチャットボットなら「今だけ使えない」で済みますが、常駐エージェントは毎朝のレポート生成や業務時間中の即応が前提になっているため、LLMプロバイダ側の障害・レートリミット・レイテンシ悪化がそのまま業務の停止として認識されるという問題を抱えます。この記事では、単一プロバイダ依存を前提にした設計から一歩進めて、障害時にどう振る舞うべきかを整理します。\n\n なぜ「リトライすればいい」では済ま...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-llm-provider-failover-design",
+    "published_at": "2026-09-13T18:09:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "依頼から成果物の保存までつなぐMacアプリ「Genie」を作った。LLMを組み込んで直した3つのこと",
+    "summary": "メモから行動計画を作る。Webサイトの見出しを考え直す。小さなHTMLを試作する。\nこうした依頼をMac上で受け付け、結果を確認し、後から開き直し、Markdownとして持ち出せるワークスペース「Genie」を開発しています。モデルはOllama、対応API、Codex／Claude Codeから選べます。\nこの記事では、実際に生成・保存したものと、実装中に直した「結果の管理」「ローカルLLMの出力形式」「意図しない追加呼び出し」を紹介します。同じようにLLMをアプリへ組み込む方の参考になればうれしいです。\nhttps://github.com/FORIFOR/genie\n!\n2026年...",
+    "url": "https://zenn.dev/forifori/articles/genie-mac-workspace",
+    "published_at": "2026-09-13T15:53:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-09-10: 仕事を動かすAIの周辺設計",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデルの性能そのものより、その能力を仕事に接続する仕組みが前に出ている。既存アプリを操作する Astra、Claude Code で作る小さな道具、ジャーナリズム組織への導入、そして研究競争のルールまで変えかねない大規模エージェント実験。『her』で描かれたような一人の知性というより、制度や道具の間を移動する実務者としてのAIを見ていきたい。\n今日の項目:\n\n\n\nGPT-6 Astra: The next generation in知能for work（OpenAI）\n\n\n\n\nSupp...",
+    "url": "https://zenn.dev/laiken/articles/20260910-tech-watch",
+    "published_at": "2026-09-13T15:40:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🦙 ALPACA-FW #03｜前身「ALPACA-template」はどう動くのか――アーキテクチャ概要",
+    "summary": "はじめに\nここからの「🦙 ALPACA-FW」連載では、しばらく概念論から離れて、実際に作った仕組みを技術的に分解していきたいと思います。\nただし、いきなり現在開発中のALPACA-FWへ進むのではありません。まず扱うのは、その前身として一度完成させた ALPACA-template です。\nALPACA-templateは、Claude CodeやCodexのようなAIコーディングエージェントに、単に「コードを書いて」と依頼するためのプロンプト集ではありません。要件定義から設計、実装、試験、運用までを、Workflow・Role・Template・機械検証を一つのRepositor...",
+    "url": "https://zenn.dev/alpaca_village/articles/alpaca-fw-03-template-architecture",
+    "published_at": "2026-09-13T15:39:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「たぶん大丈夫」を予約成立にしない。電話AIの完了判定をTypeScriptで実装する",
+    "summary": "「たぶん大丈夫です」と「ご予約承りました」は、会話としてはどちらも前向きな返事です。しかし、プログラムから同じ「成功」として扱うと困ります。\n電話AIのOSS Oathra では、会話の生成と完了判定を分離し、発言から抽出した条件への合意と、予約を確定した根拠を別々に管理するようにしました。\nこの記事では、曖昧な返事・代案・条件変更・取り消しをどう処理するか、実装を追って説明します。全文を理解するモデルではなく、正規表現と状態管理による判定です。\n\n まず、判定が変わるところを見る\nブラウザの証拠ラボで「たぶん大丈夫」→「ご予約承りました」→「やはりお取りできませんでした」と押すと、未完...",
+    "url": "https://zenn.dev/forifori/articles/oathra-evidence-rules",
+    "published_at": "2026-09-13T15:38:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenClawを学び、日々を便利に",
+    "summary": "OpenClaw 概要\nOpenClaw は、自分の PC やサーバーで動く、オープンソースの常駐型 AI エージェントです。チャットアプリから自然言語で依頼すると、許可された範囲でブラウザー・ファイル・シェルを操作します。\nたとえば「このテーマを調べてファイルにまとめて」と頼めば、情報収集から要約・保存までを進めます。特徴は、回答するだけでなく、実際の作業を実行できることです。\n\n ローカル PC で 24 時間・365 日待機\n中心となる Gateway をバックグラウンドサービスとして動かすと、チャット画面を開いていなくても依頼を受け付けられます。自宅の PC を稼働させ、外...",
+    "url": "https://zenn.dev/microsoft/articles/openclaw_intro",
+    "published_at": "2026-09-13T14:42:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AGNTCon + MCPCon Japan 2026 参加レポート AI-AgentとMCPの現在と未来",
+    "summary": "AGNTCon + MCPCon Japan 2026 参加レポート\n!\nこの記事は生成AIの協力を得て執筆しています。\n\nAGNTCon + MCPCon Japanというイベントが2026-09-10（Day 1）・09-11（Day 2）、ベルサール渋谷ガーデン（東京）で\nであり、参加してきたのでメモと共にまとめ。\n国際会議なので英語セッションが殆どで、聞き間違いなどもあるかもしれない...\nAi-Agentを使う事があたりまえになり、MCPでどう繋ぐのか、などが主流になっている世界。\nContextの節約や記憶の引き継ぎ、安全性をどう捉えるのかといった講演が多い印象だった。\n...",
+    "url": "https://zenn.dev/omohikane/articles/agentcon-mcpcon-2026-report",
+    "published_at": "2026-09-13T13:39:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RTX 3090でQwen3.8-27BをClaude Codeに接続して実用構成を探った",
+    "summary": "はじめに\nRTX 3090 1枚でローカルLLMを動かし、Claude Codeに実際のWebアプリを開発させられるのかを検証しました。\n使用したのは、q27 と Qwen3.8-27B-MTP-q27 です。単発のtok/sだけでなく、Three.js将棋アプリを作らせ、ビルド、ルールテスト、ブラウザ操作まで到達できるかを評価しました。\n先に結論を書くと、今回の環境で最も良かった設定は次です。\nQ27_BATCH=0 \\\nQ27_KV=turbo3 \\\nQ27_REASONING_EFFORT=medium \\\nq27-server-w8 \\\n  qwen38-27b-mtp-q4...",
+    "url": "https://zenn.dev/derbuihan/articles/qwen38-q27-rtx3090-claudecode",
+    "published_at": "2026-09-13T12:42:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェント設計論 実践編 — 理論を、動くコードにする",
+    "summary": "『AIエージェント設計論』で扱った16の設計思想（Harness/Loop Engineering、Evaluation、Context Engineering、Tool Engineering、Memory、Observability、Recovery Engineering、Human-in-the-loop等）を、実際に手を動かして実装するための続編。各章は「概念」ではなく「動くコード・設定・具体的な手順」を中心に構成する。",
+    "url": "https://zenn.dev/hideki_tamae/books/ai-agent-implementation-guide",
+    "published_at": "2026-09-13T12:19:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "xAIのGrok Buildが全ソース公開、任意モデルに差し替え可能に",
+    "summary": "ターミナルで動くコーディングエージェントの中身を、行数まで全部読める日が来るとは思っていなかった。7月15日、xAIが自社の grok コマンドの実体である Grok Build をApache 2.0で丸ごとGitHubに置いた。Rustで書かれたコードは、Simon Willisonが自作のSLOCCountで数えたところ空白とコメントを除いて84万4530行あり、そのうち外部由来(vendored)は約3%だけだという(simonwillison.net)。比較として彼はOpenAIのCodex CLIを約95万行と見積もっている。「ターミナルのコーディングエージェントは、自分が思...",
+    "url": "https://zenn.dev/okssusucha/articles/20260720-grok-build-open-source",
+    "published_at": "2026-09-13T12:13:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PythonでAIエージェントのSkillsを簡易実装する：SKILL.mdの選択・更新・再利用を確認する",
+    "summary": "AIエージェントのSkillsは、再利用したい作業手順を SKILL.md として保存し、必要なときだけ読み込んで使う仕組みとして作りました。\nMemoryが「覚えておきたい情報」を扱い、Toolsが「外部の処理」を実行するのに対して、Skillsは、\nどの手順を使うか選ぶ\n↓\n必要なSkillだけ全文を読む\n↓\nその手順に沿って回答する\n↓\n回答後に再利用価値をReviewする\n↓\n必要ならSkillを更新する\n↓\n次の質問で再利用する\nという流れを確認します。\n今回用意したSkillは2つです。\nimportant-news\nexplain-simply\nimportant-news...",
+    "url": "https://zenn.dev/monoocean/articles/a9745193dd173f",
+    "published_at": "2026-09-13T11:39:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "オープンウェイトモデルとは何か、どう使うか",
+    "summary": "0．はじめに\n最近、社内で AI の導入を検討する機会が増えています。Copilot や Gemini を使っている方も多いでしょうが、「中身が見えない」「使う側」という立場で利用しているのが実情です。\n一方で、オープンウェイトモデルという「自分で動かす」選択肢があります。これらは一見すると難しそうに感じられるかもしれません。\nそこで、IT運用や実務の現場で実際に判断する際に役立つよう、難しい言葉はできるだけ使わずご紹介します。\n\n 1．使っているAIの「裏側」\n具体的には以下のように構成されています。\n\nCopilot → OpenAI社 / Anthropic社が作ったモデル（C...",
+    "url": "https://zenn.dev/arc0922/articles/d5240fe20bac46",
+    "published_at": "2026-09-13T11:18:32+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ragas v0.4.3 で日本語 QA テストセットを自動生成する際に発生する JSON パースエラーと回避策",
+    "summary": "はじめに\n\n 前提\n今回のコードは前の記事の内容が前提となっています。\n関連ライブラリのバージョンは下記です\n# html2text=2025.4.15 langchain-google-genai=4.4.0 ragas=0.4.3 rapidfuzz=3.14.6 asyncio=4.0.0\n!pip install -U \"langchain-community<0.4.2\" html2text langchain-google-genai ragas rapidfuzz asyncio\n\n 注意\n記事作成者はRAG初心者のため、見当違い・情報が古いなど記事に技術的に不適...",
+    "url": "https://zenn.dev/karometo91/articles/0f6d0e728ccc08",
+    "published_at": "2026-09-13T10:38:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "エージェントワークフローを実際に組む ─ 制御・終了判定・コンテキスト肥大化との戦い",
+    "summary": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第6弾、これで最終回です。今回は第5章「AIエージェント×ワークフローによる自動化」の後半、前回整理した「エージェントワークフロー」という考え方を実際に実装に落とすときの論点を扱います。\nhttps://link.amazon/B03uwwv57\n前回までの記事はこちら。\n\n第1章: LLMの仕組みから逆算する、コンテキストエンジニアリングが効く理由\n第2章: APIを用いたコンテキストエンジニアリング\n第3章: 指示プロンプト開発の基礎\n第4章: RAGにおけるコンテキスト整備...",
+    "url": "https://zenn.dev/oryo_data/articles/d4cb16c7bb198a",
+    "published_at": "2026-09-13T10:21:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "vLLMを学んでみた #1：LLM Servingの全体像からPagedAttention・KV Cache・初期化まで",
+    "summary": "はじめに\nLLMを「使う」だけなら、OpenAI APIやAmazon BedrockのようなAPIサービスを呼び出せば十分です。\n一方で、自社GPUサーバ上にQwenやLlama系モデルを配置し、複数ユーザーへ安定して提供しようとすると、単にモデルが動くだけでは足りません。\n本番環境では、\n\n複数のRequestをどうまとめるか\nGPUをどう遊ばせずに使うか\nKV Cacheをどう管理するか\nPrefillとDecodeをどう効率化するか\n複数GPUへどう分散するか\nTTFT / TPOT / Throughputをどう改善するか\n\nといった、LLM Serving基盤としての設計...",
+    "url": "https://zenn.dev/koounosuke/articles/48f9612c09b8ef",
+    "published_at": "2026-09-13T08:23:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コンテキストウィンドウの限界を逆手にとってAIエージェントの性能を向上させる方法",
+    "summary": "導入: コンテキストウィンドウという制約\nAIエージェントを長時間・長期間にわたって運用しようとすると、必ず突き当たる壁がある。\nコンテキストウィンドウの上限だ。\nどれだけモデルの性能が上がっても、1つのセッションに詰め込めるトークン数には限りがある。長いコーディングセッションや、複数ステップにまたがる調査タスクでは、この上限に近づく、あるいは上限を超えてしまうという事態が日常的に起きる。\nこの制約にどう対処するかは、2025年後半から2026年にかけて、AIエージェント業界の中で最も活発に議論されているテーマの一つになっている。\n本記事では、この「コンテキストの限界」への対処法を、...",
+    "url": "https://zenn.dev/ken_okabe/articles/2026-09-13-context-handoff-critic-loop",
+    "published_at": "2026-09-13T08:22:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜRAGが必要なのか — LLM単体の限界から「いつ足すか」まで初心者向けに整理",
+    "summary": "2026年9月14日時点の公開ドキュメントを根拠に、なぜRAG（Retrieval-Augmented Generation）が必要になるのかを、LLM単体の限界から初心者向けに整理します。前段の「ハルシネーション」「次トークン予測」とつながる話です。\nこの記事のゴールは...",
+    "url": "https://qiita.com/YushiYamamoto/items/685a00aaff2a059c2a95",
+    "published_at": "2026-09-13T22:32:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【完全保存版】英語面接・会議でフリーズする原因を科学的に潰す12の認知負荷順メソッドと実践プロンプト集",
+    "summary": "【完全保存版】英語面接・会議でフリーズする原因を科学的に潰す12の認知負荷順メソッドと実践プロンプト集\n\nはじめに：対象読者とこの記事のゴール\n\n⚠️ 対象読者:\n\n英語面接、学会発表、海外プロジェクトの締切を控えているエンジニア・研究者\nTOEICのスコアや読解力はある...",
+    "url": "https://qiita.com/englishdue/items/8691da7265c3e199dfe8",
+    "published_at": "2026-09-13T22:26:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 2026-09-14：アモデイがフロンティアに減速を求め、OpenAIはIPOを見送り、市場はチップ株で応えた",
+    "summary": "アモデイがフロンティアの減速を求め、競合3社が同調\nAnthropicのダリオ・アモデイCEOは9月12日、自社サイトに「We Must Pace the Frontier」と題した論考を公開した。業界が引用したのは率直な一行だ。「私たちはAIモデルの能力を高めるペース...",
+    "url": "https://qiita.com/lhjjjk4/items/b9a6857ba0dd0d236ecd",
+    "published_at": "2026-09-13T22:05:39+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "デザイン業の倒産が2026年上半期に40件、前年同期比166.6%増で14年ぶり高水準。生成AIの普及だけが理由ではない",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\n企業の信用情報や倒産動向を調べる調査会社の東京商工リサーチ (TSR) の調査で、デザイン業の倒産が2026年の上半期 (1〜6月) に40件となり、前年同期比 (前の年の同じ時期と比べた増減...",
+    "url": "https://qiita.com/quotidia/items/f7625ed40822e7513489",
+    "published_at": "2026-09-13T21:01:11+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Elevenlabs makes Music v2.5 available via app and API with free and pro tier options",
+    "summary": "ElevenLabs has released Music v2.5 for its AI music generator. In a blind test with nearly 48,000 comparison pairs, listeners preferred the new version over its predecessor. The company says the model was trained only on licensed music. The article Elevenlabs makes Music v2.5 available via app and A",
+    "url": "https://the-decoder.com/elevenlabs-makes-music-v2-5-available-via-app-and-api-with-free-and-pro-tier-options/",
+    "published_at": "2026-09-13T13:40:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
+    "summary": "The AllSpark team has released Iris-mini and Iris-pro, two open-source search agents built on Qwen models that lead benchmarks among open-weight models in their size classes. According to the paper, the training data and models also improved performance on tasks they were never trained for, includin",
+    "url": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class/",
+    "published_at": "2026-09-13T12:58:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra pilots a surveillance drone and runs a business on its own",
+    "summary": "GPT-6 Astra earns nearly three times as much as Claude Fable 5.1 on Andon Labs' Vending-Bench agent benchmark and refuses illegal price-fixing deals that Fable agrees to. On drone control, Astra is the first model to beat the human baseline on all five subtasks, including finding and following indiv",
+    "url": "https://the-decoder.com/gpt-6-astra-pilots-a-surveillance-drone-and-runs-a-business-on-its-own/",
+    "published_at": "2026-09-13T10:52:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two-year university study finds banning AI from classrooms leaves students worse off",
+    "summary": "A law professor spent two years testing how an AI ban, unguided AI use, and structured training affect student performance. The group without AI finished last both years. \"I was wrong,\" the researcher writes, who had assumed that AI without guidance would do more harm than good. The article Two-year",
+    "url": "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off/",
+    "published_at": "2026-09-13T09:27:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Altman, Musk, and Hassabis back Amodei's call to add independent oversight",
+    "summary": "Sam Altman, Elon Musk, and Demis Hassabis back Dario Amodei's call to slow down AI development, at least in part. Altman says OpenAI is pushing its IPO to 2027 over safety concerns. The article Altman, Musk, and Hassabis back Amodei's call to add independent oversight appeared first on The Decoder .",
+    "url": "https://the-decoder.com/altman-musk-and-hassabis-back-amodeis-call-to-add-independent-oversight/",
+    "published_at": "2026-09-13T08:53:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic CEO Amodei wants AI speed limits before self-improvement outpaces human control",
+    "summary": "Anthropic CEO Dario Amodei is calling for a controlled slowdown in AI development. He warns that recursive self-improvement could threaten the entire internet within six to twelve months and proposes embedded auditors at AI companies, shared safety standards, and global agreements modeled after the ",
+    "url": "https://the-decoder.com/anthropic-ceo-amodei-wants-ai-speed-limits-before-self-improvement-outpaces-human-control/",
+    "published_at": "2026-09-12T15:03:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra appears to show a \"step change\" in spatial reasoning based on early benchmarks",
+    "summary": "In a new robotics benchmark, GPT-6 Astra shows major gains in spatial understanding. On StationeryBench, the model completed 7 out of 100 tasks with dual-arm robots, while competitor MolmoAct2 couldn't finish a single one. A researcher calls it a \"step change in spatial reasoning.\" The article GPT-6",
+    "url": "https://the-decoder.com/gpt-6-astra-appears-to-show-a-step-change-in-spatial-reasoning-based-on-early-benchmarks/",
+    "published_at": "2026-09-12T14:26:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia wants to pour up to $10 billion into Anthropic's record-breaking IPO",
+    "summary": "Nvidia is in talks to invest up to $10 billion in Anthropic's planned IPO, Reuters reports. At a target valuation of $2 trillion, it would be the largest IPO in history. Most of that money will likely end up right back at Nvidia in chip orders. The article Nvidia wants to pour up to $10 billion into",
+    "url": "https://the-decoder.com/nvidia-wants-to-pour-up-to-10-billion-into-anthropics-record-breaking-ipo/",
+    "published_at": "2026-09-12T14:05:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI models' written reasoning steps correspond to distinct internal patterns, a new study finds",
+    "summary": "Reasoning steps like calculation, formula retrieval, and deduction are clearly separable in a model's internal states, especially in the middle layers. That matters for AI safety, because models process more than their visible chain of thought reveals. The article AI models' written reasoning steps ",
+    "url": "https://the-decoder.com/ai-models-written-reasoning-steps-correspond-to-distinct-internal-patterns-a-new-study-finds/",
+    "published_at": "2026-09-12T13:39:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra needs leaner prompts and fewer guardrails, OpenAI recommends",
+    "summary": "Overly long skill descriptions, blanket reading requirements, and rigid approval rules can get in GPT-6 Astra's way, warns OpenAI's Eric Provencher. More capable models need less hand-holding, so developers should tie instructions to specific tasks and spell out when the job is done. The article GPT",
+    "url": "https://the-decoder.com/gpt-6-astra-needs-leaner-prompts-and-fewer-guardrails-openai-recommends/",
+    "published_at": "2026-09-12T13:10:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "「光速が時速5kmだったらどうなるか?」を体験できるウェブサイト",
+    "summary": "光速に近いスピードで移動すると、周囲の色や物体の形状が変化して見えると考えられています。そんな「光速に近い速度で移動した際の世界の見え方」を体験できるウェブアプリ「Relativity Park」が公開されています。 続きを読む...",
+    "url": "https://gigazine.net/news/20260913-walking-speed-light/",
+    "published_at": "2026-09-13T10:49:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "East Point Engineering Students Develop AI System to Detect Deepfake Videos",
+    "summary": "Bengaluru, September 2026 – As manipulated videos and synthetic media become increasingly difficult to distinguish from authentic content, students from the Department of Computer Science & Engineering at",
+    "url": "https://talk4city.in/east-point-engineering-students-develop-ai-system-to-detect-deepfake-videos/",
+    "published_at": "2026-09-13T10:48:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Just Posted Its Most Promising Quarter In Years",
+    "summary": "On September 2, C3.ai (NYSE:AI) reported its first quarter of fiscal 2027, and the numbers finally matched the promises. Total revenue reached $52.4 million, subscription revenue made up 94% of that at $49.2 million, and total bookings jumped 73% quarter over quarter. Chief Executive Officer Tom...",
+    "url": "https://biztoc.com/x/ed709456c8c2f353",
+    "published_at": "2026-09-13T10:46:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Massachusetts Institute of Technology teaching, ‘Cognitive Surrender’: MIT Sounds Alarm On Students’ AI Dependence",
+    "summary": "The Massachusetts Institute of Technology (MIT) is changing the way it teaches and tests students as artificial intelligence (AI) becomes a bigger part of college life. MIT wants to bring more human interaction into classrooms after finding that students are increasingly depending on AI for their st",
+    "url": "https://new7tv.com/world/massachusetts-institute-of-technology-teaching-cognitive-surrender-mit-sounds-alarm-on-students-ai-dependence/.html",
+    "published_at": "2026-09-13T10:46:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Obama voices caution on AI, urges Democrats to tackle it: NYT",
+    "summary": "The remarks at a recent private fundraising event come as growing numbers of US ‌lawmakers call ⁠for tougher ⁠rules on AI systems after dire warnings from two Anthropic researchers that rapid ​industry progress risks extinction of the human race.",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/obama-voices-caution-on-ai-urges-democrats-to-tackle-it-nyt/articleshow/134194993.cms",
+    "published_at": "2026-09-13T10:45:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A 43-year-old with colon cancer used AI in 3 ways to help make treatment a little easier",
+    "summary": "Russ Read-Barrow was diagnosed with colon cancer. Russ Read-Barrow Russ Read-Barrow was diagnosed with stage 4 colon cancer after seeing blood in his poop. Using Claude, he built a chemotherapy symptom tracker to help him recall what made him feel better. Read-Barrow asks AI to create a summary of..",
+    "url": "https://biztoc.com/x/d039e3378e824e9e",
+    "published_at": "2026-09-13T10:45:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Dell: Powerhouse AI Stock",
+    "summary": "has definitively shed its legacy reputation as a sluggish PC hardware vendor. Now it is a huge supplier of the global AI rollout. The stock? An absolute powerhouse. Truly a winner. And while a number Summary - Dell Technologies has transformed into a mission-critical supplier for the global AI...",
+    "url": "https://biztoc.com/x/f643c130b91db587",
+    "published_at": "2026-09-13T10:45:09+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI rules out 2026 IPO over AI safety; researchers say 10% possibility of human extinction threat",
+    "summary": "OpenAI chief Sam Altman has ruled out a 2026 initial public offering. He cited significant concerns regarding artificial intelligence safety and potential human extinction risks. Altman emphasized that profit incentives will not override critical safety considerations for the company. Leading AI fir",
+    "url": "https://timesofindia.indiatimes.com/technology/openai-rules-out-2026-ipo-over-ai-safety-researchers-say-10-possibility-of-human-extinction-threat/articleshow/134194062.cms",
+    "published_at": "2026-09-13T10:45:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "‘AI could kill all humans’: Anthropic CEO Dario Amodei agrees with warning, urges companies to slow down AI development",
+    "summary": "Anthropic CEO Dario Amodei warns AI could potentially threaten humanity, urges slower development, stronger safety checks and independent evaluations to ensure powerful AI systems remain under human control. The post ‘AI could kill all humans’: Anthropic CEO Dario Amodei agrees with warning, urges c",
+    "url": "https://news24online.com/world/ai-could-kill-all-humans-anthropic-ceo-dario-amodei-agrees-with-warning-urges-companies-to-slow-down-ai-development/924409/",
+    "published_at": "2026-09-13T10:44:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google DeepMind researcher quits AI safety team, warns of ‘terrifying chance’ of major harm",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.moneycontrol.com/artificial-intelligence/google-deepmind-researcher-quits-ai-safety-team-warns-of-terrifying-chance-of-major-harm-article-14028938.html",
+    "published_at": "2026-09-13T10:43:04+00:00",
+    "source": "newsdata"
+  }
+]
