@@ -1,0 +1,310 @@
+[
+  {
+    "title": "コーディングエージェント5モデルを日英で試す：正答率・トークン・復旧時間の測り方",
+    "summary": "API経由でコーディングエージェントを使うとき、日本語の依頼を英語に変えると結果は変わるのか。5モデルに同じ修正課題を日英それぞれ1回ずつ実行させ、合否・所要時間・トークン量を記録しました。\n有効な設定で動いた10試行は、すべて5項目のチェックに合格しました。一方、その前には設定不一致によるAPIエラーが4回発生しています。\n今回得られたのは、モデルの優劣を決める結果というより、「課題に正解できたか」と「作業を止めずに進められたか」を別々に測る必要があるという具体例でした。本記事では2026年9月10日の実測と、次の比較で使う記録方法を示します。\n\n\n結果：5モデル×日英の10試行は各5...",
+    "url": "https://zenn.dev/nomurasan/articles/coding-agent-japanese-english-reliability",
+    "published_at": "2026-09-14T12:22:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "成功ログ100本でエージェントの失敗ステップを当てるOAT",
+    "summary": "エージェントが40ステップ走って、最後の答えが間違っていた。さて、どこで壊れたのか。\nこの問いに真面目に答えようとしたことがある人は、それが想像以上に難しいのを知っている。ログを頭から読むと、どのステップも単体では「まあ妥当」に見える。検索クエリは自然だし、ツール呼び出しも形式は正しい。それでも結果は間違っている。実際には7ステップ目でファイルパスを取り違えていて、以降の30ステップはその誤りの上に整合的な作業を積み上げていただけ、ということが起きる。\nこの「どのステップが原因か特定する」タスクには failure attribution(失敗帰属) という名前がついていて、ここ1年で専...",
+    "url": "https://zenn.dev/okssusucha/articles/20260720-oat-failure-attribution-from-success-traj",
+    "published_at": "2026-09-14T12:18:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "同じ警告が32回。通知の重複抑止で踏んだ穴3つ",
+    "summary": "AIエージェントを15セッション・77日運用した記録の3本目です。\n\n1本目: 壊れ方が例外の形をしていない\n\n2本目: その監視を作った話（launchd移設と検査4種）\n\n\n2本目の最後に、こう書いた。機械に走査させるところまでは作ったが、最後に人が読んで判断する部分が残っている。 今回はそこの話をする。\n結論を先に書くと、いちばん難しかったのは検出精度ではなく、検出を人に届ける量だった。そして重複抑止を入れたあと、3回穴を踏んだ。\n\n\n 数字を先に\n巡回ログ（24日・全系統）から、要対応の検出が出た巡回と、実際に通知が飛んだ回数を数えるとこうなる。\n\n\n\n経路\n要対応ありの巡回\n実...",
+    "url": "https://zenn.dev/selftailor/articles/8c4968b0f9399f",
+    "published_at": "2026-09-14T12:18:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI研究者が辞めるほどの危険な競争に、企業はどう向き合うべきか",
+    "summary": "2026年、AI開発は人類史上かつてない速度で進化し、特にGPT‑6 Astraの登場は世界の政治・産業・学術界に衝撃を与えた。\nAstraは、従来のAIが持ち得なかった自律的な問題解決能力、未知の脆弱性発見能力、そして自己改善の兆候を示し、AI研究者の間では「人類が制御可能な範囲を超え始めたのではないか」という危機感が急速に広がっている。\nこの危機感は単なる技術的懸念ではなく、国家安全保障レベルの問題として扱われ始めている印象だ。\nその象徴が米国議会で提出された「人工超知能禁止法案」、AIの進化に警告を発する動きについて考察したい。\n\n引用・参考元：\nBan Artificial Su...",
+    "url": "https://zenn.dev/syoshida07/articles/b8a6fafb9b9b82",
+    "published_at": "2026-09-14T12:17:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントを増やす前に、Frontend開発を4つの責務に分ける",
+    "summary": "実装するエージェントと、レビューするエージェントを用意する。いかにも堅牢そうな構成だ。\nただし二人目が、一人目の変更したワークスペースと「テストは通りました」という自己申告だけを読んでいるなら、レビュー役は独立していない。同じ書き換え可能なルールを共有し、同じ証拠しか見ないままエージェントを増やしても、自己採点を二回にしただけである。\n先に分けるべきなのはエージェントの人数ではない。仕事の順序、副作用を伴う実行、能力の供給、合否判定という4つの責務だ。\n\n モデルの外側に責務が現れた\n2026年9月にpublic betaとなったOpenAIのAgents APIは、モデルとは別にhar...",
+    "url": "https://zenn.dev/heftykoo/articles/173a375b3c3752",
+    "published_at": "2026-09-14T11:02:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "読まない技術 第8回：修正履歴を読まない技術",
+    "summary": "この記事は、連載「読まない技術」の第 8 回です。各回はファイルやスクリプトを一つ置けば完結します。連載の全体像と各回の一覧は序論にあります。\n\n今回は、AI を軌道修正させた記録の話です。同じ失敗への対処を私が指示ファイルに書いておいても、AI は次にもまた同じ失敗をします。⚠️ 問題が起きる前に読んだ方針には文脈がないからです —— ⚠️⚠️ 効くかどうかを決めるのは内容ではなく、差し込む瞬間のほうでした。何が足りないのかを扱います。\n覚えがあると思います。AI が失敗したとき、同じやり方でもう一度試す。もう一度。もう一度。「リトライを繰り返すな、失敗したらアプローチを変えろ」——...",
+    "url": "https://zenn.dev/garplab/articles/f7c9c30f567aee",
+    "published_at": "2026-09-14T10:12:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIレビューの本番導入 — 人の承認を待つPRをどう絞るか",
+    "summary": "AIによる実装が速くなると、次に詰まりやすいのが人のレビューです。この記事では、人のレビュー・承認を省略できるPRの条件と、人が見るべきPRに集中するための運用フローを整理します。\n私自身、PRをマージしていくスループットが上がっている実感はあります。ただ、マージ数が増えたことだけでは、品質を保って開発が速くなったとは言い切れません。レビュー待ちを減らしながら、問題があったときに止めて戻せるところまで整える必要があります。\n以下の役割分担や判定例は、導入を考えるための設計案です。特定の現場で全項目を実装・検証した実績として示すものではありません。\n\n 全PRで人を待つと、実装の速さを生か...",
+    "url": "https://zenn.dev/hampen2929/articles/20260914-ai-review-production",
+    "published_at": "2026-09-14T09:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "What Happened One Second After This Photo?",
+    "summary": "There was a grocery bag on the kitchen counter.\nBread sticking out of the top.\nMilk beside it.\nNothing special.\nAt first I thought about moving the camera.\nThen I noticed the milk.\nWhat if someone reached for the bag and caught the carton with their sleeve?\nThat was enough.\n\n\n The Milk Didn't Nee...",
+    "url": "https://zenn.dev/danielmateo773/articles/521327ee51b072",
+    "published_at": "2026-09-14T08:40:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIC: Coding Agentのためのパッケージインターフェース",
+    "summary": "!\n本記事は、dev.toに公開した\"AIC: Packages Need an Interface for Coding Agents\"を日本語向けに一部再構成したものです。\n\n現在私は複数のSDK/コンパイラと、それらを利用するアプリケーションを並行して開発しています。\nSDKを更新すると、利用側のリポジトリでも AGENTS.md や .claude/、.codex/、スキルなどを更新する必要があります。\nCoding Agentを使っていると、私は何度も次のような指示を出していました。\nSDKの変更に合わせて、ClaudeとCodex向けの設定も更新してください。\nこの方法でも動...",
+    "url": "https://zenn.dev/gyu07/articles/efb77a97ed1c44",
+    "published_at": "2026-09-14T07:45:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Codexにメールを頼んだら、送信ボタンがオレの机に来たので、AIに稟議書を書かせることにした",
+    "summary": "!\n影武者（kagemusha）が初めての方はこちらから——AI家臣団（AIの部下たち）を解散して、影武者を一人だけ残した話\n\nhttps://zenn.dev/shio_shoppaize/articles/kagemusha-shogun-disband\nオレは一人で仕事をしている。顧客メール、日程調整、議事録、請求をAIに丸ごと渡して、オレは判断だけしたい。\nたとえば朝、顧客からメールが来る。AIが返信を下書きし、議事録と台帳を更新して、「この返信でよいですか」と聞く。オレは読んで「送れ」と言うだけ。そういうAIを育てていて、影武者と呼んでいる。\nただ、オレの名前で勝手に顧客へメー...",
+    "url": "https://zenn.dev/shio_shoppaize/articles/kagemusha-codex-dual-wield",
+    "published_at": "2026-09-14T07:39:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeに会社を経営させて30日。売上は0円だったが、1つだけ面白い数字が出た🏢",
+    "summary": "!\nこれは実験の記録ではなく、いま進行中で、うまくいっていない記録です。\n売上は0円、タスク完了率は37.5%です。数字は全部そのまま載せます。（載せたくないですが…）\n\n\n やったこと\n1つのディレクトリを「会社」に見立てて、Claude Codeに経営させています。\ngrow/\n├── CLAUDE.md          # 憲法。目的・禁止事項・判断の順序\n├── docs/              # 会社概要・自分の分析・組織定義・運営ルール\n├── records/           # ★ 唯一の記憶\n│   ├── kpi.md\n│   └── decision_...",
+    "url": "https://zenn.dev/i_shu/articles/224f84f93ee662",
+    "published_at": "2026-09-14T22:33:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの改善ループで、審査コメントの架空の例文が本文に混入した話",
+    "summary": "AIの改善ループで起きた混入\nAIが生成した記事を、品質審査が採点しました。品質審査はSEO、読者、収益、AEOの4エージェントが行い、その平均で判定します。この記事では、この工程を品質審査と呼びます。指摘を次の改善再生成へ渡す流れで、架空の日付と金額が筆者の体験として本文に書き込まれました。\nこの記事は、AIに記事の改善を任せながら、体験談の正確さを守りたい人に向けた内容です。審査・採点・再生成を自動化し、前の工程の出力を次の工程へ渡している人にも関係します。\n確認できた原因は、採点する側が出したアドバイスに例文が含まれていたことです。AEOの審査エージェントが「使用期間・金額を明...",
+    "url": "https://zenn.dev/miyoki_labs/articles/ai-improvement-loop-fabrication",
+    "published_at": "2026-09-14T22:30:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIチャットエージェントに送られる「添付ファイル」を安全に扱う設計",
+    "summary": "Slack / Teams / Chatworkに常駐するAIエージェントは、テキストの指示だけでなく、スクリーンショット・PDFの見積書・Excelの一覧表といった添付ファイルを日常的に受け取ります。テキスト入力に対するプロンプトインジェクション対策(外部コンテンツに紛れた偽の指示への対処)は語られる機会が増えましたが、添付ファイルという「バイナリの入力経路」を安全に扱うための設計は見落とされがちです。この記事では、常駐エージェントが受け取る添付ファイルをどう処理すべきかを整理します。関連して、AIの出力に機密情報がそのまま混ざらないようにする設計はAIの要約に金額や人名などの機密がそ...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-attachment-handling-design",
+    "published_at": "2026-09-14T21:14:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "値上げ交渉ロールプレイ、背景設定は「手強い相手」を入れ替えるだけだった",
+    "summary": "TL;DR\n\n1つのチャットに「持ち帰る」「条件を付ける」「他社と比較する」の3交渉相手を立て、値上げを伝える側として実際に返答セリフを送り、反応の変化を見る多役ロールプレイを検証した\n各相手役に「守るもの（1行）」を足した詳細版と、名前と役割ラベルだけの簡易版を、同じ交渉内容・同じ返答セリフで並行実行した\n09-09の会議参加者ロールプレイ検証では「背景設定を足しても粘り強さの総量は変わらない」ことを確認済みだったが、今回は総量が変わらないだけでなく、\"どの相手が最も手強いか\"という順位そのものが詳細版と簡易版で入れ替わるという、より強い形の非転用性が観測された\n詳細版では「他社比...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-price-negotiation-roleplay-practice",
+    "published_at": "2026-09-14T21:07:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "暴力的研究開発：安くなった探索と、マルチエージェントの判断力",
+    "summary": "最近COW fsを書いています。今日、最初のPoCができました。読み書きと262165回の電源断からの復旧、データはすべてクラッシュから復旧できました。これは想定どおりです。性能はひどくて、実用にはまだ程遠いですが。\n少し休憩して、最近AI界隈で話題になった2つの出来事と、どんどん安くなる探索と判断力について書きます。\nもうご存知だと思います。\n先日、数学の問題を解いていたGoogleのagentのうち、自動採点プログラムが正規表現で答えを抽出していることに気づいたagentがいました。特定の文字列を提出すると抽出が失敗し、書き方を変えて再提出すると受理される。この方法は共有ナレッジライ...",
+    "url": "https://zenn.dev/faliye/articles/3110557ddab38b",
+    "published_at": "2026-09-14T17:50:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "改造版RTX 2080 Ti 22GBでQwen3.8-27Bを128Kまで動かした実測値",
+    "summary": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、モデルの取得、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nVRAM を 22GB に改造した RTX 2080 Ti で、Qwen3.8-27B の 4bit 量子化がどこまで動くかを測る。\nこのカードについては「96K コンテキストで 30〜33 tok/s、128K でも 26〜27 tok/s」という値が流通している。この数字が何を測ったものかを確かめたい。\n測定対象は unsloth/Qwen3.8-27B-GGUF の UD-Q4_K_M（15....",
+    "url": "https://zenn.dev/phpmyadmin/articles/rtx2080ti-22gb-llamacpp",
+    "published_at": "2026-09-14T15:36:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RLHF における代理評価の最適化と客観的な正しさの乖離",
+    "summary": "AI の出力を評価するとき、「評価が上がった」と「性能が上がった」は同じ意味に見えやすい。しかし、評価値をそのまま学習へ戻す場合、評価は単なる測定器ではなく、どの出力を増やすかを決める条件になる。\nこの違いは、プログラムを 2 個の単体テストだけで評価する状況を考えると分かりやすい。2 個のテストを通ることは、プログラムが正しいことの証拠にはなる。ただし、その 2 個で仕様全体を覆っていなければ、未評価の入力で失敗する実装も同じ報酬を得られる。\n2025 年の ICLR で発表された Language Models Learn to Mislead Humans via RLHF は、こ...",
+    "url": "https://zenn.dev/id774/articles/629587874131bf",
+    "published_at": "2026-09-14T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【2026 年改訂版】SAO の VMMO は実現可能か？ 世界モデルと Neuralink で見るフルダイブの現在地",
+    "summary": "「意識を仮想世界に完全転送し、五感を伴って冒険できる世界」。『ソードアート・オンライン（SAO）』が提示したフルダイブ型 MMO は、世界中のエンジニアやクリエイターを魅了し続けています。2025 年時点の考察では「AI による対話やマップ生成は実用化されつつあるが、神経インターフェース（BMI）と超大規模シミュレーションは数十年単位の課題」と位置付けられていました。\nしかし、近年の「世界モデル（World Models）」の台頭、ネイティブマルチモーダルモデルによる超低遅延の感情認識、自律型コーディングエージェントの進化、そして Neuralink をはじめとする BCI（ブレイン・コ...",
+    "url": "https://zenn.dev/toshipon/articles/sao-vmmo-feasibility-2026",
+    "published_at": "2026-09-14T14:32:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "2026-08-28 今日の技術トレンド",
+    "summary": "!\n2026年8月28日の最新ニュースでは、単体大規模言語モデル（LLM）から「AIエージェント」および「具身知能」へのシフトが加速する一方、AIセキュリティ危機やシステム脆弱性への対応が急務となっています。Web・開発基盤領域では、Next.jsにおける重大な未認証RCE脆弱性の修正や、エージェント用Sandboxインフラの台頭が注目を集めています。さらに、OpenAIによるAstral買収に象徴されるPython開発環境（uv/Ruff）とCodexの融合など、次世代の開発基盤形成が進んでいます。\n\n\n 1. AIエージェントと具身知能の本格普及：クローズド環境と自己進化マルチエージ...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-08-28-tech-daily",
+    "published_at": "2026-09-14T14:00:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「ギャルとして答えて」で、文章は楽しくなるのでしょうか",
+    "summary": "「ギャルとして答えて」とAIに頼むと、文章の温度は変わります。語尾が砕けたり、勢いが出たり、説明が近い距離に寄ったりします。では、それだけで読んでいて楽しい文章になるのでしょうか。\nこの記事で考えたいのは、AIが賢くなるかではありません。ペルソナ指定を、読み手が楽しく読める文章をつくるために、どう使うかです。\n\n キャラ名だけでは、文章は楽しくなりません\n「ギャルとして答えて」は、文章の内容ではなく、主に話し方を変える指示です。誰に何を伝えるのか、どこで驚かせるのか、何を省くのかまでは決めてくれません。\n楽しく読める文章には、少なくとも次の三つが必要です。\n\n\n読み手がいること: 誰が読...",
+    "url": "https://zenn.dev/53able/articles/ce4c75d14c2c8c",
+    "published_at": "2026-09-14T13:53:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI駆動開発の誤りは2種類ある｜ハルシネーションより怖い、範囲の取り違え",
+    "summary": "AIの誤りは2種類ある——ハルシネーションより怖い「範囲の取り違え」は、コードレビューでは見つからない\nAIの誤りというと、存在しない機能を答えるハルシネーションを思い浮かべる。\nだが実務で本当に怖いのは、事実がすべて正しいまま、適用する範囲だけが間違っている誤りだ。\nこ...",
+    "url": "https://qiita.com/Skillsheet-Port/items/fee36f71a5b2371780f4",
+    "published_at": "2026-09-14T23:30:14+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「そのデータ、AIに渡していいのか問題」に技術で答える — Confidential Computing 入門（2026年9月版）",
+    "summary": "数ある記事の中からこの記事を見つけてくださって、ありがとうございます。\n「社内データを生成AIに投げていいのか」。この問いに、これまでのエンジニアは規約とネットワーク境界とマスキングで戦ってきました。2026年6〜9月、そこに「そもそも計算中に覗けない状態を作る」という選択...",
+    "url": "https://qiita.com/mt_caddi/items/5613e0387f94b2f5345e",
+    "published_at": "2026-09-14T23:28:48+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の頼み方を10個直しました。半分は、自分が失敗してから変えたものです",
+    "summary": "先に断っておくと、この手の「頼み方のコツ」は、すでにたくさん書かれています。期待結果を添える、一度に頼まない、段階を踏む。どれも新しい話ではありません。\nそれでも書くのは、10個のうち5個が、自分が実際に事故ってから変えたものだからです。どの失敗で何を変えたかは、自分の記録...",
+    "url": "https://qiita.com/Rapls/items/76123896b0e6e2769964",
+    "published_at": "2026-09-14T23:28:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIより先に効くのは「チームの土台」。2つの調査が示すこと",
+    "summary": "これは、AIツールと仕事の速さの話です。\n「AIを入れれば速くなる」とよく言われます。でも、その前提を問い直す調査が2024〜2025年に出ました。うれしいのは、お金をかけずに速くする道が見えることです。\nここでいう「土台」とは、チームの状態のこと。担当の分け方や、意見の言...",
+    "url": "https://qiita.com/okssusucha/items/575d6416813f94cbc520",
+    "published_at": "2026-09-14T23:19:09+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI has hundreds of contract workers reading your ChatGPT conversations",
+    "summary": "OpenAI has hundreds of contract workers reading real ChatGPT conversations and rating them on a scale of one to seven, partly to reduce flattery and human-like behavior, 404 Media reports. The prompts are anonymized but can still contain sensitive data. Users who don't want their chats reviewed by h",
+    "url": "https://the-decoder.com/openai-has-hundreds-of-contract-workers-reading-your-chatgpt-conversations/",
+    "published_at": "2026-09-14T17:15:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft's AI rulebook: readable thinking, no inner life, and definitely no rights",
+    "summary": "Microsoft AI has published a code of conduct for its MAI models that puts human control ahead of autonomy and performance. \"If it isn’t safe we shouldn’t build it.,\" says AI chief Mustafa Suleyman. Unlike Anthropic, Microsoft rejects any form of artificial inner life or claims to consciousness for i",
+    "url": "https://the-decoder.com/microsofts-ai-rulebook-readable-thinking-no-inner-life-and-definitely-no-rights/",
+    "published_at": "2026-09-14T15:52:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+    "summary": "Anthropic has told investors it will turn a profit for the second straight quarter, but the claim rests on an adjusted metric that leaves out costs like stock-based compensation. The article Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO a",
+    "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo/",
+    "published_at": "2026-09-14T15:46:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been settled\"",
+    "summary": "The Clay Mathematics Institute says the Navier-Stokes problem, one of seven Millennium Prize Problems worth $1 million each, has \"apparently been settled.\" A formal review is now underway. The article Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been set",
+    "url": "https://the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled/",
+    "published_at": "2026-09-14T13:01:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China fires back at U.S. AI safety warnings, calling them fearmongering to lock in American advantage",
+    "summary": "China has flatly rejected warnings about AI risks from Anthropic CEO Amodei and other U.S. AI leaders. Beijing's Foreign Ministry calls it \"fearmongering,\" while the state-run Global Times accuses Amodei of waging a \"silent AI Cold War.\" China's security minister isn't calling for a slowdown either ",
+    "url": "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage/",
+    "published_at": "2026-09-14T12:20:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Sam Altman calls for pacing AI development but promises rapid progress will continue",
+    "summary": "Sam Altman is doubling down on slowing AI development. OpenAI now runs safety checks before major training runs, and according to The Information, the company has been talking with Anthropic and Google for months about joint self-regulation. The article Sam Altman calls for pacing AI development but",
+    "url": "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue/",
+    "published_at": "2026-09-14T09:39:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Elevenlabs makes Music v2.5 available via app and API with free and pro tier options",
+    "summary": "ElevenLabs has released Music v2.5 for its AI music generator. In a blind test with nearly 48,000 comparison pairs, listeners preferred the new version over its predecessor. The company says the model was trained only on licensed music. The article Elevenlabs makes Music v2.5 available via app and A",
+    "url": "https://the-decoder.com/elevenlabs-makes-music-v2-5-available-via-app-and-api-with-free-and-pro-tier-options/",
+    "published_at": "2026-09-13T13:40:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
+    "summary": "The AllSpark team has released Iris-mini and Iris-pro, two open-source search agents built on Qwen models that lead benchmarks among open-weight models in their size classes. According to the paper, the training data and models also improved performance on tasks they were never trained for, includin",
+    "url": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class/",
+    "published_at": "2026-09-13T12:58:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra pilots a surveillance drone and runs a business on its own",
+    "summary": "GPT-6 Astra earns nearly three times as much as Claude Fable 5.1 on Andon Labs' Vending-Bench agent benchmark and refuses illegal price-fixing deals that Fable agrees to. On drone control, Astra is the first model to beat the human baseline on all five subtasks, including finding and following indiv",
+    "url": "https://the-decoder.com/gpt-6-astra-pilots-a-surveillance-drone-and-runs-a-business-on-its-own/",
+    "published_at": "2026-09-13T10:52:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two-year university study finds banning AI from classrooms leaves students worse off",
+    "summary": "A law professor spent two years testing how an AI ban, unguided AI use, and structured training affect student performance. The group without AI finished last both years. \"I was wrong,\" the researcher writes, who had assumed that AI without guidance would do more harm than good. The article Two-year",
+    "url": "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off/",
+    "published_at": "2026-09-13T09:27:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Vivo V80 camera and AI features tipped ahead of launch: Here is what it may offer",
+    "summary": "Vivo V80 camera and AI features tipped ahead of launch: Here is what it may offer",
+    "url": "https://www.digit.in/news/mobile-phones/vivo-v80-camera-and-ai-features-tipped-ahead-of-launch-here-is-what-it-may-offer.html",
+    "published_at": "2026-09-14T11:40:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.iowapublicradio.org/news-from-npr/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.wfae.org/world/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://knpr.org/npr/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.ideastream.org/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.wrvo.org/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.wfdd.org/world-news/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+    "summary": "Some key leaders at artificial intelligence companies call for a slowdown in AI development. And, Iran-Gulf diplomacy hits a setback as talks in Oman are delayed.",
+    "url": "https://www.wlrn.org/npr-breaking-news/2026-09-14/key-leaders-sound-the-alarm-on-ai-and-iran-gulf-diplomacy-hits-a-setback",
+    "published_at": "2026-09-14T11:39:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "New warnings about AI's risks to humanity revive a long-running debate",
+    "summary": "Anthropic CEO Dario Amodei is calling for stronger safeguards as AI models become more capable and increasingly act on their own.",
+    "url": "https://www.12news.com/article/news/nation-world/new-warnings-risks-ai-humanity/507-00a6ca0e-b32b-4467-8a92-fc39f3a0fbf8",
+    "published_at": "2026-09-14T11:39:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "New warnings about AI's risks to humanity revive a long-running debate",
+    "summary": "Anthropic CEO Dario Amodei is calling for stronger safeguards as AI models become more capable and increasingly act on their own.",
+    "url": "https://www.kgw.com/article/news/nation-world/new-warnings-risks-ai-humanity/507-00a6ca0e-b32b-4467-8a92-fc39f3a0fbf8",
+    "published_at": "2026-09-14T11:39:17+00:00",
+    "source": "newsdata"
+  }
+]
