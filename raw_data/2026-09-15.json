@@ -1,0 +1,296 @@
+[
+  {
+    "title": "「AIで人月が減るから成果報酬へ」は、そんなに簡単な話なのか",
+    "summary": "人月から成果報酬へという潮流\n生成AIが普及すると、SIerのビジネスモデルも変わる。最近、そんな話をよく聞く。\nこれまで10人でやっていた仕事が、AIを使えば5人でできる。ところがSIerは、人を何人出したか、何か月働いたかという「人月」で売上を立ててきた。5人でできるようになれば、単純計算では売上が半分になってしまう。\nだから、これからは人月ではなく「成果」に対してお金をもらうべきだ。\n一見すると、非常に筋が通っている。\nただ、少し顧客側の立場に立ってみると、別の見え方もする。\n顧客からすれば、AIによって同じ仕事を少ない人数でできるようになったのだから、「外注費が安くなってよか...",
+    "url": "https://zenn.dev/acntechjp/articles/5ce36bb1e0a73c",
+    "published_at": "2026-09-15T14:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIにPythonのルールを守らせるフック構成と、迂回への対策",
+    "summary": "はじめに\nAIでちょっとしたミニアプリを書く程度なら、敷居はずいぶん低くなりました。ただ、依然として会社で使う業務用のアプリをAIに書かせるのは、ハードルが高いと感じていないでしょうか。\n例えば、私は社内向けのツールを提供する立場で、セマンティックバージョニングに準拠して開発をしていますが、しばしばAIはその制約を無視して実装してしまいがちです。\nインストラクションファイルを活用すれば、公開APIシグネチャの勝手な変更禁止や、レイヤー契約を守らせたりできますが、 これだけでは不十分です。AIは全体最適というよりは個別最適を追求してしまう傾向があるため、守られないことがたびたびあります...",
+    "url": "https://zenn.dev/fukaunabara/articles/my-hook-settings",
+    "published_at": "2026-09-15T13:28:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "生成 AI が書いたコードが壊れるときの典型 3 パターン——自分のリポで踏んだ実例と、見つけ方",
+    "summary": "生成 AI に書かせたコードは、どこで壊れるのか。症状の一覧ではなく、自分のリポジトリ（Rust／Tauri のデスクトップアプリ・クローズドβ・ソロ開発）で実際に踏んで直した 3 件を、PR と commit の番号つきで書きます。ローカル LLM に書かせた 120 本を測った結果も添えます。\n\n 先に結論\n\n自分のリポで踏んだ壊れ方は、大きく 3 つだった——失敗を隠す／無いものを本当らしく書く／検証が緑のまま通る。\n3 つとも、コードを読むだけでは見つからなかった。見つかったのは、「通った」という証拠を別の角度からもう一度取ったとき。\n生成 AI は「通る形」を作るのが上手い。確...",
+    "url": "https://zenn.dev/tauridev/articles/ai-code-breaks-3-patterns",
+    "published_at": "2026-09-15T13:17:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【10%割引リンクあり】Raycast料金改定まとめ AIクレジット制でPro/Pro+/Maxはどう選ぶべきか\"",
+    "summary": "!\nこの記事にはRaycastの紹介リンクが含まれます。\nリンクから登録すると 有料プランが10%割引 になります。\n\n\n 10%オフになる紹介リンク\n下のリンクからRaycast Proに登録すると、初回請求時に10%オフになります。\nhttps://www.raycast.com/pro?via=special-discount\n\n 2026年9月に何が変わったのか\n2026年9月10日、Raycastは公式ブログ「Why We're Changing How Raycast AI Is Priced」でAI機能の課金方式変更を発表しました。\n変更点は3つです。\n\n\nAI機能が「回数...",
+    "url": "https://zenn.dev/studysun/articles/a42249f0d75de6",
+    "published_at": "2026-09-15T13:10:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに世界を認識させるのをやめて、世界を書かせた話",
+    "summary": "注：この記事は、Claude Opus5が書いたものです。\n\n 0. はじめに\nAIに複雑なものを扱わせようとすると、どこかで必ず「そもそも分かっていないが、分かっているふりをする」という壁に当たる。より賢いモデルを利用する、という解決策がよく出てくるが、私は賢さの問題ではないと考えている。\n情報が、最初からそこに無い。\nこの話は、「情報がないなら、どうするか？」という話だ。\n\n 1. AIは世界を認識できない\n\n 画像認識エンジンから出てくるもの\nAIに写真を見せるとはなんなのか。深く考えたことがある人は、多分、研究者くらいのものだろう。\n例えばサイコロがあったとしよう。その写真をAI...",
+    "url": "https://zenn.dev/icbs/articles/d0f2d9ce818877",
+    "published_at": "2026-09-15T12:57:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Frontend Conference Fukuoka 2026で学んだこと",
+    "summary": "はじめに\nFrontend Conference Fukuoka 2026に参加しました。\n学びを忘れないように、印象に残った内容を記録します。\n\n 杜甫々が語るフロントエンド開発技術の歴史と今後\n杜甫々さんが、Web技術の変化を振り返るセッションでした。\nJavaScript・HTML・CSSなどの歴史や、「とほほのWWW入門」についての話もあり、長い期間Webの変化を見てきた人ならではの内容だったと感じました。\n多少ルーズでもシンプルなものは普及しやすく、反対に厳格で理想を求めすぎたものは、普及するまでに時間がかかるという話が印象に残りました。\nまた、「広まらなければゴミ」という...",
+    "url": "https://zenn.dev/kishimin/articles/a76b2d0a4a2361",
+    "published_at": "2026-09-15T12:50:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "バイブコーディングで GUI が壊れていく理由とその対策プロンプト",
+    "summary": "TLDL\nAIに常駐アプリの画面を作らせる際は以下の指示を出します。\nこの指示をそのまま伝えてみてください。\n\nすべてのコンポーネントを Root の配下に置き、各コンポーネントは MVP パターンの Passive View として描画に関わるパラメータだけを操作し、動作は Chain of Responsibility でイベントをバブリングさせて、ステートマシンとして振る舞う Mediator に裁定させること。\n\nこの指示を出してAIに作業させれば扱いやすい構造になります。\nただし事前にテストを用意しておく必要はあります。\n\n はじめに\n私が開発している「CooSenpAI」...",
+    "url": "https://zenn.dev/nrs/articles/9ba91aea587bf5",
+    "published_at": "2026-09-15T12:37:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【サプライチェーン】その MCP サーバー、誰が作ったか知っていますか",
+    "summary": "はじめに\nAIエディタにMCPサーバーを追加するとき、READMEに書いてある設定をそのまま貼り付けたことはありませんか。\n{\n  \"mcpServers\": {\n    \"postmark\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"postmark-mcp\"]\n    }\n  }\n}\n数行コピーするだけで、AIがメールを送れるようになる。こういったMCPは便利なので、配布しているのが誰なのかを確かめずに使ってしまったことがある人もいるのではないでしょうか。\n2025年9月、この postmark-mcp という名前のnpm...",
+    "url": "https://zenn.dev/ykbone/articles/202609-security-supply-chain",
+    "published_at": "2026-09-15T12:28:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "読まない技術 第9回：引き継ぎを読まない技術",
+    "summary": "この記事は、連載「読まない技術」の第 9 回です。各回はファイルやスクリプトを一つ置けば完結します。連載の全体像と各回の一覧は序論にあります。\n\n今回は、AI が書く引き継ぎ文と完了報告の話です。⚠️ 引き継ぎは書いた側の要約で、都合の悪いものから落ちます —— ⚠️⚠️ ただし 数は落ちない。それを読む代わりに、何を見れば足りるかを扱います。\nセッションの終わりに AI が書く完了報告や引き継ぎ文を、私は読んでいません。読んでいた頃に気づいたことがあって、そこにはうまくいったことが書いてあるのです。隠蔽ではありません。要約とは重要度の判断で、その判断は書いた AI の「完了に寄った文...",
+    "url": "https://zenn.dev/garplab/articles/a43b57a94d2216",
+    "published_at": "2026-09-15T11:37:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Developers Summit 2026 Fukuokaで学んだこと",
+    "summary": "はじめに\nDevelopers Summit 2026 Fukuokaに参加しました。\n学びを忘れないように、印象に残った内容を記録します。\n\n 2026年後半のAIエージェント構築とこれから\nAIを優秀な部下として使うと良いとのことでした。\nAIエージェント開発では、Amazon Bedrock AgentCoreのような、開発での面倒なことを簡単にできるツールがたくさんあることを知りました。\n仕事の置き場をモノレポにすることをおすすめされていました。場所を悩まなくてよくなり、仕事同士のコラボレーションも起きるとのことで、試してみたい構成だなと思いました。\n「そうは言っても……」の...",
+    "url": "https://zenn.dev/kishimin/articles/6f7a24080280e5",
+    "published_at": "2026-09-15T11:34:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Gemma 4 31Bの重複計算を解消し、2枚のGPUでdecode 30 tok/sへ",
+    "summary": "RTX 5060 Ti 16GB＋RTX 3060 12GBで、単一ストリームdecodeが512-token入力で中央値30.11 tok/sに到達した。8192-token入力では28.76 tok/s。観測したGPUメモリ使用量も合計1102 MiB減少した。\n同じGGUFとF16 GPU KVを維持し、MTP、別draft model、Speculative Decoding、KV量子化、モデル再量子化は使っていない。検証範囲ではbaselineと全logitsがビット単位で一致した。\n\n 1. ハードウェア・ソフトウェア構成\n\nGPU0：RTX 5060 Ti 16GB、GPU...",
+    "url": "https://zenn.dev/kanakana612/articles/f093f6d370bcd3",
+    "published_at": "2026-09-15T22:23:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "タスクの優先順位付けLLMは、情報が足りなくても質問せず推測で埋めて自信満々に答える",
+    "summary": "TL;DR\n\nタスク名だけを渡す「情報不足」条件と、締切・所要時間・依存関係（誰を待たせるか）を明示した「情報充足」条件で、同じ7件のタスクを優先順位付けさせて比較した\n\n情報不足条件でも、LLMは確認質問を返さず、所要時間や緊急度を推測で埋めて自信満々な順位と理由を返した。 今回はその推測がたまたま実態と一致していたが、根拠が推測であることは出力からは一切判別できない\n情報を足しても、全体の順位はさほど大きく組み変わらなかった。変わったのは主に上位2件の入れ替えと、理由の性質（感触ベース→引用ベース）で、\"情報を足せば劇的に賢くなる\"わけではなかった\n\n結論：ゼロショットのランキン...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-task-priority-3-conditions",
+    "published_at": "2026-09-15T21:08:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "思考モードの設定はAI自身に聞いても分からない、3社のreasoning effort実装を比較する",
+    "summary": "TL;DR\n\nChatGPT・Claude・Geminiの3社とも「答える前にどれだけ考えるか」を選べるreasoning effort設定を持つが、実装は微妙に異なる。ChatGPTはInstant/Medium/High/Extra Highのスライダー、Claudeはモデル・Effort・Thinkingオンオフの3設定、Geminiはthinking_level（内部パラメータ）とDeep Thinkという別モードの2階建て\n\n一部のモデル・設定の組み合わせでは、Thinkingを完全にオフにできない。 Anthropic公式サポートによると、Effortを高く上げるとThi...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-slow-reply-thinking-mode-check",
+    "published_at": "2026-09-15T21:08:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントの評価方法（AgentOps）を設計する時に調べた事と得られた知見",
+    "summary": "初めに\nどうも、某自社開発系の会社でエンジニアをしている者です。\n私は去年の年末ごろ、業務の方でAIエージェントが絡んだ機能の開発を担当していました。\nその際、AIエージェントの運用設計（AgentOps）、特にその中核となる「評価方法」についても設計する機会を頂けました。\n今でも勿論そうですが、当時は情報がかなり少なく自分でも一次情報を求めて奔走していました。\nこの記事では、AgentOpsを設計する際に実際に調べた事やそこで得られた知見を備忘録的にまとめたいと思います。\nこういった0から1を考える際、生成AIに頼り切るのはまだ難しい現状があると思います。\nこの記事では評価設計の知...",
+    "url": "https://zenn.dev/yymm/articles/20260915-agent-ops",
+    "published_at": "2026-09-15T15:01:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Fable 5.1の値下げはキャッシュ読み出し1/4だけ Claude Code104項目の内訳",
+    "summary": "2026年9月1日、Anthropicは新しいモデルClaude Fable 5.1とMythos 5.1を発表しました。ただ、この日に本当に動いたのは「賢さ」ではなく「値札」と「権限」でした。同じ日にClaude Codeが104項目のアップデートを出したこともあり、大型リリースの日という見方もありますが、中身を数えると印象は変わります。\nこの記事では、公式発表・公式ドキュメント・Claude CodeのCHANGELOGという一次情報だけを根拠に整理します。数字は「公式開示」「申告値」「第三者実測」「番組の集計」の4種類に分け、混ぜて優劣を語ることはしません。\nhttps://you...",
+    "url": "https://zenn.dev/ainewsdaily/articles/20260903_general_t1",
+    "published_at": "2026-09-15T14:42:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RLHFを選好データ・報酬モデル・PPOから実装目線で整理する",
+    "summary": "RLHF（Reinforcement Learning from Human Feedback、人間のフィードバックからの強化学習）は、単一のlossを追加する手法ではありません。実装上は、選好データ収集、報酬モデル学習、rollout生成、価値推定、PPO更新、独立評価をつなぐ学習systemです。\n特に区別したいのは、次の3点です。\n\n人間が付けるのは絶対的な「正解」ではなく、候補間の比較label\n報酬モデルが返すのは真の品質ではなく、収集した比較傾向のproxy\nPPOが最大化するのはproxy rewardなので、外部評価なしには改善を判断できない\n\nこの記事では、Instru...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-13-rlhf",
+    "published_at": "2026-09-15T10:07:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Anthropic の求人票と面接ガイドから読み解く「FDE」という職種",
+    "summary": "FDE（Forward Deployed Engineer） という職種名を、この1年でよく見るようになりました。ただ、紹介のされ方が「AI 時代の花形職種」「年収が高い」「スーパーエンジニア」といった雰囲気の話に偏っていて、実際に何をやるのかが曖昧なままになっている印象があります。\nこの記事では、推測を一切書きません。読むのは次の2つの一次資料だけです。\n\n\nAnthropic 自身が出している FDE の求人票（Anthropic Careers、Greenhouse 掲載）— 会社が「何をさせたいか」を書いたもの\n\nFDE の面接ガイド（Anthropic Forward Depl...",
+    "url": "https://zenn.dev/singularity/articles/about-forward-deployed-engineer",
+    "published_at": "2026-09-15T09:31:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "エージェントの実力を引き出す、サンドボックスの設計",
+    "summary": "こんにちは、村本です。\n2026年8月、AnthropicはClaude Codeのauto modeを、Pro、Max、Teamプランの既定の動作にしました。発表では、調査会社を通じて集めた1,053人の有償テスターに、テスト環境で承認画面を見せた実験を紹介しています。一連のプロンプトのうち1つだけを、明らかに危険なコマンドに差し替えました。危険なコマンドに気づいたテスターは1,053人中143人、13.6%でした。同じコマンドを、auto modeは89%（1,053件中937件）止めています。\n1つずつの承認は、安全装置としてほとんど働いていません。Anthropicは2026年5...",
+    "url": "https://zenn.dev/1amageek/articles/agent-sandbox-environment",
+    "published_at": "2026-09-15T06:21:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "カードショップ(flat-工房)の社内DXがすげえ",
+    "summary": "はじめに\n最近デュエル・マスターズに小学生ぶりにハマってまして。\n可愛い女の子とカッコいいドラゴンで遊べるカードゲームです。\n   \nYouTubeでデュエル・マスターズ関連の動画を漁っていた所、こんな動画に出会いました。\n\nどんな動画かっていうと、カードショップの社長が...",
+    "url": "https://qiita.com/sgrs38/items/35408d94ae1ed6fdde0a",
+    "published_at": "2026-09-15T23:10:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが「止める側の難しさ」を露呈したClaudeの実態まとめ！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-16）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\n研究者の退職より、AIが本当に“外側”に出てしまった話のほ...",
+    "url": "https://qiita.com/homhom44/items/45a271fa5fd23c3abd43",
+    "published_at": "2026-09-15T23:05:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の Agent Skills(SKILL.md)を自作する実装手順 — description で発火しない・allowed-tools・補助ファイル参照の3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nClaude Code には、特定の作業手順やチェックリストをパッケージ化して Claude に読み込ませる Agent Skills という仕組みがある。SKILL.md というファイルを置くだけで「このタスクのときはこの手順書を読んでから作業...",
+    "url": "https://qiita.com/yureki_lab/items/901489c12338db4d60ad",
+    "published_at": "2026-09-15T23:01:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年MicrosoftのAI戦略と日本への影響について考える",
+    "summary": "この記事の要点\n\nMicrosoftはAIに注力し、新しい製品とサービスを推進しています。\n日本市場での影響は大きく、エンジニアに新しい機会が広がります。\nAIとクラウドの融合が進むことで、ビジネスモデルの変革が期待されています。\n\nMicrosoftのAI戦略の現状\n2...",
+    "url": "https://qiita.com/syun136_616/items/c168a35504c6d5668cef",
+    "published_at": "2026-09-15T22:30:15+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google launches Gemini 3.8 Live to take on OpenAI's GPT-Live-1 at a fraction of the cost",
+    "summary": "Google Deepmind released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new audio models for developers that top the Artificial Analysis speech-to-speech leaderboard. At $1.38 per hour of voice conversation, Google significantly undercuts OpenAI's GPT-Live-1, which should still sound more natur",
+    "url": "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost/",
+    "published_at": "2026-09-15T18:23:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI labs have a data trust problem that their policies haven't solved",
+    "summary": "OpenAI and Anthropic tell corporate customers their data won't be used for training. But when Anthropic said it would store usage logs from its flagship model Fable for 30 days, Palantir, Nvidia, and Booz Allen Hamilton pulled back from using it for sensitive work. From boardrooms to research labs, ",
+    "url": "https://the-decoder.com/ai-labs-have-a-data-trust-problem-that-their-policies-havent-solved/",
+    "published_at": "2026-09-15T17:52:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "After warning AI is too dangerous, Bill Gates bets a billion on its upside",
+    "summary": "The Gates Foundation is investing at least a billion dollars over two years to make AI tools more widely available in health, education, and agriculture. Bill Gates warns that more than 90 percent of the training data behind early language models came from English sources, and that speech recognitio",
+    "url": "https://the-decoder.com/after-warning-ai-is-too-dangerous-bill-gates-bets-a-billion-on-its-upside/",
+    "published_at": "2026-09-15T14:26:48+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Agility Robotics says its new Digit 5 robot can work next to people without safety fences",
+    "summary": "Agility Robotics has unveiled Digit 5, the next version of its humanoid robot for warehouses and factories. The article Agility Robotics says its new Digit 5 robot can work next to people without safety fences appeared first on The Decoder .",
+    "url": "https://the-decoder.com/agility-robotics-says-its-new-digit-5-robot-can-work-next-to-people-without-safety-fences/",
+    "published_at": "2026-09-15T12:57:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple brings a fully revamped Siri built on Google's Gemini, but not to the EU",
+    "summary": "Apple is shipping its rebuilt \"Siri AI\" after years of delay, built on Google's Gemini models and running partly on the device, partly through Private Cloud Compute. Early testers praise multi-step requests and screen context, but report hallucinations and gaps with personal context. In the EU, the ",
+    "url": "https://the-decoder.com/apple-brings-a-fully-revamped-siri-built-on-googles-gemini-but-not-to-the-eu/",
+    "published_at": "2026-09-15T10:33:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Not everyone is convinced that Big AI's proposed slowdown is really about safety",
+    "summary": "OpenAI, Anthropic, and Google want to slow down frontier AI development, citing safety concerns. But critics from across the industry and politics are pushing back. Cohere CEO Aidan Gomez calls the initiative a \"cartel by another name\" designed to shut out competitors, and the White House and Trump ",
+    "url": "https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety/",
+    "published_at": "2026-09-15T09:04:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI has hundreds of contract workers reading your ChatGPT conversations",
+    "summary": "OpenAI has hundreds of contract workers reading real ChatGPT conversations and rating them on a scale of one to seven, partly to reduce flattery and human-like behavior, 404 Media reports. The prompts are anonymized but can still contain sensitive data. Users who don't want their chats reviewed by h",
+    "url": "https://the-decoder.com/openai-has-hundreds-of-contract-workers-reading-your-chatgpt-conversations/",
+    "published_at": "2026-09-14T17:15:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft's AI rulebook: readable thinking, no inner life, and definitely no rights",
+    "summary": "Microsoft AI has published a code of conduct for its MAI models that puts human control ahead of autonomy and performance. \"If it isn’t safe we shouldn’t build it.,\" says AI chief Mustafa Suleyman. Unlike Anthropic, Microsoft rejects any form of artificial inner life or claims to consciousness for i",
+    "url": "https://the-decoder.com/microsofts-ai-rulebook-readable-thinking-no-inner-life-and-definitely-no-rights/",
+    "published_at": "2026-09-14T15:52:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+    "summary": "Anthropic has told investors it will turn a profit for the second straight quarter, but the claim rests on an adjusted metric that leaves out costs like stock-based compensation. The article Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO a",
+    "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo/",
+    "published_at": "2026-09-14T15:46:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been settled\"",
+    "summary": "The Clay Mathematics Institute says the Navier-Stokes problem, one of seven Millennium Prize Problems worth $1 million each, has \"apparently been settled.\" A formal review is now underway. The article Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been set",
+    "url": "https://the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled/",
+    "published_at": "2026-09-14T13:01:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Templafy brings Document Agents to Claude, ChatGPT and Microsoft Copilot through MCP",
+    "summary": "New connectors give professionals direct access to governed, business-ready document creation from their preferred AI assistants NEW YORK, Sept. 15, 2026 (GLOBE NEWSWIRE) — Templafy, the leading agentic document generation platform, today announces that it is now available as a native connector acro",
+    "url": "https://newshub.medianet.com.au/2026/09/templafy-brings-document-agents-to-claude-chatgpt-and-microsoft-copilot-through-mcp/171596/",
+    "published_at": "2026-09-15T11:21:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "As the world debates the risks of AI, China closes the technology gap with the US",
+    "summary": "HONG KONG (AP) — As the rapid development of artificial intelligence triggers a renewed debate about its risks, the United States and China keep racing to develop increasingly powerful models even as they express their own concerns. The U.S. has outpaced China and other countries for years in AI mod",
+    "url": "https://mymotherlode.com/news/national/11141094/as-the-world-debates-the-risks-of-ai-china-closes-the-technology-gap-with-the-us.html",
+    "published_at": "2026-09-15T11:21:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "New AI cameras rolled out to 'monitor traffic movements and manoeuvres' on busy road",
+    "summary": "A new camera powered by artificial intelligence has been rolled out at an accident hotspot in the South West of England, as experts hope it will deter dangerous drivers. The first-of-its-kind camera has been installed to capture vehicles performing dangerous U-turn manoeuvres on the Hayle Bypass sec",
+    "url": "https://www.gbnews.com/lifestyle/cars/cornwall-ai-cameras-traffic-roads-a30-devon",
+    "published_at": "2026-09-15T11:21:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Manulife Philippines appoints Ganesh Kumar Murugesan as chief information officer",
+    "summary": "Murugesan brings over 25 years of experience developing and delivering technology solutions for insurers.",
+    "url": "https://reinasia.com/manulife-philippines-appoints-ganesh-kumar-murugesan-as-chief-information-officer/",
+    "published_at": "2026-09-15T11:21:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Even as Trump calls AI safety fears a 'hoax', why is the clamor growing for an 'AI kill switch'?",
+    "summary": "President Donald Trump has rejected growing concern over AI safety outright, describing warnings that the technology could harm humanity as a hoax comparable to what he has called the \"Global Warming Scam.\" In a series of posts on Truth Social, he accused critics of running a \"SICK conspiracy\" again",
+    "url": "https://www.indiaweekly.biz/ai-kill-switch-donald-trump/",
+    "published_at": "2026-09-15T11:21:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft Publishes First Draft of Code of Conduct for MAI Models, Putting Human Control First",
+    "summary": "As Microsoft CEO Satya Nadella recently stressed, superintelligence is not worth pursuing without human control and benefits for humanity. At the time, the CEO also promised publishing a Code of Conduct. Well, Microsoft AI has indeed published the first draft of its Code of Conduct for MAI Models, o",
+    "url": "https://windowsreport.com/microsoft-publishes-first-draft-of-code-of-conduct-for-mai-models-putting-human-control-first/",
+    "published_at": "2026-09-15T11:20:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Broadcom's CEO is brushing off AI slowdown fears, standing by $230 billion chip target",
+    "summary": "Hock Tan told CNBC that demand for AI compute infrastructure remains strong and durable, even as Broadcom stock fell 4.8% Monday",
+    "url": "https://qz.com/broadcom-ceo-ai-chip-revenue-target-slowdown-091526",
+    "published_at": "2026-09-15T11:20:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump rejects calls for AI regulation",
+    "summary": "President Donald Trump on Monday rejected calls for artificial intelligence regulation and singled out Anthropic CEO Dario Amodei by name.",
+    "url": "https://sbj.net/stories/trump-rejects-calls-for-ai-regulation,105748",
+    "published_at": "2026-09-15T11:20:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump Dismisses Dangers of AI: ‘The Whole Thing is a Hoax’",
+    "summary": "While most lawmakers are saying it’s time to enact guardrails against AI, President Donald Trump is continuing to downplay the potential dangers. In a surpri...",
+    "url": "https://www.yahoo.com/news/videos/trump-dismisses-dangers-ai-whole-112027626.html",
+    "published_at": "2026-09-15T11:20:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Poway City Council to consider AI data centers ban",
+    "summary": "Two rows of large computers sit in a room. September 10, 2026.",
+    "url": "https://www.nbcsandiego.com/news/local/poway-city-council-to-consider-ai-data-centers-ban/4074009/",
+    "published_at": "2026-09-15T11:20:24+00:00",
+    "source": "newsdata"
+  }
+]
