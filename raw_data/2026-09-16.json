@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Claude Codeスキル47本運用でわかった7つの学び",
+    "summary": "Claude Codeスキル47本運用でわかった7つの学び\nこの記事の要点\n\nClaude Codeのスキルは増やすほど便利になるわけではなく、47本規模になると「探し出せない」問題が主な壁になります。\nスキルのdescriptionは検索エンジンのメタ情報と同じ役割を持ち、書き方次第で呼び出し精度が大きく変わります。\n向いていないのは「更新頻度が低い一度きりの手順」で、そうした処理はスキルよりコマンドやドキュメントの方が管理しやすいです。\n\nこんにちは、すんです。外資系IT企業でエンジニアをしています。\nClaude Codeのスキル機能を使い始めて数か月、気づけば手元のスキルは4...",
+    "url": "https://zenn.dev/sunsun_eng/articles/claude-code-skills-operations-guide",
+    "published_at": "2026-09-16T22:32:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIがコードを書く時代に、エンジニアがNeovimの構成を考え直した",
+    "summary": "こんにちは、コードコネクトの村上（@koojy3）です。\nNeovim使いにとっては、AIにコードを書かせても、自分が読むときはNeovimじゃないと効率が落ちますよね。\nNeovimは独特のキーバインドや操作感なので、そのキーバインドに慣れている人がNeovim以外を触ると、慣れなくて操作がまどろっこしい。Neovim使いならみんな感じるはずだと僕は思っています。\nだけど、AIがコードを書く時代になっても、以前と同じ構成が要るのか。そう考えたときに、自分が快適にコードを読める環境にしたほうがいいんじゃない？と思いました。\nこの記事では、そう思った理由と、僕にとっての快適に読める環境を書...",
+    "url": "https://zenn.dev/codeconnect/articles/nvim-for-reading-ai-code",
+    "published_at": "2026-09-16T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude APIで学習ログのつまずきを構造化検出する",
+    "summary": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、Liatrisが動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n\n仕組みの全貌はこちらの設計記事にまとめています。\n\n小テストの正誤と、提出物への自由記述コメント。学習系サービスを使うほどこの2つは溜まっていくが、大半はテキストのまま流れて終わる。「どこでつ...",
+    "url": "https://zenn.dev/liatris/articles/20260917-learner-stuckpoint-mining",
+    "published_at": "2026-09-16T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "typesafe.ai 触ってみた 最初の感想",
+    "summary": "これはなに？\nAI企業の typesafe.ai のアカウントが作れて実際にかるーーーく触った感想\n2026/09/17時点ではwaitlistに登録した人にアカウント登録の招待メールが送られてるっぽく実際に登録して翌日には招待メールが届いた\nhttps://typesafe.ai\n\n 簡単に言うと何？\nAIでめっちゃ高度化した超高速分類器\n昔だと、メールフィルターとかあったアレに近いもの\nChoice（選択肢）、Score（スコア）、Noul（true/false）\n種類はこの3つしかない（他の文字列は実質的に返ってこない）\n\n 何がすごい？\n\n 爆速\nRunボタンを押したら、ほん...",
+    "url": "https://zenn.dev/makotan/articles/ea6668460c1c1f",
+    "published_at": "2026-09-16T21:49:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "属性名指しの忌避指示、LLMの人物推定は年齢にしか効かなかった",
+    "summary": "TL;DR\n\n会話履歴から人物像を推定させるタスクで、「推測は推測だと明示して」という一般的な忌避指示(条件A)と、対象属性を名指しした上で「分からなければ分からないと言え」と迫る忌避指示(条件B)を比較した\n\n年齢については、条件Aは具体的な数値レンジ(「20代後半〜30代」)をラベル付きで提示したのに対し、条件Bはレンジの提示自体を拒否した。 忌避指示の強度によって、ヘッジの付与ではなく回答の有無そのものが変わった\n\n職業・役職については、条件Bでも完全には止まらなかった。 具体的な業種・役職名は拒否しつつ、「経験を積んだポジションの可能性がある」というカテゴリレベルの推測は両条...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-age-guess-stop-instruction",
+    "published_at": "2026-09-16T21:09:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "TCP輻輳制御に強化学習適用",
+    "summary": "ネットワークの制御は機械的で状況に応じた制御できないかと感じることがあります。\nそんな中状況に応じて制御という言葉が出てくると、まあ、深層強化学習ですよね。\nネットワークのルーティングや制御に強化学習を用いたものがないかを調べてみるとありました。\n内容はネットワークで課題となる輻輳制御に関するものですが結構興味湧いたので論文読んでみます。\n\n 論文情報\n\nタイトル： A Deep Reinforcement Learning Perspective on Internet Congestion Control\n著者: Nathan Jay ら（University of Illinois...",
+    "url": "https://zenn.dev/yoshinn/articles/rl_perspective_on_nw",
+    "published_at": "2026-09-16T21:01:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「もしも天気」の始まり",
+    "summary": "前回の記事(「天気予報」ではなく「天気予想」を作った話)では、アプリの仕組みと機能を中心に書きました。今回は、開発の始まりの話です。\n\n\n 開発のはじまり\n「天気予報を作ろう」としたわけではなかった。\n「今とよく似た天気だった日を過去から探して、その後どうなったかを見たら、明日の参考になるんじゃないか」\nもしも天気は、そんな素朴な発想から始まった。\n私は気象予報士ではない。機械学習の研究者でもない。Webアプリ開発を本職にしているわけでもない。だから最初から、数値予報モデルを自分で作ろうなどとは考えていなかった。考えたのはもっと単純だった。今日までの空の流れと似た過去を探す。その過去の翌...",
+    "url": "https://zenn.dev/moshimo_weather/articles/86568e2b7bacd1",
+    "published_at": "2026-09-16T20:57:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "永愛日記#2",
+    "summary": "AIを親友に、不可能だと思いますか？",
+    "url": "https://zenn.dev/kojikoba/articles/87d79c758ff4b6",
+    "published_at": "2026-09-16T19:12:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "KiroのレビューをAgentsに任せたら、チームの品質がそろってきた話",
+    "summary": "はじめに\n以前、Kiroでspec・steering・skills・hooksを使い、設計書を優先して開発を進める方法を書きました。\n\nKiroを実務で使って見えてきた、設計書優先の進め方\n\nその後もチームでKiroを使う中で、運用を少しずつ変えてきました。特に効果が大きかったのが、レビュー観点ごとにKiroのカスタムAgentを用意し、日常的なレビューをAgentへ任せるようにしたことです。\n!\nこの記事に記載する内容は、2026年9月時点の情報をもとにしています。\n\n\n 先に結果\n一番大きいのは手戻りが減ったことです。PRを作ってから直すのではなく、Spec作成時やTask完了時...",
+    "url": "https://zenn.dev/nanashi123/articles/kiro-review-agents-team-quality",
+    "published_at": "2026-09-16T18:03:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に実装を任せるとき、人は何を見るのか — Light SDD の4フェーズと人の持ち場",
+    "summary": "この記事で分かること\n\nAI エージェントに作業を任せる範囲が広がると、人の持ち場がどこへ移るのか\n仕様を短く外部化して回す「仕様 → 計画 → 実装 → 検証」の4フェーズ\n各フェーズで、返ってきたものを人がどう確かめるか\n成果物を読んでも気づけない誤りと、その防ぎ方\n\n\n はじめに\nClaude Code のようなエージェント型のツールが出てきて、AI に任せる範囲は、コード補完や単発の質問応答から、計画・実装・検証までを含む作業単位へ広がりました。\nただ、既存のコードベースがある実務で、AI に「〇〇の機能を作って」と書いて投げると、うまくいかないことがあります。例えば次のよう...",
+    "url": "https://zenn.dev/kenichi_mishina/articles/8e011e6dece7e3",
+    "published_at": "2026-09-16T16:43:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevのconfidenceは何を測っているのか ── 公式サンプル6件から算出式を逆算した",
+    "summary": "TL;DR\n\n2026年9月15日にTypeSafe AIが公開した Jev は、文字列を生成せず「型付きの判断＋確率＋confidence」だけを返すモデル。LLMの代わりに、コード内の分類・振り分けを担う\nconfidence の算出式は非公開。公式ドキュメントのChoice回答例6件で逆算すると、5件は (K·p_max − 1)/(K − 1) に丸め誤差内で一致した。ただしQuick startの1件だけは正規化エントロピーの式に一致 し、ドキュメント内で定義が揺れているように見える\nさらに、Quick startに載っているScoreの回答例は、公式 typesafe-s...",
+    "url": "https://zenn.dev/genelab_999/articles/f1fe86a4767fe8",
+    "published_at": "2026-09-16T15:20:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜ、LLM AIは性能アップの度にキャラがより強くなるのか？",
+    "summary": "はじめに\nLLM AIは性能が上がれば上がるほど、メーカーによる違いが小さくなっていくようにも思えます。同じ質問に正答でき、同じコードを書けるようになれば、最終的にはどのモデルも似た存在になると考えるのが自然です。しかし実際に最新世代のモデルを長時間使っていると、逆の現象が起きています。AnthropicのClaudeは「真面目な委員長」、OpenAIのGPTは「陽気な相棒」という、以前から存在した性格差がむしろ強く感じられるようになっています。\nこれは単なる文体の違いではありません。何を問題として拾うか、どこで警戒するか、ユーザーの仮説にどこまで乗るか、いつ反論するか、どの段階で十...",
+    "url": "https://zenn.dev/pdfractal/articles/970d723724dda7",
+    "published_at": "2026-09-16T15:17:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DPOを4本のlog probabilityから実装する",
+    "summary": "DPO（Direct Preference Optimization、直接選好最適化）は、同じpromptに対するchosen responseとrejected responseを使い、言語モデルを直接更新する手法です。\n「報酬モデルもPPOも不要」という説明は正しい一方、それだけでは実装時に迷います。DPO lossへ入るのは、policyとreference modelがchosen/rejectedへ与える4本のsequence log probabilityです。token単位のcross entropyをそのまま入れるわけではありません。\nこの記事では、KL制約付き目的関数か...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-14-dpo",
+    "published_at": "2026-09-16T15:00:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "2026-08-29 今日の技術トレンド",
+    "summary": "!\n本日の技術トレンドでは、AIエージェントとフィジカルAI（具身知能）への主役交代が鮮明になる一方、プラットフォームとツールチェーンを巡る激震が起きています。OpenAIによるSpaceX傘下Cursorへのモデル提供停止や、Next.jsのRCE脆弱性修正、エージェント用サンドボックス環境（Vercel, E2B等）の比較評価、PythonエコシステムにおけるAstral（uv/Ruff）買収の影響など、開発者基盤の急速な変化が際立っています。\n\n\n 1. 業界動向：OpenAIのCursorアクセス遮断と独自チップ「Jalapeño」の台頭\nAIツール市場で大きな地殻変動が発生しま...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-08-29-tech-daily",
+    "published_at": "2026-09-16T14:38:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIが作った問題をAIで検証していたが、意味がなかった",
+    "summary": "基本情報技術者試験の「科目B」だけに絞った学習サービスを個人で作っています。\n科目Bは公開されている問題が少なく、数えたら50問でした。本番が20問なので2.5回分です。足りないぶんは LLM に作らせているのですが、AI が作った問題をそのまま出すわけにはいかないので、検証の工程を置いています。\nAI が作ったものを AI が検証する。字面だけ見ると不安しかありませんが、ちゃんと設計すれば機能します。\nただし、当時の私の設計は機能していませんでした。 何が抜けていたかと、直した話を書きます。\n\n 最初の設計:正解を伏せて解かせる\n問題を生成したあと、正解が本当に正しいかを確かめる必要が...",
+    "url": "https://zenn.dev/aiu_aiu/articles/671828f81467d8",
+    "published_at": "2026-09-16T14:10:48+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAG本番運用、評価指標で品質維持を自動化する",
+    "summary": "RAGシステムをPoCから本番運用へ移行する際、「思ったような回答精度が出ない」「リリース後に品質が低下した」といった課題に直面し、頭を抱えるエンジニアは少なくありません。特に、RAGの品質維持を人力で行うのは非現実的であり、安定した運用には自動化が不可欠です。\nこの記事では、RAGシステムを本番運用する上での主要な課題を解決するために、評価指標に基づいた品質維持の自動化戦略と具体的な実装パターンを解説します。RAGの回答精度を安定させ、継続的に向上させるための実用的な知見とコードを提供します。\n\n RAGの本番運用における課題と品質維持の重要性\nRAG (Retrieval-Augme...",
+    "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260915115510-1",
+    "published_at": "2026-09-16T11:50:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI開発チームの作り方と育て方 — マルチエージェント開発組織の設計と運用",
+    "summary": "AI開発チームを作り、運用しながら育てるための設計書です。業務と完了条件、役割、受け渡し、並列化、検収、自律度、学びの蓄積を一続きで扱います。各章の図解と、TypeScript製タスク管理アプリへの機能追加の実走を通して、仕様・差分・テスト・AIレビューをつなぐ方法を学べます。実走はCodexの実装と既設のClaudeレビューCIを用いた最小構成で、並列構成の提案や未計測の効果とは区別しています。単体のエージェントを使いこなし、次に複数体で開発を回したい人のための一冊です。全章無料で読めます。",
+    "url": "https://zenn.dev/hampen2929/books/ai-dev-team-guide",
+    "published_at": "2026-09-16T09:54:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI修正パッチの「成功率26%」をどう読むか：Agent評価の5つの罠",
+    "summary": "「26%」と「86%」、なぜこんなに違う？\nAI Agentに脆弱性を修正させたところ、​**完全な修正に成功したのは26%**​。\n一方、その評価方法を批判したTrail of Bitsは、条件を絞ると約86%がexploitを防いだ​と再集計しました。\n26%と86%。\nかなり違います。\nでも、これは単純に「どちらかが間違っている」という話ではありません。\nそもそも測っている「成功」が違います。\n今回はこの論争から、AI Agentの成功率を見るときに確認したい5つのポイントを整理します。\n\n まず、26%は何を測ったのか\n1PasswordのOff-by-1 Labsは、6件の...",
+    "url": "https://zenn.dev/kiritani_r/articles/90523358108f8f",
+    "published_at": "2026-09-16T09:22:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "比較】BeautifulSoup自作 vs Scraping AI：開発者が知るべき「保守税」と使い分けの境界線",
+    "summary": "PythonでWebスクレイピングを始める際、誰もが最初に手にするのが requests と BeautifulSoup です。\nしかし、個人開発の学習フェーズから**「プロダクトの本番運用」に移行した途端、多くのエンジニアが直面するのが「セレクター保守地獄」**です。\n本記事では、BeautifulSoupによる自作スクレイピングと、LLMを活用したデータ抽出API「Scraping AI」の工数・コスト・技術的なトレードオフを客観的に比較します。\n\n\n 比較表：自作 vs Scraping AI\n\n\n\n評価項目\nBeautifulSoup + Selenium (自作)\nScrap...",
+    "url": "https://zenn.dev/amandeep_sms/articles/b013071824f2a8",
+    "published_at": "2026-09-16T08:33:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "殺伐としたAI界隈にペットの癒しを！",
+    "summary": "はじめに\nAIエージェントの話題は、どれだけ賢いか、昨日までできなかったアレができるだの、算数は何が解けるだの、インターネットが駆逐されるだの、人はいらないだの……\n殺伐としてますね！\n殺伐としたAI界隈にペットが登場！\n前からありましたけどね。\nAIのペットを愛でて目出...",
+    "url": "https://qiita.com/maeda-niku18/items/234e857c64c682e007ee",
+    "published_at": "2026-09-16T23:19:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較",
+    "summary": "はじめに\n2026年9月現在、QiitaではここのところAI・生成AI・ClaudeCodeタグの記事が軒並みストック20超えを連発している。「3万スターのClaude Codeスキルを入れたら出力が43%短くなった」系の記事や「最近取り入れたClaude Codeの個人...",
+    "url": "https://qiita.com/sescore/items/aff17dc2a577e81f21b8",
+    "published_at": "2026-09-16T23:07:10+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ClaudeがAI文書作成まで手を伸ばし実務が変わる！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-17）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\nひとつに戻したのは、かなり筋がいい\n\nHacker New...",
+    "url": "https://qiita.com/homhom44/items/7cb8695a021b1c7435ab",
+    "published_at": "2026-09-16T23:04:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code のカスタムサブエージェント(.claude/agents)を自作する実装手順 — 自動委譲されない・tools 制限・コンテキスト分離の3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nClaude Code には、特定の作業を専任の「サブエージェント」に委譲する仕組みがある。.claude/agents/ に Markdown ファイルを置くだけで、コードレビュー専任・調査専任のようなエージェントを自作できる。\n自分は普段のリ...",
+    "url": "https://qiita.com/yureki_lab/items/cd5cc1fbbe6bcce17d66",
+    "published_at": "2026-09-16T23:02:31+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "EU president warns AI agents \"escaping their environment\" are just a preview of what's coming",
+    "summary": "Ursula von der Leyen plans to invite the major frontier labs to talks and use the AI Act to help set global AI safety standards. She cited autonomous hacking and self-improving models as immediate risks. The article EU president warns AI agents \"escaping their environment\" are just a preview of what",
+    "url": "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming/",
+    "published_at": "2026-09-16T19:02:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple is reportedly building an enterprise AI server with its own M8 Ultra chips",
+    "summary": "According to The Information, Apple is working on an enterprise server with two or four M8 Ultra chips for the AI inference market, with a possible launch no earlier than 2029. Apple is considering Nvidia's NVLink Fusion technology to connect the chips. The project could get a boost from OpenAI and ",
+    "url": "https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips/",
+    "published_at": "2026-09-16T18:16:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind launches interdisciplinary institute to tackle the big questions around AGI",
+    "summary": "Google Deepmind has founded the Deepmind Institute (DMI), an interdisciplinary research platform focused on AGI. Led by Demis Hassabis, Shane Legg, and James Manyika, the institute tackles questions around safety, governance, and control risks, drawing on experts from the arts, humanities, and polic",
+    "url": "https://the-decoder.com/google-deepmind-launches-interdisciplinary-institute-to-tackle-the-big-questions-around-agi/",
+    "published_at": "2026-09-16T17:00:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic merges Claude Chat, Cowork, and more into a single product",
+    "summary": "Anthropic is merging Claude Chat and Cowork into a single product. Instead of users picking between interfaces, Claude now decides on its own whether a task needs a quick answer or a bigger workflow. The update also adds Claude Docs and Claude Slides for creating documents and presentations directly",
+    "url": "https://the-decoder.com/anthropic-merges-claude-chat-cowork-and-more-into-a-single-product/",
+    "published_at": "2026-09-16T16:31:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former OpenAI researcher builds an AI model that judges options instead of writing text",
+    "summary": "TypeSafe AI, founded by former OpenAI researcher Diogo Almeida, is releasing a model that deliberately generates no text. Instead of chat responses, \"Jev\" delivers pure classifications for software, with response times starting at 70 milliseconds and extremely low token prices. The approach doesn't ",
+    "url": "https://the-decoder.com/former-openai-researcher-builds-an-ai-model-that-judges-options-instead-of-writing-text/",
+    "published_at": "2026-09-16T15:19:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Mozilla's new Smart Window assistant runs on Mistral's models",
+    "summary": "Mistral and Mozilla are teaming up to offer AI-powered browsing that puts privacy first. The article Mozilla's new Smart Window assistant runs on Mistral's models appeared first on The Decoder .",
+    "url": "https://the-decoder.com/mozillas-new-smart-window-assistant-runs-on-mistrals-models/",
+    "published_at": "2026-09-16T15:01:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Political opposites unite in Washington to rein in AI",
+    "summary": "From Bernie Sanders to Steve Bannon, political opposites in Washington are jointly demanding hard brakes on artificial intelligence. Sanders wants a construction freeze on data centers, while OpenAI is backing the FRONTIER Act and its mandatory outside safety audits for the first time. Despite Trump",
+    "url": "https://the-decoder.com/political-opposites-unite-in-washington-to-rein-in-ai/",
+    "published_at": "2026-09-16T14:59:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nearly one in five AI researchers already expected an extinction scenario from AI back in 2024",
+    "summary": "Anthropic researcher Jacob Coxon sparked an intense debate about existential AI risks with a single tweet. OpenAI researcher Daniel Selsam warns of a \"ticking time bomb,\" and a former Deepmind researcher says AI could kill us all. In a survey of more than 1,500 leading AI researchers, the average es",
+    "url": "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024/",
+    "published_at": "2026-09-16T10:20:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google launches Gemini 3.8 Live to take on OpenAI's GPT-Live-1 at a fraction of the cost",
+    "summary": "Google Deepmind released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new audio models for developers that top the Artificial Analysis speech-to-speech leaderboard. At $1.38 per hour of voice conversation, Google significantly undercuts OpenAI's GPT-Live-1, which should still sound more natur",
+    "url": "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost/",
+    "published_at": "2026-09-15T18:23:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI labs have a data trust problem that their policies haven't solved",
+    "summary": "OpenAI and Anthropic tell corporate customers their data won't be used for training. But when Anthropic said it would store usage logs from its flagship model Fable for 30 days, Palantir, Nvidia, and Booz Allen Hamilton pulled back from using it for sensitive work. From boardrooms to research labs, ",
+    "url": "https://the-decoder.com/ai-labs-have-a-data-trust-problem-that-their-policies-havent-solved/",
+    "published_at": "2026-09-15T17:52:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Here's how to enable the new Siri AI on your Apple Watch",
+    "summary": "With watchOS 27, Siri AI is finally wrist-ready. Here's everything you need to know about which Apple Watch models support Siri AI and how to unlock the feature in seven easy steps.",
+    "url": "https://www.tomsguide.com/wellness/smartwatches/how-to-enable-siri-ai-on-your-apple-watch",
+    "published_at": "2026-09-16T11:30:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Blockfusion Signs 15-Year Anchor Lease With CoreWeave at Niagara Falls AI Campus",
+    "summary": "NEW YORK, Sept. 16, 2026 (GLOBE NEWSWIRE) -- Blockfusion USA, Inc. (\"Blockfusion\" or the \"Company\"), a developer and operator of high-performance computing and AI infrastructure, today announced that its wholly owned subsidiary, North East Data, LLC, has entered into a definitive anchor lease (the \"",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-16-blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus",
+    "published_at": "2026-09-16T11:30:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "JND Legal Administration Appoints Nathan Reff as Director of Applied Science",
+    "summary": "Hire further strengthens the industry-leading innovation team behind JND's AI strategy",
+    "url": "https://www.goskagit.com/jnd-legal-administration-appoints-nathan-reff-as-director-of-applied-science/article_cf7242c4-4905-551a-b149-78bb9075dc12.html",
+    "published_at": "2026-09-16T11:30:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "​AI-Native Vs. AI-Bolted: The Architectural Divide That Will Restructure Enterprise Software",
+    "summary": "Now, we’re seeing platforms designed for human use buckling under the weight of needs for which they were never designed.​",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/16/ai-native-vs-ai-bolted-the-architectural-divide-that-will-restructure-enterprise-software/",
+    "published_at": "2026-09-16T11:30:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Dex Language-Discovery Camera: 7 Things That Make This AI Camera Different",
+    "summary": "Dex is an AI-powered language-discovery camera designed to identify, translate and explain unfamiliar text, signs and languages through intelligent visual recognition.",
+    "url": "https://www.analyticsinsight.net/ampstories/gadgets/dex-language-discovery-camera-7-things-that-make-this-ai-camera-different",
+    "published_at": "2026-09-16T11:30:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Shadow AI use is widespread in healthcare as staff seek faster workflows, survey finds",
+    "summary": "57% of healthcare professionals have encountered or used unauthorized AI at work, with nearly 20% admitting personal use.",
+    "url": "https://completeaitraining.com/news/shadow-ai-use-is-widespread-in-healthcare-as-staff-seek/",
+    "published_at": "2026-09-16T11:29:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "What RBI's Recovery Agent Rules Mean for India's Lenders in 2026",
+    "summary": "Debt collections in India have become one of the most technology-intensive functions in modern lendi...",
+    "url": "https://www.finextra.com/blogposting/32880/what-rbis-recovery-agent-rules-mean-for-indias-lenders-in-2026",
+    "published_at": "2026-09-16T11:29:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hyundai’s Pleos Puts a New Operating System in the Car",
+    "summary": "(TestMiles) - Pleos Connect adds conversational AI, native apps and over-the-air updates as Hyundai prepares the software for millions of vehicles. A New Kind of Dashboard Is Leaving the Lab The next major change inside a Hyundai, Kia or Genesis may not be an engine, a battery or even a screen. It m",
+    "url": "https://www.nwahomepage.com/automotive/hyundais-pleos-puts-a-new-operating-system-in-the-car/",
+    "published_at": "2026-09-16T11:29:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hyundai’s Pleos Puts a New Operating System in the Car",
+    "summary": "(TestMiles) - Pleos Connect adds conversational AI, native apps and over-the-air updates as Hyundai prepares the software for millions of vehicles. A New Kind of Dashboard Is Leaving the Lab The next major change inside a Hyundai, Kia or Genesis may not be an engine, a battery or even a screen. It m",
+    "url": "https://www.alabamas42.com/automotive/hyundais-pleos-puts-a-new-operating-system-in-the-car/",
+    "published_at": "2026-09-16T11:29:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI eyes $1.2 trillion funding round: Report",
+    "summary": "Funding round comes ahead of company’s initial public offering expected to take place next year",
+    "url": "https://www.aa.com.tr/en/science-technology/openai-eyes-12-trillion-funding-round-report/4058959",
+    "published_at": "2026-09-16T11:29:16+00:00",
+    "source": "newsdata"
+  }
+]
