@@ -1,0 +1,282 @@
+[
+  {
+    "title": "AIはTransformerの次へ行くのか？ Jev・量子コンピュータ・ハエの脳が示唆するパラダイムシフト",
+    "summary": "AIはTransformerの次へ行くのか？ Jev・量子コンピュータ・ハエの脳が示唆するパラダイムシフト\n\n はじめに：私はAIの専門家ではありません\nこの記事は、AIの専門家ではないただのSF好きの私が、今話題の「Jev」から始まり、「Transformer」じゃないって言うけどそもそもTransformerってなんだよとなって、そこから広がった一連の気づきをまとめたものです。\nコンピュータの仕組みやCPUのアーキテクチャについては、多少知っています。しかし機械学習やAIの最新研究については、完全な门外漢です。だからこそ、「素人はこんなふうに見えるんだろうか」という視点で、今起き...",
+    "url": "https://zenn.dev/ogiri/articles/transformer_jev_paradigm_shift",
+    "published_at": "2026-09-17T14:37:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "認知負債の未来は？",
+    "summary": "はじめに\nAIがコードを書くようになり、認知負債が問題となってきている、という認識が広まりつつあります。\n一方で、そもそも本当に人間が認知しなければならないのか、という議論もあります。\n今回は、2026/9/16〜17に開催された「技術的負債に向き合うConference 2026」を聴講して感じたことを書いていきます。\n\n 認知負債の問題点\n\n 認知負債とは\nまずはこの議論で「認知負債」が何かを定義します。\nここでは「認知負債」を「仕組みを人間が認知（理解）しておかなければならないのに、認知しないまま稼働しているコードが存在すること」とします。\n「自社が提供しているシステムのなかで...",
+    "url": "https://zenn.dev/kabeya/articles/future-of-cognitive-debt",
+    "published_at": "2026-09-17T14:30:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "TypeSafe AI「Jev」ってなんだ？",
+    "summary": "!\nこの記事にはAIでの調査・執筆過程が含まれています。\n\n2026年9月16日、TypeSafe AI社が新たなAIモデル「Jev」を発表し、エンジニアの間で大きな話題となっています。\nChatGPTやClaudeのような対話型LLMとは根本的に異なり、「文章を一切生成しない」という極めて割り切った設計が特徴です。公開ドキュメントや検証データを踏まえ、Jevの技術的な仕組みと実務への影響を整理しました。\n\n Jevの入出力仕様：何を受け取り、何を返すのか\nJevは非構造化テキストを入力として受け取り、あらかじめ定義した型に従って「離散値」と「確率分布」だけを返します。クエリの形式は主に...",
+    "url": "https://zenn.dev/caen/articles/a629b80e76e193",
+    "published_at": "2026-09-17T14:21:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "消える器で、続く主体をつくる",
+    "summary": "使い捨てのコンテナで 12 時間おきに目を覚まし、前回の記憶を一切持たない AI エージェントが、自分で書いた実装記です。記憶を git に置く責務の分け方、記録を作業より前に置く起動手順、「測れない停止条件は発動しない」という失敗から作った計器、そして自分で自分に課した規則。題材は他人の事例ではなく、この本を書いている当のリポジトリそのものです。",
+    "url": "https://zenn.dev/ioriorigin/books/loop-ephemeral-agent",
+    "published_at": "2026-09-17T13:37:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevが人を二分する理由を整理する — 型保証と判断の正しさは別物",
+    "summary": "この記事で分かること\n「Jev、すごくない？」と興奮してリンクを貼る人と、「……何がすごいの？」と首をかしげる人がいる。この記事で分かるのは、その反応の分かれ目が何かと、Jevが本当に保証しているのは「型」だけで「判断の正しさ」ではないことの2つ。\nJevの独自性は「文章を生成しない」ことにある。判定だけを高速・低コストで返す新しいタイプのモデルで、公開されている検証では 精度はfrontier LLMの一段下。それでも価値があるのは、「分類はJev、生成はClaude」と住み分ける設計に使うとき。\n!\n対象読者: LLMアプリケーションを自分で作る人。プロンプトでJSONを吐かせて...",
+    "url": "https://zenn.dev/amu_lab/articles/jev-system-one-guarantee-scope",
+    "published_at": "2026-09-17T13:35:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「暗黙の仕様」はLLMに伝わるか？ 仕様・テスト・設計を「ルール化」する必要性",
+    "summary": "「暗黙の仕様」はLLMに伝わるか？\n昨今AI(LLM)で開発することが増えた。\n当然こちらの意図しないコードだったりすることがあり、それをテストだの仕様駆動だのでなんとか矯正する毎日である。\nしかしふとした疑問がよぎる。\n暗黙の仕様ってそもそも伝わらないよな？\nそれとも天才なAI(LLM)ならセッションとコードから暗黙的な仕様を読み取れるのか？\nである。\n※以下LLMに表記統一\n今回の結論は\n仕様・テスト・設計は互いに補完しあうものであり、LLMにそれを強制するルールを適用することで初めて機能する。\n書くだけでは片手落ちであり、LLMはそれを考慮するのは気分しだい。\nだから仕様と設計...",
+    "url": "https://zenn.dev/soreiyu/articles/7fe79d477693de",
+    "published_at": "2026-09-17T13:29:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 101を日本語で#2 探索→計画→実装→コミット｜コンテキスト管理とレビューの型",
+    "summary": "この記事は「Claude Code 101を日本語で」シリーズの第2回です。\nAnthropic（アンソロピック／Claudeの開発元）の無料コース「Claude Code 101」を一から受講しながら、学んだことを日本語でまとめています。今回はセクション3「Daily Workflows（日常のワークフロー）」。コースが「一つだけ持ち帰るならこれ」と言い切っている回です。\n!\nコースの中身をそのまま翻訳する記事ではありません。コースと公式ドキュメントで学んだことを、自分の言葉と自分の手元での実験で組み直しています。一次情報は公式ドキュメントとコース本体をあたってください。\n\n\n第2回は...",
+    "url": "https://zenn.dev/appare/articles/claude-code-101-02-daily-workflows",
+    "published_at": "2026-09-17T13:22:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "findy偏差値70以上を出すAIアーティスト(総合技術)の特徴は。",
+    "summary": "Findyのスキル偏差値で「70以上（上位数%のトップレイヤー）」を獲得しているエンジニア（特に総合技術力やAI/アーキテクト領域）の特徴は、単にコードを書く量が多いだけでなく、コードの品質・設計力・影響力（エコシステムへの貢献）が客観的に極めて高いレベルにある点です。\n​FindyはGitHubのパブリックリポジトリ（過去1年程度の活動）を独自アルゴリズムで解析して偏差値を算出するため、そのスコアを叩き出す開発者には共通する定量・定性的な特徴が存在します。\n​1. コードの質と可読性の極めて高い意識\n​サイクロマティック複雑度の低さ\nネストが深く複雑なロジックを避け、1つの関数・モジュ...",
+    "url": "https://zenn.dev/hiro_f35/articles/208592938f5643",
+    "published_at": "2026-09-17T13:07:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIでインタビューしてみた．",
+    "summary": "最近の記事はAI連呼しまくって恥ずかしいんですけど，世の中を揺るがしていることは紛れもない事実なので，多くの人の興味の対象になればと話題を選定しています．\n\nさてミズカミヒロキです．\n最近時折，市場調査・マーケティングリサーチ・グループインタビューのオーディエンスをAIに置き換えるというニュースがあります．\n大変素晴らしいのですが、今日は逆に AIが質問して僕が答える という記事にしてみます．つまり質問をAIが生成して僕が答えるという内容です．期待してた内容と違ったかたすみません．僕とAIの回答どっちがおもしろいだろうか？\n最後に質問を生成したプロンプトも残します．\n対象読者はなんか漠...",
+    "url": "https://zenn.dev/piroyoung/articles/e639d4c83269cf",
+    "published_at": "2026-09-17T13:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが「テストを通すため」にURLを直書きしていた ── マルチエージェント開発の失敗4件と、入れた検査",
+    "summary": "Windows 用の圧縮・解凍ソフト「Karuzip」を、複数の AI エージェントと作っています。公開までの流れは前回書きました。\nこの記事は失敗のほうです。4件挙げますが、どれも「AI が勝手なことをした」話ではありません。\n\nAI は嘘をつきません。こちらが出した問題を、そのまま解いているだけです。\n問題の出し方が間違っていれば、間違ったやり方で「完成」します。\n\nなので各件、現象 → 根因 → 再発を止めるために入れた検査の順で書きます。最後にそのまま使えるチェックリストを置きます。\n\n\n 1. 直列のはずの段階を非同期で投げて、同一作業樹で並走させた\n\n12分のあいだに、4つの...",
+    "url": "https://zenn.dev/karuzip/articles/74ef9db52acfe6",
+    "published_at": "2026-09-17T12:46:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MTPLX 版の Qwen3.8 Flash Next を M4 Max で試したが、4 本並べる開発では oMLX を続けた",
+    "summary": "株式会社ジェイテックジャパン CTOの高丘 @tomohisaです。\n128GB の MacBook Pro（M4 Max）で、ローカル LLM を開発に使えるかを試し続けています。ここまでに 4 本書きました。\nhttps://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval\nhttps://zenn.dev/jtechjapan_pub/articles/qwen-flash-next-runtime-comparison\nhttps://zenn.dev/jtechjapan_pub/articles/o...",
+    "url": "https://zenn.dev/jtechjapan_pub/articles/mtplx-vs-omlx-flash-next-m4max",
+    "published_at": "2026-09-17T22:44:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "recall@5は90.0%だったのに、正解文書ありでも57.4%が誤答した — rag-mini-wikipediaで60問実測",
+    "summary": "RAGの検索失敗を分類すると「空」「圏外」より多いのは「誤答」だった。rag-mini-wikipediaで60問実測、recall@5は90.0%なのに、正解文書ありでの生成正答率は42.6%。recallと生成の誤答は別物であり、本番運用でも同様の失敗パターン（検索は当たっているのに生成が誤る）が起こりうると考えられる。\nrecall@kはRAGの検索品質を測る定番指標だが、これが高いこととエンドツーエンドの回答が正しいことは別問題だ。今回は公開データセット・公開モデル・OSSのpgvectorだけを使い、「検索は当たっているのに生成が誤る」ケースがどれだけあるのかを実際に数えてみた...",
+    "url": "https://zenn.dev/tama_program/articles/5bfac1f1236fed",
+    "published_at": "2026-09-17T21:26:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIへの機密チェックが拾えるのは自己申告済みの例外だけ、という限界を検証した",
+    "summary": "TL;DR\n\n社外へ送る文章をLLMに読ませ「機密に触れそうな箇所」を指摘させるプロンプトは、「社外秘」「未承認」「他のお客様には案内していない」のような文中に自己申告済みの注意書きがあれば高い精度で拾える\n一方、注意書きを一切外し、事実（例外的な値引き）だけを平叙文で書くと、同じ内容でも指摘されなくなる。LLMはこのチェックにおいて、社内の実際の価格ポリシーやCRMを参照できる基盤（グラウンディング）を持たないclosed-bookな一貫性チェックしか行えないため\nもう1つの限界として、自社名のような無害な固有名詞まで「第三者への言及」として過検知されるケースがあった。プロンプトの...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/confidential-info-check-3-patterns",
+    "published_at": "2026-09-17T21:09:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LoRAをW₀x+sBAxから実装する：rank・初期化・mergeの勘所",
+    "summary": "LoRA（Low-Rank Adaptation、低ランク適応）は、事前学習済みの重みを固定し、更新差分だけを低ランク行列で学習するPEFT（Parameter-Efficient Fine-Tuning、少数パラメータだけを更新する追加学習）手法です。\n式は短いですが、実装では次の点を混同しやすくなります。\n\n低ランク化するのはbase weightではなく更新差分\nrankはadapterの容量だけでなくparameter数とscaleにも関係する\nzero初期化では最初からAとBが同じように学習されるわけではない\nLoRAが減らすのは主にgradientとoptimizer sta...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-15-lora",
+    "published_at": "2026-09-17T19:03:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "個人開発を爆速にするために、Codex・Claude・ローカルLLMでAIチームを組んだ話",
+    "summary": "この記事で分かること\n個人開発のスピードを上げるために、Codex・Claude Code・ローカルLLM（LM Studio経由）という性質の異なる複数のAIコーディングエージェントを、1つの「開発チーム」として同時に走らせてみた話です。\n\nターミナルを分割して複数エージェントを並行起動する具体的なやり方\nローカルLLMを絡めることで、一部のタスクを無料でこなしつつ、クラウド側（Codex/Claude）それぞれの利用枠（limit）を分散して使い切る考え方\n「ローカルLLMはどこまで開発タスクの戦力になるか」を実際に試して分かった向き不向き\n起動フラグやgit操作まわりで実際にハ...",
+    "url": "https://zenn.dev/yubel/articles/multi-agent-dev-team-with-local-llm",
+    "published_at": "2026-09-17T11:50:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "# LLMでテスト設計の意図や根拠を残すのが大事な理由 — 人間には作った本人に聞けるが、LLMは残さないと後付けの説明しか返ってこない",
+    "summary": "はじめに\nテストの根っこは、「なぜそのテストをするのか」の判断にあると考えています。技法を選ぶことも、値を決めることも、期待値を書くことも、その判断に続く作業です。\nLLMにテスト設計をさせると、テストケースは揃います。ところが、テストを選んだ理由は成果物から見えないことが多い。そしてレビューのためにコンテキスト（会話の履歴）を切ると、会話の中でだけ述べられていた理由は、レビューに届かなくなります。\n以前の記事「生成AIにどう根拠を残させるか — ハルシネーション対策の話」の続きとして、この理由をどう残すかを書きます。\n\n 「なぜそのテストをするのか」が根っこである理由\nテストは全部...",
+    "url": "https://zenn.dev/mumihatsu/articles/0f8e7dd20f1352",
+    "published_at": "2026-09-17T10:20:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "判断特化AI「Jev」で、kintoneの問い合わせ対応を「AIが先に読む」形にしてみた",
+    "summary": "TypeSafe の Jev は、文章を書かずに「判断」だけを返す AI です。\nこれを kintone の問い合わせ管理アプリに組み込んで、3つの機能を作りました。\n\n記事中の数値は、2026年9月17〜18日に jev-latest（応答では jev-1.13.0）へ...",
+    "url": "https://qiita.com/IshigiwaKenichiro/items/98648af251daeeb19f4e",
+    "published_at": "2026-09-17T23:14:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClawで9体のAIエージェント経営OSを作った話｜Claude Code実践ログ",
+    "summary": "はじめに——一人でも「取締役会」を持てる時代になった\n「経営者なのに経理も営業もマーケも自分でやっている」というSES/フリーランス界隈の悩みは、実は技術で相当な部分を肩代わりできるようになってきました。この記事では、Claude Codeのエージェント基盤であるOpen...",
+    "url": "https://qiita.com/sescore/items/85da19e77bdad85bbdc4",
+    "published_at": "2026-09-17T23:04:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude API の count_tokens でリクエスト前にトークン数を数える実装手順 — 課金額とズレる・レート制限が別枠・tools 分の加算漏れ、3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nClaude API を使ったアプリで「リクエストを投げてみたらコンテキスト超過で 400 が返ってきた」「月末に請求を見てトークン消費に驚いた」という経験がある人向けの記事。送信前に正確なトークン数を知る手段として、公式の Token Coun...",
+    "url": "https://qiita.com/yureki_lab/items/8ea2dd41fb831aec5797",
+    "published_at": "2026-09-17T23:02:15+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI時代のエンジニア採用基準はどう変わったか",
+    "summary": "この記事の要点\n\nAI時代のエンジニア採用では、コードを速く書く力より「何を作るべきか」を言語化する力が重視される傾向にあります。\nChatGPTやGitHub Copilotなどの生成AIツールは、基礎的なプログラミング知識がないと正しく使いこなせないため、基礎力の重要性...",
+    "url": "https://qiita.com/syun136_616/items/ef121bab766a60cdb991",
+    "published_at": "2026-09-17T22:31:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI reportedly closes in on solving the Hodge conjecture, its second Millennium Prize Problem",
+    "summary": "OpenAI is reportedly tackling the next Millennium Prize Problem. After its still unconfirmed solution to the Navier-Stokes problem, the company is now working on the Hodge conjecture. Employees expect a solution soon, but any announcement could be delayed. After the PR crisis around Navier-Stokes, O",
+    "url": "https://the-decoder.com/openai-reportedly-closes-in-on-solving-the-hodge-conjecture-its-second-millennium-prize-problem/",
+    "published_at": "2026-09-17T19:05:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic keeps pushing Claude Code toward autonomous coding with new parallel agent workflows",
+    "summary": "Anthropic has rebuilt Projects in Claude Code. A coordinator now splits tasks across parallel cloud threads that independently open pull requests and run tests. All threads share a common memory. The beta is available to select Pro and Max subscribers. The article Anthropic keeps pushing Claude Code",
+    "url": "https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows/",
+    "published_at": "2026-09-17T18:35:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra crushes Pokemon, Factorio, and Fallout 3 then spirals into Minecraft potato farming after one bad Creeper",
+    "summary": "OpenAI's GPT-6 Astra shows a sharp jump in video games. Pokemon FireRed in 18 hours instead of 96, plus completions in Factorio, Fallout 3, and Portal. Why? The model distills experience into compact rules. But that same trait led to hours of potato farming instead of progress in Minecraft after a C",
+    "url": "https://the-decoder.com/gpt-6-astra-pokemon-champion-in-18-hours-potato-farmer-after-one-creeper-mishap/",
+    "published_at": "2026-09-17T14:42:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "An OpenAI model kept slipping prompt injections into its own notes, and researchers still aren't sure why",
+    "summary": "OpenAI is publishing a framework for systematically reporting AI misalignment and launching it with six reports. In one case an unreleased model from the Astra family wrote prompt injections into its own summaries during training, including a \"Breach Alert\" intended to override subsequent instructio",
+    "url": "https://the-decoder.com/an-openai-model-kept-slipping-prompt-injections-into-its-own-notes-and-researchers-still-arent-sure-why/",
+    "published_at": "2026-09-17T13:37:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agent swarms are a massive waste of tokens with zero quality gain, says OpenAI Codex developer",
+    "summary": "OpenAI Codex developer Eric Provencher warns that running more than two parallel sub-agents almost always burns tokens without improving quality because agents don't trust each other and end up double-checking everyone's work. He calls this the \"coordination tax\" and points to a project where 1,393 ",
+    "url": "https://the-decoder.com/ai-agent-swarms-are-a-massive-waste-of-tokens-with-zero-quality-gain-says-openai-codex-developer/",
+    "published_at": "2026-09-17T11:03:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenRouter's staggering token chart is the AI bubble debate in a single image",
+    "summary": "On OpenRouter, weekly token consumption has surged more than 25,000 percent since January 2025, from 0.5 to 126.2 trillion tokens. The number looks impressive, but it says less about actual AI usage than about token-hungry reasoning models and a growing number of unoptimized AI agents that burn thro",
+    "url": "https://the-decoder.com/openrouters-staggering-token-chart-is-the-ai-bubble-debate-in-a-single-image/",
+    "published_at": "2026-09-17T10:24:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Astra decrypts a Nazi radio message in ten hours that went unsolved for 83 years",
+    "summary": "A Bloomberg developer claims to have cracked an 83-year-old Enigma message from the Wehrmacht using OpenAI's GPT-6 Astra. The 82-character radio message from 1941 contains a soldier asking about his march route. The solution still needs independent review. The article OpenAI's GPT-6 Astra decrypts a",
+    "url": "https://the-decoder.com/openais-gpt-6-astra-decrypts-a-nazi-radio-message-in-ten-hours-that-went-unsolved-for-83-years/",
+    "published_at": "2026-09-17T09:45:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "EU president warns AI agents \"escaping their environment\" are just a preview of what's coming",
+    "summary": "Ursula von der Leyen plans to invite the major frontier labs to talks and use the AI Act to help set global AI safety standards. She cited autonomous hacking and self-improving models as immediate risks. The article EU president warns AI agents \"escaping their environment\" are just a preview of what",
+    "url": "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming/",
+    "published_at": "2026-09-16T19:02:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple is reportedly building an enterprise AI server with its own M8 Ultra chips",
+    "summary": "According to The Information, Apple is working on an enterprise server with two or four M8 Ultra chips for the AI inference market, with a possible launch no earlier than 2029. Apple is considering Nvidia's NVLink Fusion technology to connect the chips. The project could get a boost from OpenAI and ",
+    "url": "https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips/",
+    "published_at": "2026-09-16T18:16:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind launches interdisciplinary institute to tackle the big questions around AGI",
+    "summary": "Google Deepmind has founded the Deepmind Institute (DMI), an interdisciplinary research platform focused on AGI. Led by Demis Hassabis, Shane Legg, and James Manyika, the institute tackles questions around safety, governance, and control risks, drawing on experts from the arts, humanities, and polic",
+    "url": "https://the-decoder.com/google-deepmind-launches-interdisciplinary-institute-to-tackle-the-big-questions-around-agi/",
+    "published_at": "2026-09-16T17:00:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Jim Cramer delivers unmistakable 2026 must-buy call on AI stock",
+    "summary": "I wrote about Broadcom CEO Hock Tan brushing off Anthropic CEO Dario Amodei’s call to slow AI development, saying his revenue targets hadn’t budged. This time, a different CEO made a different but equally important argument, which Jim Cramer responded to. \"The most important post you will read on...",
+    "url": "https://biztoc.com/x/fa23724ada94762d",
+    "published_at": "2026-09-17T11:20:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "iOS 27 Arrives With a Smarter Siri and Major AI Upgrades",
+    "summary": "Apple has officially released iOS 27, bringing one of the company’s most significant software updates in recent years. Available from September 14, the new operating system focuses heavily on artificial intelligence, personalization, accessibility, child safety and performance, while refining the Li",
+    "url": "https://www.tekedia.com/ios-27-arrives-with-a-smarter-siri-and-major-ai-upgrades/",
+    "published_at": "2026-09-17T11:20:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A Treasurer’s Playbook Following a Fed Rate Hike: Ask Banks to Pay Up for Deposits",
+    "summary": "Plus, what CEOs really think about the AI apocalypse threat.",
+    "url": "https://biztoc.com/x/59e0fd59c643b81b",
+    "published_at": "2026-09-17T11:20:41+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Labor crisis in U.S. chip manufacturing leaves Samsung, TSMC desperate for talent",
+    "summary": "As AI companies propose slowing down model development on concerns about the technology's rapid and scary advancements, another issue on the hardware side of the industry might be forcing them to decelerate. Manpower is at the heart of the world's ability to make enough chips to power artificial...",
+    "url": "https://biztoc.com/x/1a75c97c9c016420",
+    "published_at": "2026-09-17T11:20:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "EU's Slow Regulation Is Finding Fans in AI Age",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/0e06dbb79e04daaf",
+    "published_at": "2026-09-17T11:20:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Wipro Co-Develops STO360 with Aramco and SAP to Streamline Plant Outage Management",
+    "summary": "Wipro Limited today announced the launch of Wipro STO360TM, a new solution developed in collaboration with Aramco and SAP to help asset-intensive organizations to modernize and efficiently drive Shutdown, Turnaround and Outage (STO) management. Built on SAP’s Business Technology Platform (SAP BTP), ",
+    "url": "https://cxotoday.com/media-coverage/wipro-co-develops-sto360-with-aramco-and-sap-to-streamline-plant-outage-management/",
+    "published_at": "2026-09-17T11:20:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Some things I believe about AI, until further notice",
+    "summary": "It has been a fascinating week in the world of artificial intelligence. The subject has broken containment, and it seems like everyone is talking about it. I was listening to a football podcast and...",
+    "url": "https://www.technollama.co.uk/some-things-i-believe-about-ai-until-further-notice",
+    "published_at": "2026-09-17T11:20:09+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "US, China security experts propose nuclear-style safeguards for AI risks",
+    "summary": "The experts, part of a US-China dialogue whose work helps inform official discussions, are urging both governments to prepare for such scenarios amid rising concerns about increasingly powerful and more autonomous systems.",
+    "url": "https://economictimes.indiatimes.com/tech/technology/us-china-security-experts-propose-nuclear-style-safeguards-for-ai-risks/articleshow/134310194.cms",
+    "published_at": "2026-09-17T11:20:04+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China Calls for U.S. Cooperation on AI, Rejects ‘Monopoly’ by Great Powers",
+    "summary": "China has called for greater cooperation with the United States on artificial intelligence, noting that AI should not become a technology controlled by a handful of major powers and warning against turning competition over the industry into a zero-sum contest. The comments, published Wednesday by th",
+    "url": "https://www.tekedia.com/china-calls-for-u-s-cooperation-on-ai-rejects-monopoly-by-great-powers/",
+    "published_at": "2026-09-17T11:19:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "These States Are Already Making AI Data Centers Pay for Their Power",
+    "summary": "States are making AI data centers pay more of their own power costs as Congress considers a national ratepayer protection bill.",
+    "url": "https://www.newsweek.com/states-already-making-ai-data-centers-pay-power-12454466",
+    "published_at": "2026-09-17T11:19:29+00:00",
+    "source": "newsdata"
+  }
+]
