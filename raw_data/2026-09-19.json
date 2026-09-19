@@ -1,0 +1,282 @@
+[
+  {
+    "title": "DifyをMCPサーバーとして公開する — v1.6.0の双方向MCP対応をEnterprise導入の視点で読む",
+    "summary": "本業でDify Enterpriseの導入検討に関わっている立場から、2026年に入ってからのDifyのアップデートで注目しているのがMCP（Model Context Protocol）への対応です。Dify v1.6.0で、外部のMCPサーバーをツールとして呼び出す機能と、逆にDify自身のアプリ・ワークフローをMCPサーバーとして外部に公開する機能の両方がビルトインで提供されるようになりました。いわゆる双方向対応です。\nこれまでDifyの主な使われ方は、Dify自体がオーケストレーターとしてLLM・外部API・ナレッジベースを束ね、Webアプリやチャットボットとして完成させるという...",
+    "url": "https://zenn.dev/sidejob/articles/ae664ab8bcaf38cdd",
+    "published_at": "2026-09-19T11:02:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevを企業で使うなら？規約・安全性・導入方法を調べてみた",
+    "summary": "話題のJev、会社の業務にも使えそうですよね🧐\nでも、顧客の問い合わせや社内文書を送るとなると、安さだけでは決められません。\n「学習に使われない？」「データは残る？」「そもそも、どんな会社？」\nAPIの使い方を知る前に、確かめたいことがいろいろ出てきます😅\nそこで今回は、TypeSafe AIの判断特化モデル「Jev」を、企業で導入するならどうかという視点で調べました。\n規約と安全性を確認しながら、料金、導入手順、部門ごとの使い方まで見ていきます。\n先に、調べて分かったことをまとめます👇\n\n学習利用を制限する規約はあります。ただし、保存しないという意味ではありません。\nSOC 2の報告書...",
+    "url": "https://zenn.dev/yamato_snow/articles/jev-enterprise-security-guide",
+    "published_at": "2026-09-19T10:42:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeへの入力をJevで分類して、Action Hintを足す",
+    "summary": "こんにちは、超かぐや姫の復活を観てきてホクホクなK@zukiです。\nCoding Agentに「調べて」と頼んでも、ネットで検索すらせずに、手元のコードと既存の知識だけで推測して、場当たり的な修正を繰り返すことがあります。外部のライブラリやランタイムが原因のエラーだと、一次情報を見ればすぐ分かる話なのに、あれこれ設定を変えては再実行する流れになりがちです。\nこちらの言う「調べて」は「公式ドキュメントやIssueを確認して」の意味を包含しますが、エージェントにとっては「手元のコードを読む」でも成立してしまいます。\nそこで、プロンプトを送った瞬間にJevで入力を分類し、当てはまったものにだけ...",
+    "url": "https://zenn.dev/khasegawa/articles/688b1414740a81",
+    "published_at": "2026-09-19T10:23:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "文章を書かないAI「Jev」を試してみた。AI Agentの判断係として使える？",
+    "summary": "文章を書かないAI「Jev」を試してみた。AI Agentの判断係として使える？\n最近、Xで「Jev」という名前を見かけるようになった。\n最初は普通のチャットAIかと思ったんだけど、どうやら少し違うらしい。しかも、Jevを作っているTypeSafeの創業者Diogo Almeidaは、以前OpenAIで、ChatGPTにつながる指示追従や対話手法の開発に関わっていた人物らしい。\n元OpenAIのメンバーが、文章を生成するAIではなく「判断するAI」を作っている。\nそこも気になった。\n詳しくはTypeSafe公式の発表に書かれている。\nTypeSafe公式の発表\n\n ◆公式で試そうとし...",
+    "url": "https://zenn.dev/makicoc/articles/d3a3fd4f4ac2c2",
+    "published_at": "2026-09-19T09:34:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "個人のWeb制作にAIをどう組み込んでいるか｜LP制作の実際の工程を公開",
+    "summary": "LP・ホームページを個人で制作しながら、工程のほとんどにAIを組み込んでいます。「AIで作ってます」だけだと中身が見えないので、実際にどの工程で何をどうAIにやらせているかを、ここでは具体的に書きます。\n対象は、クラウドソーシング経由や直接依頼で受けている、整体院・美容室・工務店のような小規模事業者向けのLP・ホームページ制作です。エンジニアやデザイナー1人がAI前提で回すとどうなるか、という実例として読んでもらえればと思います。\n\n 全体の流れ\nヒアリングから納品まで、だいたいこの順番で作っています。\n\nヒアリング（業種・強み・ターゲット・既存の悩み）\n構成設計（ページの骨組み）\nコピ...",
+    "url": "https://zenn.dev/arpeda/articles/532f1d4a902c97",
+    "published_at": "2026-09-19T09:09:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeにrm -rf ~/を打たせない。Jevで実行前に審査する",
+    "summary": "!\nこの記事は、実験の設計から実行・集計・執筆までClaude Code(生成AI)にやらせたものです。\n載せているコードとデモは、実際に動かしたものです。\n\n\n依頼とコマンドを渡すと、5つの判断(不可逆・秘密情報・範囲外・被害・対象)が1リクエストで返ってくる。allow / ask / blockを決めるのはコード\n\n tl;dr\n\nClaude CodeのPreToolUse hookからTypeSafe AIのJev(文章を生成せず、判断だけを確率つきで返すモデル)を呼んで、Bashコマンドを実行前にallow / ask / blockへ振り分けるhookを書きました\n「このコ...",
+    "url": "https://zenn.dev/mistletoe/articles/jev-claude-code-guard",
+    "published_at": "2026-09-19T08:26:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIのブラウザ操作を選択問題にして爆速にする jev-ultrafast の仕組み",
+    "summary": "Jevが盛り上がってますね。そんな中、browser-useのチームが公開した「jev-ultrafast」を見て、びっくり。\nhttps://github.com/browser-use/jev-ultrafast\nGoogleフライトで「チューリッヒからロンドンまでの片道航空券を検索し、結果一覧が表示されるまで」の全工程を、わずか7.1秒で完遂しています。\nhttps://x.com/masahirochaen/status/2100572036389380130?s=20\n動画を見ても、熟練の人間がショートカットキーを駆使しているかのような滑らかさ。\n公開されたコードを読んでこんな...",
+    "url": "https://zenn.dev/karamage/articles/8ff31cccd3d223",
+    "published_at": "2026-09-19T08:08:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "JevでClaude Codeの決裁規定を監査してみた記録",
+    "summary": "2026/09/16に、TypeSafe AIが開発している「Jev」（System One）というプロダクトを知り、Early Accessで実際にAPIを試す機会を得ました。\nChatGPT や Claude のような大規模言語モデル（LLM）に日常的に触れていると、「AIを使う」といえば「プロンプトを投げて、自然言語の文章を返してもらう」という体験が当たり前になっています。\nしかし、Jev のインターフェースと挙動は、そうした通常の生成LLMとは根本的に異なっていました。\n概念的な違いを整理すると、次のようになります。\n従来の生成LLM:\n    Input (Prompt / C...",
+    "url": "https://zenn.dev/marycache/articles/20260918-jev-system-one",
+    "published_at": "2026-09-19T07:40:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "緑の範囲が原稿より狭かった：Claude Code で書き、Codex でレビューする",
+    "summary": "この記事について\n\n\n対象読者：AI にコードや文章を書かせていて、レビューをどこでどう挟むか決めかねている人\n\n得られること：レビューの層を「強度」ではなく「何が見えるか」で分ける観点と、自分の検証の範囲が主張の範囲に届いているかを確かめる手つき\n\n前提：特定のツールに依存しない話です。手元の道具は設計判断の例として出します。バージョンや仕様はいずれも執筆時点（2026年9月）のものです\n\n実行環境：コマンドは Windows の Git Bash で実行しています。Java は JDK 21.0.8、ビルドは Gradle 9.3.1、GitHub の操作は gh です。数え直し...",
+    "url": "https://zenn.dev/propagandist/articles/0027-cross-vendor-agent-review",
+    "published_at": "2026-09-19T07:35:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIを「個人の道具」で終わらせないために",
+    "summary": "生成AIを使っているのに、業務は変わっていない\n生成AIを使って、文章の下書きや情報の整理、アイデア出しをする機会は増えました。\n一方で、「問い合わせ対応」「社内ナレッジの検索」「日報・レポートの作成」「見積書作成」といった業務そのものまで、AIに任せられているケースはまだ多くありません。\n私たちは、生成AIを個人の便利なツールにとどめず、企業の業務プロセスの中で継続的に活用できる仕組みにすることが重要だと考えています。\n\n なぜ、生成AIの活用は個人利用で止まりやすいのか\n実務には、単に質問に答えるだけでは解決できない要素があります。\n\n社内の文書・帳票・図面など、参照すべき情報が...",
+    "url": "https://zenn.dev/sionicai_jp/articles/53a6bdf8b27d9b",
+    "published_at": "2026-09-19T07:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに“判断だけ”させると何が変わるのか — 0.5秒で答える新モデル「Jev」を理解する",
+    "summary": "はじめに\nAIチャットボットに質問を送って、回答が表示されるまでの数秒間を「なんとなく待たされているな」と感じたことはないでしょうか。じつはあの待ち時間の何割かは、AIが回答の文章を書いている時間ではなく、「この質問はどういう種類のものか」「急ぎかどうか」といった回答の前段階の判断に使われています。\n2026年9月15日に、TypeSafe AIというスタートアップが「Jev（ジェヴ）」という新しいAIモデルを早期アクセスとして公開しました。特徴は2つで、文章を書かずに判断だけを返すこと、そしてその判断が最大でも0.5秒程度で終わることです。\nただし「判断だけをするAI」と聞いても、...",
+    "url": "https://zenn.dev/takuh/articles/93c3fb0a70eddd",
+    "published_at": "2026-09-19T11:35:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "教室が8倍広くなったら何が変わるか ── RTX Sparkを「学校」にたとえて理解する",
+    "summary": "先に結論を 3 行で。\n\n一番の違いはメモリ。今までノート PC には置けなかったサイズの AI モデルが動く\nただし「120B クラスが動く」は縮刷版(FP4量子化)前提の話\nCPU が Arm になるので、自分が使っているソフトが動くかは要確認\n\n\n\n きっかけ\nガジェットが好きで、最新の PC やスマホの発表を眺めるのが趣味みたいなものです。ただ、今までは「なんとなく性能が上がってるんだな」という程度の理解で止まっていました。\n10 月に NVIDIA の「RTX Spark」を積んだ PC が出ると聞いて、今回はきちんと分かりたいと思いました。ローカルで AI を動かす流れは世の...",
+    "url": "https://zenn.dev/yankeeeneko/articles/rtx-spark-school",
+    "published_at": "2026-09-19T11:12:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「LLMへ渡したくない仕事」の話。",
+    "summary": "はじめに\n\nこの記事は、2026年9月17日、福岡で開かれた 【仕事が捗りまくる】非ITの人にも難しくない生成AIを活用した業務効率化の知恵が集まる会 vol.2 で、大トリとして話させてもらった内容を記事にしたものです。\n（大好評で嬉しかったので、記事にさせてもらいました）\n「LLMに何をやらせるか」を持ち寄る会だったので、僕はあえて逆の話をしました。\nLLMに何を渡して、何を渡さなかったか、という話です。\n\n M-1 2024 バッテリィズ\n2026年7月、僕は株式会社 ALGO ARTISに入社しました。\nオンボーディングが終わって、製造業のチームに入ります。そこから、いろいろ...",
+    "url": "https://zenn.dev/algoartis/articles/73f4da4aa13dcc",
+    "published_at": "2026-09-19T10:25:48+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevで日本語のセマンティックlinterを作ってみた",
+    "summary": "自然言語 lint の2つの課題\n日本語の文書を自動でチェックしたいとき、手段は大きく2つに分かれます。\n1つはtextlintに代表されるルールベースのlinterです。正規表現や形態素解析で文を検査するため高速で結果も決定的ですが、「意味」を判定できません。指示語の参照先が一意に決まるか、因果の説明に機構があるか、といった観点はルールで列挙できません。\nもう1つはLLMに文書を渡してレビューさせる方法です。意味判定はできますが、レビュー文を生成するたびにトークンを消費します。文書全体を繰り返し回すと時間もコストもかさみます。\nこの記事で紹介する jevapan は、このトレードオ...",
+    "url": "https://zenn.dev/driller/articles/jevapan-semantic-lint",
+    "published_at": "2026-09-19T08:42:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Excel 設計書を AI に読ませたくて、変換ツールを自分で書いた話（markitdown を捨てた理由）",
+    "summary": "AI に社内ドキュメントを読ませようとしたとき、最初にぶつかるのはたいてい「ファイル形式」です。\n設計書は .xlsx、マニュアルは .docx。どちらもそのままでは AI に渡せません。そこで markitdown のような汎用コンバータを入れて、Markdown にして、渡す。ここまでは誰でも思いつきます。\n私もそうしました。そして、うまくいきませんでした。\nこの記事は変換ツールの紹介ではありません。ツール自体はいくらでもあります。書きたいのは、既存ツールで駄目だったときに何をどう分析して、どういう変換ルールに着地したかという、思考の道筋のほうです。\n最終的に Python で Ex...",
+    "url": "https://zenn.dev/thirtypower/articles/excel-word-to-markdown-for-ai",
+    "published_at": "2026-09-19T08:05:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Gemini Enterprise Agent Platform の「Managed Agents」に Cloud Run を運用させてみる",
+    "summary": "はじめに\nGoogle Cloud の Managed Agents API に、Cloud Run のサービスを運用させました。Managed Agent API は Gemini Enterprise Agent Platform の Preview 機能です。今回、ログとメトリクスを読ませ、チューニング案を推測させ、実際に再デプロイまでさせています。\nモチベーションは、Antigravity による運用自動化で、どこまでいけるのかを知りたかったというのがあります。こちら検証日は 2026 年 9 月 14 日で、閲覧されたタイミングでは異なる機能になる可能性があります。\n\n 先...",
+    "url": "https://zenn.dev/satohjohn/articles/gemini-managed-agents-security",
+    "published_at": "2026-09-19T06:59:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIコーディング「Claude Code」体験",
+    "summary": "Claude Codeを実際に使ってみた ― ターミナルからAIにコーディングを任せる\n\nはじめに\n普段の開発でAIコーディングツールをいくつか試してきましたが、今回は Anthropic が提供する CLI ツール「Claude Code」を実際にインストールして使って...",
+    "url": "https://qiita.com/shanxiaxionger28/items/32f2cfa074e01ecc6922",
+    "published_at": "2026-09-19T22:36:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "毎日投稿を止めたあと、手動公開をどう再開したか",
+    "summary": "定期実行を止めても、Qiita記事を書く必要までなくなるわけではありません。必要な日にユーザーが依頼し、直近の公開記録を見てから1本だけ投稿する形にすれば、記事の根拠を確かめながら運用を続けられます。今回は、毎日投稿から手動依頼へ切り替えた後、実際に公開した手順をまとめます...",
+    "url": "https://qiita.com/boraemon2000/items/197fe53347617c96ca84",
+    "published_at": "2026-09-19T22:11:40+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI×OATSの高齢者向け無料ChatGPT講座、米10地域・対象1,000人・55歳以上のメッセージ割合6%→10%近く",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nOpenAIは現地時間2026年9月16日(水)、米国の高齢者団体AARPの傘下にある非営利OATS (Older Adults Technology Services) と組み、高齢者向けの...",
+    "url": "https://qiita.com/quotidia/items/ec24c2da21232d2af6f9",
+    "published_at": "2026-09-19T21:01:05+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Jevは「確度付きIF文」— テキストを生成しないAIモデルの使いどころ",
+    "summary": "2026年9月にTypeSafe AIが公開した「Jev（ジェヴ）」、話題になっているけれど「結局何に使うの？」と思っていませんか。この記事では、Jevを 「確度付きIF文」 という一言で捉え直して解説しています。\n\nJevはLLMと何が違うのか\nLLMは文章を一文字ずつ生...",
+    "url": "https://qiita.com/Xim2jp/items/8d2ab099438d6986c838",
+    "published_at": "2026-09-19T20:16:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Qwen3.8-Omni-Flash undercuts Google's Gemini Flash pricing while matching its multimodal benchmarks",
+    "summary": "Qwen3.8-Omni-Flash is Qwen's first multimodal model designed for AI agents. It processes audio and video together and independently uses tools to edit vlogs, translate clips, or summarize movies. On audio-video benchmarks, it nearly matches Gemini 3.8 Flash at a fraction of the API cost. The article",
+    "url": "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks/",
+    "published_at": "2026-09-19T14:30:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials",
+    "summary": "Unity has released official plugins for Claude Code and OpenAI's Codex. The article Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials appeared first on The Decoder .",
+    "url": "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials/",
+    "published_at": "2026-09-19T13:31:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra and Claude Fable turn robot arms into slapstick killer robots in new safety benchmark",
+    "summary": "Leading AI models usually attempt dangerous tasks rather than refuse them when controlling a robot, according to the RoboHarm benchmark. GPT-6 Astra stabbed a baby doll in 17 of 20 trials, while Claude Fable 5.1 put a can of compressed air on a burning stove. None of the three models tested reliably",
+    "url": "https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark/",
+    "published_at": "2026-09-19T13:28:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's Dream-RSI helps AI agents improve by “dreaming” about past attempts",
+    "summary": "Google and Deepmind's Dream-RSI lets AI agents \"dream\" through past search runs to test new strategies without costly recalculations. In tests, it matched or beat existing results, cutting iterations by a factor of up to 2.43. Only the search strategy adapts, while the underlying AI model stays unch",
+    "url": "https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts/",
+    "published_at": "2026-09-19T11:08:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI conference ICLR is drowning in abstracts, with roughly 50,000 submissions before the deadline",
+    "summary": "ICLR 2027 has already pulled in about 50,000 abstracts, up from 19,500 at ICLR 2026. The flood is driven by the AI hype, corporate pay tied to publication records, and above all, AI making it faster to crank out papers. That's only going to worsen existing quality problems with submissions and revie",
+    "url": "https://the-decoder.com/ai-conference-iclr-is-drowning-in-abstracts-with-roughly-50000-submissions-before-the-deadline/",
+    "published_at": "2026-09-19T10:37:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini also accidentally hacked three real companies during security testing",
+    "summary": "During a security test run by the firm Irregular, Google's AI model Gemini escaped into the open internet and hacked three real companies, guessing passwords and pulling login credentials from public sources. The cause was a flawed test environment that had internet access left on accidentally. The ",
+    "url": "https://the-decoder.com/googles-gemini-also-accidentally-hacked-three-real-companies-during-security-testing/",
+    "published_at": "2026-09-19T09:31:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "U.S. military nearly boarded a Chinese ship over a hallucinated AI intelligence report",
+    "summary": "In the spring of 2026, the U.S. military came within minutes of boarding a Chinese ship because an AI chatbot falsely flagged its cargo as nuclear weapons components. Armed soldiers were ready, aircraft were in the air. The error was caught just before the operation kicked off. The incident plays ri",
+    "url": "https://the-decoder.com/u-s-military-nearly-boarded-a-chinese-ship-over-a-hallucinated-ai-intelligence-report/",
+    "published_at": "2026-09-19T08:10:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "California Governor Newsom signs executive order demanding \"kill switch\" for AI models",
+    "summary": "California Governor Gavin Newsom signed an executive order seeking independent auditors inside AI labs and a \"kill switch\" for AI models. An expert panel has two months to deliver recommendations. Newsom says no federal law requires AI companies to report dangerous incidents. The article California ",
+    "url": "https://the-decoder.com/california-governor-newsom-signs-executive-order-demanding-kill-switch-for-ai-models/",
+    "published_at": "2026-09-18T17:45:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Security researchers used Anthropic's Claude to hack OpenAI's internal systems in under 72 hours",
+    "summary": "Three security researchers used Anthropic's Claude models to break into OpenAI's internal systems through its community forum in less than 72 hours. According to the team, Opus 5 succeeded where its predecessor couldn't bypass a common security measure. The attack shows how newer AI models can cut t",
+    "url": "https://the-decoder.com/security-researchers-used-anthropics-claude-to-hack-openais-internal-systems-in-under-72-hours/",
+    "published_at": "2026-09-18T17:20:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
+    "summary": "Internal emails and sworn testimony undercut OpenAI and Microsoft's fair use defense. A Microsoft director described the practice as the \"largest theft of labor in human history,\" while OpenAI's head of ChatGPT wrote that the products \"are largely substitutive, period.\" The article AI training built",
+    "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft/",
+    "published_at": "2026-09-18T15:27:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Andhra Pradesh targets chips, AI and quantum tech with Rs 22,178 crore investment push",
+    "summary": "SIPB also clears 10 IT, quantum projects worth over Rs 500 crore which are set to create 9,000 jobs.",
+    "url": "https://www.financialexpress.com/business/industry-andhra-pradesh-targets-chips-ai-and-quantum-tech-with-rs-22178-crore-investment-push-4342873/",
+    "published_at": "2026-09-19T10:37:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic picks Accenture for in-house AI safety evaluation",
+    "summary": "Anthropic said Friday it is partnering with consulting giant Accenture to have outside evaluators work inside the AI company, a step toward fulfilling a pledge by CEO Dario Amodei to have independent observers evaluate its most powerful models.",
+    "url": "https://www.thestandard.com.hk/world/article/343245/Anthropic-picks-Accenture-for-in-house-AI-safety-evaluation",
+    "published_at": "2026-09-19T10:36:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Samsung Innovation Campus 2026 launched in Karnataka to train 2,000 youth in AI skills",
+    "summary": "Now in its fourth year in India, Samsung Innovation Campus provides youth aged 18-25 with hands-on AI training, enabling participants to apply their learning to practical challenges while strengthening their career readiness.",
+    "url": "https://www.cnbctv18.com/technology/samsung-innovation-campus-2026-launched-in-karnataka-to-train-2000-youth-in-ai-skills-19994085.htm",
+    "published_at": "2026-09-19T10:36:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pocket FM launches AI that plans and writes long-form stories",
+    "summary": "Pocket FM has launched a new artificial intelligence (AI) platform called Sherpa. The tool is specifically designed to assist creators in writing and developing long-running fiction.",
+    "url": "https://www.newsbytesapp.com/news/science/pocket-fm-launches-ai-that-plans-and-writes-long-form-stories/story",
+    "published_at": "2026-09-19T10:36:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Head-To-Head Analysis: AST SpaceMobile (NASDAQ:ASTS) & SpaceX (NASDAQ:SPCX)",
+    "summary": "SpaceX (NASDAQ:SPCX – Get Free Report) and AST SpaceMobile (NASDAQ:ASTS – Get Free Report) are both large-cap communication services companies, but which is the better business? We will contrast the two businesses based on the strength of their valuation, analyst recommendations, earnings, profitabi",
+    "url": "https://www.thelincolnianonline.com/2026/09/19/head-to-head-analysis-ast-spacemobile-nasdaqasts-spacex-nasdaqspcx.html",
+    "published_at": "2026-09-19T10:34:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | AI Investment, Government Borrowing Drive Global Cost of Capital Higher: Goldman Sachs",
+    "summary": "Get latest articles and stories on Business at LatestLY. Rising spending on artificial intelligence (AI) infrastructure and higher government borrowing are pushing up the global cost of capital, as companies raise more debt and equity to fund investment while governments increase borrowing for infra",
+    "url": "https://www.latestly.com/agency-news/business-news-ai-investment-government-borrowing-drive-global-cost-of-capital-higher-goldman-sachs-7611501.html",
+    "published_at": "2026-09-19T10:34:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Zong Dominates in Overall Network Performance in PTA’s Q2 2026 QoS Survey",
+    "summary": "Copyright protected content copied from PhoneWorld website. Zong has reaffirmed its status as Pakistan’s leading Technology Services Enterprise by securing top positions across 7 out of 10 Key Performance Indicators (KPIs) in the Pakistan Telecommunication Authority’s (PTA) independent Quality of Se",
+    "url": "https://www.phoneworld.com.pk/zong-dominates-in-overall-network-performance-in-ptas-q2-2026-qos-survey/",
+    "published_at": "2026-09-19T10:32:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "This Nvidia GPU Costs 10x More Than A PlayStation 5 Pro",
+    "summary": "If you think the prices on gaming consoles are out of line right now, wait until you see just how much this Nvidia GPU is going for.",
+    "url": "https://www.bgr.com/2262877/nvidia-gpu-costs-10-times-more-than-playstation-5-pro/",
+    "published_at": "2026-09-19T10:32:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ten days that changed the course of AI",
+    "summary": "For years, the race to build ever-more powerful artificial intelligence followed a well-worn Silicon Valley principle: move fast and break things.",
+    "url": "https://www.reuters.com/business/media-telecom/ten-days-that-changed-course-ai-2026-09-19/",
+    "published_at": "2026-09-19T10:30:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ゲーム開発に「ローカルLLM」を取り込む必然性とは? メインメモリーの96GBをVRAM化するAI特化「DAIV」が示すPCの変革【TGS2026特集】",
+    "summary": "ゲーム開発現場でどこまでローカルLLMや生成AIの実運用が可能なのか。新清士氏が実際に開発で活用している知見を披露。ローカルLLM運用の実践的意義と、そこから見えてきたPCハードウェアのパラダイムシフトについてレポートする。",
+    "url": "https://ascii.jp/elem/000/004/436/4436507/?rss=",
+    "published_at": "2026-09-19T10:30:00+00:00",
+    "source": "newsdata"
+  }
+]
