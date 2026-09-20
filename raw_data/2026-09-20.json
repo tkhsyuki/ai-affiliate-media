@@ -1,0 +1,303 @@
+[
+  {
+    "title": "iPadでも記事の添削がしたいんじゃ！",
+    "summary": "iPadでもMarkdownの添削がしたいんじゃ！\n生成AIにプロットを書かせて読んでいると、「ここはもう少し詳しく」「この言い回しは変えたい」が出てくる。\nただ、それをチャット画面で伝えようとすると、どこの話なのか説明するところから始まって、なかなかに面倒である。\nWordでレビューしていた時代はその場所にコメントを付けて、まとめて返してたのは案外便利だった。\nMarkdownでもそんな感じで、PCでもiPadでもスマホでもコメントを書き溜めて、最後にAIへ返したい。\n試してみたら、これが案外いい感じじゃないかなっていうお話。\n\n図1: AIの下書きにiPadでコメントし、AIへ修...",
+    "url": "https://zenn.dev/kswr/articles/markdown_review_on_ipad",
+    "published_at": "2026-09-20T22:43:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【012】再帰Transformerの「常識」は間違いだった — d=1は再帰ではなかった",
+    "summary": "この記事の要約\n\n重み共有再帰Transformerでは、全ての再帰ステップが「同じ処理の繰り返し」だと暗黙に仮定されてきた。\nd=1は収束解析でも「ノイズ」として除外するのが定石だった。\nしかし d=1（初回ステップ）は再帰ではない。プレリュードからの「注入」である。\nこの区別を無視した結果、7.0Bモデルの学習で制御系が完全に非稼働状態に陥り、連鎖的な崩壊が発生した。\nd=1に対する制御方針を変更することで問題は解消された。\n「d=1は除外せよ」ではなく「d=1こそ最初に制御せよ」— 再帰Transformerの前提が反転した。\n\n\n\n 1. 再帰Transformerの「自明な...",
+    "url": "https://zenn.dev/nakatada_lab/articles/04058b3def365e",
+    "published_at": "2026-09-20T22:40:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevを使ってゲームテストラボを作った。実際にうまくいったこと",
+    "summary": "2つのゲーム、実際の意思決定ログ、9画面ダッシュボード、そして再利用できる出発点。\n\nゲームの見た目は良くなっていた。次は、プレイ体験も本当に良くなっているという、より確かな証拠が欲しかった。\nよくある不満はこうだ。強化した武器は気持ちよく使えるのに、遭遇する敵の多くを簡単にしすぎてしまう。敵の体力を増やすのは簡単だった。本当の問題を見つけるには、もう少し手間がかかった。\n私はCodexの助けを借りて、実際のゲームエンジンを中心にしたローカルのプレイテストラボを作った。Nightshift Hollowsでは、JevがAPI経由で移動と強化の判断を行った。Starfall Salvoでは...",
+    "url": "https://zenn.dev/thoughtcrime/articles/cf09ca069a7461",
+    "published_at": "2026-09-20T20:57:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【検証編】自分が書いたハンズオン記事のコードは本当に動くのか？Dockerの使い捨て環境で全部試した",
+    "summary": "はじめに\n前回、【GA版】Microsoft Agent Framework で最小構成のAIエージェントを作るハンズオン（Python）  という記事を書きました。\n書いている最中、ずっと引っかかっていたことがあります。\n「このコード、本当に動くのか？」\n公式ドキュメントを読み、変更履歴を追い、GA 版の書き方に直したつもりではあります。でも「ドキュメントにそう書いてある」ことと「手元で動く」ことは別物です。しかも Agent Framework は更新が速く、ベータ期の破壊的変更を追いかけている記事だからこそ、自分の記事が同じ落とし穴にハマっている可能性がある。\nとはいえ、検証の...",
+    "url": "https://zenn.dev/fujota1230/articles/76b2809f500345",
+    "published_at": "2026-09-20T20:22:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Azure OpenAIに支出のハードリミットは無い — pause APIなら推論は423で止まる",
+    "summary": "エージェントに好きなだけ推論させていると月末の請求が怖くなる。OpenAI の API には\n「上限に達したら止まる」設定があるので、Azure にもあると思って探した。無かった。\n\nWhile OpenAI has an option for hard limits that prevent you from going over your budget,\nAzure OpenAI doesn't currently provide this functionality. You can start automation from\naction groups as part of yo...",
+    "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-spend-limit-tpm",
+    "published_at": "2026-09-20T19:10:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code Mods 実践ガイド ― 関数フックで本体を改造する、動く Mod 7本",
+    "summary": "Claude Code に 2026年9月に入った「Mods（関数フック）」を、実機 2.1.278 で検証しながら 7 本の Mod を作って覚える本です。\n対象は Claude Code を毎日使っていて、従来の hooks では届かなかった「画面」「ツール追加」「モデル振り分け」「結果の書き換え」に手を入れたい人。\nすべてのコードは claude plugin validate の出力と、非対話モード（claude -p）でフックが本当に発火した証拠ファイル付き。\nWindows 11 + Git Bash で検証し、macOS / Linux でも同じ手順で動きます。\n収録: 起動時ロ",
+    "url": "https://zenn.dev/oishiigohan/books/claude-code-mods-jissen",
+    "published_at": "2026-09-20T18:48:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIチャットエージェントの「通知バースト」集約(ダイジェスト化)しきい値設計",
+    "summary": "Slack / Teams / Chatwork に常駐して日常的にリクエストを捌くAIエージェントは、外部システムの更新・チャットの発言・タスクの状態変化など、様々なイベントをきっかけに通知やレポートを送ります。単発の通知だけを見て設計していると気づきにくいのですが、本番運用に乗せると「短時間に大量のイベントが連続発生し、通知が一気に押し寄せる」バーストが必ず起きます。1件ずつは正しい通知でも、それが数十件まとまって届くと、利用者は結局全部を読まずに流してしまい、通知が多いほど重要な情報が埋もれるという逆転現象が起きます。この記事では、バースト時に通知をどう集約(ダイジェスト化)するか...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-notification-digest-threshold-design",
+    "published_at": "2026-09-20T18:09:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "GitHubプロフィールにAIとの開発量を貼れるツールを作ってみた",
+    "summary": "自分が実際どれだけAIと書いているか、知らなかった\nClaude Code を毎日使っています。でも「どれくらい使っているか」と聞かれても、体感でしか答えられませんでした。\nGitHub のプロフィールには、コミット数もスター数も草も出ます。でも「そのコードを誰と書いたか」は、どこにも出ていない。\n数えてみたら、こうでした。\n$ git log --format='%b' | grep -c 'Co-Authored-By: Claude'\n960\nこのリポジトリ、1,107コミット中960件。87%がClaudeと一緒に書いたコミットでした。\n全リポジトリ横断で数えたら 26,19...",
+    "url": "https://zenn.dev/yosh1/articles/cocommit-ai-coauthored-commits",
+    "published_at": "2026-09-20T17:11:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "最近流行りのJevをLaravel Starter Kit + AI SDKで使う：自由記述アンケートを分析",
+    "summary": "作るもの\nあなたがAIセミナーを行ったとする。これに関して以下のようなアンケートが上がってきたとしよう。\nhttps://github.com/catatsumuri/react-starter-kit-i18n/blob/jev-poc/database/seeders/data/demo.csv\nこのCSVは先頭に数字がごちゃごちゃ書いてあるが、重要なのは\n\n具体例が多く、生成AIを仕事でどう使えばいいのかイメージできました。\n\nとか\n\n眠かった\n\nとか\n\nお弁当がおいしかったです\n\nとかいうコメントの部分である。まあ見ての通りなかなかリアルさを出すようにしている。これをどう扱う...",
+    "url": "https://zenn.dev/catatsumuri/articles/24b4655bdad963",
+    "published_at": "2026-09-20T17:09:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの意見を聞かない技術 序論：断ったはずの提案が、また来る",
+    "summary": "私は AI の提案を、もうほとんど検討していません。良かれと思って出てくる新機能も、親切な改善案も、丁寧な代替案も。AI は却下を覚えないので、断った提案は次のセッションでまた出てきます。それで開発が雑になったかというと、なっていません。このシリーズは、その状態を仕組み一つずつで作っていく連載です。\n各回の終盤には「検証手順」という節があります。先に読む必要はありません。置いた仕組みがなぜ要るのかを、自分の目で確かめたくなったときに戻ってください。\n\n 症状から対処法を学ぶ\n各回は、うまくいかない症状から始まります。その対処法には、関連する AI の性質や仕様と、なぜその対処が適切かの解...",
+    "url": "https://zenn.dev/garplab/articles/758d59bcc409bd",
+    "published_at": "2026-09-20T16:37:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "社内RAGで最初に壊れるのは検索精度ではなく権限管理",
+    "summary": "社内文書をLLMに読ませるRAGは、PoCまでなら数日で動く。ベクトルDBを立てて、PDFをチャンクに割って、埋め込みを入れて、Top-Kを引いてプロンプトに詰める。それだけで「おお、社内規程に答えてくれる」というデモになる。\n本番に出すとき最初に壊れるのは、たいてい検索精度ではない。権限だ。\n人事部のフォルダにあった評価シートが、一般社員の質問に対する回答の根拠として出てくる。ファイルサーバー上ではACLで守られていたのに、埋め込みにした瞬間その情報が消えていた、という話になる。しかもRAGは根拠を親切に引用してくれるので、事故は静かに起きるのではなく、はっきりと目に見える形で起きる。...",
+    "url": "https://zenn.dev/preferred/articles/enterprise-rag-agentic-rag-2026",
+    "published_at": "2026-09-20T17:11:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜ、JevはAIをAGI/ASIへ少しも導かないのに、AI史上最大の発明かもしれないのか？",
+    "summary": "はじめに\n2026年9月、TypeSafe AIがJevという新しいAIモデルを発表しました。Jevは同社がSystem One Modelと呼ぶモデルの最初の実装であり、文章を生成することを主目的とせず、与えられた状態について「どれを選ぶか」「どの程度か」「どれくらい確からしいか」といった型付きの判断を返します。本稿で扱いたいのは、Jevという一製品の背後にある考え方です。本稿ではTypeSafeの呼称を一般化し、この種のモデルをデシジョンモデルと呼びます。業務ルールの記述標準であるDMN(Decision Model and Notation、ソフトウェア標準化団体OMGが定めた...",
+    "url": "https://zenn.dev/pdfractal/articles/e8d65cceb33d3b",
+    "published_at": "2026-09-20T16:27:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jev, Gemini, DistilBERT, LightGBMの分類性能を比較してみた",
+    "summary": "なぜ比較しようと思ったか？\nJevについて、定性的な\"評判\"では掴めないような地に足の着いた定量的な\"評価\"を知りたかったからです。もちろん、定性的な情報自体は、定量化やもっと言えば言語化すらできない肌感を伝えられるという側面において、価値がある情報だとは思いますが、JevをはじめとしたAI関連の情報は比率として定性的な情報が多すぎる傾向があるため、相対的に定量化された情報が有益となると思っています。そこで今回は、Jev vs. Gemini, DistilBERT, LightGBM の「分類性能」という完全にオリジナルの評価実験を手元で行いましたので、その結果から言えるJevの定...",
+    "url": "https://zenn.dev/xxkuboxx/articles/e232d267a76f43",
+    "published_at": "2026-09-20T16:14:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "カメラで食物アレルゲンを推定するアプリを作って Jev を評価した話",
+    "summary": "TypeSafe の System One モデル「Jev」を評価したくて、カメラで写した料理から日本の法定アレルゲン（義務 9 品目・推奨 20 品目）を推定するスマホアプリを試作しました。1 日で試作を 14 回まわし、最後は iPhone と Pixel で 3 秒周期の連続判定が動くところまで行きました。\n先に結論を書くと、Jev は「見えたものから材料を推定する」判定層として問題なく機能しました。ただし今回の題材では、Jev 自身で一括生成した表でほぼ代替できました。 その過程で分かったことを書きます。\nなお目的は Jev の評価で、アレルギーのある人に実際に使ってもらう想定は...",
+    "url": "https://zenn.dev/daisuke7/articles/4d7a9ba6aa49ba",
+    "published_at": "2026-09-20T16:13:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "個人開発のLLMアプリ、原価を計算したら月額600円で原価6,000円だった",
+    "summary": "英単語アプリを個人開発しています。有料プランを作ろうとして料金を決めたのですが、\n実装がほぼ終わってから原価を計算したら、月額600円のプランの原価が月6,000円でした。\n1人契約するたびに5,400円溶ける計算です。\nこの記事は、LLMを使ったアプリで課金を始める前に確かめておくべきことを、\n実際にやらかした順に書いたものです。同じ構成で作っている人の役に立てば。\n\n 作ったもの\nCortex Dictionary という英単語アプリです。\n\n単語を引くと、意味・品詞と語法・語源・ニュアンス・分野ごとの用法・例文・\n類義語/対義語・コロケーションが一度に出る\n保存した単語は、語源・コ...",
+    "url": "https://zenn.dev/matthewstry/articles/a6deffcda2e120",
+    "published_at": "2026-09-20T15:42:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Othello-GPT で検証する次トークン予測と内部表現の因果利用",
+    "summary": "次トークン予測という学習目標は、モデルに何を最適化させたかを説明する。そこから、予測を生成するために内部でどのような状態を形成し、どの情報を保持し、どの計算へ利用しているかまでは決まらない。\nこの区別を具体的に観察できる題材が Othello-GPT である。Othello-GPT は、盤面画像やオセロのルールを入力として受け取るモデルではなく、過去の着手位置を並べた系列から次の合法手を予測するよう学習する。系列予測という単純な設定の内部に、現在の盤面へ対応する状態表現がどのように形成されるかを調べられる。\n本稿では、Othello-GPT の実験を基準に、次トークン予測という学習目標と...",
+    "url": "https://zenn.dev/id774/articles/eb4924b3225011",
+    "published_at": "2026-09-20T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jev完全入門ガイド",
+    "summary": "〜圧倒的な速さと低コストで、AIの判断をソフトウェアに組み込む〜\n\n\n はじめに\nJevとは何か？ 一言でいえば、Jevは「文章を書かないAI」です。\nJevは、AIスタートアップ企業のTypesafe AIが開発した、System One モデルと呼ばれる新しいカテゴリーのAIモデルです。ChatGPTのような一般的な生成AIが「人間が読むための文章」を作ることを目的としているのに対し、Jevは文章をいっさい生成しません。その代わりに、みなさんが渡した「state（評価してほしい対象）」と「questions（知りたいこと）」にもとづいて、あらかじめ型が決まった判断——選択肢のうち...",
+    "url": "https://zenn.dev/titosemi/articles/cb9152ce202280",
+    "published_at": "2026-09-20T15:00:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevのキラーアプリ「意味で探す grep」の衝撃：なぜベクトル検索ではダメで、System OneならAND/NOTが効くのか？",
+    "summary": "はじめに：正規表現の限界と、LLMの「遅さ」の狭間で\nエンジニアが日常的に行うログ調査やコードリーディングにおいて、grep は半世紀にわたり開発者の右腕であり続けてきました。\nしかし、現代の複雑なシステムログや多言語化されたテキストにおいて、従来の grep は度々壁にぶつかります。\n\n\n「失敗しました」 と 「エラーです」 を同時に拾うために、正規表現パターンを延々と継ぎ足すストレス\n\n「connection reset by peer」 と 「ネットワーク切断」 という、意味は同じなのに言語が異なるログの混在\n\n「返金してほしい」 という顧客の要望だけを抜き出したいのに、「返金...",
+    "url": "https://zenn.dev/kanta13jp1/articles/jev-semgrep-meaning-based-search",
+    "published_at": "2026-09-20T14:28:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "a64fx SVE1.0 での LLM 量子化 dequant 効率化メモ",
+    "summary": "とりま\na64fx で量子化 weight の LLM decode tok/s 極めたかった.\nHBM2 bandwidth peak(~230 GB/s/CMG)をターゲット\nint4/fp4(w4a16), int8/fp8(w8a16) で sdot or fp16 fma で 200 ~ 230 gb/s なんとか達成!\nw\n\n Fused dequantization and GEMV/GEMM on A64FX\nLLMのデコード処理では、通常、巨大な重み行列を1トークンずつ適用する。その中心となる演算はGEMV、または複数トークンをまとめて処理する場合の小規模なGEMM...",
+    "url": "https://zenn.dev/syoyo/articles/705612cc048032",
+    "published_at": "2026-09-20T13:30:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "WebFetch の権限が許可されず、参考記事の内容を直接確認できませんでした。この状態で記事を書くと、設定名やAPI仕様などの固有情報を憶測で書くことになり、",
+    "summary": "WebFetch の権限が許可されず、参考記事の内容を直接確認できませんでした。この状態で記事を書くと、設定名やAPI仕様などの固有情報を憶測で書くことになり、ユーザーのCLAUDE.mdルール（固有名詞や仕様を勝手に想像しない、出典のない数値は書かない）に反してしまいます...",
+    "url": "https://qiita.com/syun136_616/items/bb23c4ff35b93c6381eb",
+    "published_at": "2026-09-20T22:31:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI記事作成パイプラインの流れと6ステップ",
+    "summary": "はじめに\nAIで記事作成の工程を自動化したいとき、本文を生成する部分だけを見ていると、入力から出力までの流れが分かりにくくなります。\nキーワードを決めたあとに何を調べ、どの段階で構成を作り、本文生成後にどのような審査を行うのか。工程の順番が見えないと、記事作成全体の役割を...",
+    "url": "https://qiita.com/miyoki_labs/items/c279352d210a5e7141d6",
+    "published_at": "2026-09-20T22:20:29+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 9.21：NscaleがNYSE上場を申請、FAAがAI空域管理を稼働、Step 5が600B MoEを公開",
+    "summary": "AIインフラの構築が今週、書類の段階に入った。3年前までビットコインマイニングをしていたデータセンタ事業者が、1,030億ドルの契約残高と上半期10億ドルの赤字を数字で示し、中国のラボはフロンティアモデルの8分の1の価格で6,000億パラメータのMoEをAPIの背後に置い...",
+    "url": "https://qiita.com/lhjjjk4/items/1b74e9256ff3fd61fd07",
+    "published_at": "2026-09-20T22:06:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Cloudflareの「Disallow AI Training」設定、混合用途クローラー36.6%・検索遮断1%未満・学習制限17%",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\n米Cloudflareが、Webサイトを検索結果に残したまま、AIの学習に使われることだけを断れる設定「Disallow AI Training」を発表しました。\n\n要点\n\n無料を含む全プラン...",
+    "url": "https://qiita.com/quotidia/items/fad4f22b4cbaa131b478",
+    "published_at": "2026-09-20T21:01:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Alibaba's open-weight Qwen-Image-2.1 claims to beat closed models in image generation with just 7 billion parameters",
+    "summary": "Alibaba's Qwen team has released Qwen-Image-2.1, an open-weight model that generates and edits images on powerful consumer GPUs, with support for transparency and up to ten reference images at once. Its research license bars commercial use, which requires a separate Qwen license. The article Alibaba",
+    "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+    "published_at": "2026-09-20T16:10:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tencent's Gander aims to keep talking while it works in the background",
+    "summary": "Tencent's Gander processes speech, images, and text while handling tasks in the background. A \"cerebellum\" keeps the conversation going, while a swappable \"brain\" searches files, writes code, or tackles other complex work. Users can interrupt or change the task mid-conversation. In benchmarks, Gande",
+    "url": "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background/",
+    "published_at": "2026-09-20T15:41:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Runway wants to turn AI video generation into a live stream you control in real time",
+    "summary": "Runway wants to stream AI video as users prompt it, rather than make them wait for finished clips. The approach builds on GWM-1, its world model that generates video frame by frame. Beyond creative tools, Runway sees uses in robotics and autonomous driving. The article Runway wants to turn AI video ",
+    "url": "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time/",
+    "published_at": "2026-09-20T11:56:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Daily AI usage in the U.S. has more than doubled in just six months",
+    "summary": "Surveys by Epoch AI and Ipsos suggest AI is becoming part of everyday life for more Americans. The share of US adults using AI almost daily more than doubled between March and August 2026, rising from 8 percent to 19 percent. Meanwhile, the share using it just once a week fell from 17 percent to 10 ",
+    "url": "https://the-decoder.com/daily-ai-usage-in-the-u-s-has-more-than-doubled-in-just-six-months/",
+    "published_at": "2026-09-20T10:03:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Simulated students that make realistic mistakes help AI tutors learn faster",
+    "summary": "Microsoft and the University of Illinois built StudentSim to replicate individual students from limited data and give AI tutors fast, low-cost feedback. In tests covering 60 students across chess, English, and math, it outperformed GPT-5.4. A chess tutor trained with StudentSim also earned the highe",
+    "url": "https://the-decoder.com/simulated-students-that-make-realistic-mistakes-help-ai-tutors-learn-faster/",
+    "published_at": "2026-09-20T09:50:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Trump announces \"AI Force\" and plans for an \"AI czar\" as he pushes unchecked AI growth",
+    "summary": "Trump announces an \"AI Force\" modeled after the Space Force and plans to appoint an \"AI czar\" with a \"high IQ.\" He claims AI could reach 25 percent of US economic output, rejects new regulation, and frames criticism of data centers as a left-wing attack. The article Trump announces \"AI Force\" and pl",
+    "url": "https://the-decoder.com/trump-announces-ai-force-and-plans-for-an-ai-czar-as-he-pushes-unchecked-ai-growth/",
+    "published_at": "2026-09-20T08:52:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Following OpenAI, Anthropic is also reportedly postponing its IPO",
+    "summary": "Anthropic is reportedly delaying its IPO from October to November 2026 to present strong Q3 results. Investors expect a roughly $2 trillion valuation, but rising infrastructure costs, including $1.25 billion a month for its SpaceX deal alone, and unresolved security risks complicate the listing. The",
+    "url": "https://the-decoder.com/following-openai-anthropic-is-also-reportedly-postponing-its-ipo/",
+    "published_at": "2026-09-20T08:35:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Qwen3.8-Omni-Flash undercuts Google's Gemini Flash pricing while matching its multimodal benchmarks",
+    "summary": "Qwen3.8-Omni-Flash is Qwen's first multimodal model designed for AI agents. It processes audio and video together and independently uses tools to edit vlogs, translate clips, or summarize movies. On audio-video benchmarks, it nearly matches Gemini 3.8 Flash at a fraction of the API cost. The article",
+    "url": "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks/",
+    "published_at": "2026-09-19T14:30:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials",
+    "summary": "Unity has released official plugins for Claude Code and OpenAI's Codex. The article Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials appeared first on The Decoder .",
+    "url": "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials/",
+    "published_at": "2026-09-19T13:31:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6 Astra and Claude Fable turn robot arms into slapstick killer robots in new safety benchmark",
+    "summary": "Leading AI models usually attempt dangerous tasks rather than refuse them when controlling a robot, according to the RoboHarm benchmark. GPT-6 Astra stabbed a baby doll in 17 of 20 trials, while Claude Fable 5.1 put a can of compressed air on a burning stove. None of the three models tested reliably",
+    "url": "https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark/",
+    "published_at": "2026-09-19T13:28:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Salesforce Positions Slack as an 'AI Work Operating System' — Full-Scale Multiplayer AI Rollout - finance.biggo.com",
+    "summary": "Salesforce Positions Slack as an 'AI Work Operating System' — Full-Scale Multiplayer AI Rollout finance.biggo.com The Front Door to the Agentic Enterprise Slack Salesforce Launches Slackforce Surfaces for Real-Time Data Collaboration Small Business Trends Slack Transforms into AI Work Hub Connecting",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42MlY4SFRZNDdGdno0eGRYV1N3TlhJVzNra0Z4WXo3dVQwYmtvZzk3aFhLZGY5REVrbW4yMDU0cThqUVRxa3loQ0NGSVQ3YTU5ZVVYX2JwZmRyX1Y1UnZ1SHctYkpnSHZTS0VoX3lUTkxTOVBJdkE?oc=5",
+    "published_at": "2026-09-20T10:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI slowdown calls justified but collapse of bubble may be more immediate threat | Heather Stewart",
+    "summary": "Scale of debt issuance being used to fund the hectic pace of the datacentre rollout by tech firms is a worry Warnings about powerful and uncontrolled AI have dominated the headlines this past week. But even amid the omens of apocalypse, it is still worth asking if the entire AI-industrial complex...",
+    "url": "https://biztoc.com/x/9dd1638b93660c8f",
+    "published_at": "2026-09-20T10:52:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump says he will appoint a new AI adviser, without providing details",
+    "summary": "The White House did not immediately respond to a request for comment on ​Trump's post.",
+    "url": "https://www.tbsnews.net/worldbiz/usa/trump-says-he-will-appoint-new-ai-adviser-without-providing-details-1548196",
+    "published_at": "2026-09-20T10:50:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Lawsuit Says Anthropic, OpenAI, SpaceXAI, Google Made Illegal Agreement on AI Slowdown",
+    "summary": "The lawsuit argues that the leading AI companies violated antitrust laws when they agreed to coordinate slowdown efforts, and that doing so would reduce the value consumers get for paid AI subscriptions",
+    "url": "https://www.deccanchronicle.com/technology/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-on-ai-slowdown-1989007",
+    "published_at": "2026-09-20T10:49:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How AI-first smart meter operations centres cut outage times",
+    "summary": "This article is authored by Udit Poddar, co-founder & CEO, WorkOnGrid.",
+    "url": "https://www.hindustantimes.com/ht-insight/future-tech/how-ai-first-smart-meter-operations-centres-cut-outage-times-101789900954269.html",
+    "published_at": "2026-09-20T10:47:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Robinhood CEO Says Civil Liability May Not Be Enough To Contain Biggest AI Risks",
+    "summary": "(MENAFN - AsiaNet News) ​​Tenev said legal and civil liability might not be enough if AI's risks reach the level of atomic energy. “AI has basically unlimited damage and unbounded risk,” Tenev said ...",
+    "url": "https://menafn.com/1111687530/Robinhood-CEO-Says-Civil-Liability-May-Not-Be-Enough-To-Contain-Biggest-AI-Risks",
+    "published_at": "2026-09-20T10:45:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump and sons invest heavily in AI economy as he resists calls for slowdown",
+    "summary": "Trump’s decisions as president on one of the most consequential policy debates of his administration could affect the value of his personal investments.",
+    "url": "https://www.adn.com/nation-world/2026/09/20/trump-and-sons-invest-heavily-in-ai-economy-as-he-resists-calls-for-slowdown/",
+    "published_at": "2026-09-20T10:42:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Huawei FreeBuds SE 4 ANC Review: Best budget buy?",
+    "summary": "In our in-depth review of the Huawei FreeBuds SE 4 ANC we discover how good entry-level active noise cancellation can be. Read more on Bandwidth Blog",
+    "url": "https://bandwidthblog.co.za/2026/09/20/huawei-freebuds-se-4-anc-review/",
+    "published_at": "2026-09-20T10:40:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Is It Proper To Use AI To Prepare Sermons' (Hemanwel)",
+    "summary": "Happy Sunday to all! Is it right or proper to use ChatGPT and other AI tool to prepare sermons in church",
+    "url": "https://www.latestnigeriannews.com/p/406695/is-it-proper-to-use-ai-to-prepare-sermons-hemanwel.html",
+    "published_at": "2026-09-20T10:39:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Tech titan unveils surprising new role for Slack in AI expansion",
+    "summary": "Most office workers know Slack as the app that never stops buzzing. It is where colleagues swap links, chase updates, and argue about lunch. Salesforce (CRM) now wants that same app to do something far bigger. Slack has become a hub for communicating with AI agents over the past three months, said..",
+    "url": "https://biztoc.com/x/322f1e0d0369fea5",
+    "published_at": "2026-09-20T10:37:22+00:00",
+    "source": "newsdata"
+  }
+]
