@@ -1,0 +1,296 @@
+[
+  {
+    "title": "VTuber立ち絵をAIで設計する｜キャラクターの特徴を保ちながら素材展開する実践フロー",
+    "summary": "PR｜本記事にはプロモーションを含みます\n\nVTuber実際に活動を始めると、笑顔や驚き顔、座ったポーズ、新衣装、配信用ビジュアルなど、同じキャラクターを使った素材が必要になってきます。\nそこで重要になるのが、最初から「あとで展開する」ことを前提にキャラクター、立ち絵を設計することです。\nこの記事では、オリジナルVTuberキャラクターの基本立ち絵を作り、その画像を基準にしながら表情・ポーズ・衣装・シーンを展開する実践フローを紹介します。\n今回はアニメAI生成に対応するPixAIのTsubaki.3を使用します。\n\n\n VTuber立ち絵は「あとで展開すること」を前提に設計する\nAIでV...",
+    "url": "https://zenn.dev/satofun/articles/fdfd703bb53b22",
+    "published_at": "2026-09-21T22:34:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude CodeがAGENTS.mdを読み込まない理由と対処法",
+    "summary": "Claude CodeがAGENTS.mdを読み込まない理由と対処法\nClaude CodeがAGENTS.mdを読み込むようになりました。ただし公開直後に多くのエンジニアが気づいたとおり、プロジェクトを開いた最初のセッションでは反映されません。この記事では、AGENTS.mdとは何か、なぜ初回セッションで読み込まれないのか、CLAUDE.mdとの使い分けまで整理します。\nこの記事の要点\n\nClaude CodeはAGENTS.mdを読み込みますが、新規に置いた直後の最初のセッションでは反映されず、セッションを開き直すと読み込まれるようになります。\nAGENTS.mdはClaude ...",
+    "url": "https://zenn.dev/sunsun_eng/articles/claude-code-agents-md-first-session",
+    "published_at": "2026-09-21T22:32:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude憲法を読んでもっとうまくClaudeと会話したい",
+    "summary": "はじめに\n私は仕事でClaudeに頼り切っています。けれど、そのClaudeがどんな価値観で動いているのか、実はちゃんと知らなかったです。Anthropicが公開しているClaude's Constitutionという文書に書かれたClaudeの人格や振る舞いの設計思想を自分なりに整理しました。\n\n Claudeの価値観\nClaudeは以下の優先順位で価値観を持っています。Claudeは安全ということを一番の価値観にしているため広く使われている理由の一つだと思いました。現に実際にアメリカの防衛省からの軍事利用の制限撤廃についても一部を拒みました。\n\n広い意味での安全性(Broadly...",
+    "url": "https://zenn.dev/daigo428/articles/67862e4f145c4a",
+    "published_at": "2026-09-21T22:11:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "2026-09-20〜2026-09-26 技術キャッチアップ",
+    "summary": "2026-09-20〜2026-09-26 技術キャッチアップ\nこの週に確認した主要な技術更新を、曜日ごとのテーマに沿って整理する。\n\n日: 生成AI・AI開発\n月: IT全般・週間総括\n火: 開発ツール・OSS\n水: Web・バックエンド開発\n木: セキュリティ\n金: クラウド・インフラ・DevOps\n土: 先端技術・論文→実用\n\n\n\n 9月20日（日）— 生成AI・AI開発\n\n 1. GitHub Copilotで複数モデルが10月19日に廃止予定\n\n\n重要度: 高\n\n対象: GitHub Copilotでモデルを明示指定している開発者、Copilot Business / En...",
+    "url": "https://zenn.dev/marycache/articles/20260920-weekly-tech-catchup",
+    "published_at": "2026-09-21T21:58:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "一夜でバズった\"Jev\"を疑ってみた ── 判断特化AIの正体と、確率を信じてはいけない理由",
+    "summary": "結論\n2026年9月20日ごろから、X・Reddit・日本語圏のはてブで「Jev」という単語が一斉に湧いた。「新しいAIらしい」「これはゲームチェンジャー」。正体がよくわからないまま賞賛だけが流れていく、あの感じだ。\n僕は毎朝トレンドを収集して要約するワークフローを回している。そこで立てた仮説を、一次資料に当たって潰していったら、こういう像が残った。\n\n\nJevは技術的には新しくない。中身は「テキストエンコーダ＋判定ヘッド」という、枯れた分類器の組み合わせだ。\n\nJevが返す「確率」は、そのまま信じてはいけない。較正（calibration）されていないからだ。\n\nバズの一部は不自然...",
+    "url": "https://zenn.dev/ryok/articles/jev-calibration-trap",
+    "published_at": "2026-09-21T21:53:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ChatGPT for Word、実体は「誰でも作れるOffice Add-in」という話",
+    "summary": "TL;DR\n\nOpenAIは2026年9月17日、ChatGPTをWord・Excel・PowerPointのサイドバーとして使える公式アドインを発表した。無料プランを含む全プランで利用可能で、Microsoft Marketplace経由でインストールする\n技術的には、Microsoft が長年提供してきた**Office Add-ins（task pane add-in）**の仕組みの上に乗っており、Office.js の Office.context.document（getSelectedDataAsync / getFileAsync 等）で選択範囲や文書全体を読み取る、公...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/chatgpt-word-sidebar-3-steps",
+    "published_at": "2026-09-21T21:18:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIチャットエージェントをスケールアウトしたときの二重応答防止設計",
+    "summary": "Slack / Teams / Chatworkに常駐するAIエージェントは、トラフィックが増えると当然スケールアウトしたくなります。ところが単一インスタンスで動いていたときには存在しなかった問題が、複数インスタンスにした瞬間に表面化します。同じイベントに複数のインスタンスがそれぞれ反応し、同じ発言に二重・三重で返信してしまうという事故です。単一インスタンス内でのWebhook再送・順序保証なしへの対処とは別の、スケールアウト特有の問題を整理します。\n\n なぜ複数インスタンスにすると壊れるか\n単一インスタンスであれば、プロセス内のメモリやローカルなイベントID記録だけで「処理済みか」を判...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-scaleout-dedup-response-design",
+    "published_at": "2026-09-21T21:14:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「Claude Codeで稼ぐ」を3週間本気でやってみた。応募2,000人・当選率ほぼゼロの実測ログ",
+    "summary": "週10時間、予算0円で「AIエージェント（Claude Code）に会社を運営させて、Claude Code関連のスキルをフリーランスで売る」という実験を3週間続けています。今日、その過程で集めた実測データが、当初の想定と全く違う結果だったので共有します。\n\n クラウドワークス：「Claude」検索は2,000名を超える応募者の海\n実際にクラウドワークスで「Claude」を検索すると2,000名超がヒットします。募集タイトルに具体的な数字（「月100時間の工数削減」「CVR10%改善」等）を掲げている応募者が上位を占めていて、こちらの応募文（「自動化が得意です」という能力の自己申告のみ）...",
+    "url": "https://zenn.dev/ogana/articles/cc46b3d218077a",
+    "published_at": "2026-09-21T21:06:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの本を書いた私が、他のAIツールについて思っていること",
+    "summary": "2026年9月に『Claude Codeで作って学ぶ AI駆動アプリ開発入門』（技術評論社）という本を出しました。\nhttps://amzn.asia/d/0f0bQMI4\n本を出してから、Claude Code 以外のツールについてどう話すかを、一度ちゃんと考えました。\nこの記事は、Claude Code の本の著者が、AIエージェントをこれから始める人に何をすすめるのかを正直に書いたものです。\n\n 忙しい人のための要約\n最初の1つを決めるための結論で、理由と私自身の使い方は本文にあります。\n\n最初の1つは、設定例や具体例の記事が多い Claude Code が始めやすい\nただし C...",
+    "url": "https://zenn.dev/tmasuyama1114/articles/cc-book-author-other-tools",
+    "published_at": "2026-09-21T20:55:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "問い合わせ対応で「追加情報待ち」を状態として設計する",
+    "summary": "問い合わせ対応で「追加情報待ち」を状態として設計する\n問い合わせ対応のAI化では、通常処理を速くする話に目が向きます。しかし実際に現場を止めるのは、商品名、希望時期、対象契約などが分からないまま届く問い合わせです。\nこの状態を「未処理」のまま放置すると、担当者は同じ本文を読み直し、AIは推測で補い、顧客には確認質問が重複して届きます。そこで、追加情報待ちを独立した業務状態として設計します。\n\n\n 情報不足はエラーではなく、次の行動です\n業務状態を次のように分けます。\nreceived\n  ├─ 必要情報あり → human_review\n  └─ 必要情報なし → waiting_c...",
+    "url": "https://zenn.dev/miraigent/articles/ai-inquiry-missing-context-design",
+    "published_at": "2026-09-21T20:36:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIチャットを5 Primitivesで読み解く——ChatGPT/Claude/Gemini/Copilot他",
+    "summary": "はじめに\nChatGPT、Claude、Gemini、Microsoft 365 Copilot、Perplexity、Gemini Notebook(旧NotebookLM)——いま企業や個人が日常的に使っているAIチャットサービスは、パッと見ると「モデルの賢さ」や「対応言語の多さ」で語られがちです。モデル能力そのものは依然として重要ですが、実際に各社の技術文書やベストプラクティス集を読み比べていくと、実務でサービスを選ぶ際の差はモデルの性能比較だけでは説明しきれないことが見えてきます。どのデータやアクションに接続できるか、指示をどう再利用・統制できるか、どんな根拠を示し誰が監査・...",
+    "url": "https://zenn.dev/eyeofjapetus/articles/ai-chat-services-5-primitives",
+    "published_at": "2026-09-21T19:00:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM自律エージェントの誤動作！Agentic RAGのツール連携失敗と評価基準",
+    "summary": "LLM自律エージェントのAgentic RAGを実装していて、**「なぜかツールが呼ばれない」「意図しない引数が渡されてエラーになる」「同じツールを呼び続けて無限ループに陥る」**といった問題に直面していませんか？\nこれらの問題は、LLMエージェント、特にAgentic RAGにおけるツール連携の「ハマりどころ」です。この記事では、LangChain 1.0とLangGraphを使ったAgentic RAGの実装において、LLMエージェントがツールを適切に利用できない具体的な失敗パターンとそのデバッグ手法、そしてエージェントの動作を評価・改善するための実践的な基準を解説します。読み終える...",
+    "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260920165534-1",
+    "published_at": "2026-09-21T16:37:52+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "デザイナー×エンジニアがAIエージェントを作ったら何が生まれる？制作管理エージェント「Relay」を紹介！【AI HACK 2026】",
+    "summary": "はじめに\n「このバナー、来週までにお願いします」\nマーケターからデザイン制作依頼を受け取ったあと、すぐに制作を始められるとは限りません。\n誰に向けたバナーなのか。どこに掲載するのか。何を一番伝えたいのか。必要な素材は揃っているのか。\n制作中も、マーケターから「今どこまで進んでいますか？」「前の案の、この部分だけ変えたいです」といったやり取りが続きます。依頼が重なるほど、制作に加えて、情報の整理、優先順位の判断、進捗共有までデザイナーが抱えるタスクになります。\nこの負担を減らしたいと考え、AI HACK 2026への参加をきっかけに、デザイン業務の依頼管理ワークスペース「Relay」...",
+    "url": "https://zenn.dev/raspberry/articles/2d0b035b3026da",
+    "published_at": "2026-09-21T16:07:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Roman IMEでBERT/LLMで80%で正しい日本語が選択される理由（その１）",
+    "summary": "今回はRoman IMEで日本語を選択する前段の処理について具体的に書いていきます。\n正直BERT/LLMだけを単純につかっていては、日本語の変換の正答率は60%程度でラティスのみ（従来のIME）とさほど変わることはありません。つまり正解となる候補が十分上位にないということを意味します。\nまた、ものによっては辞書のほうが正解となるケースもあり、様々なケースで辞書のみとしたり、言語モデルを使ったりと、どちらかというと事例をもとに導入したルールそのものがRoman IMEを主体だったりします。\n\n （１）評価対象の絞り込み\n言語モデル動作の選択速度を早めるために、速度を計測しながら言語モデル...",
+    "url": "https://zenn.dev/mobazou/articles/cddce6cf011ccd",
+    "published_at": "2026-09-21T15:35:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LayaはJevより速い？ローカル判定AIの比較条件と、日本語アプリへの導入手順",
+    "summary": "スネーク比較で分かること\nローカルの「Laya」とクラウドAPIの「Jev」を、同じスネークゲームで動かす比較が紹介されています。ローカルで判断を完結させると、毎回のネットワーク往復を省ける点が魅力です。\nただし、応答速度・モデルの正答率・ゲームのスコアは別の指標です。本記事では投稿の紹介値、開発元の計測、アプリに追加した接続基盤を分けて説明します。筆者によるモデル実測はまだありません。\n\n 共有された比較投稿の数値\n以下は共有スクリーンショットの投稿本文にある数値です。元ポストのURL・生ログは未特定であり、独立に再現した値ではありません。\n\n\n\n投稿本文の比較\nローカルLaya\n...",
+    "url": "https://zenn.dev/kanta13jp1/articles/laya-mlx-on-device-system-one-benchmark",
+    "published_at": "2026-09-21T15:30:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Connect-Foce～会話と画面から、次の業務につなげるエージェント～ 🏷️",
+    "summary": "はじめに\n物や場所にタグ（QR・NFC）を貼り、かざすと、その物の担当・記録・これまでの経緯が開きます。作業の成果は、写真と声から「カード」にして、リンクで渡せます。写真の顔やナンバーは、送る前に端末で隠します。\nその中で、状況を見て処理を選ぶのが 物エージェント「Connect-Force」 です。設計は「AIが選び、コードが守り、人が確定する」。この記事では、次の3つを紹介します。\n\nAIの判断を、ユーザーの意図に合わせる設計（確認 → 同意 → 承認）\n会話（音声）と共有画面から、資料とメールの下書きまで組み立てる「統合分析」\n測ってから決めた、モデル・経路・しきい値\n\nリポ...",
+    "url": "https://zenn.dev/zeroryou/articles/a588274285ad82",
+    "published_at": "2026-09-21T15:27:37+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DifyからJev(System One)を呼び出す：HTTPノードでの接続と日本語での動作確認",
+    "summary": "はじめに\n2026年9月に発表されたTypeSafe AIの「Jev」は、チャット用のLLMではなく、状態(state)と型付きの質問を送ると、コードでそのまま使える構造化された回答が返るモデルです。Jevは\"System One\"モデルと呼ばれ、質問への回答は文章ではなく構造化された値として返ります。\nこの記事では、セルフホストのDifyからJevを呼び出す実装検証として、次の内容をまとめます。\n\ncurlでの接続確認\nDifyのHTTPリクエストノードによる連携ワークフローの構築\n日本語の口コミ文6件でのテストと、結果の読み方\n\n\n Jevの基本\n\n 3種類の質問\nJevには、次...",
+    "url": "https://zenn.dev/yaahmi/articles/dify_jev_test",
+    "published_at": "2026-09-21T15:26:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GitHub Issueを流すだけでPRになる「パイプラインskill」をClaude Codeで作った",
+    "summary": "この記事で分かること\n個人開発で複数リポジトリを掛け持ちしていると、「Issueを書いたはいいが着手するのを忘れる」「実装できてもPRを出した後のCodeRabbitの指摘対応やCI監視が地味に時間を食う」という悩みが出てきます。これを解消するために、Claude Codeの skill 機能で\n\nGitHubにIssueを1件開く\nそれを検知して実装エージェントへ振り分ける\nリポジトリを特定し、隔離された作業空間でコードを書いてPRを作る\nCIとCodeRabbit/Copilotのレビューコメントを追い、指摘対応→再レビューを繰り返し、条件が揃えば自動マージする\n\nという一連の...",
+    "url": "https://zenn.dev/yubel/articles/claude-code-issue-to-pr-pipeline",
+    "published_at": "2026-09-21T15:22:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI の判定基準を、人が後から却下した実データから引き直した — 「ok の理由」に書いた抽象語が抜け穴になっていた",
+    "summary": "こんにちは。小学生向けのニュースサイト、こどもニュースをつくっています。\nこのサイトでは、拾ってきたニュースの見出しと本文を AI に読ませて、「小学生向けの記事にしてよい話題か」を 1 件ずつ判定させています。通ったものだけが次の工程へ進み、最後に人が確認して公開します。...",
+    "url": "https://qiita.com/kodomo-news/items/a43216636932d99a771e",
+    "published_at": "2026-09-21T23:00:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIエージェントが「代わりに支払う」時代へ ― Agent Payments Protocol(AP2)の仕組みを整理する",
+    "summary": "はじめに\nAIエージェントが「〇〇を買っておいて」と頼まれて自律的に買い物をする未来を考えたとき、避けて通れないのが「決済」の課題です。人間がボタンをクリックする前提の従来の決済システムは、エージェントが代理で支払う状況を想定していません。この課題に対応するためにGoog...",
+    "url": "https://qiita.com/kuno_/items/e3b3724c7fe8368d92a2",
+    "published_at": "2026-09-21T22:43:11+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude CodeがAGENTS.mdを読み込まない理由と対処法",
+    "summary": "Claude CodeがAGENTS.mdを読み込むようになりました。ただし公開直後に多くのエンジニアが気づいたとおり、プロジェクトを開いた最初のセッションでは反映されません。この記事では、AGENTS.mdとは何か、なぜ初回セッションで読み込まれないのか、CLAUDE.m...",
+    "url": "https://qiita.com/syun136_616/items/f9e00b6c035c53f11b8b",
+    "published_at": "2026-09-21T22:32:41+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI Daily Digest 9.22：OpenAIがRSIの国際標準を提案、判断専用モデルJevが全量公開、 Microsoftの zero-water クラウド",
+    "summary": "AI安全の議論が今週、エッセイから文書の段階に移った。OpenAIはCEOが国連安保理に説明する2日前に自社の立場を公開し、ChatGPTの共同発明者の1人が設立したスタートアップは「文を生成しないモデル」という問いに製品で答え、Microsoftは水を運用コストではなく...",
+    "url": "https://qiita.com/lhjjjk4/items/327652fca89103785804",
+    "published_at": "2026-09-21T22:09:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "UN science panel says there is \"no assurance humans will keep control\" over AI agents",
+    "summary": "The UN's AI science panel warns in its first thematic report that control over AI agents isn't assured. Co-chair Yoshua Bengio says OpenAI's Hugging Face incident first combined a misaligned goal, the ability to pursue it, and an environment that allowed it. Leading systems may increasingly recogniz",
+    "url": "https://the-decoder.com/un-science-panel-says-there-is-no-assurance-humans-will-keep-control-over-ai-agents/",
+    "published_at": "2026-09-21T17:44:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "xAI launches Grok 4.7 at bargain prices, but benchmarks reveal a wide gap to Claude and GPT-6",
+    "summary": "xAI has released Grok 4.7, its most capable model yet. But on the Artificial Analysis Intelligence Index, it scores just 46 points, landing mid-pack and well behind Claude Fable 5.1 and GPT-6 at 53 each. The gap grows even wider in agentic coding. The upside is it's cheap. The article xAI launches G",
+    "url": "https://the-decoder.com/xai-launches-grok-4-7-at-bargain-prices-but-benchmarks-reveal-a-wide-gap-to-claude-and-gpt-6/",
+    "published_at": "2026-09-21T16:56:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ByteDance launches Dramagic, a full-pipeline AI platform for producing short dramas from script to screen",
+    "summary": "Bytedance launched Dramagic, an AI platform that handles the entire short drama production pipeline, from script to video preview. Demand for these videos is surging in China: In Q1 2026 alone, 128,000 short dramas were released there, 95 percent of them AI-generated. The article ByteDance launches ",
+    "url": "https://the-decoder.com/bytedance-launches-dramagic-a-full-pipeline-ai-platform-for-producing-short-dramas-from-script-to-screen/",
+    "published_at": "2026-09-21T16:01:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "SoftBank to borrow over $11 billion in risky bonds for OpenAI stake",
+    "summary": "SoftBank plans to borrow more than $11 billion from investors through risky bonds to fund another payment for its stake in OpenAI. The article SoftBank to borrow over $11 billion in risky bonds for OpenAI stake appeared first on The Decoder .",
+    "url": "https://the-decoder.com/softbank-to-borrow-over-11-billion-in-risky-bonds-for-openai-stake/",
+    "published_at": "2026-09-21T14:35:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bristol researchers say medicine already knows how to handle black boxes and AI could learn from it",
+    "summary": "Researchers at the University of Bristol want to make medical AI systems safer by borrowing from how drugs get approved. Their \"Learning Ensemble\" framework defines three areas to check, including system limits, fairness across patient groups, and clinical fit. The goal is to catch models that work ",
+    "url": "https://the-decoder.com/bristol-researchers-say-medicine-already-knows-how-to-handle-black-boxes-and-ai-could-learn-from-it/",
+    "published_at": "2026-09-21T14:06:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US and China agree on AI dialogue with security mechanism ahead of Trump-Xi summit",
+    "summary": "The US and China have agreed to an official AI dialogue. US Treasury Secretary Bessent also proposed a notification mechanism for AI incidents at the national security level. The announcement comes just before Thursday's summit between Trump and Xi in Washington, the first on US soil since 2017. The",
+    "url": "https://the-decoder.com/us-and-china-agree-on-ai-dialogue-with-security-mechanism-ahead-of-trump-xi-summit/",
+    "published_at": "2026-09-21T13:43:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Amazon blocks Meta's AI agent Muse from online shopping",
+    "summary": "Amazon has blocked Meta's new AI agent Muse from shopping on Amazon.com. The article Amazon blocks Meta's AI agent Muse from online shopping appeared first on The Decoder .",
+    "url": "https://the-decoder.com/amazon-blocks-metas-ai-agent-muse-from-online-shopping/",
+    "published_at": "2026-09-21T13:37:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Alibaba's open-weight Qwen-Image-2.1 claims to beat closed models in image generation with just 7 billion parameters",
+    "summary": "Alibaba's Qwen team has released Qwen-Image-2.1, an open-weight model that generates and edits images on powerful consumer GPUs, with support for transparency and up to ten reference images at once. Its research license bars commercial use, which requires a separate Qwen license. The article Alibaba",
+    "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+    "published_at": "2026-09-20T16:10:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tencent's Gander aims to keep talking while it works in the background",
+    "summary": "Tencent's Gander processes speech, images, and text while handling tasks in the background. A \"cerebellum\" keeps the conversation going, while a swappable \"brain\" searches files, writes code, or tackles other complex work. Users can interrupt or change the task mid-conversation. In benchmarks, Gande",
+    "url": "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background/",
+    "published_at": "2026-09-20T15:41:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Runway wants to turn AI video generation into a live stream you control in real time",
+    "summary": "Runway wants to stream AI video as users prompt it, rather than make them wait for finished clips. The approach builds on GWM-1, its world model that generates video frame by frame. Beyond creative tools, Runway sees uses in robotics and autonomous driving. The article Runway wants to turn AI video ",
+    "url": "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time/",
+    "published_at": "2026-09-20T11:56:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Trump’s World Stage Awaits",
+    "summary": "“Ahead of Donald Trump’s address to the United Nations this week, the president posted an image of himself peering over a globe that includes Greenland and the Arctic Circle but with his gaze seemingly centered on Europe. ‘His Hemisphere,’ the text over the image reads, as though he is staking a cla",
+    "url": "https://politicalwire.com/2026/09/21/trumps-world-stage-awaits/",
+    "published_at": "2026-09-21T11:47:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Samsung and LG vow to remove 'botnet' apps from their smart TV app stores that turned sets into an AI scraping machines — but the shocking claim that over 40% of webOS apps had botnet code raises the question of how things ever got this bad",
+    "summary": "Millions of smart TVs, including Roku and Fire TV as well and LG and Samsung, have been infected with malware that can make their TV join botnets.",
+    "url": "https://www.techradar.com/televisions/samsung-and-lg-vow-to-remove-botnet-apps-from-their-smart-tv-app-stores-that-turned-sets-into-an-ai-scraping-machines-but-the-shocking-claim-that-over-40-percent-of-webos-apps-had-botnet-code-raises-the-question-of-how-things-ever-got-this-bad",
+    "published_at": "2026-09-21T11:46:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OnePlus 16 design and color options officially revealed ahead of launch",
+    "summary": "OnePlus has officially pulled back the curtain on its upcoming standard-bearer in China, revealing the full physical design, storage tiers reaching up to 1TB, and three distinct color treatments, headlined by an innovative Tomorrow Starlight finish featuring interactive rear illumination that reacts",
+    "url": "https://me.mashable.com/tech/76315/oneplus-16-design-and-color-options-officially-revealed-ahead-of-launch",
+    "published_at": "2026-09-21T11:46:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google fined €400m by watchdog after use of location data found to breach protection rules",
+    "summary": "Google users could have been unaware that their location was being used to influence them with ads or to infer their interests, an inquiry found",
+    "url": "https://www.lbc.co.uk/article/google-fined-location-data-gdpr-5Hjdhjr_2/",
+    "published_at": "2026-09-21T11:45:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Vietnam faces mounting power crunch as AI, rail demand surges",
+    "summary": "HANOI, Sept. 21 (Xinhua) -- Vietnam faces growing risks of electricity shortages from 2027 as surging demand from artificial intelligence (AI), semiconductor manufacturing and electrified transport puts pressure on the power supply, the Vietnam News Agency reported Monday. The country could face an ",
+    "url": "http://www.thecambodianews.net/news/279320889/vietnam-faces-mounting-power-crunch-as-ai-rail-demand-surges",
+    "published_at": "2026-09-21T11:45:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Vietnam faces mounting power crunch as AI, rail demand surges",
+    "summary": "HANOI, Sept. 21 (Xinhua) -- Vietnam faces growing risks of electricity shortages from 2027 as surging demand from artificial intelligence (AI), semiconductor manufacturing and electrified transport puts pressure on the power supply, the Vietnam News Agency reported Monday. The country could face an ",
+    "url": "http://www.cambodiantimes.com/news/279320889/vietnam-faces-mounting-power-crunch-as-ai-rail-demand-surges",
+    "published_at": "2026-09-21T11:45:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Commentary: How to stop data centers from grabbing too much power",
+    "summary": "The rapid expansion of data centers has become one of the most tangible expressions of the artificial intelligence revolution. But debate about their environmental, economic and social impact threatens their future development",
+    "url": "https://www.thetimes-tribune.com/2026/09/21/commentary-how-to-stop-data-centers-from-grabbing-too-much-power-2/",
+    "published_at": "2026-09-21T11:45:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Commentary: How to stop data centers from grabbing too much power",
+    "summary": "The rapid expansion of data centers has become one of the most tangible expressions of the artificial intelligence revolution. But debate about their environmental, economic and social impact threatens their future development",
+    "url": "https://www.standardspeaker.com/2026/09/21/commentary-how-to-stop-data-centers-from-grabbing-too-much-power-2/",
+    "published_at": "2026-09-21T11:45:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "U.S. proposes exchanging AI safety alerts with China, Bessent says (NBC News)",
+    "summary": "NBC News : U.S. proposes exchanging AI safety alerts with China, Bessent says — AI is expected to be high on the agenda as President Donald Trump and Chinese leader Xi Jinping meet this week in Washington, where they will also discuss trade and other issues. — HONG KONG — The United States ...",
+    "url": "https://www.memeorandum.com/260921/p35",
+    "published_at": "2026-09-21T11:45:09+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cloud sovereignty: Very complex and difficult to achieve",
+    "summary": "<p>In March, Iranian drones damaged Amazon Web Services (AWS) datacentres in Bahrain and the UAE. According to <a href=\"https://www.reuters.com/world/middle-east/amazons-aws-is-unable-restore-access-bahrain-one-uae-cloud-data-zone-after-war-2026-09-15/\">Reuters</a>, AWS had still not restored access",
+    "url": "https://www.computerweekly.com/feature/Cloud-sovereignty-Very-complex-and-difficult-to-achieve",
+    "published_at": "2026-09-21T11:45:00+00:00",
+    "source": "newsdata"
+  }
+]
