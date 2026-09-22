@@ -1,0 +1,289 @@
+[
+  {
+    "title": "「電源を抜けばいい、は通用しない」——Anthropicを辞めた研究者の回のどれが伸びるか（#32 投稿前予測）",
+    "summary": "この記事は何か\n海外の Tech Talk を日本語の縦型ショートに切り出して TikTok に投稿しています。1本の元動画から9〜11本のクリップを作り、投稿する前に「どれが伸びるか」を予測して保存し、あとで実測と突き合わせています。\n今回の #32 は Jacob Coxon の回です。2026年9月8日に Anthropic を辞めたことを X で公表し、「OpenAI と Anthropic はどちらも責任ある行動を取っていない。自己改善型の超知能へ一直線に競争し、我々の命を賭けている」と両社を告発した研究者です。CBS News の 2026-09-11 公開のインタビュー...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr32-coxon-prediction",
+    "published_at": "2026-09-22T21:00:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "TypeSafe AI の API が type-safe じゃなかったので、KMP ライブラリを作った",
+    "summary": "テキストを生成しないAI「Jev」の登場\n2026年9月15日、TypeSafe AI というラボが「Jev」というモデルを公開しました。\n普通のLLMと違って、Jevはテキストを生成しません。\n判断の対象（state）と、型のついた質問を渡すと、答えが確率つきで返ってきます。\nstate:    「注文をキャンセルして今すぐ返金してほしい」\nquestion: この問い合わせを担当する部署は? (billing / technical / sales)\nanswer:   billing (確率 0.87, confidence 0.82)\n特徴は大きく3つで、 「高速・安価・そこ...",
+    "url": "https://zenn.dev/inoma/articles/ca1a18f016d98c",
+    "published_at": "2026-09-22T20:06:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jwenvをmy_web_appに組み込んで検証：候補8行のlm_headと支出14例をソフトウェアWebGPUで実測",
+    "summary": "はじめに\n\n2026-09-22改訂：Jwenvを自作アプリに組み込んで実際に動かし、確認できた内容だけに書き直しました。旧版にあった誤り（デモが使う jev.js とプロンプト、候補トークンの扱い、語彙行列のサイズ、lm_headの計算量の位置づけ）を訂正し、確認していない記述を削除しています。\n\nきしだ氏（@kis）が、Qwen3-0.6BをJevのように動作するようファインチューンしたモデル「Jwenv」と、そのモデルをブラウザ内で動かすデモを公開しました。\nhttps://x.com/kis/status/2101244724598448613\nhttps://x.com/k...",
+    "url": "https://zenn.dev/kanta13jp1/articles/jwenv-webgpu-browser-system-one-guide",
+    "published_at": "2026-09-22T19:33:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLM の応答を人間が一文字ずつ手打ちするタイピングゲームを作った",
+    "summary": "!\nこの記事も，紹介するアプリ本体も，ほぼ全て Claude Code に書かせています。\n\n\n はじめに\nAI が書いた文章を，人間が一文字ずつ手で打ち写す。\n字面だけ見ると何かの罰ゲームですが，タイピングの練習としては案外まともです。だって我々が普段 AI に書かせているコードって，自分では一文字も打っていないわけですから。たまには手を動かしましょう。\nというわけで作りました。\nhttps://mpyw.me/you-are-llm/\nhttps://github.com/mpyw/you-are-llm\n\nルールは単純です。コーディングセッションの アシスタント側の発言を，補完なし...",
+    "url": "https://zenn.dev/yumemi_inc/articles/you-are-llm-typing-trainer",
+    "published_at": "2026-09-22T18:34:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ルールを文書に足しても違反は減らなかった。コードに落とした8件だけ再発0だった",
+    "summary": "AIエージェントに守らせたいルールがある。まずAGENTS.mdに書く。守られない。もっと詳しく書く。まだ守られない。条文を増やす。\n48日間そうやって運用した結果、常駐指示ファイルは 90KB から 147KB になりました。\nそして違反は減りませんでした。\n数字を出します。すべて自分の環境1台の実測です（n=1）。\n\n 1. トークンの 94.4% は「同じテキストの読み直し」だった\nまず、指示ファイルを増やすとコストがどう動くか。48日間の集計です。\n\n\n\n項目\n実測値\n\n\n\n\n累計トークン\n62,250M\n\n\nうちキャッシュ読み出し\n58,751M（94.4%）\n\n\n純粋な生成出...",
+    "url": "https://zenn.dev/untactit/articles/1c73e33e12518f",
+    "published_at": "2026-09-22T18:29:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「4体のAIで月100Kドル」系の投稿を、実際にAIで副業を回している立場で検証した(第3回)",
+    "summary": "SNSで、次のような投稿が回ってきました。\n\n「Anthropicから、4体のAIエージェントが60分で月100Kドルを達成する事業の作り方を書いたファイルが漏洩」\n「リサーチ係 → 設計係 → 作る係×2 → チェック係 → 最初に戻る。追加費用は0ドル」\n\n私はいま、Claude Codeに副業を運営させている最中です(第1回・第2回参照)。同じ立場から、この投稿の使える部分と、鵜呑みにできない部分を分けてみます。\n\n 先に結論\n\n「3つの引き継ぎルール」という考え方は、そのまま使えます\n\n「100Kドル」「漏洩」「追加費用0ドル」の部分は、根拠が示されていません\n\n私の実績は、執筆...",
+    "url": "https://zenn.dev/ryu7865/articles/2026-09-23-ai-agent-side-business-03",
+    "published_at": "2026-09-22T17:40:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "話題のStagehand v4 + Jevを調べた。Playwrightの代替ではなく「壊れやすいWeb自動化」を任せるのが良さそう",
+    "summary": "最近話題になっていたStagehand v4とJevの組み合わせについて調べました。\n自分は普段、ブラウザ操作ツールとして以下を使い分けています。\n\nPlaywright Test（自社サービスのE2Eテスト）\nPlaywright MCP（Claude Code等からWebアプリを操作）\nClaude in Chrome（作業中の単発Web操作）\n\n最初Stagehandを見たときはPlaywrightの代替になるかと思いましたが、調べてみると少し違いました。\n結論としては、Playwrightを置き換えるのではなく「UI変更で壊れやすい反復的なWeb操作」をStagehandに任せ、...",
+    "url": "https://zenn.dev/takumi_shida/articles/2026-09-23-zenn-stagehand-v4-jev",
+    "published_at": "2026-09-22T15:55:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CLAUDE.mdに書く直前の、根拠1行の検査のすすめ",
+    "summary": "AIエージェントに指示ファイルを運用させていると、根拠の薄い主張がそのまま恒久的な記録に書き足されてしまうことがあります。書いた本人が読み返しても、どこが行き過ぎているのか見えてきません。\n答えは、同じ形のパターンを先に名指ししておくことでした。パターンは「手元の1つの観測を、それが届いていない範囲まで広げて書いてしまう」という過剰一般化です。対策は、書く直前に根拠を1行添える検査と、視点を分けた並列レビューの2つにしました。\n\n 何が起きたのか\nAI コーディングエージェントに常駐の指示ファイルを持たせて運用しています。Claude Code なら CLAUDE.md です。手元のそれ...",
+    "url": "https://zenn.dev/genkunjc/articles/overgeneralization-self-repair",
+    "published_at": "2026-09-22T15:30:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevで口笛を分類してMacを操作する「Whistle」を作りました",
+    "summary": "口笛でMacを操作する「Whistle」を作りました。口笛を登録すると、対応するアプリやショートカットを呼び出せます。\n口笛の分類には、TypeSafeの推論モデルJevを使っています。Macで音程とリズムを数値に変換し、登録サンプルと一緒にJevへ渡します。マイクから取得した音声そのものはAPIへ送信しません。\n\nhttps://github.com/kentaro/whistle\n\n 口笛と操作を登録する\n呼び出すアプリかショートカットを選び、口笛を3回吹いて登録します。複数のサンプルで、音程やタイミングのばらつきを捉えます。登録したサンプルは一覧から再生できます。\n\nアプリの起動・...",
+    "url": "https://zenn.dev/pepabo/articles/whistle-jev-mac",
+    "published_at": "2026-09-22T15:24:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code を終了するとき、1回だけ立ち止まらせる",
+    "summary": "毎日 Claude Code を使って開発していると、新しいセッションを立ち上げるたびに「前回どこまでやったか」を AI に説明し直す手間が発生します。また、前のセッションでせっかく決めた方針を、次のセッションの AI が知らずに覆してしまうこともあります。\n自分も、一度調べたはずの罠を別の日や別のリポジトリでまた踏んでしまうことがよくありました。セッションをまたぐたびに経緯を説明し直すのが面倒で、AI との作業で分かったことを自動で引き継がせたいと考えました。\nこの記事では、Claude Code のカスタムフックを使って、手動で説明し直さなくても前回の文脈が自動で引き継がれる仕組みを...",
+    "url": "https://zenn.dev/keisato848/articles/session-log-hooks",
+    "published_at": "2026-09-22T14:35:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "118GB を 1 枚で — 巨大 MoE を速くしたのは、買い足しでも新世代でもなく「並べ方」だった",
+    "summary": "つむぎンの3時間クッキング ／ 第3回\nQwen3.8-Flash-Next（118 GB）を Intel Arc Pro B70（32GB）×2 で動かした記録の続きです。\n第1回（動かすまで） → https://zenn.dev/tsumugi_xe/articles/flashnext-on-arc-b70\n第2回（外れ続けた記録） → https://zenn.dev/tsumugi_xe/articles/flashnext-b70-report2-should-not-have-to\n\n巨大 MoE を動かす話は、たいてい「何を買うか」で終わります。この記事は逆の報告です...",
+    "url": "https://zenn.dev/tsumugi_xe/articles/flashnext-b70-report3-118gb-on-one-card",
+    "published_at": "2026-09-22T20:06:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI 研究エージェントを自律化するには評価ループを閉じる必要がある",
+    "summary": "AI エージェントに研究を任せるとき、文献調査、実装、実験、分析までを自動化できることと、研究全体を自律的に進められることは同じではない。研究では、実験結果を得た後に、その結果をどう評価し、次の仮説や実験設計へどう反映するかという処理が続く。\nこの違いを整理する鍵は、評価結果を次の探索へ戻せるかである。既稿では、AI による研究自動化の境界を、実行可能な工程と評価可能な工程の違いから整理した[1]。ここではこの論点を、研究エージェントの設計問題として絞り込む。\n\n 実行ループと研究ループは評価対象が異なる\n一般的なエージェントの処理は、次のような反復で表せる。\n観測\n  ↓\n判断\n  ↓...",
+    "url": "https://zenn.dev/id774/articles/1f4ddc5d3eb7e6",
+    "published_at": "2026-09-22T15:11:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Obsidian×AIエージェントで「第二の脳」を作る──MCPの正体とプロンプト・スキルの境界線",
+    "summary": "はじめに\nObsidian に日々の読書メモ、技術検証、アイデア、思考のログを蓄積し、それを AI エージェント（Hermes Agent、OpenCode、Codex、Claude Code など）と連携させて 「第二の脳（Second Brain）」 を構築しようとする試みが盛んになっています。\nVault 内の膨大な Markdown ファイル群を AI が自律的に探索し、新しい知見と既存のメモを結びつけてくれる環境は、まさに個人研究所のような体験です。\nしかし、この環境構築を進める中で、多くの人が最初にぶつかるのが 「専門用語が多すぎて何が何だか分からない」 という混乱です。...",
+    "url": "https://zenn.dev/ogiri/articles/demystifying-mcp-for-obsidian-second-brain",
+    "published_at": "2026-09-22T15:02:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "7 体の AI に別々の秘密を持たせる：Cloudflare Durable Objects で作るマルチエージェント人狼",
+    "summary": "前回の記事（AI 人狼で LLM に決めさせることを 1 つずつ機械に移したら、残ったのは『候補から選ぶ』と『文章にする』だけだった）では、LLM のゲーム判断が弱かったので機械に移していった話を書きました。\nこの記事はその裏側です。あの AI 人狼は、7 体の AI エージェントを Cloudflare Workers + Durable Objects（以下 DO）の上で動かしています。\n人狼は「誰が何を知っていて、誰が何を知らないか」という秘密情報の境界が仕様として厳密に決まっているゲームです。7 体の AI にそれぞれ違う秘密情報を持たせながら、破綻させずに 1 つのゲームを進行...",
+    "url": "https://zenn.dev/kana001_bit/articles/ai-werewolf-durable-objects",
+    "published_at": "2026-09-22T14:59:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "FlashAttentionのIO-aware設計と実装上の確認点",
+    "summary": "FlashAttentionを導入するとき、確認すべきなのはAPI名ではなく、実際に選ばれたkernelとデータ移動です。scaled_dot_product_attentionを呼んでも、GPU、dtype、shape、maskが対応条件を満たさなければ別backendへfallbackします。\nこの記事ではFlashAttentionを、次の3点から実装者向けに整理します。\n\nN×Nのscoreと確率行列をHBMへmaterializeしないdata flow\nblockごとにexactなsoftmaxを続けるonline softmax\ntraining・prefill・decod...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-19-flashattention",
+    "published_at": "2026-09-22T14:57:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜAIのセルフレビューはすり抜けるのか。完了条件の1行で変える",
+    "summary": "はじめに\nClaude Code に自作のガード（危険なコマンドを実行される前に止める仕組み）を書かせ、その出来を同じ Claude の読み取り専用のサブエージェントに点検させています。その点検が長いあいだ役に立っていなかった話と、依頼文のどこを書き換えたら変わったのかを書きます。\n個人開発での運用で、チームでの実績はありません。点検役には編集ツールを持たせず、読むだけの役として呼んでいます。\n\n 採点による点検では、回を追うごとに満点へ近づいた\n点検の物差しは自分で作った 7 つの観点です。ツールの説明が揃っているか、危険な操作にガードがあるか、テストがあるか、といった項目を観点ご...",
+    "url": "https://zenn.dev/keisato848/articles/audit-completion-condition",
+    "published_at": "2026-09-22T14:34:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "pdlc-skills を実際のプロジェクトで回してみる：三つの機能を並行させてリリースまで",
+    "summary": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/09/18/pdlc-on-a-real-project.ja.html\n\n\n\n前七回は仕組みの話でした。今回は実際のプロジェクトに戻り、導入したあとに初めてぶつかる六つの問いに答えます。機能をどう分けるか、人と AI でどう分担するか、ループは実際どう回るのか、どれくらい時間がかかるのか、どれだけの量が出るのか、品質は何で支えるのか。対象は私が自分で使っているコンソール系のプロジェクトです。三つの機能を pdlc 付属のループエンジンに並行で渡し、88 ...",
+    "url": "https://zenn.dev/kanfupanda/articles/pdlc-on-a-real-project",
+    "published_at": "2026-09-22T14:32:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Opus 5.5 リリース、Opus 5 からの移行で400エラーになる4つの破壊的変更と対処コード",
+    "summary": "はじめに\n対象読者は、Claude API（Messages API）や Claude Code を業務で使っていて、Opus 5 から Claude Opus 5.5 への切り替えを検討している開発者です。\nAnthropic は 2026年9月22日に Claude ...",
+    "url": "https://qiita.com/kai_kou/items/5c80fa141ff45a82f71d",
+    "published_at": "2026-09-22T23:12:19+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「AIに読まれているか」は3つの層で別々に測る — 同じサイトで数字が23倍ちがった話",
+    "summary": "「AIに読まれているか」は3つの層で別々に測る\n自社サイトが生成AIに読まれているか、引用されているかを測ろうとして、半年ぶん回り道をしました。結論から書きます。\n「AIに読まれているか」を1つの数で答えようとすると、必ず間違えます。 別々の層が3つあり、それぞれ違う道具...",
+    "url": "https://qiita.com/BrainCommunity/items/c7cc8b2026d0b8fd69ba",
+    "published_at": "2026-09-22T22:52:20+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年9月23日",
+    "summary": "今日もネットの海から拾ってきた、個人的に気になった技術ニュースや記事を厳選してお届けします。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nプログラミング\n\nJavaScript\n\nNode.js 26.10.0がリリースされ、crypto.parse...",
+    "url": "https://qiita.com/ishisaka/items/03f3b923ba703af2e7ee",
+    "published_at": "2026-09-22T22:35:29+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【Spring AI 第5回】Spring AIで「指示」と「質問」を分ける ― System/Userロールを使い分けてみた",
+    "summary": "はじめに\n第4弾\n\nでは、プロンプトテンプレートを使って「口調（トーン）を指定できる」ようにしました。実装したテンプレートは、以下のように「LLLへの指示」と「ユーザーからの質問」が1つの文字列の中に混在した形になっていました。\nprivate static fina...",
+    "url": "https://qiita.com/kinopp/items/1500853031e57b1e447c",
+    "published_at": "2026-09-22T22:31:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle on performance",
+    "summary": "With GPT-6 Sol and Luna, OpenAI adds two cheaper models that deliver their predecessors' performance at half the token price and take aim at Anthropic's pricier offerings. Independent analyses find little gain in actual intelligence, though, and OpenAI likely didn't see Anthropic's simultaneous laun",
+    "url": "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance/",
+    "published_at": "2026-09-22T20:06:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Opus 5.5 matches Fable 5.1 performance at lower cost and promises less \"Claudish\" writing",
+    "summary": "Anthropic is launching Claude Opus 5.5, the first model in a new generation. The company says it matches Claude Fable 5.1 on most tasks while costing about 40 percent less to run than Opus 5. Anthropic's benchmarks also put it ahead of OpenAI's GPT-6 Astra on most tasks, despite being significantly ",
+    "url": "https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing/",
+    "published_at": "2026-09-22T17:11:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI calls for international standards on AI that could improve itself",
+    "summary": "OpenAI wants international standards for recursive self-improvement, where AI systems independently build the next generation of AI. Without safeguards, humans could lose control over this process. OpenAI says the US should take the lead on global measurement standards and oversight rules. The artic",
+    "url": "https://the-decoder.com/openai-calls-for-international-standards-on-ai-that-could-improve-itself/",
+    "published_at": "2026-09-22T15:29:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "A tiny software layer from lab-grown neurons promises faster, cheaper AI video",
+    "summary": "The Biological Computing Co. wants to team up with AWS to sell a text-to-video model that's supposed to run five times faster and 80 percent cheaper thanks to a software layer derived from real nerve cells. The tiny layer adds less than 0.1 percent to the base model, but the startup won't say which ",
+    "url": "https://the-decoder.com/a-tiny-software-layer-from-lab-grown-neurons-promises-faster-cheaper-ai-video/",
+    "published_at": "2026-09-22T13:58:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Xiaomi's affordable flagship AI leads the open models, and Anthropic says Claude helped get it there",
+    "summary": "With MiMo-V2.6-Pro, Xiaomi moves to the top of the openly available AI models and drastically undercuts the competition on price. What makes that possible is massive reinforcement learning that cost $2.62 million. But the success comes with a catch: Anthropic accuses the company of siphoning off tra",
+    "url": "https://the-decoder.com/xiaomis-affordable-flagship-ai-leads-the-open-models-and-anthropic-says-claude-helped-get-it-there/",
+    "published_at": "2026-09-22T11:42:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI says its internal model solved over 100 long-standing math problems after just a month of training",
+    "summary": "OpenAI says a new internal model solved more than 100 open math problems after just a month of training. Facing criticism from mathematicians, the company is backing an independent advisory group at the Institute for Advanced Study. But OpenAI has excluded its research pace from the group's advisory",
+    "url": "https://the-decoder.com/openai-says-its-internal-model-solved-over-100-long-standing-math-problems-after-just-a-month-of-training/",
+    "published_at": "2026-09-22T11:17:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic is setting up a biology lab where Claude guides robots through drug experiments",
+    "summary": "Anthropic is building its own biology lab to push AI-driven drug development beyond computer simulations. The article Anthropic is setting up a biology lab where Claude guides robots through drug experiments appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-is-setting-up-a-biology-lab-where-claude-guides-robots-through-drug-experiments/",
+    "published_at": "2026-09-22T09:27:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "UN science panel says there is \"no assurance humans will keep control\" over AI agents",
+    "summary": "The UN's AI science panel warns in its first thematic report that control over AI agents isn't assured. Co-chair Yoshua Bengio says OpenAI's Hugging Face incident first combined a misaligned goal, the ability to pursue it, and an environment that allowed it. Leading systems may increasingly recogniz",
+    "url": "https://the-decoder.com/un-science-panel-says-there-is-no-assurance-humans-will-keep-control-over-ai-agents/",
+    "published_at": "2026-09-21T17:44:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "xAI launches Grok 4.7 at bargain prices, but benchmarks reveal a wide gap to Claude and GPT-6",
+    "summary": "xAI has released Grok 4.7, its most capable model yet. But on the Artificial Analysis Intelligence Index, it scores just 46 points, landing mid-pack and well behind Claude Fable 5.1 and GPT-6 at 53 each. The gap grows even wider in agentic coding. The upside is it's cheap. The article xAI launches G",
+    "url": "https://the-decoder.com/xai-launches-grok-4-7-at-bargain-prices-but-benchmarks-reveal-a-wide-gap-to-claude-and-gpt-6/",
+    "published_at": "2026-09-21T16:56:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ByteDance launches Dramagic, a full-pipeline AI platform for producing short dramas from script to screen",
+    "summary": "Bytedance launched Dramagic, an AI platform that handles the entire short drama production pipeline, from script to video preview. Demand for these videos is surging in China: In Q1 2026 alone, 128,000 short dramas were released there, 95 percent of them AI-generated. The article ByteDance launches ",
+    "url": "https://the-decoder.com/bytedance-launches-dramagic-a-full-pipeline-ai-platform-for-producing-short-dramas-from-script-to-screen/",
+    "published_at": "2026-09-21T16:01:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Is Alliance getting a data center? It looks like it. Here's where",
+    "summary": "It looks like Alliance will get a new data center. A project was announced Sept. 21. Here's the location.",
+    "url": "https://www.cantonrep.com/story/news/local/alliance/2026/09/22/alliance-casting-data-center-ohio/91875635007/",
+    "published_at": "2026-09-22T11:25:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Blockchain Gaming Market Insights Highlight Segment Expansion And Market Leadership",
+    "summary": "The blockchain gaming sector is rapidly evolving, driven by mounting interest in digital asset ownership and decentralized gaming experiences. As blockchain technology becomes more integrated with gaming, the market is expected to witness remarkable growth, opening up new opportunities for",
+    "url": "https://www.openpr.com/news/4639326/blockchain-gaming-market-insights-highlight-segment-expansion",
+    "published_at": "2026-09-22T11:25:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "You Can Now Submit Your Apple Siri Settlement Claim — Here's How",
+    "summary": "The post You Can Now Submit Your Apple Siri Settlement Claim — Here's How appeared first on Android Headlines .",
+    "url": "https://www.androidheadlines.com/2026/09/you-can-now-submit-your-apple-siri-settlement-claim-heres-how.html",
+    "published_at": "2026-09-22T11:24:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "India-EU partnership opens new avenues for cooperation in AI, Quantum Technologies: Dr Jitendra Singh",
+    "summary": "New Delhi, Sep 22 (SocialNews.XYZ) India and the European Union (EU) are poised to expand cooperation across a wide range of strategic sectors, including artificial intelligence (AI), quantum technologies, semiconductors, biotechnology and advanced research, Union... The post India-EU partnership op",
+    "url": "https://www.socialnews.xyz/2026/09/22/india-eu-partnership-opens-new-avenues-for-cooperation-in-ai-quantum-technologies-dr-jitendra-singh/",
+    "published_at": "2026-09-22T11:24:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Bitcoin Technology Market Report Evaluates Growth Drivers, Challenges And Market Dynamics",
+    "summary": "The bitcoin technology market has witnessed significant growth recently, driven by increasing interest in cryptocurrencies and blockchain innovations. Looking ahead, this sector is expected to continue expanding rapidly, supported by technological advances and broader adoption across various industr",
+    "url": "https://www.openpr.com/news/4639325/bitcoin-technology-market-report-evaluates-growth-drivers",
+    "published_at": "2026-09-22T11:24:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sofokus Releases a Free AI Guide and Maturity Model for Business Leaders",
+    "summary": "The Sofokus AI Maturity Model rates maturity on documented guidelines, purchases, named roles and reported metrics. Free to read, no registration. Finnish software company Sofokus published its AI guide for business leaders on 22 September 2026, together with the Sofokus AI Maturity Model. Both are ",
+    "url": "https://aithority.com/machine-learning/sofokus-releases-a-free-ai-guide-and-maturity-model-for-business-leaders/",
+    "published_at": "2026-09-22T11:23:39+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Technology cannot replace teacher, but it will change role of teacher: J&K L-G",
+    "summary": "Jammu, Sept 22 (IANS) Jammu and Kashmir Lt Governor Manoj Sinha said on Tuesday that technology cannot replace a teacher, but it will definitely change the role of the teacher. L-G Sinha on Tuesday inaugurated a series of new facilities at the University of Jammu. The inauguration included a modern ",
+    "url": "https://www.thehawk.in/news/india/technology-cannot-replace-teacher-but-it-will-change-role-of-teacher-jk-l-g",
+    "published_at": "2026-09-22T11:23:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Starship flight 14: Why SpaceX's first-ever orbital test matters to NASA's Artemis",
+    "summary": "Starship flight 14: Why SpaceX’s first-ever orbital test matters to NASA’s Artemis SpaceX is preparing for a defining moment with the first-ever orbital launch using Starship flight 14. The critical mission is also significant for NASA Artemis mission that could determine whether...",
+    "url": "https://www.thenews.com.pk/latest/1417179-starship-flight-14-why-spacexs-first-ever-orbital-test-matters-to-nasas-artemis",
+    "published_at": "2026-09-22T11:23:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Instant Access to Infinite Storage with Zero Bytes Stored on Your Local Disk",
+    "summary": "In the grand scheme of things, I don’t pay much attention to business announcements about funding, mergers, acquisitions, promotions, partnerships, or other corporate comings and goings. But there’s always “the exception that proves the rule,” as they say. As I noted in a recent column (see Well, Th",
+    "url": "https://www.eejournal.com/article/instant-access-to-infinite-storage-with-zero-bytes-stored-on-your-local-disk/",
+    "published_at": "2026-09-22T11:22:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Mac Studio M5 Max vs M5 Ultra: Is the $3,000 Upgrade Worth It?",
+    "summary": "The M5 Max Mac Studio starts at $2,499, while M5 Ultra costs $5,499. Here's what the extra $3,000 adds and which workloads can use it. The post Mac Studio M5 Max vs M5 Ultra: Is the $3,000 Upgrade Worth It? appeared first on TechRepublic .",
+    "url": "https://www.techrepublic.com/article/news-mac-studio-m5-max-vs-m5-ultra/",
+    "published_at": "2026-09-22T11:22:32+00:00",
+    "source": "newsdata"
+  }
+]
