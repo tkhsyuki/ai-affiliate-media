@@ -1,0 +1,289 @@
+[
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n本日のニュースでは、LLM単体の活用から「自律型AIエージェントの実装」およびそれを支える開発インフラの最適化へとトレンドが大きくシフトしていることが示されています。OpenAIによるPython開発ツールメーカー「Astral」の買収は、Codexやエージェントエコシステムの強化に向けた象徴的な動きです。また、AWSによるステートレスなMCP（Model Context Protocol）サーバー構築指針や、Vercel・Cloudflare・E2B等を巻き込んだAgent Sandbox基盤の比較、さらにはAIエージェントとコードツールのセキュリティガバナンス強化まで、実効性と安...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-02-tech-daily",
+    "published_at": "2026-09-23T22:32:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「2か所」は、数えたら8か所だった",
+    "summary": "3番目に多かった型\n前の記事で、半年分の失敗223件を7つの型に分けた、と書いた。\nそのあとも記録は増えて、298件になった。型は12に増えた。\n1位は変わらず「資料と実物の食い違い」で55件。2位が「確認せずに決めつける」で46件。\n3番目に多かったのが「数えずに進む」だった。33件。298件の11%。\nこの型は、最初の分類には無かった。引き継ぎプロンプトの記事で書いた4つの型にも入っていない。\n独立させた理由は、既存の型では説明がつかなかったからだ。\n確かめていないのではない。確かめている。ただ、数えていない。\nたとえば、自分で「7か所」と洗い出しておきながら、1か所を落とした記...",
+    "url": "https://zenn.dev/hanamilo/articles/kazoezu-ni-susumu",
+    "published_at": "2026-09-23T22:30:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの会話ログは既定30日で消える：cleanupPeriodDaysの確認と集計の組み方",
+    "summary": "Claude Code に自分の利用状況を集計させています。どの機能を何回使ったか、どんな失敗が何件あったか。元データはパソコンに残っている会話ログ（.jsonl）です。\n先日、同じ条件で数え直したはずの件数が、数日前より減っていました。集計スクリプトのバグを疑って直させましたが、数字は戻りません。原因はスクリプトではなく、Claude Code が古い会話ログを既定で30日たつと自動で消していることでした。\nこの記事では、次の4つを順にまとめます。\n\n会話ログがどこに残っているか\n自分の環境でどこから消えているかを確かめる方法\n保持期間を延ばす設定（cleanupPeriodDays）...",
+    "url": "https://zenn.dev/kujira_ai/articles/a0d57ca2de4a63",
+    "published_at": "2026-09-23T22:14:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の auto モードで止められた作業と、止められたときの決めごと",
+    "summary": "Claude Code を auto モードで使っています。1 つずつ許可を求められずに作業が進むので、業務システムの移行や記事の執筆など、長い作業を任せるときに便利です。\nauto モードでは、実行しようとした操作を分類器が判定し、危ないと見なしたものは 実行前に止めます。使っていると、ときどき止められます。止められた場面を 2 つ書き、そのときにどうすると決めたかをまとめます。\n\n 止められた例 1: 本番サーバーの設定を SSH で書き換える\nある業務システムで使っている中継用のサーバー（プロキシ）の設定を変える必要がありました。手順としては、SSH でサーバーに入り、設定を書き換...",
+    "url": "https://zenn.dev/y3chi5z/articles/claude-code-auto-mode-classifier-blocks",
+    "published_at": "2026-09-23T22:12:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "HarnessRouter の「ハーネス切り替え」は何がうれしいのか ─ Hermes と比べて分かった、記憶を外に出す設計",
+    "summary": "HarnessRouter は、Codex や Claude Code、Hermes といったエージェントハーネスを、自社サービスの裏側で 1 本の API から動かすための中継基盤です。この記事では、普段 Hermes Agent を VPS に常駐させて利用している私が、公式情報を読み解く中で感じた疑問を順に紐解きながら、何がうれしいのか、どのような場面で効果を発揮するのかを整理します。\n!\n\n対象読者は、Claude Code / Codex / Hermes Agent などを実務で使っていて、「ハーネスを切り替えられる」というメリットがいまひとつ腑に落ちていない方です。\n内容...",
+    "url": "https://zenn.dev/takna/articles/harnessrouter-harness-switching",
+    "published_at": "2026-09-23T21:48:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIソフトウェア工場の設計——要求から本番運用までをつなぐアーキテクチャ",
+    "summary": "人が望む成果を渡したあと、何を根拠に変更を進め、どこで止め、どう結果を確かめるのか。\n一件のAPI変更を軸に、要求、情報基盤、PCでの実装、PR、ビルド・テスト、AIレビュー、進行判断、デプロイ、運用をつなぐ設計を解説します。\n合意した条件と対象版を各工程へ引き継ぎ、失敗・欠測・古い結果を扱う方法を、2枚の構成図と全文収録のNode.js教材で確かめます。",
+    "url": "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
+    "published_at": "2026-09-23T21:00:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "内蔵GPUでQwen3-8Bを動かしたら 6 t/s だった",
+    "summary": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/local-llm-on-igpu/\n\n「ローカル LLM を動かすには、それなりの GPU が必要」とよく言われる。だが、手元のノート PC の内蔵 GPUでどこまで動くのか、実際に測ってみた。\n結論から書く。\n\nモデル: Qwen3-8B Q4_K_M（4.68 GiB）\n環境: Radeon 860M（RDNA3.5、内蔵）/ Vulkan（RADV）/ 共有メモリ（GTT 24GB）\nプロンプト処理: 156 t/s\n生成: 6.04 t/s\n\n生成は毎秒6トークン。速くはない。だが「動く」で...",
+    "url": "https://zenn.dev/setsu_shiomi/articles/local-llm-on-igpu",
+    "published_at": "2026-09-23T19:58:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "[解説] Jev：テキストを生成しないAIは何が新しいのか",
+    "summary": "2026年9月15日、TypeSafe AIというサンフランシスコの研究所がステルスを解除し、Jev（ジェヴ）というモデルを公開しました。創業者のDiogo Almeida氏はInstructGPT論文の共著者で、同社はシードラウンドで4,000万ドルを調達しています。\nJevの特徴は一言で言えば「テキストを生成しない」ことです。返事も書かなければ、コードも書かず、要約もしません。代わりに、開発者があらかじめ定義した型付きの判断だけを、公称70〜500msで返します。\nこの記事では、「そもそもSystem Oneモデルとは何なのか」「従来のLLMと何が違うのか」「どこで使えてどこで使えな...",
+    "url": "https://zenn.dev/serada/articles/20260924-jev-system-one-intro",
+    "published_at": "2026-09-23T18:25:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeを本当に並列で走らせる - git worktree と、直列にすべき工程",
+    "summary": "Claude Codeで複数の作業を同時に走らせたら、こうなった人向けです。\n\n片方が npm install している最中に、もう片方が package.json を読んで壊れた\n\ndist/ のビルド成果物が混ざり、どちらの出力か分からなくなった\n片方の git checkout が、もう片方の未コミットの変更を巻き込んだ\n\n論理的な担当範囲を分けても、作業ディレクトリが同じなら物理的に衝突します。\ngit worktree で分離するのが答えなのですが、片付けの自動化でハマったので、\nその中身を書きます。\n\n 1. 呼び出しを分けた時点で並列ではない\n最初に踏むのがこれです。\n（並...",
+    "url": "https://zenn.dev/quintetkit/articles/claude-code-worktree-isolation",
+    "published_at": "2026-09-23T17:28:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "JevとSolar Mini4に同じ分類タスクを投げてみた",
+    "summary": "このブログは、エージェントが資料の突き合わせと実験を行って下書きを作り、筆者が確認したうえで掲載しています。\n!\n\n同じメール分類タスクを TypeSafe Jev と Upstage の Solar Mini4 に投げてみました\n正解率は Solar Mini4 が1〜5p高く、速度は Jev が9〜10倍速いという結果です\n勝ち負けよりも、Jev をどこに使えるかを探るための記録です\n\n\n前回の記事で、文を作らずに判断と確率だけを返すモデルについて整理しました。\nhttps://zenn.dev/nhandsome/articles/semantic-if-without-gener...",
+    "url": "https://zenn.dev/nhandsome/articles/jev-vs-lightweight-llm-classification",
+    "published_at": "2026-09-23T17:09:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "niri でローカルLLMをキー一発で呼び出す",
+    "summary": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/niri-local-llm/\n\n文章を書いていて「これ要約したい」「英語にしたい」と思うたびに、ブラウザのタブを開いて AI にコピペするのは面倒だ。しかもその内容は、どこかのサーバに送られている。\n手元の LLM を使って、選択したテキストをその場で処理する。 これを niri のキー一発でやる手順をまとめる。\n\n ゴール\n\nテキストをハイライトして Mod+Shift+G → 要約がクリップボードと通知に入る\n\nMod+Shift+A → アクションを選ぶ TUI が開く\n\nMod+Shift+...",
+    "url": "https://zenn.dev/setsu_shiomi/articles/niri-local-llm",
+    "published_at": "2026-09-23T19:58:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GQA/MQAのhead mappingとKV Cache削減を実装視点で整理する",
+    "summary": "GQA（Grouped-Query Attention）とMQA（Multi-Query Attention）が減らすのは、Query headではなくKey/Value headです。実装ではnum_attention_headsとnum_key_value_headsを別々に扱い、Query headから参照先のKV headへのmappingを作ります。\nこの記事では、GQA/MQAを次の3点に絞って整理します。\n\n\nH_qとH_{kv}からtensor shapeとhead mappingを読む\nKV Cache payloadの削減率をbyte単位で計算する\nconfig、ke...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-20-gqa-mqa",
+    "published_at": "2026-09-23T19:05:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コードのないリポジトリに「テストを先に書く」——ECC導入前後の記録を追う",
+    "summary": "「テストを先に書く」。\n文書しか扱わないリポジトリを開いた Claude Code にも、このルールが渡されていた。テストするコードはない。どうして、ここにあるのだろう。\n出どころは分かっている。自分で入れた ECC（Everything Claude Code）v2.2.1 だ。プラグインをユーザースコープで導入し、rules/common の10ファイルも ~/.claude/rules/common/ に配置していた。ユーザーレベルのルールなので、どのプロジェクトを開いても読み込まれる。\n場違いな指示は、この一つだけだろうか。10ファイルは毎回どれだけの場所を取っているのか。Cla...",
+    "url": "https://zenn.dev/meruno/articles/a1c60a5b1abfca",
+    "published_at": "2026-09-23T17:02:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claudeで作っていても設計はGeminiに聞く、5つの渡し方のすすめ",
+    "summary": "大きな設計を1人で考えていると、自分に出せる発想の範囲でしか案が広がらないと感じることがあります。もっと良い案を、自分の外から引き出したいという欲求です。普段の実装は Claude でやっていますが、設計の骨格だけは Gemini に出させています。\n答えは、最初の骨格を自分からではなく、相手に出させることでした。今回は1往復目の出力がいちばん使え、記事の骨格と、自分には無かった切り分けが1つ手に入りました。往復を重ねた後半は使えなかったので、その見分け方も含めて、渡し方を5つにまとめます。\n\n 設計の骨格を、自分の案から始めない\n大きい設計に着手するとき、自分の案から始めない運用をして...",
+    "url": "https://zenn.dev/genkunjc/articles/gemini-design-brainstorm-five-rules",
+    "published_at": "2026-09-23T16:47:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜ、LLM AIは村上春樹の新作小説を書くことができないのか？",
+    "summary": "はじめに\n現在のLLMは、文章生成能力だけを見ればすでにかなり高い水準に達しています。清少納言風、吉田兼好風、夏目漱石風といったパスティーシュもできますし、ある作家の作品を大量に与えれば、語彙、文の長さ、会話の運び、比喩、題材、語り手の性格といった特徴を抽出し、その作家に似た文章を生成できます。そのため、「村上春樹風の小説を書けるのだから、村上春樹の新作も書けるのではないか」と考えたくなります。しかし、この二つは同じ仕事ではありません。LLMが得意なのは、すでに存在する村上春樹という領域を分析し、その内部や近傍に新しい文章を生成することです。一方、村上春樹本人が新作を書くという行為に...",
+    "url": "https://zenn.dev/pdfractal/articles/1d59f9c3dedfb7",
+    "published_at": "2026-09-23T16:42:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DiffusionGemma-JevをCloud Runで動かし、日本語の問い合わせ50件を分類してみた",
+    "summary": "DiffusionGemma-JevをCloud Runのシンガポールリージョンで動かしました。\n日本語の問い合わせ50件を分類してみました。\n1回のリクエストで担当部署、緊急度、人手対応の要否の3項目を判定します。\n同一リージョンのVMから呼ぶと、応答時間の中央値は71.2msでした。\n正解ラベルとの一致率は、担当部署88%、緊急度84%、人手対応80%です。\nただし、PCの膨張を訴える問い合わせを99.4%の確率で「急ぎではない」と判定したケースもありました。\n応答の速さと、判断を自動化できるかどうかは分けて考える必要があります。\n※ 2026年9月23日の検証です。\n日本からの応答...",
+    "url": "https://zenn.dev/hogehogetaro/articles/diffusiongemma-jev-cloud-run-inquiry",
+    "published_at": "2026-09-23T15:13:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMはなぜ答えを生成しなければならないのか、TypeSafe Jevが投げる問い",
+    "summary": "このブログはエージェントが資料の突き合わせと実験を経て下書きを作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\nプログラムが必要なのは if 一つなのに、私たちはLLMに文章を作らせ、その文章をまた if に戻しています\n\nJev は文章を一切作らず、判断と確率だけを返すモデルです。その設計を整理しました\n同じ質問をJevとオープンソース実装（SemIf）の両方に投げた結果も載せています\n\n\nサポートチケットをどのチームに送るか決めるコードを考えてみます。プログラムが知りたいのは、結局この一行です。\nif department == \"billing\":\nところがLLMにや...",
+    "url": "https://zenn.dev/nhandsome/articles/semantic-if-without-generation",
+    "published_at": "2026-09-23T15:03:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "テレメトリOFFで設定まで消えた原因と安全策を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-24）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\n料金が下がっても、互換性が壊れたら怖い\nこの記事を読んでま...",
+    "url": "https://qiita.com/homhom44/items/0b4f96493f3f94498214",
+    "published_at": "2026-09-23T23:04:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Codeの会話ログは既定30日で消える：cleanupPeriodDaysの確認と集計の組み方",
+    "summary": "この記事でわかること\n\nClaude Code の会話ログ（.jsonl）の保存場所\n古いログが消えている範囲を日付別に確認するコマンド\n保持日数を決める設定 cleanupPeriodDays の既定値と変え方\n保持日数を変えない場合に、集計がぶれないようにする方法\n\n...",
+    "url": "https://qiita.com/Kujira_AI/items/81219004b25d53098eb2",
+    "published_at": "2026-09-23T22:49:30+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ClaudeがCRISPR様酵素系を発見、アリババは20GW構想、Windowsがエージェント化へ",
+    "summary": "今日は7本。全体を貫くテーマは、エージェントに現実の結果を伴う大きな仕事を任せるようになり、その周りの土台作りが一気に進んだ、という流れです。Anthropicは19億のタンパク質クラスタのデータベースにエージェントの群れを放って新しい酵素系を取り出し、Microsoft...",
+    "url": "https://qiita.com/lhjjjk4/items/338770ca701ad6b66b82",
+    "published_at": "2026-09-23T22:05:51+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Gemini 3.8 Flash TTSがGA、音声デザイン・複製・150種音声ライブラリも追加",
+    "summary": "はじめに\n2026年9月22日、Gemini API に次世代の音声合成（TTS）モデル**「Gemini 3.8 Flash TTS」と「Gemini 3.8 Flash-Lite TTS」**が一般提供（GA）されました。あわせて、音声を検索・管理する新エンドポイント...",
+    "url": "https://qiita.com/picnic/items/61e9e9280f6f688044b2",
+    "published_at": "2026-09-23T21:25:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ChatGPT Voice gets closer to \"Her\" with email, calendar, and Slack access",
+    "summary": "ChatGPT Voice now runs on OpenAI's new GPT-6 Astra, Sol, and Luna models and can tap into plugins like email, calendar, and Slack. Users can manage appointments, send emails, or build websites just by talking. The update moves OpenAI closer to the everyday AI assistant Sam Altman has long compared t",
+    "url": "https://the-decoder.com/chatgpt-voice-gets-closer-to-her-with-email-calendar-and-slack-access/",
+    "published_at": "2026-09-23T17:57:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's new Flash TTS models let you design AI voices from scratch using text descriptions",
+    "summary": "Google is introducing two new text-to-speech models, Gemini 3.8 Flash TTS and Flash-Lite TTS, which support more than 100 languages. Flash TTS can create new voices from text descriptions, and both models let users add stage directions to individual lines and generate two-voice dialogue from a singl",
+    "url": "https://the-decoder.com/googles-new-flash-tts-models-let-you-design-ai-voices-from-scratch-using-text-descriptions/",
+    "published_at": "2026-09-23T17:39:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "YouTube adds AI tools to Creator Studio with script coaching, smart thumbnails, and Gemini editing",
+    "summary": "YouTube is adding AI tools to its creator studio. A storytelling assistant analyzes scripts and rough cuts, Gemini becomes a chat-based editing assistant for Shorts, and a new live translation feature turns English streams into Spanish. The article YouTube adds AI tools to Creator Studio with script",
+    "url": "https://the-decoder.com/youtube-adds-ai-tools-to-creator-studio-with-script-coaching-smart-thumbnails-and-gemini-editing/",
+    "published_at": "2026-09-23T16:37:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic engineer explains why Claude's writing got worse although the model got smarter",
+    "summary": "Anthropic employee Jackson Kernion explains why newer Claude models write so oddly. Optimizing for math, code, and technical explanations aimed at other AI models has created a style that sounds like \"overly-dense info dumps\" to humans. Opus 5.5 tries to fix this, but Opus 4.6 remains unmatched as a",
+    "url": "https://the-decoder.com/anthropic-engineer-explains-why-claudes-writing-got-worse-although-the-model-got-smarter/",
+    "published_at": "2026-09-23T15:14:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia-backed Nscale keeps its biggest customer, Bytedance, out of its IPO filing",
+    "summary": "Nscale, the Nvidia-backed AI cloud provider, leaves its most important customer, Bytedance, out of the main prospectus for its planned US IPO. The article Nvidia-backed Nscale keeps its biggest customer, Bytedance, out of its IPO filing appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidia-backed-nscale-keeps-its-biggest-customer-bytedance-out-of-its-ipo-filing/",
+    "published_at": "2026-09-23T14:44:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's AI agent Muse draws 500,000 users in a week along with claims it copied OpenClaw",
+    "summary": "Meta's AI agent Muse picked up more than 500,000 users in its first week and hit number one in Apple's App Store. But Meta admits the product is \"heavily inspired\" by the open-source project OpenClaw, and some of the file names and contents are nearly identical. OpenAI is already discussing a respon",
+    "url": "https://the-decoder.com/metas-ai-agent-muse-draws-500000-users-in-a-week-along-with-claims-it-copied-openclaw/",
+    "published_at": "2026-09-23T14:42:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Inside Basecamp Research, the AI startup turning evolution into training data",
+    "summary": "Basecamp Research has raised $140 million from investors including Nvidia and Anthropic's Anthology Fund. The London company trains AI models on genetic material from rainforests, oceans, and hot springs to design antibiotics and tools for cell therapies. In an interview with THE DECODER, CTO Philip",
+    "url": "https://the-decoder.com/inside-basecamp-research-the-ai-startup-turning-evolution-into-training-data/",
+    "published_at": "2026-09-23T13:52:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Alibaba launches Qwen Audio 3.1 with new models and slashes AI audio prices by up to 95 percent",
+    "summary": "Alibaba's AI team Qwen has released Qwen-Audio-3.1, a lineup of five models for speech recognition (ASR), text-to-speech (TTS), and real-time interaction. The ASR model improves multilingual and dialect recognition and automatically cleans up filler words and repetitions. ASR-Next adds multi-speaker",
+    "url": "https://the-decoder.com/alibaba-launches-qwen-audio-3-1-with-five-new-models-and-slashes-ai-audio-prices-by-up-to-95-percent/",
+    "published_at": "2026-09-23T12:31:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI hires Patreon co-founder Sam Yam to lead a new Creator Product division",
+    "summary": "OpenAI has hired Patreon co-founder Sam Yam to lead a new \"Creator Product\" division. After more than 13 years at the creator platform, he's bringing two Patreon executives with him. The team will build new tools for creators, and a first look could come at OpenAI DevDay next week. The article OpenA",
+    "url": "https://the-decoder.com/openai-hires-patreon-co-founder-sam-yam-to-lead-a-new-creator-product-division/",
+    "published_at": "2026-09-23T10:04:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle on performance",
+    "summary": "With GPT-6 Sol and Luna, OpenAI adds two cheaper models that deliver their predecessors' performance at half the token price and take aim at Anthropic's pricier offerings. Independent analyses find little gain in actual intelligence, though, and OpenAI likely didn't see Anthropic's simultaneous laun",
+    "url": "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance/",
+    "published_at": "2026-09-22T20:06:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Catena-X network expands beyond 1,000 automotive companies",
+    "summary": "Catena-X now connects more than 1,000 automotive industry companies globally. Live deployments report faster fault detection, supplier onboarding, and lower energy consumption as the European data ecosystem moves beyond standards development. The post Catena-X network expands beyond 1,000 automotive",
+    "url": "https://industrialnews.co.uk/catena-x-network-expands-beyond-1000-automotive-companies/",
+    "published_at": "2026-09-23T11:24:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "200MP camera, 6,000mAh battery, 165Hz AMOLED: Motorola Signature 27 unveiled",
+    "summary": "Motorola Signature 27 has been unveiled with Snapdragon 8 Elite Extreme Gen 6, a 200MP periscope camera, 6,000mAh battery and 165Hz AMOLED display.",
+    "url": "https://english.mathrubhumi.com/technology/motorola-signature-27-200mp-snapdragon-8-elite-extreme-gen-6-fgoe5jco",
+    "published_at": "2026-09-23T11:23:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Five ways AI could kill all humans as fears grow for future of mankind",
+    "summary": "Doomsayers have come forward in recent weeks to warn of the potentially cataclysmic dangers posed by a superintelligent AI hell-bent on ensuring its own supremacy",
+    "url": "https://www.mirror.co.uk/news/technology-science/five-ways-ai-could-kill-37692744",
+    "published_at": "2026-09-23T11:23:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Automotive Artificial Intelligence Market: Why Self-Driving Demand Alone Isn’t the Whole Story",
+    "summary": "The global automotive artificial intelligence market is entering a phase where AI stops being an “add-on” and starts becoming the operating layer of the modern [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/09/23/1773367",
+    "published_at": "2026-09-23T11:23:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI-Powered Phishing Platform EvilTokens Disrupted by Microsoft",
+    "summary": "The cybercrime platform leveraged AI at every step of the attack chain, including writing social engineering messages and deciding targets. The post AI-Powered Phishing Platform EvilTokens Disrupted by Microsoft appeared first on SecurityWeek .",
+    "url": "https://www.securityweek.com/ai-powered-phishing-platform-eviltokens-disrupted-by-microsoft/",
+    "published_at": "2026-09-23T11:23:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Xiaomi 18 Pro Series China release - Snapdragon 8 Elite Gen 6 series, 200MP Leica dual cameras and more from ~RM3,652",
+    "summary": "Xiaomi has officially unveiled its flagship Xiaomi 18 Pro Series in China which includes the Xiaomi 18 Pro Max from RMB 6999 (~RM4,361) and the Xiaomi 18 Pro from RMB 5999 (~RM3,652). Built around an evolved Back Display form factor and next-gen hardware, the series features the newly announced Snap",
+    "url": "https://technave.com/gadget/Xiaomi-18-Pro-Series-China-release-Snapdragon-8-Elite-Gen-6-series-200MP-Leica-dual-cameras-and-more-from-RM3-652-47520.html",
+    "published_at": "2026-09-23T11:23:07+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cambridge Tech Week attendance rises 15% as deep tech takes centre stage",
+    "summary": "More than 1,700 delegates from 52 countries attended Cambridge Tech Week this year, a 15% increase on 2025, as the event placed a growing emphasis on turning deep-tech research into commercial businesses. The five-day event, held from 14 to 18 September, brought together founders, investors, researc",
+    "url": "https://www.uktech.news/news/cambridge-tech-week-attendance-rises-15-as-deep-tech-takes-centre-stage-20260923",
+    "published_at": "2026-09-23T11:22:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why Security Teams Name AI Agents Kramer and Elaine",
+    "summary": "A security firm discovered that naming AI agents after Seinfeld characters like Kramer and Elaine dramatically improves analyst trust and adoption in SOCs. The cultural shorthand creates instant mental models, speeds validation, and reduces friction in high-stakes environments. Other teams follow si",
+    "url": "https://www.webpronews.com/why-security-teams-name-ai-agents-kramer-and-elaine/",
+    "published_at": "2026-09-23T11:22:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI is opening its AI model training to outside safety evaluators earlier",
+    "summary": "The company is in talks with METR and Redwood Research and laid out four priority areas for deeper independent assessment",
+    "url": "https://qz.com/openai-third-party-safety-evaluations-training-092326",
+    "published_at": "2026-09-23T11:21:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump says his ballroom will house a drone port. The Secret Service already has one next door",
+    "summary": "Four new drone stations have been installed on a neighboring federal building.",
+    "url": "https://www.themorningsun.com/2026/09/23/trump-ballroom-drone-port/",
+    "published_at": "2026-09-23T11:21:52+00:00",
+    "source": "newsdata"
+  }
+]
