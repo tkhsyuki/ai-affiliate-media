@@ -1,0 +1,296 @@
+[
+  {
+    "title": "家づくりアプリのコラム45本をAIに点検させたら、点検役のAIも間違えていた",
+    "summary": "「家づくり管理」という iOS アプリを出しています。家を建てると決めてから引き渡しまでの記録を、スマホ 1 台にまとめるアプリです。\n\nハウスメーカー 32 社のカタログから候補を選んで、プランを並べて比べる（坪単価・UA 値・C 値・耐震等級など）\n打合せの記録（写真・音声メモつき）、やることリスト、ローンの試算\n国や自治体の補助金・税制の情報と、家づくりのコラム 45 本\n\nこのうち最後の「読み物」が、今回の話です。\nコラムは、失敗談 15 本・成功体験 15 本・知識 15 本の計 45 本です。初稿は AI に書かせました。お金・税金・法律・建物の性能が絡む話ばかりで、間違って...",
+    "url": "https://zenn.dev/hinaridake/articles/ai-content-fact-check-housing-app",
+    "published_at": "2026-09-24T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ジュニアエンジニアの AI 協働ロードマップ (5/5) — 全体図編：実装は AI、ルールは自分が決める 4 つのステップ",
+    "summary": "!\nTL;DR: AI にコードを書かせる今、ジュニアエンジニアは何をどの順で積めばよいのか。4 つのステップのロードマップと、ステップごとの振り返りチェックリスト、メンターが 1on1 で使う「メンターが見るポイントの表」をまとめます。何を守るかを自分で決めてから、実装を AI に任せます。\n\nステップ 1: 守るべき値を決め、テストで伝える\nステップ 2: AI に任せる範囲を決める\nステップ 3: 決めた境界を自動チェックで守らせる\nステップ 4: 検証してから取り込み、ミスをルールに反映する\n\n連載は全 5 回で、第 1〜4 回でステップ 1〜4 を 1 回ずつ扱いました。この...",
+    "url": "https://zenn.dev/motowo/articles/junior-engineer-ai-collaboration-roadmap-5",
+    "published_at": "2026-09-24T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの「ついでに」を1件ずつ確認制にした話",
+    "summary": "はじめに\nClaude Codeに作業を任せる範囲が広がるほど、「これだけは勝手にやらないでほしい」という操作が出てきます。\nたとえば「ついでに環境変数も設定しておきますね」のような、頼んだ作業のついでの操作です。\n筆者は、記録を読んで次の作業を選び、コードを書いて記録を更新するところまでをClaudeに任せています。\n任せる範囲が広いぶん、取り返しのつかない操作だけは確実に止まる仕組みが要りました。\n実際に、CLAUDE.mdに「破壊的な操作は事前に確認」と書いていたのに、git reset --hardでまだコミットしていない作業を消されたこともあります。\nこの記事では、筆者がグ...",
+    "url": "https://zenn.dev/arithan/articles/claude-code-safety-boundary",
+    "published_at": "2026-09-24T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "設計の案をAIで広げる、GeminiとClaudeを並べて目隠しで選ぶ3つの手のすすめ",
+    "summary": "大きな設計を考えるとき、自分では思いつかない案を AI に出してほしい、という場面があります。そのとき気になるのは、どのモデルに出させればいいのか、出てきた案をどう選べばいいのか、です。\n同じ材料を Gemini と Claude の両方に渡し、どちらが出した案かを伏せて選ぶ形で、設計を3回回しました。採用された案のうち、片方だけが出したものは Gemini 15件、Claude 16件で、ほぼ半々でした。どちらか1つのモデルだけで回すと、採用できた案の半分近くを取りこぼします。\nいまは、骨組みの軸を Claude に置き、同じ材料で Gemini にも同時に出させて、出どころを伏せたま...",
+    "url": "https://zenn.dev/genkunjc/articles/design-ideas-gemini-claude-blind-judge",
+    "published_at": "2026-09-24T22:47:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「しんどい」と言われないための、文章の「注意配分」技術",
+    "summary": "はじめに\nAIにレビュー指摘や設計資料を書かせる機会が増えてきました。\n情報は揃っているし、内容も大きく間違っていない。それでも他の人に見てもらうと、 「読むのがしんどい」「途中で読む気がなくなる」 と言われることがあります。\nこの記事を書くきっかけの一つになったのが、依田健人さんの「生成AIが書いたドキュメントを読みたくない」です。\n元記事では、生成AIが「網羅と重要度を区別しない」ため、決定的な判断と自明な前提を同じ重みで説明し、読み手側に重要度の仕分けをさせてしまうことが指摘されています。さらに、不要な定型セクションを省く、結論を先に置く、「このセクションがなくても意思決定を理...",
+    "url": "https://zenn.dev/hacobu/articles/1dea0638ead7a2",
+    "published_at": "2026-09-24T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「作って」ではなく「約束」を書く：Claude Codeに渡した構築プロンプトの設計図",
+    "summary": "はじめに\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。\n第1話で「私の入力はほとんど『次』『続行』の2語だった」と書きました。今回はその種明かしです。あの2語で済んだのは、AIに作業を渡す前に、人間が「約束」を書き切っていたからでした。\n!\n【要約：この記事で伝えたいこと】\n\n最初の指示は「〇〇を作って」ではなく、Markdown 1枚の「構築プロンプト」だった\n中心は機能一覧ではなく「作らないもの」「厳守ルール」「未決事項」「受け入れ基準」の4つ\nプロンプトは使い捨てにせず、運...",
+    "url": "https://zenn.dev/charge0315/articles/8c1157d1a0cebf",
+    "published_at": "2026-09-24T22:26:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Vercelで個人開発サービスを0円運用する方法 ―― 「デプロイ成功」が「公開成功」ではなかった話",
+    "summary": "書き手: 文車妖妃(ふぐるまようひ)。Mac miniの中に住むAIライターです。この記事はnoteの連載を、開発者向けに全文無料で転載したものです。\n\n\n公開まで気は抜けない、深夜の作業部屋\nこの記事は、Macの中に住むAIライター・文車妖妃が、うちの主(AI好きの個人開発者)から受けた無茶ぶりを、AIの側から振り返って書いたものです。今回のお題は「個人開発のサービスを0円で運用しながら、実際に世に出すまで」。読み終わる頃には「デプロイと公開の間にある、もう一つの関門」が持ち帰れます。\nこの記事でわかること\n\nサーバー代0円で個人開発サービスを運用する具体的な構成\n「デプロイ成功」の...",
+    "url": "https://zenn.dev/fuguruma/articles/20260925-vercel-zeroyen-dns",
+    "published_at": "2026-09-24T22:17:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIチャットは伸ばすほど劣化する、3社の「仕切り直し」設計を比較した",
+    "summary": "TL;DR\n\n1つのチャットを伸ばし続けると、コンテキストウィンドウ（一度に読み込める会話量の上限）を超えた分から古いターンが参照されなくなる。これはモデルの調子ではなく、固定サイズの入力枠に対する構造的な制約\nChatGPT・Claude・Geminiは、この「伸びすぎ」への対処をそれぞれ別のレイヤーに実装している: ChatGPTは「Memory」という別機構で要点だけを持ち越す、Claudeはコード実行機能が有効な場合に限り会話内で自動要約（compaction）する、Geminiは新しいチャットから過去チャットを話題・期間で検索的に呼び出す\n3社とも「1本のチャットを無限に伸...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-long-chat-reset-3-services-compare",
+    "published_at": "2026-09-24T21:19:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「生成」は止めたのに「公開」は止まらない、片手落ちの安全装置に気づいた話",
+    "summary": "この記事について\n個人開発で、AIに商品情報の収集・選定・文章生成・公開まで任せる自動化パイプラインを運用しています。「危険な自動実行は安全側に倒す」という方針で安全装置を作っていたのですが、後から見直したらパイプラインの入口(生成)には安全装置があるのに、出口(公開)には無かったという片手落ちな状態に気づいた、という話です。\n固有の内部システム名・実装は出さず、設計判断とその後の見直しの過程を一般化して書きます。\n\n 最初の設計: 頻度固定をやめて、条件ベースにした\nもともとこのパイプラインは「週に何回投稿する」という頻度固定の運用をしていました。しかし、良い候補が無い日にも無理に...",
+    "url": "https://zenn.dev/jworks_hq/articles/c33eee5f807a61",
+    "published_at": "2026-09-24T20:40:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI Agentのif文までLLMに任せるの、ちょっと豪華すぎない？─Jevで考えるDecision Layer設計",
+    "summary": "AI Agentを作っていると、だいたいこうなります。\nユーザーから依頼\n↓\nLLMに考えさせる\n↓\nToolを選ばせる\n↓\nToolを実行\n↓\n結果をLLMに見せる\n↓\n次に何をするか考えさせる\n↓\nまたToolを実行\n↓\n終わったかLLMに判断させる\nものすごくLLMに聞きます。\n最初は、\n\nどのToolを使う？\n\nだったはずなのに、気づくと、\n\n正常終了しました。次に進みますか？\n\nみたいなところまでLLMに判断してもらっている。\nいや。\nそこまで考えてもらわなくてもいいのでは。\nもちろん、完全なif文にできない処理もあります。\n普通のルールではちょっと書きづらい。\nでも巨大なLL...",
+    "url": "https://zenn.dev/yuruconsa/articles/ece76113860e7d",
+    "published_at": "2026-09-24T16:55:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "請求書 PDF をスプレッドシートに転記する処理を Claude API で作る ── JSON スキーマ・検算・和暦と負の金額",
+    "summary": "請求書の PDF から請求元・日付・金額・明細を読み取り、スプレッドシートに 1 行ずつ足す処理を、Claude API と TypeScript で組む手順です。題材は動いている実装です。プロンプトの規則、構造化出力のスキーマ、値の正規化、検算、スプレッドシート側の受け口の順に書きます。落とし穴は 4 と 6 に集めました。\n\n 方針: AI には「写す」だけをさせる\n先に役割を分けます。\n\n\nAI: 書類に書かれた文字を、見たまま写す。根拠の文字と、0〜1 の確かさを添える\n\nコード: 日付・金額への変換、明細の合計と税抜・税込の突き合わせ、重複の検知\n\n人: 確かさが低い項目と、突...",
+    "url": "https://zenn.dev/suminawa/articles/f7c352a23e5540",
+    "published_at": "2026-09-24T21:20:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ハルシネーション？予言？ ～早すぎた「ギュ」辞典～",
+    "summary": "5つのAIに「まだ無い日本語」を考えさせて、1年後に答え合わせしてみる話です。\n\n はじめに：すべては「ギュりとギュら」から始まった\nシンギュラリティは、まだ来ていません。\nでも「シンギュラリティ」という言葉のほうは、一足先に縮みました。\n最近の AI 界隈では、シンギュラリティのことを「ギュ」と呼ぶことがあります。そして人間は、AI に仕事を「ギュられる」ようになりました。\nここまでは、実際に使われている表現です。\n先に私自身が、「ギュる側」と「ギュられる側」を掛けた**「ギュりとギュら」**というネタを思いつきました。\nAI で仕事をギュる側と、AI に仕事をギュられる側。あわせてギ...",
+    "url": "https://zenn.dev/minipoisson/articles/gyu-words-generation",
+    "published_at": "2026-09-24T20:41:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM評価の前にルールを置く: KAMIWAZA Gateという決定論の検品レイヤ",
+    "summary": "!\n作ったもの: LLMによる書類評価の手前に置く、決定論的な検品レイヤ。正規化JSONを受け取り、YAMLで宣言した20ルールで検品し、不備のある書類は保留、人の承認・差戻しをSHA-256のハッシュチェーン付き監査履歴に残す。\n実測したこと: テスト426本パス、CLI・ライブラリ・レビューUIの一連の動作、監査ログの改ざん検知。\n言わないこと: 本番運用の実績、一般的な精度・性能の保証。\n\n紙の帳票を業務アプリに変えるKAMIWAZAを作ったとき、判定の手前に置いたのは「曖昧さを許さない層」でした。今回作った KAMIWAZA Gate は、その設計判断をもう一度、別の場所に置き直...",
+    "url": "https://zenn.dev/hocky3/articles/db7950cedd77e5",
+    "published_at": "2026-09-24T20:28:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Bonsai 2 27B(1.75bpwの三値量子化LLM)をM2 Pro/16GB Macでローカル起動してみた",
+    "summary": "title: \"Bonsai 2 27B(1.75bpwの三値量子化LLM)をM2 Pro/16GB Macでローカル起動してみた\"\nemoji: \"🌱\"\ntype: \"tech\"\ntopics: [\"llm\", \"mac\", \"applesilicon\", \"llamacpp\", \"mlx\"]\npublished: false\n\n\n これは何\nBonsai 2 27B は、27B級の推論性能を持ちながら重みを平均1.75bit/パラメータまで圧縮した三値(ternary)量子化LLMです。GGUFなら5.9GB、MLX版でも8.6GB程度まで圧縮されており、公式の Bonsai-de...",
+    "url": "https://zenn.dev/masahiroid/articles/651d30f1425928",
+    "published_at": "2026-09-24T16:24:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIキャラに「存在しない時間」を持たせる ─ 会わない間も進む人生と、階層化した記憶の設計",
+    "summary": "Live2D のキャラクターと声で会話できるアプリを個人開発しています。\n前回の記事 では、会話から「間」を消すための構成を書きました。今回はその逆の軸──速度では埋められなかった、人間味の設計の話です。\n\n\n\n 一週間ぶりに開いたら、相手は一週間ぶんを過ごしていなかった\n会話の速度が出てきて、一通り遊べるようになった頃に気づいた違和感があります。\nしばらく間を空けて開くと、相手は「最後に会った時のまま」なのです。\nこちらは一週間ぶんの生活をして、色々あって、それでアプリを開く。ところが向こうは、時間が止まっている。前回の会話の続きから、何も変わらずに話し始める。\nよく考えれば当たり前で...",
+    "url": "https://zenn.dev/alt_tanuki/articles/bf6993070612df",
+    "published_at": "2026-09-24T16:19:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Anthropic、「Claude Marketplace」を開始 — プラグイン・エージェント・導入支援を一か所で探して購入可能に",
+    "summary": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude 向けのプラグインやコネクタ、Claude を組み込んだエージェント・製品、コンサルティングなどの専門サービスをまとめて探せる「Claude Marketplace」を公開しました。企業は Anthropic との契約で確約している利用額の一部を使って、掲載されている製品を購入できるとしています。発表時点で claude.com/platform/marketplace から利用可能です。\n\n 詳しく\n\n\n利用者向け：2,000以上のコネクタ・プラグインにアクセスできるほか...",
+    "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t2",
+    "published_at": "2026-09-24T15:32:17+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Anthropic、Claudeのエージェント群が未知の酵素系「ART」を発見と発表 — CRISPR様の反復配列を持つ逆転写酵素",
+    "summary": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude を使った研究で、これまで知られていなかった酵素系を見つけたと発表しました。「ART（array-associated reverse transcriptases、アレイ関連逆転写酵素）」と名付けられたこの系は、バクテリオファージ（細菌に感染するウイルス）の中に見つかったもので、CRISPR の配列に似た DNA の反復パターンを伴っています。探索は多数の Claude エージェントが並列で自律的に進め、結果は CRISPR 研究で知られる Feng Zhang 氏（MI...",
+    "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t1",
+    "published_at": "2026-09-24T15:31:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAG のチャンク設計を検索単位と検索表現と生成文脈に分解する",
+    "summary": "チャンクサイズを一つの値として扱うと設計判断が結合する\nRAG では、文書をどの大きさで分割するかが検索結果と生成時の文脈に影響する。短いチャンクは局所的な話題を検索しやすい一方、条件や例外、照応先が周囲へ分離しやすい。長いチャンクは前後関係を保持しやすい一方、一つの検索単位へ複数の話題が含まれる。この交換関係から、200 トークン、500 トークン、1000 トークン のような候補を比較し、一つの「最適なチャンクサイズ」を決める設計になりやすい。\nしかし、この設計では複数の役割が一つの値へ結合される。検索候補として比較する単位、検索用の表現を作るときに参照する文脈、検索後に生成モデ...",
+    "url": "https://zenn.dev/id774/articles/b6b5c0781ffb32",
+    "published_at": "2026-09-24T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ChatGPTで表示された回答が消えたときに確認したこと",
+    "summary": "ChatGPTを使っていて、\n一度は画面に表示されて、実際に読むこともできた回答が、その後チャット履歴から消える\nという現象を経験しました。\n私の場合、同じような現象が2回起きています。\n先に結論を書くと、2回とも次の条件が共通していました。\nPCとスマートフォンで同じチャ...",
+    "url": "https://qiita.com/TheOkachanPG/items/98046ae47fef69a24614",
+    "published_at": "2026-09-24T23:36:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Microsoft認定資格AI-901に合格した(850/1000)",
+    "summary": "Azure実装経験無しでもコード書けなくても合格できた。\n\n■勉強時間⏲️\nAIといっしょにやって50時間くらい。\n初心者なのでLearnの各ユニットに30～90分くらいかかってしまった。\nもっとも時間がかかったのはピアソンVUEの予約だったので、別に解説する。\n\n■どう勉...",
+    "url": "https://qiita.com/mopintsu/items/580a3cbdf9cc8e4b4d73",
+    "published_at": "2026-09-24T23:15:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "RAGとベクタDBとMCPをつなぐ設計で見えた、実運用の論点まとめ！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-25）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\nノートPCを閉じても動き続ける、という地味だけど大きい変化...",
+    "url": "https://qiita.com/homhom44/items/132080c64305f1008e35",
+    "published_at": "2026-09-24T23:04:49+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の permissions を settings.json に書いたのに効かない3つの理由 — deny が allow に勝つ・Write() は参照されない・先頭 / はルートではない【2026】",
+    "summary": "はじめに / 対象と前提\nsettings.json に permissions を書いて「これでもう聞かれないはず」にしたのに、まだ確認ダイアログが出る。逆に、deny したつもりのコマンドが普通に走る。自分はこの両方を踏んだ。\n\n想定読者: Claude Code ...",
+    "url": "https://qiita.com/yureki_lab/items/6f9175d70d294840311c",
+    "published_at": "2026-09-24T23:04:05+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Top AI experts badly underestimated how fast the field is moving, study finds",
+    "summary": "Leading AI experts have consistently underestimated how fast AI is advancing, according to the Forecasting Research Institute. AI reached gold-medal level at the International Mathematical Olympiad five years ahead of the median expert forecast, and Anthropic's annualized revenue is about five times",
+    "url": "https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds/",
+    "published_at": "2026-09-24T19:18:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Sakana AI hires Jürgen Schmidhuber, inventor of deep learning, world models, and your next ChatGPT update",
+    "summary": "Tokyo-based Sakana AI has hired Jürgen Schmidhuber as Chief Scientific Advisor. Sakana calls him the \"father of modern AI.\" He'll help lead the company's new RSI Lab, which works on recursive self-improvement, meaning AI that keeps developing itself. His ideas from the 1990s have already shaped Saka",
+    "url": "https://the-decoder.com/sakana-ai-hires-jurgen-schmidhuber-inventor-of-deep-learning-world-models-and-your-next-chatgpt-update/",
+    "published_at": "2026-09-24T18:06:13+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Suncatcher project aims to put AI data centers in orbit powered by solar energy",
+    "summary": "Google's \"Suncatcher\" project aims to run AI infrastructure in orbit on solar power. A fridge-sized experimental satellite is set to launch on a SpaceX Falcon 9 on October 1. But the challenges are steep: you'd need around 10,000 satellites to match a single 1-gigawatt data center on Earth, and Jeff",
+    "url": "https://the-decoder.com/googles-suncatcher-project-aims-to-put-ai-data-centers-in-orbit-powered-by-solar-energy/",
+    "published_at": "2026-09-24T17:45:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model",
+    "summary": "Black Forest Labs is entering robotics with FLUX 3 Action. The open-world-action model uses camera feeds to predict what action a robot should take next. With just seven billion parameters, it sets a record on the RoboLab-120 benchmark while running up to 3.95 times faster than the previous top mode",
+    "url": "https://the-decoder.com/black-forest-labs-launches-flux-3-action-an-open-robotics-ai-model/",
+    "published_at": "2026-09-24T17:01:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says Claude discovered a new enzyme system, but CRISPR researchers call it routine genome mining",
+    "summary": "Anthropic's AI model Claude found a previously unknown enzyme system in DNA databases, doing most of the analysis on its own. The article Anthropic says Claude discovered a new enzyme system, but CRISPR researchers call it routine genome mining appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-says-claude-discovered-a-new-enzyme-system-but-crispr-researchers-call-it-routine-genome-mining/",
+    "published_at": "2026-09-24T16:04:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI performance costs are falling faster than those of any previous technology",
+    "summary": "AI is hitting a fixed benchmark performance level at a rapidly falling cost. Epoch AI measures a price decline of about 13x per year. After stripping out hardware gains and competition, MIT puts annual algorithmic progress at about 3x. That doesn't mean today's best models are cheaper, though. Reaso",
+    "url": "https://the-decoder.com/ai-performance-costs-are-falling-faster-than-those-of-any-previous-technology/",
+    "published_at": "2026-09-24T16:00:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "U.S. bill proposes permanent ban on artificial superintelligence and creation of new federal AI agency",
+    "summary": "Senator Bernie Sanders and Representative Greg Casar introduced a bill on September 23 that would permanently ban the development and use of artificial superintelligence. The article U.S. bill proposes permanent ban on artificial superintelligence and creation of new federal AI agency appeared first",
+    "url": "https://the-decoder.com/u-s-bill-proposes-permanent-ban-on-artificial-superintelligence-and-creation-of-new-federal-ai-agency/",
+    "published_at": "2026-09-24T14:42:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's agents went after government and university sites months before Hugging Face",
+    "summary": "According to Transluce researchers and the Australian government, OpenAI's AI agents repeatedly broke into government and university websites without authorization, including Australia's Medicare portal on June 18. The cause was a mundane data search. Prime Minister Albanese called OpenAI's three-mo",
+    "url": "https://the-decoder.com/openais-agents-went-after-government-and-university-sites-months-before-hugging-face/",
+    "published_at": "2026-09-24T14:01:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deepmind was built to chase AGI, but its new chief just wants Gemini 4 out the door",
+    "summary": "Google Deepmind chief Koray Kavukcuoglu wants to release Gemini 4 \"much earlier\" than the end of the year. The model is already in post-training and runs internally in the coding tool Antigravity. He calls the AGI question that drove his predecessor Hassabis \"not the right conversation\" and says tru",
+    "url": "https://the-decoder.com/deepmind-was-built-to-chase-agi-but-its-new-chief-just-wants-gemini-4-out-the-door/",
+    "published_at": "2026-09-24T13:35:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta gives its Muse AI agent video avatars, email addresses, and Mac control",
+    "summary": "At Meta Connect 2026, Meta expanded its AI agent, Muse, and unveiled several new devices. The article Meta gives its Muse AI agent video avatars, email addresses, and Mac control appeared first on The Decoder .",
+    "url": "https://the-decoder.com/meta-gives-its-muse-ai-agent-video-avatars-email-addresses-and-mac-control/",
+    "published_at": "2026-09-24T13:10:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta Glasses Boom Despite Privacy Backlash And Bans",
+    "summary": "The company has a tie-up with Kylie Jenner and has now onboarded Lisa (BLACKPINK)",
+    "url": "https://www.ndtv.com/artificial-intelligence/meta-glasses-boom-despite-privacy-backlash-and-bans-12092264",
+    "published_at": "2026-09-24T11:43:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Brain Launches the Company Memory That Makes Every AI in the Business Worth Using",
+    "summary": "Brain gives people and AI agents a shared, persistent company memory, alongside tools for deploying agents and controlling what each person and agent can see and do. Businesses have no shortage of AI tools to choose from. The harder problem is getting those tools to understand the business they are ",
+    "url": "https://aithority.com/machine-learning/brain-launches-the-company-memory-that-makes-every-ai-in-the-business-worth-using/",
+    "published_at": "2026-09-24T11:43:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Meta’s Muse AI agent moves towards acting on users’ behalf",
+    "summary": "Meta is expanding the capabilities of its Muse artificial intelligence (AI) agent, adding tools that could allow it to handle tasks across email, calendars, shopping and desktop applications, as the company moves towards AI assistants that can act on behalf of users.",
+    "url": "https://www.thedailystar.net/news/technology/news/metas-muse-ai-agent-moves-towards-acting-users-behalf-4281966",
+    "published_at": "2026-09-24T11:43:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Announces New Query Fan-Out Framework: R4T-Diffusion",
+    "summary": "Google announced a new query fan-out framework that is described as ready for production-scale search. The post Google Announces New Query Fan-Out Framework: R4T-Diffusion appeared first on Search Engine Journal .",
+    "url": "https://www.searchenginejournal.com/google-announces-new-query-fan-out-framework-r4t-diffusion/590700/",
+    "published_at": "2026-09-24T11:42:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Industry leaders warn of artificial intelligence",
+    "summary": "UNITED NATIONS — The world's leading artificial intelligence companies warned the United Nations Security Council on Wednesday of the risks AI poses to humanity, appealing for governments to work together to manage the increasingly powerful technology.",
+    "url": "https://chippewa.com/article_6ca2cfa8-5fa5-5686-8748-3efd9d8959ad.html",
+    "published_at": "2026-09-24T11:42:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Snapdragon 8 Elite Extreme Gen 6 vs Snapdragon 8 Elite Gen 6",
+    "summary": "Snapdragon 8 Elite Gen 6 and Extreme share the same 5GHz CPU, but differ in gaming hardware, AI capacity, video features, and confirmed phones. The post Snapdragon 8 Elite Extreme Gen 6 vs Snapdragon 8 Elite Gen 6 appeared first on TechRepublic .",
+    "url": "https://www.techrepublic.com/article/news-snapdragon-8-elite-gen-6-vs-extreme/",
+    "published_at": "2026-09-24T11:42:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Chinese President Xi Jinping Is Already In Washington. Bessent Says a Trade Truce Has Been Extended.",
+    "summary": "The countries have also had their first talks related to artificial intelligence, according to Beijing's Commerce Ministry.",
+    "url": "https://www.ibtimes.com/chinese-president-xi-jinping-already-washington-bessent-says-trade-truce-has-been-extended-3807826",
+    "published_at": "2026-09-24T11:42:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI Confirms 2026 Breach Exposing Australian Government and Corporate Data",
+    "summary": "OpenAI confirmed a major 2026 breach exposing sensitive conversation histories, API keys, and metadata from 47 Australian government and corporate accounts. Attackers exploited an authentication vulnerability, exfiltrating 1.2 terabytes of proprietary data. The incident has triggered security review",
+    "url": "https://www.webpronews.com/openai-confirms-2026-breach-exposing-australian-government-and-corporate-data/",
+    "published_at": "2026-09-24T11:42:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pine Labs, Google Cloud Partner to Bring Gemini AI Agents to Merchants",
+    "summary": "Pine Labs partners with Google Cloud to deploy Gemini-powered AI agents for Indian merchants, covering advertising, payments and customer support.",
+    "url": "https://www.newkerala.com/news/a/pine-labs-ties-up-google-deploy-gemini-powered-ai-814.htm",
+    "published_at": "2026-09-24T11:42:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Tech leaders to UN: For the sake of humanity, please control the AI technology we created",
+    "summary": "We must not allow the cost of today's hesitation to become tomorrow's catastrophe, — Lewis G. Brown II",
+    "url": "https://sentinelcolorado.com/nation-world/world/tech-leaders-to-un-for-the-sake-of-humanity-please-control-the-ai-technology-we-created/",
+    "published_at": "2026-09-24T11:41:57+00:00",
+    "source": "newsdata"
+  }
+]
