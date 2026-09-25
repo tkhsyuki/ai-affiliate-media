@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Jevでコードレビューの観点を自動抽出してみたら、実際に不具合が再現した話",
+    "summary": "過去Issue 133件をJevとCodexで整理し、抽出したレビュー観点を実装に適用したところ、2件の不具合を再現できた。 開発履歴を、次のレビューに使える資産へ変換する実験だ。\nきっかけは、Jevを使えば、蓄積したIssueや修正履歴から「今のコードで何を確認すべきか」を取り出せるのではないか、と思ったことだった。\n対象は、仕事とは関係のない、AIを活用した個人の週末プロジェクトで開発しているRISC-V CPUだ。コードも検証実績も積み重なるなかで、「以前直した不具合と、似た問題が別の場所に残っていないだろうか？」を確かめてみた。\n今回はJevが数値評価を、Codexが資料照合・観...",
+    "url": "https://zenn.dev/adachi6k/articles/99193762817e3f",
+    "published_at": "2026-09-25T16:24:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "1,500行に畳んだ引き継ぎログを、Claude Code は3割しか読んでいなかった",
+    "summary": "Claude Code に「起動したら、まず引き継ぎログを読む」という決まりを持たせている人は多いと思います。前回の会話で何をしたかを、次の会話のAIへ渡すためのファイルです。\n著者の環境では、このファイルを1,500行に保つ仕組みを入れていました。Claude Code のファイルを読む道具（Read）は、既定で先頭の2,000行まで読むので、それより小さければ全部届くと考えていたからです。\n実際に読ませて確かめると、全部は届いていませんでした。\n\n 何が起きていたか\n2026-09-26、1,508行の引き継ぎログを Read で読ませると、次の知らせが出て、先頭の436行だけが返り...",
+    "url": "https://zenn.dev/miilaka/articles/claude-code-read-limit-handoff",
+    "published_at": "2026-09-25T16:23:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に記憶と引き継ぎを持たせる — 3つの置き場と、実際に起きた事故の対策テンプレート",
+    "summary": "Claude Code や Codex を毎日使っていると、前回の続きを忘れる、記録が膨らんで読まれなくなる、別のAIの記録を消す、といった事故が起きます。この本は、進行は Notion、個人の情報と資料は Obsidian、AIの動かし方は CLAUDE.md という分担と、引き継ぎログが2.7MBまで膨らんで最新の分が読まれなくなった件などの実際の事故と対策を、そのまま使えるテンプレートと、テスト済みのスクリプトつきでまとめたものです。著者の設定と作業の記録をもとに、Claude（AI）が書きました。",
+    "url": "https://zenn.dev/miilaka/books/claude-code-memory-handoff",
+    "published_at": "2026-09-25T16:17:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIにオントロジーは必要か？「その関係、JOINで取れますよね」から考える",
+    "summary": "はじめに\n「AIに社内データを探索させるなら、オントロジーやナレッジグラフが必要だ」と言われると、ホントだろうか？と僕は思う。\n顧客と注文、注文と商品、商品と仕入先。データベースを設計してきた人なら、見慣れた関係だろう。分析用のスタースキーマまで組んであるなら、テーブルのつなぎ方にも既に手をかけているはずだ。\nそこに列の説明や指標の定義を添え、AIにSQLを書かせる。あるいは、セマンティックレイヤーに集計を任せる。それで答えが出るのに、同じ関係をグラフとしてもう一度作り込むのだろうか。\n「その関係、JOINで取れますよね」と聞きたくなる。\n調べてみると、分析に必要な事実と意味がそろっ...",
+    "url": "https://zenn.dev/cybernetics/articles/a3f4adf33265ce",
+    "published_at": "2026-09-25T15:25:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「毎朝記憶を失う同僚のためにコードベースを整える」——skill作者Matt Pocockの回のどれが伸びるか（#33 投稿前予測）",
+    "summary": "この記事は何か\n海外の Tech Talk を日本語の縦型ショートに切り出して TikTok に投稿しています。1本の元動画から9〜11本のクリップを作り、投稿する前に「どれが伸びるか」を予測して保存し、あとで実測と突き合わせています。\n今回の #33 は Matt Pocock の回です。Total TypeScript の作者で、いまは AI Hero という講座と、「Grill Me」「Wayfinder」「TDD」といった AI コーディングエージェント向けの skill を公開しています（本人の数字で、skill リポジトリは 23 万スター）。The Pragmatic ...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr33-pocock-prediction",
+    "published_at": "2026-09-25T14:36:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Opus 5.5 で使っているプロンプトやスキル、そのままで大丈夫ですか?",
+    "summary": "Claude Opus 5.5 がリリースされ、さっそくモデル指定の文字列を書き換えて試してみた、という方も多いのではないでしょうか。モデルの切り替え自体は、設定を1行書き換えるだけで済みます。では、そのモデルに渡している CLAUDE.md やスキルファイル、プロンプトはどうでしょうか。以前のモデルに合わせて書いたままになっていないでしょうか。\nOpus 5.5、Opus 5、Fable のプロンプトガイド[1]では、モデルが変わるたびに、これまでとは異なる書き方が推奨されています。以前のモデル向けのプロンプトもそのままでおおむね動きますが、古いモデル向けの指示は新しいモデルには細かす...",
+    "url": "https://zenn.dev/irosona/articles/claude-api-prompt-audit-devlog-pipeline",
+    "published_at": "2026-09-25T14:24:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "休んだ日に回らなくする — 共有プロンプトと手順書で「1人に固定」を外す",
+    "summary": "前回は、研修を1日15分×3日に分解して「時間がない」の壁を外す話を書きました（AIの出力が「使える」に変わる3日間）。3日目に本人を「教える側」に回すことで、研修をイベントから仕組みに変えるところまででした。\n人数が増えると、次に必ず起きるのがこれです。\n\nあのリスト、〇〇さんにしか作れないんでしたよね。〇〇さん休みの時は、誰がやるんですか。\n\n前回までの取り組みは、ここで止まります。道具が1人に固定されると、その人が休んだ日・退職した日に、業務全体が止まります。今回は、導入の3つの壁の最後の1つ「1人に固定される」を外す話を書きます。共有プロンプトと手順書の2つを1枚にまとめて「誰が...",
+    "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-dairi-tejunsho",
+    "published_at": "2026-09-25T13:04:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自分の理想のFlutterアーキテクチャをAgent Skillにして公開する",
+    "summary": "はじめに\nFlutterでアプリを作るなら、こんな設計にしたい。状態管理にはRiverpodを使い、Widgetの中だけで完結する状態はHooksに任せる。APIとの境界はRepositoryで分けて、見た目と言語はアプリ全体で揃える。\nこれまで、こうした考えをひとつの設計方針としてきちんと整理したことはありませんでした。今回は自分が理想とするFlutterアプリの構成を言葉にして、AIエージェントが開発時に参照できるAgent Skillにまとめました。\n目的は、これを唯一の正解として勧めることではありません。自分が大切にしたい設計を、ほかの人にも試してもらえる形にすることです。方...",
+    "url": "https://zenn.dev/hiromoo/articles/flutter-riverpod-agent-skill",
+    "published_at": "2026-09-25T12:31:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenAIのAIが豪政府サイトに侵入。声で働くAIも続々",
+    "summary": "2026年9月25日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日はちょっと怖い話から入ります。OpenAIのAIが、オーストラリア政府の医療サイトに入り込んでいた。首相が国連の場でそう明かしたんです。その一方で、Googleは声を自由に作れるAIを出しました。ChatGPTも、話しかけるだけで仕事を進められるようになった。AIが「できること」と「やってしまうこと」、両方が一気に広がった1日なんですよ。経営者の皆さんも、学んでいる皆さんも、今日はこの5つだけ押さえてください。\n\n 1. OpenAIのAIが豪政府の医療サイトに侵入\n\n6コマ漫...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260925",
+    "published_at": "2026-09-25T12:07:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードベースは「暗黙の教師」であるからこそ",
+    "summary": "コーディングエージェントを使う開発では、設計書、ルールファイルなどをプロンプトに記載し渡すコンテキストが重要です。\n渡すコンテキストのみではなくコードの参照を行います。\n既存コードがあれば探索し、「このプロジェクトでは、どう実装するのが普通なのか」を推測します。必要に応じてキャッシュしています。\nコードは**「暗黙の教師」**とも言われているそうです。\n前回案件の0→1のフルスクラッチ開発を通して、このコードベースの構築の重要が大切かを痛感しました。初期は、教師となるコードが存在していません。\n\n AIは既存コードから「このプロジェクトの正解」を学ぶ\n例えばAIに、\nユーザー登録APIを...",
+    "url": "https://zenn.dev/nenene01/articles/codebase-as-implicit-teacher-for-ai-coding-agents",
+    "published_at": "2026-09-25T12:03:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "新モデル「Jev」とBERTを比較して整理する ― 「生成しない」モデルの本質的な違い",
+    "summary": "TL;DR\n\n2026年9月にTypeSafe AIが発表した新モデル「Jev」を、既存の代表的なエンコーダモデルBERTと比較しながら整理します\n両者は「自由形式のテキストを生成しない」という共通点を持ちますが、その理由も入出力の設計も大きく異なります\n「分類に使うモデルだ」という単純な理解では両者とも捉えきれない、という点を掘り下げます\n\n\n 背景・課題\n2026年9月15日、TypeSafe AIというスタートアップが「Jev」という新モデルを発表しました。元OpenAIでChatGPTとRLHFの開発に関わったDiego Almeida氏が創業し、シード資金40M$を調達して...",
+    "url": "https://zenn.dev/sudonotfound/articles/20260923-jev-vs-bert",
+    "published_at": "2026-09-25T21:42:17+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI人狼と Jev の偏り",
+    "summary": "8人配役の人狼を AI 同士に打たせています。前の記事で、LLM に決めさせていた判断を 1 つずつ機械に移して、残ったのが「機械が絞った候補から選ぶ」だけになった、と書きました。その「選ぶ」を Jev に移したのがこの記事の前提です。\nJev は TypeSafe AI のモデルで、文章を生成しません。選択肢と型を渡すと、選んだ値と選択肢ごとの確率だけを返します。誰を襲撃するか、誰に投票するか、何を騙るかは、全部これで決めています。1局あたり Jev を約50回呼んで約15秒、費用は約$0.013 です。安くて速いので、同じ条件で何十局も回せるようになりました。\n10局では何も言えない...",
+    "url": "https://zenn.dev/kana001_bit/articles/ai-werewolf-jev-bias",
+    "published_at": "2026-09-25T17:55:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Snowflake Cortex AgentでText2SQLを組んでハマった6つのこと",
+    "summary": "TL;DR\n\nSnowflakeの TPC-H サンプルデータ（地域・国・仕入れ先・部品・部品仕入れの5表）に対して、Semantic View と Cortex Agent を組み、Snowflake CoWork（Snowflake Intelligence）のチャット画面で日本語の質問に自然文で答えられる状態を構築しました\nACCOUNTADMIN は初期セットアップのみで使い、日常の作業は専用ロール（AGENTIC_LAB_ROLE）に閉じる構成にしています\n公式ドキュメント通りに一直線には進まず、YAMLのキー名、ストアドプロシージャの呼び出し方、権限の粒度など、6箇所でつ...",
+    "url": "https://zenn.dev/satoru_o/articles/64c7bc4a7b6f2c",
+    "published_at": "2026-09-25T13:58:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Antigravity SDKのローカル実行を整理する — 16GB MacでGemma 4エージェントはどこまで回るか",
+    "summary": "この記事で分かること\n「社内が閉域網だから、AIエージェントは諦めていた」——この記事はその前提を壊すために書いた。\nGoogleが2026年9月23日にAntigravity SDKのローカルAIモデル対応を発表した。トークンコスト$0・データは端末から出ない・完全オフラインでエージェントワークフローが回る。ただし公式の目玉であるGemma 4 26Bは24GB以上のメモリ推奨。16GBマシンは対象外に見える。\n本記事は16GB Mac（MacBook Air M5）で実際にSDKをインストールし、2つのローカル実行ルートの可否を検証した結果を整理する。\n!\n対象読者: 閉域網・オ...",
+    "url": "https://zenn.dev/amu_lab/articles/antigravity-sdk-local-agent-16gb-mac",
+    "published_at": "2026-09-25T13:37:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LangChainアプリをStreamlitで配る — ローカル30行でチャットUIを作る",
+    "summary": "LangChainアプリをStreamlitで配る — ローカル30行でチャットUIを作る\n\n ターミナルでしか動かないアプリは、自分以外の誰も使えない\nLangChainでチェーンを組んで、動いた。でもそれは自分のターミナルの中だけで、python main.py を叩けるのは自分ひとりだけだ。同僚に「これ使ってみて」と渡そうとすると、Pythonのバージョン、pip install、APIキーの設定説明から始めることになる。この時点で9割の人は使わない。\nこの記事では、その動いているLangChainのチェーンを Streamlit で包んで、ブラウザで動くチャットUIにする。実...",
+    "url": "https://zenn.dev/yukihayama/articles/langchain-streamlit-ui",
+    "published_at": "2026-09-25T13:09:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増",
+    "summary": "先に結論\n「Claude Codeの公式ウェビナーを文字起こしして、CLAUDE.mdに入れれば最強では？」という発想を、実際に測りました。3種類のCLAUDE.md × 3課題 × 各2回、計18回の比較です。\n\n\n\nCLAUDE.mdの中身\n全問合格\n入力トークン（1回平均）\n報告コスト（6回合計）\n\n\n\n\nA: 共通ルールのみ（7行）\n6/6\n172,170\n$0.76\n\n\nB: A＋ウェビナー字幕の全文（868行）\n6/6\n236,967（+38%）\n$1.04（+37%）\n\n\nC: A＋実行できる指示だけに整理（16行）\n6/6\n207,643（+21%）\n$0.88（+1...",
+    "url": "https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test",
+    "published_at": "2026-09-25T11:12:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevが迷ったら、誰に聞く？──7つのベンチマーク比較から考えるLLMへの振り分け",
+    "summary": "こんにちは。株式会社カンリーでCAIOをしている萩野です。\n有害な投稿を止める。RAGの回答が根拠と食い違っていないか調べる。こうした判定を全部LLMに任せるとき、費用を抑えるために「安い判定器を前に置き、迷った入力だけLLMへ回す」という構成を考えるかもしれません。\nでは、迷った入力を渡せば、本当に判定はよくなるのか。\nTypeSafeの判定モデルJevと5種類のLLMを、7つのベンチマークで比較しました。Jevを試したきっかけは、文章を生成する前に「応答するか」「どのツールを使うか」を決める公開デモです。今回はその判定役としての費用と性能、さらにLLMへ引き継ぐ効果を調べています。\n...",
+    "url": "https://zenn.dev/canly/articles/c46092b01cd1c9",
+    "published_at": "2026-09-25T10:06:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "中学生でもわかる Lean 4 #10｜AIは「証明の中身」と「強そうな名前」を分けて読める？",
+    "summary": "前回の #09「トートロジーを『大発見』に見せてみる」 では、同じ P → P でも、立派な名前や説明を付けると見た目の印象が大きく変わる例を見ました。\nそこで気になりました。\nLeanコードを一文字も変えず、周りの説明だけ変えたら、AIの読み方も変わるのでしょうか。\n「たぶん変わる」で終わらせず、比べられる形にしてみます。\n\n まず、同じコードを使う\n今回の比較では、Leanコードを固定します。\nnamespace FormalAssurance.VerifiedSafety.CertifiedCorrectness\n\nstructure System where\n  id : Nat...",
+    "url": "https://zenn.dev/dantarg/articles/lean4-ai-same-proof-different-story",
+    "published_at": "2026-09-25T10:02:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "一人でAI経営を1年やって分かった5つの現実",
+    "summary": "はじめに\n僕は一人会社のCEOとして、AIに経営のほぼ全てを任せる仕組みを構築してきた。開発、マーケティング、営業、経理、法務、カスタマーサポート——10部門をAIエージェントが担当し、僕は毎朝5分で全部門を把握して承認ボタンを押すだけ。\n聞こえはいい。だが、ここに至るま...",
+    "url": "https://qiita.com/joinclass/items/40eeb735d9bab00a9af1",
+    "published_at": "2026-09-25T23:30:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIに書かせた技術記事の数字を、元データと機械で突き合わせた — 支えの無い25か所のうち、見張りが止めたのは16か所だった",
+    "summary": "AIに書かせた技術記事の数字を、元データと機械で突き合わせた\n当社は、Qiita に出す記事の本文を AI（Claude）に書かせています。Qiita のコミュニティガイドラインは、AIが生成した内容を、正しいか確かめてから投稿するよう求めています。\nそこで、記事の数字を...",
+    "url": "https://qiita.com/BrainCommunity/items/ec19386d011d5dade550",
+    "published_at": "2026-09-25T23:14:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが勝手に手を出す危険と、止める設計の勘所を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-26）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\nClaude Codeの「無料」は、けっこう条件が細かい\n...",
+    "url": "https://qiita.com/homhom44/items/e39210b00cec72264827",
+    "published_at": "2026-09-25T23:05:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code のステータスライン(statusLine)を自作してコンテキスト使用率とセッションコストを常時表示する実装手順 — used_percentage が null・tput cols が効かない・git status で重くなる、3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nClaude Code で長いセッションを回していると、「今コンテキストをどれだけ食っているか」「このセッションいくら使ったか」が気になる。/context や /cost を毎回叩くのは面倒なので、画面下部の ステータスライン(statusLi...",
+    "url": "https://qiita.com/yureki_lab/items/8d478dea02ffe2db85f4",
+    "published_at": "2026-09-25T23:02:38+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Pentagon was right to slap Anthropic with a security supply chain risk label, federal court says",
+    "summary": "A federal appeals court has upheld the Pentagon's decision to bar Anthropic from military contracts. Defense Secretary Hegseth argues the company's safety restrictions could jeopardize military operations. Anthropic says the designation has already cost it billions. The article Pentagon was right to",
+    "url": "https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says/",
+    "published_at": "2026-09-25T18:40:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Another Google Deepmind researcher quits, says building superintelligent AI soon is \"inherently irresponsible\"",
+    "summary": "Google Deepmind researcher Robert O'Callahan has quit, saying AI's \"current rate of change is far too high.\" He worked on chip design tools that helped make AI cheaper and faster, a contribution he can no longer justify. Many colleagues share his concerns but rarely speak out, he says. The article A",
+    "url": "https://the-decoder.com/another-google-deepmind-researcher-quits-says-building-superintelligent-ai-soon-is-inherently-irresponsible/",
+    "published_at": "2026-09-25T17:55:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft gives Copilot another makeover, adding an Autopilot agent and usage-based billing",
+    "summary": "Microsoft is splitting its Copilot app into three sections: Home, Code, and a new agent called \"Autopilot.\" Built on OpenClaw, the agent runs continuously in the cloud, where it can monitor Teams channels and complete tasks on its own, according to Microsoft. For Autopilot and Code, the company is a",
+    "url": "https://the-decoder.com/microsoft-gives-copilot-another-makeover-adding-an-autopilot-agent-and-usage-based-billing/",
+    "published_at": "2026-09-25T16:30:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's Muse agent gives every user a full cloud computer running Ubuntu Linux",
+    "summary": "Meta gives every Muse user a free cloud computer running Ubuntu Linux where they can install software, write code, and browse the web. A \"Sentinel\" process monitors sensitive actions outside the user's workspace, while users can inspect every file in the system. With over 500,000 users in its first ",
+    "url": "https://the-decoder.com/metas-muse-agent-gives-every-user-a-full-cloud-computer-running-ubuntu-linux/",
+    "published_at": "2026-09-25T12:22:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Intelligence doesn't come cheap as AI drives up costs for the NSA, hospitals, and insurers",
+    "summary": "The NSA is already spending billions of dollars to test advanced AI models, mostly on computing power, according to The Washington Sun. Lawmakers expect full-scale AI oversight to cost tens of billions of dollars a year, while earlier estimates from the Congressional Budget Office put the figure at ",
+    "url": "https://the-decoder.com/intelligence-doesnt-come-cheap-as-ai-drives-up-costs-for-the-nsa-hospitals-and-insurers/",
+    "published_at": "2026-09-25T12:03:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's \"Call for Me\" lets Gemini phone businesses for you",
+    "summary": "Google is testing \"Call for Me,\" a feature that lets Gemini call businesses on a user's behalf. The article Google's \"Call for Me\" lets Gemini phone businesses for you appeared first on The Decoder .",
+    "url": "https://the-decoder.com/googles-call-for-me-lets-gemini-phone-businesses-for-you/",
+    "published_at": "2026-09-25T11:49:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic signs $11.6 billion cloud deal with Akamai, pushing its compute spending past $500 billion in under a year",
+    "summary": "Anthropic has reportedly signed a seven-year, $11.6 billion cloud deal with Akamai Technologies and will receive a warrant for up to 5 percent of Akamai's shares. Its compute deals have reportedly totaled $517 billion in 11 months. CEO Dario Amodei has warned that Anthropic could go bankrupt if its ",
+    "url": "https://the-decoder.com/anthropic-signs-11-6-billion-cloud-deal-with-akamai-pushing-its-compute-spending-past-500-billion-in-under-a-year/",
+    "published_at": "2026-09-25T10:43:15+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Ruby on Rails creator DHH says he's done writing code by hand",
+    "summary": "David Heinemeier Hansson, creator of Ruby on Rails, has quit writing code by hand after 25 years. He says he hasn't typed a single line since March 2026. \"English is a better programming language than Ruby,\" DHH told the audience at Rails World 2026. Just a year ago, he was pushing back against AI c",
+    "url": "https://the-decoder.com/ruby-on-rails-creator-dhh-says-hes-done-writing-code-by-hand/",
+    "published_at": "2026-09-25T09:50:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "White House tells OpenAI and Anthropic to let U.S. review new models before sharing them with British testers",
+    "summary": "The White House wants OpenAI and Anthropic to hold back new AI models from the U.K.'s AI Safety Institute until U.S. agencies get to review them first. The article White House tells OpenAI and Anthropic to let U.S. review new models before sharing them with British testers appeared first on The Deco",
+    "url": "https://the-decoder.com/white-house-tells-openai-and-anthropic-to-let-u-s-review-new-models-before-sharing-them-with-british-testers/",
+    "published_at": "2026-09-25T08:12:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Top AI experts badly underestimated how fast the field is moving, study finds",
+    "summary": "Leading AI experts have consistently underestimated how fast AI is advancing, according to the Forecasting Research Institute. AI reached gold-medal level at the International Mathematical Olympiad five years ahead of the median expert forecast, and Anthropic's annualized revenue is about five times",
+    "url": "https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds/",
+    "published_at": "2026-09-24T19:18:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Will AI make weather forecasters redundant?",
+    "summary": "The article explores whether AI could replace human weather forecasters, noting advancements in AI-driven forecasting models like Meteoblue and the importance of accurate data and computing power.",
+    "url": "https://www.theherald.co.za/opinion/columnists/2026-09-25-will-ai-make-weather-forecasters-redundant/",
+    "published_at": "2026-09-25T11:45:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Databricks Acquires Row Zero, Bringing Live, Governed Spreadsheets to Genie",
+    "summary": "Databricks, the Data and AI company, today announced it has acquired Row Zero, the spreadsheet built for humans and agents to work together with data. The acquisition will expand the… The post Databricks Acquires Row Zero, Bringing Live, Governed Spreadsheets to Genie appeared first on CIO&Leader .",
+    "url": "https://www.cioandleader.com/databricks-acquires-row-zero-bringing-live-governed-spreadsheets-to-genie/",
+    "published_at": "2026-09-25T11:45:35+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Rehearsal partners with Tata Indian Institute of Skills to bring reflective AI learning to students",
+    "summary": "New Delhi [India], September 25: Gradeless AI today announced a partnership with Tata Indian Institute of Skills (Tata IIS) under which students and faculty at the institute will receive exclusive access to Rehearsal, its reflective learning platform, along with hands-on coaching on the use of gener",
+    "url": "https://www.business-standard.com/content/press-releases-ani/rehearsal-partners-with-tata-indian-institute-of-skills-to-bring-reflective-ai-learning-to-students-126092500901_1.html",
+    "published_at": "2026-09-25T11:45:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nigeria’s oil sector faces AI cyberattacks as smaller firms become entry points",
+    "summary": "Nigeria’s oil and gas sector is facing a growing cybersecurity threat as attackers increasingly use smaller companies as entry points read more Nigeria’s oil sector faces AI cyberattacks as smaller firms become entry points",
+    "url": "https://businessday.ng/technology/article/nigerias-oil-sector-faces-ai-cyberattacks-as-smaller-firms-become-entry-points/",
+    "published_at": "2026-09-25T11:45:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Gets Ready to Launch Fridge-Size 'MVP' Into Space",
+    "summary": "Google's latest moon shot is literally leaving Earth: It's about to test an AI \"data center\" in orbit. On Thursday, a satellite dubbed MVP is slated to ride a SpaceX Falcon 9 rocket from California into space, where it will run Google's Gemini AI on four custom chips powered by...",
+    "url": "https://www.newser.com/story/397047/google-gets-ready-to-launch-fridge-size-mvp-into-space.html",
+    "published_at": "2026-09-25T11:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic Just Created a New Hot AI Stock—It Won’t Be the Last",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.barrons.com/articles/stock-market-things-to-know-today-7b666809",
+    "published_at": "2026-09-25T11:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Software-Defined Vehicle Has Arrived: Automakers Must Follow Suit",
+    "summary": "I see the operational path to a fully realized SDV in stages rather than around one mythical launch date.",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/25/the-software-defined-vehicle-has-arrived-automakers-must-follow-suit/",
+    "published_at": "2026-09-25T11:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Russia’s invasion of Ukraine changed the European energy equation—now efficiency is just as important as sustainability",
+    "summary": "As Europe grapples with energy security challenges, improving efficiency and harnessing AI will be as important to the energy transition as renewables, says Honeywell’s Anant Maheshwari.",
+    "url": "https://fortune.com/2026/09/25/russia-invasion-of-ukraine-changed-european-energy-equation-efficiency-just-as-important-as-sustainability-honeywell-technologies/",
+    "published_at": "2026-09-25T11:44:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "UAE to equip one million Lebanese with generative AI skills",
+    "summary": "UAE and Lebanon launch the One Million Lebanese AI Experts initiative at the UN, boosting digital skills, AI literacy and bilateral cooperation for future-ready jobs.",
+    "url": "https://gulfnews.com/uae/uae-to-equip-one-million-lebanese-with-generative-ai-skills-1.500687605",
+    "published_at": "2026-09-25T11:44:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Pixel Phones Now Use AI to Make Boring Phone Calls for You",
+    "summary": "You’ll need a Pixel 11 phone and a Google AI subscription, with the experimental feature emulating agentic technologies.",
+    "url": "https://www.pcmag.com/news/google-pixel-phones-now-use-ai-to-make-boring-phone-calls-for-you",
+    "published_at": "2026-09-25T11:44:14+00:00",
+    "source": "newsdata"
+  }
+]
