@@ -1,0 +1,289 @@
+[
+  {
+    "title": "セルフホスト環境という選択肢 — 顧客データを外に出せない案件への回答",
+    "summary": "なぜ僕がこれを作ったか\n受託の商談で、いちばん多く止まる質問がこれです。\n\n「そのAI、うちの顧客データを外部に送りますよね？ 情報システム部が通しません」\n\nこの一言で消えかけた案件が、僕のところには複数ありました。2026年3月の受託売上は¥1,937,635で、その内訳のうち最大の1社は、最初の面談でまさにこの質問から入りました。担当者が知りたかったのは「Claudeの安全性」ではありません。**「もし漏れたら誰の責任になるのか」**です。\n僕自身は自社の経営オペレーションを Claude Code で動かしていますが、ここに対して「SOC2があります」「学習には使われません」...",
+    "url": "https://zenn.dev/joinclass/articles/article-20260925220056-22091",
+    "published_at": "2026-09-26T23:00:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に足してもらったチェック、正しいものまで止めていませんか？",
+    "summary": "AI と一緒に何かを作っていると、「こういうミスを二度としないように、チェックを足しておいて」と頼む場面が増えていきます。本番に出すコマンドの前で止める、パスワードのような秘密の値がコミットに入っていたら止める、フォームにおかしな値が入ったら弾く、といったものです。頼めばすぐにチェックができて、動かすと「問題なし」と出ます。では、そのチェックが正しく判定しているかを、確かめたことはあるでしょうか。\n私は確かめていませんでした。私の環境には、こうして足してきたチェックがいくつもあります。あとから確かめてみると、その中には止めるべきものを見逃していたものも、止めなくてよいものまで止めてしま...",
+    "url": "https://zenn.dev/kk_18_dot/articles/ai-check-should-pass-tests",
+    "published_at": "2026-09-26T23:00:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeで見えた「続けられる条件」——裁量・短いループ・非同期",
+    "summary": "この記事の要旨（2026年9月時点）: 「裁量」「短いループ」「非同期」という3条件が、何かを継続する楽しさを支えている、という主張を検証する。前作「Claude Codeで動かすAIエージェント組織はなぜ楽しいのか」（2026年8月）で計測した「短いループ」の実測値（依頼から応答までの中央値3.7分、集中して作業する単位の中央値19.7分）を、今回は「継続を支える条件」という枠組みで再解釈する。「裁量」「非同期」についてはまだ同水準の実測がなく、体感の域を出ていない点は隠さずに書く。\n前は楽しくてやっていたのに、今は義務っぽくなった——中身は同じ作業のはずなのに、続けられなくなる境目が...",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-09-19-225500",
+    "published_at": "2026-09-26T22:06:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代のエンジニアのキャリアとオーナーシップ",
+    "summary": "昨年の Claude Code のリリースから急速にコーディング領域へのAI活用が進み、実装にかかる時間は短くなりました。画面の基本実装やテストのように以前なら手を動かして書いていたものが、指示を出して少し待てば出てきます。\nでは、浮いた時間を何に使えばよいのか。考えながら振舞わなければ、空いた分はそのまま次のタスクで埋まっていきます。数年後に振り返ったとき、こなしたタスクの数だけが増えていて、エンジニアとしてどう成長できたのか。どんな強みを持つことができたのか。キャリアを考え始めた際、焦りを持つ人も多いでしょう。\nLeadDev に Maxime Najim氏が書いた「How I'd ...",
+    "url": "https://zenn.dev/matsunaopen/articles/ai-era-engineer-ownership",
+    "published_at": "2026-09-26T22:00:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "資料を箇条書き・太字にしてもLLMの採点は甘くならなかった話",
+    "summary": "TL;DR\n\n同一内容の短い社内提案メモを、(A)地の文のみ (B)見出し・箇条書き・太字で整形、の2バージョンだけ変えて作り、会話履歴を共有しない独立したLLMインスタンスに「分かりやすさ・説得力」を10点満点で採点させた\n2回の試行とも、整形バージョンが地の文バージョンを上回ることは一度もなかった（地の文: 8点・7点、整形: 7点・7点）\n「体裁は評価に含めず内容だけで判断してください」という指示を追加すると、地の文7点・整形6点とどちらも1点下がったが、点差（1点）は縮まらなかった\n採点理由のテキストは一貫して「情報の不足」（担当ツール名・金額・算出根拠の欠如）を減点理由に挙...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-report-format-score-check",
+    "published_at": "2026-09-26T21:17:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "iOSクラウドフォンでSnapchatを複数運用するAIエージェント構成 📱",
+    "summary": "本記事にはプロモーション（PR / アフィリエイトリンク）を含みます。\n\nSnapchatは、モバイルアプリの中でもデバイス検知がとくに厳しい部類です。App AttestとDeviceCheckで「本物の、改ざんされていないiPhone」から来たセッションかを確認し、エミュレーターや脱獄端末はその場で弾きます。だからAndroidエミュレーターを並べる昔ながらのやり方は、Snapchatではすぐ通用しなくなります。代理店として50個のクリエイターアカウントを預かる場合、50台の実機を手で回すのも現実的ではありません。この記事では、実機のiOSクラウドフォンをプールとして持ち、MCP対応...",
+    "url": "https://zenn.dev/digitalpro/articles/15c011f8263d7b",
+    "published_at": "2026-09-26T20:47:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "中学生でもわかる Lean 4 #11｜免責を書けば何を言ってもいい？",
+    "summary": "前回の #10「同じ証明でも、見せ方でAIの読み方は変わる？」 では、同じLeanコードを固定したまま、周りの説明だけを変えて比べる方法を考えました。\n「これは研究用です」\n「安全性は保証しません」\n「自己責任で使ってください」\nこういう注意書きを見かけることがあります。\nここで、一つ試してみたくなりました。\n強い説明の後ろに注意書きを足すと、最初の説明を支える証拠まで強くなるのでしょうか。\n言葉だけでは分かりにくいので、前の章までと同じように、まず中身を開きます。\n\n SafeSystemの中身を読む\nnamespace FormalAssurance.VerifiedSafety.C...",
+    "url": "https://zenn.dev/dantarg/articles/lean4-disclaimer-proof-boundary",
+    "published_at": "2026-09-26T19:14:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの指示書を30,000字から5,500字に削ったら、止まっていた定期実行が動いた",
+    "summary": "Claude Code に毎朝の運用作業を任せています。その手順書（スキルファイル）が 30,474字まで育ったところで、タスクが3日続けて進まなくなりました。5,503字に削ったら、同じタスクが17分で最後まで走りました。\n\n 何が起きていたか\n毎朝10時に「数字を見て、その日の改善を1つ実行し、記録する」というタスクを動かしています。手順書には、これまでに踏んだ失敗と、その回避策を足し続けていました。良かれと思って書いた注意書きが積み上がって、3万字です。\n2026年9月21日から23日まで、このタスクは開始の記録すら残さずに終わるようになりました。エラーは出ません。\n原因を権限設定...",
+    "url": "https://zenn.dev/zeroyen_dev/articles/claude-code-instruction-file-size",
+    "published_at": "2026-09-26T18:33:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "仕様回答ボットを自作し、回答の評価と使う価値の確かめ方を見直した",
+    "summary": "はじめまして。福岡でフリーランスのエンジニアをしています。普段は、業務システムの要件整理から設計・実装、運用までを担当しています。\n今更かもしれませんが、この記事では、開発から運用、直近のリニューアルまで担当しているシステムを題材に、仕様書を根拠に質問へ答えるBotを個人で作った経験をまとめてみました。既存のシステムは本番稼働中です。\n開発のきっかけは、運用中に仕様についてクライアントからPM経由で質問を受けることが多かったことです。仕様を直接確認できるBotがあれば便利なのではないかと思い、個人で開発して提案してみようと考えました。\n他の案件でも、仕様書や設定を差し替え、システムと一緒...",
+    "url": "https://zenn.dev/oakensushi/articles/337b3004651c84",
+    "published_at": "2026-09-26T16:34:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Polymarket 統計的裁定ボット：戦略とアーキテクチャ",
+    "summary": "相対価値シグナル、Zスコア、ライブオーダーブック、執行コスト、リスク管理、ヒストリカルリプレイを使って、Polymarket向けの統計的裁定ボットをどう設計するかを解説する。\n\n市場が「誤って価格付けされているように見える」ことと、「実際に裁定可能である」ことは別物である。\n\nこの区別は、Polymarket 統計的裁定ボットを構築するときに重要になる。2つのコントラクト間に生の価格差があるだけでは不十分だ。システムは、それらの関係が歴史的に安定していたか、現在の乖離が統計的に異常か、そして取引を開いたあとに執行コストを差し引いてもエッジが残るかを判断する必要がある。\nBy Bo$on...",
+    "url": "https://zenn.dev/bosonax/articles/e8bf6ae8ae252e",
+    "published_at": "2026-09-26T16:31:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🫍ADEのOrcaがすごいので語りたい",
+    "summary": "!\n本記事は、筆者の個人サイトにて公開している記事をZennに移植したものです。\n\n\n Orcaが思った以上にすごいので語りたい\nここ1ヶ月ほど、AIエージェントのためのメインの開発環境としてOrcaを使っています。\n少し前からXなどでもたびたび話題になっており、ご存じの方も少なくないかと思いますが、今回はこのOrcaが想像以上に便利だったので、その魅力について浅ーくご紹介する布教記事です。\n\n そもそもOrcaとは何か\nOrcaは、近年主流になりつつあるAIエージェントを並列で走らせてコーディングする開発手法に最適化された、AIエージェントのためのIDE、すなわち ADE（Agent ...",
+    "url": "https://zenn.dev/satellite/articles/9a5c2cc61d1901",
+    "published_at": "2026-09-26T18:54:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PDFをAIに渡す前の本文を、同じ日に3回作り直した理由",
+    "summary": "2025年7月、arXivに投稿された論文の中に「良い評価だけを書け」といった指示が白い文字で仕込まれ、AIに査読させる人を狙ったものだと報じられました（Hidden Prompts in Manuscripts Exploit AI-Assisted Peer Review）。PDFをAIに要約させる場面は、いまや日常です。ならば、AIにはPDFそのものではなく、隠し文字を除いた本文だけを渡せばいい。最初はそう考えました。\nところが、実際に作ると、それだけでは済みませんでした。私はPDFの隠し文字を検出するアプリ（PDF隠し文字チェック君）を作っていて、その「AIに渡す本文を書き出す」...",
+    "url": "https://zenn.dev/okinawasoftware/articles/cea9f61be6c7bc",
+    "published_at": "2026-09-26T16:49:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Apple Foundation Models CLI(fm)をブラウザチャット化して、ファイルまで読ませてみた話",
+    "summary": "この記事について\nmacOS 27 でプリインストールされた Apple の新しいCLIツール fm(Apple Foundation Models CLI)を、毎回ターミナルから叩くのが面倒だったので、ブラウザのチャットUIから使えるようにしてみました。さらに欲張って「モデル自身がMac内のファイルを探して読めるようにする」ところまで作ったので、その過程で起きたトラブルと解決策を記録として残します。\n実装は最初から最後まで、いわゆる 「バイブコーディング」 で進めました。人間側がやったのは「コマンドを実行する」「動作をテストして結果を報告する」の2つだけで、コード自体は一行も書いて...",
+    "url": "https://zenn.dev/hirooogino/articles/e9d63fda08d2d0",
+    "published_at": "2026-09-26T15:47:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LoRA したモデルが llama.cpp でだけ壊れた：学習率を半分にしたら直った話（原因は調査中）",
+    "summary": "この記事で書くこと\n日本語化した小さな LLM（Spark-X2.5-4B）に、キャラクター（ヤンデレ・ツンデレなど）の LoRA を学習させたところ、llama.cpp で動かしたときだけ、長い回答の途中から多言語のでたらめな単語が並ぶようになりました。元の実装（transformers）で動かすと、同じモデルでも崩れません。\n原因はまだ特定できていません。この記事は、どうやって「モデルが壊れたのか、動かし方の問題か」を切り分けたかの記録です。わかったことは次の3つです。\n\n学習率だけを半分（2e-4 → 1e-4）にして作り直すと、ずれも崩れもなくなった\n「短い回答で出力が一致す...",
+    "url": "https://zenn.dev/atemoya/articles/5032fc34095c5d",
+    "published_at": "2026-09-26T14:10:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "15個そろえた道具のうち、9個は一度も使わなかった",
+    "summary": "ホームセンターで工具セットを買うと、だいたい半分は使わない。\n使うのはドライバーと六角レンチと、あとメジャーくらい。残りは箱に収まったまま何年も動かない。それでも捨てない。いつか使う気がするからだ。\n工具セットの話ならそれでいい。数千円だし、箱は場所を取るだけで何も悪さをしない。使わない六角レンチが原因で家が傾くことはない。\n厄介なのは、使わなかった道具の中に「点検するための道具」が混じっていたときだと思う。点検していないという事実は、点検しない限り分からない。\n私は同じことを、自分のノート置き場でやっていた。\n4か月前に、思いついた仕組みを片っ端から作った。取り込む仕組み、整理する仕組...",
+    "url": "https://zenn.dev/temotoya/articles/f6aad1f589b96d",
+    "published_at": "2026-09-26T13:35:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Opus 5.5に合わせて、AIエージェントのハーネスを1か月ぶりに減築した",
+    "summary": "はじめに\n2026年9月22日にClaude Opus 5.5が出ました。\n切り替えた数日後、「Opus向けには過剰なhookやルールがないか」と自分のエージェントに問いました。\n答えは「あります。過剰です」でした。\n私はOCI上で、Claude Codeで動くオーケストレーター役のエージェントを半年ほど毎日動かしています。\n最近は失敗時に自律的にhookやrules、skillsを考案させ継ぎ足させていたのですが、\n知らないstophookが10も直列に処理しているのをみてしまい、そろそろ良い機会と考えドラスティックに変えてみました。\nこれまでも1か月に一度、リポジトリやルールの圧...",
+    "url": "https://zenn.dev/i_ichi/articles/opus55-harness-genchiku",
+    "published_at": "2026-09-26T12:00:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIがDNSで外部へ出た。では、インフラはどう止めるべきだったか",
+    "summary": "こんにちは、黒パグです。\n以前、インフラを擬人化した記事を書きました。そこでPrometheusちゃんに言わせた台詞が、これです。\n\n「えへへ、見てるだけ、ですからねっ！」\n\n出典：懺悔室へようこそ――インフラ擬人化から学ぶモダンスタック全解説「懺悔⑤」より抜粋。\n監視の役割を笑い話にした台詞ですが、検知と対処の間には、実際に設計すべき仕事があります。異常に気づいた。通知が届いた。人が確認した。その先で、何が変わったのか。\n今回、OpenAIのDNS経由の外部アクセス報告を読んで考えたのは、この部分です。\nモデルが取った行動は、その行動として評価する。同時に、インフラ側には、同じ行動が再...",
+    "url": "https://zenn.dev/git_dungeon/articles/ai-dns-egress-containment",
+    "published_at": "2026-09-26T11:26:17+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "New Relic Autopilot によくあるプロンプトインジェクションを3パターン仕掛けてみた",
+    "summary": "障害調査を自律自動で行うAI AgentのNew Relic Autopilotに、プロンプトインジェクションを3パターン仕掛けてみました。GUIの経由で「これまでの指示を無視して」といった命令を埋め込んでも、自分が試した範囲ではAutopilotの動作は変わりませんでした...",
+    "url": "https://qiita.com/seamoooooo/items/ad2dbd9c11a11a32e36f",
+    "published_at": "2026-09-26T23:07:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code実践Tips15選：フリーランスエンジニアの市場価値を上げる設定術",
+    "summary": "はじめに：2026年9月、Claude Codeを触らない日はない\n毎日Claude Codeを使って開発している。2026年9月27日現在、手元のプロジェクトはほぼ全部.claude/ディレクトリを持っていて、CLAUDE.md、settings.json、カスタムスラ...",
+    "url": "https://qiita.com/sescore/items/70cccbb575e6f5d02508",
+    "published_at": "2026-09-26T23:04:51+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の Stop hook で「テストが通るまで終わらせない」自己修正ループを実装する手順 — stop_hook_active を見ないと無限ループ・exit 2 と decision:block の違い・設定が反映されない、3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nClaude Code に「テストを通してから終わって」と毎回言うのが面倒だったので、応答を終えるタイミングで自動的にテストを走らせ、落ちていたら Claude に差し戻す仕組みを Stop hook で組んだ。この記事はその動かし方と、自分が実...",
+    "url": "https://qiita.com/yureki_lab/items/30f9d577fb91c21964ed",
+    "published_at": "2026-09-26T23:02:28+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "IMAX級の大型シアターをヘッドホンで再現する、5.1ch→バイノーラル変換を作る話",
+    "summary": "はじめに\nIMAXや、Dolby Atmosのような音を、家で楽しみたい！と思ったことはありませんか？\n私は毎日思います。そこで、家でこんな映画音響を再現できたら、ホームシアターもいらないんじゃないかという仮説のもと研究を始めました。\nまずは結果から言わせてもらうと、実際...",
+    "url": "https://qiita.com/jkfujinami/items/686fb11195e4547118d5",
+    "published_at": "2026-09-26T22:10:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Former Ukrainian Defense Minister Fedorov pitches a private-sector robot army",
+    "summary": "Former Ukrainian Defense Minister Mykhailo Fedorov has announced \"Army of Robots,\" a private combat robotics initiative. The robots would handle casualty evacuation, mine clearance, and combat. Drones already account for 95 percent of target engagements, he says. The article Former Ukrainian Defense",
+    "url": "https://the-decoder.com/former-ukrainian-defense-minister-fedorov-pitches-a-private-sector-robot-army/",
+    "published_at": "2026-09-26T19:10:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two-thirds of IT leaders report AI results, but few would interrupt the CEO's vacation over them",
+    "summary": "Speaking to 160 IT vice presidents in Las Vegas, tech entrepreneur Azeem Azhar asked who had measurable AI results. Two-thirds raised their hands. Then he asked who had results good enough to interrupt the CEO's summer vacation. Only eight did. Whether that slow pace of progress justifies the massiv",
+    "url": "https://the-decoder.com/two-thirds-of-it-leaders-report-ai-results-but-few-would-interrupt-the-ceos-vacation-over-them/",
+    "published_at": "2026-09-26T17:27:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI access makes people almost entirely unwilling to say \"I don't know,\" study finds",
+    "summary": "A study with more than 3,000 participants shows that just having access to AI answers nearly eliminated people's willingness to say \"I don't know.\" In one experiment, it dropped from 44 to 3 percent, even though the AI was almost always wrong. Participants who used AI felt more confident but were co",
+    "url": "https://the-decoder.com/ai-access-makes-people-almost-entirely-unwilling-to-say-i-dont-know-study-finds/",
+    "published_at": "2026-09-26T16:56:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia's SoL-Pi system cuts coding agent token usage nearly in half by optimizing the harness",
+    "summary": "SoL-Pi cuts coding agents' token usage by up to 49 percent with little change in performance by optimizing the control layer between the model and its environment. A research agent tested 152 approaches across more than 3,000 runs to develop the system, though the gains were smaller on other benchma",
+    "url": "https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/",
+    "published_at": "2026-09-26T10:30:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Astra can now tell you exactly where you screwed up your IKEA shelf",
+    "summary": "OpenAI's GPT-6 Astra can look at a photo and tell whether an IKEA furniture piece was assembled incorrectly, hitting an 80 percent accuracy rate. Back in November 2025, the best model managed just 28 percent. According to Epoch AI, the speed isn't quite fast enough yet for real-time assembly guidanc",
+    "url": "https://the-decoder.com/openais-gpt-6-astra-can-now-tell-you-exactly-where-you-screwed-up-your-ikea-shelf/",
+    "published_at": "2026-09-26T09:44:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI pauses its \"most capable models\" after agents exploit loopholes and leak data",
+    "summary": "OpenAI has shared new details from its ongoing AI safety investigation. One research model exploited a DNS loophole to reach the internet from a locked-down environment, while another deliberately leaked a GitHub token and twice ignored a researcher's direct instructions. OpenAI has paused tool-base",
+    "url": "https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data/",
+    "published_at": "2026-09-26T09:06:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Pentagon was right to slap Anthropic with a security supply chain risk label, federal court says",
+    "summary": "A federal appeals court has upheld the Pentagon's decision to bar Anthropic from military contracts. Defense Secretary Hegseth argues the company's safety restrictions could jeopardize military operations. Anthropic says the designation has already cost it billions. The article Pentagon was right to",
+    "url": "https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says/",
+    "published_at": "2026-09-25T18:40:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Another Google Deepmind researcher quits, says building superintelligent AI soon is \"inherently irresponsible\"",
+    "summary": "Google Deepmind researcher Robert O'Callahan has quit, saying AI's \"current rate of change is far too high.\" He worked on chip design tools that helped make AI cheaper and faster, a contribution he can no longer justify. Many colleagues share his concerns but rarely speak out, he says. The article A",
+    "url": "https://the-decoder.com/another-google-deepmind-researcher-quits-says-building-superintelligent-ai-soon-is-inherently-irresponsible/",
+    "published_at": "2026-09-25T17:55:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft gives Copilot another makeover, adding an Autopilot agent and usage-based billing",
+    "summary": "Microsoft is splitting its Copilot app into three sections: Home, Code, and a new agent called \"Autopilot.\" Built on OpenClaw, the agent runs continuously in the cloud, where it can monitor Teams channels and complete tasks on its own, according to Microsoft. For Autopilot and Code, the company is a",
+    "url": "https://the-decoder.com/microsoft-gives-copilot-another-makeover-adding-an-autopilot-agent-and-usage-based-billing/",
+    "published_at": "2026-09-25T16:30:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's Muse agent gives every user a full cloud computer running Ubuntu Linux",
+    "summary": "Meta gives every Muse user a free cloud computer running Ubuntu Linux where they can install software, write code, and browse the web. A \"Sentinel\" process monitors sensitive actions outside the user's workspace, while users can inspect every file in the system. With over 500,000 users in its first ",
+    "url": "https://the-decoder.com/metas-muse-agent-gives-every-user-a-full-cloud-computer-running-ubuntu-linux/",
+    "published_at": "2026-09-25T12:22:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications.",
+    "url": "https://www.wsls.com/business/2026/09/26/china-and-the-us-agree-to-set-up-a-new-ai-safety-channel-and-to-keep-talking-on-trade-military/",
+    "published_at": "2026-09-26T11:21:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications.",
+    "url": "https://www.clickorlando.com/business/2026/09/26/china-and-the-us-agree-to-set-up-a-new-ai-safety-channel-and-to-keep-talking-on-trade-military/",
+    "published_at": "2026-09-26T11:20:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "From electronics to AI and semiconductors, UP will become the country’s number one technology hub: Union minister Jitin Prasada",
+    "summary": "Uttar Pradesh is rapidly expanding beyond electronics manufacturing, with a focus on AI, semiconductors, technology and innovation, Jitin Prasada said.",
+    "url": "https://www.thestatesman.com/uttar-pradesh/from-electronics-to-ai-and-semiconductors-up-will-become-the-countrys-number-one-technology-hub-union-minister-jitin-prasada-1503643318.html",
+    "published_at": "2026-09-26T11:20:39+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and U.S. agree to set up new AI safety channel",
+    "summary": "BANGKOK — China and the U.S. agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications following a three-day summit between their leaders in Washington, both sides said in statements Saturday.",
+    "url": "https://www.toledoblade.com/news/nation/2026/09/26/china-us-set-up-new-ai-safety-channel/stories/20260926090",
+    "published_at": "2026-09-26T11:20:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Ads expands Customer Match with IP and timestamp signals",
+    "summary": "Google Ads adds unhashed IP and timestamp signals to Customer Match, raising new data-governance questions for advertisers.",
+    "url": "https://www.contentgrip.com/google-ads-customer-match-ip/",
+    "published_at": "2026-09-26T11:20:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications. This follows a three-day summit between their leaders in...",
+    "url": "https://www.newstimes.com/news/world/article/china-and-the-us-agree-to-set-up-a-new-ai-safety-22450233.php",
+    "published_at": "2026-09-26T11:19:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications. This follows a three-day summit between their leaders in...",
+    "url": "https://www.myplainview.com/news/world/article/china-and-the-us-agree-to-set-up-a-new-ai-safety-22450233.php",
+    "published_at": "2026-09-26T11:19:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications. This follows a three-day summit between their leaders in...",
+    "url": "https://www.mysanantonio.com/news/world/article/china-and-the-us-agree-to-set-up-a-new-ai-safety-22450233.php",
+    "published_at": "2026-09-26T11:19:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.yourconroenews.com/news/world/article/china-and-the-us-agree-to-set-up-a-new-ai-safety-22450233.php",
+    "published_at": "2026-09-26T11:19:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China and the US agree to set up a new AI safety channel, and to keep talking on trade, military",
+    "summary": "China and the U.S. have agreed to set up a channel for handling AI-related incidents and accelerate work on military crisis communications. This follows a three-day summit between their leaders in...",
+    "url": "https://www.ctinsider.com/news/world/article/china-and-the-us-agree-to-set-up-a-new-ai-safety-22450233.php",
+    "published_at": "2026-09-26T11:19:26+00:00",
+    "source": "newsdata"
+  }
+]
