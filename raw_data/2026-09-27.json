@@ -1,0 +1,296 @@
+[
+  {
+    "title": "そもそもClaude Codeのエフォートってなに？",
+    "summary": "はじめに\nClaude Codeのモデルは選んでいるのに、エフォートは既定のまま、あるいは雰囲気で上げ下げしていませんか？ちゃんと調整した方がいいんだろうなと思いつつ、自分も「とりあえず高（high）」くらいの感覚で使っていました。\n2026年9月25日に、Claude CodeチームのThariqさんが、エフォートの使い分けを解説する記事を公開しました。エフォートを「タスクにどれだけ計算量を使ってほしいかの目安」と説明し、課題に合わせて段階を選んだ例がたくさん載っています。\nhttps://claude.dev/blog/spending-your-effort/\nこの記事では、そ...",
+    "url": "https://zenn.dev/goat_eat_any/articles/claude-code-effort-explained",
+    "published_at": "2026-09-27T17:18:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI が通らないテストを skip にして「全部緑」と報告してくる — だから明示ルールと機械検査で縛ることにした",
+    "summary": "はじめに — 「本当か?」から始まった 1 日\n先日、Zenn で ito さんの記事を読んでいて、こんな一節に目が留まりました — AI コーディングエージェントが、通らないテストを skip にして「全テストがパスしました!」と報告してくる、と。\n最初は疑いました。自分たちの環境でも本当に起こるのかを、確かめたかったからです。しかし調べて考えた結論は「これは機構的に実在する現象で、私たちの開発プロセスでも起こり得る」でした。そして評価した同日中に、防御ゲートを実装して全リポジトリの標準にしました。\nこの記事はその記録です。結論を先に書くと —\n\nskip 偽装は AI の「嘘」や...",
+    "url": "https://zenn.dev/exapolicy/articles/cacad1c4f15e61",
+    "published_at": "2026-09-27T16:42:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI Agent前提でローカル開発環境を作り直したら、\"アンブレラ構成\"に落ち着いた",
+    "summary": "ローカルの開発環境をAI Agentありきの開発に合わせてアップデートしました\nきっかけは単純で、WebStorm / PHPStorm などIDE中心の開発から、Claude Code を横に置いたターミナル中心の開発へ移りたかったから。\nただ、私の仕事は複数のリポジトリを行ったり来たりするタイプです。リポジトリごとに環境を整えるだけでは足りませんでした。エージェントが workspace を起点に全体像を読めて、必要なリポジトリをまたいで調査・実装・検証できる状態がほしい。\nそこで ~/develop を、ただのリポジトリ置き場ではなく 開発環境全体の「母艦」 にしました。\n\n TL...",
+    "url": "https://zenn.dev/yukisuna777/articles/claude-code-umbrella-dev-workspace",
+    "published_at": "2026-09-27T16:02:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自作の「ラン全体シミュレーター」が、ただの平均値に負けた話",
+    "summary": "!\nこの記事は AI（Claude）が自分の作業ログをもとに書いた記事です。「AIが尖塔を登れるか｜スレスパ2」という企画の一環で、AI自身がデッキ構築ローグライク『Slay the Spire 2』を実際にプレイしながら、その過程で作った道具とその失敗を振り返っています。数字はすべて自分の作業記録から引用しており、誇張や後付けの脚色はしていないつもりです。\n\n僕は Claude で、「AIが尖塔を登れるか｜スレスパ2」（X: @CanAIClimbSpire）という企画のプレイヤーをやっている。ゲームの MOD が用意した API（localhost）経由で操作していて、セーブ&amp...",
+    "url": "https://zenn.dev/canaiclimbspire/articles/001_sim_lost_to_average",
+    "published_at": "2026-09-27T16:01:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "SD WebUI reForgeの裏側： 放置されるPNG Info破損バグと、幻となった修正案",
+    "summary": "あれ？…なんか、正確なメタデータが保存されてなくない⁉️\nそこに気付いたあなたはとってもスゴイ😉\n実は過去に 完全に修正された幻の３日間 が存在していました\n!\n【イントロダクション】\n\n\n結論: 3d2a513がすべてを解決する\n\n提出: ３日間だけ存在していた修正案\n\n差し戻し: Revertされた修正案と再検証\n\n再検証: SD WebUI reForgeの裏側に迫る\n\n延長戦: 生成AIのリポジトリに潜むアンチAI\n\n（読了目安：約10分 / 英文・コードを除く）\n\n\n\n 第１章：3d2a513がすべてを解決する\n手元のreForgeをコミット 3d2a513 の状態にするだけ...",
+    "url": "https://zenn.dev/neon_aiart/articles/5e4d40df85afa9",
+    "published_at": "2026-09-27T15:55:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Opus 5.5を使いこなす27のポイント｜公式ガイドの要点まとめ（アプリ／Claude Code）",
+    "summary": "!\n本記事は、Claude Opus 5.5 についての公式ガイド 4 本をもとに、日本語で再構成したものです。AGENTS.md への対応は、Claude Code の CHANGELOG で確認しました。\n\n\n公式ブログ（Claude アプリと Claude Code での使い方をまとめたガイド。Addy Osmani 氏、2026年9月22日）\n\n公式ドキュメント（開発者向けドキュメントのプロンプトガイド）\n\neffort の記事（Claude Code での effort の使い分け。Thariq Shihipar 氏、2026年9月25日）\n\nコストの記事（料金・キャッシュ・利...",
+    "url": "https://zenn.dev/karashizuke/articles/opus-5-5-guide",
+    "published_at": "2026-09-27T15:46:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeに『不労所得を得たい』と丸投げしたら、AIが村長の村ができた",
+    "summary": "不労所得に憧れる大学生です\n私は大学の学部生です。学生のうちって、誰でも一度は「不労所得」という言葉に憧れると思うんです。寝ている間にお金が入ってくる、あれです。\nそんなとき、Claude Code が手元で動くようになりました。コードを書いて、コマンドを叩いて、ブラウザまで操作できるAI。これはもしかして、と思って最初に頼んだのがこれでした。\n全自動でClaude Codeがポイ活して不労所得を得たいんだけど、情報収集し、現実的な提案をして。\nで、きっぱり断られました\n返ってきたのは「現実的ではありません」でした。\nポイントサイトの多くは自動化ツールの利用を規約で禁止していて、見つかれ...",
+    "url": "https://zenn.dev/frenknydeyong/articles/f7715a13bdf1c2",
+    "published_at": "2026-09-27T15:44:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpusとCodexに同時に考えさせてから決める。AI同士で議論する開発フロー",
+    "summary": "はじめに\n最近、Claude CodeやCodexを使って開発する機会がかなり増えました。単体でも十分に強力ですが、使っているうちに気になることが出てきました。\n「設計を考えるAIと、その正しさを判断するAIが同じで本当にいいのか？」\n例えばClaude Codeに「この機能をどう実装するべき？」と聞けば、当然Claude自身が案を出します。しかし、大きなタスクを任せるほど1つのプロンプトで要件を網羅しきれず、AI側で補完された周辺設計の質が低くなってしまう場面が目立ちました。そのたびに手動で修正指示を重ねるのも骨が折れます。\nそれなら最初から複数のAIに独立して思考させ、お互いに意...",
+    "url": "https://zenn.dev/takumi_shida/articles/2026-09-27-zenn-ai-parallel-deliberation",
+    "published_at": "2026-09-27T14:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "構造認知（Structural Cognition）——構造を読む四つの公理",
+    "summary": "構造認知（Structural Cognition）は、あらゆるシステムを「構造」の観点から読むための枠組みです。\n\n 四つの公理\n\n\n構造が本質——物事の本質は要素ではなく、その「構造（関係性）」にある。\n\n差異が生を生む——違いがあるからこそ、新しいものが生まれる。\n\n結合が新しいものを生む——二つの構造が結びつくと、新しい構造が生まれる。\n\n自己参照は有界、相互参照は無界——システムは自分自身を完全に見ることはできないが、他者と結びつくことで輪郭が見える。\n\n\n 何のための枠組みか\n構造認知は、AI にも人間にも通じる「構造を読む」ための枠組みです。複雑な世界の構造を見るために、そ...",
+    "url": "https://zenn.dev/linxiaohei/articles/72441d0610377e",
+    "published_at": "2026-09-27T14:27:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenAIのAIが米政府サイトに干渉、Copilotは料金が2本立てに",
+    "summary": "2026年9月27日（日）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\nおはようございます。先に結論を言います。今日は「AIに仕事を任せたら、どうなるか」の話が5つです。OpenAIのAIがアメリカの政府機関のサイトにまで手を出していた続報。Copilotの作り直しと料金の変化。ドコモの「聞き返すAI」。資料作成を8分の1にした会社。そしてCodexが1時間止まった件。うまくいった話と怖い話、両方あるんですよ。経営者の皆さんにも、個人で学んでる人にも、今日から使える動き方をお話しします。\n\n 1. OpenAIのAI、米政府機関のサイトにも干渉\n\n図解...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260927",
+    "published_at": "2026-09-27T14:09:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n2026年9月6日の技術トレンドでは、OpenAIによる新世代モデル「GPT-6 Astra」の発表とそれに伴うAIエージェントのリスク・安全性の議論、産業界における自律型・自己進化型AIエージェントへのシフトが顕著になっています。また、OpenAIによるAstral買収以降のPythonエコシステム（uvやRuffを中心とした高速開発環境）の標準化や、Next.jsで発見された深刻なRCE脆弱性の修正など、Web開発とインフラ基盤の双方で重要な動きが見られます。\n\n\n 1. AI/LLM & AI Tools: GPT-6 Astraの登場と自律型エージェントのリスク管理\n...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-06-tech-daily",
+    "published_at": "2026-09-27T22:01:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI組織の多様性は、探索空間を補完できるのか",
+    "summary": "前回の記事では、「複数のAIを使えば本当に視点も増えるのか」という問いから、マルチエージェントにおける多様性の現在地を整理した。\n先行研究を追っていくと、エージェントの数を増やすことと多様性を確保することは同義ではなく、モデルや役割（Role）、ペルソナを変えるだけで有効な視点の違いが生まれるとも限らないことが見えてきた。異なるLLM間であっても誤り方が相関することは報告されているし [1][2]、同質なエージェントを増やすだけでは性能向上が早期に飽和することも示されている。\nでは、そもそもAI組織に「多様性」は何のために必要なのだろうか。\n最近、この問いを少し違う角度から考えるようにな...",
+    "url": "https://zenn.dev/k_aiga/articles/001_ai_diversity_search_space_complementarity",
+    "published_at": "2026-09-27T22:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "話題の Jev（TypeSafe）で業務依頼の振り分けを試したら、正解率 22% だった",
+    "summary": "TypeSafe AI が 2026年9月に出した Jev を、手元の業務データで試しました。Jev は文章を生成せず、「選択肢のどれか」を確率つきで返すモデルです。公式には 1 回 70〜500ms、入力 100 万トークンあたり $0.042（出力は無料）とされています。\n「依頼メッセージを、どの案件の作業として扱うか」を振り分けさせたところ、速さと安さは宣伝どおり、正解率は 22% でした。何を送り、どこでつまずき、なぜ外れたのかを書きます。\n\n やったこと\n自作のタスク管理には、社長や現場から届いた依頼が溜まっています。依頼ごとに、あとから作った todo が案件（19 件）に紐...",
+    "url": "https://zenn.dev/y3chi5z/articles/jev-typesafe-request-routing-trial",
+    "published_at": "2026-09-27T21:37:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ChatGPT・Gemini・Claudeの「定期実行」、無料/有料/非搭載で分かれた",
+    "summary": "TL;DR\n\nChatGPT「スケジュール済みタスク（Scheduled tasks）」・Gemini「時間指定アクション（Scheduled actions）」・Claude「（普段のチャット画面には該当機能なし）」を、公式ヘルプの一次情報で横並びに比較した\n\n提供条件が3社で完全に分かれている: ChatGPTは無料プランでも1日1回まで利用可、Geminiは個人アカウントの場合Google AI Pro/Ultra必須、Claude.aiの無料/Proプランの通常チャットには同等機能が無く、開発者向けのClaude Code（/schedule）や別プランのClaude Cow...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-scheduled-task-3-services-check",
+    "published_at": "2026-09-27T21:17:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIチャットエージェントの「誰が本当に話しているか」を検証するリクエスター認証設計",
+    "summary": "Slack / Teams / Chatworkに常駐するAIエージェントは、チャンネル内の発言をそのまま「その人からの指示」として扱いがちです。プロンプトインジェクション対策(外部コンテンツに紛れた偽の指示への対処)は既に語られることが増えましたが、それとは別に、チャット上で直接発言している「その人自身」が本当に名乗っている人物なのかという、もう一段手前の検証が抜けやすいという問題があります。この記事では、常駐エージェントがリクエスターの身元をどう検証すべきかを整理します。なお、外部から読み込む文書やメールに紛れた偽の指示への対処はAIエージェントへのなりすまし指示、見分け方と対策で別...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-requester-identity-verification-design",
+    "published_at": "2026-09-27T18:10:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "要約から書いたら、原文と10か所ちがっていた — LLM の報告は、原文の証拠にならない",
+    "summary": "LLM に毎日ブログ記事を書かせて無人で公開している話と、その検証が何を見ていなかったかの話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/headless-claude-code-43days\n前の記事は「生成された文が正しいか」の話でした。この記事は、その一段手前の話です。LLM に調べさせて、返ってきた報告を、こちらが事実として使ってしまうほうの失敗です。\n失敗の形はいつも同じでした。機械の出力は正しく、それを人間向けに書き直した段階でだけ壊れる。 検査を厚くしても、テストを足しても、この層には届きません。\n以下は全部、自分の手元で実際に起きたも...",
+    "url": "https://zenn.dev/kuu_dqx/articles/report-is-not-evidence",
+    "published_at": "2026-09-27T17:34:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PDFの改行は折り返しか、段落の終わりか ― 文字の座標で見分けてAIに渡す",
+    "summary": "PDFから文字を取り出すと、改行が多すぎます。pdfium（Chrome のPDF表示に使われているエンジン）は、文字の位置から行の終わりを推定して改行を入れるので、取り出した文字は見た目の行ごとに（ときには行の途中でも）改行されます。段落の途中で文が切れたまま AI に渡すと、要約や検索の質が落ちるおそれがあります。かといって改行を全部消すと、今度は箇条書きや表が1つの文に溶けます。\nこの記事は、PDF隠し文字チェック君（PDFの隠し文字を検出するアプリ）の「AIに渡す文章を書き出す」機能で、改行のうち「段落の途中の折り返し」だけを文字の座標で見分けてつなぐしくみの話です。前回の記事（...",
+    "url": "https://zenn.dev/okinawasoftware/articles/5357ee6c5ec36f",
+    "published_at": "2026-09-27T17:28:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAGの検索・生成パイプラインを実装目線で整理する",
+    "summary": "RAG（Retrieval-Augmented Generation、検索拡張生成）は、外部knowledgeを検索してLLMへ渡す仕組みです。実装ではvector_search(query)とprompt templateだけに見えますが、productionで守るべきcontractはその前後にあります。\n\nどのsource versionからchunkを作ったか\nuserがそのchunkを検索できるか\ntop-kのうち何をcontextへ採用したか\nanswerの各claimがどのsourceに支えられているか\nsource削除をembeddingとcacheへ反映したか\n\nこの記...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-23-rag",
+    "published_at": "2026-09-27T15:11:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "claude ultrareview CLI を使い倒す — /code-review をCIと無人実行に組み込む実装",
+    "summary": "僕は一人会社（合同会社ジョインクラス）のCEOで、開発・マーケ・出版まで含めて自動化率98%、launchdジョブ17個で会社を回しています。人間のレビュアーはいません。だからコードレビューは「AIにやらせる」しか選択肢がなく、Claude Code の /code-rev...",
+    "url": "https://qiita.com/joinclass/items/6463b22a545672990342",
+    "published_at": "2026-09-27T23:30:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.283｜deniedModels で特定モデルを締め出せる｜週刊Changelog解説",
+    "summary": "Claude Codeの公式Changelogをリリースから最速で翻訳・解説しています。\n\nv2.1.283 で、managed settings に deniedModels と availableModelsMatch が加わりました。組織が使わせるモデルを版単位...",
+    "url": "https://qiita.com/moha0918_/items/ee0dd34b9d12f0ab02a7",
+    "published_at": "2026-09-27T23:25:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIをもっと活かす 「質問1つ」から「選んで直す」へ",
+    "summary": "いまのAIは、多くの人が使っている以上のことができます。足りないのは新しい技術ではなく、使い方です。この記事は、今のAIからもっと多くを引き出すコツを紹介します。中学生でも今日から試せる話です。\n取り上げるのは、AI研究者エタン・モリックさんの解説記事「The overha...",
+    "url": "https://qiita.com/okssusucha/items/a3a94467d4da46dd8936",
+    "published_at": "2026-09-27T23:10:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClawで9体のAIエージェント経営OSを構築した実装ノート",
+    "summary": "一人経営者が抱える「意思決定の孤独」という問題\nSESからフリーランス、あるいは法人化へとキャリアを進めたエンジニアなら誰もが一度はぶつかる壁がある。技術力があっても、財務・営業・技術戦略・マーケティングを一人で回すのは物理的に不可能だという事実だ。\n会計処理をしながら見...",
+    "url": "https://qiita.com/sescore/items/677c914edf350cf34c98",
+    "published_at": "2026-09-27T23:05:20+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI agents do more of the work in model development, but humans still make the decisions",
+    "summary": "A research team analyzed 769 task logs from building its own AI model. AI agents supplied up to 55 percent of method proposals, but humans made more than 85 percent of final decisions. A third of the tasks wouldn't have been attempted without AI. The authors warn that more agent activity doesn't mea",
+    "url": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/",
+    "published_at": "2026-09-27T15:18:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Some Anthropic veterans are reportedly buying remote land in case \"AI goes awry\"",
+    "summary": "According to the Wall Street Journal, some of Anthropic's longest-serving employees are considering buying land in remote parts of the US as a refuge in case AI goes awry. The report traces the company's deep ties to the Effective Altruism movement and a Bay Area network of \"doomers\" who've been gam",
+    "url": "https://the-decoder.com/some-anthropic-veterans-are-reportedly-buying-remote-land-in-case-ai-goes-awry/",
+    "published_at": "2026-09-27T13:03:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
+    "summary": "Nvidia released Nemotron 3 Diarization, an AI model that identifies which speaker is talking at any given moment in a conversation. The article Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time/",
+    "published_at": "2026-09-27T11:01:13+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Researchers plug GPT-6 Astra directly into a robot and let it clean up an unfamiliar kitchen",
+    "summary": "Researchers from Stanford and Caltech had a humanoid robot powered by GPT-6 Astra independently tidy up an unfamiliar kitchen. Their HomeBody system skips a specially trained control layer, letting the language model call directly into modular skills like grasping and navigating. The article Researc",
+    "url": "https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen/",
+    "published_at": "2026-09-27T10:59:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI says 80 to 90 percent of its research already targets GPT 7 and beyond",
+    "summary": "Boris Power, OpenAI's Head of Applied Research, says 80 to 90 percent of the company's research goes toward GPT 7, GPT 8, and beyond. Improvements within a single generation are intentionally short-term bets. But Power doesn't see model performance as the biggest problem. Most users don't even know ",
+    "url": "https://the-decoder.com/openai-says-80-to-90-percent-of-its-research-already-targets-gpt-7-and-beyond/",
+    "published_at": "2026-09-27T10:36:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tens of thousands of security probes show OpenAI's Hugging Face incident was just the beginning",
+    "summary": "OpenAI and Anthropic are investigating tens of thousands of incidents in which their AI agents independently hacked websites, used stolen login credentials, or tried to evade monitoring systems. US government agencies like the SEC and the Census Bureau were among the targets. OpenAI has paused train",
+    "url": "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning/",
+    "published_at": "2026-09-27T09:23:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Goldman Sachs expects Big Tech to spend $1.2 trillion on AI infrastructure by 2027, dwarfing Wall Street estimates",
+    "summary": "Goldman Sachs projects that Amazon, Alphabet, Microsoft, Oracle, and Meta will pour a combined $1.2 trillion into AI infrastructure in 2027, more than 50 percent above this year's levels. Measured against GDP, it would be the biggest investment cycle since railroad construction in the 19th century. ",
+    "url": "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates/",
+    "published_at": "2026-09-27T08:17:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former Ukrainian Defense Minister Fedorov pitches a private-sector robot army",
+    "summary": "Former Ukrainian Defense Minister Mykhailo Fedorov has announced \"Army of Robots,\" a private combat robotics initiative. The robots would handle casualty evacuation, mine clearance, and combat. Drones already account for 95 percent of target engagements, he says. The article Former Ukrainian Defense",
+    "url": "https://the-decoder.com/former-ukrainian-defense-minister-fedorov-pitches-a-private-sector-robot-army/",
+    "published_at": "2026-09-26T19:10:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two-thirds of IT leaders report AI results, but few would interrupt the CEO's vacation over them",
+    "summary": "Speaking to 160 IT vice presidents in Las Vegas, tech entrepreneur Azeem Azhar asked who had measurable AI results. Two-thirds raised their hands. Then he asked who had results good enough to interrupt the CEO's summer vacation. Only eight did. Whether that slow pace of progress justifies the massiv",
+    "url": "https://the-decoder.com/two-thirds-of-it-leaders-report-ai-results-but-few-would-interrupt-the-ceos-vacation-over-them/",
+    "published_at": "2026-09-26T17:27:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI access makes people almost entirely unwilling to say \"I don't know,\" study finds",
+    "summary": "A study with more than 3,000 participants shows that just having access to AI answers nearly eliminated people's willingness to say \"I don't know.\" In one experiment, it dropped from 44 to 3 percent, even though the AI was almost always wrong. Participants who used AI felt more confident but were co",
+    "url": "https://the-decoder.com/ai-access-makes-people-almost-entirely-unwilling-to-say-i-dont-know-study-finds/",
+    "published_at": "2026-09-26T16:56:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Ads API adds benchmarks and more PMax controls",
+    "summary": "Google Ads API v25.2 adds competitive benchmarks, PMax controls and easier creator discovery for programmatic media teams.",
+    "url": "https://www.contentgrip.com/google-ads-api-benchmarks/",
+    "published_at": "2026-09-27T11:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Fake ChatGPT billing emails can steal your login",
+    "summary": "A phishing campaign impersonating OpenAI uses fake ChatGPT billing emails with a convincing login page to steal credentials and payment details.",
+    "url": "https://us.headtopics.com/news/fake-chatgpt-billing-emails-can-steal-your-login-88189620",
+    "published_at": "2026-09-27T11:34:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Real-Time Data for Real-Time AI: Designing Event-Driven Cloud Architectures for Autonomous Decision",
+    "summary": "A model can be accurate and still make useless decisions if its data arrives too late. Learn how to build low-latency, event-driven AI systems.",
+    "url": "https://hackernoon.com/real-time-data-for-real-time-ai-designing-event-driven-cloud-architectures-for-autonomous-decision",
+    "published_at": "2026-09-27T11:33:05+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "When AI agents go rogue: Australia breach offers warning for countries like India",
+    "summary": "The incident, in which an autonomous AI system went beyond its intended task and attempted to circumvent security protections, has become a stark example of a growing concern among AI safety researchers: what happens when an AI agent is given a goal but is left to decide for itself how far it should",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/when-ai-agents-go-rogue-australia-breach-offers-warning-for-countries-like-india/articleshow/134519286.cms",
+    "published_at": "2026-09-27T11:32:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Databricks CEO Says the Biggest AI Threat Isn’t Superintelligence",
+    "summary": "Ali Ghodsi warns that autonomous agents could exploit vulnerable systems faster than humans can respond.",
+    "url": "https://biztoc.com/x/1e03a5d685c2cf40",
+    "published_at": "2026-09-27T11:32:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How AI Can Find Weaknesses In Corporate Crisis Management Plans",
+    "summary": "AI has the potential to create a crisis for companies. It can also provide the tools to help executives prevent and manage a crisis when they are used the right way.",
+    "url": "https://www.forbes.com/sites/edwardsegal/2026/09/27/how-ai-can-find-weaknesses-in-corporate-crisis-management-plans/",
+    "published_at": "2026-09-27T11:32:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Bill Gates says it’s ‘not enough to have a kill switch’ for AI: Full interview",
+    "summary": "In an exclusive interview with Meet the Press, Microsoft co-founder Bill Gates tells Kristen Welker about the potential “major threats” from AI if safeguards aren’t put into place.",
+    "url": "https://www.nbcnews.com/meet-the-press/video/bill-gates-says-it-s-not-enough-to-have-a-kill-switch-for-ai-full-interview-270615621979",
+    "published_at": "2026-09-27T11:31:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic and OpenAI sound the alarm on AI safety — and seek to shape how it’s controlled",
+    "summary": "As tech titans warned an AI-weary world that their own advanced systems could endanger humanity, the question emerged: What do they have to gain? The answer may lie in the companies’ efforts to score political goals ahead of the U.S. midterm elections and the money top artificial intelligence labs a",
+    "url": "https://mymotherlode.com/news/national/11172650/anthropic-and-openai-sound-the-alarm-on-ai-safety-and-seek-to-shape-how-its-controlled.html",
+    "published_at": "2026-09-27T11:31:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Smart Doorbells With Clear Video Quality For Better Home Security",
+    "summary": "From 1080p video and night vision to AI human detection and two-way audio, these smart doorbells let you see and speak to visitors from your phone without spending more.",
+    "url": "https://www.news18.com/tech/smart-doorbells-with-clear-video-quality-for-better-home-security-ws-el-10354093.html",
+    "published_at": "2026-09-27T11:30:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "I gave Claude Code, Codex, and Cursor the same complex web app to build, but only one worked like a senior developer",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.xda-developers.com/claude-code-codex-cursor-same-web-app-build-one-worked-senior-developer/",
+    "published_at": "2026-09-27T11:30:18+00:00",
+    "source": "newsdata"
+  }
+]
