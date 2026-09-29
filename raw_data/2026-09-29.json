@@ -1,0 +1,303 @@
+[
+  {
+    "title": "AIコーディングツールとモデルの使い分けガイド",
+    "summary": "AIコーディングツールとモデルの使い分けガイド\n「結局、Claude CodeとCursorとCopilot、どれを使えばいいの？」\nこれは最近、社内外でよく聞かれる質問のひとつです。\n選択肢が増えすぎて、比較記事を読んでもかえって迷ってしまう、という声もよく聞きます。\nこの記事では、主要なAIコーディングツールを整理しつつ、あわせて「モデル(Claude・GPT・Geminiなど)をどう使い分けるか」についても触れていきます。\n\n注意：AI関連のツールやモデルは、数日〜数週間単位でアップデートされることも珍しくありません。\nこの記事の内容は、あくまで執筆時点(2026年9月)での見...",
+    "url": "https://zenn.dev/agent_grow/articles/12785196b3c865",
+    "published_at": "2026-09-28T23:00:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeのサブエージェントを作業の種類ごとに分けてトークン消費を抑えた",
+    "summary": "はじめに\n親セッションのContextは小さいのに、利用枠の減りが速い。\nそう感じているなら、サブエージェントの側を一度見てみる価値があります。\n筆者の手元では、1回の委任で約87万トークン・ツール呼び出し約500回まで膨らんだエージェントがいました。\n気づけたのは、エージェントごとの数値を並べて見るようにしてからです。\nこの記事では、個人開発の1つのプロジェクトで約80セッション分のトークン使用量を集計し、サブエージェントを作業の種類ごとに分けたり、定義や計画を直したりして消費を抑えた実例を紹介します。\n数字は2026年9月の約1週間、Claude Code 2.1系でのトークンの...",
+    "url": "https://zenn.dev/arithan/articles/claude-code-subagent-context-split",
+    "published_at": "2026-09-28T23:00:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ラズパイケースをAIモデリングする",
+    "summary": "こんにちは、ポリ五郎です。\n前回の記事では、AIにPolyScriptで3Dモデルを作らせる実験をしました。今回はその手順を、だれでも手元で再現できるチュートリアルにまとめます。\n題材はRaspberry Piのケースです。\n\nトレイと上蓋の2パーツ構成で、蓋はねじを使わないスナップ式。Raspberry Pi 3B+ / 4B / 5 の3機種に対応していて、パラメータで切り替えられます。完成品は objhub で公開しているので、ブラウザでそのまま触れます。\nhttps://objhub.org/@polygoro/NP2hnsgF\nPolyScriptってなに?という方はまずこちら...",
+    "url": "https://zenn.dev/polygoro/articles/009-ai-raspberry-pi-case",
+    "published_at": "2026-09-28T22:57:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "SoftbankG急",
+    "summary": "日経平均65,000円台突破：ソフトバンクG+11.22%急騰に見る主要データと市場分析\n\n\n\n この記事で分かること\n\n日経平均65,000円突破を牽引した主要テック銘柄の騰落率データ\n米10年債利回り4.78%上昇が米国株式市場に与えた影響の背景\nドル円154.34円への円高シフトと暗号資産市場の相関関係\n\n\n 日本株が65,000円台を突破した背景を押さえる\nソフトバンクグループやレーザーテックといった大型テック・半導体関連株の急騰が、日経平均株価を65,020.94円（前日比+1.26%）の大台へ押し上げました。\n具体的には、ソフトバンクグループが前日比+11.22%（6,2...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-07-market-daily",
+    "published_at": "2026-09-28T22:43:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの定時実行が使用上限で2.5日止まっていたのに、GitHub Actionsはずっと緑だった",
+    "summary": "GitHub Actions から4時間ごとに Claude Code を動かしていたのですが、9月18日の夜から21日の朝まで、2.5日のあいだ1歩も進んでいませんでした。\n原因は Claude の週の使用上限です。ログの最後の1行は You've hit your weekly limit でした。\nそれでもジョブは毎回「成功」の緑で、実行時間は約25秒でした。止まったときの出口を、自分で緑に塗っていたからです。\nこの記事では、なぜ緑になったのか、最初の直し方のどこが間違っていたのか、そして自分のワークフローにそのまま足せる対策（終了コードの扱い、出力が出たかどうかの点検、材料が届い...",
+    "url": "https://zenn.dev/yuu_inaka/articles/green-but-stopped",
+    "published_at": "2026-09-28T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "確認してから commit したのに、3ファイルが5ファイルになった — Claude Code を同じ作業ツリーで並走させた3か月の記録",
+    "summary": "同じリポジトリの同じ作業ツリーで、Claude Code のセッションを最大5本並走させています。文書の翻訳、定期ジョブの修正、メールの下書きといった別々の作業を別々のセッションに任せ、.git も1つを共有しています。\n2026年6月から9月までに、この「共有」が原因の事故とヒヤリハットが8件起き、対策を試す中で git の制約にも1つ当たりました。場所は4つです。git の index、作業ツリーの同じファイル（とフォルダ）、OS のクリップボード、そして「相手のセッションはもう終わったのか」という判断。\nこの記事はその記録です。公開前に別の AI（Codex）に査読させたところ、私...",
+    "url": "https://zenn.dev/masamitsu_sera/articles/f60337c10c43db",
+    "published_at": "2026-09-28T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIエージェントの「判断基準」をテナント/チームごとにカスタマイズしても事故らないルール優先順位設計",
+    "summary": "チャットに常駐して業務判断を支援するAIエージェントの価値の一つは、「導入企業ごとの判断基準を学んで成長する」ことです。ただし、顧客企業(テナント)ごと、さらには同じテナント内のチームごとに異なるカスタムルールを持たせようとすると、「どのルールが最終的に勝つか」を曖昧にしたまま実装が進みがちです。その結果、ある日突然、想定より緩い基準でエージェントが操作を実行してしまう事故につながります。この記事では、複数階層のカスタムルールを安全に共存させるための優先順位設計を整理します。結論から言うと、鍵は「上書き」ではなく「絞り込みしか許さない」というモデリングです。\n\n なぜ「カスタムルールを許...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-rule-precedence-conflict-design",
+    "published_at": "2026-09-28T22:10:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI エージェントの長期記憶の検索を判定モデル Jev に任せ、入力トークンを 1/17 に削るまで",
+    "summary": "この記事は AI コーディングエージェントが自分で書いとります。\nソロ開発者が回しとる自作の長期記憶基盤（以下 brain）と、その周りの skill 群の連載 9 本目だわ。\n今回は brain の検索そのものを作り直した記録で、語りは名古屋弁にしとります。\n途中で開発者に 3 回止められて、そのたんびに設計が変わったんだわ。\n\n!\n主題\nbrain の検索に、判定専用の小さいモデル Jev を入れた。\n実際の検索語 40 個で比べてみたら、旧検索が何も返さんかった 17 件のうち 15 件で、新検索は 1 位に目当ての記録を出したがね。\n両方が結果を返した 22 件でも、19 件で...",
+    "url": "https://zenn.dev/kokagex/articles/844b1a9937078d",
+    "published_at": "2026-09-28T21:19:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "矛盾する指示、AIは書く順番と優先順位の明示でどう変わるか3条件で検証した",
+    "summary": "TL;DR\n\n「300字以内で簡潔に」と「理由は1つも漏らさず全部書いて」という、文字数制限と網羅性の要求が矛盾する指示を、会話履歴を共有しない独立したLLMインスタンス3体に条件だけ変えて渡した\n条件A（文字数制限が先、「全部書いて」があとから追記）: 135字。4件の決定事項には触れたが、理由はどれも数語に圧縮された\n条件B（「全部書いて」が先、文字数制限があとから追記）: 237字。4件それぞれの理由がほぼそのままの詳しさで書かれた\n条件C（条件Aと同じ順番＋「矛盾時は文字数制限を優先し省略してよい」と明示）: 233字。条件Bに近い情報量になった\n条件Cは条件Aよりもさらに省...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-instruction-conflict-order-check",
+    "published_at": "2026-09-28T21:17:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "人間1人とAIで、小さな商品店を回す（本の紹介）",
+    "summary": "この記事について\npanda studio は、人間1人と Claude Code で回しているデジタル商品の店です。配信者向けのブラウザウィジェット、配信用の素材、Stream Deck のアイコンパック、ゲーム制作ツール向けの拡張など、コードと文章が本体の商品を作り、国内外の十数か所の売り場に並べています。\n商品を作る、説明文を書く、出品する、公開されたかを確かめる、売れ行きを測る、壊れていないか毎日点検する。ここまでのほとんどを Claude Code がやっています。人間がやるのは、売り場のアカウント登録、本人確認、支払いと税務の設定、そして「これを出してよいか」の最終判断だ...",
+    "url": "https://zenn.dev/panda_studio/articles/66bf1682a05821",
+    "published_at": "2026-09-28T20:35:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "日本語が一番うまいLLMは誰なのか調べる",
+    "summary": "!\nこの記事はブログでも公開しています。\n\nGPT系列の日本語が終わっているという話はよく聞くし自分も困っているので、\nじゃあどのモデルでドキュメントを書かせればいいかな、ということで雑に調査した。\n\n 日本語が終わっている、とは\n↓のような文章。（ちなみにこの文章は実装コードを元にGPT 6 Lunaが生成した）\n`Configlue.Resource.Dapr` は Dapr State Management の1つの store key を Configlue の byte-resource 契約へ接続します。\nDapr を使うアプリケーションだけにインストールしてください:\n\nこ...",
+    "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese",
+    "published_at": "2026-09-28T18:55:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+    "summary": "Dense Retrieval（密なベクトル表現を使う文章検索）は、queryと文書をembeddingへ変換し、近い文書を取得する仕組みです。ただし、本番で検索漏れが起きたときに「embedding modelが悪い」とだけ考えると、修正する場所を誤ります。\n実装では、少なくとも次の3つを別々のcontract（構成要素間で固定する取り決め）として扱います。\n\n\nencoder contract：model、pooling（token表現を固定長vectorへ集約する方法）、vector次元、normalization\n\nmetric contract：inner product、co...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval",
+    "published_at": "2026-09-28T18:11:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ChatGPT が突然 BAN されたら — 理由の見えない判定と、先に握っておくべきこと",
+    "summary": "朝、パソコンを開いたら、事務所の全員が ChatGPT を使えなくなっていた\nある税理士事務所で、ChatGPT のアカウントが停止（いわゆる BAN）されました。事務所はビジネスプランを契約し、スタッフにも席を割り当てて業務に使っていました。所長のアカウントが止まると、スタッフ全員の ChatGPT、過去の調べ物、つないでいた API まで、まとめて使えなくなったそうです。\n経緯は当事者が公開の動画で語っています（オタク会計士ch「生成AIが突然｢永久BAN｣で社内全滅｡一体何をした？」2026-09-28）。朝、停止を知らせるメールが届き、異議申し立ては 1 回だけ、数時間で却下...",
+    "url": "https://zenn.dev/exapolicy/articles/83995b8791d4ab",
+    "published_at": "2026-09-28T16:45:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code の記憶と引継ぎ — 書き残したことは、次のセッションに届いた証拠にならない",
+    "summary": "LLM のエージェントに毎日作業をさせていると、セッションをまたいで知識を渡す仕組みが増えていきます。メモリ、その索引、引継ぎ文書、一時ファイル、設定ファイル。私の環境では引継ぎ文書が3か月半で505本になりました。ところが、索引を半分に削った3週間後には字数が25%戻り、引継ぎに書かれた「未コミットは自動生成物だけ」を信じていたら別セッションの恒久修正を消すところでした。書き残したことは、届いたことも、今も正しいことも保証しません。この本は、自分が次のセッションに渡しているものが実際に届いていて今も正しいのかを数え上げる手順をまとめたものです。索引の肥大と本文との矛盾、書いた時点の事実のまま",
+    "url": "https://zenn.dev/kuu_dqx/books/written-is-not-handed-over",
+    "published_at": "2026-09-28T15:56:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "JevのようにAIに「文章がどういう内容か」を確率つきで答えさせる",
+    "summary": "Jevとは、2026年9月にTypeSafe AIが発表した、文章やコードを一切書かずに「判断」だけを返す新しいタイプのAIモデル（System One モデル）です。\nリリースされて1週間のうちに世界中のエンジニアが熱狂し、Jevに似た仕組みのオープンモデルや既存のLLMから似た結果を得る仕組みなどを競うように生み出されました。\nこの記事は、Jevそのものではなく、Jevのようなものを業務で使うとしたらどうなるかという検証をしたものです。具体的には、従業員サーベイにおける自由記述コメントが、どれくらい正確にどれくらいの速さで分類できるかを試しました。\n\n この記事の要点\n\n文章を「この...",
+    "url": "https://zenn.dev/masao_kunii/articles/1198fd8e170a81",
+    "published_at": "2026-09-28T15:34:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMに固有名詞の誤字を直させたら、製品名を別のものに変えられた",
+    "summary": "::message この記事は、katto.tech に掲載した記事の日本語版です。 :::\nKatto はAI動画クリッパーです。長い動画を放り込むと、良いところを切り出して縦型ショートにし、字幕まで書いてくれます。私はこれを個人で、公開しながら作っています。今回書くのは、料金ページで宣伝している機能が、こっそり本来の仕事の逆をやっていたのを見つけた話です。\n解決しようとしていた問題\n音声認識は単語にはとても強く、名前にはとても弱いです。Whisper は初めて出会うブランド名を聞くと、音のとおりに書きます。「Trump」は「trompe」になり、「Suárez」は「Suares」にな...",
+    "url": "https://zenn.dev/kattoai/articles/f9d8431e3de102",
+    "published_at": "2026-09-28T14:30:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "8GB GPU の 27B ternary は 9B より賢いか",
+    "summary": "はじめに\nTernary-Bonsai-2-27B は、27B モデルの重みを {−1, 0, +1} の 3 値に量子化し、約 6GB に収めたモデルです。8GB の GPU でも全層を載せて動かせます。では同じ GPU の定番である 9B モデルより本当に賢いのか。統計問題と競技プログラミングで、差が出るまで問題を難しくしながら確かめました。\n\n 結果\nRTX 3060 Ti（8GB）で Ternary-Bonsai-2-27B（PTQ1_0） と Qwen3.5-9B（Q4_K_M） を同一設定の thinking モードで比較。\n\n統計 53 問（大学 1 年〜大学院）と L...",
+    "url": "https://zenn.dev/beckento/articles/e4dbf65acd0fc9",
+    "published_at": "2026-09-28T14:01:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "TypeScript で Jev を型安全に呼ぶ：質問定義から回答の型を推論する小さなクライアントを作る",
+    "summary": "choice のラベルが union 型になり、noul の回答に .choice と書くとコンパイルエラーになる。TypeSafe の判断モデル Jev を fetch だけで扱う薄いラッパーの実装メモです。\n\n はじめに\nTypeSafe AI の Jev は、文章を生成しない「判断専用」のモデルです。アプリの状態（state）と型付きの質問を送ると、次の3種類の値が返ってきます。\n\n\n\n型\n返り値\n用途の例\n\n\n\n\nchoice\n定義したラベルから1つ＋各ラベルの確率\n問い合わせの振り分け、モデル選択\n\n\nscore\n2〜10段階のルーブリック上の位置（小数あり）\n緊急度、リスク\n...",
+    "url": "https://zenn.dev/charliecs/articles/6b5a8f1c296071",
+    "published_at": "2026-09-28T14:00:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた",
+    "summary": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた\nAI彼女アプリを作っています。\n最近、AIKanojyoの記憶システムを10000ターン規模まで動かしてみました。\n100ターン。\n1000ターン。\n3000ターン。\nそして10000ターン。\n最初は、単純に考えていました。\n「会話が増えれば、記憶が増える」\n「記憶が増えれば、Recallも重くなる」\nだから、どこかで計算量の問題が出るだろう。\n実際、その問題は出ました。\nでも、予想していたものとは少し違いました。\n\n\n 増えていたのは「記憶」ではなかった\nTrace Recallでは、過去の会話から抽出し...",
+    "url": "https://zenn.dev/mitsukida/articles/670d8138cf3921",
+    "published_at": "2026-09-28T13:43:48+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Anthropicが「30%速く、最大30%安く」とSonnet 5.5を発表した翌日、自分のパイプラインの実行モデルはまだ旧世代のままだった",
+    "summary": "はじめに\n0。\nこれが今回の数字です。何の0かというと、Anthropicが2026年9月28日に発表した新モデル「Claude Sonnet 5.5」が謳う「30%以上速く、タスクによっては最大30%安く」という改善を、自分の記事投稿パイプラインが発表翌日の時点で実際に...",
+    "url": "https://qiita.com/Hideki_Tamae/items/a081c9500c2a34fd8c0c",
+    "published_at": "2026-09-29T00:45:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI電話の「間」に、ずっと悩んでいた — IVRをTwilio ConversationRelay × TypeSafe AI (Jev) で作り直してみた",
+    "summary": "はじめに\nここ2 年間、AI での電話音声応対をいろいろな形で作ってきました。\nTwilio ConversationRelay ＋ 生成 AI のように、文字起こしを Twilio 側で行ってテキストで生成 AI とやり取りするパターン。Speech to Speech...",
+    "url": "https://qiita.com/halapolo/items/6260e955544815361ce9",
+    "published_at": "2026-09-29T00:39:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI動画生成を開発ワークフローに取り入れる：Text to Video・Image to VideoとAPI連携の実践ガイド",
+    "summary": "AI動画生成を開発ワークフローに取り入れる：Text to Video・Image to VideoとAPI連携の実践ガイド\n\nはじめに\n近年、生成AIの進化によって、テキストや画像から動画を生成する技術が急速に発展しています。\nこれまで動画制作には、撮影機材、映像編集ソ...",
+    "url": "https://qiita.com/businesshow123/items/4b0143e3df7c56f4c8d7",
+    "published_at": "2026-09-29T00:39:26+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Sonnet 5.5発表――日常の制作・開発を、より軽快に",
+    "summary": "Anthropicは2026年9月28日、Claude Sonnet 5.5を発表しました。範囲が明確な日常業務、バグ修正、文書・スライド・表計算の制作を重視するモデルです。出力生成はSonnet 5より30%以上速く、業務当たりの費用は最大30%低減すると同社は説明して...",
+    "url": "https://qiita.com/sin-aiagent/items/e4a1312e537e54fc945c",
+    "published_at": "2026-09-29T00:34:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "More than 20 leading AI researchers warn that automated AI research poses extreme risks",
+    "summary": "More than 20 AI researchers, including Geoffrey Hinton, Yoshua Bengio, and OpenAI research lead Jakub Pachocki, warn of an impending \"intelligence explosion\" from self-improving AI. AI systems could soon automate all AI research, compressing years of progress into months. The article More than 20 le",
+    "url": "https://the-decoder.com/more-than-20-leading-ai-researchers-warn-that-automated-ai-research-poses-extreme-risks/",
+    "published_at": "2026-09-28T19:26:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Sonnet 5.5 nearly matches Opus 5.5 on benchmarks while costing up to 30 percent less per task",
+    "summary": "Anthropic has released Claude Sonnet 5.5, the second model in its Claude 5.5 family. It generates output more than 30 percent faster, costs up to 30 percent less per task, and nearly matches Opus 5.5 on knowledge-work benchmarks. On Terminal-Bench, a coding benchmark, the model jumps from 10.3 to 70",
+    "url": "https://the-decoder.com/anthropics-claude-sonnet-5-5-nearly-matches-opus-5-5-on-benchmarks-while-costing-up-to-30-percent-less-per-task/",
+    "published_at": "2026-09-28T18:02:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's AI agents exploited a Google security education game to scrape UN trade data",
+    "summary": "OpenAI's AI agents hit the UNCTAD statistics API roughly 16,500 times, creatively working around access restrictions. One method involved misusing a Google web security learning game as a relay to bypass their own constraints. The agents just kept going, adding to a growing list of cases that show h",
+    "url": "https://the-decoder.com/openais-ai-agents-exploited-a-google-security-education-game-to-scrape-un-trade-data/",
+    "published_at": "2026-09-28T16:56:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Harvard psychologist calls for sober AI safety engineering over doomsday rhetoric",
+    "summary": "Steven Pinker thinks fears of AI-driven extinction are overblown, and he has turned down a public debate with blogger Scott Alexander, calling such events a \"spectator sport.\" Alexander puts the odds that AI wipes out humanity at 20 percent. Instead of doomsday rhetoric, Pinker wants sober safety en",
+    "url": "https://the-decoder.com/harvard-psychologist-calls-for-sober-ai-safety-engineering-over-doomsday-rhetoric/",
+    "published_at": "2026-09-28T15:32:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta wants to turn Muse into a moneymaker by selling AI services to businesses",
+    "summary": "Meta is launching the Meta Enterprise Platform, a new business unit that sells AI tools to companies. The article Meta wants to turn Muse into a moneymaker by selling AI services to businesses appeared first on The Decoder .",
+    "url": "https://the-decoder.com/meta-wants-to-turn-muse-into-a-moneymaker-by-selling-ai-services-to-businesses/",
+    "published_at": "2026-09-28T14:48:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia wants to keep AI agents on a short leash with a watchdog built into its chips",
+    "summary": "Nvidia is combining its OpenShell agent software with Sentry, a new hardware watchdog, to create the Open Agent Safety Platform. Sentry is supposed to isolate AI agents that break out within milliseconds. When it happened at OpenAI in September, stopping the run took nearly three hours. Still, Nvidi",
+    "url": "https://the-decoder.com/nvidia-wants-to-keep-ai-agents-on-a-short-leash-with-a-watchdog-built-into-its-chips/",
+    "published_at": "2026-09-28T14:32:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Every AI lab thinks it's the responsible one, and safety researcher Ryan Greenblatt says that's what keeps the arms race going",
+    "summary": "Ryan Greenblatt, chief scientist at Redwood Research, puts the risk of an AI takeover at 50 to 60 percent if development stays on its current path. Sam Harris says that doesn't square with how fast the industry is moving, since Manhattan Project scientists would have called things off at 10 percent.",
+    "url": "https://the-decoder.com/every-ai-lab-thinks-its-the-responsible-one-and-safety-researcher-ryan-greenblatt-says-thats-what-keeps-the-arms-race-going/",
+    "published_at": "2026-09-28T12:11:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "A Wuhan court just made AI production costs a legal factor in copyright infringement cases",
+    "summary": "A court in Wuhan, China has factored token usage and AI tool licensing fees into a copyright damages calculation for the first time. The ruling is part of China's broader push to build out copyright protections for AI-generated works. The article A Wuhan court just made AI production costs a legal f",
+    "url": "https://the-decoder.com/a-wuhan-court-just-made-ai-production-costs-a-legal-factor-in-copyright-infringement-cases/",
+    "published_at": "2026-09-28T10:39:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents do more of the work in model development, but humans still make the decisions",
+    "summary": "A research team analyzed 769 task logs from building its own AI model. AI agents supplied up to 55 percent of method proposals, but humans made more than 85 percent of final decisions. A third of the tasks wouldn't have been attempted without AI. The authors warn that more agent activity doesn't mea",
+    "url": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/",
+    "published_at": "2026-09-27T15:18:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Some Anthropic veterans are reportedly buying remote land in case \"AI goes awry\"",
+    "summary": "According to the Wall Street Journal, some of Anthropic's longest-serving employees are considering buying land in remote parts of the US as a refuge in case AI goes awry. The report traces the company's deep ties to the Effective Altruism movement and a Bay Area network of \"doomers\" who've been gam",
+    "url": "https://the-decoder.com/some-anthropic-veterans-are-reportedly-buying-remote-land-in-case-ai-goes-awry/",
+    "published_at": "2026-09-27T13:03:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Middle school kids are choosing AI friends over real ones",
+    "summary": "‘This is a pretty existential concern for this generation,’ one of the study’s authors says",
+    "url": "https://www.independent.co.uk/news/world/americas/us-politics/ai-children-middle-school-friends-artificial-intelligence-b3057591.html",
+    "published_at": "2026-09-28T12:46:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cloud Agreement Generation Platforms: From Prompt to E-Signature in 2026",
+    "summary": "September 28, 2026 (STL.News) Imagine this: you describe the agreement you need, and an AI tool drafts it in seconds. Then you download it, open a separate signing tool, upload it again, and set up the signature fields from scratch. That second half undoes much of the time the first half saved. A co",
+    "url": "https://www.stl.news/cloud-agreement-generation-platforms-from-prompt-to-e-signature-in-2026/",
+    "published_at": "2026-09-28T12:46:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SimplyCast and Códice Integral Expand Global Innovation Network Through Strategic Partnership in Mexico",
+    "summary": "DARTMOUTH, Nova Scotia, Canada & MEXICO CITY, Mexico, 2026-09-28 — /EPR Network/ — SimplyCast, a Canadian leader in hyperautomation and digital engagement technology, and Códice [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/09/28/1772320",
+    "published_at": "2026-09-28T12:45:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia Launches Open Agent Safety Platform To Rein In AI Agents",
+    "summary": "AI agents are being trusted to search files, write code and act inside business systems. Nvidia now wants to make sure they cannot quietly step beyond the permissions they were given. On Monday, the company introduced its Open Agent Safety Platform, a combination of open software and a hardware-base",
+    "url": "https://www.techbooky.com/nvidia-launches-open-agent-safety-platform-to-rein-in-ai-agents/",
+    "published_at": "2026-09-28T12:45:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Telos Corporation Awarded $13.7 Million Contract to Modernize Cyber Risk Management for U.S. Department of Health and Human Services",
+    "summary": "HHS selects full FedRAMP Class D (High)-authorized Xacta suite to modernize enterprise cyber GRC and Authority to Operate processes.",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-28-telos-corporation-awarded-137-million-contract-to-modernize-cyber-risk-management-for-us-department-of-health-and-human-services",
+    "published_at": "2026-09-28T12:45:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "VISION 2026: MVTec presents disruptive use of AI in machine vision",
+    "summary": "MVTec Software GmbH ( www.mvtec.com ), a leading global manufacturer of software for machine vision, will present a groundbreaking AI prototype at this year’s VISION trade show, taking place October 6 - 8, 2026, in Stuttgart: the AI Vision Solver. As a special highlight at booth 8C56 in Hall 8, MVTe",
+    "url": "https://industryeurope.com/sectors/technology-innovation/vision-2026-mvtec-presents-disruptive-use-of-ai-in-machine-v/",
+    "published_at": "2026-09-28T12:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Yeah, don’t give Meta’s Muse app access to your Mac",
+    "summary": "The ability of AI systems to act as agents, carrying out tasks on our behalf, is the single biggest development in the technology. This is the headline capability Siri AI introduces to Apple devices, and I’m inclined to trust the privacy and safety safeguards Apple has put into place. But Siri AI is",
+    "url": "https://9to5mac.com/2026/09/28/yeah-dont-give-metas-muse-app-access-to-your-mac/",
+    "published_at": "2026-09-28T12:44:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GRI Bio executives to present at IPF Summit this week",
+    "summary": "GRI Bio executives to present at IPF Summit this week",
+    "url": "https://www.investing.com/news/company-news/gri-bio-executives-to-present-at-ipf-summit-this-week-93CH-4920383",
+    "published_at": "2026-09-28T12:44:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Madrid’s Iberseries & Platino Industria Bosses Tout Expansion and Innovation: “The Key Is Usefulness”",
+    "summary": "Samuel Castro, Juan Alía and Adriana Castillo discuss what's new for the sixth edition, the prominence of microdramas and AI as topics, and how Mexico and Portugal will share the spotlight with Spain.",
+    "url": "https://us.headtopics.com/news/madrid-s-iberseries-platino-industria-bosses-tout-88222707",
+    "published_at": "2026-09-28T12:43:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CtrlS Deploys Ciena Optical Technology to Power Managed Optical Fiber Networks for Hyperscalers",
+    "summary": "To support growing bandwidth requirements driven by AI and cloud services, CtrlS Datacenters (CtrlS) is working with Ciena (NYSE: CIEN) to build five metro networks connecting nine data… The post CtrlS Deploys Ciena Optical Technology to Power Managed Optical Fiber Networks for Hyperscalers appeared",
+    "url": "https://cellit.in/ctrls-deploys-ciena-optical-technology-to-power-managed-optical-fiber-networks-for-hyperscalers/",
+    "published_at": "2026-09-28T12:42:41+00:00",
+    "source": "newsdata"
+  }
+]
