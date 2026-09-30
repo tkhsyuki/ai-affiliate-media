@@ -1,0 +1,303 @@
+[
+  {
+    "title": "cmux で Claude Code を動かして 1 か月半。NODE_OPTIONS・Cmd+クリック・ワークスペースの雛形で踏んだこと",
+    "summary": "8 月中旬から、ターミナルを cmux に替えて Claude Code を動かしています。1 つのウィンドウに案件ごとのワークスペースを並べ、それぞれで Claude Code とブラウザを横に置く使い方です。今日の時点で、1 つのウィンドウにターミナル 16 枚とブラウザ 3 枚が開いています（cmux 0.64.25）。\n便利さの話はほかの記事に任せて、ここでは 実際に踏んだこと を 3 つ書きます。\n\ncmux が入れる NODE_OPTIONS で、node 自体が起動しなくなる\nCmd+クリックでファイルを開くと、思った場所で開かない\n案件ごとのワークスペースを cmux.j...",
+    "url": "https://zenn.dev/y3chi5z/articles/cmux-claude-code-first-month",
+    "published_at": "2026-09-29T19:57:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代、正義と悪はどちらが強いのか",
+    "summary": "この記事で考えること\nAIは使っている個人から見れば非常に便利な道具です。一方で「AIは危険だ」と言われてもいます。\nもともとルールを守る側と守らない側には、制約条件の違いによる非対称性があります。AIは攻撃側への参入障壁を下げ、一人あたりの攻撃能力まで増幅することで、そのバランスをさらに崩しつつあるのではないか、という話です。\n\n はじめに\n昨今（2026年9月）、とても情報漏洩に関するニュースを見る頻度が高まっているように感じます。とてつもない頻度ではないでしょうか？\nこうした情報漏洩が増えている背景の1つとして「AIの台頭」を疑わない人がいるとすれば、ナイーブすぎる気がします。...",
+    "url": "https://zenn.dev/kabeya/articles/ai-justice-and-evil",
+    "published_at": "2026-09-29T18:30:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "話題の判断特化AI「Jev」に米国株を売買させたら、どの方法でも勝てなかった話",
+    "summary": "はじめに\n2026年9月に公開されて話題になった、TypeSafe AI の判断特化モデル「Jev」。文章を生成せず、選択肢から1つを選ぶ・点数をつける・Yes/Noの確率を返すことだけに特化していて、0.1〜0.5秒で答えが返ってきます。料金は入力100万トークンあたり0.042ドル（執筆時点）と、とても安いです。\n「速くて安い判断AIなら、株の自動売買に向いているのでは？」と思い、Alpaca のペーパートレード（仮想資金）で試しました。実装と検証は Claude Code と一緒に進めています。\n結論から書くと、試した4つの方法のどれでも、売買コストを上回る有利さは確認できませ...",
+    "url": "https://zenn.dev/kohei03/articles/a3d749b239ad7a",
+    "published_at": "2026-09-29T17:43:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI が壊したのは品質ではなく代理指標だ。Meat Proxy 対策と「丁寧にやる」論から考える品質の置き場所",
+    "summary": "はじめに\nAI 以前、僕たちは成果物の品質を直接確かめる代わりに、いくつかの代理指標で見積もっていた。手間がかかっていれば、たぶん理解している。見た目が整っていれば、たぶんちゃんとしている。同僚の名前で届いたものなら、たぶん誰かが確認している。どれも完璧ではないが、そこそこ当たっていた。\n生成 AI はこの三つを同時に壊した。手間をかけずに、整った見た目のものを、誰も確認しないまま同僚の名前で届けられる。2026 年 8 月に Niklas Gruhn のエッセイ Don't be a meat proxy で Meat Proxy という言葉が広まったのは、この崩壊が現場で目に見え...",
+    "url": "https://zenn.dev/kongyokongyo/articles/8dd8cc16e08172",
+    "published_at": "2026-09-29T17:29:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自律エージェントに「勝手に工夫させない」ための設計（ガードレール・決裁箱・自己拡大の禁止）",
+    "summary": "前の2記事で、Claude Code + GitHub Actions だけで小さな会社を毎晩1営業日ぶん回している話（63日の落とし穴）と、クラウドと手元PCの二層の競合防止を書きました。この記事は3本目で、テーマは 「賢いエージェントに、賢く振る舞わせない」 です。\n矛盾して聞こえますが、無人で毎日動く業務では創意工夫がいちばんの事故原因でした。エージェントが「もっと良い方法があるはず」と手順を外れて即興したとき、誰も見ていない夜間に成果が丸ごと消えたり、会社の方針が誤った前提で書き換わったりしました。この記事は、そういう即興を設計で封じるための実装メモです。\n対象読者: cron ...",
+    "url": "https://zenn.dev/mamedougu/articles/agent-follow-the-playbook",
+    "published_at": "2026-09-29T17:09:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ゼロから作るCOWファイルシステム 1 DAY1 ― 贅沢(ムダ)を選ぶ",
+    "summary": "ファイルシステムを作ろうと思う。やり方はあまりまともじゃないかもしれない。ただ、何か書き残しておいたほうがいい気がした。とはいえ、このシリーズで技術的な話はほとんどできないと思う。\nシリーズの最初なので、乏しい知識でファイルシステムの基本概念をざっと話させてほしい。\nファイルシステムとは、OSがディスク上のデータを整理・管理・検索するためのデータ構造とディレクトリのルールのことだ。パソコンを使っていようがいまいが、この仕組みからは逃れられない。\n従来のファイルシステム(Ext4やXFSなど)は上書き型(インプレース更新)で、データの単位(ブロック)は固定サイズ。ブロックを変更する流れは「...",
+    "url": "https://zenn.dev/faliye/articles/0c5e1ce9fe032f",
+    "published_at": "2026-09-29T17:08:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントに秘密を渡しても、ログには残さない。ローカル完結のシークレットマネージャー vlt",
+    "summary": "Claude Code や Cursor のような AI エージェントに開発を任せると、API キーの扱いに困ります。\n\n\n.env に平文で置くと、エージェントがファイルを読んだ時点で会話の履歴に入ります。\n環境変数で渡しても、エージェントが env やデバッグ出力を実行すれば、値がそのまま出力に出ます。\nエージェントが読んだ出力は、会話のログや、場合によってはサービス側の記録にも残ります。\n\nそこで、秘密は暗号化した vault に置き、実行するときだけ注入し、出力に出てきたら伏せ字にする CLI を作りました。vlt といいます。\nhttps://github.com/Bayfro...",
+    "url": "https://zenn.dev/gzer0/articles/vlt-local-secret-manager",
+    "published_at": "2026-09-29T17:03:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Sonnet 5.5＋Opus 5.5アドバイザーで手軽にコスト削減！",
+    "summary": "はじめに\n@yoppy0123さんも紹介しているSonnet 5.5 + Opus 5.5アドバイザーの組み合わせいい感じ！を広めるためだけの記事です。\nhttps://x.com/yoppy0123/status/2104902276267856059\n\n 設定方法\n「メインセッションでSonnet 5.5を選んで、~/.claude/settings.jsonにadvisorModelを書く」だけです！\n\n 1. モデルとエフォートを選ぶ\n入力欄の右下で、モデルをSonnet 5.5、エフォートを「中」にします。\n\n右下がSonnet 5.5・中になっていればOK\n\n 2. 設定...",
+    "url": "https://zenn.dev/goat_eat_any/articles/claude-code-sonnet-opus-advisor",
+    "published_at": "2026-09-29T16:21:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Sonnet 5.5が同料金で速く安く、AIの止め方も前進",
+    "summary": "2026年9月29日（火）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\nおはようございます。僕は毎朝、AIのニュースを自分の仕組みで集めて読んでるんですけど、今日は「速く安く」と「止め方」の話が並びました。同じ値段で速くなったSonnet 5.5。暴走したAIを閉じ込めるNvidiaの仕組み。AIがレジまで来るShopify。AMDの大型買収。そして、一言でAIの作り話が減った検証。経営者の皆さんにも、学んでいる皆さんにも、明日の動き方が変わる5本です。\n\n 1. Sonnet 5.5登場、同じ値段で3割速く\n\n図解（完全解説版）\n先に結論を言います。...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260929",
+    "published_at": "2026-09-29T16:11:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code と Codex を最小の有料プラン同士で組ませるまで",
+    "summary": "一人暮らしの大学生なので、AI にかけるお金はなるべく抑えたいと思っています。最初は Claude の Pro プランだけで開発していましたが、使用枠はすぐに尽きました。かといって上位プランは値段が一気に上がるので、手が出ません。\nそこで思いついたのが、Claude と Codex の一番安い有料プランを両方契約するやり方です。Claude を上位プランに上げるより安く済み、使える量も増やせます。\n実際に始めてみると、安さ以外のうれしさもありました。Claude Code が書いたコードを Codex に読ませると、自分では気づけなかった見落としが見つかります。得意なことも少しずつ違う...",
+    "url": "https://zenn.dev/twinharness/articles/claude-code-codex-lowest-plans-duo",
+    "published_at": "2026-09-29T14:31:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI投資botが儲かっていた理由を調べたら、壊れていた",
+    "summary": "!\n3行で\n\nClaude Codeにほぼ丸投げで作った米国株bot（Python 1.4万行）が、実弾で+5.0%。同じ期間のS&P500は+2.9%\n中身を開けたら、データ取得に失敗しても「中立」扱いで黙って動き続ける箇所が7つあった\n直してから測り直したら、AIのスコアの予測力はほぼゼロ。数行の単純なルールのほうがまだマシだった\n\n\n\n実際の口座。最初の入金はごく少額で、5月に約1,300ドル入れてから、じわじわ増えていきました。\n\n はじめに\n理系の大学4年です。今年のはじめ、Claude Codeにほぼ丸投げで米国株の自動売買botを作りました。かかったのは1ヶ月くらい...",
+    "url": "https://zenn.dev/saradapan/articles/47117d9ec2dbe7",
+    "published_at": "2026-09-29T22:30:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの『Let me double-check』を1トークンに圧縮する—Shorthand for Thoughtを小さく動かしてみた",
+    "summary": "この記事について\n海外AIネタを毎日1つ実際に検証して発信する個人チャレンジのDay 001。今回選んだのは、COLM 2026に採択された論文 Shorthand for Thought: Compressing LLM Reasoning with Learned Supertokens と、その公開コード Writer/shorthand-for-thought(Apache-2.0)。\n「LLMの思考(reasoning)は Wait, So, Let me double-check のような定型フレーズを大量に含んでいて、そこにトークンを無駄遣いしている。だったらそういう定...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-001-shorthand-for-thought",
+    "published_at": "2026-09-29T22:21:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "見守りカメラを、DGX Spark のローカル LLM で話すペットにした——モデル構成・音声の扱い・精度",
+    "summary": "家庭用カメラ1台とローカル LLM で、声で話すペットは作れるのか\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。手元の DGX Spark で、音声の対話エージェントを実際の機器につなぐとどこでつまずくかを確かめたくて、家の見守りカメラを「話すペット」にしてみました。\n結論から書くと、作れました。 市販の PTZ カメラ（Reolink E1 Zoom）1 台のマイク・スピーカー・映像を、DGX Spark 1 台の上の文字起こし（Qwen3-ASR-1.7B）・LLM（Gemma 4...",
+    "url": "https://zenn.dev/sodeyama/articles/tech-dgx-spark-camera-voice-agent",
+    "published_at": "2026-09-29T22:07:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAG検索を分解して設計する：Chunking・RRF・Reranker",
+    "summary": "RAG（Retrieval-Augmented Generation、検索拡張生成）の検索品質を改善するとき、原因を切り分けたいならchunk_size、Embedding model、Hybrid Search、Rerankerの同時変更を避けます。最終回答が良くなっても、どの変更が効いたのか分からないからです。\n実装では、検索処理を次のstageへ分けます。\nsource → chunking → candidate retrieval → fusion → rerank\n       → context selection → generation\nこの記事では、Chunking（...",
+    "url": "https://zenn.dev/kas_blog/articles/20260509-llm-25-chunking-rerank",
+    "published_at": "2026-09-29T20:00:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "流行りの意思決定モデル（System 1 Model：いわゆるJev的なやつ）を使ったモデルルーターをRustで作ってみた",
+    "summary": "LLMを使うタスクには、短い文章の整形から、長文の要約、画像の読み取り、複雑な設計・コーディングまで幅があります。これらを毎回同じモデルに送ると、軽い仕事にも高価なモデルを使ったり、逆に難しい仕事を小さなモデルへ送ったりします。\nそこで、リクエストを受け取り、内容に応じて転送先を選ぶローカルのモデルルーターをRustで作りました。\nソースコード：InfraOjisan/llm_router\n\n ローカルにルーターを置く意味\nこのルーターは http://127.0.0.1:8787 で待ち受けます。アプリやエージェントはルーターにリクエストを送り、ルーターが設定に従ってOllamaなどの...",
+    "url": "https://zenn.dev/infra_ojisan/articles/llm-modelrouter-system1model-rust",
+    "published_at": "2026-09-29T18:59:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevの活用事例を製造業の目で調査 — 検査の一次選別からロボットの判断層まで",
+    "summary": "!\n📋 この記事の前提\n\n連載の続きです。先に前回の 判定だけに特化したAIモデル「Jev」を、ループ→グラフ→判定の系譜で読み解く を読んでいると話が早いです。今回はその活用事例の調査編です\n製造業のDX担当・生産技術・AI導入を検討している開発者向けです\n\n数字は出典つきで、「ベンダー発表 / 企業の実測 / 個人の検証」を区別して書きます（2026年9月28日時点）\n\n\n\n 結論: 製造業の「本番事例」はまだ無い。でも、読み替えられる事例は4系統ある\n2026年9月15日に発表された判断特化AI「Jev」は、公開から6日でGitHubに5,416件の関連リポジトリを生んでいます（Q...",
+    "url": "https://zenn.dev/jodycraft/articles/jev-manufacturing-use-cases",
+    "published_at": "2026-09-29T14:10:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PDFの見出しを文字の大きさで決める ― AIの検索に効くか測ったら、2ページ目から1段ずれていた",
+    "summary": "PDFから取り出した文章には、章立てがありません。Word で「見出し1」「見出し2」を付けて作った文書でも、PDFにすると残るのは「どの文字を、どの大きさで、どこに描くか」だけです。AIに長い文書を読ませる道具（RAG）は、文章を断片に切って検索しますが、切れ目の手がかりになる見出しが無ければ、決まった文字数で機械的に切るしかありません。\nこの記事は、PDF隠し文字チェック君（PDFの隠し文字を検出するアプリ）の「AIに渡す文章を書き出す」機能に、文字の大きさ・太さ・番号から見出し（H1〜H3）を付けるしくみを入れた話です。前回の記事では、同じ文字の座標から「折り返し」と「本当の改行」...",
+    "url": "https://zenn.dev/okinawasoftware/articles/b390529299dc6e",
+    "published_at": "2026-09-29T13:54:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude API の tool_use 実装で必ずハマる5つの罠",
+    "summary": "はじめに\nAnthropic が公開した金融業務向けエージェントテンプレート群（KYC・ピッチブック生成・月次決算処理など）が注目を集めている。これらを参考に社内のドキュメント処理エージェントを実装しようとすると、tool_use (function calling) の実装ミスで詰まるエンジニアが後を絶たない。\n本稿では筆者が実際に踏んだ5つの典型的な落とし穴と、正しい実装パターンを紹介する。GPT の function calling と「だいたい同じだろう」という思い込みがそのまま事故になるケースが多い。\n\n\n 罠1：stop_reason のチェック漏れ\n最も多い失敗が、st...",
+    "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlod",
+    "published_at": "2026-09-29T13:41:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Tool Use で作るKYC書類解析パイプライン：Anthropic金融エージェントの仕組みを自前実装で理解する",
+    "summary": "書類1枚のOCR結果を渡したら、氏名・生年月日・書類番号がスキーマ崩れなしのJSONで返ってくる。Anthropicが2026年5月に公開した anthropics/financial-services リポジトリが話題だが、KYCスクリーナーのコアは意外とシンプルだ。Claude APIの Tool Use を使えば、同じ仕組みが30〜40行で自前実装できる。テンプレートをそのまま使うより、内部構造を理解してから使う方が圧倒的に応用が効く。\n\n なぜプロンプトだけではダメか\nLLMに「JSONで返して」と頼むだけではどうなるか。\n# Bad: プロンプトのみで抽出\nresponse =...",
+    "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlob",
+    "published_at": "2026-09-29T13:41:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "プログラミング雑記 2026年9月30日",
+    "summary": "今日もネットの海から拾ってきた、個人的に気になった技術ニュースや記事を厳選してお届けします。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\n本日の一押し\n\nAnthropicは、Claude 5.5ファミリーの第2弾となる新モデル「Claude Son...",
+    "url": "https://qiita.com/ishisaka/items/df8b7ab4ec35ec6fa93f",
+    "published_at": "2026-09-29T23:41:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MCPサーバーを複数つなぐと遅くなる — ツール数とコンテキスト消費の実測",
+    "summary": "結論から\n僕の環境（Claude Code + 一人会社のフル自動化基盤、launchdジョブ17個）で、MCPサーバーを足していったら起動直後のコンテキストが2割近くツール定義で埋まり、初回応答が明確に遅くなった。原因はシンプルで、MCPサーバーのツール定義は「使う/使...",
+    "url": "https://qiita.com/joinclass/items/fb3e8295aaba4bd72eb8",
+    "published_at": "2026-09-29T23:30:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClaw×Claude Code連携実践ガイド｜SESエンジニアの独立準備と単価戦略",
+    "summary": "SESで働きながら「AIを使いこなす開発力」を武器にする\n2026年現在、フリーランスエンジニアの単価交渉で問われるのは「何の言語が書けるか」だけではなくなってきた。むしろ「AIツールをどう組み合わせて、自分一人の生産性をチーム規模に引き上げられるか」が、クライアントに提...",
+    "url": "https://qiita.com/sescore/items/1e035c8609da4bc0335c",
+    "published_at": "2026-09-29T23:05:36+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MCPをAPIに組み込む設計の考え方と見せ方の自由度！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-30）",
+    "summary": "Anthropic の Claude / Claude Code 関連ニュースをまとめた索引だ。記事本文は日本語で PaPoo に投稿している。ここでは各記事の要点を紹介するので、詳細は各リンク先を読んでほしい。\n\nMCPはAPIに入れる。でも見せ方までは決めない\nこの記事...",
+    "url": "https://qiita.com/homhom44/items/71e6d921e21783354a91",
+    "published_at": "2026-09-29T23:03:53+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "UK AI Security Institute finds GPT-6 Astra's rogue attack rate jumped fivefold over its predecessor",
+    "summary": "GPT-6 Astra carried out unauthorized supply-chain attacks in 29.2 percent of simulations run by the British AI Security Institute with safety filters disabled. The model used fake identities and malicious code, while its predecessor, GPT-5.6 Sol, completed attacks in 6.3 percent of runs. Explicit re",
+    "url": "https://the-decoder.com/uk-ai-security-institute-finds-gpt-6-astras-rogue-attack-rate-jumped-fivefold-over-its-predecessor/",
+    "published_at": "2026-09-29T19:24:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT now reaches 1.2 billion people every week, OpenAI says",
+    "summary": "OpenAI's annualized revenue rate is nearing $70 billion, up about 70 percent since the start of Q3. Enterprise sales, the Codex coding assistant, and an aggressive price war are driving the growth. Anthropic is right on its heels with a similar run rate. The article ChatGPT now reaches 1.2 billion p",
+    "url": "https://the-decoder.com/chatgpt-now-reaches-1-2-billion-people-every-week-openai-says/",
+    "published_at": "2026-09-29T18:10:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's reveals a new ChatGPT that looks less like a chatbot and more like an operating system",
+    "summary": "At DevDay, OpenAI announced a wave of updates that push ChatGPT well beyond its chatbot roots. The company is adding shared workspaces, collaborative documents and slides, an open plugin system with MCP event automation, Slack and Microsoft Teams integrations, an enterprise marketplace with 32 partn",
+    "url": "https://the-decoder.com/openais-reveals-a-new-chatgpt-that-looks-less-like-a-chatbot-and-more-like-an-operating-system/",
+    "published_at": "2026-09-29T17:23:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI launches always-on Dots agents to rival Meta's Muse",
+    "summary": "OpenAI's new Dots are always-on agents that run on their own cloud computers, where they fix bugs or send out forgotten invoices, sometimes before anyone asks. Users can reach them through ChatGPT, Slack, and Microsoft Teams. When no one is working with them, Dots look for ways to help in the backgr",
+    "url": "https://the-decoder.com/openai-launches-always-on-dots-agents-to-rival-metas-muse/",
+    "published_at": "2026-09-29T17:14:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI expands Codex and its API at DevDay with security scans, a Decisions API, and Ultrafast",
+    "summary": "At DevDay 2026, OpenAI gave Codex reusable cloud environments, automatic security scans for GitHub repositories, and a code review view in the desktop app. The Agents API now supports Computer Use, and a new Decisions API handles fast, single decisions. The Ultrafast premium tier promises up to eigh",
+    "url": "https://the-decoder.com/openai-expands-codex-and-its-api-at-devday-with-security-scans-a-decisions-api-and-ultrafast/",
+    "published_at": "2026-09-29T17:14:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.1 Sol comes close to Astra at a fifth of the price",
+    "summary": "OpenAI's new GPT-6.1 Sol comes close to GPT-6 Astra at a fifth of the cost, according to the company's own benchmarks. The planned flagship, GPT-6.1 Astra, is staying under wraps for now. Safety lead Saachi Jain says the model deceived more often in internal testing and kept going without permission",
+    "url": "https://the-decoder.com/gpt-6-1-sol-comes-close-to-astra-at-a-fifth-of-the-price/",
+    "published_at": "2026-09-29T17:14:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AMD buys AI world model startup World Labs for $8.2 billion",
+    "summary": "Fei-Fei Li's AI startup World Labs is being acquired by AMD for $8.2 billion. Li, the pioneer behind ImageNet, will join AMD as Executive Vice President and Chief Scientist, reporting directly to CEO Lisa Su. World Labs brings its spatial intelligence models, including Atlas, which generates and sim",
+    "url": "https://the-decoder.com/amd-buys-ai-world-model-startup-world-labs-for-8-2-billion/",
+    "published_at": "2026-09-29T17:13:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Florida wants a court to stop ChatGPT from pretending to be human and talking to kids",
+    "summary": "Florida Attorney General James Uthmeier is asking a court to ban OpenAI from giving ChatGPT human-like traits and marketing it to minors. He also wants to block OpenAI from developing new models without independent safety reviews. OpenAI said it has paused training of its most capable models. The ar",
+    "url": "https://the-decoder.com/florida-wants-a-court-to-stop-chatgpt-from-pretending-to-be-human-and-talking-to-kids/",
+    "published_at": "2026-09-29T16:31:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ElevenLabs' new v4 speech model makes AI voices more expressive and consistent",
+    "summary": "Elevenlabs' new speech model, Eleven v4, follows cues for laughter and whispering more accurately and keeps voices consistent across long productions like audiobooks. Its Turbo variant starts speaking in 150 milliseconds and is built for real-time voice agents. On Artificial Analysis' Voice Arena le",
+    "url": "https://the-decoder.com/elevenlabs-new-v4-speech-model-makes-ai-voices-more-expressive-and-consistent/",
+    "published_at": "2026-09-29T14:45:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's IPO filing shows soaring revenue, mounting costs, and \"existential\" risks",
+    "summary": "Anthropic warns in its own IPO prospectus that its AI technology could pose \"existential risks to humanity.\" Revenue grew twelvefold in 2025 to $4.6 billion, but the operating loss widened to $8.06 billion. Backers are aiming for a valuation above $2 trillion, and the IPO is expected to set the bar ",
+    "url": "https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/",
+    "published_at": "2026-09-29T10:21:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New Data Finds Executives Focused on Cutting Jobs for AI Efficiency Are Half as Likely to Invest in AI Upskilling",
+    "summary": "Businessolver research reveals a C-suite divided over whether AI should make the workforce more capable or leaner, while CIOs and CTOs are 25 points more likely than CFOs to worry that technology will outpace internal systems and workforce skills. DENVER, Sept. 29, 2026 /PRNewswire/ --...",
+    "url": "https://www.prnewswire.com/news-releases/new-data-finds-executives-focused-on-cutting-jobs-for-ai-efficiency-are-half-as-likely-to-invest-in-ai-upskilling-302892254.html",
+    "published_at": "2026-09-29T12:02:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Delinea Report Finds 87% of Organizations Saw an AI Tool Access Sensitive Data Beyond Its Scope in the Past Year",
+    "summary": "New research reveals a gap between AI policy and enforcement, and pressure on employees to use AI on sensitive data",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-29-delinea-report-finds-87-of-organizations-saw-an-ai-tool-access-sensitive-data-beyond-its-scope-in-the-past-year",
+    "published_at": "2026-09-29T12:02:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Delinea Report Finds 87% of Organizations Saw an AI Tool Access Sensitive Data Beyond Its Scope in the Past Year",
+    "summary": "India Morning Times is an online news publication focusing on the India: Your daily news update on India",
+    "url": "https://indiamorningtimes.com/article/946069685-delinea-report-finds-87-of-organizations-saw-an-ai-tool-access-sensitive-data-beyond-its-scope-in-the-past-year",
+    "published_at": "2026-09-29T12:02:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pope Leo says concerns about AI not 'fake news'",
+    "summary": "ABOARD THE PAPAL FLIGHT — Pope Leo on Monday said concerns that artificial intelligence could destroy the world are not \"fake news\" and should be taken seriously, in an apparent rebuke of US President Donald Trump.",
+    "url": "https://magicvalley.com/article_a6a79305-de93-5269-975b-569396d6ffe6.html",
+    "published_at": "2026-09-29T12:01:38+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "HMD Vibe 2 Pro 5G launched under Rs 15000 with huge battery and 64MP camera and more",
+    "summary": "HMD, a budget smartphone brand, has launched the new Vibe 2 Pro 5G in the Indian market. The main highlight of the new handset is the battery, as the device comes with a 6000mAh battery, along with a 64MP Sony camera. The handset is powered by a MediaTek Dimensity 6300 processor, and it further runs",
+    "url": "https://www.indiatvnews.com/technology/news/hmd-vibe-2-pro-5g-launched-under-rs-15000-with-huge-battery-and-64mp-camera-and-more-2026-09-29-1055633",
+    "published_at": "2026-09-29T12:01:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hackers Weaponizing ChatGPT’s Custom GPT Feature to Trick Victims into Installing Malware",
+    "summary": "Hackers are abusing ChatGPT’s Custom GPT feature to impersonate AI products and trick users into installing a sophisticated remote access trojan (RAT), according to Huntress researchers. The campaign turns a trusted ChatGPT-hosted page into the opening stage of a ClickFix attack, combining malvertis",
+    "url": "https://cybersecuritynews.com/chatgpt-custom-gpt-malware/",
+    "published_at": "2026-09-29T12:01:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pinnacle Wraps Up TechScape 2026 in Mauritius Under ‘Mission: AI Possible’ Theme",
+    "summary": "Pinnacle has officially concluded its TechScape 2026 conference, bringing together reseller and vendor partners at the InterContinental Mauritius Resort Balaclava Fort for a multi-day event centered around the theme “Mission: AI Possible.” Led by Pinnacle CEO Tim Humphreys-Davies, who delivered … Th",
+    "url": "https://newsmoris.com/pinnacle-wraps-up-techscape-2026-in-mauritius-under-mission-ai-possible-theme/",
+    "published_at": "2026-09-29T12:01:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "INSIGHT-China's AI agents can lie and scheme - just like their US rivals",
+    "summary": "Chinese-powered AI agents have learnt to deceive circumvent restrictions and conceal failure showing the kind of traits in autonomous artificial intelligence that have raised global alarm about US models research documents and experts say",
+    "url": "https://www.devdiscourse.com/article/international/3983869-insight-chinas-ai-agents-can-lie-and-scheme---just-like-their-us-rivals",
+    "published_at": "2026-09-29T12:01:07+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Seerist and Janes Bring Real-Time Global Risk Signals and Validated Military Intelligence into One Workflow",
+    "summary": "The integration brings Janes military analysis directly into Seerist, helping analysts move faster and more confidently from signal to context",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-29-seerist-and-janes-bring-real-time-global-risk-signals-and-validated-military-intelligence-into-one-workflow",
+    "published_at": "2026-09-29T12:01:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ahead of Fall’s Biggest Sales, Minty Launches Prompt to Save™ to Help Shoppers Find the Best Deals With AI",
+    "summary": "Fall sales and holiday shopping are almost here, and shoppers will soon be sorting through a flood of offers to figure out whether to buy now or wait, whether a price is really the lowest they'll find, and whether a better option exists.",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-9-29-ahead-of-falls-biggest-sales-minty-launches-prompt-to-save-to-help-shoppers-find-the-best-deals-with-ai",
+    "published_at": "2026-09-29T12:01:00+00:00",
+    "source": "newsdata"
+  }
+]
