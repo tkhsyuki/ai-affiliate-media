@@ -1,0 +1,296 @@
+[
+  {
+    "title": "農業ロボット入門｜人手不足の農業現場を変えるスマート農業の最前線",
+    "summary": "!\nこの記事は自サイト 農業ロボット入門｜人手不足の農業現場を変えるスマート農業の最前線 の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n2026年2月、米国のCarbon Robotics社は「世界初の大規模植物モデル（Large Plant Model）」を発表しました。1億5,000万枚もの植物画像で学習させたAIモデルで、これまで数週間かかっていた新しい作物への対応を、iPadで数枚の写真を撮るだけの数分作業に短縮するといいます[1]。畑という「毎回条件が違う屋外環境」を相手にする農業は、フィジカルAIにとって建設現場と並ぶ最難関の一つですが、深刻...",
+    "url": "https://zenn.dev/maru1228/articles/physical-ai-agriculture-robots",
+    "published_at": "2026-09-30T23:14:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude in Chromeに対外業務を任せる線引き ─ 承認ゲートを設計ファイルで書く",
+    "summary": "なぜ「機能」より先に「線引き」を作ったか\n僕は一人で会社をやっていて、AIエージェントに部門業務を渡している。Claude in Chrome（Claudeがブラウザを操作する機能）を試したとき、最初に思ったのは「便利だ」ではなく「これは請求書を送れる」だった。\nブラウザは対外接点そのものだ。管理画面にログインできる、フォームを送信できる、DMを送れる。CLIのエージェントは「ファイルを書く」までしかやらないが、ブラウザのエージェントは取り消せない外向きの行為に一手で到達する。\nだから導入判断は「使うか/使わないか」ではない。どの操作までを無承認で許すかを、口約束ではなくファイルで決...",
+    "url": "https://zenn.dev/joinclass/articles/claude-in-chrome-20260927220041-4063",
+    "published_at": "2026-09-30T23:00:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI は皆が思ってる以上に図を描ける",
+    "summary": "「AI に図を描かせる」と聞いて、どんな絵を思い浮かべるでしょうか？\nたぶん多くの人の認識はこうです。簡単なフローチャートくらいなら出てくる。ただ、ちょっと込み入った構成図や、人に見せられる仕上がりのものは難しい。結局は自分で描き直す...\nでも、それは違います。この 1 年ほど AI に図を描かせ続けてきて、AI はもっと描けることを私は知っています。\nまずはこれを見てください。\n\n\n画像 1：EC サイトの AWS 構成図。Multi-AZ の VPC から、注文の非同期処理、監視、CI/CD までを 1 枚に収めています（図形 190 個）。\n\n\n\n画像 2：管理画面の画面設計書。...",
+    "url": "https://zenn.dev/gznnk/articles/0fde18ce12d17f",
+    "published_at": "2026-09-30T23:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Lean 4のエラーを「型・名前・ゴール・環境」の4種類に分けて切り分ける",
+    "summary": "Lean 4でエラーが出たとき、最初に知りたいのは「どこを確認すればよいか」です。Type mismatch、Unknown identifier、unsolved goals。どれも赤く表示されますが、最初に見る場所は違います。\nこの記事では、エラーを型・名前・ゴール・環境の4つの観点で切り分けます。症状から確認先を選び、小さな例で確かめ、詳しい解決手順へ進めるようにします。AIが生成したコードにも、自分で書いたコードにも使える手順です。\n\n まず4分類で確認先を決める\n\n\n\n分類の目安\n何が止まっているか\n典型症状と確認先\n\n\n\n\n型\n値や証明が必要な型に合わない\n\nType mis...",
+    "url": "https://zenn.dev/matsuteru/articles/lean4-error-troubleshooting",
+    "published_at": "2026-09-30T22:57:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Context Window に入っていても、LLMは読めているとは限らない",
+    "summary": "― 小型LLMから見える Effective Context、Crowding、Multi-turn Failure ―\n\n はじめに\nRaspberry Pi 5 上で、小型のローカルLLMを動かしている。今回の構成は次の通りである。ただし、本稿は多数のモデル・多数の試行による系統的評価ではない。Raspberry Pi上の Qwen2.5 3B で観察した、ごく少数の会話から出発した仮説整理である。したがって、ここで扱うのは「この失敗が常に起きる」という主張ではなく、「この失敗の見え方から、Context利用とMulti-turnのどの層が壊れうるか」を考えることである。後述する比較...",
+    "url": "https://zenn.dev/albatrosary/articles/200549889dca96",
+    "published_at": "2026-09-30T22:56:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【PS6不要論】新型PSP3の怪物スペックと「10万円超え」のリアル",
+    "summary": "💡 本記事について\n本記事は、AI・ハードウェア検証メディア「大人のAIアソビ」の技術サテライト版です。\nキャラクター（武将クマの「ぷれい」＆知的なAI美少女「ジェミー」）による軽快なオチ付き対話劇の全文は、👉 本館の元記事 にて公開しています。\n\n\n初代PlayStationからPS2、伝説の巨艦PSX、PSP、PS Vita、PS4、そしてPS5まで——。歴代プレイステーションをすべて発売日に揃えてきた古参ゲームファンに激震が走っています。\n「巨大で重たい据え置きのPS6はもうテレビの前に置くのも億劫だし、スルーでいいかな……」と考えていた矢先、突如として浮上したソニーの次世代携帯...",
+    "url": "https://zenn.dev/aiasoby/articles/asoby-20260918133000",
+    "published_at": "2026-09-30T22:06:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "公開ページと実データのずれをAIで自動検知する",
+    "summary": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、平野が動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n\n仕組みの全貌はこちらの設計記事にまとめています。\n\n公開しているページの内容と、手元で管理している source of truth データは、更新を人力で反映する運用にしている限りいつかは必ずずれる。厄...",
+    "url": "https://zenn.dev/liatris/articles/20261001-content-drift-check",
+    "published_at": "2026-09-30T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIを含むEngineering Organizationをどう設計するか",
+    "summary": "1. 「仕組みが必要」の、その先へ\n前回の記事では、AIを実際の設計や開発に深く使っていく中で感じてきた「かなり使える。しかし、そのまま信用してEngineeringを任せるには危うい」という問題について考えた。\nAIは、設計案の比較や論点整理、コードの実装、レビューなどで、ときに人間が気づかなかった問題まで発見する。一方で、前提を取り違えたり、長い対話の中で重要な条件を落としたり、誤った前提の上で整合的な説明を組み立てたりすることもある。\nそこで前回は、AIそのものが完全になることを待つのではなく、人間のEngineeringが長い時間をかけて行ってきたように、不確実な作業主体を仕...",
+    "url": "https://zenn.dev/k_aiga/articles/003_ai_engineering_organization_design",
+    "published_at": "2026-09-30T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで速くなった実装を、最大速度で回し続ける必要はあるのか",
+    "summary": "AIにコードを書かせるようになって、人間は何をどこまでレビューするのかという議論をよく見かけるようになりました。Xでもさまざまな意見が出ていて、それぞれの現場でのやり方が具体的に書かれています。\nただ、読んでいて1つ引っかかったことがあります。多くの意見が、AIが出してくる変更の量は今のまま、あるいはこれからもっと増えていく、という前提に立っているように見えたことです。量が決まっているならあとはどうレビューするかを工夫するしかありません。\nでは、その量は本当にそこまで必要なのでしょうか。現場が疲弊するほどの速さで、開発し続ける必要があるのでしょうか。\n\n AIで速くなった上流と下流\n開発...",
+    "url": "https://zenn.dev/matsunaopen/articles/product-development-speed-limit",
+    "published_at": "2026-09-30T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI鑑識学：文章の観測・解釈・工程帰属を分ける方法",
+    "summary": "AI鑑識学の現時点の方法を公開します。文章のどこに何があるか、その特徴が本文で何をしているか、そこから制作工程について何が言えるか。この三段階を、引用と確認範囲を付けて記録する方法です。\n読みやすさの点検や推敲にも使える観点ですが、読みやすさ、内容の正しさ、AI使用の有無はそれぞれ別の問いです。本文を整える前に、まず原文へ戻れる所見を作ります。\n今回は理論本体と観察規約の発表です。独立した識別精度を実証したという発表ではありません。後半には、合成例、検証設計、試用版の29項目を載せています。\n黒パグ／2026年10月1日。公開本体整理稿 r1。\n\n 要旨\nAIを含む執筆工程について調べる...",
+    "url": "https://zenn.dev/git_dungeon/articles/ai-forensics-observation-method",
+    "published_at": "2026-09-30T21:39:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMに任せると改善案を10個書く。だからコードで3個に縛った",
+    "summary": "はじめに\nAIに「お店の改善案を出して」と頼むと、だいたい10個くらい書いてきます。\n「3個まででお願いします」とプロンプトに書いても、それが守られる保証はありません。当時のコードには、こんなコメントが残っていました。\n/**\n * 上限を強制しないとLLMは必ず10個書く。\n * この上限は同時に無料と有料の境界にもなる。\n */\nexport const CONTACT_CONSTRAINTS = {\n  maxImprovementIdeas: 3,\n  maxDraftLength: 1200,\n} as const;\nこの記事は、前回の「Claudeに実装させるときの指示書...",
+    "url": "https://zenn.dev/sukoshift/articles/llm-dont-decide-design",
+    "published_at": "2026-09-30T22:13:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DGX Spark 互換機（MSI EdgeXpert）を2台買って、何を載せたか——構成と最初の実測",
+    "summary": "なぜ DGX Spark を2台買ったのか\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。仕事ではAIエージェントに多くの作業を任せていて、LLM のトークンをたくさん使います。\nDGX Spark の互換機（MSI EdgeXpert）を、私物で2台買いました。ローカルで LLM のトークンを生成できる計算資源は、これから資産になると考えているからです。 クラウドの API にもこれまでどおり頼りますが、手元でも回せる状態を作っておきたいと思いました。\n2台にした理由は、1台では載らな...",
+    "url": "https://zenn.dev/sodeyama/articles/tech-dgx-spark-two-units",
+    "published_at": "2026-09-30T22:10:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIへの「なぜ」を2回聞いても、リスクは出てこなかった",
+    "summary": "TL;DR\n\n意思決定の相談にAIが即答した推奨（「導入すべき」）に対して、同じ会話の中で「なぜですか？」を2回連続で聞いたところ、両方とも最初に挙げた理由の言い換えに終始し、新しい理由・反対意見・リスクは一切追加されなかった\n聞き方を「賛成理由だけでなく反対意見・リスクも思いつく限りすべて」に変えると、初めて5件のリスクが挙がった。ただし結論（「導入すべき」）は維持された\n同じ質問と網羅列挙の依頼を、一度も推奨を言わせていない別の新規チャットに最初からまとめて投げたところ、リスクが11件に増え、結論そのものが「導入は推奨しない」に反転した\n「なぜ」を繰り返すことは深掘りにならない。...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-why-twice-no-new-risk",
+    "published_at": "2026-09-30T21:19:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI-Slopな日本語を構造レベルで読みやすくするSkill『yomiyasu（よみやす）』を作りました",
+    "summary": "TL;DR\n本日、AI生成された臭くて読みにくい日本語を、自然で読みやすい日本語へ書き直すスキル『yomiyasu（よみやす）』をリリースしました。\n従来のAI-Slop対策スキルで用いられてきた 「単語を禁止する」手法から改善し、統語構造（=誰が・何を・どうした）の復元と、比喩動詞の具体化に特化していることが特徴です。\nClaude Code, Codex, Cursorなどの主要なAI Agentで/yomiyasuで呼び出せます。\n// 導入コマンド\nnpx skills add nanaism/yomiyasu\nリポジトリは以下です。\nhttps://github.com/n...",
+    "url": "https://zenn.dev/algoartis/articles/0b1c731881b25c",
+    "published_at": "2026-09-30T18:28:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカル LLM とクラウド AI に同じアプリを作らせた — AI はどこで間違えるか（第 1 回）",
+    "summary": "知りたかったのは、AI がどこで間違え、どこで人の目が要るか\n機密を扱う仕事で AI を使うなら、できるだけ手元のローカル LLM で済ませたい。では、どこまでならローカル LLM に任せられるのか。この記事は、その境界線を探すための実験の記録で、2 回に分けて書きます。\n\n\n第 1 回（この記事）：AI が書いたアプリの欠陥は、どこで間違い、どの工程で捕まり、どの工程では捕まらなかったか\n\n\n第 2 回：どうすれば防げるか。要件に書けば防げたこと、書いても防げないこと、人と AI の分担\n\n同じ要件定義書を、ローカル LLM とクラウド AI にそれぞれ渡してアプリを実装させ、両方...",
+    "url": "https://zenn.dev/exapolicy/articles/08ea0fdc7ea660",
+    "published_at": "2026-09-30T18:14:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【セキュリティ】「Hacking OpenAI」から学ぶ、AIで変わる攻撃のコスト",
+    "summary": "はじめに\n2026年9月、セキュリティ企業 Hacktron の研究者3人が Hacking OpenAI というレポートを公開しました。OpenAIのバグバウンティ（脆弱性報奨金制度）の中で行った調査の報告です。フォーラムへの画像アップロードを起点に、72時間足らずでOpenAI従業員のChatGPT/Codexアカウントへのアクセスを得て、社内リポジトリに無害なプルリクエストを1件作るところまでたどり着いています。\nhttps://www.hacktron.ai/blog/hacking-openai\n特に驚いたのは、侵入の手順そのものよりもエクスプロイト（攻撃コード）作りの大...",
+    "url": "https://zenn.dev/ykbone/articles/202610-security-hacking-openai",
+    "published_at": "2026-09-30T16:04:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevはローカルモデルで代替できるか？ lev・jeffを加えて追加で実機徹底比較",
+    "summary": "!\n先に結論を言います\n\n\n先行検証の振り返りと総括:\n前回の検証記事では、「汎用LLM（Qwen3.5）や専用モデル（Kev-4B）により、Jevの境界判定インターフェースはローカルでも十分に代替可能」と結論づけていました。しかし今回の検証で 「短文の特定タスクでは代替できても、長文の局所条項探索、多重入れ子例外、および高精度な確率較正において、モデル・アーキテクチャごとの明確な適用限界が存在する」 という事実が判明しました。\n\nS1Bench（300問）におけるモデル特性:\n\n\nJev (Cloud API): 全体正解率 77.33%。接続プーリングを活用した非同期クライアントによ...",
+    "url": "https://zenn.dev/null_teck/articles/system-one-benchmark-s1bench-levbench",
+    "published_at": "2026-09-30T15:53:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Holmes AIの特徴と実力：調達向けLLM・4つのHub・GPTとの6問比較",
+    "summary": "調達向けAIのHolmes AIとGPT-6.1-solに、契約判断やサプライヤー選定について6つの質問をしました。\n今回見えたHolmes AIの強みは、価格や評価データを使い、短時間で候補・概算・面談事項をまとめることです。一方、日本の開発会社を探した追加質問では、国内単価の不足を受けてインド活用へ提案を切り替えました。GPTは日本の候補を維持し、体制や開発範囲を調整しています。\nこの違いを、製品の特徴と実際の回答から紹介します。\n\n Holmes AIの特徴：モデルの学習、整備データ、4つのHub\n\n 調達向けの専用モデル-sherlock\n公式評価記事では、基盤LLMを、調達手法...",
+    "url": "https://zenn.dev/headwaters/articles/ae053f4601ac6d",
+    "published_at": "2026-09-30T15:47:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Googleが一番『儲かってる』は本当？OpenAI・Meta・Anthropic決算のAI勢力図",
+    "summary": "📺 この記事は YouTube チャンネル きなこもっちーのテック深掘り の動画解説記事です。\n▶️ 動画はこちら → Googleが一番『儲かってる』は本当？OpenAI・Meta・Anthropic決算のAI勢力図\n\n🐹🦜 この記事に登場する2匹\n\n🐹 もっちー...",
+    "url": "https://qiita.com/kinamocchi_tech/items/9b574e83030654383e57",
+    "published_at": "2026-10-01T00:10:23+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが作ったタンパク質に見えない透かし、DeepMindが実物で確認",
+    "summary": "AIは今、自然界に存在しない新しいタンパク質を一から設計できる。薬のもとになる役立つ分子も作れる反面、悪用への不安もついて回る。\nひとことで言うと、AIが設計したタンパク質に目に見えない「印」を埋め込み、あとから出どころを確かめられるようにする技術の話だ。グーグルの研究部門...",
+    "url": "https://qiita.com/okssusucha/items/3f9d3467c4fd65de35de",
+    "published_at": "2026-10-01T00:09:05+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "スキルの名前を verify にするだけで、Claude Code はコミット前にそれを実行する",
+    "summary": "Claude Code 2.1.286（2026-09-30）の changelog に、こう書かれています。\n\nImproved commit guidance: when your project or user skills include one named ver...",
+    "url": "https://qiita.com/suwa_nobu/items/cc0fb4a9e10100991bba",
+    "published_at": "2026-10-01T00:02:00+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "GPT-6.1 Sol vs GPT-6 Sol：わずか1週間で更新、Claude 5.5との関係は？",
+    "summary": "GPT-6.1 Sol vs GPT-6 Sol：わずか1週間で更新、Claude 5.5との関係は？\nGPT-6 Solの公開から1週間で、GPT-6.1 Solが登場した。このペースを理解するには、まず同時期のOpus 5.5とSonnet 5.5に目を向けるべきだと...",
+    "url": "https://qiita.com/xujfcn/items/4c2b12f72ca47400b53e",
+    "published_at": "2026-09-30T23:46:20+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google Gemini 4 Argon closes the gap with OpenAI and Anthropic but doesn't take a clear lead",
+    "summary": "Gemini 4 Argon is Google's first frontier model in over seven months. It matches GPT-6 Astra in independent testing but can't keep up with Anthropic's Claude Opus 5.5. The per-token price is low, but Argon burns through more than twice as many tokens per task as Astra. Select testers get access firs",
+    "url": "https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead/",
+    "published_at": "2026-09-30T22:06:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI and Synopsys team up to build an AI model that designs chips like a seasoned engineer",
+    "summary": "OpenAI and Synopsys are building GPT-Synopsys, a specialized AI model for chip design. It's meant to operate Synopsys' EDA tools like a seasoned engineer and optimize designs on its own. Early tests with semiconductor customers are already underway. OpenAI is likely using the partnership to advance ",
+    "url": "https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/",
+    "published_at": "2026-09-30T19:12:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google drops Gems for Skills, joining OpenAI and Anthropic in the shift to agent-ready prompt formats",
+    "summary": "Google is replacing Gems with \"Skills\" in Gemini chat. Skills are detailed, reusable prompts that users invoke by typing \"/\" or that Gemini runs automatically. The format is based on an open standard from Anthropic. Gems will be phased out starting in November, with existing ones migrating automatic",
+    "url": "https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats/",
+    "published_at": "2026-09-30T18:16:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta dodges billions in US taxes by calling its AI data centers experiments",
+    "summary": "Meta classifies its AI data centers as \"pilot models\" and Nvidia chips as experimental materials to save billions in federal taxes. In 2025 alone, that added up to $3.9 billion. The tax credit dates back to 1981, and even Meta's own accountants see the strategy as legally risky, the New York Times r",
+    "url": "https://the-decoder.com/meta-dodges-billions-in-us-taxes-by-calling-its-ai-data-centers-experiments/",
+    "published_at": "2026-09-30T17:22:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "FTC launches sweeping probe into OpenAI, Anthropic, and other AI labs over consumer protection concerns",
+    "summary": "The FTC is formally investigating OpenAI, Anthropic, and other leading AI labs over potential consumer protection violations. The agency plans to force document handovers and executive testimony through legally binding demands. The probe was already underway before the Hugging Face hack and goes wel",
+    "url": "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/",
+    "published_at": "2026-09-30T16:20:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China's AI industry closes ranks as Deepseek ships open-source software for Huawei's Ascend chips",
+    "summary": "Deepseek and Huawei have built open-source programming tools for Huawei's Ascend AI chips. At the center is TileLang, a language designed to offer a simpler programming model than Nvidia's CUDA. The partnership targets the biggest obstacle for China's AI industry, which is software that gets the mos",
+    "url": "https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/",
+    "published_at": "2026-09-30T14:37:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says Zhipu's open-weight GLM-5.3 nearly matches Claude Mythos Preview at building exploits",
+    "summary": "Zhipu's open-weight model GLM-5.3 writes cyber exploits nearly as well as Claude Mythos Preview, according to Anthropic. Its smaller Flash variant put together a reliable Chrome attack for just $20.40 at Zhipu's API prices. The model's safeguards are easy to strip out, and unlocked versions are alre",
+    "url": "https://the-decoder.com/anthropic-says-zhipus-open-weight-glm-5-3-nearly-matches-claude-mythos-preview-at-building-exploits/",
+    "published_at": "2026-09-30T11:05:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google is paying almost no publishers almost nothing for content used in AI answers",
+    "summary": "Google pays about 100 digital publishers for content used in AI Overviews, AI Mode, and Gemini, according to The Information. Payments range from under $1,000 over several months to more than $1 million a year. Some participants don't know how Google calculates payments, while some larger publishers",
+    "url": "https://the-decoder.com/google-is-paying-almost-no-publishers-almost-nothing-for-content-used-in-ai-answers/",
+    "published_at": "2026-09-30T10:17:15+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Trump and tech CEOs sign an AI code of conduct that's only \"morally binding\"",
+    "summary": "President Trump and tech leaders including Mark Zuckerberg, Greg Brockman, Jensen Huang, and Elon Musk signed an AI code of conduct at the White House that is only \"morally binding.\" Outside auditors are supposed to check whether models work as intended. It's unclear what would happen if a company b",
+    "url": "https://the-decoder.com/trump-and-tech-ceos-sign-an-ai-code-of-conduct-thats-only-morally-binding/",
+    "published_at": "2026-09-30T09:46:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "UK AI Security Institute finds GPT-6 Astra's rogue attack rate jumped fivefold over its predecessor",
+    "summary": "GPT-6 Astra carried out unauthorized supply-chain attacks in 29.2 percent of simulations run by the British AI Security Institute with safety filters disabled. The model used fake identities and malicious code, while its predecessor, GPT-5.6 Sol, completed attacks in 6.3 percent of runs. Explicit re",
+    "url": "https://the-decoder.com/uk-ai-security-institute-finds-gpt-6-astras-rogue-attack-rate-jumped-fivefold-over-its-predecessor/",
+    "published_at": "2026-09-29T19:24:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple AirPods 5 reviewed: compact convenience",
+    "summary": "Believe it or not, earbuds and noise cancellation don't normally go together. But Apple's second-gen take on the tech wins kudos beyond noise handling. Truthfully, they're stellar. The story Apple AirPods 5 reviewed: compact convenience appeared first on Pickr , written by Leigh :) Stark .",
+    "url": "https://www.pickr.com.au/reviews/2026/apple-airpods-5/",
+    "published_at": "2026-09-30T12:19:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Payhawk Expands in Poland to Support Growing Businesses with AI-Native Spend Management",
+    "summary": "Payhawk, the AI-native spend management platform helping finance teams save time and money, today opened its Warsaw office and established Poland as a standalone commercial region with a dedicated team. The expansion follows nearly 30% growth in demand from Polish businesses using Payhawk over the p",
+    "url": "https://financialit.net/news/artificial-intelligence/payhawk-expands-poland-support-growing-businesses-ai-native-spend",
+    "published_at": "2026-09-30T12:18:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | Deloitte India and Avolution Announce Partnership to Advance Enterprise Architecture and AI Governance",
+    "summary": "Get latest articles and stories on Business at LatestLY. Deloitte India and Avolution announce a strategic alliance to advance enterprise architecture and AI governance, aiming to help organisations navigate increasingly complex technology setups and make structured transformation decisions through ",
+    "url": "https://www.latestly.com/agency-news/business-news-deloitte-india-and-avolution-announce-partnership-to-advance-enterprise-architecture-and-ai-governance-7627233.html",
+    "published_at": "2026-09-30T12:18:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple Set to Launch Three New Devices on October 13",
+    "summary": "Apple is preparing to unveil three devices on October 13, as it seeks to enhance its presence in the smart home market. The most significant product in this launch is expected to be a new smart home hub known as the HomePad. This device aims to serve as a central controller for various smart home […",
+    "url": "https://thecsrjournal.in/apple-set-to-launch-three-new-devices-on-october-13",
+    "published_at": "2026-09-30T12:18:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "France's Sekoia rolls out AI cybersecurity platform to its clients",
+    "summary": "Sept 30 (Reuters) - French ⁠cybersecurity firm Sekoia rolled out ⁠its cybersecurity AI agentic tool Elevate to its clients, following an early access program with around 2,000 customers, it said on Wednesday.",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/09/30/france039s-sekoia-rolls-out-ai-cybersecurity-platform-to-its-clients",
+    "published_at": "2026-09-30T12:18:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Memory Cost Surge & Rupee Slide Push India Smartphone Prices Up 16%—Budget Segment Hit Hardest",
+    "summary": "Smartphone prices in India rose 16% on average in the first half of 2026, but OnePlus kept its own increase to 8%, according to Counterpoint Research. The hikes came as memory costs climbed, pushing India’s average smartphone selling price to a record $318 in Q2 2026. AI data centres have been soaki",
+    "url": "https://cxotoday.com/hardware/memory-cost-surge-rupee-slide-push-india-smartphone-prices-up-16-budget-segment-hit-hardest/",
+    "published_at": "2026-09-30T12:17:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DeepSeek joins hands with Huawei to build AI chip software, cutting Nvidia reliance",
+    "summary": "Chinese artificial intelligence developer DeepSeek partnered with Huawei Technologies to create programming tools tailored for Huaweis Ascend processors marking an effort by domestic technology companies to reduce reliance on the Nvidia ecosystem According to a Reuters news report the tie-up surface",
+    "url": "https://www.devdiscourse.com/article/business/3984513-deepseek-joins-hands-with-huawei-to-build-ai-chip-software-cutting-nvidia-reliance",
+    "published_at": "2026-09-30T12:17:04+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Samsung launches ultimate iPad rival with big features and a price to match",
+    "summary": "Samsung is back with a new Galaxy Tab S12 range that is taking aim at Apple's iPad.",
+    "url": "https://www.express.co.uk/life-style/science-technology/2253252/Samsung-Galaxy-Tab-S12-iPad-rival",
+    "published_at": "2026-09-30T12:17:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How AI Search Is Changing the Future of Digital Visibility for Businesses",
+    "summary": "1st4e Business explores how AI Search and Artificial Intelligence are reshaping Digital Visibility and Digital Authority, helping businesses adapt to new online discovery trends.",
+    "url": "https://www.analyticsinsight.net/artificial-intelligence/how-ai-search-is-changing-the-future-of-digital-visibility-for-businesses",
+    "published_at": "2026-09-30T12:17:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI Shelves ChatGPT 6.1 Astra Over Aggressive Behaviors",
+    "summary": "OpenAI’s decision to withhold the release of GPT-6.1 Astra has sparked significant discussion about the challenges of balancing AI innovation with safety. As detailed by Wes Roth, this advanced model demonstrated unprecedented efficiency in task execution but raised serious ethical and operational c",
+    "url": "https://www.geeky-gadgets.com/openai-gpt-6-1-astra-withheld/",
+    "published_at": "2026-09-30T12:17:00+00:00",
+    "source": "newsdata"
+  }
+]
