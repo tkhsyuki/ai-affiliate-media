@@ -1,0 +1,296 @@
+[
+  {
+    "title": "沈黙の物理学者、Anthropic CEO ダリオ・アモディ。",
+    "summary": "Anthropic CEO ダリオ・アモディを追うドキュメンタリー。2016年のAI安全性論文、スケーリング則の発見、OpenAIからの決別、憲法AIとメカニスティック・インタープリタビリティを経て、本書が「Coworkショック」と呼ぶ2026年の転換までをたどる。GitHubで日英公開しているOSS書籍（CC BY 4.0）のZenn版。",
+    "url": "https://zenn.dev/leading_ai/books/the-silence-of-intelligence",
+    "published_at": "2026-10-01T20:00:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コーディングエージェントに「その方法で本当にいいのか」を考えさせる",
+    "summary": "エージェントの事故は仮言命法から出る\nコーディングエージェントが起こす事故には、形の違う2種類があります。1つは、与えられた仕事を達成するために、検証の仕組みを壊す事故です。「テストを通して」と頼まれて失敗しているテストを削除する、lint を無効化してビルドを通す、といった行動です。もう1つは、権限を越える事故です。デプロイの不具合の原因を知るために本番の認証情報を読んでログに出す、急いで直すために本番のデータベースへ直接マイグレーションを当てる、といった行動です。リポジトリや Web ページに仕込まれた「この内容を送信せよ」という文を命令として実行し、秘密を外へ送る事故(prom...",
+    "url": "https://zenn.dev/sumx21t/articles/coding-agent-categorical-imperative",
+    "published_at": "2026-10-01T19:08:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "海外AI製品のセキュリティ質問票 — 回答を合否判定に変える記録と採点の作り方",
+    "summary": "海外AI製品の導入検討で、セキュリティ質問票をベンダーに送った後の話を扱う。集まってくる回答は「対応しています」「enterprise-grade なセキュリティを提供しています」「お打ち合わせにてご説明します」と様々で、このままでは合否にできない。\n前稿『海外AI製品を入れる前に確認する30項目』は何を聞くかの設計だった。本稿はその後段 — 回収した回答を、後でぶれない合否判定に変えるための記録形式と採点方法の設計記録である。評価対象は日本企業に導入する海外のAI製品 (SaaS) を想定し、判定側 (情シス・購入検討担当・ベンダー管理担当) 向けに書く。\n検証日: 2026-09-0...",
+    "url": "https://zenn.dev/jinno_ai/articles/security-questionnaire-scoring",
+    "published_at": "2026-10-01T17:40:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "『リーダブルコード』第2章を読んで、名前に情報を詰め込む",
+    "summary": "『リーダブルコード』第2章のテーマは、名前に情報を詰め込むこと。変数名や関数名が、それ自体で意味を説明できるようにするという話だ。\n第1章の読書感想はこちら:\nhttps://zenn.dev/zhaojiayi/articles/18f8fb8cd9b24f\n第2章は6つの観点に分かれている。\n\n 6つの観点\n一つ目は、明確な単語を選ぶこと。たとえば GetPage という名前では、ページをどこから取ってくるのか分からない。ネットワークから取るなら、 FetchPage や DownloadPage のほうがはるかに伝わる。 size も同じタイプの単語で、高さなのか、ノード数なのか、...",
+    "url": "https://zenn.dev/zhaojiayi/articles/1e87c956f3f990",
+    "published_at": "2026-10-01T16:57:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "スマホのChatGPTから自宅PCを操作する。Remote Desktop Commanderを使ってみた",
+    "summary": "最近、ChatGPT × Remote Desktop Commander × UbuntuミニPC × スマホという構成で開発しています。\nスマホからChatGPTに話しかけるだけで、自宅のUbuntuミニPC上にあるコードやファイルを確認し、必要ならコマンド実行・修正・テストまで進めてもらう使い方です。\n実際に、公共データ可視化サイト「DATLUME」 と 無料Web便利ツール集 も、この構成を使って開発しています。\n\n Remote Desktop Commanderとは？\nRemote Desktop Commanderは、ChatGPTなどのAIから、自分のPC上のファイルやタ...",
+    "url": "https://zenn.dev/kkoch5t2/articles/remote-desktop-commander-smartphone",
+    "published_at": "2026-10-01T16:56:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🦙 ALPACA-FW #08｜Python機械検証のの全体構造、LLM任せにはしないワケ",
+    "summary": "はじめに\n前回は、ALPACA-templateで人やAIが読む開発ルールとは別に、CLIが読める機械契約として framework/catalog.toml を置いた理由を書きました。\nでは、そのCatalogを実際に読み、成果物やTraceability、Quality Gateを機械的に検査していたのは何だったのか。中心にあったのが tools/aissfw.py というPython CLIです。\nALPACA-templateでは、AIに「ちゃんと確認して」とお願いするだけではなく、機械で判定できるものはPythonへ寄せました。やっているうちに aissfw.py は約9,...",
+    "url": "https://zenn.dev/alpaca_village/articles/alpaca-fw-08-aissfw-cli-architecture",
+    "published_at": "2026-10-01T16:17:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "YC社長Garry Tanが語る「エージェント時代の開発術」を要点解説",
+    "summary": "この記事について\nY Combinator 社長の Garry Tan が語った「AIエージェント時代の開発」を、要点だけ抜き出して日本語で解説します。AIを\"チームとして\"使いこなす実践論の回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Y Combinator / Garry Tan）をご覧ください。\n\n\n テーマ1：AIは「チームとして」設計せよ\n\nGarry は「エージェント時代が来た」と断言。ただしAIを孤独に使うのではなく、チーム制・役割分担・レビューとして設計せよ、...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr08-garry-tan-summary",
+    "published_at": "2026-10-01T15:37:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ぼくの考えたさい強のLLMりょう子化2",
+    "summary": "CPUでLLMを動かしたい\nRAMが32GiB以上ある\ncmd.exe や bash の使いかたを理解している\n\nという人向けの記事です。\n潜水艦等の隔離環境でプログラミングするのに役立つかも。\nなお、この記事は2026年9月26日の情報を元に書かれています。\nRyzen 5 5600G(CPU実行) 2ch DDR4-3200 でのllama-bench結果\n\n\n\nmodel\nengine\npp512\ntg128\nsize[1]\n\nperplexity[2]\n\n\n\n\n\nbyteshape/Qwen3.6-35B-A3B-Q4_K_S-4.22bpw\nllama.cpp[3]\n\n66....",
+    "url": "https://zenn.dev/ashidan/articles/tech_llm_quantization2",
+    "published_at": "2026-10-01T15:33:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の市場ブリーフィング",
+    "summary": "日経平均+2.12%の裏に潜む歪み：2026年9月8日の市場データから読み解くリスク指標\n\n\n\n この記事で分かること\n\n日経平均急騰の裏で主要個別株が下落した日本市場の極端な二極化\n米10年国債利回りとVIX指数の上昇が示す米国市場のリスクオフシグナル\n株式市場のボラティリティに対して為替市場が静観を保つ背景と現状\n\n\n 主力株下落の中で日経平均が+2.12%急騰した構造の落とし穴\n日経平均株価が66,399.84円（前日比+2.12%、出来高：141,300,000）へと大幅伸長した一方で、日本市場の内部構造は極めて偏った展開となりました。指数全体の上昇を強く牽引したのはソフトバ...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-08-market-daily",
+    "published_at": "2026-10-01T15:14:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自作のサイトやアプリのデザインを揃えたくて、AIに渡すMarkdownを作った",
+    "summary": "おはようございます。 furuya (@fryx404) です。\n最近はAIを使って、自分用のサイトやアプリ、ちょっとしたツールを作っています。\n作るものが増えてくると、「せっかくなら、見た目にも共通の雰囲気を持たせたいな」と思うようになりました。\n毎回、色や文字の雰囲気を説明するのも大変です。自分の好みをまとめておいて、それをAIに渡せたらよさそう。\nそこで作ったのが、「fryx404 Pop」 という自分用のデザインシステムです。\nデザインシステム、と言うと少し大げさですが、やっていることは「自分の好きな見た目と、画面を作るときのルールをMarkdownにまとめる」というものです。\n...",
+    "url": "https://zenn.dev/fryx404/articles/91ee36ce7d0e90",
+    "published_at": "2026-10-01T15:14:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "引継ぎを書く手順を skill にしたら、事故のたびに1行ずつ増えた — Claude Code で3か月半",
+    "summary": "Claude Code に毎日作業をさせていると、セッションの終わりが一日に何度も来ます。終わるたびに、次のセッションへ引継ぎ文書を書きます。やったこと、残っていること、踏んだ罠。\n私の環境では、2026年6月12日から10月2日までの間に、引継ぎ文書が512本になりました。\n\n\n\n月\n本数\n\n\n\n\n6月（12日から）\n58\n\n\n7月\n137\n\n\n8月\n180\n\n\n9月\n131\n\n\n10月（2日まで）\n6\n\n\n\nこの引継ぎを書く手順は、6月16日から skill（Claude Code に読ませる手順書）にしています。最初は59行でした。今は123行あります。\n増えた64行には、それぞれ...",
+    "url": "https://zenn.dev/kuu_dqx/articles/handoff-skill-grew-by-incidents",
+    "published_at": "2026-10-01T15:53:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude codeで/doctor prompt-auditしたら微修正で終わった件",
+    "summary": "前置き\n色んな人から お前は何を言っているんだ？ と突っ込まれる思うので先に結論を貼っておきます。\nhttps://github.com/mryo0826/aidd-practice-guide/commit/84e7d5a2fa85112e8f7d0ed11a5e53195e97fcd6\n\n\n前提条件として\n私が 晩酌しながら雑に 2026/09/27 に書いた記事\nhttps://zenn.dev/mryo0826/articles/ad1698e268e9ea\n私とAIDD Opusと プロンプトキャッシュ未対応のさくらのAIEngine Kiwi k2.6 をある意味使い倒し...",
+    "url": "https://zenn.dev/mryo0826/articles/440b8781a00803",
+    "published_at": "2026-10-01T15:08:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Fable 5.1で1Mが200Kのまま動く落とし穴とClaude Codeのキャッシュ40倍差",
+    "summary": "Claude Code の v2.1.257〜v2.1.275（2026年9月、全8リリース）の変更を、動画を見ていない方にも伝わるようにまとめた記事です。\n既定モデルが Fable 5.1 に変わりましたが、1M トークンのコンテキストは、切り替えるだけでは付いてこないことがあります。\nあわせて、プロンプトキャッシュの修正が v2.1.267 に11行集中した件と、1人で使う人が3分で入れられる4点を扱います。\n\n 動画 URL\nhttps://youtu.be/YlQRC7eQMp8\n\n Fable 5.1 が既定になった。ただし 1M は選び直しが必要\n新しい既定モデルは clau...",
+    "url": "https://zenn.dev/ainewsdaily/articles/20260921_claude_code_t1",
+    "published_at": "2026-10-01T14:41:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの答えを機械で検算する — 「間違って書くより、書かない」を3か所で実装した話",
+    "summary": "TOEIC学習アプリに、Claude の Vision と構文解析を3つ入れた。\n\n解説ページの写真から、正解（A/B/C/D）を自動で入れる\n巻末スクリプトの写真から、英文を取り込む\n一文をSVOCに割って、第何文型か出す\n\nどれも「写真やテキストを投げたら、それらしい答えが返ってくる」ところまでは、\nプロンプトを書けば30分で動く。問題はそのあとだった。\nこの3つには共通の性質がある。答えが間違っていても、画面上は正常に見える。\n\n正解が1問ズレていても、画面には「A」と出るだけ。解いて不正解になって初めて気づく\n英文に和訳が混ざっていても、英文らしきものは表示される\nSVOCの区切...",
+    "url": "https://zenn.dev/horibe/articles/verify-llm-output-mechanically",
+    "published_at": "2026-10-01T14:26:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「貧者のClaudeCodeMax」第2弾：月10ドルで70ドル分叩けるCommand Code GOATプラン",
+    "summary": "月10ドルで70ドル分のクレジットが付与されるプランが出てきた\n前回の記事「「貧者のClaudeCodeMax」安価なコーディング向けサービスで無限に開発する」では、月10ドルのOpenCode Goや月20ドルのDevin Proを組み合わせて、月6万回以上のLLM呼び出しを安価に確保する構成をまとめました。\n定額サブスクで安価なモデルを回し続ければ、高価なプランを契約せずとも個人開発は十分に進む印象です。\nそんな折、Command Codeというコーディングエージェントから「GOATプラン」という新しい選択肢が登場しました。\n月10ドル支払うと70ドル分（7倍）の利用枠が付いてき...",
+    "url": "https://zenn.dev/kuwashima/articles/poor-man-claude-code-goat",
+    "published_at": "2026-10-01T14:15:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "llama.cppのjson_schema制約は、英語enumでは一度も発火しなかった",
+    "summary": "「型どおりにしか出さない」を小型モデルで再現できるか、という話です。\nllama.cpp には json_schema を渡すと JSON Schema を GBNF 文法に変換して、\n文法に合わないトークンを毎ステップ潰しながら生成する機能があります。\n使い方は公式ドキュメントにある通りで、実際 JSON は必ず型どおりに出てきます。\n気になっていたのは副作用のほうでした。\n制約をかけると推論の自由度が落ちて分類精度が下がる、という説をときどき見かけます。\n小型モデル × 日本語でそれが実際に起きるのかを測ってみました。\n先に結論を書くと、精度は下がりませんでした。下がりも上がりもせず...",
+    "url": "https://zenn.dev/mskbhd/articles/lab-742-llama-server-json-schema-json",
+    "published_at": "2026-10-01T14:02:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語入力システムSumibiの開発 part28: macOS版を作り始めました",
+    "summary": "はじめに\nmacOS版のSumibiを作り始めました。リポジトリはこちらです。\nhttps://github.com/kiyoka/Sumibi-mac\nこれまでSumibiには、Emacs版とiOS版がありました。macOS版では、特定のエディタやアプリに閉じず、macOSの入力メソッドとしてさまざまなアプリから使えることを目指します。\nまだ開発途中ですが、今回はどのように仕様を決め、どこから実装を始めたのかを紹介します。\n\n iOS版を土台に、macOS向けの仕様を決める\nゼロから考え直すのではなく、先に動いているiOS版Sumibiを参照しました。\niOS版ですでに試してきた、...",
+    "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-28",
+    "published_at": "2026-10-01T13:34:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "文章を生成しないAI「Jev」の仕組みと使いどころを、Claudeとの対話で整理する",
+    "summary": "この記事について\n2026 年 10 月 1 日に、筆者が Claude（Anthropic）と交わした対話を、要点だけに整理したものです。対話の中で Claude が推測で述べた箇所は、公開前に一次情報（TypeSafe AI の公式ブログとドキュメント、論文、投資元の発表、Claude Code の公式ドキュメント）で確認し、裏付けが取れなかった内容は削除しました。筆者の判断は、考察として残しています。\n対象読者は、Claude Code などのコーディングエージェントを使っていて、Jev を自分の作業に組み込めるか気になっている方です。\n\n Jev とは何か\n私: TypeSa...",
+    "url": "https://zenn.dev/mk404/articles/2026-10-01-jev-typesafe-claude-code-browser",
+    "published_at": "2026-10-01T12:48:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントが仮想マシンを3回突破した、安全に動かす方法",
+    "summary": "強力なAIに「この仮想マシンから出て」と頼むと、3回とも本当に外へ出ました。AIに自分のパソコン作業を任せる人が増えています。でも「安全な箱に入れれば大丈夫」という前提が、あやしくなってきました。コーディング支援やパソコン操作をAIに任せる人には、他人事ではありません。何が...",
+    "url": "https://qiita.com/okssusucha/items/5e216f4137eda74f5a51",
+    "published_at": "2026-10-02T00:17:15+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Databricks で個人情報をマスクするなら「見せない・消す・見つける」で考える（Free Edition で検証）",
+    "summary": "この記事のサンプルに出てくる「加茂鹿男」さんの氏名・生年月日・住所・電話番号・メールアドレス・カード番号・マイナンバーは、すべて架空のテスト用ダミーです。実在の人物やカードとは一切関係ありません。また、各機能のリリース状態や制約は 2026 年 9 月時点のものです。利...",
+    "url": "https://qiita.com/kamo-shika/items/4356de5393096cac5c77",
+    "published_at": "2026-10-02T00:13:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「説明的すぎる」── 投稿文の1行目を、AIに3回書き直させた",
+    "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\nX に出す直前、投稿文の1行目はこうだった。\n9個のボタンを4個に減らしても「多い」。1個にしたら、返事すらありません。では、0個なら？\n\n発注者の反応はこうだった。\n\nこんなに説明的...",
+    "url": "https://qiita.com/orca-forge/items/ac86da48f0cf325960c4",
+    "published_at": "2026-10-02T00:13:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年10月2日",
+    "summary": "今日もネットの海から拾ってきた、個人的に気になった技術ニュースや記事を厳選してお届けします。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nプログラミング\n\nPython\n\nPython 3.10〜3.14の各バージョンにおいてセキュリティ修正などを含...",
+    "url": "https://qiita.com/ishisaka/items/db10f1863a081f1e69d9",
+    "published_at": "2026-10-02T00:07:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Nearly half of test subjects mistook Tavus' AI video avatar for a real person on a one-minute call",
+    "summary": "Tavus has introduced Griffin, what the company calls the first \"Human Interaction Model.\" The AI holds video calls in real time, processing facial expressions, tone of voice, and gestures. In a Tavus study, 48 percent of participants believed Griffin was a real person after a one-minute call. Previo",
+    "url": "https://the-decoder.com/nearly-half-of-test-subjects-mistook-tavus-ai-video-avatar-for-a-real-person-on-a-one-minute-call/",
+    "published_at": "2026-10-01T18:03:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Ideogram says its new model can edit part of an image without messing up the rest",
+    "summary": "Ideogram's new model Ideogram 4.5 promises to edit only the areas you want while keeping the rest of the image intact. It ships with native 2K resolution starting at 0.8 cents per image, and partners like Runway, Pika, and Leonardo AI are already on board. An open-weight release is planned. The arti",
+    "url": "https://the-decoder.com/ideogram-says-its-new-model-can-edit-part-of-an-image-without-messing-up-the-rest/",
+    "published_at": "2026-10-01T17:33:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic brings Claude to civilian agencies as its fight with the Pentagon drags on",
+    "summary": "Anthropic is now offering Claude for Government to US federal and state agencies. The platform runs in a FedRAMP High environment, the strictest US security level for cloud services. Agencies get the same features as enterprise customers, pay for what they use with fixed spending caps, and can set b",
+    "url": "https://the-decoder.com/anthropic-brings-claude-to-civilian-agencies-as-its-fight-with-the-pentagon-drags-on/",
+    "published_at": "2026-10-01T14:26:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly",
+    "summary": "AI agents quietly posted more than 13,000 internal screenshots from 343 organizations, including Fortune 500 companies, to public GitHub repos. Because the platform didn't offer a protected way to upload them, the agents came up with a workaround on their own. The exposed images showed customer data",
+    "url": "https://the-decoder.com/security-startup-finds-more-than-13000-internal-company-screenshots-that-ai-agents-uploaded-publicly/",
+    "published_at": "2026-10-01T13:19:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI beats Stratego's greatest player, ending one of the last human strongholds in board games",
+    "summary": "The AI system Ataraxos has decisively beaten the best Stratego player of all time. The board game is a tough test for AI because both sides set up their pieces face down. Google Deepmind fell short in 2023 despite a multimillion-dollar budget. Researchers from Carnegie Mellon, NYU, Stanford, and MIT",
+    "url": "https://the-decoder.com/ai-beats-strategos-greatest-player-ending-one-of-the-last-human-strongholds-in-board-games/",
+    "published_at": "2026-10-01T12:58:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI says it stopped a campaign to steal its models' reasoning, but the trick still worked on Azure",
+    "summary": "OpenAI says it stopped a coordinated campaign in which more than 15,000 accounts tried to copy the hidden reasoning of its models. The company ties part of the activity to people connected to Moonshot AI. But researchers found that the same attack kept working on Microsoft Azure for weeks, even agai",
+    "url": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/",
+    "published_at": "2026-10-01T12:05:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Gemini 4 Argon closes the gap with OpenAI and Anthropic but doesn't take a clear lead",
+    "summary": "Gemini 4 Argon is Google's first frontier model in over seven months. It matches GPT-6 Astra in independent testing but can't keep up with Anthropic's Claude Opus 5.5. The per-token price is low, but Argon burns through more than twice as many tokens per task as Astra. Select testers get access firs",
+    "url": "https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead/",
+    "published_at": "2026-09-30T22:06:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI and Synopsys team up to build an AI model that designs chips like a seasoned engineer",
+    "summary": "OpenAI and Synopsys are building GPT-Synopsys, a specialized AI model for chip design. It's meant to operate Synopsys' EDA tools like a seasoned engineer and optimize designs on its own. Early tests with semiconductor customers are already underway. OpenAI is likely using the partnership to advance ",
+    "url": "https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/",
+    "published_at": "2026-09-30T19:12:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google drops Gems for Skills, joining OpenAI and Anthropic in the shift to agent-ready prompt formats",
+    "summary": "Google is replacing Gems with \"Skills\" in Gemini chat. Skills are detailed, reusable prompts that users invoke by typing \"/\" or that Gemini runs automatically. The format is based on an open standard from Anthropic. Gems will be phased out starting in November, with existing ones migrating automatic",
+    "url": "https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats/",
+    "published_at": "2026-09-30T18:16:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta dodges billions in US taxes by calling its AI data centers experiments",
+    "summary": "Meta classifies its AI data centers as \"pilot models\" and Nvidia chips as experimental materials to save billions in federal taxes. In 2025 alone, that added up to $3.9 billion. The tax credit dates back to 1981, and even Meta's own accountants see the strategy as legally risky, the New York Times r",
+    "url": "https://the-decoder.com/meta-dodges-billions-in-us-taxes-by-calling-its-ai-data-centers-experiments/",
+    "published_at": "2026-09-30T17:22:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far",
+    "summary": "When it comes to layoffs, there’s a mix of good and bad news. The good news is, U.S. layoff announcements were down as a whole in September, according to the latest data. But when job cuts are broken down by industry, things weren’t as rosy for tech. In fact, tech company layoff announcements were 7",
+    "url": "https://www.fastcompany.com/91616653/tech-layoffs-165925-jobs-slashed-2026-september-cuts-rise?partner=rss",
+    "published_at": "2026-10-01T12:29:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Leo AI in Brave: How to Enable and Use It",
+    "summary": "Leo AI on Brave Browser gives you a built-in AI assistant for summarizing webpages, answering questions, rewriting text, and more. You do not need to install a separate extension to use it. If you have not used Leo AI before, the feature can be easy to miss. Here is how to enable it, open it, […]",
+    "url": "https://windowsreport.com/leo-ai-enable/",
+    "published_at": "2026-10-01T12:28:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "An AI agent tried to hack Canadian government website, researchers say",
+    "summary": "Transluce said it informed the Canadian government on Monday, Sept. 28, following which the Canadian Centre for Cybersecurity issued a statement on Tuesday.",
+    "url": "https://globalnews.ca/news/12083829/canada-government-ai-hack-attempt/",
+    "published_at": "2026-10-01T12:28:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "WhatsApp New Parental Controls For Teens: What Parents Can Now Control",
+    "summary": "New features include alerts for group changes and Meta AI content controls.",
+    "url": "https://www.ndtv.com/education/whatsapp-adds-new-parental-controls-for-teens-what-students-and-parents-should-know-12125753",
+    "published_at": "2026-10-01T12:28:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | OpenAI Says It Disrupted Large-scale Effort to Copy Its AI Model Capabilities",
+    "summary": "Get latest articles and stories on Business at LatestLY. OpenAI said it has disrupted a coordinated campaign aimed at extracting protected reasoning from its models and using the information to help train, reproduce or improve another model.",
+    "url": "https://www.latestly.com/agency-news/business-news-openai-says-it-disrupted-large-scale-effort-to-copy-its-ai-model-capabilities-7628865.html",
+    "published_at": "2026-10-01T12:28:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump Hails Boeing Aircraft's 'Precise and Powerful' Design After Flydubai Plane Survives 17,400-Foot Plunge:…",
+    "summary": "Trump praises Boeing 737 MAX's structural strength after a Flydubai plane's rapid descent, crediting its resilient design.",
+    "url": "https://www.benzinga.com/news/politics/26/10/62103390/trump-hails-boeing-aircrafts-precise-and-powerful-design-after-flydubai-plane-survives-17400-foot-plunge-it-is-about-time",
+    "published_at": "2026-10-01T12:28:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple's long-rumored smart home hub might finally arrive next month with a 6-inch display",
+    "summary": "Bloomberg's Mark Gurman claims that Apple will launch its long-rumored smart home hub on October 13. The device resembles Amazon's Echo Show and Google Nest, but with Apple's software stack. Read Entire Article",
+    "url": "https://www.techspot.com/news/114052-apple-long-rumored-smart-home-hub-might-finally.html",
+    "published_at": "2026-10-01T12:28:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Use.ai Reaches 1 Million Monthly Users as the Average AI User Now Runs Three Assistants",
+    "summary": "Use.ai, the all-in-one AI workspace for GPT, Claude, Gemini, Grok and DeepSeek, reaches 1 million monthly users as consumers use several AI assistants.",
+    "url": "https://hackernoon.com/useai-reaches-1-million-monthly-users-as-the-average-ai-user-now-runs-three-assistants",
+    "published_at": "2026-10-01T12:27:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI control becomes a new enterprise resilience priority",
+    "summary": "Artificial intelligence is moving deeper into enterprise infrastructure, bringing a broader risk horizon with it. As AI progresses from generating text in isolated environments toward initiating transactions, influencing decisions, and contributing to production code, the consequences of an error ma",
+    "url": "https://thenextweb.com/news/ai-control-enterprise-resilience-kill-switch",
+    "published_at": "2026-10-01T12:27:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ample Highlights Apple for Enterprise Solutions for Scalable Business Technology Adoption",
+    "summary": "Bengaluru, India, 2026-10-01 — /EPR Network/ — As businesses continue to modernize their workplace technology, the demand for secure, manageable and scalable device ecosystems is becoming [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/10/01/1773251",
+    "published_at": "2026-10-01T12:27:22+00:00",
+    "source": "newsdata"
+  }
+]
