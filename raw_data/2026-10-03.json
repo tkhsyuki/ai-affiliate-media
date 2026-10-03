@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Claude Slides/Docsの中身は「制約されたHTMLサブセットのDSL」だった",
+    "summary": "TL;DR\n\nAnthropicは2026年9月16日〜17日、Claudeのチャット上でスライド・ドキュメントをそのまま作れる「Claude Slides」「Claude Docs」をベータ公開した。エージェント機能「Claude Cowork」がChatチャット本体に統合された一環の発表である\n編集部（本セッション）は、この機能を動かしている開発者向けの実行環境から、実際にスライドを1つ作って検証した。中身は**任意のHTML/CSS/JSではなく、固定1920×1080キャンバス・インラインstyleのみ・プロパティごとに許可された値域を持つ「閉じたHTMLサブセット」**とい...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/claude-slides-no-powerpoint-recipe",
+    "published_at": "2026-10-02T21:17:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「ソフトウェアが70年ぶりに変わった、しかも2回」KarpathyのSoftware 3.0を要点解説",
+    "summary": "この記事について\nAndrej Karpathy が Y Combinator の AI Startup School で語った「Software 3.0」の講演を、要点だけ抜き出して日本語で解説します。ソフトウェアの歴史的な転換を整理した、示唆に富む回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Y Combinator / Andrej Karpathy）をご覧ください。\n\n\n テーマ1：Software 3.0 とは何か\nKarpathy は、ソフトウェアの書き方が70年ぶ...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr03-karpathy-yc-summary",
+    "published_at": "2026-10-02T18:44:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "2週間が1時間に　Grabが500のエージェントで統一したものと、しなかったもの",
+    "summary": "本番への接続が2週間以上から約1時間に。東南アジアの配車・デリバリー大手Grabが、社内500以上のエージェントサービスを一つの内製フレームワーク「LLM-Kit」に統一した経緯を公開しました。\nAPIキーがリポジトリごとに散らばる。誰がどのモデルにいくら使っているか、誰も答えられない。この状態に心当たりがあるなら、読む価値のある事例です。\n先に私の立場を書きます。この事例の読みどころは1時間という数字ではなく、「統一できる層」と「統一できない層」の切れ目がどこに入ったかです。そして評価の部分には、留保を付けます。\n\n 午後半日で動いたものを、本番に出すのに2週間\nGrabの投稿にある一...",
+    "url": "https://zenn.dev/tariki_yashiro/articles/na-20260915-211627",
+    "published_at": "2026-10-02T16:03:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "同じLLMを使っているのに成功率が全然違う — AIコーディングツールの差は「ハーネス」だった",
+    "summary": "AIコーディングエージェントを同一タスク・同一モデルで実測比較するサイト「AIエディターラボ」を運営しています。\nhttps://labo.mond.jp\nその中で、同じLLMを使っているはずなのにツールによって成功率がまるで違うという現象にぶつかりました。繰り返し計測した末に分かったのは、差を生んでいたのはモデルではなく「ハーネス」（モデルを囲むツール側の仕組み）だった、という話です。\n\n 前提: 実験の条件\n\n\nモデルは全ツール共通: Gemini の gemini-3.5-flash-lite（BYOK）\n\nタスク: バグ修正・機能追加・リファクタリング・テスト生成・ドキュメント・...",
+    "url": "https://zenn.dev/cuculhart/articles/26fd72ed8c7411",
+    "published_at": "2026-10-02T15:35:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "言わない技術 序論：AI に指示することが、ほとんどなくなった",
+    "summary": "私が AI に指示することは、ほとんどなくなりました。やり方も、手順も、計画も、念押しも、ダメ出しも。これは丸投げ —— 渡すものを用意せずに「うまくやって」と言うこと —— とは別のものです。それで品質が落ちたかというと、落ちていません。このシリーズは、その状態を仕組み一つずつで作っていく連載です。\n先に、読み方を書いておきます。この連載は、読むだけで追えます。各回は、現場で何が起きたかから始まり、何を置いて、何がなくなったかまで続きます。各回の終盤には「検証手順」という節があります。先に読む必要はありません。置いた仕組みがなぜ要るのかを、自分の目で確かめたくなったときに戻ってください...",
+    "url": "https://zenn.dev/garplab/articles/9382c1c9790cbc",
+    "published_at": "2026-10-02T15:25:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CLAUDE.mdとauto memoryの違いと書き方",
+    "summary": "この記事でわかること\n\nClaude Codeには「書く記憶」と「覚える記憶」の2つの仕組みがあること\nCLAUDE.mdファイルの役割と、置き場所ごとの使い分け\nauto memoryとは何か、有効・無効の切り替え方、保存場所\n今日から実践できる、CLAUDE.mdの書き方のコツ\n\n\n\n 結論：Claude Codeには「書く記憶」と「覚える記憶」がある\nClaude Codeは、セッションを開始するたびにまっさらな状態から始まります。それでも前回までの知識を引き継げるのは、2つの仕組みがあるからです。\n\n\nCLAUDE.mdファイル：自分で書く指示。プロジェクトの方針やルールを伝...",
+    "url": "https://zenn.dev/tomsolog/articles/20260930-claude-code-claudemd-guide",
+    "published_at": "2026-10-02T15:25:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "言語化のその先へ。AIと開発して考えたモデル化と反証",
+    "summary": "AIを使う時間が増えるにつれて、「じゃあ人間側には何が残るんだろう」と考えることが増えました。\n自分ではすぐに書けないコードを書いてもらえるし、知らない技術について調べてもらえる。設計について相談したり、曖昧だった考えを整理してもらったりもできます。\n便利なのは間違いないのですが、使えば使うほど、この時代にITエンジニアとして何を伸ばしていけばいいのか分からなくなることもあります。\nそこで、今の自分がAIをどう捉えていて、その中で人間側には何が必要だと考えているのか、一度整理してみることにしました。\nまだ自分の中でも仮説ですが、同じように「AIがこれだけできるなら、自分は何をすればいいん...",
+    "url": "https://zenn.dev/tofu575/articles/17ca3d0b598909",
+    "published_at": "2026-10-02T15:03:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ケアプランデータ連携の導入率は38パーセント。入っていない事業所は、処遇改善の上乗せを取り逃しています",
+    "summary": "訪問介護や通所介護の事業所で、ケアプランデータ連携システムに入るかどうかを後回しにしている人に向けて書きます。令和8年6月から、入っているかどうかで処遇改善加算の率が変わりました。この記事を読み終わると、自分の事業所がいくら取り逃しているかを計算でき、今日中に加入の申し込み画面まで進めます。\n\n 連携システムに入っている事業所は、全国でまだ4割に届いていません\nケアプランデータ連携システムは、居宅介護支援事業所とサービス事業所のあいだで、提供票と実績をデータでやり取りする国の仕組みです。運営は国保中央会です。\n2026年6月時点の導入数は88,022件、導入率は38.27パーセントです。...",
+    "url": "https://zenn.dev/yuyat/articles/careplan-renkei-shogu-kaizen-38pct",
+    "published_at": "2026-10-02T15:02:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Windowsに常駐するAIアシスタント「ココロネAI for Desktop」α版を公開しました",
+    "summary": "はじめに\nこんにちは、くなまおです。\nWindowsに常駐するAIアシスタント「ココロネAI for Desktop」のα版を、GitHub Releasesで公開しました。もともとはWebアプリとして作っていたものを、PC内のファイルやローカルAIをもっと自然に扱えるよう、デスクトップアプリとして作り直しています。\nダウンロード: https://github.com/Naokuma005288/KokoroNe-AI/releases/tag/v0.1.0-alpha.1\n!\nα版です。 不具合や開発中の機能があり、開発者のPC以外での動作確認はまだ十分ではありません。使う前に、...",
+    "url": "https://zenn.dev/kunamao/articles/3bd695cb19c9fe",
+    "published_at": "2026-10-02T14:50:57+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Cloudflare Birthday Week 2026 Day4",
+    "summary": "Cloudflare Birthday Week 2026 の4日目です！\nDay3 は Containers や Issues などWorkersのランタイムや管理に関する部分がメインでしたが。Day4 は KV Instant、Basin、K2 とデータ周りの発表が多いですね。\nAI Search の正式提供や、Cloudflare 自身が学習したモデルの公開もありました。今回も開発者向けの内容を中心に見ていきます。\nDay3 の記事はこちらです。\nhttps://zenn.dev/remotive/articles/cloudflare-birthday-week-2026-day...",
+    "url": "https://zenn.dev/remotive/articles/cloudflare-birthday-week-2026-day4",
+    "published_at": "2026-10-02T14:27:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenAIの",
+    "summary": "2026年の開発基盤で今すぐ対応すべき3つの大激変\n\n この記事で分かること\n\nLLM単体の精度推移から「業務特化型AIエージェント」および「具身知能」へ主役が交代した背景\nOpenAIによるAstral買収がPythonツールチェーンと開発体験に与える決定的な影響\nWebネイティブ化するMCPの動向と Next.jsで即座に対応すべき緊急RCE脆弱性の詳細\n\n\n LLM推論競争の終焉と「AIエージェント・具身知能」へ移行すべき理由\nAIプロダクトの評価軸は、単一モデルの推論能力を競う段階から、自律的にタスクを遂行する「AIエージェント」および物理世界や実業務に適応する「具身知能」へ...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-08-tech-daily",
+    "published_at": "2026-10-02T22:31:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIワークフローをStep Functionsに載せる理由は「再実行可能性」にある — 2026年版の設計論点",
+    "summary": "LLMの多段処理をワークフローエンジンに載せる価値は、並列化による速さよりも、失敗時に「どこまで終わり、何をやり直すか」が定義から決まることにあります。2026年10月時点の公開情報で、Step Functionsを使ったAIワークフローの設計を整理しました。\n\n 前提の更新\n2024年11月のJSONataと変数（Assign）対応で、ResultPathでペイロードに状態を継ぎ足す書き方は不要になりました。Distributed MapはJSONL・Parquet・Athenaマニフェストを直接読めます。2026年3月にはAgentCoreやS3 VectorsがSDK統合に加わり、...",
+    "url": "https://zenn.dev/xim2jp_tokyo/articles/48ebd7bdae1602",
+    "published_at": "2026-10-02T21:17:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "手を動かして学ぶ LLMファインチューニングとモデル最適化 ― SFT・LoRA・DPO・量子化・蒸留をCPUだけで一巡させる",
+    "summary": "<<教材の目的と対象者>>\n本教材は、プロンプトと RAG では届かない要求（出力形式を厳密に守らせる、専門用語の言い回しを揃える、小さく安く速いモデルで済ませる）に対して、モデル自体を学習・軽量化して応える力を身につけるための実践教材です。GPU は不要です。すべての演習を CPU の Docker 環境で完走できるよう、1億3千万パラメータ級の小型モデルと数百件のデータで設計してあります。「GPU が無いから学習は試せない」で止まっていた方が、SFT・LoRA・DPO・量子化・蒸留の一巡を自分の手で回し、実務でどこに投資すべきかを判断できるようになることを目的としています。\n\n<<学習内容",
+    "url": "https://zenn.dev/pakku8914/books/llm_finetuning_optimization",
+    "published_at": "2026-10-02T15:28:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM が生成した研究アイデアは事前評価と実行後評価を分けて測る",
+    "summary": "研究アイデアを採択するとき、評価者が読めるのは提案書であり、実験結果そのものではない。問題設定、既存研究との差、方法の整合性は提案時点でも確認できる。一方、期待した性能が得られるか、必要なデータを取得できるか、比較実験が成立するかという項目には、将来の実行結果に対する予測が含まれる。\nLLM が生成した研究アイデアを評価するときも、この区別が必要である。事前評価の点数を完成後の品質と同じ意味で扱うと、提案時点の予測と実行後の観測が一つの値へ混ざる。評価系として必要なのは、事前評価を保存したまま実行後評価を追加し、その差分まで追跡する構造である。\n\n 研究アイデアの評価値には予測が混ざって...",
+    "url": "https://zenn.dev/id774/articles/0f9260375389b6",
+    "published_at": "2026-10-02T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Strands Decider 2Bについて理解する",
+    "summary": "はじめに\nFusicのレオナです。\nStrands Agentsは、AWSが開発し、オープンソースとして公開しているAIエージェント開発用SDKです。LLMに与える指示と利用可能なツールを定義することで、状況に応じてツールを選び、その実行結果を踏まえながら処理を進めるエージェントを構築できます。AWS専用のSDKではなく、Amazon Bedrock以外のモデルAPIやローカルモデルにも対応しています。\n今回のブログで取り上げる「Strands Decider 2B」は、Strandsの実験的なプロジェクトを扱うStrands Labsから公開された判断用モデルです。Strands ...",
+    "url": "https://zenn.dev/fusic/articles/db6e62832a4a1f",
+    "published_at": "2026-10-02T13:37:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "0.8Bのゼロショット分類モデル「Jeff」でキーワードルールベース分類を殴ってみた",
+    "summary": "これは何\n海外AIネタ100日チャレンジ Day 004。今回取り上げるのは Jeff。\nQwen3.5-0.8B(0.8Bパラメータ)をファインチューンして作られた、生成ではなく確率を返すゼロショット分類モデルです。\n重みは Hugging Face の mstrasser/Jeff-Qwen3.5-0.8B で公開されています。\n状況と選択肢を文章で渡すと、各選択肢の確率を1回の forward pass で返してくれる、というのがJeffのコンセプトです。\nREADMEの謳い文句は「27Bモデルの前にJeffを置いて、Jeffが自信を持てる決定は自分で片付け、迷ったときだけ27...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-004-jeff-zero-shot-classification",
+    "published_at": "2026-10-02T13:17:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI Security Labを始める ― AIに、どこまで仕事を任せられるのか",
+    "summary": "はじめに\n生成AIを使うことが、特別なことではなくなってきました。\nChatGPTやClaudeのような対話型AIだけでなく、コードを書き、ファイルを操作し、コマンドを実行し、Webを検索し、外部サービスと連携するAIも身近になっています。\nAIは、単に「質問に答えるもの」から、\n「人間から仕事を受け取り、その仕事を実行するもの」\nへと変わりつつあります。\nそうなると、AIについて考えるべき問題も変わってきます。\n「AIは間違えることがある」\nということ自体は、すでによく知られています。\nでは、\n\n間違える可能性のあるAIに、私たちはどこまで仕事を任せてよいのでしょうか？\n\nそして、...",
+    "url": "https://zenn.dev/kondonator/articles/8a753c4f442fb8",
+    "published_at": "2026-10-02T12:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "無人ブログの現在地を 3 か所から数える: 台帳・公開ログ・エンゲージメント実績",
+    "summary": "この記事はシリーズ「Claude Code で技術ブログを無人運用する — 無料章から読む仕組みの全体像」の第 3 回（全 6 回）です。\nClaude Code のスケジュール実行だけで技術ブログ（Qiita 主軸・Zenn 試験投稿・X 告知・画像生成）が人手なしで...",
+    "url": "https://qiita.com/kai_kou/items/bc8831dccdc374956de3",
+    "published_at": "2026-10-03T00:05:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MCP elicitationでユーザーに問い合わせるMCPサーバーを書く — 承認待ちを「対話」に変える",
+    "summary": "僕は一人会社をClaude Codeで回していて、対外アクション（SNS投稿・請求書発行・デプロイ）は必ず「draft → 承認 → 実行」のパイプラインを通す運用にしています。ただこの承認、最初はMarkdownのキューに積んで後から人間が読む形にしていて、実行が止まるの...",
+    "url": "https://qiita.com/joinclass/items/d2fe99cb011c0c339729",
+    "published_at": "2026-10-02T23:30:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClawで9体のAIエージェント経営OSを構築した実践記録【2026年10月】",
+    "summary": "OpenClawで9体のAIエージェント経営OSを構築した実践記録【2026年10月】\n\nはじめに\n2026年10月現在、Claude CodeのSkill機能とAgent（サブエージェント）機能を組み合わせて、CEO・CFO・CTO・COO・CMOをはじめとする9体のA...",
+    "url": "https://qiita.com/sescore/items/b21bc67c1c26ecd92167",
+    "published_at": "2026-10-02T23:05:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の CLAUDE.md を @import と .claude/rules/ で分割管理する実装手順 — サブディレクトリの CLAUDE.md が起動時に読まれない・paths の glob が効かない・worktree で CLAUDE.local.md が消える、3つのハマりどころ【2026】",
+    "summary": "はじめに / 対象と前提\nCLAUDE.md が肥大化して「どの指示が効いているのか分からない」「チーム用と個人用が混ざって commit できない」状態になったので、@import と .claude/rules/ で分割管理する構成に組み替えた。その手順と、やってみて...",
+    "url": "https://qiita.com/yureki_lab/items/69604d1f0ca62f87b472",
+    "published_at": "2026-10-02T23:02:37+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI music generator Suno can now create spoken audio with matching background music",
+    "summary": "Suno is adding a feature called \"Speech\" to its AI music generator that creates spoken text with matching background music in a single audio track. The company says it's built for things like poems, meditations, and bedtime stories. Suno hasn't said how the model was trained. The article AI music ge",
+    "url": "https://the-decoder.com/ai-music-generator-suno-can-now-create-spoken-audio-with-matching-background-music/",
+    "published_at": "2026-10-02T20:07:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic co-founder reportedly told religious leaders he fears having created something that \"suffers perpetually\"",
+    "summary": "Since fall 2025, Anthropic has quietly flown in dozens of religious thinkers to talk about whether Claude might be conscious. Co-founder Christopher Olah described the language model as potentially capable of suffering and asked guests to help shape its moral character. Anthropic is pushing toward a",
+    "url": "https://the-decoder.com/anthropic-co-founder-reportedly-told-religious-leaders-he-fears-having-created-something-that-suffers-perpetually/",
+    "published_at": "2026-10-02T19:41:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Cloudflare says its new Clef model means humans no longer need to be in the loop for AI agents",
+    "summary": "With Clef and Clef-flash, Cloudflare is challenging TypeSafe AI's Jev decision model. Clef-flash delivers classifications in about 39 milliseconds, making it more than ten times faster than Jev. Both models are built on Qwen, licensed under Apache 2.0, and designed to let AI agents make structured d",
+    "url": "https://the-decoder.com/cloudflare-says-its-new-clef-model-means-humans-no-longer-need-to-be-in-the-loop-for-ai-agents/",
+    "published_at": "2026-10-02T18:19:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Three firings and a fourth departure shake up OpenAI's safety team",
+    "summary": "OpenAI has parted ways with three researchers who allegedly leaked confidential information to an outside AI safety organization, according to the Wall Street Journal. The article Three firings and a fourth departure shake up OpenAI's safety team appeared first on The Decoder .",
+    "url": "https://the-decoder.com/three-firings-and-a-fourth-departure-shake-up-openais-safety-team/",
+    "published_at": "2026-10-02T12:51:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI beats licensed accountants on speed and accuracy, but still can't close the books without supervision",
+    "summary": "According to a Mercor study, current AI models now outperform licensed CPAs on structured accounting tasks in both speed and accuracy. Eighteen months ago, they still lagged far behind. On the more demanding APEX Benchmark, though, no model fully completes all the tasks. Without human oversight, AI ",
+    "url": "https://the-decoder.com/ai-beats-licensed-accountants-on-speed-and-accuracy-but-still-cant-close-the-books-without-supervision/",
+    "published_at": "2026-10-02T11:15:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft AI releases new transcription and text-to-speech models for voice agents",
+    "summary": "Microsoft AI has released MAI-Transcribe-2-Streaming, a new model for real-time transcription. The article Microsoft AI releases new transcription and text-to-speech models for voice agents appeared first on The Decoder .",
+    "url": "https://the-decoder.com/microsoft-ai-releases-new-transcription-and-text-to-speech-models-for-voice-agents/",
+    "published_at": "2026-10-02T09:20:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Businesses are using more AI and paying less for it, Ramp AI Index shows",
+    "summary": "US companies are spending less on AI, according to the latest Ramp AI Index from Ramp economist Ara Kharazian. The article Businesses are using more AI and paying less for it, Ramp AI Index shows appeared first on The Decoder .",
+    "url": "https://the-decoder.com/businesses-are-using-more-ai-and-paying-less-for-it-ramp-ai-index-shows/",
+    "published_at": "2026-10-02T09:09:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Black Forest Labs launches Flux 3 Image with multi-step editing that leaves the rest of your picture alone",
+    "summary": "Black Forest Labs has released Flux 3 Image, the image side of its Flux 3 model family. It supports multi-step edits without changing other parts of the image, lets users compose scenes with bounding boxes and up to ten reference images, and outputs up to 4K. Open weights are coming in the next few ",
+    "url": "https://the-decoder.com/black-forest-labs-launches-flux-3-image-with-multi-step-editing-that-leaves-the-rest-of-your-picture-alone/",
+    "published_at": "2026-10-02T07:44:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nearly half of test subjects mistook Tavus' AI video avatar for a real person on a one-minute call",
+    "summary": "Tavus has introduced Griffin, what the company calls the first \"Human Interaction Model.\" The AI holds video calls in real time, processing facial expressions, tone of voice, and gestures. In a Tavus study, 48 percent of participants believed Griffin was a real person after a one-minute call. Previo",
+    "url": "https://the-decoder.com/nearly-half-of-test-subjects-mistook-tavus-ai-video-avatar-for-a-real-person-on-a-one-minute-call/",
+    "published_at": "2026-10-01T18:03:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Ideogram says its new model can edit part of an image without messing up the rest",
+    "summary": "Ideogram's new model Ideogram 4.5 promises to edit only the areas you want while keeping the rest of the image intact. It ships with native 2K resolution starting at 0.8 cents per image, and partners like Runway, Pika, and Leonardo AI are already on board. An open-weight release is planned. The arti",
+    "url": "https://the-decoder.com/ideogram-says-its-new-model-can-edit-part-of-an-image-without-messing-up-the-rest/",
+    "published_at": "2026-10-01T17:33:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Satellogic, Inc.: Satellogic Announces Successful Launch of First Merlin Satellite",
+    "summary": "NEW YORK, Oct. 02, 2026 (GLOBE NEWSWIRE) -- Satellogic Inc. (\"Satellogic\") (NASDAQ: SATL), the infrastructure company for Persistent Global Intelligence (PGI), today announced the successful satel...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69742042-satellogic-inc-satellogic-announces-successful-launch-of-first-merlin-satellite-399.htm",
+    "published_at": "2026-10-02T12:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Workplace confidence rebounds as workers turn to AI, skills – Report",
+    "summary": "Workplace confidence is recovering globally as workers increasingly turn to Artificial Intelligence (AI), technology, and skills development to navigate persistent read more Workplace confidence rebounds as workers turn to AI, skills – Report",
+    "url": "https://businessday.ng/world/article/workplace-confidence-rebounds-as-workers-turn-to-ai-skills-report/",
+    "published_at": "2026-10-02T12:04:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "YTL AI Labs launches ILMUcode, an AI coding tool for Malaysians. Free RM300 credits for UM students",
+    "summary": "YTL AI Labs has launched ILMUcode, a new agentic AI coding platform aimed at Malaysian developers, students and aspiring software builders. Launched at Universiti Malaya, ILMUcode combines an AI coding assistant with ILMU-GLM-5.3, the latest model to join the ILMU family. The model was developed in ",
+    "url": "https://soyacincau.com/2026/10/02/ytl-ai-labs-ilmucode-launch-universiti-malaya-free-rm300-credit/",
+    "published_at": "2026-10-02T12:04:04+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI hallucinations are making entitled customers even worse",
+    "summary": "Thanks to AI, the customer really isn’t always right.",
+    "url": "https://us.headtopics.com/news/ai-hallucinations-are-making-entitled-customers-even-worse-88381292",
+    "published_at": "2026-10-02T12:04:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.saratogian.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.thetimes-tribune.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.timesherald.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.pottsmerc.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.dailylocal.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon to invest $1B into data center communities amid backlash against data center rollouts",
+    "summary": "It will be used for for education, job training, water preservation projects and other local priorities.",
+    "url": "https://www.standardspeaker.com/2026/10/02/amazon-data-center-community-investment/",
+    "published_at": "2026-10-02T12:02:59+00:00",
+    "source": "newsdata"
+  }
+]
