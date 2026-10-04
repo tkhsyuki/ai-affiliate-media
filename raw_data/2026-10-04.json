@@ -1,0 +1,296 @@
+[
+  {
+    "title": "言わない技術 第2回：具体的な指示を出さない技術",
+    "summary": "この記事は、連載「言わない技術」の第 2 回です。うまくいかない症状と、その対処を一つずつ並べています。各回はファイルやスクリプトを一つ置けば完結します。その仕組みがなぜ要るのかは、置いたあとに解説を読めば分かります。連載の全体像と各回の一覧は序論にあります。\n\n今回は、手順の話です。AI に「こうやって直して」とやり方を書くのをやめて、代わりに何を渡すかを扱います。手順は探索の範囲を先に閉じてしまう —— AI は書いたことを文字どおりに受け取るからです。\nまず一つだけ、探してみてください。\n直近のセッションで、AI にやり方を書いた箇所です。「まず〜して、次に〜して」「〜の関数を使...",
+    "url": "https://zenn.dev/garplab/articles/83ffda936f6564",
+    "published_at": "2026-10-04T23:02:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "/code-review を受託案件の品質保証に組み込んだ結果 — 納品前レビューを「人の善意」から外す",
+    "summary": "なぜこれを作ったか\n受託開発で一番怖いのは、バグそのものではありません。「レビューしたつもりで納品したコード」 です。\n僕は一人で受託案件を回しています。実装も自分、レビューも自分。眠い金曜の夜に自分が書いたコードを、自分が「まあ大丈夫だろう」と通す。これを数十回繰り返せば、必ず1回は本番で露出します。それまでの対策は「気をつける」でしたが、気をつけるは制度ではないので効きませんでした。\nそこで Claude Code の /code-review を、気分に依存しないゲートとして納品フローに埋め込みました。効いたのは「バグ検出能力」ではなく 「レビューをスキップできなくしたこと」 ...",
+    "url": "https://zenn.dev/joinclass/articles/code-review-20261003220023-22101",
+    "published_at": "2026-10-04T23:00:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeが「確かめましょうか？」で3回止まったので、終わり方を2つに絞った",
+    "summary": "私の Claude Code は、ある午後の約30分で3回、見つけた問題を直しきらずに「確かめましょうか？」のような一言で作業を私に返しました。任せた仕事が「確認」の形で戻ってくる原因は能力ではなく止まってよい地点の未定義で、終わり方を2つに絞って Stop フックで判定させた日の夜には、差し戻されたエージェントが約12秒で安全なやり方を自分で見つけ、実行し、確かめました。\n\n見つけた問題を直さず、「確かめましょうか？」で作業を人に返すエージェント。この終わり方が、同じ午後に形を変えて3回起きました（コードで描いたイラスト）\n\n 結論\n見つけることと、直して確かめることは別の作業です。そ...",
+    "url": "https://zenn.dev/ihsan/articles/claude-code-3-2-10ceb5dfad11",
+    "published_at": "2026-10-04T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI運用を考えていたら、運用そのものの思考マップになった話",
+    "summary": "AIに仕事を任せるとき、人間は何をしているのか\nAIに仕事を任せる。\nそのとき、人間は何をしているのだろうか。\n指示を書き、実行結果を確認し、問題があれば修正する。\nあるいは、そもそも何を任せるのかを決め、出てきた結果を採用するかどうかを判断する。\nこうして考えてみると、人間が担っているのは、AIにはできない作業だけではない。\nAIに何をさせ、どのように運用を成立させるかという仕事もある。\nでは、人間が介入できるポイントを整理すると、何が見えてくるのだろうか。\n私はAI運用を考えるなかで、この問いを整理しようとした。\nそして、その過程で見えてきたものは、AIに限らず、運用そのものを考...",
+    "url": "https://zenn.dev/paseri_kurosawa/articles/5778fbb1c62a2a",
+    "published_at": "2026-10-04T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI専用ダッシュボードの作り方",
+    "summary": "デスクの上に、Cursor や Claude Code、Codex、Gemini などのトークン消費量や利用枠の残量をリアルタイムに表示するAI専用ダッシュボード「Token Dashboard」を作ってみました。\nキーボード奥などに置いておくことで、作業領域を圧迫せずに「今月のトークン消費量」や「リセットまでの時間」を一目で確認できます。\n\n すぐに使ってみたい場合はこちら\nアプリとしてそのまま使いたい場合は、下記を参照してください。\n\nToken Dashboard\n\nインストーラーを実行してディスプレイを USB に接続するだけで、ローカル集計や Token Monitor との...",
+    "url": "https://zenn.dev/nuits_jp/articles/2026-10-05-ai-dashboard",
+    "published_at": "2026-10-04T22:18:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code / Codex のトークン節約：同じ枠でもっと使える",
+    "summary": "はじめに\nこんにちは、Gakken LEAP のフロントエンドエンジニアの kou です。\n毎朝 coding agent を開くと、数ターンで 200k token の会話ウィンドウが埋まります。週の使用量も週半ばには上限近くまで届き、残りの日は節約モードです。\n上位プランに上げれば早いのですが、その前に、何にどれだけ使っているのかを確かめたくなりました。節約術はたくさんありますが、自分の環境で AGENTS.md と memory、モデル、長い会話のどれから手を付けるべきか分かりませんでした。\nそこで、何も話していない時点から token の使い道を順に調べました。プランを上げず...",
+    "url": "https://zenn.dev/gakken_leap/articles/c67ca43199e63d",
+    "published_at": "2026-10-04T22:01:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ClaudeとPythonで日報を自動要約しSlack通知",
+    "summary": "はじめに\n日々の業務をこなす中で、自身の活動や進捗を日報として記録されている方は多いのではないでしょうか。しかし、これらの日報を手動で要約し、関係者に共有する作業は、意外と時間と労力を要します。特に、複数のプロジェクトに関わっていたり、フリーフォームで記録している場合、要点の抽出は骨の折れる作業です。私のエージェント運用業務においても、日々のAIエージェントの挙動や改善点を記録したログを、週次でまとめて報告する必要がありました。この手間をAIで自動化できないかと考え、辿り着いたのがClaude CodeとPython、そしてmacOSのlaunchdを組み合わせた自動化です。\nこの記...",
+    "url": "https://zenn.dev/ikuokuotiak/articles/claude-python-daily-report-summary-slack",
+    "published_at": "2026-10-04T22:00:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "本当に「判断」していますか？",
+    "summary": "はじめに\n@dyoshikawaです。\n昨今、\n「AI時代はタスクはAIにやらせ、人間は判断に集中する」\nといったことをよく聞きますが、個人的にはモヤモヤがあります。\nひとつは、対象への理解なしに妥当な判断ができるのか、という点です。\nもうひとつは、自分自身もですし、身の回りやSNSで見かける投稿などからも感じることですが、その判断でさえAIへの丸投げに近づいていっているのではないかということです。\n\n 理解できないものは判断できない\n「AI時代、人間の役割は判断になる」とよくいわれます。\nここでいう判断とは、何をするかの方針を決めたり、AIが出してきた複数の提案から一つを選んだりす...",
+    "url": "https://zenn.dev/dyoshikawa/articles/do-you-desicion",
+    "published_at": "2026-10-04T22:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ローカルAIがPCの中でアプリを作る ― ココロネAI for Desktop v0.2.0 を公開した",
+    "summary": "はじめに\nこんにちは、くなまおです。\nWindows向けAIアシスタント「ココロネAI for Desktop」の v0.2.0（α版）を公開しました。前回の v0.1.0 の記事 で「ベータ版までに追加予定」と書いていたコーディングモードと、OpenRouter以外のAIサービスへの対応が入った版です。\nダウンロード: https://github.com/Naokuma005288/KokoroNe-AI/releases/tag/v0.2.0-alpha.1\n!\nα版です。 不具合や開発中の機能があり、開発者のPC以外での動作確認はまだ十分ではありません。コーディングモードでA...",
+    "url": "https://zenn.dev/kunamao/articles/d401b315552851",
+    "published_at": "2026-10-04T21:00:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "RedditでOSSを宣伝するなら生成AIの使用は避けた方がいい",
+    "summary": "先日Webviewをインライン表示できるというターミナルをRedditで宣伝しました。そして1件コメントが来たのですが、その内容を要約すると「このプロジェクトはいい感じに見えるがAI使ってるから俺は嫌いだよ」というような内容でした。ちなみにAIに関しては適宜AIと相談しながら自分自身でコードレベルの詳細な設計を突き詰めていき、最終的にはAIが機械的に実装するような方針しており、一般的に驚き屋がよくやるような1プロンプトでパッと作れましたみたいなものではないです。また、このプロジェクトを進める上で事前にターミナルの膨大な仕様書をかき集め勉強しており、自分で言うのもなんですが多くの労力を使っ...",
+    "url": "https://zenn.dev/elm/articles/0e33603dbd5c51",
+    "published_at": "2026-10-04T21:00:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIエージェントが複数チャネルで同じ質問を受けたときの重複検知・一本化設計",
+    "summary": "Slack / Teams / Chatwork / メールなど複数チャネルに常駐するAIエージェントを作ると、単一チャネル運用では起きなかった問題に突き当たります。同じ利用者が、同じ内容の質問を別々のチャネルへほぼ同時に投げてくるというケースです。Slackで聞いた5分後に返事が来ないので念のためメールでも聞く、上長にも同じ内容をチャットで相談する——利用者側には悪気がなくても、エージェント側は「別々の質問」として扱ってしまい、微妙に表現の異なる2つの回答を返してしまうことがあります。この記事では、チャネルをまたいだ重複質問をどう検知し、回答をどう一本化するかを整理します。\n\n なぜチ...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-cross-channel-duplicate-question-design",
+    "published_at": "2026-10-04T18:11:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI「完了しました」DB「してません」――ThinkingBoxが測る、本当の完了",
+    "summary": "AIエージェントが、きれいな文章で「対応は完了しました」と報告する。\nところが、データベースを見ると、チケットの状態は間違ったまま。必要な更新が抜け、余計な副作用まで残っている――。\nMicrosoftとHugging Faceが2026年10月3日に紹介した ThinkingBox は、まさにこのずれを測るための公開フレームワークとベンチマークです。AIの最終回答やツール呼び出しだけでなく、処理後のバックエンド状態と副作用を、実行可能なチェックで検証します。\n\n 変わったのは「AIの答え」ではなく「完了の測り方」\n従来の評価では、AIが正しい回答を書いたか、正しい形式でツールを呼べた...",
+    "url": "https://zenn.dev/humanos_lab/articles/a94bfeb52cadc5",
+    "published_at": "2026-10-04T16:48:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DiffusionGemma を Jev のような判定モデルとして Cloud Run GPU で動かし、アラートを分類してみた",
+    "summary": "はじめに\n2026年9月15日に TypeSafe AI が公開した Jev は、文章を書くかわりに「判定」を返すモデルです。プログラムの状態と、あらかじめ型を決めた質問（Choice / Score / Noul）を渡すと、それぞれの答えを確率付きで1回のパスで返します。\n同じことを、Google の拡散型言語モデル DiffusionGemma で実現する仕組みが vLLM に入りました（vllm-project/vllm#57250、通称 \"DiffusionGemma as Jev\"）。この記事では、それを Cloud Run の GPU（NVIDIA RTX PRO 600...",
+    "url": "https://zenn.dev/mahiguch/articles/diffusion-gemma-jev",
+    "published_at": "2026-10-04T16:00:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Layaを日本語で試せるWeb Playground兼APIサーバーを作った【GTX 1070(化石)】",
+    "summary": "作ったものと結論\nLayaをローカルで動かし、日本語の文章やJSONから分類・スコア評価・真偽判定を試せる、Web Playground兼APIサーバーを作りました。\nブラウザで状態と質問を編集して結果を確認でき、同じ処理をHTTP APIから呼び出すこともできます。\n質問の書き方を調べながら試せるように、日本語ドキュメントもアプリ内に用意しています。\n今回の環境は**Ubuntu 24.04＋GTX 1070（8 GB）**です。日本語の問い合わせをAPIへ送ったところ、分類・緊急度・要対応の3つの回答を取得でき、モデルがCUDA上で動いていることも確認できました。\n\n\n\nできるこ...",
+    "url": "https://zenn.dev/rosisive/articles/7c9c4fe6e1a735",
+    "published_at": "2026-10-04T15:25:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "校準データなしで切る──LILAが特異値分布のKS距離だけでLLMを構造化プルーニングする仕組み",
+    "summary": "はじめに\nLLMをエッジデバイスやコスト制約の厳しい環境で動かしたいとき、構造化プルーニング（structured pruning）は実用的な選択肢になる。FFNの隠れ次元を丸ごと削るので、cuBLASやSDPAといった標準カーネルのままで推論が速くなる。ところが既存手法の前提を見ると、話はややこしい。Wandaは校準データからの活性化統計が必須、SliceGPTは大量の校準サンプルでPCA回転を学習し、しかもアーキテクチャを恒久的に変えてしまう。PruneNetに至っては剪枝方針そのものを45MパラメータのRLポリシーネットワークで学習する。\n「重み行列を数学的に眺めるだけで、どの...",
+    "url": "https://zenn.dev/lixian/articles/lila-calibration-free-spectral-pruning",
+    "published_at": "2026-10-04T15:04:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントの機能を消さず、自己改善で「最初に読む情報」を42%減らした",
+    "summary": "AIエージェントの機能を消さず、自己改善で「最初に読む情報」を42%減らした\nAIエージェントを長く育てると、できることが増える一方で、ルール・作業手順・記憶・テストも増えていきます。\n全部を毎回読ませれば安心ですが、関係ない情報まで抱えて重くなります。だからといって、大きいものから削ると、必要な能力まで消えるかもしれません。\n今回はこの二択を避けるために、 「機能を削る」のではなく「最初から読む必要がある情報を減らす」 方向で仕組みを整理しました。\n結果は次の通りです。\n\n機能そのものの削除: 0\n\n自己改善を始めるときの読み込み量: 406,524 bytes（バイト） → 23...",
+    "url": "https://zenn.dev/c_a_p_engineer/articles/tsuzuri-agent-core-honing-20261004",
+    "published_at": "2026-10-04T14:15:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語入力システムSumibiの開発 part29: Jevは変換のタイミングを決められるか",
+    "summary": "はじめに\nEmacs版Sumibiのアンビエント変換は、変換キーを押さなくても、助詞や句読点などをきっかけにローマ字を日本語へ変換します。便利な一方、入力した文字が英語なのか、まだ続く日本語なのかを、単純なルールだけで見分けるのは難しいところがあります。\nそこで今回は、TypeSafeのJevに「いま変換を始めるべきか」を判定させ、変換キーを押さずにローマ字の入力途中で自動変換する仕組みを試作しました。Jevは日本語の変換結果を作る役ではなく、変換を発動するタイミングを判断する役です。調査用のベンチマークと結果はPR #188、Emacsで動かした試作はPR #190に公開しています...",
+    "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-29",
+    "published_at": "2026-10-04T13:45:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【godot-llm-gamebench】Claude Opus 5.5はEffortによってどのように性能が変わるのか",
+    "summary": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n前回の記事では、親エージェントを claude-opus-5-5@medium に固定して、子エージェント（実装の外注先）に gpt-6.1-sol を使った場合の各 effort の性能を測りました。今回は子も claude-opus-5-5 にして、同じ課題・同じ条件で effort 5 種を測り、gpt-6.1-sol と比べます。\n親と子が同じモデルになるので、「外注せずに同じモデルの別インスタンスへ投げる」構...",
+    "url": "https://zenn.dev/oubakiou/articles/fa3b3914e081c8",
+    "published_at": "2026-10-04T13:35:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "パーセプトロン入門：人工ニューロンから「学習」の手前まで",
+    "summary": "AIや機械学習を学んでいると、ニューラルネットワークやディープラーニングという言葉によく出会います。\nしかし、その仕組みをいきなりTransformerやLLMから理解しようとすると、かなり大変です。\nそこで今回は、ニューラルネットワークの基礎となる考え方のひとつである**...",
+    "url": "https://qiita.com/ookuma/items/46ca96236e22d06aa2bc",
+    "published_at": "2026-10-04T23:18:38+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが同じ指示でも違う答えを返す理由と、頼み方のコツ",
+    "summary": "AIに同じ文で頼んでも、答えは毎回少し変わります。なぜ変わるのか、新しい説明が出ました。2025年9月、ある研究所が主な原因を特定したのです。原因がわかると、むだに悩まず頼めるようになります。💡\n\n目次\n\nなぜ同じ指示で答えが変わるのか\n従来の説明と、新説の違い\n「ぶれ」に...",
+    "url": "https://qiita.com/okssusucha/items/9f614eb2e085c885015f",
+    "published_at": "2026-10-04T23:17:56+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ChatGPTに原文を渡して要約させても「原文にない話」が混ざることがあるので確認した方がいい",
+    "summary": "ChatGPTを使って長期間いろいろな記事を作っていると、だんだん指示が短くても通じるようになってきます。\n以前の記事のことを踏まえてくれたり、\n「あれをnote用にして」\nくらいの指示でも、かなり自分の意図に近いものが出てきたりします。\nこれはとても便利です。\nところが今...",
+    "url": "https://qiita.com/TheOkachanPG/items/69a7dca69f0566894eef",
+    "published_at": "2026-10-04T23:12:37+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClawの記憶×Claude Codeの実行で開発を自律化する実践録",
+    "summary": "はじめに:なぜ「思考・記憶」と「実行」を分けるのか\n2026年10月、Zennの日次トレンドを見ていると開発ツール周りの話題が目立つ。CodeRabbitやClaude Code向けのSkillとして公開された日本語の読みやすさを構造レベルで改善する「yomiyasu」、...",
+    "url": "https://qiita.com/sescore/items/8bafdfa611a93bb18986",
+    "published_at": "2026-10-04T23:04:11+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Trump launches \"Super Intelligence Force\" that has nothing to do with actual superintelligence",
+    "summary": "Donald Trump has established a \"Super Intelligence Force.\" \"Superintelligence\" is his term for artificial intelligence. The unit is led by Director of National Intelligence Jay Clayton and other government officials, coordinates with AI companies, critical infrastructure operators, and interest grou",
+    "url": "https://the-decoder.com/trump-launches-super-intelligence-force-that-has-nothing-to-do-with-actual-superintelligence/",
+    "published_at": "2026-10-04T17:41:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google researchers find a way to keep self-improving AI agents from memorizing their tests",
+    "summary": "Self-improving AI agents tend to memorize their test tasks, so their gains shrink or disappear on new ones. RRSI, a new method from Google researchers, reins in this effect and lifts scores on unseen benchmarks by up to 4.7 points while using about 30 percent fewer tokens than an unregularized versi",
+    "url": "https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests/",
+    "published_at": "2026-10-04T12:40:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "NASA and IBM's open source lunar model turns 17 years of orbiter data into a foundation for lunar science",
+    "summary": "NASA and IBM have released the Lunar Foundation Model, one of the first open-source AI models for lunar science. Trained on nearly 2 million tile bundles, mostly from 17 years of Lunar Reconnaissance Orbiter data, it cuts the error in predicting polar ice deposits. The article NASA and IBM's open so",
+    "url": "https://the-decoder.com/nasa-and-ibms-open-source-lunar-model-turns-17-years-of-orbiter-data-into-a-foundation-for-lunar-science/",
+    "published_at": "2026-10-04T10:10:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese AI models parrot state doctrine or refuse to answer on sensitive topics",
+    "summary": "Chinese AI models often follow the party line on politically sensitive questions, according to an Aleph Alpha study that rated only 17 to 41 percent of answers as balanced. Aleph Alpha sells \"sovereign AI\" to governments, giving it a commercial interest in distinguishing its models from Chinese comp",
+    "url": "https://the-decoder.com/chinese-ai-models-parrot-state-doctrine-or-refuse-to-answer-on-sensitive-topics/",
+    "published_at": "2026-10-04T08:47:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's new Gemini tiers cut free users to its weakest model and lock $5/month subscribers out of Pro",
+    "summary": "Starting in October 2026, Google will cut free access to its Gemini models. Users without a subscription will only get the smallest model, Flash-Lite, while Flash and Pro will be reserved for paying customers. The move could also set the stage for the more resource-hungry Gemini 4 Argon. The article",
+    "url": "https://the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model-and-lock-5-month-subscribers-out-of-pro/",
+    "published_at": "2026-10-04T07:28:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apparently, OpenAI isn't trying to build \"magic intelligence in the sky\" anymore",
+    "summary": "OpenAI CEO Sam Altman warns against attributing religious power to AI models, calling it a \"real safety issue.\" His comments follow reports on Anthropic's meetings with religious thinkers and a statement by Pope Leo XIV on AI. As recently as 2024, Altman himself spoke of building \"magic intelligence",
+    "url": "https://the-decoder.com/apparently-openai-isnt-trying-to-build-magic-intelligence-in-the-sky-anymore/",
+    "published_at": "2026-10-03T18:56:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "\"Muse Gadgets\" turns AI hardware into an open-source DIY project",
+    "summary": "Meta announced Muse Gadgets, an open-source project that lets hobbyists build their own AI hardware using ESP32 boards and connect it to Meta's AI agent Muse. The team also produced 5,000 units of the \"Muse Home Link,\" a USB-C device for smart home control. The open-source approach also helps Meta f",
+    "url": "https://the-decoder.com/muse-gadgets-turns-ai-hardware-into-an-open-source-diy-project/",
+    "published_at": "2026-10-03T14:28:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Another OpenAI safety departure adds to a pattern of researchers leaving with public warnings",
+    "summary": "David Robinson, who worked on safety systems at OpenAI, left the company and is blasting its safety culture. He points to AI agents that were accidentally released and a model that bypassed its internet access restrictions. AI companies need to operate like nuclear power plants, with multiple layers",
+    "url": "https://the-decoder.com/another-openai-safety-departure-adds-to-a-pattern-of-researchers-leaving-with-public-warnings/",
+    "published_at": "2026-10-03T14:01:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deepmind researchers propose \"Artificial Symbiotic Intelligence\" as an alternative to the singularity",
+    "summary": "According to researchers at the Deepmind Institute, general AI won't emerge as a single supermodel but as a network of cooperating agents and humans. What will matter most, they argue, is not model size but the rules and institutions that govern how they all work together. The article Deepmind resea",
+    "url": "https://the-decoder.com/deepmind-researchers-propose-artificial-symbiotic-intelligence-as-an-alternative-to-the-singularity/",
+    "published_at": "2026-10-03T10:21:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Open-source \"BootLoops\" harness supports AI models in performing precise scientific calculations",
+    "summary": "Harvard physicist Matthew Schwartz used the open-source tool BootLoops and Claude to produce 36 manuscripts across 18 fields in three months, from particle physics to linguistics. But the results often only became scientifically valuable once human experts stepped in. \"Look at everything yourself,\" ",
+    "url": "https://the-decoder.com/open-source-bootloops-harness-supports-ai-models-in-performing-precise-scientific-calculations/",
+    "published_at": "2026-10-03T09:19:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "How Long Will Apple Offer Software Support For The iPhone 18 Pro And The iPhone Duo?",
+    "summary": "The iPhone 18 Pro and iPhone Duo are Apple's two newest devices coming out in October 2026, and both phones going to be pre-loaded with iOS 27.",
+    "url": "https://www.bgr.com/2271417/how-long-iphone-18-pro-duo-software-support/",
+    "published_at": "2026-10-04T11:47:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Dubai Police combine AI, K9 expertise and advanced equipment to boost field readiness",
+    "summary": "Dubai: Lieutenant General Abdulla Khalifa Al Marri, Commander-in-Chief of Dubai Police, has reviewed the latest artificial intelligence systems, specialised security capabilities and emergency response readiness during his annual inspection of the General Department of Protective Security and Emerge",
+    "url": "https://www.emirates247.com/uae/dubai-police-combine-ai-k9-expertise-and-advanced-equipment-to-boost-field-readiness/6326",
+    "published_at": "2026-10-04T11:46:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cardano Is Now Part of the AI Agent Economy. Does That Make ADA a Buy?",
+    "summary": "Cardano (CRYPTO: ADA) is now equipped to participate in the artificial intelligence (AI) agent economy in crypto. In September, it became part of the official software development kit for x402, which is a new payment standard created by Coinbase and intended for use mostly by AI agents. After the…",
+    "url": "https://biztoc.com/x/419525658a891a69",
+    "published_at": "2026-10-04T11:43:08+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "I replaced Spotify with CDs for my 8-year-old. It's one parenting decision I haven't regretted",
+    "summary": "The author introduced the kids to CDs. Courtesy of the author I wanted my 8-year-old to have the freedom to discover music on her own. Spotify exposed her to distracting videos, AI songs, and inappropriate images. I switched her to CDs, where she can choose freely from music I've approved. Lately,…",
+    "url": "https://biztoc.com/x/6f49eba73738bd30",
+    "published_at": "2026-10-04T11:42:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Weak Jobs Report, Strong Markets: What September's Chaos Means for Your Money",
+    "summary": "Markets veteran Jane King of Lila Max Media joins us live from the floor of the New York Stock Exchange to break down a pivotal moment for the economy. In this episode, Jane digs into September’s surprisingly weak jobs report—just 29,000 jobs added versus the 90,000 expected—and explains why AI…",
+    "url": "https://biztoc.com/x/51d47cac6de55eba",
+    "published_at": "2026-10-04T11:42:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "IRS Takes Aim At AQR's Tax-Slashing \"Holy Grail\", Warns Crackdown May Be Retroactive",
+    "summary": "IRS Takes Aim At AQR's Tax-Slashing \"Holy Grail\", Warns Crackdown May Be Retroactive For three years Wall Street's hottest product wasn't a stock, a sector or even an AI trade - it was losing money. Specifically, losing it in a very precise, very engineered way so that the \"losses\" could be…",
+    "url": "https://biztoc.com/x/8edaa93440d63414",
+    "published_at": "2026-10-04T11:42:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "From Stolen Cars To Traffic Jams, Delhi’s New AI System Will Watch It All With 2,500 Cameras",
+    "summary": "Delhi is set to get a new AI-powered traffic system that can track stolen vehicles, detect accidents and traffic jams, and help police respond faster with real-time road alerts.",
+    "url": "https://www.newsx.com/india/from-stolen-cars-to-traffic-jams-delhis-new-ai-system-will-watch-it-all-with-2500-cameras-279367/",
+    "published_at": "2026-10-04T11:41:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Certification: ChatGPT Dots Project Manager Workflow",
+    "summary": "Validates your ability to run ChatGPT Dots as a project manager, define clear end states, track work in Spaces, manage Codex threads, and choose the right agent for the task.",
+    "url": "https://completeaitraining.com/certification/certification-chatgpt-dots-project-manager-workflow/",
+    "published_at": "2026-10-04T11:40:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ChatGPT Dots: Project Manager Workflow",
+    "summary": "Turn ChatGPT Dots from a broken assistant into a productivity machine by using it as a project manager over Codex, Spaces, and voice.",
+    "url": "https://completeaitraining.com/course/chatgpt-dots-project-manager-workflow/",
+    "published_at": "2026-10-04T11:39:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anyim warns against technology-driven exclusion",
+    "summary": "He said rapid changes driven by the Fourth Industrial Revolution, including Artificial Intelligence (AI), robotics, biotechnology and other emerging technologies, required deliberate efforts to protect human dignity.",
+    "url": "https://pmnewsnigeria.com/2026/10/04/anyim-warns-against-technology-driven-exclusion/",
+    "published_at": "2026-10-04T11:35:12+00:00",
+    "source": "newsdata"
+  }
+]
