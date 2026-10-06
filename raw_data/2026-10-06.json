@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Agentに図解+操作可能なUIを渡す「dev-process-kit」を作った",
+    "summary": "はじめに\nAgentとの会話で図解 + 操作可能な UI によって、人間の認知負荷軽減とスムーズなフィードバックループを支援する「dev-process-kit」を作ったので紹介します！\nhttps://github.com/d-kimuson/dev-process-kit\n\n モチベーション\nコーディングエージェントの開発プロセスへの関与は急速に進んでおり、単にコードを書かせるだけでなく、設計・リサーチ・Plan・PDM業など任せる領域が日に日に増えていっています。結果、「Agentが出したアウトプットを受け取り、妥当性を判断する」時間の割合が増えています。\n\n 人間側の認知負荷...",
+    "url": "https://zenn.dev/bm_sms/articles/dev-process-kit-introduction",
+    "published_at": "2026-10-05T23:01:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「RAG を英語で 30 秒説明できますか？」一次情報の\"条件読み\"を鍛える学習パイプラインを作ってみた",
+    "summary": "TL;DR\n\nAI の一次情報（論文・技術記事）は英語。翻訳では may / under these conditions / compared with といった「判断の条件」が落ち、「わかったつもり」になる\n「原文を読む → 3 概念をつなぐ → 英語表現をひとつ掴む → 仕事タスクを書く」の学習パイプラインを設計し、Web ツール「AI English Shift」（AIを学び、英語で伝える。）にした\nRAG の完成サンプルで 10 分一周できる（登録不要、テスト期間中は無料）：https://www.ai-english-shift.space/digest/2026-W40...",
+    "url": "https://zenn.dev/yiyibuilds/articles/162d7710f21639",
+    "published_at": "2026-10-05T22:59:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n本日の技術トレンドでは、AI領域において単一のLLM活用から「AIエージェント」や「フィジカルAI（具身知能）」への実用化シフトが顕著になっています。一方、PythonエコシステムではOpenAIによるAstralの買収が大きな注目を集めており、uvやRuffをはじめとする次世代Python開発ツールチェーンの標準化が加速しています。\n\n\n AI/LLM：大規模言語モデルから「AIエージェント」および「具身知能」への主役交代\nAI/LLM領域では、単なるテキスト生成からエンタープライズ業務を自動化するエージェント機能、そして物理空間と連携するAIへのシフトが明確になっています。\n『W...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-09-tech-daily",
+    "published_at": "2026-10-05T22:34:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIチャットエージェントが扱うログの「保持期間・削除」設計",
+    "summary": "チャットに常駐して会話・添付ファイル・要約結果を蓄積していくタイプのAIエージェントは、使えば使うほど「過去を覚えていて便利」になる一方、その裏側では契約金額・人事情報・取引先名といった機密を含む生ログがどこかに積み重なっていきます。この記事では、常駐エージェントが持つチャットログ・添付ファイル・ベクトル化した要約データを「いつまで持つか」「消してと言われたときにどこまで消えるか」という保持期間・削除の設計をどう組むかを整理します。\n\n なぜ「ずっと残しておく」では事故るのか\n長期記憶や過去の要約検索は常駐エージェントの価値の一つですが、保持期間の設計を後回しにすると次のような事故につな...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-data-retention-deletion-design",
+    "published_at": "2026-10-05T22:11:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "質問許可の指示は『聞くかどうか』でなく『どう聞くか』を変えた",
+    "summary": "TL;DR\n\nnote版・ブログ版では非エンジニア向けに「AIへの丸投げ依頼に『質問は3つまでに絞って』と一言添えると、質問の数を減らせる」という手順を紹介した。Zenn版では、なぜこの指示が効いたのかを一歩掘り下げる\n情報がほぼ空の依頼（対象も内容も不明な「告知文を作って」）を、(A)無指示 (B)「質問は3つまで」 (C)B+「箇条書き・重要な順」の3条件で独立したサブエージェントに渡した\n\n(A)の時点で、AIはすでに推測で告知文を生成せず、6項目の確認質問を返した。 「質問は3つまで」を付けたB・Cは、質問するかどうかを変えたのではなく、6項目を削らずに3つの括りへ統合し、か...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-question-limit-3-no-guess-check",
+    "published_at": "2026-10-05T21:27:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Space Bunny: a long-context multimodal AI playground and API",
+    "summary": "Space Bunny Alpha is an anonymous preview reasoning model available through an online playground and an OpenAI-compatible API.\n\n What it supports\n\nA one-million-token context window\nUp to 524,288 completion tokens\nText, image, and video input\nText and JSON output\nTool calling\nFive adjustable reas...",
+    "url": "https://zenn.dev/haoli197654/articles/a399bafcd2dfbd",
+    "published_at": "2026-10-05T21:17:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "なぜ芸術大学が、100人規模のテックチームで自社開発を進めるのか",
+    "summary": "京都芸術大学のテックブログですが、開始から1年以上が経ち、本記事が記念すべき50本目の投稿となりました。\nこの間にテックブログの立ち上げだけではなく、Go Conference や YAPC へのスポンサード、各種外部イベントへの登壇など、様々なことにチャレンジすることができました。\nその中で共通する面白い経験。それは「京都芸術大学です」と伝える度に、皆さんから少し不思議そうな反応をいただくことです。\n恐らくそれは、芸術大学と聞いて思い浮かべるものが、日本画や油画、工芸、建築、映像、舞台、デザインといった世界だからでしょう。\nそこになぜ一見正反対に見える100人規模のテックチームが存在し...",
+    "url": "https://zenn.dev/xtm_blog/articles/4f3154ba93a4e5",
+    "published_at": "2026-10-05T21:14:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "こんな時代だから Seasar2 を構築してみようか",
+    "summary": "Claude CodeやCodexに聞けば、知らない技術でもそれっぽいものが完成します。\n課題はありつつも、基本的には便利な世の中になったものです。\n便利になった反面、スキル習得のための学習の機会は奪われてしまったかもしれません。\nそれでも前に進み続け、気づけば『あれ？どうやって勉強すればいいんだ？』というお声も聞くようになりました。\n個人的には、組織的に学習の機会を意図的に設計する必要があるのでは？という気持ちになっているわけです。\n私自身、どうやって学習していたんだろう、と振り返ることが多くなり、\n技術書をひたすら読んでいたり、\n資格取得に躍起になっていたり、\n無心で写経（コードを...",
+    "url": "https://zenn.dev/tokium_dev/articles/4dbec90075dab0",
+    "published_at": "2026-10-05T21:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PhotoshopやIllustrator代替OSS 7種をCodexにMCP接続してみた",
+    "summary": "Colissの「PhotoshopやIllustratorをオープンソースで再構築」という記事を読みました。\n\n何これ、すごすぎる！！ PhotoshopやIllustratorをオープンソースで再構築、しかもWin、Mac、Linux、Web対応で無料\n\nCrafting Appsとして、PhotoCraft、VectorCraft、FilmCraft、LightCraft、PrintCraft、EffectCraft、DesignCraftの7つのアプリが紹介されています。\nその中で特に気になったのが、「エージェント準備完了」の文字。\n「MCPで操作できるなら、Codexからどこま...",
+    "url": "https://zenn.dev/610birth/articles/9c1b5a701f26a2",
+    "published_at": "2026-10-05T20:42:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeに「意味の監査」をインストールできるSkillを作った",
+    "summary": "営業資料に、こういう数字が出てくることがあります。\n成約 15/20社\n普通に読むと、「成約率が高いのかな」と思います。もちろん全面的に信じるわけではなく、営業資料だから多少強く見せているだろうとも考えます。それでも、「まあそんなものかな」と受け入れて、次のページへ進みます。\nMeaning Audit という方法でこの数字を見ると、指摘はこうなります。\n\n20社とは何か\n母集団はどう定義されているか\n対象期間はいつか\n選定条件は何か\n\nこれらが資料の中で確認できない、という指摘です。\nここで言っているのは「15/20社は嘘だ」ではありません。数字は提示されているが、その数字をどこまで一...",
+    "url": "https://zenn.dev/onmitsu/articles/meaning-audit-skill",
+    "published_at": "2026-10-05T18:59:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが書いた「違う鍵は弾く」テストは緑。順番を変えたら違う鍵に14バイト返ってきた",
+    "summary": "「違う鍵の端末は繋がらない」というテストが緑だった通信部分で、正しい鍵で一度つないだ後に違う鍵を試すと、拒否されずに 14バイトの応答 が返りました。AIエージェントが足して「検証済み」と報告したテストやフックも、違反入力で一度も赤くしたことがなければ、壊れていても同じ緑を返します。\n\nイメージ図：違う鍵のテストは緑だった。けれど正しい鍵で一度つないだ後なら、違う鍵のクライアントにも14バイトの応答が返った（TLS のセッション再開を切ると止まった）\n\n 結論\n違う鍵を試すテストは、もとからありました。ただ、試していたのは新しいサーバへの「最初の接続」だけで、穴が出ない側の1点でした。原...",
+    "url": "https://zenn.dev/ihsan/articles/ai-14-9200b641f6e6",
+    "published_at": "2026-10-05T23:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「モデルが劣化した」は本当か？ペリカンテストを数十回回して分かったこと",
+    "summary": "開示： 私は記事の後半で触れている Folkbench の開発に関わっています。\n\n使い古された話題なのに、いまだにきちんと決着がついていない問題についてずっと考えています。よく「このモデル、最近バカになった」「また劣化した」と言いますが、そのうちどこまでが本当で、どこからが単発サンプリングによる錯覚なのでしょうか。\n最近、周りでモデルに「ペリカンテスト」（自転車に乗るペリカンをSVGで描かせるやつ）をやらせる人が増えています。このテストは確かにえげつなくて、コードを書く力だけでなく空間的な位置関係も問われます。くちばしとハンドル、足とペダル、フレームと車輪――空間理解が少しでも甘いと...",
+    "url": "https://zenn.dev/searching/articles/430e9ab5dbd7e6",
+    "published_at": "2026-10-05T18:17:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeに1か月の運用を任せて、止まった場所を全部記録した",
+    "summary": "AI（Claude Code）に、ブログの運用そのものを1か月任せました。記事を書く、数字を測る、サイトを直す、定期実行を組む。コードを書かせるのではなく、作業を回させる使い方です。\n結果として、止まった場所が偏っていることが分かりました。コードの誤りではほとんど止まりません。止まるのはいつも、その手前か、その外側です。\nこの記事は、1か月で実際に止まった場所の地図です。再現手順と、こちらで取った数字を全部出します。きれいな結論は出ていません。 分かっていないことは、分かっていないと書きます。\n\n 前提：何を任せたか\n\n\n\n対象\n内容\n\n\n\n\n記事\n下書きの作成、公開予約、タイトルと本文...",
+    "url": "https://zenn.dev/zeroyen_dev/articles/claude-code-where-automation-stops",
+    "published_at": "2026-10-05T16:34:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code に書かせたテストとレビュー — テストはあるのに、何もテストしていなかった",
+    "summary": "Claude Code にコードとテストを書かせていると、テストはいつも通ります。私の環境では、外部のサイトからデータを集める仕組みの安全装置（アクセス間隔の下限・時間帯の制限・1回の上限・個人情報の消去）をわざと外してみたら、6つともテストは1本も落ちませんでした。テストはあったのに、何もテストしていなかったのです。そこで、実装した会話とは別の文脈でレビューさせることにしました。10日間で26本の変更が61周のレビューを通り、重大な指摘は108件。レビューの前に自分で見つけていたという記録は0件でした。この本は、自分のテストとレビューが実際に何を確かめているのかを数え上げる手順をまとめたもの",
+    "url": "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
+    "published_at": "2026-10-05T16:04:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "止められたコマンドは、前半も実行されていなかった — Claude Code の周りで、起きたことを読み違えた5件",
+    "summary": "Claude Code に毎日作業をさせていると、コマンドの結果を読み違える場面があります。読み違えるのはエージェントのこともあれば、私のこともあります。\nこの記事では、2026年5月から9月までの記録から、読み違えた5件を集めました。どれも1件だけでは記事にならない大きさですが、並べると同じ形をしています。画面に出たものを、起きたことだと思い込んだ、という形です。\n\n\n\n#\n画面に出たもの\nそう読んだ\n実際に起きていたこと\n\n\n\n\n1\nhook のブロック\n危ないコマンドを止めた\n説明文の中の文字列に反応した\n\n\n2\n複合コマンドのブロック\n前半は実行済み\n1文字も実行されていない\n\n...",
+    "url": "https://zenn.dev/kuu_dqx/articles/what-ran-and-what-did-not",
+    "published_at": "2026-10-05T16:04:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Opus 5.5とSonnet 5.5、どっちを使う？ 新しいSonnet 5.5を数字で比べた",
+    "summary": "本記事について\nClaude Codeの最初のモデルはOpus 5.5です。いつも上位のモデルでいいのか、もっと速く安く済ませられないのか。迷ったことはありませんか。\n9月28日、Anthropicは「Claude Sonnet 5.5」を出しました。前のSonnet 5より30%以上速く、作業あたりの費用は最大30%下がり、成績は上位のOpus 5.5に迫っています。\n\n使い分けの目安（発表の説明をもとに筆者作成）\nこの記事は、発表と開発者向けの説明をClaudeに読んでもらい、数字を比べたものです。ClaudeをClaude CodeやAPIで使っていて、モデル選びで迷っている方...",
+    "url": "https://zenn.dev/shoujiki_panman/articles/claude-sonnet-5-5-or-opus",
+    "published_at": "2026-10-05T15:41:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【GitHub日報】セルフホスト筋トレ記録、AIエージェント最適化が活況 — 2026-10-06",
+    "summary": "GitHub Trending から、日本の開発者に役立ちそうなリポジトリを毎日ピックアップしてお届けします。\n\n🆕 初登場（First Timers）\n今日初めてトレンド入りしたリポジトリ。\n（該当なし）\n\n🔁 常連（Repeat Performers）\n過去にもトレ...",
+    "url": "https://qiita.com/Git_Dayori/items/823eba99ba6dc75ff0b0",
+    "published_at": "2026-10-06T01:33:00+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "claude -p の定期実行が失敗しても終了コードは0。報告末尾の状態行で異常を拾う",
+    "summary": "Claude Code をタスクスケジューラから claude -p で毎日動かしています。ランチャー（起動用の PowerShell スクリプト）には「終了コードが 0 以外なら通知を出す」という見張りを付けていました。\nところがある朝、ルーティンの中の X 予約投稿が失...",
+    "url": "https://qiita.com/Kujira_AI/items/9fba279a3d3e6a6016ad",
+    "published_at": "2026-10-06T01:01:23+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "請求書より先にアプリが守り始めた — AIO HelperのAI cost-cap spend guard",
+    "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n\n請求書より先にアプリが守り始めた — AIO HelperのAI co...",
+    "url": "https://qiita.com/chooser/items/1ffc4d515e841727d64e",
+    "published_at": "2026-10-06T01:00:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "IBM ai-servicesの新機能MCP サーバーを設定してみる",
+    "summary": "はじめに\nIBM ai-services（IBM Power AI Launchpad）v0.4.0 から、各 AI サービスが MCP（Model Context Protocol）サーバーとして公開されるようになりました。\nこの記事では、ai-services が提供...",
+    "url": "https://qiita.com/tom_m_m/items/d138c36b0557761ade49",
+    "published_at": "2026-10-06T01:00:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Meta and Microsoft pull back from Claude as Anthropic transforms from partner into competitor",
+    "summary": "Meta and Microsoft, two of Anthropic's biggest enterprise customers, are sharply cutting their use of Claude. Microsoft slashed the monthly per-employee budget in its cloud division from $100,000 to $10,000, while Meta halved its Claude Code users to 30,000. Both companies are pushing their own AI t",
+    "url": "https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor/",
+    "published_at": "2026-10-05T18:59:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Reka AI's omni-model Rho-1 handles text, images, video, and robot control in a single model",
+    "summary": "Reka AI's Rho-1 is a 19-billion-parameter omni-model that processes and generates text, images, video, and robot control actions in a single neural network. Trained on 320 H100 GPUs in about three months, it uses a fraction of the compute today's top models need. Instead of routing tasks to speciali",
+    "url": "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model/",
+    "published_at": "2026-10-05T18:26:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI will watermark ChatGPT text in the EU but makes it optional for API users worldwide",
+    "summary": "OpenAI is adding invisible textGrain watermarks to ChatGPT in the EU, but unlike Anthropic, it will let API customers worldwide opt out. Tests show detection rates as high as 95 percent, dropping to 17 percent when a quarter of the words are replaced. The article OpenAI will watermark ChatGPT text i",
+    "url": "https://the-decoder.com/openai-will-watermark-chatgpt-text-in-the-eu-but-makes-it-optional-for-api-users-worldwide/",
+    "published_at": "2026-10-05T17:32:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Most Americans want AI development to slow down or stop entirely, new poll finds",
+    "summary": "According to a Quinnipiac University poll, 77 percent of Americans want to slow down or stop AI development until its safety has been verified. 86 percent support independent safety standards, and 74 percent have little or no trust in AI company leaders. \"[…] the public wants safeguards that do not ",
+    "url": "https://the-decoder.com/most-americans-want-ai-development-to-slow-down-or-stop-entirely-new-poll-finds/",
+    "published_at": "2026-10-05T16:37:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic is quietly becoming America's biggest corporate donor ahead of its mega IPO",
+    "summary": "Anthropic employees donated $540 million in 2025 alone, nearly five times as much as the next-largest Fortune 500 donors, thanks to a company program that tops up every stock donation with extra shares and triples contributions from early employees. The article Anthropic is quietly becoming America'",
+    "url": "https://the-decoder.com/anthropic-is-quietly-becoming-americas-biggest-corporate-donor-ahead-of-its-mega-ipo/",
+    "published_at": "2026-10-05T16:00:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Aleph Alpha releases Kolibri, an open-weight model that makes the case for European AI sovereignty",
+    "summary": "Aleph Alpha has released Kolibri, a German-English mixture-of-experts model with 78 billion parameters, about three billion of which are active per token. Over 21 percent of the training data is German. The model was trained on 768 B200 GPUs in Germany and Finland, and the weights are freely availab",
+    "url": "https://the-decoder.com/aleph-alpha-releases-kolibri-an-open-weight-model-that-makes-the-case-for-european-ai-sovereignty/",
+    "published_at": "2026-10-05T14:12:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT's new ad format fills the image generation loading screen with product carousels",
+    "summary": "ChatGPT users in the US will soon see display ads while the chatbot generates an image for them. The article ChatGPT's new ad format fills the image generation loading screen with product carousels appeared first on The Decoder .",
+    "url": "https://the-decoder.com/chatgpts-new-ad-format-fills-the-image-generation-loading-screen-with-product-carousels/",
+    "published_at": "2026-10-05T12:37:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI is eroding office hours, study groups, and the trust between faculty and students, MIT report finds",
+    "summary": "An MIT expert committee warns that AI is eroding key parts of the college experience: office hours, study groups, and the school's flagship research program for undergraduates are all fading. Trust between faculty and students is breaking down, and some professors are even considering AI agents inst",
+    "url": "https://the-decoder.com/ai-is-eroding-office-hours-study-groups-and-the-trust-between-faculty-and-students-mit-report-finds/",
+    "published_at": "2026-10-05T11:46:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Trump launches \"Super Intelligence Force\" that has nothing to do with actual superintelligence",
+    "summary": "Donald Trump has established a \"Super Intelligence Force.\" \"Superintelligence\" is his term for artificial intelligence. The unit is led by Director of National Intelligence Jay Clayton and other government officials, coordinates with AI companies, critical infrastructure operators, and interest grou",
+    "url": "https://the-decoder.com/trump-launches-super-intelligence-force-that-has-nothing-to-do-with-actual-superintelligence/",
+    "published_at": "2026-10-04T17:41:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google researchers find a way to keep self-improving AI agents from memorizing their tests",
+    "summary": "Self-improving AI agents tend to memorize their test tasks, so their gains shrink or disappear on new ones. RRSI, a new method from Google researchers, reins in this effect and lifts scores on unseen benchmarks by up to 4.7 points while using about 30 percent fewer tokens than an unregularized versi",
+    "url": "https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests/",
+    "published_at": "2026-10-04T12:40:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPO Plus, Inc.: GPOPlus+ Presenting at NIBA's 153rd Investment Conference in Fort Lauderdale, FL October 7, 2026",
+    "summary": "Chairman and CEO Brett H. Pojunis to present the PRISM+ technology platform, the Company's hub network, and its roadmap to national scale to micro-cap and small-cap investors and bankers at NIBA's ...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69756958-gpo-plus-inc-gpoplus-presenting-at-niba-s-153rd-investment-conference-in-fort-lauderdale-fl-october-7-2026-200.htm",
+    "published_at": "2026-10-05T13:38:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "LTM launches BlueVerse AgenTraceIQ to monitor AI agents and reverse unintended actions",
+    "summary": "LTM has announced the launch of BlueVerse AgenTraceIQ, an offering designed to help organizations securely adopt and scale agentic AI. Combining Rubrik Agent Cloud with LTM’s AI governance and managed services expertise, the offering enables organizations to monitor AI agents, establish guardrails, ",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
+    "published_at": "2026-10-05T13:37:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Slovenia’s .si domains hit 20,000 in a day after Trump renamed AI",
+    "summary": "Slovenia’s domain registry recorded 20,276 new .si web addresses in the 24 hours to Monday afternoon, the live counter on Register.si shows. The .si country code matches the initials of “super intelligence”, the name President Donald Trump has told US agencies to use instead of AI. The registry coun",
+    "url": "https://thenextweb.com/news/si-domains-15000-a-day-trump-super-intelligence",
+    "published_at": "2026-10-05T13:37:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Business News | India’s 5G Network Reaches 86% of Population, Target Set to Double Users by 2030: Scindia",
+    "summary": "Get latest articles and stories on Business at LatestLY. India’s 5G network now covers 86 per cent of the population, with close to 500 million customers using 5G, and the government is targeting 1 billion 5G customers by 2030, Union Minister for Communications Jyotiraditya Scindia said on Monday.",
+    "url": "https://www.latestly.com/agency-news/business-news-indias-5g-network-reaches-86-of-population-target-set-to-double-users-by-2030-scindia-7633631.html",
+    "published_at": "2026-10-05T13:36:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sam Altman says we should accept a ‘few bad things’ happening for benefits of AI",
+    "summary": "Sam Altman has spoken about potential future regulation in the AI industry, saying that people need to accept that “some bad things happening for the benefits of this technology”.The OpenAI CEO said that, unlike Anthropic, he doesn’t believe that there should be close controls over advanced artifici",
+    "url": "https://www.indy100.com/science-tech/sam-altman-bad-things-ai",
+    "published_at": "2026-10-05T13:36:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Designing a Low-Latency Speech-to-Text Pipeline for Dictation",
+    "summary": "Push-to-talk dictation doesn't need a WebSocket. Here's how streaming, async, and a sync dictation API compare on latency, billing, and failure modes.",
+    "url": "https://us.headtopics.com/news/designing-a-low-latency-speech-to-text-pipeline-for-88473565",
+    "published_at": "2026-10-05T13:36:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AP Business SummaryBrief at 9:35 a.m. EDT",
+    "summary": "Trump names national intelligence director Jay Clayton to lead a new federal AI task force",
+    "url": "https://www.postregister.com/businessreport/business/ap-business-summarybrief-at-9-35-a-m-edt/article_80ee9a68-28b5-51e7-992a-b3c73075c1d9.html",
+    "published_at": "2026-10-05T13:35:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Redmi Note 17 Pro Max Review: A 10,000mAh Battery Beast",
+    "summary": "The Redmi Note 17 Pro Max takes a different approach to the Pro Max moniker, putting its massive 10,000mAh silicon-carbon battery ahead of performance and cameras. It offers excellent endurance, a bright 1.5K AMOLED display, 100W charging, and extensive IP ratings. However, the Snapdragon 6 Gen 5 ch",
+    "url": "https://www.gadgets360.com/mobiles/reviews/redmi-note-17-pro-max-review-12139531",
+    "published_at": "2026-10-05T13:35:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sony introduces AI upscaling to base PS5; Marvel's Wolverine and Ghost of Yōtei are first games to implement new tech - GamesIndustry.biz",
+    "summary": "Sony introduces AI upscaling to base PS5; Marvel's Wolverine and Ghost of Yōtei are first games to implement new tech GamesIndustry.biz AI upscaling is coming to PS5 PlayStation.Blog Hands-On With QSSR: AI-Driven Upscaling for the Standard PS5 Digital Foundry Sony brings AI graphics upscaling to the",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNR2NmQkl6REM3QVZRTjZHbmpWRzZoVjZKXzJzS3lRbFVTeVd4akhZazdrbEx6Rnp3Z2w1bjI5VUpsNkZHOF9QdTJjX2lqbzA2YjFESjZtTWs0OFFGNmFNY3N4UkhPcjV0UGZCUHFqd19yVDkzLXpqWUdvcXdQenQ5VWZreGY5YTVEaWVNRllLMzJSUVctSEtIWWZfbnVmUWVySHYzT3paQ1BLT2RtUFIybUVXTXpIb29FM0lQRjBsZjR5ZGJfSjdScmlUSU1QRzRSWDBONks1VnpYYVpXZUE?oc=5",
+    "published_at": "2026-10-05T13:35:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sony introduces AI upscaling to base PS5; Marvel's Wolverine and Ghost of Yōtei are first games to implement new tech",
+    "summary": "Sony Interactive Entertainment has introduced new AI upscaling technology to the base PlayStation 5, called Quick Spectral Super Resolution (QSSR) . Read more",
+    "url": "https://www.gamesindustry.biz/sony-introduces-ai-upscaling-to-base-ps5-marvels-wolverine-and-ghost-of-yotei-are-first-games-to-implement-new-tech",
+    "published_at": "2026-10-05T13:35:22+00:00",
+    "source": "newsdata"
+  }
+]
