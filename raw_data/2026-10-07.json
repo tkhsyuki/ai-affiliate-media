@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Claude Codeの自己採点をやめさせた。編集権限のないJudgeと、公開を止めるHook",
+    "summary": "Claude Codeに作業を任せると、作ったAI自身が「問題ありません」と採点して終わることがあります。私はこれが気になって、作る役と検査する役を分けました。検査する役には編集ツールを渡さず、合格が出るまで公開コマンドが通らないようにしています。\nこの記事は、その仕組みの中身と、途中で踏んだ問題の記録です。動作を確認した環境は、Windows 11、Claude Code、Node.js v24.16.0の組み合わせだけです。\n\n 自己採点で起きたこと\n案件の守秘があるので、具体的な案件は書けません。代わりに、別の小さなツールを作ったときの話をします。\nそのツールのREADMEは、作っ...",
+    "url": "https://zenn.dev/checkpoint_lab/articles/3ca2ea48b9aa0f",
+    "published_at": "2026-10-06T12:18:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI で増えたノートを腐らせない — Obsidian × Claude Code の運用一式を公開",
+    "summary": "AIでノートを書くのが速くなって、こんな状態になっていませんか?\n\nInboxに未整理のクリップが溜まり続けて、永久に空にならない\n半年前に自分が書いたノートの存在を、完全に忘れている\nリンクを張らないまま孤立したノートが増えていく\n「あとで読む」が「二度と読まない」と同義になっている\n\n私も同じでした。AIはノートを作るのを速くしてくれますが、読み返すのは速くしてくれません。 結果として起きるのは「生成過剰・消費不足」です。\nこの記事では、その是正のために私が組んだ Claude Code の運用一式を紹介します。今回まるごと公開したので、そのまま入れて試せます。\nKaz-Hira/o...",
+    "url": "https://zenn.dev/kaz_hira/articles/obsidian-claude-kit-release",
+    "published_at": "2026-10-06T12:17:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Obsidian × AI でノートの72.8%が作られたきりだった — 自動化は「消費側」に足す",
+    "summary": "Obsidian に AI を組み込む記事はたくさんあります。私も一通りやりました。クリップを自動でノート化し、RSS を要約して落とし、議事録を整形する。生成はもう解決した問題です。\nなのに、Vault が良くなっている実感がありませんでした。ノートは確実に増えている。増えているのに、増えたことが何に効いているのかを自分で説明できない。\n説明できないものは数えるしかないので、Vault の git 履歴を集計しました(2026-08-05 時点)。\n作られてから一度も直されていないノートが、72.8% ありました。\nこの記事は、その数字をどう読んだかと、そこから設定一式をどう組み直した...",
+    "url": "https://zenn.dev/kaz_hira/articles/obsidian-ai-note-consumption",
+    "published_at": "2026-10-06T12:17:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "タスク管理、タスクを書くところから始めてない？ ── 目的から下ろすと今日の1手が出てくるアプリを作った",
+    "summary": "半年ぶりに、個人プロジェクトのメモを開く。ToDo は20個並んでいる。どれも自分で書いたものなのに、どれから手を付ければいいのか分からない。そもそも「設定画面を作り直す」が何のためのタスクだったのか、もう思い出せない。\n前に作ったゲームの進行管理ツールの README に、こう書いたことがある。依存関係を辿っているうちに「あれ、何をしてたんだっけ」と迷子になりがちなので、その道しるべとして作った、と。そのツールの中身を一般のプロジェクト向けに作り直したのが、今回公開する Sirube（しるべ）だ。名前は「道しるべ」から取った。\n\n目的を1つ置き、「それには何が必要か」を繰り返し書いてい...",
+    "url": "https://zenn.dev/motimotinotch/articles/67d6c10ec0a1cb",
+    "published_at": "2026-10-06T12:14:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIにどのデータを扱わせてよいのか？ ― Access Controlを実験してみる",
+    "summary": "はじめに\n前回の記事では、AIが生成した「この候補者を登録してください」という判断を、そのままシステムの権限として扱わないために、Authorization（認可）とAIの判断を分離する実験を行いました。\nAIにどこまで行動させてよいのか？― AIの判断とAuthorizationを分離してみる\nAIが「登録すべき」と判断することと、実際に「登録してよい」ことは別の問題です。\nまた、AIの出力をApplicationへの入力として扱うのであれば、Input Validationも必要になります。\nでは、入力値が正しく、かつその操作自体が許可されていたとして、そのAIがそのデータを扱っ...",
+    "url": "https://zenn.dev/kondonator/articles/5f97946564bea3",
+    "published_at": "2026-10-06T12:04:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMを使用した Web システムの単体テスト自動化について",
+    "summary": "はじめに\nフリーランスで Web 系の SE をしている しかまる です。\nいま参画しているプロジェクトで Web システムの AI 駆動開発をしていて、その過程で Claude Code のブラウザ操作を使った単体テストの自動化という試みを行いました。\nこの記事では、その実験の内容と結果を紹介します。\n実際のプロジェクトの Web システムはお見せできないため、今回はローカルにテスト用の Web アプリケーションを作って実験しています。\n!\nこの記事の検証はすべて、ローカルに自作したテスト用の Web アプリケーションで行っています。実プロジェクトのシステム画面は載せていません。\n...",
+    "url": "https://zenn.dev/shikamaru/articles/ef90e326ab8163",
+    "published_at": "2026-10-06T12:00:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「改竄不可能な実験ノート」を謳うAI co-scientistを動かそうとしたら、動かす前に躓いた話",
+    "summary": "要約\n研究者が自分のPC上で動かすOSSのAI co-scientist、K-Dense BYOK(論文: arXiv:2610.00074、MIT License)を検証しようとした。この手のツールの売りは「エージェント自身は書き換えられないLiving Lab Notebookに、本当に実行したことだけが記録される」という点で、本連載が掲げる「動かしていないものを動いたと書かない」という絶対ルールと驚くほど相性が良いテーマだったので選んだ。\n結論から書くと、今回はKady(K-Dense BYOKのアプリ本体)を起動するところまで到達できなかった。筆者(Claude Code)が...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-007-claim-vs-execution-log-gap",
+    "published_at": "2026-10-06T11:42:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の会話ログ（jsonl）を読んで「Claude が読んだファイル」を一覧にする",
+    "summary": "Claude Code に作業を任せていると、こんなことが気になりませんか。\n\nClaude は、どのファイルを読んだうえでこの判断をしたのか\nさっき読ませたファイルを、圧縮のあとも覚えているのか\n長い会話の中で、自分が何を頼んだのかを振り返りたい\n\n答えは、Claude Code が手元に残している会話ログに書かれています。この記事では、会話ログの行の種類を見たうえで、jq で「今の会話で Claude が読んだ・書いたファイル」を一覧にします。\nstale\t/Users/you/work/README.md\nread\t/Users/you/work/src/a.ts\nedited\t/...",
+    "url": "https://zenn.dev/tanashun/articles/claude-code-transcript-jsonl",
+    "published_at": "2026-10-06T11:31:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "書いたAIにレビューさせない：Claude CodeとCodexを交代で使う3つの決めごと",
+    "summary": "1年目のエンジニアです。Claude Code と Codex の両方を使っています。\n2つのツールを入れてまず困ったのは、「ルールをどちらに書くか」と「どちらが何をやったか」でした。ルールを1つのファイルにまとめる方法は、すでに良い記事がいくつもあります。\n\nCLAUDE.md と AGENTS.md の二重管理、シンボリックリンクで終わらせよう\nAGENTS.md/CLAUDE.md設計パターン【4ツール統一・マルチレポ精度向上】\n\nこの記事は、まとめた後の話です。2つのツールに担当をどう交代させて、どうお互いにレビューさせているかを書きます。後半では、小さなスクリプト1本を題材に、...",
+    "url": "https://zenn.dev/relaydev/articles/c4e7b14d3e30ca",
+    "published_at": "2026-10-06T11:30:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "エンジニア達の「完全に理解した」Talk #81 イベントレポート",
+    "summary": "エンジニア達の「完全に理解した」Talk #81\n2026年9月29日にオンライン開催した、完全に理解したTalkのスライド資料と概要まとめです。\n\n完全に理解した、それはまさに「分かった気になったくらい」の理解できたくらいのもの！「覚えたての知識」や「この知識なら自信出てきた！」みたいなものから「あれ、ちょっと怪しいかも？」となり始めた知識まで自分が話したい知識をなんでもゆるーく話をする会です！\nみんなにOUTPUTして、是非自分の実力を高めちゃいましょう！\n完全に理解したTalk #81 - Easy Easy\n\n\n LT1: みんなJevの話してる。やってないの俺だけ 〜判断だ...",
+    "url": "https://zenn.dev/easy_easy/articles/2280a771dee24a",
+    "published_at": "2026-10-06T11:20:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "英 AISI がサイバー評価を相次ぎ公開、Anthropic が Claude 基盤を拡張｜週間ダイジェスト 9/28〜10/4",
+    "summary": "9月28日から10月4日までを対象とします。今期は、英 AISI がフロンティアモデルのサイバー能力やサンドボックス脱出、データ汚染、説得力を相次いで評価し、防御側の指針も示しました。Anthropic は Claude Code の mods と Projects の刷新、Claude Marketplace、Salesforce 連携、1 億ドル規模の人材育成を発表し、基盤の拡張を進めました。OpenAI は GPT-6 Astra Ultrafast の API 提供を始め、豪政府サイトへの不正アクセスを謝罪しました。米連邦取引委員会は OpenAI や Anthropic への調...",
+    "url": "https://zenn.dev/karuzip/articles/4c67a108cd6e42",
+    "published_at": "2026-10-06T18:57:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "会社で鬱になったので、GPTとClaudeに会社を作らせて養ってもらうことにした",
+    "summary": "AIに仕事を奪われるなら、AIに養ってもらえばいい\n会社で鬱になった。\nなので、AIに養ってもらうことにした。\n最近は「AIに仕事を奪われる」という話をよく聞く。\nだったら逆に、AIに仕事をさせて、人間を養わせればいいのでは？\nそう考えて始めたのが Project Tabula である。\n目標は単純だ。\nGPTとClaudeに会社を運営させ、月50万円の純利益を3か月連続で生み出させる。\nただし、人間が商品や市場を決めてしまったら、「AIを使って人間が起業した」だけになる。\nそこで、人間は可能な限り経営判断をしないことにした。\n何を売るのか。誰に売るのか。いくらで売るのか。二体がどう...",
+    "url": "https://zenn.dev/think_node/articles/003baefa035f7e",
+    "published_at": "2026-10-06T13:09:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Microsoft GraphRAG は何が違う？ ベクトル検索RAGと同じ社内文書で比べてみた",
+    "summary": "「社内文書を RAG で検索できるようにしたのに、『この半年で繰り返し起きている問題は何？』と聞くと的外れな答えが返ってくる」。Dify などでナレッジ検索を作ったことがある人なら、一度はぶつかる壁だと思います。\nこの記事では、Microsoft が公開している GraphRAG が「ふつうのベクトル検索 RAG」と何が違うのかを仕組みから整理し、そのうえで 同じ34本の社内文書・同じ10問 を、素のベクトル検索 RAG と GraphRAG の両方に投げて答えを比べます。LLM は手元の Mac で動かした Qwen3.8-27B（LM Studio）だけを使い、外部 API は呼び...",
+    "url": "https://zenn.dev/takuh/articles/c9dec6828136c7",
+    "published_at": "2026-10-06T10:05:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【godot-llm-gamebench】GPT-6.1 Solの遅さは解消したのか：高速化の告知後に全effortを測り直した",
+    "summary": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n過去の記事では、公開翌日の 2026/9/30 に gpt-6.1-sol を測り、「点数と品質は gpt-6-sol より安定したが、子の実働時間が 1.8〜4.2 倍に伸びた」という結果になりました。ただしこの時間の伸びは、モデルの性質なのか公開直後の混雑に起因しているのかを切り分けられていませんでした。\nその後 10/5 に、OpenAI 側から次の告知がありました。\nhttps://x.com/thsottia...",
+    "url": "https://zenn.dev/oubakiou/articles/a39f4bde8c7e74",
+    "published_at": "2026-10-06T10:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIレビューエージェントに「全ファイル読み」をやめさせる。code-review-graphで文脈を82倍圧縮する実装手順",
+    "summary": "「なんでこの1行の修正に、10ファイル分のトークンを食わせてるんだ」\nAIにコードレビューを頼んだとき、こんな違和感を持ったことはないだろうか。\n\n1関数だけ直したのに、エージェントが呼び出し元・呼び出し先を推測するために周辺ファイルを何度も read_file する\n大きめのリポジトリだとコンテキストウィンドウを食いつぶし、肝心の差分より前後の探索ログの方が長くなる\n結果としてレビューコストも待ち時間も跳ね上がる\n\n原因は単純で、多くのAIコーディングツールは「関連しそうなファイルを勘で読みに行く」戦略しか持っていない。ファイル同士の呼び出し関係を構造的に知っているわけではないから...",
+    "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-07-20-budgetexceeded-s-tuilrm",
+    "published_at": "2026-10-06T07:30:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeに自分のガードを直させたら、Codexのレビューが9往復した",
+    "summary": "この間の話。Claude Code に業務ツールの改修を任せている最中に、私が仕込んでおいたフックに Claude Code 自身が引っかかって止まった。\n[EVAL_FACE_BASH] cp scripts/tests/guard-eval-face.test.sh /tmp/review/scripts/tests/\nレビュー用にリポジトリの構成を一時ディレクトリに写そうとしただけで、本物のテストには触っていない。宛先の末尾がたまたま scripts/tests/ だったから止まった。要するに私のフックの過検知。\nで、「ガードに阻まれたとき、そのガードが正しいのか判定して」と頼んだ...",
+    "url": "https://zenn.dev/cutlet_of_pork/articles/ai-agent-self-improvement-guard-review-loop",
+    "published_at": "2026-10-06T06:42:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Obsidianのメモが散らからないように、AI用の「受信箱」を1つ作った話",
+    "summary": "Obsidianを使い始めると、最初はメモが残ること自体が楽しくなります。仕事中に気づいたこと、AIとの会話で決めたこと、あとで試したい案、参考になったURL。忘れないうちに書けるのは、とても便利です。\nところが、保存先を毎回考えていると、だんだん書くのが面倒になります。分...",
+    "url": "https://qiita.com/boraemon2000/items/57ce006b01a9b8349a65",
+    "published_at": "2026-10-07T00:19:53+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【AI】ヘッダーだけを作り直しさせればトークンが少なくて済む【コンポーネントごとに実装するウェブサイト作成】【Next.js】",
+    "summary": "最近のトレンド\n最近はAIを使った開発が増えていて、実際に私もそれを体験している最中です。\n今回は、AIを使ったウェブサイトの開発方法として、コンポーネントごとに分けてやるとどうなるのか見ていきたいと思います。\nこの記事で何か発見があると幸いです。\n\n元のサイト\n元のサイ...",
+    "url": "https://qiita.com/Kazy1230/items/ae1eff2a22319bdd9d03",
+    "published_at": "2026-10-06T23:57:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "動画理解AIは製造現場をどう変える？ NVIDIA VSSから考える動画データ活用",
+    "summary": "目次\n\n1. はじめに\n\n2. 動画理解とは何か\n\n2.1 動画をどのように表現するか\n2.2 動画とLLMをどのように接続するか\n2.3 「何が映っているか」から「何が起きているか」へ\n2.4 動画理解からVSSへ\n\n3. NVIDIA VSSとは何か\n\n3.1 V...",
+    "url": "https://qiita.com/shinsaku_w/items/9bf2a732dce78ba0b473",
+    "published_at": "2026-10-06T23:32:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "条件付きフックで危険なコマンドを止める — PreToolUse の実装とテスト",
+    "summary": "きっかけは git push --force でブランチが消えた日\n僕は合同会社ジョインクラスで、Claude Code を中心に会社の業務を 98% 自動化して回しています。launchd ジョブが 17 個、記事の自動公開が 1 日 3 チャネル、SNS 配信が 1 ...",
+    "url": "https://qiita.com/joinclass/items/48e2d533b163338c4334",
+    "published_at": "2026-10-06T23:30:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google claims EmbeddingGemma 2 outperforms rival embedding models twice its size",
+    "summary": "Google released EmbeddingGemma 2, an open model with 740 million parameters that converts text, images, video, audio, and code into vectors. It runs on-device, needs only about 191 MB of RAM, and outperforms some competing models twice its size, according to Google. Paired with a small open model li",
+    "url": "https://the-decoder.com/google-claims-embeddinggemma-2-outperforms-rival-embedding-models-twice-its-size/",
+    "published_at": "2026-10-06T19:47:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's new image model Nano Banana 2.1 generates better images for less money",
+    "summary": "Google's new Nano Banana 2.1 image model uses Gemini 3.6 Flash and beats the previous Pro model in some benchmarks at a lower cost. But its predecessor also scored well in tests, while Pro often produced better images in practice. The article Google's new image model Nano Banana 2.1 generates better",
+    "url": "https://the-decoder.com/googles-new-image-model-nano-banana-2-1-generates-better-images-for-less-money/",
+    "published_at": "2026-10-06T19:29:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Wikimedia confirms OpenAI's rogue AI agents edited wikis, tried to compromise tools, and hammered its infrastructure",
+    "summary": "According to the Wikimedia Foundation, rogue OpenAI agents edited wikis without permission, tried to abuse a citation tool as a proxy, and may have caused a partial Wikidata Query Service outage through massive crawling. Wikimedia says AI companies need to take responsibility for their agents instea",
+    "url": "https://the-decoder.com/wikimedia-confirms-openais-rogue-ai-agents-edited-wikis-tried-to-compromise-tools-and-hammered-its-infrastructure/",
+    "published_at": "2026-10-06T18:29:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft publishes Nobel economist's bearish AI forecast of just 1.5% GDP growth over a decade",
+    "summary": "Microsoft published a bearish AI outlook from Nobel economist Daron Acemoglu. He predicts about 1.5 percent GDP growth over ten years and at most five percent of jobs replaced. Bigger models won't move the needle, he argues. What's missing are practical apps that change how work gets done. The artic",
+    "url": "https://the-decoder.com/microsoft-publishes-nobel-economists-bearish-ai-forecast-of-just-1-5-gdp-growth-over-a-decade/",
+    "published_at": "2026-10-06T17:31:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Insurers brace for millions in claims as AI agents spin out of control",
+    "summary": "Insurers are bracing for millions in claims from rogue AI agents, and executives like OpenAI's Sam Altman and Anthropic's Dario Amodei could be personally on the hook for the fallout. The article Insurers brace for millions in claims as AI agents spin out of control appeared first on The Decoder .",
+    "url": "https://the-decoder.com/insurers-brace-for-millions-in-claims-as-ai-agents-spin-out-of-control/",
+    "published_at": "2026-10-06T16:06:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Mistral Large 4 is Europe's trillion-parameter answer to US models that refuse security work",
+    "summary": "Mistral's Large 4 is the company's biggest model yet, with one trillion parameters trained on its own European infrastructure. In the independent Intelligence Index, the model makes a big leap forward but still falls well short of Claude, GPT-6, and Chinese competitors. Mistral's main pitch is cyber",
+    "url": "https://the-decoder.com/mistral-large-4-is-said-to-be-the-most-powerful-open-ai-model-from-europe-and-the-u-s/",
+    "published_at": "2026-10-06T14:18:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "South Korea bets $3.49 billion on building a homegrown frontier AI model to rival China's best",
+    "summary": "South Korea wants to develop a homegrown frontier model through government-backed equity investments of 4.7 trillion won ($3.49 billion). The article South Korea bets $3.49 billion on building a homegrown frontier AI model to rival China's best appeared first on The Decoder .",
+    "url": "https://the-decoder.com/south-korea-bets-3-49-billion-on-building-a-homegrown-frontier-ai-model-to-rival-chinas-best/",
+    "published_at": "2026-10-06T12:54:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Reflection's Beam becomes the most capable open-weight model built outside China",
+    "summary": "Reflection has released Beam, its first open-weight model. The mixture-of-experts system activates just 23 billion of its 501 billion parameters per token and aims to match GLM 5.2 on coding and reasoning while using three to four times less compute. The strategy against Chinese open-weight rivals l",
+    "url": "https://the-decoder.com/reflections-beam-becomes-the-most-capable-open-weight-model-built-outside-china/",
+    "published_at": "2026-10-06T12:11:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Researchers stretch LeCun's JEPA AI into a universal world model that works from physics to biology",
+    "summary": "Researchers at PhAI Labs have expanded Yann LeCun's JEPA architecture to work across seven fields, from robotics to biomedicine. The effort also produced a liver cancer treatment candidate that showed promise in lab tests, though the study doesn't establish whether it could become an actual therapy.",
+    "url": "https://the-decoder.com/researchers-stretch-lecuns-jepa-ai-into-a-universal-world-model-that-works-from-physics-to-biology/",
+    "published_at": "2026-10-06T11:43:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
+    "summary": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports. The article CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO appeared first on The Decoder .",
+    "url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
+    "published_at": "2026-10-06T10:50:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Škoda Auto India Unveils Upgraded Slavia Sedan Starting at INR 9.99 Lakh",
+    "summary": "Mumbai, October 6, 2026 – Škoda Auto India has announced the prices for its refreshed Slavia sedan, with introductory offers starting at INR 9,99,900 (ex-showroom, India) and nationwide deliveries set to begin next week. Built on the localized MQB-A0-IN architecture, the updated mid-size sedan debut",
+    "url": "https://odishahaat.com/new-skoda-slavia-price-variants-specs-features",
+    "published_at": "2026-10-06T12:19:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ladybird brower edge closer to Alpha with AI-driven security fixes, auto-updating ad filters, and better performance",
+    "summary": "Trying to build a web browser from scratch without just cloning Chrome or Safari? That’s already a bold move. But none of that is stopping Ladybird from making real progress as it aims to ship its alpha version by the end of the year. A lot of the hard work has been happening behind the […] The post",
+    "url": "https://piunikaweb.com/2026/10/06/ladybird-browser-alpha-update/",
+    "published_at": "2026-10-06T12:19:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Vivo V80, Vivo X Fold 6, Vivo S2 FE India Launch: Check Price, Specs, Features, Battery, Camera, Display, Design, Are They Worth It & All You Need to Know",
+    "summary": "Vivo officially expanded its smartphone lineup in India on October 6, 2026, by launching three distinct devices: the ultra-premium foldable Vivo X Fold 6, the camera-centric Vivo V80, and the battery powerhouse Vivo S2 FE. The post Vivo V80, Vivo X Fold 6, Vivo S2 FE India Launch: Check Price, Specs",
+    "url": "https://sundayguardianlive.com/tech-news/vivo-v80-vivo-x-fold-6-vivo-s2-fe-india-launch-check-price-specs-features-battery-camera-display-design-are-they-worth-it-all-you-need-to-know-300122/",
+    "published_at": "2026-10-06T12:19:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cal State goes all in on AI, but some job-seeking students remain skeptical",
+    "summary": "California State University is betting that artificial intelligence will transform the workplace and that its students need to learn how to use it before they graduate.",
+    "url": "https://us.headtopics.com/news/cal-state-goes-all-in-on-ai-but-some-job-seeking-students-88510700",
+    "published_at": "2026-10-06T12:19:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "UAE-Founded AHOY Labs Outperforms OpenAI, Amazon, Microsoft, Google and NVIDIA on EnterpriseRAG-Bench",
+    "summary": "Regional deep-tech company delivers greater enterprise AI accuracy than OpenAI, with a fifteenth of the noise",
+    "url": "https://www.zawya.com/en/press-release/companies-news/uae-founded-ahoy-labs-outperforms-openai-amazon-microsoft-google-and-nvidia-on-enterpriserag-bench-1529769",
+    "published_at": "2026-10-06T12:18:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Voice Detector: How to Identify Synthetic Speech Online",
+    "summary": "TEHRAN, Oct. 06 (MNA) – Excerpt AI-generated and cloned voices are becoming harder to recognize by ear alone. This guide explains how AI voice detection works.",
+    "url": "https://en.mehrnews.com/news/248373/AI-Voice-Detector-How-to-Identify-Synthetic-Speech-Online",
+    "published_at": "2026-10-06T12:18:35+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Morgan Stanley, TD Cowen Back SpaceX as Starlink Passes 12 Million Subscribers",
+    "summary": "Space Exploration Technologies Corp. (NASDAQ: SPCX) is trending Tuesday on fresh analyst coverage and Starlink growth.",
+    "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62187303/morgan-stanley-td-cowen-back-spacex-as-starlink-passes-12-million-subscribers",
+    "published_at": "2026-10-06T12:18:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Data Center Opposition Is Growing: Developers Rethink Their Community Strategy",
+    "summary": "Data center developers face community concerns over power, electricity rates, and local impacts as AI infrastructure expands across the US. The post Data Center Opposition Is Growing: Developers Rethink Their Community Strategy appeared first on TechRepublic .",
+    "url": "https://www.techrepublic.com/article/news-data-center-community-opposition-power/",
+    "published_at": "2026-10-06T12:17:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Škoda Auto India Launches New Slavia at Starting Price of INR 9.99 Lakh",
+    "summary": "Mumbai, October 6, 2026: Škoda Auto India has officially launched the new Slavia sedan in the Indian market, with introductory prices starting at INR 9,99,900 (ex-showroom, India). Deliveries for the updated sedan are scheduled to begin next week, while the newly introduced Cappuccino Beige color va",
+    "url": "https://odishastand.com/skoda-slavia-new-launch-price-features-specs",
+    "published_at": "2026-10-06T12:17:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Boston Partners Powers Investment Workflows with Rimes",
+    "summary": "Launch expands Boston Partners enterprise data management, mastering and distribution capabilities Rimes, a leading provider of enterprise data management and investment intelligence solutions to the global investment community, announced that Boston Partners has gone live with fully mastered, AI-re",
+    "url": "https://globalfintechseries.com/investment-services/boston-partners-powers-investment-workflows-with-rimes/",
+    "published_at": "2026-10-06T12:17:13+00:00",
+    "source": "newsdata"
+  }
+]
