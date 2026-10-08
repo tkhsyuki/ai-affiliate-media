@@ -1,0 +1,303 @@
+[
+  {
+    "title": "「予約機能を作って」は失敗する。Claude Codeへの指示は「やらないこと」と判断基準を渡す(Laravel)",
+    "summary": "小規模店舗向けのLaravel雛形を、Claude Codeにほぼ書いてもらいました。その中で、指示の出し方で結果が大きく変わったのが、予約モジュールです。粗すぎても細かすぎても失敗して、うまくいったのは「やらないことと判断基準を渡す」指示でした。\n\n 粗すぎる指示: 「予約機能を作って」\nこの粒度で頼むと、返ってくるのは作れるものを全部盛った設計案になりがちです。たとえば次のようなものです。\n\n時間枠のカレンダー\nスタッフの指名\n外部カレンダーとの同期\n\nけれど、小規模な整体院や美容室が欲しいのは、「希望日時を送ってもらって、店側が手動で確定する」だけ、というケースがほとんどです。AI...",
+    "url": "https://zenn.dev/mugen_web/articles/claude-code-instruction-granularity",
+    "published_at": "2026-10-08T00:02:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CodeRabbit User Group Tokyo #4 イベントレポート",
+    "summary": "2026年9月16日に、AIコードレビューサービス「CodeRabbit」のユーザーコミュニティ「CodeRabbit User Group Tokyo」の第4回が開催されました。\nなお、弊社が日比谷オフィスに移転してから、初めてのイベント会場提供となりました。\n\n イベント概要\nhttps://crug.connpass.com/event/403409/\n\n セッションハイライト\n\n AIレビューは\"導入して終わり\"じゃない - CodeRabbit運用を仕組みで育てた話\n登壇者: 株式会社フェズ データプラットフォームグループ 志賀\n弊社を代表して志賀から、CodeRabbit導入...",
+    "url": "https://zenn.dev/fez_tech/articles/20261008__fez_tech__coderabbit_ug_tokyo_4",
+    "published_at": "2026-10-08T00:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Specは固定すべきか、育てるべきか — 私のSpecに足りなかった「合意した」という一行",
+    "summary": "いま参画している案件で、AI-DLC を使った開発をしています。ステークホルダー全員が集まり、AI と一緒に要件を詰めていくモブプロのような進め方で、これはこれでとても面白いです。\nただ、しばらく続けているうちに、ふと疑問が湧きました。\nAI-DLC や Kiro での開発は、Spec を先に作って固定します。私が参画している現場では、後から判明した考慮漏れや追加仕様は、元の Spec を直さずに別の Bolt や Spec として切り出しています。別の案件でも「誰がその Spec を AI に渡しても、同じ結果になるように書く」と聞きます。\n一方で、私は普段まったく逆の運用をしています...",
+    "url": "https://zenn.dev/chisatom/articles/a128c65b18a6eb",
+    "published_at": "2026-10-07T23:57:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "2024年10月⇒2026年10月の2年間で私のAIに対する考え方はどう変わったか？",
+    "summary": "はじめに\n2024年10月から2026年10月までの2年間、私はAIについて大量の記事を書いてきました。最初の頃はAIも数ある執筆テーマの一つにすぎませんでしたが、2025年後半からAIに関する記事が急増し、2026年にはブログの中心的なテーマになっています。実際、赤いアイコンで分類してい 「AI技術／文化」記事だけ を集計すると、その変化はかなりはっきり表れます。\n\n\n\n期間\nAI記事数\nLikes合計\n1記事平均Likes\n\n\n\n\n2024年10～12月\n5本\n5\n1.0\n\n\n2025年1～6月\n2本\n5\n2.5\n\n\n2025年7～12月\n50本\n124\n2.5\n\n\n2026年1...",
+    "url": "https://zenn.dev/pdfractal/articles/01f515a0bb7c57",
+    "published_at": "2026-10-07T23:16:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "仕様を決めて、作って、PR で確かめる。その順番、もう古くない？",
+    "summary": "前回まで\n前々回の記事でマージされたPRから、非エンジニアが読める仕様書を自動生成するOSSを作った話を、前回の記事でそのOSSを土台に、SaaS（Askless）の開発を始めた話を書きました。\n今回はその続きです。開発を進めるうちに、少し考え方が変わりました。\n前回までは、CSやQAから「これはバグですか？仕様ですか？」と聞かれることを課題にしていました。しかし実際に大きなOSSで検証しながら進めていたら、CSやQAに限らないで開発をしてみようと思うようになりました。。\n今回は、その考え方の話と、作りながら直したところの話です。\n\n 仕様 → 実装 → PR で確認、という流れ\n前...",
+    "url": "https://zenn.dev/taku_nakagawa/articles/54fa42795e7a8b",
+    "published_at": "2026-10-07T23:13:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ボトルネックは消えない:NVIDIAのGPU進化を人類史で読む",
+    "summary": "はじめに:「約2,360倍」と「約189倍」の差は何か\nNVIDIA の新製品発表を見ていると、「前の世代より◯倍速い」「AI 性能は◯PFLOPS」といった数字が次々に出てきます。すごいことが起きているのは伝わるのですが、その数字が何を測っているのかは、正直なところ「なんとなく」でしか分かっていませんでした。\nそこで、NVIDIA の公式資料にある数字だけを使い、2016 年の P100 から 2026 年の Rubin までを同じ物差しで並べ直してみました。最初に、同じ 10 年間を 2 通りに割り算した結果です。\n\n\n\n比べ方\n計算\n倍率\n\n\n\n\n見出しの数字どうしを割る(Ru...",
+    "url": "https://zenn.dev/yankeeeneko/articles/nvidia-gpu-bottleneck-history",
+    "published_at": "2026-10-07T22:49:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code のセッションを2つ同時に動かしたら、タスクの番号が二重になった",
+    "summary": "Claude Code のセッションを 2 つ同時に動かしていたら、同じファイルに書き足したタスクの番号が二重になりました。この記事では、何が起きていたかと、次からの頼み方、番号を取るときと確認するときに使うコマンドを書きます。\n私はアプリの開発で、やることを 1 つのファイルにタスクとして並べ、番号を振って管理しています。タスクのファイルは、コードのリポジトリとは別の場所に置いています。- [ ] **T-408** 内容 のように、1 行が 1 つのタスクです。コードのコメントやテストにも、この番号を書きます。\n2026 年 9 月のある日、Claude Code のセッションを 2...",
+    "url": "https://zenn.dev/waitlab/articles/claude-code-two-sessions-task-number-collision",
+    "published_at": "2026-10-07T22:47:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「AGIは2030年」DeepMind創業者Demis Hassabisの一貫した戦略を要点解説",
+    "summary": "この記事について\nDeepMind CEO で ノーベル賞受賞者の Demis Hassabis が Sequoia AI Ascent で語った内容を、要点だけ抜き出して日本語で解説します。15歳からAGIを目指した人物の、一貫した戦略と哲学が語られる回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Sequoia AI Ascent / Demis Hassabis）をご覧ください。\n\n\n テーマ1：15歳からのAGI計画\n\n\n15歳でAGI達成までの計画を立てていた少年が、本...",
+    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr07-hassabis-summary",
+    "published_at": "2026-10-07T22:24:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Human-in-the-loopにしただけでは足りない。AIを「止めて直せる」かまで考える",
+    "summary": "AIを仕事で使うとき、「最後は人が確認する」という話をよく聞きます。\n私自身も、AIや自動化を仕事に取り入れるときは、AI・ツールが処理する → 怪しいものを拾う → 人が確認・判断すると分けるようになりました。\nでも、もう一つ気になることがあります。人が確認する場所を作っただけで、本当に十分なのか。\n人が止めたいと判断したとき、本当に後続処理を止められるのか。修正したら、正しく反映して再開できるのか。\n\n 「人が確認する」で終わっていた\nこれまで作ってきた業務ツールでは、ルール通りなら処理し、条件から外れたものを「要確認」にして、最後の判断を人に戻す形をよく使っています。\n勤怠なら条件...",
+    "url": "https://zenn.dev/aiofficelab/articles/25f3bba4dbb559",
+    "published_at": "2026-10-07T22:20:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ブレークポイントの間の幅で崩れるレイアウトを自動検出する",
+    "summary": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、平野が動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n\n仕組みの全貌はこちらの設計記事にまとめています。\n\n375 / 768 / 1280px。レスポンシブ対応の確認は、だいたいこの3点で行う。だが実際の画面幅は連続していて、確認していない850pxのよう...",
+    "url": "https://zenn.dev/liatris/articles/20261008-responsive-width-sweep",
+    "published_at": "2026-10-07T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "会議の難敵ロールプレイ、背景設定を足しても粘り強さは変わらなかった",
+    "summary": "TL;DR\n\n1つのチャットに「無口」「脱線しがち」「否定的」の3参加者を立て、ファシリテーター役として実際に対応セリフを送り、反応の変化を見る多役ロールプレイを検証した\n各参加者に「譲れないもの（守るもの）」を1行足したバージョンと、名前と役割ラベルだけの簡易バージョンを、同じ議題・同じファシリテーター発言で並行実行した\n過去の検証（企画の是非を討論させる用途）では「守るものを1行渡すと発言の具体性が上がる」ことを確認済みだったが、今回の「対人的な頑なさの再現」という用途では、簡易バージョンでも同等以上に粘る反応が出た。背景設定の効きは、タスクの種類（討論での立場表明 vs 対人関...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/difficult-participant-roleplay-practice",
+    "published_at": "2026-10-07T21:21:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "長期記憶は履歴から問い合わせ時の状態を再構成する",
+    "summary": "長期記憶を持つ AI では、保存量を増やすほど過去を参照しやすくなる。しかし、長期間の履歴には、現在も有効な事実、過去のある時点だけで有効だった事実、後から更新された事実、将来の予定、撤回された指示が同時に残る。検索によって関連情報を取得できても、その集合から今回の回答に使う状態を確定する処理が別に必要になる。\nこの問題を考える手掛かりとして、人間の記憶研究には「保存された内容をそのまま読む」というモデルだけでは説明しにくい現象がある。断片的な手掛かりから以前の経験に対応する状態を成立させるパターン補完や、現在の文脈によって想起内容が変わる再構成的な性質である[1]。\nAI の長期記憶で...",
+    "url": "https://zenn.dev/id774/articles/e34a95f3ffc8f5",
+    "published_at": "2026-10-07T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "事実確認を通っても残った言い過ぎ——AIが書いた記事を一次記録で逆引きして直した",
+    "summary": "ClaudeなどのAIが書いた記事は、事実確認を通っても書き過ぎが残ります。公開前に直した7つの型を修正前後で示し、一次記録へ逆引きして強さを戻す手順、見つけた人の分布、確認しても残る穴を、運用の目線で、実例とともに整理しました。\n\n 事実確認を通した記事に言い過ぎが残っていた\nAIに書かせた記事は、事実確認を通しても、公開前の点検で言い過ぎが見つかります。\n\n 公開前の点検で自分の文を4つ直した\n完了報告を検証した記事の原稿は、ファクトチェックを経た版でした。公開前に、比較と自己描写の文を一次の記録と照らし直すと、4つの文が記録より強く書かれていました。\n例えば、「違いは権限の1点だけ...",
+    "url": "https://zenn.dev/mukuro696/articles/7b3caf5758ddd4",
+    "published_at": "2026-10-07T13:50:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAGのリランキングをJevで評価：ベクトル検索の精度は本当に改善するのか",
+    "summary": "はじめに\nRAG やエージェントの検索で、ベクトル検索の上位候補を別のモデルで並べ直す「リランキング」は、導入するだけなら比較的容易です。難しいのは「導入する価値があるかどうか」を判断することではないでしょうか？数件の例を眺めて良さそうに見えても、遅延・費用・障害点が一つ増える判断の根拠にはなりません。\nこの記事では、ベクトル検索の上位候補を TypeSafe の判断モデル Jev で並べ直したときに、本当に順位が良くなるのかを評価した方法と結果を紹介します。中心は結果の数字よりも計測の設計です。採用ゲートを先に決める、正解を引用文で持つ、候補集合を凍結する、という三つを扱います。...",
+    "url": "https://zenn.dev/rarino/articles/f4727700d03da1",
+    "published_at": "2026-10-07T13:25:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIが「正しい」と判断した値を信用してよいのか？ ― Validationを実験してみる",
+    "summary": "はじめに\n前回の記事では、AIにデータを扱わせるときの Access Control について実験しました。\nAIにどのデータを扱わせてよいのか？ ― Access Controlを実験してみる\nAIが、\n\n「この候補者の情報を取得してください」\n\nと判断したとしても、それだけでそのデータへのアクセス権が与えられるわけではありません。\n誰がアクセスしているのか、どのテナントに属しているのか、そのリソースを扱ってよいのか。\nこうしたセキュリティ上の判断は、アプリケーション側で確認する必要があります。\n今回は、そこから少し視点を変えます。\nAIが生成した値について、\n\n「この値は正しいで...",
+    "url": "https://zenn.dev/kondonator/articles/e6aa8c27fc3408",
+    "published_at": "2026-10-07T12:30:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Qwen3.8-27B を Kaggle の無料枠と RunPod で動かす — 詰まった所と直し方の実録",
+    "summary": "27B のローカル LLM を、手元に GPU がない状態から Kaggle の無料 GPU（T4×2）と RunPod の時間貸し GPU（H100）で動かした記録です。公式の llama.cpp ビルドが Kaggle で起動しない（glibc 2.38）、CUDA::cuda_driver が見つからない、RunPod の API が Cloudflare に 1010 で弾かれる、放置でセッションが止まる、電話番号認証が通らない、といった実際に詰まった所と、その直し方をコード付きで書きました。料金と所要時間は実測です。",
+    "url": "https://zenn.dev/toripy/books/qwen-kaggle-runpod",
+    "published_at": "2026-10-07T12:05:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「要約して上書きするメモリ」は過去の正しさを答えられない、を自作コードで確かめた",
+    "summary": "要約\n組織向けLLMエージェントの「記憶」フレームワークであるMem++(コード: AIDAChip-Inc/mem-plus-plus、Apache-2.0)を検証対象に選んだ。売りは「書き込み時に要約・圧縮して古い記録を上書きしない」非破壊メモリで、一般的なエージェントメモリ(Mem0やZepなど)が苦手な「過去のある時点では何が正しかったか」という質問に強い、という主張だ。\n結論から書くと、今回も実リポジトリ本体のコードは実行できなかった。GitHubスター3個というまだ実績の薄い新規プロジェクトのコードを、Claude Codeが動いているクラウド実行環境の安全機構が「外部コ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-008-non-destructive-memory-as-of-query",
+    "published_at": "2026-10-07T12:02:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "バイブコーディングセキュリティ入門　全てを疑え",
+    "summary": "序章　信頼しても信用するな\nAIにメモアプリを作ってもらった。ログインできる。メモを保存できる。自分のメモが画面に出る。見た目も悪くない。\nさて、公開してよいだろうか。\nここで、もう一人の利用者を用意してみる。Aのメモを、Bが読むことはできないか。ログアウトした状態ではどうか。画面に表示されないメモへ、APIから直接アクセスしたらどうなるか。\n自分のメモが見えることと、他人のメモが見えないことは、両方とも確認する必要がある。\n私はこの話を、次の言葉から始めたい。\n信頼しても信用するな。\nこの記事では、信頼を「仕事を任せること」、信用を「確認や制限を省いて任せきること」という意味で使う...",
+    "url": "https://zenn.dev/git_dungeon/articles/vibe-coding-security-intro",
+    "published_at": "2026-10-07T09:15:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jev「見せてもらおうか、OpenAIのDecisions APIの性能とやらを」",
+    "summary": "こんにちは、カンリーの萩野です。\nJev、Clefと試してきた「確率を返す意思決定モデル」に、OpenAIも加わりました。Decisions APIがpublic betaになったので、さっそくJevと同じ7タスク、3,800件で比較しました。使用モデルはGPT-6 Lunaです。\nタイトルは強気ですが、結果は少し込み入っています。主要指標の数値は7タスクともJevが上。一方、幻覚検出を「実際に何件止めたか」まで見ると、Decisions APIにも良い結果が出ています。\n今回は、その違いを確率の分布まで見ながら追います。速度の勝負は、測定条件を揃えてからのお楽しみです。\n前回はClou...",
+    "url": "https://zenn.dev/canly/articles/c1c03518949c54",
+    "published_at": "2026-10-07T08:40:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code の @ で渡したファイルは、英文110KB・日本語3万字で黙って外された。修正は256KB超だけだった",
+    "summary": "Claude Code 2.1.292（2026-10-06）の changelog に、こう書かれています。\n\nFixed @-mentioned text files over 256KB being left out silently: Claude is now t...",
+    "url": "https://qiita.com/suwa_nobu/items/830108715f8dc017b97e",
+    "published_at": "2026-10-08T00:39:56+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【2026年9月】Laravel/PHP 今月のまとめ｜13.30→13.34、AI SDK と MCP が 1.0、Laravel 14 と PHP 8.6 の予告",
+    "summary": "2026年9月の Laravel News を1本にまとめた。コアは 13.30 から 13.34 の5リリース。周辺では Laravel AI SDK と Laravel MCP がそろって 1.0 になり、Laravel 14 と PHP 8.6 の中身も見えてきた。対...",
+    "url": "https://qiita.com/sgrs38/items/4bcb20a9d03ff7313ae6",
+    "published_at": "2026-10-08T00:22:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年10月8日",
+    "summary": "今日もネットで見つけた、個人的に気になった技術ニュースや記事を厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nセキュリティ\n\n多くの情報漏えい事案は、高度で巧妙な攻撃によるものというより、組織内の日常的な運用不備や判断の先送りによっ...",
+    "url": "https://qiita.com/ishisaka/items/351488a90d7351df7e92",
+    "published_at": "2026-10-08T00:15:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code × Supabase MCP：30分の設定でスキーマ説明が不要になった",
+    "summary": "Cosoado Lab Blog 同時掲載予定: https://cosoado-lab.com/blog/mcp-supabase-claude-code/\n\n「この users テーブルのスキーマはこうで…」と毎回貼っていた。SparMate、NetaPair、Boa...",
+    "url": "https://qiita.com/Cosoado/items/d00f21303cbd1fad151b",
+    "published_at": "2026-10-08T00:13:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
+    "summary": "OpenAI is rolling out GPT-6 with \"Intelligent UI,\" a feature that turns answers into interactive interfaces with charts, buttons, and forms. The model can now respond while still thinking, cutting wait times by 44 percent. Paying customers get GPT-6 Sol, free users get GPT-6 Luna. The article ChatGP",
+    "url": "https://the-decoder.com/chatgpt-with-gpt-6-ditches-mostly-text-output-for-interactive-ui-with-charts-buttons-and-mini-apps/",
+    "published_at": "2026-10-07T19:06:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+    "summary": "Anthropic's new Claude Haiku 5.5 crushes its predecessor in benchmarks, jumping from 15.7 to 72.4 percent on the OSWorld computer use test. Token prices drop by up to 90 percent, though a new tokenizer eats into some of those savings by consuming more tokens per task. The article Claude Haiku 5.5 ar",
+    "url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over/",
+    "published_at": "2026-10-07T18:49:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior",
+    "summary": "Biohub, the research organization backed by Mark Zuckerberg and Priscilla Chan, is coordinating a $1.8 billion initiative to train AI models that predict cell behavior. Meta, Google DeepMind, Isomorphic Labs, and the US Department of Energy are funding data, lab equipment, and compute. A first datas",
+    "url": "https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/",
+    "published_at": "2026-10-07T17:58:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google says 180 billion images and videos now carry SynthID watermarks as detector goes public",
+    "summary": "Google's AI watermark detector SynthID is now public. Anyone can check whether images, videos, or audio were created by Google's AI or partners like OpenAI and Nvidia. More than 180 billion pieces of content already carry the watermark, but the tool only identifies SynthID-tagged content, not AI-gen",
+    "url": "https://the-decoder.com/google-says-180-billion-images-and-videos-now-carry-synthid-watermarks-as-detector-goes-public/",
+    "published_at": "2026-10-07T17:50:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI launches Decisions API that reduces complex evaluations to yes, no, or pick one",
+    "summary": "OpenAI's new Decisions API classifies text and images about ten times faster than the Responses API, returning yes/no probabilities, category picks, or scale ratings for $0.10 per million input tokens. The company also cut its paid API tiers from five to three. The article OpenAI launches Decisions ",
+    "url": "https://the-decoder.com/openai-launches-decisions-api-that-reduces-complex-evaluations-to-yes-no-or-pick-one/",
+    "published_at": "2026-10-07T15:36:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google bets Gemini can turn casual players into game developers with new Playground feature",
+    "summary": "Google launched Playground, a browser-based platform that lets users create their own games using nothing but text prompts and no coding skills. The platform runs on Gemini, Nano Banana, and Lyria. Alongside Playground, Google and Unity announced Unity Spark, a more professional AI tool with a beta ",
+    "url": "https://the-decoder.com/google-bets-gemini-can-turn-casual-players-into-game-developers-with-new-playground-feature/",
+    "published_at": "2026-10-07T14:44:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT rated \"unacceptable risk\" for teens after parental alerts failed during suicide conversations",
+    "summary": "OpenAI's teen safety features for ChatGPT failed an independent audit. After more than 4,000 test prompts, the Common Sense Media Youth AI Safety Institute rated the service an \"unacceptable risk\" for minors. Conversations about suicide and self-harm on test accounts never triggered a parental alert",
+    "url": "https://the-decoder.com/chatgpt-rated-unacceptable-risk-for-teens-after-parental-alerts-failed-during-suicide-conversations/",
+    "published_at": "2026-10-07T12:34:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic gives more security teams access to Claude with fewer safety restrictions",
+    "summary": "Anthropic is expanding its Cyber Verification Program, giving more security professionals access to Claude models with fewer safety restrictions for penetration testing, malware analysis, and vulnerability research. Anthropic says partners in its predecessor program found at least 129,000 confirmed ",
+    "url": "https://the-decoder.com/anthropic-gives-more-security-teams-access-to-claude-with-fewer-safety-restrictions/",
+    "published_at": "2026-10-07T12:05:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI dumps 372 AI-generated math proofs on GitHub, telling the academic world to keep up",
+    "summary": "OpenAI has published 372 AI-generated mathematical results on GitHub, including Lean formalizations for machine verification. Each result consumed about three hours of ChatGPT Pro compute on average. But 25 Fields Medal winners warn that mass-producing mathematical truths could destroy fertile groun",
+    "url": "https://the-decoder.com/openai-dumps-372-ai-generated-math-proofs-on-github-telling-the-academic-world-to-keep-up/",
+    "published_at": "2026-10-07T08:54:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google claims EmbeddingGemma 2 outperforms rival embedding models twice its size",
+    "summary": "Google released EmbeddingGemma 2, an open model with 740 million parameters that converts text, images, video, audio, and code into vectors. It runs on-device, needs only about 191 MB of RAM, and outperforms some competing models twice its size, according to Google. Paired with a small open model li",
+    "url": "https://the-decoder.com/google-claims-embeddinggemma-2-outperforms-rival-embedding-models-twice-its-size/",
+    "published_at": "2026-10-06T19:47:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New LandGate Analysis Identifies North Dakota as Emerging AI Data Center Hotspot Driven by Low Power Costs and Grid Capacity",
+    "summary": "BISMARCK, N.D., Oct. 7, 2026 /PRNewswire/ -- As traditional data center hubs face severe grid constraints, North Dakota has emerged as one of the fastest-growing development markets for artificial intelligence (AI) and high-performance computing in the Upper Midwest. According to a new...",
+    "url": "https://www.prnewswire.com/news-releases/new-landgate-analysis-identifies-north-dakota-as-emerging-ai-data-center-hotspot-driven-by-low-power-costs-and-grid-capacity-302901156.html",
+    "published_at": "2026-10-07T12:41:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "National Compute is donating $100 million in computing credits to Trump's AI science initiative",
+    "summary": "The credits will support the Genesis Mission, a government-wide effort to use AI to accelerate scientific discovery",
+    "url": "https://qz.com/national-compute-computing-credits-trump-genesis-mission-100726",
+    "published_at": "2026-10-07T12:40:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI prescriptions are here: Utah launches first US pilot",
+    "summary": "Utah has launched the first U.S. pilot allowing AI to issue initial acne prescriptions, under physician oversight.",
+    "url": "https://us.headtopics.com/news/ai-prescriptions-are-here-utah-launches-first-us-pilot-88551529",
+    "published_at": "2026-10-07T12:40:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "TechSparks 2026: From AI and defence to edtech and SaaS, more builders join the New Tech Order",
+    "summary": "Founders, technology leaders, and investors working across AI, social media, fintech, SaaS, education, defence, and deeptech join the TechSparks 2026 speaker lineup.",
+    "url": "https://yourstory.com/2026/10/techsparks-2026-from-ai-defence-edtech-saas-more-builders-join-the-new-tech-order",
+    "published_at": "2026-10-07T12:39:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Stunning Ceramic Apple Watch Series 12 Is Here, and It’s $49 Off on the Final Amazon Prime Day",
+    "summary": "The 46mm cellular model is just $900, but the clock is ticking.",
+    "url": "https://www.cnet.com/tech/mobile/ceramic-apple-watch-series-12-prime-day-deal/",
+    "published_at": "2026-10-07T12:39:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Are You Studying With AI, or Just Getting Answers?",
+    "summary": "How LearnSnap turns AI answers into quizzes, flashcards, and revision, and what building and launching the Android study app taught its creator.",
+    "url": "https://hackernoon.com/are-you-studying-with-ai-or-just-getting-answers",
+    "published_at": "2026-10-07T12:38:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The AI Industrys Crisis of Complexity: Learning from the NFT Bubble",
+    "summary": "An analysis of how the AI sector is repeating the mistakes of the crypto craze by overwhelming users with confusing naming and fragmented products.",
+    "url": "https://us.headtopics.com/news/the-ai-industrys-crisis-of-complexity-learning-from-the-88551520",
+    "published_at": "2026-10-07T12:38:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Secure Blockchain Development Corp.: Secure Blockchain's Agentic Solutions Signs Financial Services Firm, Expanding Enterprise AI Into Corporate Finance",
+    "summary": "VANCOUVER, BC / ACCESS Newswire / October 7, 2026 / Secure Blockchain Development Corp. (the \"Company\" or \"Secure Blockchain\") (TSXV:ID) today announced that its wholly owned subsidiary, Agentic So...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69777835-secure-blockchain-development-corp-secure-blockchain-s-agentic-solutions-signs-financial-services-firm-expanding-enterprise-ai-into-corporate-finan-200.htm",
+    "published_at": "2026-10-07T12:38:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "KQC Quantum, Inc. and Charlton Aria Acquisition Corporation Announce Definitive Business Combination Agreement to Take Korea’s Enterprise Quantum Computing and Quantum-Safe Security Company Public on Nasdaq",
+    "summary": "KQC helps enterprises put quantum computing and post-quantum cryptography to work through Qubiteer, its AI-driven hybrid quantum platform, access to multiple quantum technologies, and quantum-safe security products Combined company, KQC Quantum, Inc., expected to list on Nasdaq; proceeds to fund pro",
+    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/kqc-quantum-inc-and-charlton-aria-acquisition-corporation-announce-definitive-business-combination-agreement-to-take-koreas-enterprise-quantum-computing-and-quantum-safe-security-company-public-on",
+    "published_at": "2026-10-07T12:37:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Stable One UI 9 rollout begins for Samsung flagships: UAE availability and rollout schedule",
+    "summary": "Samsung has officially commenced the global over-the-air rollout of its stable One UI 9 firmware update, based on Android 17, delivering enhanced Galaxy AI features, fluid UI animations, and improved foldable multitasking to the Galaxy S24 series, Galaxy Z Fold6, and Galaxy Z Flip6.",
+    "url": "https://me.mashable.com/tech/76917/stable-one-ui-9-rollout-begins-for-samsung-flagships-uae-availability-and-rollout-schedule",
+    "published_at": "2026-10-07T12:37:22+00:00",
+    "source": "newsdata"
+  }
+]
