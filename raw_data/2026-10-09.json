@@ -1,0 +1,310 @@
+[
+  {
+    "title": "Agent Teamsで「AIに組織を作る」は現実的か — 11部門を運用して分かった適正規模",
+    "summary": "結論から：11部門は作れる。だが「動いているのは4部門」だった\n僕は合同会社ジョインクラスで、Claude Codeのサブエージェントを部門に見立てた「AI-CEO Framework」を1年近く運用している。.claude/agents/ には17のエージェント定義があり、.company/departments/ には11の部門ディレクトリがある。\n2026年2月にAgent Teamsが発表されたとき、僕も「これで本当にAI組織が作れる」と思った。この記事はその後の棚卸しの結果だ。導入を検討している人に先に答えを書く。\n\nエージェント定義を増やすコストはほぼゼロ。だが部門を「稼...",
+    "url": "https://zenn.dev/joinclass/articles/agent-teams-ai-11-20261007220024-26010",
+    "published_at": "2026-10-08T23:00:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code をヘッドレスで回す開発ハーネスの設計 ― 工程・権限・打ち切りの分け方",
+    "summary": "私は個人でソフトウェア開発をしているエンジニアです。\n課題をバックログに積むと、AI が設計、実装、テスト、別モデルのレビュー、マージまで進める開発の仕組みを自作し、2026 年 7 月から 8 月を中心に動かしてきました。\n前回の記事では、仕組みの全体像と、運用で踏んだ落とし穴を書きました。\n今回はその続きとして、設計の勘どころを項目ごとに書きます。\nそれぞれ「なぜそうしたか」を添えます。\nソースコードは公開していないため、考え方は数行の擬似コードと設定の説明で示します。\n\n 前提: 1 工程につき 1 回、Claude Code を起動する\nこの仕組みは、Claude Code をヘ...",
+    "url": "https://zenn.dev/zonotech/articles/95786a5c0a45bd",
+    "published_at": "2026-10-08T23:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Renovate の更新 PR を AI エージェントにレビューさせ、自動マージまでつなげる",
+    "summary": "はじめに\nAI エージェントが登場してから、作りたいものが増えていませんか。\nアイデアを思いついてから動くものができるまでの時間が、大きく縮みました。仕事でも、機能追加がこれまでにないスピードで実装されていると感じます。少ない人数でできることが増えた結果、AI エージェントの登場前より、チームの人数が減っている現場もあるのではないでしょうか。\n一方で、ライブラリのアップデートはどうでしょうか。\nDependabot や Renovate が更新用の PR を作ってくれるところまでは自動化されています。しかし、その PR を確認してマージするのは人です。リリースノートを読み、破壊的変更...",
+    "url": "https://zenn.dev/greendrop/articles/2026-10-09-4664c51706f346",
+    "published_at": "2026-10-08T22:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Codex のレビューを通すまでデプロイできないようにした: コードの中身の印で確かめる",
+    "summary": "Claude Code で書いたコードを、本番に出す前に Codex にレビューしてもらうことにしました。ただ、「レビューしてから出す」を決まりとして書いておくだけでは、急いでいる日に抜けます。そこで、レビューを通していないコードはデプロイが止まる ようにしました。\nやっていることは 3 つです。\n\nレビューを流し、通ったら「今のコードの中身の印」を .git/ に記録する\n\nnpm run deploy の前（predeploy）で、今のコードの印と記録した印を比べる。違えば止める\nレビューが本当に指定のモデルで動いたかを、Codex のセッションの記録で確かめる\n\n道具は Node....",
+    "url": "https://zenn.dev/y3chi5z/articles/review-gate-block-deploy-until-reviewed",
+    "published_at": "2026-10-08T21:24:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "What is CUDA?",
+    "summary": "最近AI開発に乗っかって必需品としての扱いを受けているGPU。\nしかし、GPUがあるのみでは高速なAI計算を行えません。\nセットでCUDAというツールが必要です。\n今日はそんなCUDAについて語っていきます。\n\n CUDAとは\nCUDAは、NVIDIA製のGPUを「グラフィック描画専用の機械」から「大量の並列計算をこなす汎用プロセッサ」へと変身させるための、NVIDIAが提供するプログラミングプラットフォームです。\nつまり、ゲームの画面を描くための部品だったGPUを、機械学習やシミュレーションなどの「計算仕事」に使うための言語・ツール・仕組みの総称がCUDAです。\n\n 比喩で理解する：「...",
+    "url": "https://zenn.dev/yoshinn/articles/compute_unified_device_arch",
+    "published_at": "2026-10-08T20:43:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代の新しい企業のカタチ ── 人を雇う代わりに、AIが部門の仕事を担うスタートアップ",
+    "summary": "序章：Instinctは、評価額100億ドルで10億ドルを調達した\n2026年9月28日、個人向けのAIエージェントを開発するInstinctは、米国のベンチャーキャピタルであるSequoia Capital、Benchmark Capital、Coatueから10億ドルを調達し、評価額が100億ドルに達したと発表した。\nhttps://instinct.com/\nhttps://siliconangle.com/2026/09/28/everyday-personal-ai-assistant-startup-instinct-raises-1b-at-10b-valuation...",
+    "url": "https://zenn.dev/leading_ai/articles/ai-departments-instead-of-hiring",
+    "published_at": "2026-10-08T20:34:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの記憶を4か月育てたら「世話係」が要った――エージェントに頼めば組み上がるキットを公開",
+    "summary": "連載「外部コンテキストで記憶を補う試み」の続き。\n1本目でAIの記憶を置く「箱」を作り、2本目で、育てると必ず散らかるという話をした。\n今回は、その先の4か月でできあがった仕組みを、まるごと渡せる形にして公開する。\n\n\n はじめに：箱は育った。でも、世話が追いつかなくなった\n1本目の記事で作ったのは、部品が3つだけの小さな箱だった。指示書の CLAUDE.md、自分のことを書く master_profile.md、テーマ別の domains/。\nあれから4か月、毎日使い続けた。コミットは1,400回を超え、相談相手も Claude Code だけでなく Codex が加わった。AIは確...",
+    "url": "https://zenn.dev/hobomokha/articles/ai-secretary-kit-upgrade",
+    "published_at": "2026-10-08T18:56:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI エージェントに描画を任せても、お金を使い込まれない仕組み",
+    "summary": "公式: https://render.janction.jp\nJANCTION Render は、AI エージェントが MCP サーバーか HTTP API として呼べる、Blender のクラウド GPU レンダーファームです。新しい鍵ごとに 500 円分まで無料、その後は 0.1 円/GPU 秒で、有料の利用は 2026-10-08 に始まりました。この記事では、たいてい後回しにされて、あとで痛い目を見る話を書きます。API を呼ぶのが人でなくエージェントのとき、お金はどう動くか、です。\n\n エージェントが思わぬお金を使う 3 つの形\nひとつめは再送です。クライアント側は時間切れ、サ...",
+    "url": "https://zenn.dev/renderjanction/articles/0d7fcc51ac7d54",
+    "published_at": "2026-10-08T17:24:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "記事づくりを役割ごとのAIに分け、書く前にも私が読んで止める仕組みにした",
+    "summary": "はじめに\nはじめまして。私は普段Claude Codeを中心に使っていますが、学びを残す習慣がありませんでした。後から見返しやすい形で学びを残したくて、Zennの記事づくりをClaude Codeのサブエージェント（役割ごとに別の会話で動くAI）に分けた仕組みを作りました。この記事では、その仕組みを例に、AIに長い文章を任せるときの仕事の分け方と、書き始める前にも自分で読む止め方を書きます。\n2026年10月8日時点のClaude Code 2.1.294で、この仕組みを動かしています。\n\n 「役割ごとのAI」に分け、私しか知らないことはAIに質問させる\nこの仕組みでは記事づくりを企...",
+    "url": "https://zenn.dev/mkame18/articles/claude-code-subagent-editorial-pipeline",
+    "published_at": "2026-10-08T16:59:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの方程式変形は同値？二乗で増えた解を代入で確かめる",
+    "summary": "AIから方程式の解法を受け取ったとき、最後の「よって解は二つです」の前に、候補を元の式へ代入する行はあるでしょうか。\n両辺を二乗すると、元の解を保ったまま、余分な候補が増える場合があります。計算が正しくても、変形後の方程式を解いただけでは、元の方程式の解を求めたことになりません。\nこの記事では \\sqrt{x+2}=x を使い、「元の解なら候補になる」と「候補なら元の解になる」を分けます。読み終えたら、自分の解法で 定義域・矢印の向き・代入 の三か所を確認できます。\n!\n実数の四則演算、因数分解、平方根の意味を前提とします。ここで \\sqrt{t} は、t\\ge0 に対する非負の平方根で...",
+    "url": "https://zenn.dev/matsuteru/articles/ai-equation-squaring-check",
+    "published_at": "2026-10-08T15:47:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "経理エージェントの権限境界：可逆性で操作を分け、承認をハッシュで束縛する",
+    "summary": "経理をAIエージェントに委譲する設計を、操作の可逆性という1つの軸で整理した記事の紹介です。\n\n 境界はプロンプトではなく権限で引く\n読む・下書きする・記録する・送る・出金する、の5つに操作を分けると、下に行くほど誤りの影響が組織の外へ出ます。エージェントの担当は上の2つまで。記録以降は人間の確定か承認を挟み、出金は権限そのものを与えません。\nfreee会計APIには取引作成（POST /api/1/deals）や証憑アップロード（POST /api/1/receipts）があり、書き込める権限のトークンを渡せば、プロンプトで禁じても実行できる状態が残ります。制約は指示ではなく、トークン...",
+    "url": "https://zenn.dev/xim2jp_tokyo/articles/neta-32-zenn-summary",
+    "published_at": "2026-10-08T19:45:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "YouTubeを埋め込むLLM向け最適解",
+    "summary": "TL;DR\nhttps://www.npmjs.com/package/@kanketsu/youtube-embed\n!\nNext.jsにYouTubeを埋め込みたいとき、どこまで任せると安全に高機能になるのか?\n→ @next/third-parties だけでは足りなかったので、依存ゼロで軽量かつ高機能に、公式IFrame Player APIと公式パラメータを使う\n\n表示だけなら @kanketsu/youtube-embed/react/server の YouTubeEmbed\n\n再生制御やイベントが必要なら YouTubePlayer / useYouTubePlaye...",
+    "url": "https://zenn.dev/kazuma_horiike/articles/3d68bce3b1e3c2",
+    "published_at": "2026-10-08T17:59:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI Agent同士で連携させて何かを生み出すAgentic IDEを作ったら発見があった話",
+    "summary": "TL;DR\nAI Agent同士が連携するAgentic IDEを作った。自分が欲しかった。\nもし使ってみたい人がいたらぜひ教えて\n\n 既存のAgentic IDEではできなかった部分\norcaやkiroなどの優れたAgentic IDEは既に世の中に存在していますが以下の理由で私が使いたいものを作りました。\n\nAPIだけでなく、codexやclaude code, Antigravityなどの契約しているサブスクを利用したい\nサブスクしているAgent同士を連携させたい（設計はopus5, コーディングはsonnet5, 検証・テストはGPT6 Lunaとか）\n色々定量的に測りたか...",
+    "url": "https://zenn.dev/shiv/articles/b8f5c98f066dd0",
+    "published_at": "2026-10-08T15:10:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【完全無料】VS Code・CLI・Obsidianを束ねるAIエージェント並行作業環境と無料LLMのリアルな使用感",
+    "summary": "はじめに\nコーディングやドキュメント整理、トラブルシューティングにAIエージェントをフル活用する日常が当たり前になってきた。しかし、そこで常に頭を悩ませるのが 従量課金APIのトークン代 や ツールの利用上限（レートリミット） だ。\nCursorやClaude Code、Clineなどの自律型エージェントに大きなタスクを任せると、一瞬で数万〜数十万トークンが吹き飛ぶ。個人開発で毎日これを回すのはコスト的に胃が痛い。\nそこで私は、「無償で利用できるLLMプロバイダー」「IDE拡張機能の回復型無料枠」「AI特化型ターミナルマルチプレクサ」「Obsidian連携」 を組み合わせることで、コ...",
+    "url": "https://zenn.dev/ogiri/articles/free-llm-providers-agent-workflow",
+    "published_at": "2026-10-08T15:06:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Mac mini M5 Pro (2026) の 64GB でローカル LLM はどれが使えるか",
+    "summary": "64 GB のメモリを積んだ Mac で、手元だけで動く AI (ローカル LLM) を使うとする。そのとき、待たされずに使えて、賢さも足りるモデルはどれか。これを確かめるために実測した。\n読み終えると、次の 4 つについて判断材料が手に入る。\n\n速さ: どのモデルなら待たされないか\n賢さ: 速さと答えの質は両立するか\n大きさの限界: 64 GB でどこまで大きいモデルを使えるか\nクラウドとの距離: 手元のモデルは、クラウドのモデルと比べてどのあたりか\n\n\n この記事は誰に向けたものか\n\n64 GB 級の Mac を持っているか買おうとしていて、手元で AI を動かしたいが、どのモデルが...",
+    "url": "https://zenn.dev/unchox/articles/mac-mini-m5-pro-64gb-local-llm-bench",
+    "published_at": "2026-10-08T14:35:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "作って終わりにしない――意思決定RAGを更新・評価する",
+    "summary": "連載「小さく作る意思決定RAG」の第3回。\n第1回で判断エピソードを集め、第2回で承認済みデータをRAGへ入れた。今回は、一度登録した判断を置き換え、同じ質問で再評価する。\n\n\n はじめに：「本人っぽい」は、正しさと同じではない\n判断エピソードをRAGへ入れると、一般論だった回答に、その人特有の優先順位や例外が表れ始める。\n本人を知る人が見て、\n\nまず顧客への影響を聞くところが、この人っぽい\n\n\n早く試すと言いながら、安全には慎重なのも分かる\n\nと感じる。これが、意思決定RAGで作りたい一つの価値だ。\nただし、「本人っぽい」と感じる文章が、そのまま正しい回答とは限らない。\n\n口調だけを...",
+    "url": "https://zenn.dev/hobomokha/articles/decision-rag-update-and-evaluate",
+    "published_at": "2026-10-08T14:24:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "技術名・ツール",
+    "summary": "LLM単体利用の終焉：2026年のAIエージェント移行とモダンPythonスタックで押さえるべき3つの転換点\n\n この記事で分かること\n\n単なるLLMからオンプレ・エッジ環境で稼働する「自己改善型AIエージェント」へのシフトの背景\nOpenAIによるAstral買収が決定づけた「uv + Ruff + Polars」による次世代Python開発スタック\nAIガバナンスをめぐる安全性の議論と、プロダクションWeb開発における確実なライブラリ選定\n\n\n LLM単体利用からオンプレ・エッジの「自己改善型AIエージェント」へシフトすべき理由\nAI活用の主戦場は、単一LLMに対するプロンプト処...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-11-tech-daily",
+    "published_at": "2026-10-08T14:03:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ChatGPTのIntelligent UIと自作Generative UIを比較して見えた3つの課題",
+    "summary": "ChatGPTのIntelligent UIと自作Generative UIを比較して見えた3つの課題\nChatGPTのIntelligent UIを使って最初に思ったのは、「ついに来たか」でした。\n私は、質問に応じて画面を動的に生成するGenerative Portfolioを個人開発しています。\n作っていて難しいと感じるのは、画面を早く表示すること、質問に合った構成を選ぶこと、知りたい内容に十分答えることです。\nIntelligent UIを実際に使ってみると、まさにその3点で、自作との違いを感じました。\n\n\nレスポンス速度：画面が表示されるまでの待ち時間が短い\n\n\n画面の多様さ...",
+    "url": "https://zenn.dev/tk_1/articles/fe3e547047a472",
+    "published_at": "2026-10-08T13:49:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "アプリを入れただけでは足りない — AI に対する行動規範を、自分のポリシーとして決める 4 つの段",
+    "summary": "アプリは、入れればすぐ動くべきです。では、何を守るかは誰が決めるのでしょうか\n家電も、会社で使う業務システムも、電源を入れればすぐ動くことが当たり前でした。アプリも同じです。最初の設定はできるだけ少なく、入れたらすぐ動く。作る側がそうすべきだという考えは、AI のガバナンスのアプリでも変わりません。\n変わったのは、その先です。アプリがどう動くか、つまり何を守り、何を通すかのポリシーは、使う人が自分で考える時代になってきた、というのが筆者の見立てです。\n\n 守る範囲は、人によって違う\n何をどこまで守るかは、人によって大きく違います。\n\nプライバシーそのものを発信の売り物にしている配信者...",
+    "url": "https://zenn.dev/exapolicy/articles/395aa0aede6c83",
+    "published_at": "2026-10-08T13:49:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに複数の操作を任せてよいのか？ ― Transaction と Atomicityを実験してみる",
+    "summary": "はじめに\nこれまでの実験では、AIに操作を任せる際に、\n\n\nその操作を実行する権限があるのか\n\n\nAIが生成した値は妥当なのか\n\n\n対象となるリソースにアクセスしてよいのか\n\n\nAIが「正しい」と判断した値を、そのまま信用してよいのか\n\n\nといった問題を確認してきました。\nAIが「正しい」と判断した値を信用してよいのか？ ― Validationを実験してみる\nしかし、ここまでの対策をすべて行ったとしても、もう一つ問題が残ります。\n複数の操作を実行している途中で、処理が失敗したらどうなるのでしょうか？\n例えば、AIが次のような処理を要求したとします。\n1. 候補者を登録する\n2. 候...",
+    "url": "https://zenn.dev/kondonator/articles/c5d0d22383d83c",
+    "published_at": "2026-10-08T13:44:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OpenAI Day 4総まとめ：GPT-6.1 Solが最大8倍のUltrafastに、Codexの途中指示も高速化",
+    "summary": "OpenAI・Codexの「28日間アップデート」をこれからも毎日調査して発信します。続きが気になる方はぜひフォローしてください。\n2026年10月8日（米国時間）、OpenAIの「28日間、毎日改善またはリセット」企画のDay 4が発表されました。\n今回は大きく2つのアッ...",
+    "url": "https://qiita.com/sponge841841/items/06533b65cfdb68e22458",
+    "published_at": "2026-10-09T00:51:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "`git status`はクリーンだと言った。`git checkout -B`は、2件とも「破壊的操作」として拒否された",
+    "summary": "はじめに\n2。\nこれが今回の数字です。今回の定期タスクは、まずZenn用とQiita用、2つのリポジトリをそれぞれ最新のoriginに合わせる、というごく普通の準備作業から始まりました。手順はいつも同じで、git fetch originのあと、git statusで作業...",
+    "url": "https://qiita.com/Hideki_Tamae/items/318cac43e2098e61c356",
+    "published_at": "2026-10-09T00:47:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ObsidianのメモからAIに次の作業を選ばせるとき、優先順位を丸投げしない方法",
+    "summary": "Obsidianへ日次メモや週報を残していると、次にやることの候補がたくさん見つかります。記事を書く、公開後の表示を確認する、アプリの不具合を直す、保留中の案を見直す。記録が増えるほど、どれから始めるか迷います。\nそんなとき、AIに「次に何をすればよいですか」と聞くと、すぐ...",
+    "url": "https://qiita.com/boraemon2000/items/0e170a1f29c72583a314",
+    "published_at": "2026-10-09T00:41:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減",
+    "summary": "前回の記事で、Explore サブエージェントを Haiku に戻す設定を紹介しました。\n.claude/agents/Explore.md に model: haiku と書くだけのものです。\nそのあと、Claude Code 2.1.293（2026-10-07）の c...",
+    "url": "https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea",
+    "published_at": "2026-10-09T00:33:47+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude can now generate animated explainer videos and live data dashboards from text prompts",
+    "summary": "Anthropic launched two new beta features for Claude. Dashboards turns data sources like BigQuery and Snowflake into live dashboards from text prompts. Motion generates animated explainer videos from text and images. Docs, Slides, and Design now work across all plans, including free accounts. The art",
+    "url": "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts/",
+    "published_at": "2026-10-08T19:17:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Being mean to Claude can now get your account suspended under Anthropic's new TOS",
+    "summary": "Anthropic's updated usage policy bans sustained abuse of Claude and tightens restrictions on propaganda, drone weaponization, and surveillance. The abuse rule builds on an approach that already lets models end some conversations and treats Claude as an entity that may deserve protection. The article",
+    "url": "https://the-decoder.com/being-mean-to-claude-can-now-get-your-account-suspended-under-anthropics-new-tos/",
+    "published_at": "2026-10-08T19:03:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Some mathematicians call for OpenAI boycott after AI-generated proofs flood their field",
+    "summary": "The Association for Human Mathematics is calling for an OpenAI boycott after the company released more than 700 AI-generated math manuscripts at once. OpenAI had to retract three papers the next day over a sign error. Fields Medalist Terence Tao warns that AI's mass \"harvesting\" of open problems lea",
+    "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/",
+    "published_at": "2026-10-08T18:17:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI math breakthroughs have Ethereum researchers debating how fast wallet security could collapse",
+    "summary": "Ethereum researcher Justin Drake is urging the crypto industry to prepare a \"bunker mode\" for a scenario where AI-powered math could break wallet signature schemes within months. Vitalik Buterin broadly agrees but warns against rushed migrations, saying he's personally lost more money to botched tra",
+    "url": "https://the-decoder.com/ai-math-breakthroughs-have-ethereum-researchers-debating-how-fast-wallet-security-could-collapse/",
+    "published_at": "2026-10-08T13:52:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+    "summary": "Zenity Labs researchers say a single publicly accessible AI agent on Amazon's Bedrock AgentCore was enough to take over every AgentCore agent in the same AWS account and region. The attack exploited an internal AWS interface for temporary cloud credentials that agents could reach without restriction",
+    "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/",
+    "published_at": "2026-10-08T13:01:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+    "summary": "Anthropic's new Claude Haiku 5.5 crushes its predecessor in benchmarks, jumping from 15.7 to 72.4 percent on the OSWorld computer use test. Token prices drop by up to 90 percent, though a new tokenizer eats into some of those savings by consuming more tokens per task. The article Claude Haiku 5.5 ar",
+    "url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over/",
+    "published_at": "2026-10-08T10:30:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Teen's AI-guided mountain hike ends with a helicopter rescue and a lesson in common sense",
+    "summary": "A 16-year-old planned his hiking route on Crown Mountain near Vancouver using Anthropic's Claude and had to be airlifted off a steep rock face. The chatbot had sent him down a route that requires climbing gear. Bryce doesn't blame the AI but says he'll never use it for route planning again. The arti",
+    "url": "https://the-decoder.com/teens-ai-guided-mountain-hike-ends-with-a-helicopter-rescue-and-a-lesson-in-common-sense/",
+    "published_at": "2026-10-08T09:57:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks",
+    "summary": "According to CrowdStrike, a suspected Chinese-speaking attacker hacked multiple South Korean financial institutions. At Shinhan Bank alone, more than 25,000 customer records were stolen. The attacker used ARTEX, an open-source tool that uses AI models like DeepSeek and GLM-5.3 for automated penetrat",
+    "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/",
+    "published_at": "2026-10-08T09:24:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
+    "summary": "OpenAI is rolling out GPT-6 with \"Intelligent UI,\" a feature that turns answers into interactive interfaces with charts, buttons, and forms. The model can now respond while still thinking, cutting wait times by 44 percent. Paying customers get GPT-6 Sol, free users get GPT-6 Luna. The article ChatGP",
+    "url": "https://the-decoder.com/chatgpt-with-gpt-6-ditches-mostly-text-output-for-interactive-ui-with-charts-buttons-and-mini-apps/",
+    "published_at": "2026-10-07T19:06:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior",
+    "summary": "Biohub, the research organization backed by Mark Zuckerberg and Priscilla Chan, is coordinating a $1.8 billion initiative to train AI models that predict cell behavior. Meta, Google DeepMind, Isomorphic Labs, and the US Department of Energy are funding data, lab equipment, and compute. A first datas",
+    "url": "https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/",
+    "published_at": "2026-10-07T17:58:20+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Introducing all-new Amazon Alexa Tablets—powerful tablets with Alexa+ built in",
+    "summary": "An all-new lineup of tablets with world-class hardware, personalized intelligence from Alexa+, and full Google Play Store access.",
+    "url": "https://www.aboutamazon.com/news/devices/new-amazon-alexa-tablets-alexa-plus",
+    "published_at": "2026-10-08T12:55:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft Office is down to $29 for a lifetime license",
+    "summary": "Word, Excel, and PowerPoint remain industry standards, but a Microsoft 365 subscription may not fit your budget. With Microsoft Office Professional 2021, you get a one-time purchase that includes Word, Excel, PowerPoint, Outlook, Access, Publisher, and OneNote. This standalone license means no subsc",
+    "url": "https://www.techspot.com/news/96637-microsoft-office-lifetime-license.html",
+    "published_at": "2026-10-08T12:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Exclusions Put Corporate Insurance Coverage Under Pressure",
+    "summary": "Insurers are introducing exclusions for artificial intelligence-related risks in corporate liability policies, creating a challenge... The post AI Exclusions Put Corporate Insurance Coverage Under Pressure first appeared on Bimabazaar.com.",
+    "url": "https://bimabazaar.com/insurance-news-and-information/insurance-news/ai-exclusions-put-corporate-insurance-coverage-under-pressure",
+    "published_at": "2026-10-08T12:54:15+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia-backed Upscale AI launches platform to connect chips from rival suppliers",
+    "summary": "Upscale AI’s new networking platform combines hardware and software to connect AI processors across data centres, helping cloud providers and neoclouds use chips from different suppliers. The startup expects Token Fabric revenue to reach tens of millions of dollars next year.",
+    "url": "https://www.cnbctv18.com/technology/nvidia-backed-upscale-ai-launches-platform-to-connect-chips-from-rival-suppliers-20007791.htm",
+    "published_at": "2026-10-08T12:54:04+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Meet Alexandr Wang, MIT dropout who built Scale AI, caught Mark Zuckerberg's attention, became Meta's 29-year-old AI chief, turned Muse into an App Store hit",
+    "summary": "Wang is currently 29-years-old and grew up in Los Alamos, New Mexico. He belongs to a family of physicists who worked at Los Alamos National Laboratory. He started programming as a teenager and joined the Massachusetts Institute of Technology in 2015. Notably, he left MIT after his freshman year at ",
+    "url": "https://economictimes.indiatimes.com/world/business/meet-alexandr-wang-mit-dropout-who-built-scale-ai-caught-mark-zuckerbergs-attention-became-metas-29-year-old-ai-chief-turned-muse-into-an-app-store-hit/articleshow/134791140.cms",
+    "published_at": "2026-10-08T12:53:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "One Doctor, Eight Billion Patients: After Stepping Back from the WHO Race, What I Stand For in the AI Society",
+    "summary": "I sought to lead the World Health Organization (WHO) because the rules of intelligence are becoming the rules of health. My name will not be on the ballot. The responsibility remains. I will now work to organise the political and economic power needed to put intelligence at the service of humanity –",
+    "url": "https://healthpolicy-watch.news/one-doctor-eight-billion-patients/",
+    "published_at": "2026-10-08T12:53:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Say cheap: parents turning to AI for school photos",
+    "summary": "Professional photographers losing out as parents use AI to generate free portraits",
+    "url": "https://theweek.com/education/ai-school-photos-controversy",
+    "published_at": "2026-10-08T12:53:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Fed minutes, Pepsi earnings, midterm megadonors and more in Morning Squawk",
+    "summary": "Here are five key things investors need to know to start the trading day.",
+    "url": "https://www.cnbc.com/2026/10/08/5-things-to-know-before-the-stock-market-opens.html",
+    "published_at": "2026-10-08T12:53:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "9 Best GEO Agencies for B2B SaaS in 2026, Compared on Pricing and Guarantees",
+    "summary": "Buyers now ask ChatGPT, Perplexity, and Google AI Overviews which software to shortlist, and a new category of agency competes to get brands named in those answers: the generative engine optimization… Read the full article on TechBullion.",
+    "url": "https://techbullion.com/9-best-geo-agencies-for-b2b-saas-in-2026-compared-on-pricing-and-guarantees/",
+    "published_at": "2026-10-08T12:52:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Elon Musk’s SpaceX Could Become Nvidia’s Biggest Customer: The ETF Trade Emerging From His $40B AI Bet",
+    "summary": "Elon Musk’s SpaceX is seeking $40B to expand its Nvidia-powered AI infrastructure. Here’s how ETFs like LOFF, XOVR and ARKW offer SpaceX exposure.",
+    "url": "https://www.benzinga.com/etfs/sector-etfs/26/10/62244224/elon-musks-spacex-could-become-nvidias-biggest-customer-the-etf-trade-emerging-from-his-40b-ai-bet",
+    "published_at": "2026-10-08T12:52:19+00:00",
+    "source": "newsdata"
+  }
+]
