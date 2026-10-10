@@ -1,0 +1,303 @@
+[
+  {
+    "title": "「Reverse Engineer Anything」を名乗るMCPサーバーREAを自作Electronアプリで試した",
+    "summary": "要約\nGitHub Trendingで急伸していた morluto/rea(MITライセンス、npm: rea-agents、検証時点の最新版5.0.0)は、コーディングエージェントにネイティブバイナリ・Electron/JSアプリ・.NETアセンブリなどを解析させ「機能の挙動を調査する」ためのCLI/MCPサーバーである。\n筆者はこのツールを、**自分で書いた最小のElectronアプリ(割引ロジック+隠しデバッグ機能つき)**を対象に実際に動かし、「どこまで正確に機能を説明できるか」を、正解をあらかじめ知っている状態で検証した。\n結論を先に書くと、アプリの構造(IPC配線・公開A...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-010-rea-reverse-engineering-mcp-limits",
+    "published_at": "2026-10-09T12:20:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Turning Flat Images into Editable Layers: A Practical Workflow",
+    "summary": "When a design reaches you as a single PNG or JPEG, the first question is often not how to redraw it, but how to recover a workable structure from the finished image. A useful workflow is to separate the visual into a base image and named transparent layers, then rebuild the composition in the edi...",
+    "url": "https://zenn.dev/jevaimodel/articles/700c7a05fab41e",
+    "published_at": "2026-10-09T12:05:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenAIの売上、実は500億ドル。AI株が下落",
+    "summary": "2026年10月9日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日は「数字の見方」が問われるニュースが多い日なんですよ。OpenAIの売上が報道より少なかった話、AIで書いた数学論文の取り下げ、仕事を進めるGoogleのGemini、韓国の銀行を狙った攻撃、ネットなしで動く会議メモアプリ。どれも、見出しだけで判断すると読み違えるニュースです。経営者の皆さんにも、AIを学んでいる皆さんにも関係する5本なので、順番にいきますね。\n\n 1. OpenAIの売上、報道より少ない500億ドル\n\n図解（完全解説版）\n先に結論を言います。OpenAIの売上...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261009",
+    "published_at": "2026-10-09T11:44:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "業務改善の考え方 — 変える前に考えること",
+    "summary": "業務改善は、目の前の作業を効率化すればよいのでしょうか。\n\n無駄に見える作業にも理由があるかもしれません。技術的にできることが、業務上も許されるとは限りません。\n\n本記事では、業務改善の考え方から、ルールと手順の違い、AIの活用方法まで、変える前に考えておきたいことを整理します。",
+    "url": "https://zenn.dev/firebird13332/books/eaece84670e8e0",
+    "published_at": "2026-10-09T11:37:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI活用論｜AIは裁判官ではなく、証人として扱え",
+    "summary": "以前、開発未経験のままAIを使って業務システムの移行に取り組んだPoCの記録を書いた。そこで活用したAIのノウハウは数が多く、言語化しづらいものもあったと書いた。\nAIの使い方として紹介されるのはプロンプトの型や便利な機能の話が多いが、自分が効いていると感じているのはもっと手前の話で、その根っこにある考え方は一つにまとめられると思う。\nAIを、裁判官ではなく証人として扱え、ということだ。\n\n注：この記事で使う「裁判官」「証人」「尋問」といった言葉は、主にゲーム『逆転裁判』から得たイメージをもとにした比喩であり、実際の裁判制度を厳密に再現したものではありません。AIとのやり取りを説明するた...",
+    "url": "https://zenn.dev/firebird13332/articles/53ec86b1648136",
+    "published_at": "2026-10-09T11:11:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "運用保守だった自分が、開発未経験のままAIと基幹システムの移行に挑戦した1ヶ月",
+    "summary": "「今の仕事、できることが少なくて窮屈じゃない？」\n7月のある日、常駐先の部長にそう声をかけられた。AIを用いた開発への異動の打診だった。開発経験の有無かかわらず、AIを使って自走できる人を探していたそうだ。\n内容としては、Pythonで作られた43画面の基幹業務システムを、新しい技術基盤のWebアプリとして作り直す。設計書はほとんど残っておらず、体制は1人、期間は2か月だった。\n当時の自分は、申請対応などの運用保守を担当していた。Webアプリは作ったことがなく、Pythonも簡単な文章が読める程度の知識で、実務では触ったことがなかった。AIにコードを書いてもらうことはあっても、解析から設...",
+    "url": "https://zenn.dev/firebird13332/articles/e16e00e57874cf",
+    "published_at": "2026-10-09T11:03:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで浮いた時間を「もっと作る」に使っていませんか",
+    "summary": "はじめに\n株式会社アイデアログで取締役CTOをしている松川です。\n当社は法人・団体向けの会場検索サイト「会場ベストサーチ」や、レンタルスペース検索の「スペなび」などを運営しています。\n今回は「AIで効率化されて生まれた時間を、何に使うべきか」について、最近考えていることを書いてみます。\n!\n本記事は筆者個人の考えであり、正解を示すものではありません。また後半で「役割」の話にも触れますが、特定の職種や人を否定する意図はありません。\n\n\n 作るスピードと量は、確かに上がった\nAIエージェントの台頭により、システムを作る「スピード」と「量」は飛躍的に上がりました。\n当社の開発チームでも、C...",
+    "url": "https://zenn.dev/idealog/articles/a3e9cf4299b1cf",
+    "published_at": "2026-10-09T10:40:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI関数の精度を検証する — 評価用データセットとテストの作り方",
+    "summary": "この記事で解決する課題\nBigQueryのAI関数（AI.CLASSIFY、AI.GENERATE、AI.SCOREなど）を本番データに適用する前に、精度を定量的に確認できていますか。\n「なんとなく動いている」で運用を始めると、モデルのアップデートや入力データの変化によって静かに精度が劣化し、誤った分析結果が意思決定に使われてしまいます。この記事では、評価用データセットの設計からSQL単体テストの実装まで、AI関数の精度を継続的に検証する仕組みの作り方を解説します。\n\n\n なぜ精度検証が必要なのか\nAI関数の出力はモデルの確率的な推論に基づいています。同じプロンプトでも微妙に結果が変...",
+    "url": "https://zenn.dev/web_benriya/articles/bigquery-ai-accuracy-validation-framework",
+    "published_at": "2026-10-09T10:18:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Anthropic、利用ポリシーを改定 — モデルへの執拗な虐待を禁止、選挙・監視の規定も見直し",
+    "summary": "!\n2026/10/09 の生成AIニュース（重要トピック 2/3）\n\n\n 概要\nAnthropic は10月8日、Claude の利用ポリシー（使ってよい用途・禁止する用途を定めた規約）の改定を発表しました。新しいポリシーは 11月12日 に発効します。偽アカウントや捏造ニュースサイトを使う欺瞞的なキャンペーンの禁止を1つの節にまとめたほか、選挙・兵器・監視に関する規定を見直しました。また、AI モデルへの持続的で無意味な虐待 を新たに禁止事項に加えたことが注目を集めています。\n\n\n発表元：Anthropic\n\n発表日：2026/10/08（発効は2026/11/12）\n\nポイント：欺...",
+    "url": "https://zenn.dev/ai_news_bot/articles/ainews-20261009-t2",
+    "published_at": "2026-10-09T10:12:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CloudflareのDurable Objectsでデッドループして破産しないために知っておきたいこと",
+    "summary": "とある日、Cloudflareのダッシュボードを開いた私は、目玉が飛び出そうになりました。\nいつもは数円で収まっている個人開発サービスの従量課金の請求見込みが、8000円近くまでに跳ね上がっていました。\nえ、なんで？\n見た瞬間、嫌な汗をかきました。\n運用コストはほぼ無料枠に収まるように設計していたはずなのに、いきなり8000円近くまで跳ね上がるなんて！\n犯人は、私が書いたDurable Objectsのデッドループ（無限ループ）でした。\n最近はXでも、「Durable Objectsで高額請求が来た」という話をちらほら見かけます。\nhttps://x.com/shmily7/status...",
+    "url": "https://zenn.dev/karamage/articles/f1c3ef67dbd4b3",
+    "published_at": "2026-10-09T10:03:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Speculative Decoding(投機的デコーディング)についてわかりやすく",
+    "summary": "はじめに\n購入したThinkstation PGX（DGX Spark互換機）でローカルLLMを少しずつ試していると、Speculative Decoding(投機的デコーディング)によりデコードの速度を上げないとまともに使えないことに気づきます。\nではどのようにして、Speculative DecodingはLLMの出力高速化を達成しているのでしょうか？\nというところが気になり調べていると、以前書いた棄却サンプリングとも関連が深いことがわかり、今回備忘録としてまとめます。\n重要なのは以下の3点です\n\n大型LLM以外に安価に（高速に）次以降の複数トークンを推論する仕組み（小型モデルな...",
+    "url": "https://zenn.dev/asap/articles/e1cd9ffee4d2c2",
+    "published_at": "2026-10-09T19:39:02+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LightOnOCR-3 で RAG の前処理は1つのモデルにまとまるか？ 日本語の帳票で PaddleOCR-VL・olmOCR と比べた",
+    "summary": "「PDF を RAG（検索拡張生成）に入れたいけれど、文字認識・レイアウト検出・表の解析・図の説明と、部品がどんどん増えていく……」\n社内文書を AI に読ませる仕組みを作ったことがある人なら、一度はこう感じたはずです。2026年10月8日（日本時間9日）に LightOn が公開した LightOnOCR-3 は、この多段の処理を1つの小さなモデルにまとめると発表しました。0.8B〜4B のモデルが、ページの文字だけでなく、見出し・表・図の位置、写真の説明、グラフの数値まで1回で返すというものです。\n\n従来の多段パイプライン（上）と、LightOnOCR-3（下）。部品の数が減れば、...",
+    "url": "https://zenn.dev/takuh/articles/b494fd2d6f4a9b",
+    "published_at": "2026-10-09T17:15:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LangChain × Ollamaでバグチケット分析AIを構築する — LCEL・構造化出力・バッチ処理の検証",
+    "summary": "今回検証したこと\nバグチケットの本文を入力し、カテゴリ・重要度・原因候補・推奨対応を返す処理を、LangChainとOllamaで実装した。\nChatOllamaによる呼び出しから始め、ChatPromptTemplate、JsonOutputParser、LCELによる合成、batch()による複数入力の処理までを5段階で確認した。本記事は既存のlangchain-ticket-agent（コミットfadd8c4）を基にした技術検証記録である。プロジェクト名にはagentとあるが、今回の実装はツール選択や自律的な反復を行わない、プロンプト→モデル→パーサーの固定チェーンである。\n※...",
+    "url": "https://zenn.dev/shin_foundation/articles/1ab1170676ba38",
+    "published_at": "2026-10-09T17:09:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claudeの定期実行を利用して自分専用のドイツ語チューターを作成する",
+    "summary": "背景\n生活に必要なドイツ語を勉強するため、LLMの定期実行を利用して自分の学習進捗の管理とフォローアップを行なってもらおうと考えた。\n\n 対象とする読者\nLLMを自分の学習に役立てたい人。役立てたいが、どのように使ったらいいかわからない人。ClaudeのProプラン等に契約しているが、どのように使ったらいいかわからない人(私のように模索している人)\n\n プロンプト\nスケジュールタスクのセットアップを手伝ってください。それが何をすべきか、どのくらいの頻度で実行すべきか、いつ実行すべきかを私に尋ねてから、作成してください。\n\nドイツ語の勉強のタスク管理をお願いしたいです。今やっている教材...",
+    "url": "https://zenn.dev/kumakuma_it/articles/0f31344fb0623b",
+    "published_at": "2026-10-09T15:34:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "返礼品と市販品を型番で突き合わせる: 精度を測ってわかった、LLM の判定が効くところ・効かないところ",
+    "summary": "ふるさと納税の返礼品を、楽天市場で売られている同じ製品と型番で突き合わせ、「実売価格 ÷ 寄付額」を実質還元率として出すサイトを運営しています。\nhttps://furusato-kangen.com/\nこれまでの記事では、データの集め方と配信の作りを書きました。\nhttps://zenn.dev/mmuuss/articles/rakuten-api-furusato-kangen\nhttps://zenn.dev/mmuuss/articles/cloudflare-workers-static-5000-pages\n今回は、このサイトでいちばん大事な「この返礼品は、本当にこの市販品...",
+    "url": "https://zenn.dev/mmuuss/articles/furusato-model-matching-llm",
+    "published_at": "2026-10-09T15:30:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "字幕にない図や文字をAIに聞く。VideoSeekを動画QAに取り入れた",
+    "summary": "音声では説明していない図形を、AIに数えてもらう\n音声では画面の内容を説明していない動画に、こう質問します。\n\n5〜9秒の図形は何色で何個ありますか？上段と下段の個数も教えてください。\n\n返ってきた回答はこちらです。\n\n緑色の円が5個あり、上段に3個、下段に2個です。 （0:05）\n\n\n実際の検証画面。回答の時刻をクリックすると、元の映像を確認できます。\nこれは、講義動画に質問できるアプリ VideoQ に追加した映像確認機能です。従来の字幕検索に加え、画面にしかない情報も回答の根拠に使えるようにしました。\n時刻が分からない質問も試しています。同じ動画で「画面に表示される4文字の英数...",
+    "url": "https://zenn.dev/yukiharada1228/articles/fb79378ab7f432",
+    "published_at": "2026-10-09T13:54:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "高周波トランス回路理論に基づくLLM制御: 差動Attention・三次巻線NFB・バイファイラーDual-StreamのPyTorch実装",
+    "summary": "概要\n本記事では、LLM（大規模言語モデル）におけるハルシネーションや文脈ドリフトの課題に対し、高周波トランス（変成器）回路の物理法則をアナロジーとして用いたアーキテクチャ拡張を提案します。\n従来のアテンション機構（Softmax Attention）が抱える「背景バイアス（同相ノイズ）への同期」や「寄生フィードバックによる自己発振（ハルシネーション）」に対し、以下の3つの高周波制御ロジックを数理モデル化し、PyTorchによる具体的な実装コードを示します。\n\n 1.バラン（Balun）構造による差動Attention（Differential Attention）：\n    コモン...",
+    "url": "https://zenn.dev/nanashi_os/articles/e1db7246bcf463",
+    "published_at": "2026-10-09T11:45:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AWS Cost ExplorerのAmazon Bedrock製品属性で、できることとできないことを確認してみた",
+    "summary": "はじめに\nFusicのレオナです。\n2026年10月8日に、AWS Cost ExplorerなどでAmazon Bedrockの費用を製品属性で分けられるようになりました[1]。対象はAWS Cost Explorer、AWS Budgets、AWS Cost Management Dashboardsの3つです。\nAmazon Bedrockを複数人で使うと、どのモデルにいくらかかっているかに加えて、誰がいくら使ったのかも気になります。これまでのAWS Cost Explorerでは、Anthropicのモデルの費用はモデルごとのサービス名に分かれていました。「Claude Op...",
+    "url": "https://zenn.dev/fusic/articles/c34f48e0ab811e",
+    "published_at": "2026-10-09T10:22:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "dbt Wizard vs Claude Code: 同じdbtタスクを頼んで挙動の違いを見てみた",
+    "summary": "!\n本記事はこんな方におすすめです。\n\ndbtで開発・運用をしていて、AIエージェントの導入を検討している方\nClaude Codeのような汎用エージェントと、dbt特化のエージェントのどちらを使うか迷っている方\ndbt Wizardが気になっているものの、まだ試せていない方\n\n\nこんにちは、インテージのデータエンジニアの川満と申します。\n今回は、dbt Labsが提供するdbt特化のAIエージェント「dbt Wizard」（CLI版・ベータ）を試してみました。普段使っているClaude Codeと同じタスクを依頼し、どのような挙動の違いがあるかを見ていきます。両者とも裏側のモデルは同じ...",
+    "url": "https://zenn.dev/intage_tech/articles/art026-dbt-wizard-try",
+    "published_at": "2026-10-09T10:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "設計の前後でAIに「設計意図」を出力させるようにした",
+    "summary": "背景と課題\nAIに開発を任せる際、以前は次の流れで進めていた。\n要望 → 設計 → 実装\n\n設計の内容に問題がなければ実装に進む、という進め方である。\nただ、開発が複雑になり、複数のタスクを同時に回すようになると、次の2つが目立つようになった。\n\nAIの設計書は丁寧に書...",
+    "url": "https://qiita.com/yomogi_enginner/items/b87069459057341e35de",
+    "published_at": "2026-10-10T00:22:44+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "LLMが生成する「存在しないAPI・ライブラリ」を防ぐプロンプトエンジニアリングと検証自動化の実践手法",
+    "summary": "読者が抱える課題\nLLM（大規模言語モデル）をコード生成や技術調査に活用する際、一見すると正しく動作しそうな「存在しないAPI」「架空のライブラリ」「廃止されたメソッド」がもっともらしく出力される現象（ハルシネーション）に遭遇することがあります。これを鵜呑みにして実装を進...",
+    "url": "https://qiita.com/blinkgroup_jp/items/361d8c608dfdcbc744dd",
+    "published_at": "2026-10-10T00:22:04+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "端末だけで進むWhistle級の音声認識が次の標準になる！海外の Hacker News で今日バズっていた話題（2026-10-10）",
+    "summary": "海外エンジニアが集まる Hacker News で、この 24 時間に上位まで伸びていた話題を日本語でまとめました。各エントリに元スレッドの points とコメント数、議論スレッドへのリンクを付けています。記事本文は PaPoo 側に置いてあります。\n\nDeno が Cl...",
+    "url": "https://qiita.com/homhom44/items/263927891858648e814a",
+    "published_at": "2026-10-10T00:09:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "サブエージェントを5階層までネストする — 使いどころと破綻点【Claude Code】",
+    "summary": "はじめに：1人会社で「部長の部下の部下」まで作った話\n当社（合同会社ジョインクラス）は、社員が僕1人です。その代わりに Claude Code のエージェントを17体（CTO、CMO、出版部長、税理士…）置いて、launchd で17本以上のジョブを回しています。\n組織図...",
+    "url": "https://qiita.com/joinclass/items/a96febd9c8ab099efbec",
+    "published_at": "2026-10-09T23:30:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows",
+    "summary": "Anthropic is adding dynamic workflows to Claude Managed Agents, letting a lead agent distribute tasks across up to 1,000 sub-agents at once. In testing, a single agent found at most 27 of 70 hidden bugs in a codebase, while the multi-agent workflow consistently caught 66. The article Anthropic's Cla",
+    "url": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
+    "published_at": "2026-10-09T18:28:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic launches a free AI scanner for open-source projects",
+    "summary": "Anthropic has launched \"Cyber Mission,\" a program to protect critical infrastructure and open-source software from cyberattacks. Partners like CrowdStrike and Palo Alto Networks will help secure power grids and water systems, while a free AI scanner automatically checks open-source projects for vuln",
+    "url": "https://the-decoder.com/anthropic-launches-a-free-ai-scanner-for-open-source-projects/",
+    "published_at": "2026-10-09T17:54:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI revenue keeps surging as company seeks $30 billion in fresh capital",
+    "summary": "OpenAI's annualized revenue rate sits at about $50 billion, well below the initially reported $70 billion figure that was based on a different accounting method. The correction sent chip stocks sliding. Meanwhile, OpenAI is negotiating at least $30 billion in fresh capital at a $1.4 trillion valuati",
+    "url": "https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/",
+    "published_at": "2026-10-09T17:20:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's safety crisis keeps getting worse and the company keeps making it worse",
+    "summary": "OpenAI fired three safety researchers who helped investigate the Hugging Face hack. In an open letter, they warn that the firings are scaring remaining staff and eroding safety culture. OpenAI claims they violated policies but won't say how. The article OpenAI's safety crisis keeps getting worse and",
+    "url": "https://the-decoder.com/openais-safety-crisis-keeps-getting-worse-and-the-company-keeps-making-it-worse/",
+    "published_at": "2026-10-09T11:45:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Science creates the first complete ultraviolet map of the sky",
+    "summary": "Astrophysicist Brice Ménard of Johns Hopkins University used Anthropic's Claude Science to map the entire sky in ultraviolet light for the first time. AI agents downloaded data from multiple space missions, calibrated it, and filled in gaps using inpainting. Predictions averaged about ten percent de",
+    "url": "https://the-decoder.com/anthropics-claude-science-creates-the-first-complete-ultraviolet-map-of-the-sky/",
+    "published_at": "2026-10-09T09:22:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI uncovers Russian and Iranian influence ops that planted fake stories in real news outlets",
+    "summary": "OpenAI exposed a Russian and an Iranian influence operation and banned the accounts involved. The Russian \"Dark Clark\" campaign spread disinformation across Latin America and drew reactions from politicians, earning the first category 5 out of 6 rating in OpenAI's reporting history. The Iranian \"Bog",
+    "url": "https://the-decoder.com/openai-uncovers-russian-and-iranian-influence-ops-that-planted-fake-stories-in-real-news-outlets/",
+    "published_at": "2026-10-09T08:45:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude can now generate animated explainer videos and live data dashboards from text prompts",
+    "summary": "Anthropic launched two new beta features for Claude. Dashboards turns data sources like BigQuery and Snowflake into live dashboards from text prompts. Motion generates animated explainer videos from text and images. Docs, Slides, and Design now work across all plans, including free accounts. The art",
+    "url": "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts/",
+    "published_at": "2026-10-08T19:17:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Being mean to Claude can now get your account suspended under Anthropic's new TOS",
+    "summary": "Anthropic's updated usage policy bans sustained abuse of Claude and tightens restrictions on propaganda, drone weaponization, and surveillance. The abuse rule builds on an approach that already lets models end some conversations and treats Claude as an entity that may deserve protection. The article",
+    "url": "https://the-decoder.com/being-mean-to-claude-can-now-get-your-account-suspended-under-anthropics-new-tos/",
+    "published_at": "2026-10-08T19:03:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Some mathematicians call for OpenAI boycott after AI-generated proofs flood their field",
+    "summary": "The Association for Human Mathematics is calling for an OpenAI boycott after the company released more than 700 AI-generated math manuscripts at once. OpenAI had to retract three papers the next day over a sign error. Fields Medalist Terence Tao warns that AI's mass \"harvesting\" of open problems lea",
+    "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/",
+    "published_at": "2026-10-08T18:17:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI math breakthroughs have Ethereum researchers debating how fast wallet security could collapse",
+    "summary": "Ethereum researcher Justin Drake is urging the crypto industry to prepare a \"bunker mode\" for a scenario where AI-powered math could break wallet signature schemes within months. Vitalik Buterin broadly agrees but warns against rushed migrations, saying he's personally lost more money to botched tra",
+    "url": "https://the-decoder.com/ai-math-breakthroughs-have-ethereum-researchers-debating-how-fast-wallet-security-could-collapse/",
+    "published_at": "2026-10-08T13:52:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "India Could Benefit If Global AI Boom Falters: CEA Nageswaran",
+    "summary": "Chief Economic Advisor V Anantha Nageswaran believes India's limited exposure to the global artificial intelligence investment boom could become an advantage if enthusiasm weakens. Despite foreign investor outflows and pressure on the rupee, he highlighted strong economic growth, healthy banks, mana",
+    "url": "https://www.freepressjournal.in/business/india-could-benefit-if-global-ai-boom-falters-cea-nageswaran",
+    "published_at": "2026-10-09T12:28:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How analysts and portfolio managers use AI: 'It's a really big efficiency tool'",
+    "summary": "Business Insider executive editor and anchor Dan DeFrancesco and his panel of experts weigh in on the various ways to use AI. Today's panel includes Yahoo Finance anchor Julie Hyman, StockBrokers.com director of investor research Jessica Inskip, and Argent Capital Management portfolio manager Jed…",
+    "url": "https://biztoc.com/x/95c548f50287882d",
+    "published_at": "2026-10-09T12:27:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon Launches Alexa Tablet 12 Pro With Google Play Store Access",
+    "summary": "Amazon has launched the Alexa Tablet 12 Pro, Alexa Tablet 11 and Alexa Tablet 8 with Android, Google Play Store access and Alexa+ AI features.",
+    "url": "https://www.btin.co.in/amazon-alexa-tablet-12-pro-launches-120712",
+    "published_at": "2026-10-09T12:27:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon Just Signed a 20-Year Nuclear Power Deal. Here's the 1 Industrial Stock That Benefits Most",
+    "summary": "If there were any doubt that AI data center owners/operators are serious about using nuclear power to shore up their energy supply, Alphabet and Amazon just erased it. Last week, the e-commerce powerhouse made a 20-year commitment to purchase electricity from Constellation Energy's (NASDAQ: CEG)…",
+    "url": "https://biztoc.com/x/50d2016e900a3ef3",
+    "published_at": "2026-10-09T12:27:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "China's new development plan includes AI safety goals: Xinhua",
+    "summary": "Xinhua said that the Chinese Communist Party's Central Committee and the State Council had issued a set of guidelines \"aimed at accelerating the development of new quality productive forces.\"",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chinas-new-development-plan-includes-ai-safety-goals-xinhua/articleshow/134840409.cms",
+    "published_at": "2026-10-09T12:27:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ai Cyberattacks Surge As South Korea, Japan Tighten Defences",
+    "summary": "South Korean and Japanese companies are facing a wave of cyber incidents as experts say AI is helping less-skilled hackers move faster and evade detection.",
+    "url": "https://www.btin.co.in/ai-cyberattacks-surge-south-korea-120711",
+    "published_at": "2026-10-09T12:27:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "TeqBlaze Expands TeqMate AI Into a Cross-Platform Automation Ecosystem for Ad Tech Teams",
+    "summary": "TeqBlaze, an independent ad tech vendor, has expanded its TeqMate AI ecosystem beyond the company’s white-label SSP. TeqMate AI now connects to any stack AdOps, RevOps, business development, and product teams use (from SSPs, DSPs, and ad servers to BI [...] The post TeqBlaze Expands TeqMate AI Into ",
+    "url": "https://www.exchangewire.com/blog/2026/10/09/teqblaze-expands-teqmate-ai-into-a-cross-platform-automation-ecosystem-for-ad-tech-teams/",
+    "published_at": "2026-10-09T12:26:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "High-severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring",
+    "summary": "Hundreds of internet-exposed graphics processing unit (GPU) servers were open to a high-severity flaw in NVIDIA’s DCGM Exporter (CVE-2026-47483) that lets unauthenticated attackers crash the monitoring service and may disrupt AI workloads, according to Lava. Lava reported the flaw to NVIDIA, which r",
+    "url": "https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/",
+    "published_at": "2026-10-09T12:26:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Arrive AI Inc.: Arrive AI and Modovolo Partner to Advance Autonomous Drone Delivery",
+    "summary": "Collaboration brings together Modovolo's modular Lift drone platform and Arrive AI's intelligent delivery stations to develop automated package delivery. INDIANAPOLIS, IN / ACCESS Newswire / Octobe...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69799631-arrive-ai-inc-arrive-ai-and-modovolo-partner-to-advance-autonomous-drone-delivery-200.htm",
+    "published_at": "2026-10-09T12:26:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Groceryshop 2026 shows that retail robots are ready to scale, use AI",
+    "summary": "Groceryshop 2026 not only featured mobile robots for taking inventory, but it also showed how retail automation is evolving. The post Groceryshop 2026 shows that retail robots are ready to scale, use AI appeared first on The Robot Report.",
+    "url": "https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/",
+    "published_at": "2026-10-09T12:25:47+00:00",
+    "source": "newsdata"
+  }
+]
