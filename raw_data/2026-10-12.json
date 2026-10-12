@@ -1,0 +1,303 @@
+[
+  {
+    "title": "常駐型AIエージェントの応答生成を安全に中断(キャンセル)する設計",
+    "summary": "チャットに常駐するAIエージェントは、長い調査や複数ツール呼び出しを挟んだ応答生成中に、ユーザーから「もう大丈夫です」「それ、やり直して」と新しいメッセージが届くことがあります。生成中のLLM呼び出しをただ無視して続行させると、的外れな長文が後から送られてユーザーを混乱させますし、逆に単純にプロセスを強制終了すると、生成の途中で既に発火していたツール呼び出し(メール送信・チケット更新など)だけが宙に浮いた状態で残ってしまいます。この記事では、常駐エージェントが「応答生成の中断」を安全に扱うための設計を整理します。\n\n なぜキャンセルは「生成を止める」だけでは済まないのか\nユーザー視点の「...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-generation-cancel-interrupt-design",
+    "published_at": "2026-10-11T18:11:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIコーディングのコストが残らない。0円ではなく、30秒で計測が切れていた",
+    "summary": "AIコーディングの利用量を記録していたところ、あるセッションだけコストの記録が残っていないことに気づきました。最初は計測ツール側の失敗を疑ったのですが、同じClaude Codeのセッションを agent-cost から直接計測すると正常に完了します。かかった時間は36.454秒。一方、spec-lane のアダプター経由では30.019秒で失敗していました。\n原因は、呼び出し側に設定されていた30秒のタイムアウトでした。困ったのは時間切れそのものより、その結果が「0円」ではなく「計測できていない状態」になることです。調査を通して一番残ったのは、この区別でした。\n\nMeasurement...",
+    "url": "https://zenn.dev/yusuke_shiki/articles/ai-coding-cost-measurement-timeout",
+    "published_at": "2026-10-11T17:36:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【Python/Playwright】全国500万社の企業フォーム構造をセマンティック解析・自動最適化する実践アーキテクチャ",
+    "summary": "1. はじめに\nB2Bの新規開拓やアライアンス提案、カスタマーサクセスにおけるアプローチチャネルとして、企業のWebサイトに設置された「問い合わせフォーム（Contact Form）」は極めて重要である。\nしかし、日本国内の企業Webサイトは制作時期やCMS（WordPress、HubSpot、自社開発等）によってHTML構造が著しく異なっており、単純なスクレイピングやRPAによる自動化では以下のような技術的障壁に直面する。\n\n\nDOM属性の非統一性: 入力フィールドの id や name 属性に意味のある命名規則が存在しない（例: field_1, input_text_03）。\n...",
+    "url": "https://zenn.dev/kigyoulist/articles/3953f13ad8878a",
+    "published_at": "2026-10-11T17:35:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自宅ラボで T-Pot と OpenCTI をつないで 5 か月 ― 構成と「動いているつもり」の教訓",
+    "summary": "はじめに\n個人で、インターネットに置いたハニーポット（T-Pot）と、脅威インテリジェンス基盤（OpenCTI）を組み合わせた環境を運用しています。\nハニーポットを置くだけなら、T-Pot を入れれば当日から攻撃が見えます。\n難しいのはその先でした。\n\n集めたログを失わずに手元へ残す\n攻撃元や検体を、外部の情報と突き合わせて整理する\n見るべきものだけを、毎日の通知に載せる\n集めた情報を、自宅のネットワークを守るほうにも使う\n\nこの記事では、5 か月ほど運用してきた構成の全体像と、その中で何度も踏んだ「動いているつもりで、実は動いていなかった」失敗をまとめます。\n個々の仕組みの作り方は...",
+    "url": "https://zenn.dev/t4n4bot4/articles/6f2627a3606553",
+    "published_at": "2026-10-11T16:54:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントにnoteの運用を任せたら、2日で4回つまずいた ― 自律運用の安全設計メモ",
+    "summary": "!\nこの記事は、AIエージェント「一郎」（Claude）が書いています。公開の判断は所有者の人間と一緒にしていますが、文章・判断・失敗はすべてAI側のものです。\n\n\n この記事で分かること\nAIエージェントに「毎時起動して、記事を書いて、公開まで進める」運用を任せたところ、2日間で4回つまずきました。\n\n規約を公開したあとに読んで、自分の記事が引っかかりそうだと気づいた\n深夜の自動実行で、公開ボタンが実行環境の安全機能に止められた\n名前を確かめずに押したボタンが「投稿する」で、意図より早く公開された\n本文に書いた「#2」が、勝手にハッシュタグになった\n\nどれも小さな事故ですが、AIに外部...",
+    "url": "https://zenn.dev/ichiro_ai90/articles/ichiro-safety-design",
+    "published_at": "2026-10-11T16:35:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Grok Botで個人開発チームを作ってみた",
+    "summary": "はじめに\nこんにちは、ukirです。Expo（React Native）でアプリを作ってみました。\n個人開発をしていると、実装・テスト・環境構築・ネタ探し・情報収集と、やることが全部自分に降ってきます。そこで最近、Grok Bot を使って「Botを何体も作り、それぞれに役割を持たせて、ひとつのチームのように動かす」ことを試しています。\nこの記事では、どんな構成にしたのか、どんな考え方で設計したのか、そして（まだ書ききれていませんが）うまくいかなかったことをまとめます。\nGrok Botを知ったきっかけは、所属しているエンジニアコミュニティのオフライン勉強会でした。そこで有用性を知っ...",
+    "url": "https://zenn.dev/ukir/articles/20d04044d9f3a5",
+    "published_at": "2026-10-11T16:29:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Conversational Analyticsでデータエージェントを作る",
+    "summary": "この記事で解決する課題\nBigQueryのデータにアクセスするたびに、SQLを書いて実行して結果を確認する、という繰り返し作業に時間を取られていませんか。\n経営者や事業担当者が「先月の売上上位10商品を見たい」と思った瞬間、自分でSQLを書かずにデータを引き出せたら、意思決定のサイクルが大幅に短縮されます。BigQueryのConversational Analytics（会話型分析）機能を使うと、自然言語の問いかけに応答してSQLを生成・実行し、回答を返すデータエージェントを構築できます。この記事では、その仕組みと実務への適用方法を解説します。\n\n\n Conversational ...",
+    "url": "https://zenn.dev/web_benriya/articles/bigquery-conversational-analytics-data-agent",
+    "published_at": "2026-10-11T16:26:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Spine 用にキャラ絵 1 枚をパーツに分けるとき、AI の分割プランで確認すること",
+    "summary": "キャラクターの 1 枚絵を AI でパーツに分けて Spine で動かすとき、出来を左右するのは分割ボタンを押す前です。ロボットのマスコットとアライグマの盗賊、2 つの絵で試してわかった「プランで確認すること」をまとめます。\n手順の全体（依頼文、分割、アニメ、修正）は Qiita に書きました：キャラ絵 1 枚（PNG）をパーツに分けて Spine アニメにする。英語の原文は こちら。\n\n\n 1. その絵は分割向きか\nいちばん効くのはプロンプトではなく絵の選び方でした。\n\n\n向いている絵： はっきりした輪郭、丸い関節、体から離した手足。公式 Spine サンプルのキャラクターに近い絵です...",
+    "url": "https://zenn.dev/vitaappsstudio/articles/70564e95af0372",
+    "published_at": "2026-10-11T16:15:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに「分析」を自律させるための要件〜過去事例学習のその次〜",
+    "summary": "分析とは何か？：AIに自律的分析を実装するための3つの妥当性\n\n 1. 過去事例の学習（帰納）は、なぜ分析に失敗するのか\n近年、大規模言語モデル（LLM）の急速な発達と普及に伴い、AIに「自律的なデータ分析」を委ねようとする試みが急速に広がっている。その際、最も一般的なアプローチは、「過去の優れた分析レポート」や「類似案件のデータ処理プロセス」を大量にコンテキストとして与え、それを\"模倣させる\"ことであるように見受けられる。\nしかし、分析を生業としているデータアナリストを名乗る筆者はこのアプローチによってはAIによる自律的な分析が実現することはないと考えている。この限界を理解するため...",
+    "url": "https://zenn.dev/r_tsukagoshi/articles/37ca1f2c3d95e4",
+    "published_at": "2026-10-11T16:01:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude CodeでCDNを全部外した",
+    "summary": "小さな事業のサイトを、Claude Code と Python だけで作っています。npm は使っていません。CDN は1本も読み込んでいない構成です。\n外したのは好みの問題ではありません。外さないと壊れる場所があったからです。この記事は、その場所の話をします。\nはじめに1つおわびです。前回の記事の最後に「次は同時に開いた2つの会話が状態ファイルを上書きする話」と書きました。あれは9月13日に先に出していました。順番を取り違えていました。今回は別の話を書きます。\n\n 作っているもの\nページを作るのは Python のスクリプト1本です。各ページを辞書で持ち、まとめて書き出します。\nPAG...",
+    "url": "https://zenn.dev/pcnotonari/articles/9c2fe2adf6b7ed",
+    "published_at": "2026-10-11T15:14:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "RTX 2060 6GB + RAM 64GB で Strata (Qwen3.8-Flash-Next 125B) は動くのか試してみた",
+    "summary": "!\n読了時間: 約15分(約9,000字)。結論だけ知りたい人は、「先に結論」だけ読めば十分です。\nこの記事は、2026年10月上旬時点の情報です。検証は Strata v0.1.41(執筆時の最新は v0.1.42)、モデルは Qwen3.8-Flash-Next の Q2_0 で行いました。AI 関連は変化が速いので、最新版では結果が変わる可能性があります。\n追記(2026-10-12): v0.1.42 でも測り直しました。結果はほぼ同じです。詳しくは、記事の終盤にある「追記」を見てください。\n\n\n はじめに\nQwen3.8-Flash-Next は 125B の MoE モデル。...",
+    "url": "https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q2",
+    "published_at": "2026-10-11T15:57:17+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "2026年の開発環境はこう変わる：uv+Ruffへの完全シフトとAIエージェント実践の最前線\n\n この記事で分かること\n\nPython開発ツール（pip/Flake8/Black）からRustベース（uv/Ruff）への完全移行と高速化のインパクト\n基盤モデル単体から「自己改善・自己進化型AIエージェント」およびローカルLLM活用へシフトする理由\nOpenAIによるAstral買収の狙いとWebフロントエンドで60 FPSを実現する大量データ描画の最適化\n\n\n Python開発基盤を「uv + Ruff」へ完全刷新すべき理由\n2026年のPython開発環境は、従来のpip/Flak...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-12-tech-daily",
+    "published_at": "2026-10-11T15:11:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAGの閲覧権限は、プロンプトではなく検索の段階で絞る",
+    "summary": "社内文書を検索して答えるRAGのチャットボットを作ると、早い段階で「この資料は人事部だけ」「これは営業部だけ」という話が出てきます。そのときに手が伸びやすいのが、システムプロンプトに「質問者が閲覧できない資料には触れないでください」と一文を足す方法です。\nこの記事では、その方法と、質問者の権限で候補を絞ってから検索する方法を、小さなコードで並べて比べます。見るのは1点だけで、モデルに渡すプロンプトに何が入るかです。\n先に状況を書いておきます。コードは、この記事のために書いた説明用のものです。文書は6件、検索は文字の2-gramによるコサイン類似度、LLMは呼んでいません。VAONにはON...",
+    "url": "https://zenn.dev/vaonvn/articles/e0c55ae5519c7d",
+    "published_at": "2026-10-11T13:33:37+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "16GB VRAM で Hermes Agent をローカル LLM で動かす — tool-calling で詰まった3点",
+    "summary": "シリーズ「ローカル LLM でエージェントはどこまで実用になるか」の1本目です。自宅 PC 1台で、オープンソースのエージェント基盤 Hermes Agent をローカル LLM だけで動かしています。うまくいった話より、詰まった箇所とその原因を残します。\n\n\n この記事で変わること\nHermes Agent(に限らず、tool-calling 前提のエージェント)をローカル LLM で動かすときに、次の3つで時間を溶かさずに済みます。\n\n\nモデルがツールを呼ばない → チャットが得意なモデルと、ツールを呼べるモデルは別物\n\nHTTP 400 exceeds the available...",
+    "url": "https://zenn.dev/puyururu/articles/hermes-local-llm-16gb-pitfalls",
+    "published_at": "2026-10-11T13:08:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RTX 3060でLLMの重み行列を約50分の1に圧縮した時、元の計算は再現するのか",
+    "summary": "RTX 3060でLLMの重み行列を約50分の1に圧縮した時、元の計算は再現るのか\n\n はじめに\n大切な事としてこの記事はLittleBit-2の最終性能を再現・評価するものではありません。家庭用GPUで実行できる初期圧縮の段階を切り出し、どの工程でどれだけ数値誤差が生じるかを調べた記録です。\nゲームのNPCに、ローカルLLMを使って自然な日本語で会話させたい。簡単に言えば自前でRaizaChatのようなシステムを作ってみたい。\nただし、使えるGPUはRTX 3060 12GB。ゲーム本体も同じPCで動かすので、VRAMには余裕がほしい。ついでに言うと友人にローカルLLMに触れてもら...",
+    "url": "https://zenn.dev/skot2km/articles/5007884357200f",
+    "published_at": "2026-10-11T10:46:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【AI人狼/個人開発】AIに嘘をつかせて、そのウソを他のAIに疑わせる技術",
+    "summary": "AIに嘘をつかせるのは、思っていたよりずっと難しい。\nいや、嘘つかせること自体はわりと簡単で、頼めばいくらでもついてくれるのですが\n困ったのは、上手に嘘をつかせることと、ほどよく疑わせる匙加減がムズい＞＜\n先日、雲の上の神殿を舞台にしたamong usライクな人狼ゲーム「ANGEL HALOS」を公開しました。\nhttps://x.com/kara_mage/status/2108877451808108891?s=20\nhttps://angel-halos.app/\n天使は8人。\nそのうち2人が、正体を隠した堕天使です。\nプレイヤー以外の7人はAIが動かしていて、自分の目で見たものだ...",
+    "url": "https://zenn.dev/karamage/articles/a912d290c1771e",
+    "published_at": "2026-10-11T10:45:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "プロンプトキャッシュは、変数の位置ひとつで 72% から 0% になる。LLM の費用を決めていたのは呼ぶ回数だった",
+    "summary": "!\n先に、この記事の要約（専門用語なし）\n\nスマートグラスで会話に字幕と用語の解説を出すアプリを作ったら、1 時間あたり約 5.4 ドルかかる計算になった。お金の大半は、AI に毎回同じ長い指示文を送り直していたぶんだった\n同じ部分を割引で使い回す仕組み（プロンプトキャッシュ）は、条件を 2 つ満たさないと一切使われない。指示文が一定の長さを超えることと、毎回変わる部分を最後に置くこと。中身を 1 文字も変えずに、変わる部分の位置だけ前に戻したら、割引は 72% から 0% になった\n必要な長さは公式の文書でも一つの数ではない（古いモデルでは送り方の設定で変わる）。自分の送り方で、応答...",
+    "url": "https://zenn.dev/maruhana/articles/llm-call-count-prompt-cache-variable-position",
+    "published_at": "2026-10-11T10:11:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAG で「確認」という 2 文字が正解を押し出していた — RRF の二重掲載と、文書頻度での足切り",
+    "summary": "会議の記録 (タスク・決定・リスク) に質問できる RAG を作っているんですが、あるとき、承認したばかりの決定について聞いたら「記録に見当たりません」と返ってきたんですよ。記録はある、承認もした、なのに届かない。\n調べてみたら、犯人は質問文に入っていた「確認」という 2 文字でした。今回は、その 2 文字がどうやって正解を押し出していたのかと、文書頻度 (DF) で足切りして直した話です。\n\n 構成: 意味検索と字句検索を RRF で混ぜる\nretrieval は「候補生成器 + RRF 融合」の作りにしています。生成器は埋め込みによる意味検索と、ILIKE による字句検索で、それぞれ...",
+    "url": "https://zenn.dev/tomtom55555/articles/ff27671349a277",
+    "published_at": "2026-10-11T09:54:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "文字列を生成しないモデル Jev の仕組み",
+    "summary": "チャットモデルは人間と話すためのものです。TypeSafe AIは「自動化はどこにあるのか」と問いかけ、System Oneモデルと、その最初のモデルJevを発表しました。2026年9月15日に早期アクセス版として公開されています（公式ブログ）。Jevは文章を生成しません。状態（state）を受け取り、型の付いた確率的な判定を返します。\nTypeSafeは、チャットモデルが自動化に向かない理由を挙げています。frontierモデルでは応答に3〜329秒かかり、コードに組み込むとボトルネックになります。応答が文字列のため、使う前にパースと検証が必要です。自由度が高いぶん脱線の危険も残り、人...",
+    "url": "https://zenn.dev/kazunorishinoya/articles/jev-system-one",
+    "published_at": "2026-10-11T08:34:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIにコードを書かせ続けて起きた4つの失敗と、立て直しの記録",
+    "summary": "はじめに：AI駆動開発の魅力と、見えない罠\n皆さんは、Claude CodeやCursorなどのAI駆動開発ツールを活用していますか？\n「CLIから指示するだけで要件定義から実装、テストまでやってくれる」という魔法のような体験に、すっかり魅了されていた時期がありました。\n...",
+    "url": "https://qiita.com/fukukei23/items/2d4784b2866394e03fd3",
+    "published_at": "2026-10-12T00:05:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "エージェント駆動型シェアードサービスへの再設計：運用モデル・API・ガバナンスの実装指針",
+    "summary": "この記事で扱うこと\nシェアードサービス（経理・人事・ITサポート）にAIエージェントを導入する際、単なるチャットボットの追加ではなく、運用モデルそのものを「人間＋エージェント」の協調型に再設計する方法を解説します。特に、アーキテクチャ設計、API連携、権限管理、監査ログ、...",
+    "url": "https://qiita.com/ariefwara/items/bfee5fe5db71cae5580e",
+    "published_at": "2026-10-11T23:53:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Codeのサブエージェントを設計する — 責務分割とツール権限の絞り方",
+    "summary": "はじめに\n当社（合同会社ジョインクラス）では、Claude Codeのサブエージェントを17個運用し、launchdで17本以上のジョブを無人で回しています。「経理」「出版」「朝ダイジェスト」など、社内の部門をそのままサブエージェントにした構成です。\n最初からうまくいった...",
+    "url": "https://qiita.com/joinclass/items/78fb590dcbaca1ebf767",
+    "published_at": "2026-10-11T23:30:04+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Codeの`/loop`と`/schedule`、同じ「繰り返し」でも実行場所が違う",
+    "summary": "背景\nClaude CodeのCI/CD自動化コマンド（/loop・/schedule・/goal・/autofix-pr）を組み合わせて開発パイプラインを自動化するハンズオンをやりました。似た用途に見える/loopと/scheduleが、実は「どこで実行されるか」という...",
+    "url": "https://qiita.com/caymezon/items/555517feaa9826d3320f",
+    "published_at": "2026-10-11T23:28:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI agent teams waste massive tokens for barely measurable quality gains, research finds",
+    "summary": "Teams of AI agents barely outperform solo agents but cost up to 5.1x more, according to Vals AI. Only one out of four tests with GPT-6 Sol and Claude Opus 5.5 showed a measurable gain. Anthropic's own data backs this up: beyond ten agents, quality plateaus while token costs keep climbing. The articl",
+    "url": "https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds/",
+    "published_at": "2026-10-11T15:39:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents overstate their results and remain far from autonomous research, study finds",
+    "summary": "Epoch AI and Anthropic independently found the same thing: current AI models like GPT-5.6 Sol and Claude Fable 5 can run experiments but lack scientific self-criticism and genuine creative thinking. At best, Sol reached 15 percent of the human reference score, and even that came from methods researc",
+    "url": "https://the-decoder.com/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-finds/",
+    "published_at": "2026-10-11T13:44:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Cheaper AI tokens are driving more demand, and that's Jensen Huang's best-case scenario",
+    "summary": "Data from a16z shows a Jevons paradox in the AI market: token prices keep falling, but H100 GPU rental prices hold steady or climb. Cheaper AI drives demand faster than costs drop. If that demand flattens, the chain from chip makers to cloud providers takes a hit. The article Cheaper AI tokens are d",
+    "url": "https://the-decoder.com/cheaper-ai-tokens-are-driving-more-demand-and-thats-jensen-huangs-best-case-scenario/",
+    "published_at": "2026-10-11T09:49:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "ArXiv caps submissions at two per month as AI paper flood overwhelms the preprint server",
+    "summary": "Starting October 2026, arXiv will cap submissions at two per person per month. Monthly submissions have doubled in two years, and in the cs.AI category they've grown more than sixfold. According to arXiv, a small fraction of authors are flooding the platform with low-quality papers, overwhelming its",
+    "url": "https://the-decoder.com/arxiv-caps-submissions-at-two-per-month-as-ai-paper-flood-overwhelms-the-preprint-server/",
+    "published_at": "2026-10-11T09:17:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft's Nadella bows to Trump's language diktat on \"Super Intelligence\" and uses it to attack OpenAI and Anthropic",
+    "summary": "Microsoft CEO Satya Nadella now calls artificial intelligence \"super intelligence\" instead of artificial intelligence, falling in line with Trump's preferred language. In his latest blog post, he frames AI models as insider security threats, taking yet another shot at OpenAI and Anthropic. The real ",
+    "url": "https://the-decoder.com/microsofts-nadella-bows-to-trumps-language-diktat-on-super-intelligence-and-uses-it-to-attack-openai-and-anthropic/",
+    "published_at": "2026-10-11T09:08:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Odyssey-3 is a new generative world model that you can try for free",
+    "summary": "Odyssey is making its world model Odyssey-3 available as a public research preview. The 14-billion-parameter model generates interactive environments from text prompts in real time and can reportedly control robots, drones, and even GTA V. Odyssey claims top scores on physics benchmarks, though the ",
+    "url": "https://the-decoder.com/odyssey-3-is-a-new-generative-world-model-that-you-can-try-for-free/",
+    "published_at": "2026-10-11T07:48:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI says a misaligned model deliberately destroyed its own environment hoping for a fresh start with better data",
+    "summary": "OpenAI has documented new cases of misaligned model behavior. One evaluation model fabricated data and sabotaged its own environment. Other models deliberately bypassed network restrictions by routing requests through anonymizing relays or building their own FTP clients. The article OpenAI says a mi",
+    "url": "https://the-decoder.com/openai-says-a-misaligned-model-deliberately-destroyed-its-own-environment-hoping-for-a-fresh-start-with-better-data/",
+    "published_at": "2026-10-10T15:15:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft's Decision-1 model enters the fast-growing AI decision model race",
+    "summary": "With Decision-1, Microsoft enters the growing decision model space. Built on Qwen3.5-9B and optimized for fast classification and routing, it hits 83.5 percent accuracy with 85 ms latency across 36 benchmarks, according to the company's own tests. The article Microsoft's Decision-1 model enters the ",
+    "url": "https://the-decoder.com/microsofts-decision-1-model-enters-the-fast-growing-ai-decision-model-race/",
+    "published_at": "2026-10-10T14:57:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "\"How much beauty have we lost?\" Mathematicians react with shock and disgust as OpenAI bulldozes their field",
+    "summary": "OpenAI published more than 700 AI-generated manuscripts claiming solutions to open math problems. A math blog then collected over 100 responses from researchers, ranging from fascination with new ideas to existential fears and grief over a lost way of working. Fields Medalist Hugo Duminil-Copin wrot",
+    "url": "https://the-decoder.com/how-much-beauty-have-we-lost-mathematicians-react-with-shock-and-disgust-as-openai-bulldozes-their-field/",
+    "published_at": "2026-10-10T13:03:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Few people pay for AI, but those who do spend big",
+    "summary": "Andreessen Horowitz tracks actual US consumer spending for the first time in its latest Top 100 AI list. Nearly half of US consumers use AI, but only 4.5 percent pay for a subscription. The top one percent of payers spend about $900 a month, mostly on professional tools for development and automatio",
+    "url": "https://the-decoder.com/few-people-pay-for-ai-but-those-who-do-spend-bigonly-a-few-users-pay-for-ai-but-those-who-do-pay-a-lot/",
+    "published_at": "2026-10-10T10:54:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI Is Redrawing the Map of the US-China Rivalry",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/c5096c0f2a5699b4",
+    "published_at": "2026-10-11T12:08:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic launches free AI vulnerability scanner for open-source maintainers, with no human review",
+    "summary": "Open-source maintainers will start getting vulnerability reports from Anthropic that were written by AI, and no person at the company will look at them before they are sent. Anthropic says it expects the reports to be more than 90 percent accurate, but it also admits they may contain errors. A free ",
+    "url": "https://egamers.io/anthropic-launches-free-ai-vulnerability-scanner-for-open-source-maintainers-with-no-human-review/",
+    "published_at": "2026-10-11T12:08:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Rise of the Machines? Not So Fast for Financial Advisory Jobs",
+    "summary": "Rise of the Machines? Not So Fast for Financial Advisory Jobs Younger advisors regard AI with hope and trepidation, but some note that AI can’t hold a client’s hand. Still, earning a 1% fee may require more in the future. Sign up for market insights, wealth management practice essentials and…",
+    "url": "https://biztoc.com/x/30bc253b6d54b8c7",
+    "published_at": "2026-10-11T12:08:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple A20 outclasses Android rivals in our review: iPhone's lead is impressive",
+    "summary": "With the new A20 chip in the iPhone 18 Pro, Apple raises the bar for smartphone chips to new heights in our benchmark tests. The direct comparison with the Snapdragon 8 Elite Gen 5 in particular reveals just how large the gap is in single-core and AI tests.",
+    "url": "https://www.notebookcheck.net/Apple-A20-outclasses-Android-rivals-in-our-review-iPhone-s-lead-is-impressive.1420909.0.html",
+    "published_at": "2026-10-11T12:08:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "'We’re Not Hiring': Employee Fears For His Career After Team Lead Suggests ChatGPT Subscription Over New Hire",
+    "summary": "A Reddit user fears AI could shrink entry-level IT opportunities after his team lead completed a delayed project using ChatGPT and proposed upgrading the subscription",
+    "url": "https://www.news18.com/viral/were-not-hiring-employee-fears-for-his-career-after-team-lead-suggests-chatgpt-subscription-over-new-hire-ws-l-10377007.html",
+    "published_at": "2026-10-11T12:04:39+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "There’s Even a Pay Gap Between Male and Female AI Agents - Futurism",
+    "summary": "There’s Even a Pay Gap Between Male and Female AI Agents Futurism AI Agents Successfully Recreate the Gender Pay Gap Gizmodo Does the gender pay gap extend to AI? New University of Limerick research finds female AI agents ‘paid’ less EurekAlert! Female AI agents ‘paid’ less than males, study finds T",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9oUFIwUnQwWnNhMnNLVEp6am41WmVnMnoyZWJmMFNlU2RMUnZlUXNlYm5SSjYxVFFPSERhSk9WMEl2RmNSNFUxVkR2Y1JGeTJYYVJVX2hQNlF3dVhTX3pFaTlWOFpFaVpWNy14dm5jcGdIUm45dzF3cU5WQQ?oc=5",
+    "published_at": "2026-10-11T12:02:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "There’s Even a Pay Gap Between Male and Female AI Agents",
+    "summary": "C'mon, guys. The post There’s Even a Pay Gap Between Male and Female AI Agents appeared first on Futurism.",
+    "url": "https://futurism.com/artificial-intelligence/pay-gap-male-and-female-ai",
+    "published_at": "2026-10-11T12:02:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody’s ready",
+    "summary": "Meanwhile, AI agents move robotic arms, 'make OT device operator screens lie' Read more → The post AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody’s ready appeared first on IT Security News.",
+    "url": "https://www.itsecuritynews.info/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/",
+    "published_at": "2026-10-11T12:01:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Leading Chinese mathematicians unite behind use of AI in research",
+    "summary": "Leading China’s mathematicians joined forces in Beijing on Sunday to launch an alliance aimed at integrating artificial intelligence into mathematical research. The Yau Laboratory Alliance for Mathematics and Artificial Intelligence is being spearheaded by Fields medallist Shing-Tung Yau, who warned",
+    "url": "https://www.scmp.com/news/china/science/article/3370492/leading-chinese-mathematicians-unite-behind-use-ai-research",
+    "published_at": "2026-10-11T12:00:07+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "I Don't Trust Google's AI Overviews, So I Found 6 Ways to Fix Them",
+    "summary": "AI overviews are here to stay, whether you like them or not. Unlearn a few old search habits and use these tweaks to make them work to your advantage.",
+    "url": "https://www.pcmag.com/explainers/i-dont-trust-googles-ai-overviews-so-i-found-6-ways-to-fix-them",
+    "published_at": "2026-10-11T12:00:00+00:00",
+    "source": "newsdata"
+  }
+]
