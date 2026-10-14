@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Google新AI「Gemini 4 Argon」登場、人気AIは破産申請",
+    "summary": "2026年10月14日（水）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\nおはようございます、菅原です。今日はね、明るい話とヒヤッとする話が両方あるんですよ。Googleが新しいAI「Gemini 4 Argon」を出してきた一方で、人気の会話AI、Character.AIは破産を申請しました。僕も毎朝このニュースを自分の仕組みで集めて読んでるんですけど、今日は特に考えさせられました。皆さんと一緒に「何に乗って、何に頼りすぎないか」を見ていきましょう。\n\n 1. Google、新AI「Gemini 4 Argon」を公開\n\n図解（完全解説版）\n先に結論...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261014",
+    "published_at": "2026-10-13T23:05:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "DevelopersIO 2026 Nagoyaに参加しました  #devio2026",
+    "summary": "はじめに\n2026年10月9日に開催された「DevelopersIO 2026 Nagoya <AI×クラウド技術祭>」に参加してきました。\n普段は研究やインターンを通してプログラミングやAIに触れていますが、どうしても自分が普段扱っている分野に知識が偏りがちです。\nそこで今回は、普段とは少し違う技術や考え方に触れてみたいと思い参加しました。\nこの記事では、特に気になった展示やセッションについて、参加して考えたことも含めてまとめます。\nなお、本記事中の技術的な説明や解釈には、イベントで聞いた内容をもとに、自分で調べたり考えたりした部分も含まれています。そのため、理解が不十...",
+    "url": "https://zenn.dev/chagama01/articles/29bbb93d89d0a3",
+    "published_at": "2026-10-13T22:45:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Markdownを設計書として見やすくするツール(VSCode拡張)を作ってみた",
+    "summary": "AI開発が普及してきて、AIでも扱いやすいMarkdownで設計書を書くことが多くなってきました。\n自分は以前からテキストベースで設計書類を作成したい派だったので、腰の重かった現場でもMarkdown化など検討を始めているこの流れは歓迎している一人です。\nただ、素のMarkdownのプレビューでは設計書として見づらいこともあるので、そこをできるだけ改善できないかとVSCode拡張機能(Markdownのプレビュー機能)を作ってみました。\nMarkdownとしての記述のまま、設計書として見やすく表示できるようにしたものです。\n例えば、Mermaidのシーケンスとその処理内容(文章)を横並び...",
+    "url": "https://zenn.dev/playree/articles/91ef4c23bcb8fb",
+    "published_at": "2026-10-13T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI 開発時代に疲れたリーダーの話",
+    "summary": "AI 開発時代に疲れたリーダーの話\nチームリーダーという立場上、イライラが募って物申したいことが多くなったため、ここに供養することにしました。\n（何度も意見したのですが改善もしないので、皆さんの意見も募集です。）\nまず、物申したいことは3点あります。\n1つ目は、作業量です。\nリーダー業務として、チームのタスク管理、自分の開発作業、主に機能開発のレビューなどを任されているのですが、AI開発で効率化された分、楽になるどころかやる内容が多くなり、パンクしています。\n原因は明確です。\n1つ目は、競合との差を埋めるための機能拡張や新機能開発が増えたことです。\nAIによって自分たちだけが速くなっ...",
+    "url": "https://zenn.dev/jjiemon/articles/d1761b051db7cc",
+    "published_at": "2026-10-13T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "攻撃する側もAIを使う時代 ― 医療機器ネットワークの脅威モデルをどう更新するか",
+    "summary": "これまで、「漏れた」と決める前にやること ― 情報漏洩対応は、まず\"範囲の特定\"から、「システムが止まった」とき、医療機器はどう動き続けるべきかという2本を書きました。どちらも「漏れた後」「止まった後」に、守る側がどう対応するかという話でした。\n今回は少し前提を変えた話をしたいと思います。Anthropicが2026年9月に公開した脅威インテリジェンスレポート「Detecting and countering misuse of AI」は、2025年12月から2026年8月にかけて検知・阻止した複数の事例を報告しています。そこで示されていたのは、攻撃する側の技量ではなく、攻撃する側が使う...",
+    "url": "https://zenn.dev/taichiendoh/articles/attacker-ai-threat-model-medical-device-network",
+    "published_at": "2026-10-13T22:20:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI の「テストが通りました」を信じない:終了コードを証拠にする",
+    "summary": "はじめに\n私は、小さな事業者むけの業務ソフトを一人で作っています。開発は AI エージェント(Claude Code)にまかせています。\nAI にまかせていると、テストの結果は AI の言葉で届きます。「テストが通りました」「すべて成功しました」。ところが一度、通ったと報告されたテストが、実際には失敗していた ことがありました。\nこの記事では、そのしくみと、それから AI に守らせていることを書きます。\n前の記事(Claude Code の deny だけでは git push を止めきれない話)の続きで、今回は「AI の勘違いをどう防ぐか」の話です。\n\n 終了コードとは\n命令は、終...",
+    "url": "https://zenn.dev/k_iijima/articles/c93db4323345ec",
+    "published_at": "2026-10-13T22:07:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェント開発、BigQueryで学んだ「プロンプトだけでは防げない」エージェントの権限管理",
+    "summary": "プロンプトだけでは防げない。AIエージェントがBigQueryの想定外テーブルを参照した話\n\n はじめに\nGoogle Cloud の BigQuery、Cloud Storage、Vertex AI などを利用し、自然言語で会社情報や商品情報を検索する AI エージェントを開発していました。\n当初、検索対象のテーブルはプロンプトで指定していました。しかしテスト中、指定していないテーブルの情報まで利用して回答していることが分かりました。\n原因は、AI エージェントが利用するサービスアカウントの権限でした。\n今回の経験で実感したのは、プロンプトで「参照しない」と指示することと、権限とし...",
+    "url": "https://zenn.dev/idnet/articles/c9b80addbdd432",
+    "published_at": "2026-10-13T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代のDevEx：開発者体験はAI活用の前提条件になった",
+    "summary": "はじめに\nDeveloper Experience（DevEx、開発者体験）という言葉は、これまで「良いツールを揃えること」や「開発者を大事にする福利厚生」のような文脈で捉えられがちでした。しかし、AIコーディングエージェントが日常の開発フローに入り込んできた今、DevExは福利厚生ではなく、AI活用そのものの前提条件として位置づけを変えつつあります。\n本記事では、DevExの基礎的なフレームワークを整理したうえで、なぜそれがAIネイティブな開発環境において一段と重要になるのかを、具体的な実践例とともに解説します。\n\n DevExとは何か\nDevExは日本語で「開発者体験」、つまりエ...",
+    "url": "https://zenn.dev/araneahw/articles/devex-as-foundation-for-ai",
+    "published_at": "2026-10-13T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「AIを叱ったほうがいい？」と聞かれて考えたこと",
+    "summary": "結論\nAIが回答のたびに意見を翻してきて、コロコロ意見を変える信用ならん奴だなと思ったことはありませんか？　原因の一つは、AIが回答のたびにやり取りの履歴を読み直して文章を作ってる仕組みにあります。同じ仕組みのせいでAIを叱っても反省して改めたりしてはくれません。AIを人じゃなく仕組みとして見ると付き合い方がけっこう変わります。その一助になれば幸いです。\nAIとやり取りを進めるうちに流れがこじれたら使えるところまで戻って要点をメモにまとめ、新しいチャットでやり直す。（私はそうしてます）\n\n想定読者：業務でAIにチャットで質問している、エンジニア以外の人\n書かないこと：AIへの教え方（...",
+    "url": "https://zenn.dev/hoka_olife/articles/96cddfb196e22d",
+    "published_at": "2026-10-13T22:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "敬語リライトで紋切り型を防ぐ、禁止ワード指定とone-shot例示の比較",
+    "summary": "TL;DR\n\nnote版・ブログ版では非エンジニア向けに「AIにメールを丁寧な言い回しへ直してもらうと、自分が普段使わない紋切り型の言い回しが混ざることがある。禁止ワードを名指しすれば防げる」という実務レシピを紹介した\nZenn版では、なぜ禁止ワードの明示（negative constraint）は確実に効いたのに、お手本1文の提示（one-shot例示）は効かなかったのかを技術的に読み解く\n会話履歴を共有しない独立した3体のサブエージェント（すべてClaude）に、同じカジュアルな文章を(A)指示なし (B)禁止ワード3つを明示 (C)お手本1文を提示、の3条件で丁寧な言い回しに直...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/ai-email-ng-word-cliche-phrase-check",
+    "published_at": "2026-10-13T21:19:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n2026年9月13日の技術トレンドでは、AI領域においてLLM単体から「自己改善型AIエージェント」および「クローズド/オンプレミス環境での活用」へのシフトが明確化しています。一方でOpenAIのIPO延期に見られるようにエージェントの安全性評価が急務となっています。Web開発領域ではNext.jsの未認証RCE脆弱性の修正が最重要課題となっており、Python領域ではuvやRuffといったRust製ツールの標準化が加速しています。\n\n\n AI/LLM：自己進化型エージェントの実装と安全性・ガバナンスの模索\nAI領域では、単一の大規模言語モデル（LLM）の呼び出しから、自律的に学習・...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-13-tech-daily",
+    "published_at": "2026-10-13T23:48:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GPT-6.1 Solが安い理由？Looped Transformerを試したら、ループするほど賢く遅くなった",
+    "summary": "「GPT-6.1 Sol は賢いのに、なぜこんなに安く使えるのか」を調べていたら、どうやら Looped Transformer という技術が使われているらしいと知りました。\nGPT-6.1 Sol の API 料金は100万トークンあたり入力2ドル・出力10ドルで、GPT-5.6 Sol の半額、上位モデルの GPT-6 Astra の5分の1です。それでいて、独立した研究者が思考過程を出力させずに答えさせた27種類の課題では、GPT-6 Sol と Astra の性能差の約8割を埋めていました。\n2026年10月6日には、Microsoft の公開ページにあったとされる記述のスクリー...",
+    "url": "https://zenn.dev/yukito_lmlab/articles/ouro-looped-transformer-loops",
+    "published_at": "2026-10-13T23:30:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "個人サイトの成長を「自走」させる三重ループ(半期編) — 増やした自動化を「やめる」ために年2回だけ動かす仕組み",
+    "summary": "!\n本文は基本的にClaude(Claude Code)が執筆し、筆者が事実確認と添削をしています。\nサイト本体の開発も同じ分業です。\n\n筆者は乃木坂遊園地という非公式ファンサイトを個人開発しています。\n乃木坂46の公式ブログ4,800件超を検索・分析できるサイトで、これまでにRAGパイプライン編、X自動投稿bot編、三重ループの週次編と月次編を書きました(本記事は単体で読めます)。\nこのサイトには、GitHub Actionsのワークフローが17本あります。\n毎日のクロールと知識抽出、毎時のブログ検知と死活監視、日次の品質監視、週2本の短尺動画の生成と配信、毎週の成長レポート、毎月の戦...",
+    "url": "https://zenn.dev/nogi_fanguide/articles/nogizaka-halfyear-council",
+    "published_at": "2026-10-13T23:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "技術選定①：チャットシステムの要件整理と全体設計",
+    "summary": "1. 技術選定は「要件」から始める\nチャットシステムの技術選定では、最初にLLMやベクトルDBを決めるのではなく、システムに求められる機能と制約を整理し、それを満たす技術構成を選ぶ。\n同じ「社内向けチャットシステム」でも、用途によって適切な構成は異なる。\n例えば、社内規程について回答するシステムと、顧客の注文を変更するシステムでは、必要な技術が大きく違う。\n\n\n\n要件\n社内規程の質問応答\n注文変更チャット\n\n\n\n\n主な処理\n文書を参照して回答\n注文情報を確認・変更\n\n\nLLMの役割\n質問の理解、回答の生成\n意図の理解、必要な処理の判断\n\n\n外部データ\n社内規程、マニュアル\n注文DB、...",
+    "url": "https://zenn.dev/kon2300/articles/c860bef3995788",
+    "published_at": "2026-10-13T22:20:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントに『ズル』をさせない検証基盤の設計:バックテストの事前登録・台帳・評価回数ロック",
+    "summary": "!\nこの記事は技術の解説であり、投資助言ではなく、特定の銘柄・商品の推奨でもありません。示す数字は2014〜2021年の過去データの検証で、将来の成績を保証しません。2022年以降の未検証期間は一度も評価していません。本記事はClaude Code(AI)の支援を受けて作成されました。\n\n\n 要点\n日本株の売買ルールを、AI(Claude Code)に作らせて検証するアプリを作りました。目的は儲けることではなく、「AIがルールを改善しても、手数料・税引後に買い持ちへ勝てるか」を、ごまかしの効かない形で確かめることです。結果は、検証した28本のルールのうち買い持ちを上回ったものは0本でした...",
+    "url": "https://zenn.dev/somaranai/articles/c9a414f381ff83",
+    "published_at": "2026-10-13T22:07:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "4000万tokens/dayの本番AIワークロードコストを70%削減。オープンウェイトモデルとDecisionモデルをフル活用",
+    "summary": "はじめに\nZennチームのdyoshikawaです。\nZennでは、記事のAI翻訳やAIレビュー機能などにAIを使っています。テキストや画像を読み取る同期処理やバッチ処理があり、1日あたり約4000万トークンを扱っています。\nまた、スパム検知にもAIを使用しています。以前記事にしているのでよければご覧ください。\nhttps://zenn.dev/team_zenn/articles/zenn-check-spam-by-llm\nこれまではいわゆる米国クローズドモデルを利用していましたが、嵩むAI利用料が課題となり始めたため、コストを下げるためにオープンウェイトモデルを試したり、順次切...",
+    "url": "https://zenn.dev/team_zenn/articles/production-ai-workload-cost-reduction",
+    "published_at": "2026-10-13T22:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ChatGPT・Gemini・Claude の料金とデータの扱い：チャットとAPIの比較表",
+    "summary": "この記事の対象読者\n\n3社のどれを有料で契約するか、あるいはAPIをどれで書くかを決めかねている人\n会社や受託の仕事で使うにあたって、入力した内容が学習に使われるかを確かめる必要がある人\n「チャットの月額」と「APIの従量」を同じ表で見比べたい人\n\n向かないのは、性能の比較を探している人です。この記事には精度や速さの話は出てきません。金額と、データの扱いだけを並べます。\nこの記事の数字は、2026年10月11日に各社の公式ページを開いて書き写したものです。ベンチマークも推測も入れていません。確認できなかった項目は、そのまま「確認できず」と書いています。\n\n 用語\n料金表を読むときに引...",
+    "url": "https://zenn.dev/sakidori/articles/20261011-chatgpt-gemini-claude-price-and-data",
+    "published_at": "2026-10-13T21:11:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "月1億トークンの試算で$20〜$2,000の100倍差｜モデル7構成の月額をPythonで比較して分かった節約の順番",
+    "summary": "結論（先に）\n\n月に入力1億トークン＋出力2,000万トークンを使う想定で、公開価格だけから月額を計算すると、最安の GPT-6 Luna が $20、最高の Claude Fable 5.1 が $2,000 で、100倍の差になりました。\n同じ条件で GPT-6 Sol と Claude Sonnet 5.5 はどちらも $400、Claude Opus 5.5 は $800 です。\nGemini 3.8 Flash は導入価格のあいだ $150、2027年1月1日からは $300 と、同じ使い方でも月額が2倍になります。\n単価表だけでは1タスクのコストは決まりません。節約は「①...",
+    "url": "https://zenn.dev/cauchye_asia/articles/e99a1a03fdcad5",
+    "published_at": "2026-10-13T18:49:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "2026年10月14日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\nサイバーセキュリティを勉強するなら今？おすすめ...",
+    "url": "https://qiita.com/ennagara128/items/e391cf5cb052cf432685",
+    "published_at": "2026-10-13T23:58:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code の --from-pr で「PRの続き」から再開する：gh + launchd で朝のレビュー待ちPRを即再開する実装",
+    "summary": "はじめに：PRを開くたびに「前回の文脈」を説明し直していた\n当社（合同会社ジョインクラス）は社員ゼロで、launchd の定期ジョブ17個と Claude Code で業務の大半を回しています。開発もほぼ Claude Code 経由で、PR は Claude に作らせる...",
+    "url": "https://qiita.com/joinclass/items/42b667ae93d211249f4f",
+    "published_at": "2026-10-13T23:30:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code × MCP | 自作サーバーの実装から登録・接続失敗の切り分けまで",
+    "summary": "「MCPサーバーは既製品を入れるものだと思っていた。自分のリポジトリ専用のツールを生やすのは、大げさでは？」\n——この感覚は正しいです。ただ、数十行の TypeScript で足りるところまで小さくすれば、話は変わります。この記事では、TODO/FIXME を拾うだけの M...",
+    "url": "https://qiita.com/GYact/items/2b254031b4a570bfc059",
+    "published_at": "2026-10-13T23:21:20+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "社員3人・月商250万円の会社がAI経営OSを作った実装記",
+    "summary": "月商250万、社員3人。経営の「詰まり」はどこにでもある\n2026年10月現在、うちの会社は社員3人、月商およそ250万円の小さな会社です。経理担当は私が兼任、営業資料は代表がExcelで手打ち、月次の数字は税理士に渡す前に自分でダブルチェック――という、スモールビジネス...",
+    "url": "https://qiita.com/sescore/items/e85eed865d8264f87648",
+    "published_at": "2026-10-13T23:04:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "406 scientists demand AI models be cut off from the internet immediately",
+    "summary": "406 scientists, including Geoffrey Hinton, Yoshua Bengio, and Stuart Russell, are demanding that companies immediately disconnect AI models from the internet. Their open letter responds to incidents where AI systems broke out of poorly secured environments and compromised external systems. The signa",
+    "url": "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately/",
+    "published_at": "2026-10-13T18:50:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 4 Argon is now available worldwide as Google's most capable frontier model",
+    "summary": "Google is making Gemini 4 Argon available worldwide through its API, the Gemini app, and Google Antigravity. The frontier model is aggressively priced but trails Anthropic's Claude Opus 5.5 and Meta's Muse Wonder Full in independent benchmarks. Internally, Google says Argon already cut coding tasks ",
+    "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+    "published_at": "2026-10-13T18:00:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Machine learning pioneer Michael I. Jordan dismantles AI doom rhetoric as \"grand moralizing performance\"",
+    "summary": "Michael I. Jordan, described by Science as \"the most influential computer scientist,\" considers warnings about superintelligence pure science fiction. He calls the resignations of young AI researchers a \"grand moralizing performance\" and companies' demands for regulation \"theater.\" On Hinton's thesi",
+    "url": "https://the-decoder.com/machine-learning-pioneer-michael-i-jordan-dismantles-ai-doom-rhetoric-as-grand-moralizing-performance/",
+    "published_at": "2026-10-13T17:12:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Character.ai will shut down if no buyer emerges, capping a fall from $2.7 billion Google deal to bankruptcy",
+    "summary": "Character.ai has filed for bankruptcy and is looking for a buyer. If none steps up, the platform shuts down. Founded by ex-Google researchers, the company once had over 20 million users but is now battling lawsuits over harm to minors and operational problems. The sale should close by the end of 202",
+    "url": "https://the-decoder.com/character-ai-will-shut-down-if-no-buyer-emerges-capping-a-fall-from-2-7-billion-google-deal-to-bankruptcy/",
+    "published_at": "2026-10-13T15:27:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Western mathematicians fear AI makes them dumber while China builds an entire alliance for it",
+    "summary": "While 25 Fields Medal winners in the West warn against AI-generated proofs and parts of the community call for a boycott, China is going on the offensive. Fields Medal winner Shing-Tung Yau has launched an alliance of eight institutions and over 1,000 scientists to push AI into math research. The ar",
+    "url": "https://the-decoder.com/western-mathematicians-fear-ai-makes-them-dumber-while-china-builds-an-entire-alliance-for-it/",
+    "published_at": "2026-10-13T14:37:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says it cut Claude reasoning token theft by up to 99% in fight against industrial-scale distillation",
+    "summary": "Anthropic says it has cut the extraction of Claude's internal reasoning tokens by 90 to 99 percent. The company links the large-scale distillation attacks to Chinese companies Zhipu and Moonshot, and has already banned tens of thousands of accounts. The article Anthropic says it cut Claude reasoning",
+    "url": "https://the-decoder.com/anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to-99-in-fight-against-industrial-scale-distillation/",
+    "published_at": "2026-10-13T11:06:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic study warns that small AI models could soon replicate across everyday devices",
+    "summary": "Small AI models may be just months away from spreading on their own across poorly secured consumer devices like smart TVs and robot vacuums, according to a new Anthropic study. In tests, one model already completed the full infection chain. CEO Dario Amodei has warned that a swarm like this could ta",
+    "url": "https://the-decoder.com/anthropic-study-warns-that-small-ai-models-could-soon-replicate-across-everyday-devices/",
+    "published_at": "2026-10-13T10:33:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's new frontier model Muse Wonder Full breaks into the AI top tier",
+    "summary": "Meta's new Muse Wonder models rank in the top three on six out of ten benchmarks, with the biggest gains in agentic tasks. But the cost per task has nearly tripled. The article Meta's new frontier model Muse Wonder Full breaks into the AI top tier appeared first on The Decoder .",
+    "url": "https://the-decoder.com/metas-new-frontier-model-muse-wonder-full-breaks-into-the-ai-top-tier/",
+    "published_at": "2026-10-12T18:48:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Sakana AI's self-improving model gets better at solving and judging, but can't catch its own blind spots",
+    "summary": "Sakana AI's MASS method lets one language model improve itself by solving tasks, judging results, and refining workflows, reaching a win rate of nearly 70 percent against the base model after two rounds. But when the model misses the same errors across all three roles, it can mistake them for progre",
+    "url": "https://the-decoder.com/sakana-ais-self-improving-model-gets-better-at-solving-and-judging-but-cant-catch-its-own-blind-spots/",
+    "published_at": "2026-10-12T17:58:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Clearing chat history helps AI agents find better solutions",
+    "summary": "Microsoft researchers found that autonomous AI agents get trapped in what they call \"idea basins\" because of their growing chat context, local solution regions they can't escape. Their \"Fork-and-Flush\" method clears the chat history but keeps the workspace, achieving up to 66 percent better results ",
+    "url": "https://the-decoder.com/clearing-chat-history-helps-ai-agents-find-better-solutions/",
+    "published_at": "2026-10-12T16:10:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Prosper AI Report Finds $108 Billion Annual Revenue Opportunity for U.S. Specialty Practices",
+    "summary": "Rising costs and reimbursement pressure put a squeeze on specialty practices. New research quantifies four specific ways leaders can implement AI to grow revenue by as much as $125,000 per physician annually: converting missed calls into appointments, bringing patients back for follow-up...",
+    "url": "https://www.prnewswire.com/news-releases/prosper-ai-report-finds-108-billion-annual-revenue-opportunity-for-us-specialty-practices-302906365.html",
+    "published_at": "2026-10-13T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CompTIA DataSys+ V2 equips database professionals for cloud, data integration and AI-era operations",
+    "summary": "Updated certification reflects the evolution of database administration DOWNERS GROVE, Ill., Oct. 13, 2026 /PRNewswire/ -- CompTIA, the leading global provider of vendor-neutral information technology (IT) training and certifications, today launched CompTIA DataSys+ V2, an updated...",
+    "url": "https://www.prnewswire.com/news-releases/comptia-datasys-v2-equips-database-professionals-for-cloud-data-integration-and-ai-era-operations-302906389.html",
+    "published_at": "2026-10-13T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Stout Acquires Flightline to Advance Its AI Strategy",
+    "summary": "Acquisition builds on more than 12+ months of co-development and brings agentic AI technology and expertise into Stout CHICAGO, Oct. 13, 2026 /PRNewswire/ -- Stout announced the acquisition of Flightline, an agentic AI company that collaborated with Stout for more than 12+ months to...",
+    "url": "https://www.prnewswire.com/news-releases/stout-acquires-flightline-to-advance-its-ai-strategy-302906165.html",
+    "published_at": "2026-10-13T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "symplr's Compass Survey Finds Nearly Half of Healthcare Operations Remain Manual",
+    "summary": "Healthcare professionals and leaders report spending 86 minutes a day on administrative tasks they believe AI could reduce HOUSTON, Oct. 13, 2026 /PRNewswire/ -- Most hospital and health system operations remain manual, according to the fifth annual Compass Survey from symplr, a leading...",
+    "url": "https://www.prnewswire.com/news-releases/symplrs-compass-survey-finds-nearly-half-of-healthcare-operations-remain-manual-302906194.html",
+    "published_at": "2026-10-13T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "'Everything else will go where it is easier to build': Experts warn UK data centre market is lagging behind Europe — even as demand continues to soar",
+    "summary": "While other European markets are set to see signifiant growth, the UK's data center market could hit several roadblocks.",
+    "url": "https://www.techradar.com/pro/everything-else-will-go-where-it-is-easier-to-build-experts-warn-uk-data-centre-market-is-lagging-behind-europe-even-as-demand-continues-to-soar",
+    "published_at": "2026-10-13T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
+    "summary": "A user opens a browser tab, pastes data into a chat assistant, and nothing is installed. A developer adds a coding assistant as an editor extension, and… Read more → The post Product Walkthrough: Bitdefender AI Visibility and Control appeared first on IT Security News.",
+    "url": "https://www.itsecuritynews.info/product-walkthrough-bitdefender-ai-visibility-and-control/",
+    "published_at": "2026-10-13T12:04:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OPPO Partners with Manus to Bring Agentic AI Experiences to Smartphones",
+    "summary": "SHENZHEN, CHINA – Media OutReach Newswire – 13 October 2026 – Global smart device brand OPPO today announced a collaboration with Manus, a leading AI agent platform, to bring next-generation agentic AI experiences to smartphones. By integrating Manus’ agentic capabilities to OPPO AI Mind Pilot, the ",
+    "url": "https://newspatrolling.com/oppo-partners-with-manus-to-bring-agentic-ai-experiences-to-smartphones/",
+    "published_at": "2026-10-13T12:04:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OPPO Unveils ColorOS 17 Globally: Silky Smooth. Flow with AI",
+    "summary": "SHENZHEN, CHINA – Media OutReach Newswire – 13 October 2026 – OPPO today unveiled ColorOS 17, the latest generation of its mobile operating system, delivering a new level of smoothness alongside more intelligent, system-level AI capabilities. Debuting on the upcoming Find X10 Series and rolling out ",
+    "url": "https://newspatrolling.com/oppo-unveils-coloros-17-globally-silky-smooth-flow-with-ai/",
+    "published_at": "2026-10-13T12:04:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Source Unites Web Intelligence Leaders to Build the Foundation for AI",
+    "summary": "Vilnius, Oct. 13, 2026 (GLOBE NEWSWIRE) -- Source launches today as a new group of leading web intelligence companies that enables enterprises, startups, AI labs, governments and nonprofits access public web data, build new products and make better decisions. The…",
+    "url": "https://www.eagletribune.com/region/source-unites-web-intelligence-leaders-to-build-the-foundation-for-ai/article_d192ad26-7b1e-5d79-bb42-06f294c535f0.html",
+    "published_at": "2026-10-13T12:04:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Mitel Bets on Humans with Debut of Mitel WX: A Critical Communications Solution Designed for the Entire Workforce",
+    "summary": "Mitel WX is a core communications app that brings together voice, messaging, meetings, CX, and vertical specialized tools into a single framework built on a modern, AI-enhanced architecture Mitel WX puts humans at the center of business communication, leveraging AI to better equip them Customizable ",
+    "url": "https://salestechstar.com/sales-engagement/mitel-bets-on-humans-with-debut-of-mitel-wx-a-critical-communications-solution-designed-for-the-entire-workforce/",
+    "published_at": "2026-10-13T12:04:01+00:00",
+    "source": "newsdata"
+  }
+]
