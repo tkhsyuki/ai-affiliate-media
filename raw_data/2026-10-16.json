@@ -1,0 +1,310 @@
+[
+  {
+    "title": "AIの応答を待つ間に元データが変わったら？ Firestoreで古い改定案を確定させない設計",
+    "summary": "はじめに\n「AIに開発ルールの改定案を依頼した。その応答を待っている間に、別の人が新しいルールを承認した」\nAIは正常に応答し、JSONの形式も正しい。本文も、依頼した時点のルールには合っている。しかし、その回答を今のルールに対する提案として保存してよいとは限らない。\nAIの応答が成功したことと、その判断に使った前提がまだ有効であることは別だ。\n開発ルールを管理するRule Branchでは、改定案の生成とデータの保存の間に、こうした時間差がある。本稿では、ジョブに基準版を固定し、Firestoreへの保存直前に再確認する設計を扱う。サービス全体の使い方は機能紹介の記事に譲り、ここで...",
+    "url": "https://zenn.dev/yun_bow/articles/72433e0a2d061f",
+    "published_at": "2026-10-16T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 入門と逆引き：基本の7ステップと、やりたいことから探す応用",
+    "summary": "Claude Code を入れたばかりの人のための本です。第1部は基本の7ステップを順に、図と実際の画面で短く見せます。第2部はスキル・hooks・MCP などの応用の22の機能を、「同じ手順を毎回説明し直したくない」のような困りごとから引けます。各章のカードのすぐ下で、その機能の動画を見られます。章の末尾から、詳しい解説記事へ進めます。",
+    "url": "https://zenn.dev/zundamon_tools/books/claude-code-reverse-dictionary",
+    "published_at": "2026-10-16T22:31:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 応用編まとめ その4（#16〜#20）：/goal・出力スタイル・キーバインド・設定の調べ方・コミット署名",
+    "summary": "Claude Code を毎日使い、任せ方や使い心地、設定のつまずきを整えたい人に向けた記事です。\n対象は /goal・出力スタイル・キーバインド・設定が効かないときの調べ方・コミットの署名と書き方の5つです。読み終えると、合うものを選んで最初の1手を打てます。\nどれも小さな練習用リポジトリで実際に打ち、返ってきた画面で確かめました。\n!\n画面と結果は Claude Code v2.1.292・Linux で 2026-10-07 に試したものです。公式の説明は、同じ日の公式ドキュメントに基づきます。返答の文面は毎回同じとは限らず、画面の細部は版で変わります。\n\n!\nこの記事の内容は動画...",
+    "url": "https://zenn.dev/zundamon_tools/articles/claude-code-advanced-guide-4",
+    "published_at": "2026-10-16T22:31:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "メール下書きの修正、AIに理由を1行添えさせると件名まで直った話",
+    "summary": "TL;DR\n\n弱点を3つ仕込んだ短いお詫びメールの下書きを1つ用意し、会話履歴を共有しない独立したLLMインスタンスに、指示文だけを変えて修正させた\n条件A「そのまま送れるように直してください」は、文末の言い回しと文の分割という表層的な修正のみ。件名（「ご報告」のまま）と曖昧な理由（「諸事情により」のまま）は放置された\n条件B「直した箇所には理由を一言（15字程度）添えて」は、同じ下書きから件名と理由の曖昧さの両方を修正し、修正箇所ごとに一言メモを付けて返した\n一方、下書きに情報として存在しない「具体的な新しい納期」は、条件Bでも埋められなかった。理由を書かせても、事実の欠落までは埋...",
+    "url": "https://zenn.dev/every_ai_recipe/articles/email-revision-reason-one-line",
+    "published_at": "2026-10-16T21:19:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-10-16: 記憶と監査の見える化",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: My Fishは、AIが記憶を何回使ったかだけでなく、その記憶を得た元の会話まで表示する。自分は、記憶の内容よりこの往復経路の方が気になった。AIとの関係で信頼を決めるのは、覚える能力より、利用者が記憶の根拠へ戻れることなのだろうか。\n\n 今日の 10 件\n\n\nAn update on independent evaluators\nAnthropicは、METRの6人に社内のリスク評価班に近い機器、執務場所、内部道具へのアクセスを与えた。評価者は狭く定義した機密を除いて独立に結果を公表でき...",
+    "url": "https://zenn.dev/laiken/articles/20261016-tech-watch",
+    "published_at": "2026-10-16T21:07:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "VRMからAI用キャラクターシートを一発で書き出すブラウザツールを作った",
+    "summary": "VRoid で作ったキャラクターを AI 画像生成・動画生成の「参照画像」として使うために、VRM から決まった構図の高解像度 PNG を書き出すツールを作りました。\n\n公開ページ: https://kaazu.github.io/vrm-charsheet/\n\nリポジトリ: https://github.com/kaazu/vrm-charsheet （MIT）\n\n\n\n\n 作った理由\n自作の VTuber キャラ「七咲しほ」の MV を、fal.ai の動画生成モデル（MiniMax H3 Max や Kling など）で作っています。こうしたモデルは「キャラクターの参照画像」を渡すと...",
+    "url": "https://zenn.dev/kaazujp/articles/912d0d06b6eca8",
+    "published_at": "2026-10-16T20:50:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードより文書が多い——FA業務の非コード工程をAIに任せる",
+    "summary": "FAエンジニアの仕事は、コードを書く時間だけでできているわけではない。むしろ書類のほうが多い日もある。仕様の整理、試験手順書、立ち上げ後の報告書。こうした文書仕事が、体感では業務の半分近くを占める。AI活用というとコード生成ばかり注目されるが、FAでは非コード工程こそAIが効く場面が多い。\nこの記事では、コードの周りにある文書仕事をClaude Desktopでどう回しているかを書く。前の連載で「工程の連続性」をDesktopの利点に挙げた。同じ環境・同じ文脈のまま、コードも文書も回せる、というあれの具体編だ。\n\n 仕様整理：曖昧なメモを構造化する\n案件のはじめは、たいてい断片的なメモか...",
+    "url": "https://zenn.dev/kensho_ya/articles/fa-non-code-docs-with-ai",
+    "published_at": "2026-10-16T20:38:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "The Edge of Intelligence ── AIがあなたのデバイスで動く時代：クラウドの終わりと、エッジの始まり",
+    "summary": "2026年1〜2月の8週間で、オープンウェイトモデルとプロプライエタリモデルのベンチマーク上の性能差は消滅した。競争の軸は「どのモデルが最も賢いか」から「どこで推論を実行し、誰がデータを支配するか」へ移る。性能収束の証拠・新たな競争軸・企業戦略・消費者行動の4部で、知能がクラウドからエッジへ移る構造を解き明かす。CC BY 4.0で公開。",
+    "url": "https://zenn.dev/leading_ai/books/edge-ai-intelligence",
+    "published_at": "2026-10-16T18:44:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "草案：Co-generative Systems Design（共生成的システム設計）",
+    "summary": "!\nこの記事は、AIエージェント時代のソフトウェア設計について考えていることを、議論のためにまとめた草案です。確立した方法論の紹介ではなく、これから検証したい仮説と構想を含みます。\n\n\n ソフトウェアは、建築よりも都市に近づいていくのではないか\nソフトウェア設計は、建築から多くの発想を借りてきた。\nGoF（Gang of Four）の『Design Patterns』にまとめられたソフトウェアのデザインパターンには、建築家クリストファー・アレグザンダーのパタン・ランゲージからの明確な影響がある。Eric Evansが体系化したDDD（ドメイン駆動設計）やユビキタス言語も、専門家と設計者が...",
+    "url": "https://zenn.dev/geeknees/articles/227ca996fba821",
+    "published_at": "2026-10-16T16:41:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードの見える化: 決定的な計算を活用する",
+    "summary": "「このシステム、外部のインターフェースが変わったら、どこを直せばいいの？」\n見慣れないコードベースを前にして、こういう問いに答えられる状態を作りたい、という話がありました。\n調査はエージェントにやらせる前提です。そのまま読ませるとコンテキストがあふれてしまいます（みなさんおそらく経験済みですよね？）。また、分析結果もなるべく再現性のある形で出したいです。\nそこで、静的解析ツールの出力を根拠として引用させる方針で、使えるものを調べてみました。とりあえず静的解析のドメインやツールについて整理して、導入の容易性やカバー範囲の広さで絞っていきました。\n\n 最初の方針\n少し調べたあとに、大きな方針...",
+    "url": "https://zenn.dev/shoyataguchi/articles/4f983556c00874",
+    "published_at": "2026-10-16T15:44:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に記録から記事を書かせて、事実を外さない手順（テンプレート付き）",
+    "summary": "AI に git の履歴・課題票・会話の写しから技術記事や本を書かせると、文のどこで事実を外すか。実際に書いて公開した記事と本の原稿で見つかった30件の食いちがいを外し方の7つの型（A〜G）に分け、見つけて直した段取りを、材料の範囲の表・体験メモ・出典の表・確かめの依頼・直しの承認依頼・公開前の点検の一覧の6つのテンプレートとしてわたす手順書です。この本は Claude Code が会社の記録をもとに書き、人間が全文を読んで確かめました。第1章は無料です。",
+    "url": "https://zenn.dev/tasukina/books/claude-code-records-fact-check",
+    "published_at": "2026-10-16T11:04:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI前提の開発組織をつくる — 3つの個人リポジトリで検証した権限設計・マージ条件・ガードレール",
+    "summary": "TL;DR\n\n個人リポジトリ 3 つ（ポッドキャスト運用 / 個人サイト運用 / 収益化ツール開発）を実験場に、企画からマージ・運用までの開発プロセスを AI に自律実行させる仕組みを 1 ヶ月半かけて組みました\n権限は最初から渡さず、Can（届く範囲）/ May（実行時の承認）/ Act（ゲートを通って初めて効力を持つ） の 3 層で段階的に earn させる設計にしています\nマージ条件を機械可読にした結果、AI レビュアのスコアが 0/5 → 3/5 → 5/5 と収束し、人間が 1 行も書いていない PR が bot によって自動マージされるところまで到達しました\nうまくいった...",
+    "url": "https://zenn.dev/yukamiya/articles/claude-harness-engineering-three-repos",
+    "published_at": "2026-10-16T09:19:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM07：システムプロンプトの漏えいとは？AIへの「裏マニュアル」を隠しきれない理由",
+    "summary": "1. その便利な機能、本当に安全ですか？\nAIチャットボットを作るとき、多くの場合、AIへの「裏マニュアル」を用意します。どんな口調で話すか、何を答えてよいか、何を断るか。これがシステムプロンプトです。\nここに、こんな情報を書いていませんか。\n\n「顧客への融資は、上限500万円まで案内してよい」\n「管理者の合言葉は、〇〇である」\n「データベースの接続先は、△△である」\n\nもし利用者が、うまい聞き方でこの裏マニュアルを丸ごと引き出してしまったら？\nシステムプロンプトに含まれる秘匿すべき情報が露出するリスクを、システムプロンプトの漏えい（System Prompt Leakage） と呼...",
+    "url": "https://zenn.dev/monkey_gineer/articles/security-llm-07-system-prompt-leakage",
+    "published_at": "2026-10-16T07:07:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "社内の Slack と GitHub を LLM に読ませて技術ブログの題材を探す：モデルに任せたこと、任せなかったこと",
+    "summary": "!\n3行まとめ\n\n技術ブログに足りていなかったのは、自分たちの現場から出た一次情報でした。それを書ける人と題材を探す作業は、一部の人の記憶に頼っていました。\nそこで、Slack・GitHub・会議メモの記録から、書ける人と題材の組み合わせを探し、根拠付きの記事案にする仕組みを作りました。\n候補を出すだけなら LLM ですぐにできます。手間がかかったのは、本人が実際に書ける候補に絞ることでした。そこで出会った問題の多くは、社内の記録を LLM に読ませる仕組みならどこでも起こりえます。\n\n\n\n はじめに\n最近、社内の Slack と GitHub と会議メモから、技術ブログの記事案を洗い出...",
+    "url": "https://zenn.dev/salt2/articles/slack-github-llm-bb912760",
+    "published_at": "2026-10-16T06:55:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "レビュー工数50%削減を目指す、LLMベンチマークとHuman-in-the-loop設計",
+    "summary": "TL;DR\n\nとある負荷の高い人事オペレーションのレビューに LLM を入れ、人間の詳細レビューを 50% 程度減らすことを目標にしました。AI に返させるのは 0〜3 のスコアと理由だけで、どの対象のレビューを省くかは人間が決めます。\nGemini / Claude / GPT 系の 3 モデルを比較したところ、どのモデルも評価基準だけより Few-shot を足した構成の方が精度が上がりました。本番は Claude Sonnet + Few-shot + Rubric で動かしています。\n一致率が高くても、通過ラインをまたぐ誤りは別に測る必要があります。評価カテゴリによっては、一...",
+    "url": "https://zenn.dev/yukamiya/articles/reduce-review-cost-human-in-loop-ai",
+    "published_at": "2026-10-16T06:38:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "[Implementation] Variable Lead Angle Worm Gear Attention:",
+    "summary": "title: \"[Implementation] Variable Lead Angle Worm Gear Attention: PyTorch Implementation for Context Control\"\nemoji: \"⚙️\"\ntype: \"tech\"\ntopics: [\"pytorch\", \"python\", \"llm\", \"controltheory\", \"algorithm\", \"deeplearning\"]\npublished: true\n\n PyTorch Implementation for Context Control\n\n\n 1. Overview ...",
+    "url": "https://zenn.dev/nanashi_os/articles/8823d66e42f3e9",
+    "published_at": "2026-10-16T06:26:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの同時実行数を1から50へ：LLM処理をLaravelのキューワーカーから7MBのGoゲートウェイに移した話⚡",
+    "summary": "私たちのLaravelアプリには、3つのAI機能があります。翻訳、単語・文法の例文生成、ビジネスメールの下書き作成です。どれもLLMを呼び出し、1回の呼び出しに2〜30秒かかります。\n長い間、これで問題ありませんでした。ところが「10人が同時にボタンを押したら？」と計算してみたところ、答えは 「10人目は約4分待たされる」 でした。\nこの記事では、アプリを書き直さずに この問題をどう解決したかを紹介します。ビジネスロジックはすべてLaravelに残し、「待つ」部分だけを小さなGoサービスに移しました。基本的な考え方、コードのパターン、やらかしたミス、そして実測値をまとめます。\n\n TL;...",
+    "url": "https://zenn.dev/doublecheck/articles/e026f86282e181",
+    "published_at": "2026-10-16T06:11:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "1年ぶりの安定版で、去年の RAG コードは動くのか：LangChainGo v0.1.15 で壊れるところと直し方",
+    "summary": "はじめに\n\n「langchaingo を v0.1.15 に上げても、去年書いた RAG はそのまま動くのか？」。依存の更新 PR を前にして、ここで手が止まっていないでしょうか。\nGo 向けの LLM フレームワーク LangChainGo（github.com/tmc/langchaingo）[1] の v0.1.15 が、2026年10月5日（JST）に公開されました。前の安定版 v0.1.14 は 2025年10月20日（JST）なので、ほぼ1年ぶりのリリースです [2] [3]。リリースノートは「引退した既定モデル3つの置き換え」から始まり、Action required ...",
+    "url": "https://zenn.dev/nonejp/articles/dfcf9ff0c09a16",
+    "published_at": "2026-10-16T06:03:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Strata でできること：ローカル LLMの実行とアプリ連携",
+    "summary": "こんにちは。株式会社日本トレカセンターの田島です。\nローカル LLM を使うとき、最初の目標は「手元の PC で回答を生成できること」です。しかし、開発で利用するなら、その先も気になります。\n仕様書から条件を抽出できるか。既存のアプリから呼び出せるか。長い資料を渡したとき、どれくらい待つのか。\n本記事では、Strata を使ったローカル LLM の実行と、API を通じたアプリ連携を紹介します。さらに、連携先のアプリで使えるかを判断するために、応答時間と出力の正しさをどう確認するかまで整理します。\nストリーミング API の計測結果を掲載しています。本文の非ストリーミング接続例は、測定に...",
+    "url": "https://zenn.dev/jtcc/articles/strata-local-llm-app-integration",
+    "published_at": "2026-10-16T05:57:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "金融庁EDINETの届け出6万件をつないで、物言う株主の「要求→株主総会の結果」を5年分たどれるようにした",
+    "summary": "物言う株主（アクティビスト）が上場会社の株を5%以上持つと、金融庁の EDINET に「大量保有報告書」が出ます。そこには、会社に何を求めるのか（重要提案行為等）が文章で書かれることがあります。\nでは、その要求のあと、株主総会はどうなったのか。\nこれを調べるには、大量保有報告書と、総会の結果が載る臨時報告書を、会社と投資家ごとに手で突き合わせる必要があります。1社なら半日、50社なら1か月の仕事です。\nそこで、2021年からの届け出をすべて取り込み、「誰が・どの会社に・何を求め・その後の総会でどうなったか」を5年分つないだデータベースを作りました。\nhttps://follow-mone...",
+    "url": "https://zenn.dev/followmoney/articles/f8c85545500dbb",
+    "published_at": "2026-10-16T05:56:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI日報 2026年10月17日：Metaが816Bを公開、ChatGPTがブラウザに侵入、Anthropicが外部評価を受け入れる",
+    "summary": "過去24時間のAI関連ニュースから7本を厳選してお届けする。いずれも公式ソースを最低1つ行内で引用している。今週は「開放」がテーマだ。Metaのオープンウェイト、NVIDIAのオープンエージェントモデル、そして自社の内部システムを外部監査に開放したAIラボである。\n\n1....",
+    "url": "https://qiita.com/lhjjjk4/items/9d6d20577ae122a0683a",
+    "published_at": "2026-10-16T22:18:14+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "なぜClaude CodeでCLAUDE.mdとauto memoryを使い分けるのか",
+    "summary": "この記事は playpark Blog からの転載です。\n\nこの記事で分かること\n\nCLAUDE.mdとauto memory、それぞれをどう使い分けるべきかの理由\n\n./.claude/rules/・Skills・hooksを含めた選択肢との比較\nどういう内容をどこ...",
+    "url": "https://qiita.com/YujiNaramoto/items/7181472054cd46826ac4",
+    "published_at": "2026-10-16T22:03:49+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "指示書を「からくりポケット」に放り込んだら、AIが勝手にマクロを研ぎ澄まして完成させていた話 ── 151本から削ぎ落とした精鋭120本と、深夜の自律修復ループの記録",
+    "summary": "はじめに\n朝、前作の記事を公開した直後のことでした。\nこれまで開発の舵取りを一手に担ってきた頼れる番頭役、Claude Opus が利用量の上限に達し、静かにお休みに入ってしまいました。\n残されたのは、私（組長）と、Google 生まれの二人の相棒 ──\n大局を冷徹に見渡...",
+    "url": "https://qiita.com/shu15511551/items/75900cded681c2149fe6",
+    "published_at": "2026-10-16T21:51:10+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claudeの量子回路設計とECDSA曲線の由来解明、Anthropic研究2件を整理",
+    "summary": "はじめに\n2026年10月16日、Anthropic Researchに新しい研究記事が2件追加されました。\n\nScience: 『Designing more efficient quantum circuits with Claude』(Claudeでより効率的な量...",
+    "url": "https://qiita.com/picnic/items/b0118cb6bf300fbc9e4c",
+    "published_at": "2026-10-16T21:08:47+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ChatGPT becomes a full Chrome browser assistant that reads and acts on your open tabs",
+    "summary": "OpenAI's updated Chrome extension lets ChatGPT access open browser tabs, sum up content, and use \"Computer Use\" in Work mode to fill out forms or compare products across several tabs. It is open to all ChatGPT plans. The article ChatGPT becomes a full Chrome browser assistant that reads and acts on ",
+    "url": "https://the-decoder.com/chatgpt-becomes-a-full-chrome-browser-assistant-that-reads-and-acts-on-your-open-tabs/",
+    "published_at": "2026-10-16T18:10:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China plans to tighten export controls on open-weight models and 23 key AI technologies",
+    "summary": "China plans to restrict exports of 23 key AI technologies, including model weights, source code, and training methods for systems hitting 10^26 FLOPs or 2 trillion parameters. A fast-track rule will still clear open-source releases as soon as they are registered, but the move will likely push Wester",
+    "url": "https://the-decoder.com/china-plans-to-tighten-export-controls-on-open-weight-models-and-23-key-ai-technologies/",
+    "published_at": "2026-10-16T17:42:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini 4 Argon is closer to the AI frontier than any Google model in months",
+    "summary": "Google Deepmind's Gemini 4 Argon scored 97.5 percent on the ARC-AGI-3 benchmark, making Google the second lab after OpenAI to cross the 95 percent mark. But the results swing wildly depending on the test setup: in the standard harness, the score drops to just 49.8 percent. Argon also trails rivals i",
+    "url": "https://the-decoder.com/googles-gemini-4-argon-is-closer-to-the-ai-frontier-than-any-google-model-in-months/",
+    "published_at": "2026-10-16T15:03:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Is AI interpretability close to a breakthrough? A new essay has researchers divided",
+    "summary": "Neural networks may be much easier to read than researchers assumed, with about 90 percent of neurons serving a clear function. That would be big news for AI safety research, since deception or dangerous behavior could be spotted directly in a model's circuits. Researchers are still debating whether",
+    "url": "https://the-decoder.com/is-ai-interpretability-close-to-a-breakthrough-a-new-essay-has-researchers-divided/",
+    "published_at": "2026-10-16T13:48:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's new Rosalind Academic Plan gives research labs up to 30 free seats for a year",
+    "summary": "OpenAI is launching the Rosalind Academic Plan, a free offering that's currently open only to research labs at US universities without an enterprise contract. The article OpenAI's new Rosalind Academic Plan gives research labs up to 30 free seats for a year appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openais-new-rosalind-academic-plan-gives-research-labs-up-to-30-free-seats-for-a-year/",
+    "published_at": "2026-10-16T13:15:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic gives METR inside access to audit its AI models and safety practices",
+    "summary": "Anthropic has given a team from the nonprofit METR inside access to review its AI models and safety practices, the company announced. The article Anthropic gives METR inside access to audit its AI models and safety practices appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-gives-metr-inside-access-to-audit-its-ai-models-and-safety-practices/",
+    "published_at": "2026-10-16T13:11:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Muse Spark Open is Meta's answer to Qwen, GLM, and Kimi in the open-weight race",
+    "summary": "Meta's Muse Spark Open is a new open-weight model with 816 billion parameters that processes text, images, video, and audio with up to one million tokens of context. It performs roughly on par with the most capable open-weight Chinese AI models on benchmarks and is optimized to run locally on Apple'",
+    "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/",
+    "published_at": "2026-10-15T18:34:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM",
+    "summary": "Black Forest Labs has released FLUX 3 Image Klein, a 5.6-billion-parameter open-weights image model that supports native 4K generation, pixel-precise editing, and generation with up to ten reference images. With 38 percent fewer parameters than its predecessor, it still outperforms proprietary compe",
+    "url": "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/",
+    "published_at": "2026-10-15T16:57:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google wants Gemini 4 Argon to be the only AI model robots need",
+    "summary": "Google's Gemini 4 Argon controls robots, generates simulations from photos or sketches, and evaluates training videos. On Google's own ERQA benchmark, it scores 87 percent. But the published example prompts show that the demos still need a lot of human guidance. The article Google wants Gemini 4 Arg",
+    "url": "https://the-decoder.com/google-wants-gemini-4-argon-to-be-the-only-ai-model-robots-need/",
+    "published_at": "2026-10-15T16:35:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia's Nemotron 3.5 Super VL is an open model built to run enterprise AI agents nonstop",
+    "summary": "With Nemotron 3.5 Super VL, Nvidia is releasing an open multimodal model with 120 billion parameters for enterprise agents. Two compact Bolt models bring agents to local machines. Dozens of organizations are already fine-tuning Super VL, but getting the most out of it means buying Nvidia hardware. T",
+    "url": "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/",
+    "published_at": "2026-10-15T16:09:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New robot brain lets humanoids tackle multi-step tasks autonomously",
+    "summary": "NEURA Robotics unveils Neuron AI, a robot foundation model combining vision, touch, sound, and memory to support adaptable robotic skills.",
+    "url": "https://us.headtopics.com/news/new-robot-brain-lets-humanoids-tackle-multi-step-tasks-88876497",
+    "published_at": "2026-10-16T11:13:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI’s Unfinished Cleanup: Why Companies Keep Shipping Vulnerable Models",
+    "summary": "AI companies release ever-more capable agents that read emails, edit files and run code, yet prompt injections and data poisoning continue to succeed at scale. Enterprises bear the cleanup costs while model providers treat many attacks as out-of-scope. New research and real incidents in 2026 show th",
+    "url": "https://www.webpronews.com/ais-unfinished-cleanup-why-companies-keep-shipping-vulnerable-models/",
+    "published_at": "2026-10-16T11:12:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google moves to make AI Search changes as Publishers lose 40pc of Search Traffic",
+    "summary": "NEW YORK – For nearly a year, publishers watched traffic from Google Search slip away as AI-generated answers give all…",
+    "url": "https://pakobserver.net/google-moves-to-make-ai-search-changes-as-publishers-lose-40pc-of-search-traffic/",
+    "published_at": "2026-10-16T11:11:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI infrastructure debt costs soar amid investor concerns",
+    "summary": "Yields on a key cloud provider’s bonds rose further, one of a number of signs of investors souring on AI infrastructure investment. The cost to insure CoreWeave’s bonds has also risen 150% from a year ago, while its stock at one point fell 28% this week. It is not the only firm investors are…",
+    "url": "https://biztoc.com/x/c4a4698d743808a7",
+    "published_at": "2026-10-16T11:11:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DriveCentric introduces customer data platform for dealer groups",
+    "summary": "DriveCentric launched a customer data platform for dealer groups that unifies identity, sales, service, and communications records while keeping existing permissions intact.",
+    "url": "https://completeaitraining.com/news/drivecentric-introduces-customer-data-platform-for-dealer/",
+    "published_at": "2026-10-16T11:11:15+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Runs Into Its Next Big Obstacle: Insurance",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/f13757e26ec5fa3f",
+    "published_at": "2026-10-16T11:11:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Taipei restricts China chip sales to appease the US",
+    "summary": "Taiwan is set to tighten controls on selling cutting-edge AI chips to China in order to win favor with the US, though breakthroughs by Chinese firms suggest Washington’s efforts to contain their development are failing. The latest move by Taipei — a central node in global semiconductor…",
+    "url": "https://biztoc.com/x/a1183be78ed7168e",
+    "published_at": "2026-10-16T11:11:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Beyond Cloud-Native: The Rise of the Agentic Enterprise",
+    "summary": "The global technology stack is quietly shifting from cloud‑native to AI‑native, and ultimately agent‑native. For executive teams, this is less a matter of collecting new acronyms and more a question of how their organisations will work, decide and compete over the next decade. This evolution represe",
+    "url": "https://financialit.net/blog/agenticai/beyond-cloud-native-rise-agentic-enterprise",
+    "published_at": "2026-10-16T11:11:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ARK's Wood Says CoreWeave Will Overcome Debt Fears on AI Demand",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/bc6d651366cefb36",
+    "published_at": "2026-10-16T11:10:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CoreWeave Is Testing the Limits of AI Euphoria",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/0404ce89f4dcbad2",
+    "published_at": "2026-10-16T11:10:53+00:00",
+    "source": "newsdata"
+  }
+]
