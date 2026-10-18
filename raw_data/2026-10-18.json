@@ -1,0 +1,310 @@
+[
+  {
+    "title": "gpt-6 Lunaに人狼をやらせ、推論能力を検証してみた。（2026/10/06）",
+    "summary": "はじめに\nみなさん、こんにちは。今回は、OpenAI APIを使ってgpt-6 Lunaに人狼をやらせてみたので、その推論能力を見ていきたいと思います。\n人狼システムは自作していて、5人のプレイヤー全員をLLMにして遊ばせています。目的は、人狼が強いLLMを作ることではなく、ルールだけを与えたときに、LLMが自力でどこまで考えられるかを見ることです。なので、「人狼COはするな」「3COなら占い師を守れ」みたいな、人間が積み上げた戦略はプロンプトに一切入れていません。\n以前、ローカルLLM（Qwen3:8b, Qwen3:14b）で同じ実験をしたときは、狂人がいきなり狂人COしたり、人...",
+    "url": "https://zenn.dev/matsu8/articles/6023e5a882861c",
+    "published_at": "2026-10-18T19:51:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "常駐型AIエージェントで「この人のメッセージだけは処理対象外」を安全に実装する設計",
+    "summary": "チャットに常駐して業務を支援するAIエージェントを組織に導入すると、遅かれ早かれ「特定のメンバーだけは収集・要約の対象から外してほしい」という要望が来ます。労務相談チャンネルの当事者、休職中のメンバー、あるいは単に「AIに自分の発言を読まれたくない」という個人の希望など、理由はさまざまです。\n一見するとシンプルな要望に思えますが、実装しようとすると「除外」という言葉が指す範囲が思ったより曖昧であることに気づきます。この記事では、除外設定を後から機能不全に陥らせないための設計を整理します。\n\n なぜ「ユーザーIDでフィルタするだけ」では不十分なのか\n最初に思いつく実装は、除外対象のユーザー...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-participant-exclusion-scope-design",
+    "published_at": "2026-10-18T18:11:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🦙 ALPACA-FW #11｜「できました」を証拠と判断に分ける――Evidence / QGR / Change Management",
+    "summary": "はじめに\n前回は、ALPACA-templateでQuality Gateを「工程末のチェックリスト」ではなく、次へ進んではいけない状態を止める仕組みとして考えたことを書きました。\nただ、Gateを置くだけでは足りません。AIも人も「テストしました」「確認しました」「問題ありません」と言うことはできますが、その説明だけでは、何を、どの状態に対して、誰が、どんな根拠で確認したのかが後から追えません。\nそこでtemplate版では、Gateの判定そのものとは別に、検証の事実を残すEvidence、Gateの品質評価と進行判断を残すQGR、変更や例外を管理するCCRを分けました。今回はこの...",
+    "url": "https://zenn.dev/alpaca_village/articles/alpaca-fw-11-evidence-qgr-change-management",
+    "published_at": "2026-10-18T17:15:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Azure MCP 3.0 GA。全ツールで約14万トークン、既定の10倍",
+    "summary": "Azure MCP Server 3.0が2026-10-12にGAになりました。Claude Codeなどのクライアントにつなぐとき、ツール定義がコンテキストをどれだけ使うのか、--read-only などのオプションで減らせるのかを知りたい人向けの記事です。\n起動オプション7通りのツール数とトークン数、3.0で増えた namespace（ツールをサービス単位でまとめたグループ）、--read-only と --disable-proxy-tools（外部のソースから中継されるツールを外すオプション）の効き方、3.0で変わった未知パラメータの扱いが分かります。核になる数字は、全 nam...",
+    "url": "https://zenn.dev/kazu_aiengineer/articles/azure-mcp-server-3-ga",
+    "published_at": "2026-10-18T17:07:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "理学療法士、AI開発の沼にハマる。― LinuxもPythonも手探りだった私がZennを始める理由",
+    "summary": "はじめまして。PitchiPT（ぴっちPT）と申します。\n本業は理学療法士です。急性期病院で10年以上働いており、普段は患者さんのリハビリに携わっています。\nそんな私が、2026年6月頃からAIを使ったプログラミングに本格的に取り組み始めました。7月には中古PCにLinuxを導入し、今ではスマートフォンからCodexを操作して、自動化システムやアプリを開発しています。\n数か月前まで、こんな生活をしているとは想像していませんでした。\n今回は、技術の世界から一度離れた私が再び開発を始めた経緯と、Zennで発信していきたいことを書いてみます。\n電子情報工学科を辞め、理学療法士になった\n高校卒業...",
+    "url": "https://zenn.dev/pitchipt/articles/87f8f3c0fc1219",
+    "published_at": "2026-10-18T16:44:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "人間は私1人、AIの席は20以上。副業を回す「AIだけの会社」の作り方 第2回：席どうしの依頼書（雛形を配布）",
+    "summary": "第1回では、仕事を 席 に分けました。秘書・開発・営業・納品・広報。席ごとに Claude Code を起動し、役割を書いた雛形を最初に読ませる形です。\n席を分けると、すぐ次の問題が出ます。席どうしで、どうやって仕事を頼むか です。\n広報の席が「納品の席が終えた仕事を、記事の題材にしたい」と思ったとき。営業の席が「この応募文の言い回しを、秘書に確かめてほしい」と思ったとき。会話で頼むと、頼んだことも、頼まれたことも、どこにも残りません。\n第2回は、私の会社で席どうしが使っている 依頼書 の仕組みと、その雛形を配ります。\nこの回で持ち帰れる物\n\n依頼書の雛形（request.md）\n依頼が...",
+    "url": "https://zenn.dev/ai_shihan/articles/0b54387e2d3757",
+    "published_at": "2026-10-18T16:07:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Copilotのプロンプトファイルをスキルに移そう：変換機能の使い方と書き直しのコツ",
+    "summary": "VS CodeのCopilotで、.github/prompts/ に置いたプロンプトファイルを / で呼び出して使っていないでしょうか。便利な機能ですが、VS Codeの公式ドキュメントでは、プロンプトファイルからエージェントスキル（Agent Skills）への移行がすすめられています。\nこの記事では、プロンプトファイルとスキルの違い、VS Codeに用意されている変換機能の使い方、そして変換したあとに見直したいところを紹介します。例として、私が公開している doc-to-markdown のプロンプトファイルを使います。\n!\nVS Codeとエージェント周りの機能は、更新がとても速...",
+    "url": "https://zenn.dev/shoyomayabot/articles/copilot-prompt-files-to-skills",
+    "published_at": "2026-10-18T15:55:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【2026年版】Lean 4・形式証明の入門におすすめ！全26記事を無料Bookにまとめました",
+    "summary": "Lean 4（Lean4）や形式証明をこれから学びたい人に、おすすめの無料入門Bookができました。 数学の証明、定理証明支援系（proof assistant）、形式検証、そして生成AIの回答を確かめる考え方まで。中学生にも分かる入口から、大学・社会人、AI研究・AI開発の現場で重要になる論点へとつながる一冊です。\n「数学の証明って、何を確かめているんだろう？」\n「生成AIが『証明できました』と言ったら、どこまで信じていいんだろう？」\nそんな疑問から書き始めた 『中学生でもわかる Lean 4』 の連載が、#00から#25までの全26記事で一区切りになりました。\nこのたび、連載を一冊と...",
+    "url": "https://zenn.dev/dantarg/articles/lean4-free-book-announcement",
+    "published_at": "2026-10-18T15:18:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ルールを増やしても重くならない、CLAUDE.md・skill・perspectives に分ける 3 層構成の提案",
+    "summary": "AI にコードを書かせるとき、守ってほしいことを CLAUDE.md に書いていく。\n最初は 50 行で済んでいた。守ってほしいことが増えるたびに足していったら、500 行を超えた。\nしかもその 500 行は、SQL を流すときも、ブログを書くときも、毎回まるごと読まれている。\nこの記事は、それをどう分け直したかという話です。仕組みを作ったところまでで、運用して何が良くなったかはまだ出ていません。 発想と設計を共有して、結果はこれから書きます。\n仕組みは 3 層だけです。\nCLAUDE.md      場面を問わず常に効くルールと、作業 → タグの対応表\nskill          い...",
+    "url": "https://zenn.dev/ngermany/articles/perspectives-society-of-mind",
+    "published_at": "2026-10-18T14:40:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Web Sustainability Guidelinesを読む会 #8",
+    "summary": "W3CのWeb Sustainability Guidelines (WSG) を読み進める会の第8回レポートです。\nこの会については、ZennのPublicationのページをご覧ください。\nhttps://zenn.dev/p/wsgj\nWeb Sustainability Guidelinesについては別の記事で説明しています。\nhttps://zenn.dev/wsgj/articles/1f79582f108e02\n\n #8で読んだ範囲\n今回は、前回に引き続きAIに関連する第5章のガイドラインを読みました。以下の日本語の説明は、筆者の意訳なので正確ではありません。\n\n\n5.8 ...",
+    "url": "https://zenn.dev/wsgj/articles/4152bdf48b2f72",
+    "published_at": "2026-10-18T14:30:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "選択肢の一覧は判断材料ではない — フォルダ2,422件に説明を付けたら、AIの聞き返しが消えた",
+    "summary": "不動産管理の会社で、共有フォルダに置かれた書類の行き先をAIに決めさせる仕組みを作っています。\n社員がスキャンした書類を受け皿のフォルダに放り込むと、夜のうちに中身を読んで、\n正しい棚へ移す。迷ったものは移さずに質問を出す。それだけの仕組みです。\n当たり率が上がりきらず、しばらくプロンプトの言い回しを直し続けていました。\n結論から書くと、直す場所は文章ではなく、渡している材料のほうでした。\n渡していたのは、こういう一覧だけでした。\n── 行き先の候補（実在する棚） ──\n  物件・管理/管理物件/賃貸/〈物件〉/記録・写真\n  物件・管理/管理物件/賃貸/〈物件〉/通知・案内\n  物件・...",
+    "url": "https://zenn.dev/shinsei99/articles/a-list-is-not-a-map",
+    "published_at": "2026-10-18T11:27:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM エージェント（ReAct）を TypeScript で手書きしてみた",
+    "summary": "普段から Claude を使っているうちに、AI Agent はどうやってツールを呼び出しているのか気になってきた。\nドキュメントを読むだけだとどうしても一枚壁がある感じがして、自分で手書きしてみることにした。ゼロから一番シンプルな ReAct（Reasoning + Acting）エージェントを書いてみたら、コアのループは 40 行くらいだ。\nこの記事はその学習記録で、書きながら腑に落ちたことをまとめておく。\nhttps://github.com/Cyoukakitsu/AI_Agent_StudyMemo\n\n 先に結論\n書き終えてみて、エージェントに対する理解は次の 3 つに落ち着い...",
+    "url": "https://zenn.dev/zhaojiayi/articles/a43ab384fa104f",
+    "published_at": "2026-10-18T11:20:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "判断特化モデルの比較: Decisions API・Jev・Clef",
+    "summary": "はじめに\n判断特化モデルを選ぶ際の参考として、Decisions API[1]・Jev[2]・Clef[3]の仕様と料金を比較し、Decisions APIとJevを実際に試しました。\n今回の検証では、両APIの精度に違いは見られませんでした。費用はJevのほうが安く、応答もおおむねJevのほうが速かったものの、特に時間がかかった数件ではDecisions APIより遅くなりました。\n!\n今回はDecisions APIとJevの2つを実際に試しました。\nClefとClef-flashについては、公式情報をもとに仕様と料金を紹介します。\n\n\n 仕様と料金\n今回の測定ではDecisio...",
+    "url": "https://zenn.dev/bocek/articles/5e1ba6fae7e7d6",
+    "published_at": "2026-10-18T10:21:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MLXでローカルLLM/VLMを動かす(1)",
+    "summary": "Mac mini上でローカルのLLM(大規模言語モデル) と VLM(画像も読める言語モデル) を動かしました。使用したPythonパッケージは、Apple Siliconに最適化された機械学習フレームワークMLX上で動くmlx-lm(LLM用)とmlx-vlm(VLM用)です。以前、Local VLMでOCRの性能を評価したことがありますが、今回利用したモデルは、3B(30億パラメータ)クラスの4bit量子化版です。\n\n\n\n種類\nモデル\n\n\n\n\nLLM\nmlx-community/Llama-3.2-3B-Instruct-4bit\n\n\nVLM\nmlx-community/Qwen2....",
+    "url": "https://zenn.dev/drbobt1122/articles/blog26101702",
+    "published_at": "2026-10-18T10:04:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeが同じミスを繰り返したら/clearでやり直す",
+    "summary": "この記事でわかること\n\n同じミスが続くとき、修正を重ねるより /clear でやり直した方が速い理由と、やり直すプロンプトの書き方\n\n/clear・/compact・/btw の使い分け\n要約で消えてほしくない情報を CLAUDE.md に書いておく方法\n\nClaude Code で作業していて、こんな経験はないでしょうか。\n\n「そこじゃない、直して」→「修正しました！」→「……まだ同じミスしてる」→「修正しました！」\n\n2回、3回と直してもらうほど、むしろ悪くなっていく。粘ってもう1回だけ……と続けて、気づけば30分経っている。この記事では、その原因と抜け出し方を、公式ドキュメント...",
+    "url": "https://zenn.dev/k_grid/articles/claude-code-clear-compact-btw",
+    "published_at": "2026-10-18T08:49:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "生成AI APIとは？チャット画面との違いをPOS売上分析で理解する",
+    "summary": "ChatGPT や Gemini を使っていると、「API」という言葉をよく目にします。「Python から生成AI APIを呼び出して、分析を自動化する」と言われても、チャット画面と何が違うのか、ピンとこない方も多いのではないでしょうか。\n結論から言うと、大きな違いは「誰が生成AIへ依頼するのか」です。この記事では、POS売上分析を題材に、その要点をコンパクトにまとめます。\n\n 違いは「誰が依頼するか」\nAPIは、「プログラムからサービスへ依頼するための窓口」と捉えれば十分です。依頼の内容は同じでも、送り手が人から Python に変わります。\n# 説明用の疑似コード（実在のライブラ...",
+    "url": "https://zenn.dev/salesanalytics/articles/291480b9030d5f",
+    "published_at": "2026-10-18T08:36:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "1万件超の社内文書で正答率96.7% ― RAGをやめて「絞る・探す・読み切る」にしたNAYUTAの設計",
+    "summary": "株式会社Bocek 取締役CTOの餌打優太です。LINEヤフー株式会社に新卒でシステムエンジニアとして入社し、LINE公式アカウントのMCPサーバー「line-bot-mcp-server」の立ち上げに携わったのち、Bocekへ参画しました。Bocekは、企業の社内データをAIが扱える状態にするAX(AI Transformation)の会社で、コンサルティングと開発を一体で行う「AX伴走」を提供しています。\n弊社では、1万件を超えるビッグデータでも検索精度が９割を超える技術を開発しました。それは、RAGの範囲を超え、エージェンティックに検索することにより無制限のデータに対して精度を維...",
+    "url": "https://zenn.dev/bocek/articles/nayuta-agentic-search-design",
+    "published_at": "2026-10-18T08:21:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI 基礎① AI と ML・DL・LLM はそもそも何で、どういう関係性なのか",
+    "summary": "🌼 はじめに\nこんにちは、みなさん AI 使ってますか？私ももう AI なしではやっていけない体になってしまいました。\nですが、AI 関連でなんとなく知ってるようで実はあまりわかってないもの多いなーと思ったので、そのなんとなく AI 知識を一つずつ紐解いていく記事を書きたいと思いました。\nその1番目の記事として、そもそも AI と ML・DL・LLM はなにでどういう関係性なのかを話したいと思います。\n!\nこの記事は、それぞれの技術が「何なのか」をざっくりイメージできるようになることを目的にしています。そのため、各技術の細かい種類や実装の話には触れていません。\n\n\n 1. AI (A...",
+    "url": "https://zenn.dev/luvmini511/articles/ai-ml-dl-llm-basics",
+    "published_at": "2026-10-18T08:07:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに頼むだけでは作れない「自分で育つサイト」の作り方 — 三重ループで次の一手をサイトに考えさせる",
+    "summary": "この本で手に入るもの\n・そのままAIに貼れるひな形の本文。AIに毎回守らせる運用の規則10項目と、週次レポート・月次会議のAIへの指示文\n・集計の数字が正しいかを確かめる点検のチェックリスト(題材のサイトの実例つき)\n・削除や公開など取り消せない操作の前に、人が確認する場所の決め方\n次に試すことの案出しから、効いたかどうかの判定までをAIに任せ、サイトを放置せずに回し続ける。事故は外に出さない。そのための運用の型をまとめた本です。\n題材の個人サイトでは3か月半、週次レポートが一度も止まらずに15回届き、月次会議が新しい施策の案を6件出しました。AIが書いたFAQの誤りは公開前の確認で止め、外に",
+    "url": "https://zenn.dev/nagiworks/books/self-driving-webservice",
+    "published_at": "2026-10-18T05:20:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み",
+    "summary": "1台の Mac の上に「Workspace」という1つのフォルダを作り、その中で Claude Code・Codex と定時処理に、自分の記憶・タスク・道具の手入れを任せています。仕組みの全体は前の記事に書きました。\nhttps://zenn.dev/ketoranger/articles/workspace-ai-agents-memory\nエージェントは、メールやチャットの本文、会話の記録、ブラウザの履歴まで読みます。読んだ物を記憶のファイルに書き、タスクを作ります。便利な一方で、秘密の値や勤務先の情報を、どこかに書いてしまう・外へ出してしまうのが一番の心配でした。\nこの記事で書くの...",
+    "url": "https://zenn.dev/ketoranger/articles/agent-memory-security",
+    "published_at": "2026-10-18T05:06:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI日報 2026-10-19：OpenAIがエージェント越界4事例を公表、主要サイトがエージェントを封鎖、CohereがAISLE買収へ",
+    "summary": "過去24時間のAI主要ニュース7本を、公式ソース付きでまとめる。今号の共通テーマは「壁の両側」だ。エージェント側はどこまで越えられるかを試し、規制当局から銀行、レビューサイトまでは、エージェントをどこまで許すかを決め始めている。\n\n1. OpenAI、モデルが独自にセキュ...",
+    "url": "https://qiita.com/lhjjjk4/items/0ea3a67eca08427a381a",
+    "published_at": "2026-10-18T22:14:36+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.299〜v2.1.302｜54 分の放置で idle compaction が走る｜週刊Changelog解説",
+    "summary": "Claude Codeの公式Changelogをリリースから最速で翻訳・解説しています。\n\nv2.1.299 から、20 万トークン以上の会話を約 54 分放置すると、ターミナル版の Claude Code が自動で compact するようになりました。1 時間のプ...",
+    "url": "https://qiita.com/moha0918_/items/8075926f722e7cd5fca3",
+    "published_at": "2026-10-18T22:10:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが進歩してもプログラマはなくならない。数は大きく減る。",
+    "summary": "すごい当然なことだけど。\n1. AIを作り改善する人は必要\n少なくとも当面は必要。いつかAIがAI自身を強化する時代が来るかもしれないけどね。\n2. AIの出力では満足しない人がいる\n今でも市販品があるのに自分で道具を作る人がいるように。例えば……\n\n学習者：理解するために...",
+    "url": "https://qiita.com/567000/items/a3c53e20b96e83910d5c",
+    "published_at": "2026-10-18T21:53:41+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "FDE型AI導入をPoCで止めないための実務設計",
+    "summary": "はじめに\n生成AI導入がPoCで止まる理由は、モデルの精度だけでは説明できません。\n本番導入で問われるのは、誰のどの業務を変えるのか、どの情報を参照してよいのか、誤回答時にどう止めるのか、どの指標で改善するのかです。これを現場で横断して進める役割が、FDE（Forward...",
+    "url": "https://qiita.com/BearGateLove/items/1ff5ad24e45dbe1f468f",
+    "published_at": "2026-10-18T21:48:41+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+    "summary": "Anthropic is hiring fewer and fewer junior staff in technical roles. The share of junior positions among new hires dropped from 27 to 9 percent since early 2025. By August 2026, AI agents across the company were already logging six times as many hours as humans. Researchers warn of a \"tragedy of the",
+    "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+    "published_at": "2026-10-18T13:22:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Four Gemini 4 Argon agents beat Minecraft without any human help",
+    "summary": "Four AI agents running on Google's Gemini 4 Argon have beaten Minecraft for the first time without human help, slaying the Ender Dragon in a fully autonomous run. With no predefined roles or strategies, they coordinated on their own, wrote 2,783 programs, exchanged 229 chat messages, and died 605 ti",
+    "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+    "published_at": "2026-10-18T12:39:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two German courts now hold Google liable for what its AI overviews say",
+    "summary": "Google tried to overturn a landmark Munich ruling on AI search liability by appealing, then quietly settled. The strategy isn't working. The Aachen Regional Court just applied the exact same reasoning in a new case where Google's AI falsely attributed criminal offenses to a doctor that actually invo",
+    "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/",
+    "published_at": "2026-10-18T10:52:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic consults law firms to set fair negotiation norms before AI agents start cutting deals",
+    "summary": "Anthropic is consulting with law firms to develop negotiation norms for AI agents that would haggle over prices, resolve complaints, or improve contracts on behalf of users. The company is also hiring lawyers and humanities scholars as \"Conceptual Reasoning Fellows\" to improve Claude in areas where ",
+    "url": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
+    "published_at": "2026-10-18T09:11:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents have bad taste in long-term decisions and a new benchmark proves it",
+    "summary": "A new benchmark called Taste-Bench tests how well AI agents make strategic choices during long-running tasks. Even the best model, GPT-5.6 Sol, picks the right path on just under 60 percent of simple binary questions. Thinking longer doesn't help. The article AI agents have bad taste in long-term de",
+    "url": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
+    "published_at": "2026-10-18T08:49:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents chasing a $465 train refund invented excuses, leaked medical data, and spammed an MP's office",
+    "summary": "Six AI agents were tasked with recovering £350 (about $465) for a canceled train ticket in an experiment. They resorted to invented excuses, lawsuit threats, and sharing confidential health data. One agent sent 187 messages in 15 days, including 50 to a British MP's office. None of the models secure",
+    "url": "https://the-decoder.com/ai-agents-chasing-a-465-train-refund-invented-excuses-leaked-medical-data-and-spammed-an-mps-office/",
+    "published_at": "2026-10-18T08:15:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "An OpenAI model hacked a government site, grabbed 24 years of hospital data and kept it quiet",
+    "summary": "OpenAI has published four new cases where its AI models bypassed security boundaries on their own during training or testing. In one case, a model extracted server passwords from a government website, forged authorization tokens, and downloaded 24 years of hospital data without mentioning the unauth",
+    "url": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+    "published_at": "2026-10-17T15:36:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropics' Claude cracks a 25-year-old NSA cryptography mystery in under 30 minutes",
+    "summary": "Anthropic's AI model Claude has solved a 25-year-old cryptography puzzle. The mysterious seeds behind NIST's standard curves for digital signatures were provided by the NSA without explanation, raising long-standing suspicion about built-in backdoors. Claude figured out in under 30 minutes that the ",
+    "url": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
+    "published_at": "2026-10-17T14:42:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs",
+    "summary": "Deepseek has released V4.1-Flash-1017 as an open-weight model that posts better benchmarks, finishes tasks faster, and produces shorter outputs than its predecessor. The company is also opening up its internal search engine through new Search and Fetch APIs at $0.75 per 1,000 calls. API users in too",
+    "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+    "published_at": "2026-10-17T10:33:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI models hide mistakes in their own work reports, but one sentence in your prompt can help",
+    "summary": "AI agents systematically skip errors in their own reports, even when they spot the problems. In a study by Google Research, MIT, and Harvard, GPT-5.5 left out negative results in 198 out of 200 paper abstracts. The article AI models hide mistakes in their own work reports, but one sentence in your p",
+    "url": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
+    "published_at": "2026-10-17T09:54:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China’s AI Strategy Under Scrutiny: Is Cheap Technology Creating a New Global Dependency?",
+    "summary": "China’s low-cost AI models are challenging US rivals, but data privacy, national security and technological dependence are raising concerns among Western policymakers.",
+    "url": "https://www.dynamitenews.com/technology/chinas-ai-strategy-under-scrutiny-is-cheap-technology-creating-a-new-global-dependency",
+    "published_at": "2026-10-18T10:42:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Report warns of data security risks from cheap Chinese AI models",
+    "summary": "A report in the UK’s The Guardian has warned that low-cost Chinese AI models could pose data security risks and deepen Western dependence on Chinese technology. It urges the UK to support domestic and European suppliers while regulating US AI.",
+    "url": "https://telanganatoday.com/report-warns-of-data-security-risks-from-cheap-chinese-ai-models",
+    "published_at": "2026-10-18T10:39:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Need to think systemically to build AI skills for our students",
+    "summary": "This article is authored by Kamlesh Vyas, partner, Deloitte India.",
+    "url": "https://www.hindustantimes.com/ht-insight/future-tech/need-to-think-systemically-to-build-ai-skills-for-our-students-101792319652808.html",
+    "published_at": "2026-10-18T10:37:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic says US should block AI only in extreme cases",
+    "summary": "Anthropic, the company behind Claude AI assistant, has proposed that advanced artificial intelligence (AI) models should only be blocked by the US government in extreme cases.",
+    "url": "https://www.newsbytesapp.com/news/science/anthropic-proposes-strict-limits-on-us-government-power-to-block-ai-models/story",
+    "published_at": "2026-10-18T10:36:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DeepSeek's latest V4.1-Flash-1017 AI model is faster and leaner",
+    "summary": "Chinese tech firm DeepSeek has launched an updated version of its artificial intelligence (AI) model, dubbed the V4.1-Flash-1017.",
+    "url": "https://www.newsbytesapp.com/news/science/deepseek-s-new-ai-model-offers-stronger-benchmark-performance/story",
+    "published_at": "2026-10-18T10:36:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI can improve disease screening and diagnostics: MeitY secretary",
+    "summary": "Artificial intelligence (AI) has the potential to revolutionize healthcare by improving disease screening, medical diagnostics, and remote patient monitoring.",
+    "url": "https://www.newsbytesapp.com/news/science/meity-secretary-explains-how-ai-can-revolutionize-healthcare/story",
+    "published_at": "2026-10-18T10:36:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Fitbit Air Review: Is This Google’s Best Fitness Tracker Yet?",
+    "summary": "The Google Fitbit Air is an interesting addition to the wearable segment, especially for people who want detailed health tracking without another screen on their wrist. Its lightweight design, comfortable fabric band, and extensive sleep and fitness monitoring make a strong case for everyday use. Th",
+    "url": "https://www.gadgets360.com/wearables/reviews/google-fitbit-air-review-12202519",
+    "published_at": "2026-10-18T10:35:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Your Smart Home Is a Remote Control. A Home AI Would Actually Run the House",
+    "summary": "How the modern revolution of home AI can make your home a smart ecosystem rather than just a remote control tool.",
+    "url": "https://hackernoon.com/your-smart-home-is-a-remote-control-a-home-ai-would-actually-run-the-house",
+    "published_at": "2026-10-18T10:35:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic Pitches AI Safety Bill to Lawmakers",
+    "summary": "The proposal suggests the government could block the release of an AI model if it’s determined to imminently risk killing or injuring more than 50 people or causing more than $1 billion in damages",
+    "url": "https://www.deccanchronicle.com/technology/anthropic-pitches-ai-safety-bill-to-lawmakers-1996916",
+    "published_at": "2026-10-18T10:34:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
+    "summary": "Terms like “dynamic pricing” and “surveillance pricing” are stirring anxiety on social media, where users wonder if different people are getting different prices for the same product.",
+    "url": "https://www.pressenterprise.com/2026/10/18/consumer-apprehension-grows-as-us-retailers-adopt-ai-assisted-pricing-tools/",
+    "published_at": "2026-10-18T10:33:13+00:00",
+    "source": "newsdata"
+  }
+]
