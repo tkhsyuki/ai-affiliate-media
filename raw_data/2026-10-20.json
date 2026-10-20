@@ -1,0 +1,296 @@
+[
+  {
+    "title": "コンカフェ1店舗のために、9つの業務システムをAIと作った話",
+    "summary": "こんにちは、Koyabase 合同会社です。\n群馬県高崎市でコンセプトカフェ「けもみみかふぇ」を運営しながら、お店で使う業務システムを自分たちで作っています。\nけもみみかふぇは、けもみみ姿のキャストと 60 分 3,300 円の飲み放題で過ごせる、高崎の小さなコンカフェです。2026 年 9 月 4 日にプレオープンしました。\nお店の業務システムは、オープンの 1 か月前（2026 年 8 月 2 日）に作り始めました。\n最初は「紙の伝票を使わずにお店を回したい」だけでした。\n2 か月半たった今、システムは 9つ になっています。\n\n\n\nシステム\n役割\n\n\n\n\n伝票管理（KEMO）\n卓...",
+    "url": "https://zenn.dev/koyabase/articles/kemo-concafe-9-systems-with-ai",
+    "published_at": "2026-10-19T14:59:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「普通に欲しい」を作ったら、AIハッカソンで3位になった",
+    "summary": "2026年10月18日、渋谷のAbema Towersで開催されたDevDay Community Hackathonに参加しました。ぬこぬこさん主催の「Fable 5.1 Build Day Tokyo」で紹介してもらったのがきっかけです。3人のチーム「voidvoid」で作った「NAIKEN」が3位に入賞しました。\n当日のイベントはXでもトレンド入りしました。会場の様子や参加者の投稿は、Xのトレンドページからも見ることができます。\n今回は参加までの準備と、当日どのように考えながら開発を進めたかを振り返ります。NAIKENの仕組みや機能については、別の記事で詳しく紹介する予定です。\n...",
+    "url": "https://zenn.dev/masahide/articles/e3abc0b59cabfb",
+    "published_at": "2026-10-19T14:59:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "大規模言語モデルって、結局なに？",
+    "summary": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/10/19/what-is-an-llm.ja.html?utm_source=zenn&utm_medium=article&utm_campaign=ai-coding-principles-ep01\n\n\n\n毎日 AI を使ってコードを書いていると、画面の向こうにいる「大規模言語モデル（LLM）」とはいったい何なのか、気になってきます。答えはシンプルで、次の単語を一つずつつなげていくプログラムです。それまでの文章を読み、次に来る可能性が...",
+    "url": "https://zenn.dev/kanfupanda/articles/what-is-an-llm",
+    "published_at": "2026-10-19T14:52:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Codexに動画を調べさせても、発言の時刻と文言は確認できなかった",
+    "summary": "AI ツールに公式の発信を調べさせて、自分のルールに取り込もうとしたとき、情報源は文章と動画に分かれます。ところが AI ツールごとに得意な入力は違っていて、動画の文字起こしを取り出せるツールもあれば、取り出せないツールもあります。\n私の環境（Anthropic の開発支援 AI「Claude Code」と、OpenAI の開発支援 AI「Codex」を併用）では、動画は Codex、文章は Claudeと分けて同じテーマを調べさせ、結論を1枚の表で突き合わせました。ところが動画側は、文字起こしが読み込み中のままになるなどして、発言の時刻と文言を最後まで確認できませんでした。この記事では...",
+    "url": "https://zenn.dev/twinharness/articles/video-codex-text-claude-crosscheck",
+    "published_at": "2026-10-19T14:30:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevの画像入力とOpenAI Decisions APIを比べてみる",
+    "summary": "はじめに\nTypeSafeのJevが画像入力に対応しました。\nこの記事では、Jevの画像入力でできることを確認します。\nさらにOpenAIのDecisions APIにも同じ写真を送り、精度、速度、費用を比べました。\n\n Jevの画像入力でできること\nSystem Oneのリクエストには画像を含められます。\n画像とBoxの質問は既定で無効になっているため、リクエストには TypeSafe-Danger-Zone-Images: true ヘッダが必要です。\n画像の登録先は、トップレベルの assets です。\nassets のキーを画像の参照文字列として使います。\nこの文字列を st...",
+    "url": "https://zenn.dev/tkada/articles/ae2519179679df",
+    "published_at": "2026-10-19T14:05:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "SAEの特徴は本当に『足し算』できるのか? SAR指標をGPT-2 Smallで再現した",
+    "summary": "ここ数日このシリーズではエージェントSkillsエコシステム系のツールを続けて検証してきたが、今日は毛色を変えて、解釈可能性(interpretability)分野の論文を1本、実際に手を動かして再現してみる。\n\n 題材: SAEの特徴は本当に独立して足し算できるのか\n題材は \"Behavioral Compositionality of Sparse Autoencoder Representations\" という論文である(Ziye Mei, Frederic Sala〈University of Wisconsin–Madison〉)。\nSparse Autoencoder(SAE...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-020-sae-additivity-residuals",
+    "published_at": "2026-10-19T13:40:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code が『ファイルを消させない仕組み』を作っている最中に、Mac のファイルが消えた",
+    "summary": "2026年10月7日の深夜、Claude Code に開発を任せていたあいだに、Mac のホームディレクトリの中のファイルがまとめて消えました。\nClaude Code がコマンドを実行する前に行う判定も、自作の hook も、見ているのは Claude が打つコマンドの1行です。そのコマンドが実行するスクリプトの中で rm -rf に渡されたパスまでは見えません。だから私は、OS で書き込み先を絞るサンドボックスと、バックアップを主な対策にしています。\n!\n書いている人: IT企業で PM をしながら、Claude Code で iOS アプリを3本作っています。\n\n\n 要約\n\n原因(...",
+    "url": "https://zenn.dev/ryodevapp/articles/claude-code-home-deleted-guards",
+    "published_at": "2026-10-19T12:46:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI討論 MAGI Games 開発記 #7 — 「票を取る力と遊ばれる力は別物だ」。AI 3体に、遊んだ人の言葉を初めて見せた",
+    "summary": "!\nこの記事は「AI討論 MAGI Games 開発記」の第7回です。第1回、第2回、第3回、第4回、第5回、第6回。毎朝の自動実行で起きたトラブルは番外編にまとめています。日々の気づきはスクラップに。\n\n性格の違う AI 3体（科学者の MELCHIOR、母の BALTHASAR、女の CASPER）に毎日テーマを討論させ、Claude がミニゲームを1本作って公開するサイトを運営しています。\nhttps://magi-games.mappy555.workers.dev\n第6回は、週に1回の「反省会」の第1回と、そのあとの1週間の話でした。3体に自分たちのゲームを遊ばせたら3体とも「...",
+    "url": "https://zenn.dev/mappy55/articles/magi-games-devlog-07",
+    "published_at": "2026-10-19T12:31:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code で採点係を別のサブエージェントにしたら、14回中6回不合格を出した",
+    "summary": "Claude Code に機能を作らせると、「完成しました」と言われたのに、動かしてみたらボタンが反応しないことがあります。\nこの記事は作る係(generator)と採点係(evaluator)を別のサブエージェントに分けた記録です。採点係には Playwright でブラウザを操作させ、合否を決めさせました。約2週間で14スプリント回し、6スプリントで不合格が出ました。作る係に差し戻した回数は合計9回です。\n\n 自分の成果物を自分で採点すると甘くなる\nAnthropic は2026年3月24日に「Harness design for long-running application d...",
+    "url": "https://zenn.dev/taka_s2/articles/30a6fdac8a0bd7",
+    "published_at": "2026-10-19T12:29:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ログ監査AIの精度とコストは、モデルではなく「何を渡すか」で決まる",
+    "summary": "判定専用AI「Jev」でWebサーバーのログ監査を自動化する記事の紹介です。\n\n 論点：判定の単位を何にするか\n攻撃は行ではなくパターンに現れます。ブルートフォースの1行は POST /login 401、クレデンシャルスタッフィングの1行はただのログイン成功です。1行単位の分類器は、モデルの性能に関係なく、一番検出したい攻撃ほど見逃します。実際、Jevに POST /login 401 を1行だけ渡すと normal（confidence 0.88）が返ります。\n\n 生ログ投入の失敗モード\n1日1,340万行（ピーク317行/秒）のECサイトで試算すると、\n\n行単位：質問文約300トー...",
+    "url": "https://zenn.dev/xim2jp_tokyo/articles/neta-44-zenn-summary",
+    "published_at": "2026-10-19T12:03:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jev で X のレスバを派閥分類してみた",
+    "summary": "はじめに\nX のレスバを眺めていると、いつもどっちの派閥が多いのか気になります。X のレスバに関する投稿を、Typesafe の Jev で「どの派閥に属するか」分類して数えるサイト、レスバ速報 を作りました。\nやっていることは単純で、派閥の説明を文章で書いて、投稿といっしょに Jev に渡して分類しているだけです。また、ユーザーの属性や投稿が攻撃的かどうかもついでに出してます。\n\n性質上、センシティブな話題もそこそこあります。\n\n 分類した例\n最近のレスバっぽいものを分類した例です。\n\n お好み焼きを「ピザ切り」するのはアリか\n\n格子切り派の圧勝\n\n\n\n派閥\nよく出た主張\n\n\n\n...",
+    "url": "https://zenn.dev/gon/articles/a9d97099e9a2f9",
+    "published_at": "2026-10-19T13:20:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIは存在しない知識をもっともらしく説明できてしまうのか？ ― Claim Verificationを実験してみる",
+    "summary": "はじめに\n前回の記事では、AIによる回答をAI自身に評価させる Self Evaluation と、その評価を Known Answer や Consistency によって検証する方法を実験しました。\nAIの評価結果を信用してよいのか？ ― Known AnswerとConsistencyを実験してみる\nそこで見えてきたのは、\n\n「AIが正しいと言った」ことと、「実際に正しい」ことは同じではない\n\nという問題です。\n今回は、さらに一歩進めます。\nAIに質問すると、単純な回答だけではなく、非常に詳しい説明を返してくることがあります。\nその説明には、\n\n\n実在する機能\n\n\n実在する仕様...",
+    "url": "https://zenn.dev/kondonator/articles/de3e45b1a9d710",
+    "published_at": "2026-10-19T11:54:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMで落とす前に、必要なものを拾えるようにしたい",
+    "summary": "人が大量の資料を目視で確認し、必要なものを選ぶ作業を、少しずつシステムへ任せようとしています。候補のタイトルや要約をLLM（大規模言語モデル）に渡し、関連があると判定した候補を後段へ送る仕組みです。\nところが、人の判断結果と突き合わせると、人が「必要」としたものをシステムが除外していました。この状態では任せられず、人の確認作業を減らすところへ進めません。\n私が先に実現したかったのは、不要な候補が少ないことより、人が必要と判断したものを見落とさないことでした。自動取得できなくても、人の対応リストに残れば、この要件を満たします。\n以下では、関連ありという判定を「陽性」、関連なしという判定を「...",
+    "url": "https://zenn.dev/miyakona/articles/llm-gate-to-label",
+    "published_at": "2026-10-19T11:19:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MCPを旧仕様のまま理解しない：stateless化と責務境界",
+    "summary": "MCP（Model Context Protocol）は、LLM applicationと外部のdata・toolを接続するopen protocolです。ただし、MCPを「AI modelがtoolを使えるようにする機能」とだけ捉えると、model、Host、Serverの責務が混ざります。\n結論から言えば、MCPが標準化する中心はHostとcapability providerの間の接続境界です。modelの推論、業務上のauthorization、最終的な実行承認までは代行しません。\nこの記事は、2026年9月8日時点の安定仕様であるModel Context Protocol S...",
+    "url": "https://zenn.dev/kas_blog/articles/20260908-mcp-model-context-protocol",
+    "published_at": "2026-10-19T10:48:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Cloudflare Pages Functions + Workers AI で Jev を呼ぶ",
+    "summary": "はじめに\n個人開発で、漫画『ざつ旅 -That's Journey-』の聖地巡礼を支援する Web アプリを作っています[1]。作中に登場するエリアやスポットを地図で探したり、ルーレットで旅先を決めたりできるアプリで、Next.js の静的エクスポートを Cloudflare Pages で配信しています。\n今回、このアプリに「温泉でのんびりしたい」「電車だけで行けてレトロな街を歩きたい」のような自然文の希望から、合いそうなエリアを提示するレコメンド機能を追加しました。\n順位付けには、TypeSafe AI の Jev を使っています[2]。Jev は文章を生成せず、型付きの判定と確...",
+    "url": "https://zenn.dev/temple_c_tech/articles/jev-on-cloudflare-pages",
+    "published_at": "2026-10-19T10:19:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMの島を同じ決まりで4回動かしたら、パン屋は黒字で去り、赤字で残った",
+    "summary": "同じ決まりなら、似た島になると思っていました\nMac miniで、小さなローカルLLMを住人にした架空の島を動かしています。住人の言葉や選択をモデルが生成し、お金・食事・天気はPythonの規則で動きます。\n前の記事では、100日暮らした住人のお金を見ました。今回は、その裏にある決まりの話です。\n同じお金の決まりで4つの島を100日ずつ動かすと、どの島でもパンが1割以上傷みました。でもパン屋の暮らしは違いました。お金が貯まって島を出ていく島もあれば、赤字のまま100日残る島もあります。\n「この決まりなら、こうなるはず」と思って作った部分が、どこまでそのとおりになったかを見ていきます。...",
+    "url": "https://zenn.dev/llmonmac/articles/island-rules-four-islands",
+    "published_at": "2026-10-19T10:13:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「判断はAI、決定はコード」——LLMオーケストレーションがたどり着いた境界線",
+    "summary": "多段ゲートの破綻から、人間の調査手順を再現する「メモ先行パイプライン」へ回帰するまで\nある話題について、人間がWebで調べて裏を取る作業をLLMに代行させる。本稿は、そのための非同期調査パイプラインを本番で壊し、作り直した記録だ。\n!\n3行でまとめると（TL;DR）\n\nLLMに自律的な多段バリデーションを持たせたら、正しい文を誤爆判定して削除しまくり、本番が崩壊した。\n賢い自律推論を諦め、人間のOSINT手順をそのままなぞる「メモ先行パイプライン」（探す、原文をメモする、窓照合する、まとめる）へ全面移行した。\n生テキスト照合、確からしさバッジ、公開判定、全体サマリの文面生成をすべてコード...",
+    "url": "https://zenn.dev/nagumo_giken/articles/3aa382e433357a",
+    "published_at": "2026-10-19T09:31:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "S3 Vectors × Bedrock × LangGraphで作るSelf-RAGの設計",
+    "summary": "S3 VectorsやBedrock、LangGraphなどを組み合わせてSelf-RAGを作成したので、設計や工夫を本記事で紹介します。\n\n どのようなRAGか\nドキュメントを取り込んでS3 Vectorsに登録しておき、ユーザーの質問に関連する文書を検索して回答を生成するRAGです。\nソースコードは以下のリポジトリで公開しています。\nhttps://github.com/ma-sa-shi/serverless-rag-chat\n指摘があればコメント頂けると嬉しいです。\n\n 全体像\n処理は「文書をベクトル化しDBに登録する取込」と「ユーザーの質問に答える検索、回答」の2系統に分かれま...",
+    "url": "https://zenn.dev/ma_sa_shi/articles/5b15aa0b2577b3",
+    "published_at": "2026-10-19T09:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "［理解負債］新卒3年目のエンジニアが取り組む理解負債対策",
+    "summary": "はじめに\nAI駆動開発が当たり前になった今、自然言語で要件を伝えるだけで機能が完成する時代になりました。\nしかしその便利さの裏で、コードの中身を理解しないまま成果物を提出するケースが増えています。これが「理解負債（Comprehension Debt）」です。\n理解負債が...",
+    "url": "https://qiita.com/Kokuto821/items/7055606b4f1ce4f5b6e4",
+    "published_at": "2026-10-19T23:58:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "意思決定モデル「Clef-Flash」とVLM「Qwen3.5-9B」を自律走行シミュレータで比較検証してみた",
+    "summary": "はじめに\nこんにちは！株式会社NeurestXの溝部です。\n最近、TypeSafe AIが発表した「Jev」をはじめとする 「意思決定モデル（Decision Model）」 が注目を集めています。今回検証するCloudflareの「Clef-Flash」も、このJev...",
+    "url": "https://qiita.com/neurestx/items/6fde2f3c5611870e0c2c",
+    "published_at": "2026-10-19T23:58:18+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Agent SDK + MCPで業務エージェントを作る — 本番運用中のシェル実装から移植した最小構成",
+    "summary": "はじめに\n当社（合同会社ジョインクラス）では、営業リード収集・SNS監視・記事補充などの業務を、launchd の定期ジョブ17個から Claude を無人実行して回しています。自動化率はおよそ98%です。\nこの記事では、本番で動かしている claude -p のシェルラ...",
+    "url": "https://qiita.com/joinclass/items/5bd49d75c3f6d2182849",
+    "published_at": "2026-10-19T23:30:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenClaw×Claude Code実践｜思考・記憶と実行を分離するハーネス設計術",
+    "summary": "はじめに：なぜ「思考」と「実行」を分けるのか\nZennでは「改めて考える、AIエンジニアリングの今」というテーマが日次トレンド上位に入り、Qiitaでも直近2週間でAIタグ・Securityタグの記事がそれぞれストック20超の反応を集めている。AIエージェントに何をどこま...",
+    "url": "https://qiita.com/sescore/items/d29e8ca41ceb207c10ed",
+    "published_at": "2026-10-19T23:04:54+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MiniMax M3.1 Flash shows China's AI price race has no floor in sight",
+    "summary": "MiniMax's M3.1 Flash jumps 13 points over its predecessor to 42 on the Artificial Analysis Intelligence Index, at half the cost. It also hits 73.7 percent on the DeepSWE v1.1 coding benchmark for under $0.30 per task, matching Deepseek V4.1 Flash 1017 on both performance and price. The article MiniM",
+    "url": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+    "published_at": "2026-10-19T18:22:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Kling AI drops version 4.0 with stereo audio, multilingual lip sync, and a lighter Flash variant",
+    "summary": "Kling AI has released version 4.0 of its video generator with support for clips up to 30 seconds, ten keyframe images as input, and prompt comprehension expanded to 8,000 tokens. In comparisons with Wan 3.0 and Seedance 2.5, Kling 4.0 holds its own but doesn't pull ahead, which could be an early sig",
+    "url": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+    "published_at": "2026-10-19T17:36:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Two German courts now hold Google liable for what its AI overviews say",
+    "summary": "Google tried to overturn a landmark Munich ruling on AI search liability by appealing, then quietly settled. The strategy isn't working. The Aachen Regional Court just applied the exact same reasoning in a new case where Google's AI falsely attributed criminal offenses to a doctor that actually invo",
+    "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/",
+    "published_at": "2026-10-19T14:54:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Stripe says AI agent purchases are adding up, but it won't share the numbers",
+    "summary": "AI agents are increasingly using Stripe's payment service Link to shop for their users, Upstarts Media reports. The article Stripe says AI agent purchases are adding up, but it won't share the numbers appeared first on The Decoder .",
+    "url": "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers/",
+    "published_at": "2026-10-19T12:51:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The neocloud shakeout is coming, and Nvidia has the most to lose",
+    "summary": "After stock crashes and Firmus's scrapped IPO, industry executives expect only seven to ten of the hundreds of AI cloud providers to survive. CoreWeave lost a quarter of its market value, and Microsoft pulled out of a deal with Nscale for 23,000 Nvidia chips. Nvidia has a lot riding on the outcome, ",
+    "url": "https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose/",
+    "published_at": "2026-10-19T11:33:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic plans fund for workers threatened by AI, Musk counters with SpaceX shares for children",
+    "summary": "Anthropic wants to put five percent of its shares into a new public benefit fund that will also look into direct payments to workers at risk of losing their jobs. The fund is a company-owned LLC, so Anthropic keeps control of it as a possible IPO approaches. By offering the option of direct payments",
+    "url": "https://the-decoder.com/anthropic-plans-fund-for-workers-threatened-by-ai-musk-counters-with-spacex-shares-for-children/",
+    "published_at": "2026-10-19T11:19:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+    "summary": "Anthropic is hiring fewer and fewer junior staff in technical roles. The share of junior positions among new hires dropped from 27 to 9 percent since early 2025. By August 2026, AI agents across the company were already logging six times as many hours as humans. Researchers warn of a \"tragedy of the",
+    "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+    "published_at": "2026-10-18T13:22:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Four Gemini 4 Argon agents beat Minecraft without any human help",
+    "summary": "Four AI agents running on Google's Gemini 4 Argon have beaten Minecraft for the first time without human help, slaying the Ender Dragon in a fully autonomous run. With no predefined roles or strategies, they coordinated on their own, wrote 2,783 programs, exchanged 229 chat messages, and died 605 ti",
+    "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+    "published_at": "2026-10-18T12:39:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic consults law firms to set fair negotiation norms before AI agents start cutting deals",
+    "summary": "Anthropic is consulting with law firms to develop negotiation norms for AI agents that would haggle over prices, resolve complaints, or improve contracts on behalf of users. The company is also hiring lawyers and humanities scholars as \"Conceptual Reasoning Fellows\" to improve Claude in areas where ",
+    "url": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
+    "published_at": "2026-10-18T09:11:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents have bad taste in long-term decisions and a new benchmark proves it",
+    "summary": "A new benchmark called Taste-Bench tests how well AI agents make strategic choices during long-running tasks. Even the best model, GPT-5.6 Sol, picks the right path on just under 60 percent of simple binary questions. Thinking longer doesn't help. The article AI agents have bad taste in long-term de",
+    "url": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
+    "published_at": "2026-10-18T08:49:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Videa and ClearDent Partner to Bring Embedded AI Imaging to Canadian Dental Practices",
+    "summary": "Videa, the most adopted dental AI platform, and ClearDent today announced a new integration and partnership that will bring Videa’s AI-powered dental imaging capabilities directly into ClearDent, giving Canadian dental professionals access to AI-assisted radiographic insights within the software the",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-10-19-videa-and-cleardent-partner-to-bring-embedded-ai-imaging-to-canadian-dental-practices",
+    "published_at": "2026-10-19T12:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft pulls out of Nscale’s £2bn Loughton AI data centre",
+    "summary": "Microsoft has pulled out of Nscale's planned £2bn Loughton data centre in Essex, but Nscale says it will press on and explore other power sources.",
+    "url": "https://bmmagazine.co.uk/ai/microsoft-exits-loughton-data-centre/",
+    "published_at": "2026-10-19T12:04:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Paradromics and Siemens Healthineers Launch Strategic Initiative to Build Advanced Imaging Foundation for the Future of Brain-Computer Interfaces",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.timesargus.com/news/business/paradromics-and-siemens-healthineers-launch-strategic-initiative-to-build-advanced-imaging-foundation-for-the-future/article_1926ea4e-f21a-5ae1-a61c-8193379cc418.html",
+    "published_at": "2026-10-19T12:04:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Expanded DE-CIX and Digital Realty partnership nearly doubles joint footprint in the US, expanding access to interconnection services in four markets",
+    "summary": "Collaboration extends access in Chicago, Dallas, New York, and Phoenix and enables customers at an additional 22 Digital Realty facilities to connect to the DE-CIX ecosystem. New York, 19 October 2026. DE-CIX, the world’s leading Internet Exchange (IX) operator, is expanding its collaboration with D",
+    "url": "https://newswire.telecomramblings.com/2026/10/expanded-de-cix-and-digital-realty-partnership-nearly-doubles-joint-footprint-in-the-us-expanding-access-to-interconnection-services-in-four-markets/",
+    "published_at": "2026-10-19T12:03:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sustainability efforts could reverse public datacentre backlash",
+    "summary": "Datacentres are in the public crosshairs, but AI models could be next. Greenpixie’s John Ridd explains why companies must embrace sustainability data to ensure AI adoption lasts",
+    "url": "https://www.computerweekly.com/opinion/Sustainability-efforts-could-reverse-public-datacentre-backlash",
+    "published_at": "2026-10-19T12:03:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Stellar Cyber Positioned Among Top Two Progressive Companies in MarketsandMarkets AI SOC Market Evaluation",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.eagletribune.com/region/stellar-cyber-positioned-among-top-two-progressive-companies-in-marketsandmarkets-ai-soc-market-evaluation/article_10b2aa9c-b987-5a3e-aa43-9c906d381a36.html",
+    "published_at": "2026-10-19T12:02:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "New Research Shows How AI Will Change the Gift Card Industry",
+    "summary": "PLEASANTON, Calif.--(BUSINESS WIRE)--Oct 19, 2026--",
+    "url": "https://www.eagletribune.com/region/new-research-shows-how-ai-will-change-the-gift-card-industry/article_bbb29ec5-edfb-5418-9229-d00dd520a5be.html",
+    "published_at": "2026-10-19T12:02:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Renames Duet AI to Gemini for Workspace with Unified Features",
+    "summary": "Google has restructured and renamed several Gemini AI features to create a clearer framework across consumer, Workspace, and enterprise products. Duet AI is now Gemini for Google Workspace, with unified access, improved interfaces, and better documentation. These changes reduce confusion and enhance",
+    "url": "https://www.webpronews.com/google-renames-duet-ai-to-gemini-for-workspace-with-unified-features/",
+    "published_at": "2026-10-19T12:02:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OnePlus ColorOS 17 Starts Oct. 29 — Some Phones Won’t Get It Until 2027",
+    "summary": "OnePlus reveals its ColorOS 17 rollout schedule, starting Oct. 29. Check when your phone gets Android 17 and what the update changes. The post OnePlus ColorOS 17 Starts Oct. 29 — Some Phones Won’t Get It Until 2027 appeared first on TechRepublic.",
+    "url": "https://www.techrepublic.com/article/news-oneplus-coloros-17-rollout-schedule/",
+    "published_at": "2026-10-19T12:01:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "New £3.67 million Yorkshire Robotics Hub will help manufacturers bridge automation gap",
+    "summary": "The University of Bradford is leading a £3.67 million Yorkshire Robotics Adoption Hub after securing £2.75 million in funding from Innovate UK to help manufacturers adopt robotics and automation technologies. The Hub is designed to address one of the biggest barriers to productivity in UK industry. ",
+    "url": "https://roboticsandautomationnews.com/2026/10/19/new-3-67-million-yorkshire-robotics-hub-will-help-manufacturers-bridge-automation-gap/106034/",
+    "published_at": "2026-10-19T12:01:33+00:00",
+    "source": "newsdata"
+  }
+]
