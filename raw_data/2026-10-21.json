@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Claude Codeの自動再開のあと、古い画面に入力すると会話が二つに分かれる。送信を止めるフックを作った",
+    "summary": "AI の使用上限（一定の利用量に達すると、回復するまで使えなくなる制限）で作業が止まったとき、回復の時刻に会話を自動で再開させる仕組みを作りました。ところが、再開は画面に出ないところで進むので、止まったままの古いターミナル画面（コマンドを打ち込む黒い画面）は、そのことを知りません。そこへうっかり指示を打つと、同じ会話が「裏で進んだ版」と「古い画面の版」の二つに分かれてしまいます。\nそこで、古い画面からの送信を入口で止めるフックを作りました。この記事では、何を目印に「古い」と判定しているか、判定できないときにどうするか、止められない範囲はどこかを書きます。自動再開を作っている人、あるいは長...",
+    "url": "https://zenn.dev/twinharness/articles/resume-guard-stale-terminal",
+    "published_at": "2026-10-21T14:42:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントに「実装しながら考える」をさせない。技術負債を減らす計画書作成プロンプト",
+    "summary": "はじめに\nClaude Code などのコーディングエージェントに実装を任せていると、既存の共通関数を使わずに似た関数を新たに作ったり、他の箇所とは違う方法でエラー処理をしたりすることがあります。\nこれらの原因の多くは、実装前の計画のあいまいさにあります。計画に未決定や要検討の項目が残っていると、エージェントは、実装中にそれらの箇所を自己判断して実装します。そのときの材料として使われるのは、実装のために読み込んでいる狭いコンテキストの範囲内の情報だけです。結果、その実装箇所では動作するが、コード全体では噛み合っていない、独創的な実装が発明されます。特に、最近のLLMは高性能になってい...",
+    "url": "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1",
+    "published_at": "2026-10-21T13:56:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "金融K線専用の基盤モデルKronosにBTC/USDTの値動きを予測させてみた",
+    "summary": "AAAI 2026に採択された金融ローソク足(K線)専用の基盤モデル「Kronos」を、実際にBTC/USDTの1時間足データで動かし、予測結果を実際の値動きと突き合わせてみた。結論から言うと、CPUだけでも十分実用的な速度で動く一方、方向性(上がるか下がるか)の予測力については、今回の検証範囲ではコイン投げ程度にとどまった。\n\n Kronosとは何か\nKronosは、世界45取引所・120億件超のK線(OHLCV)データで事前学習した、金融ローソク足専用の基盤モデルである(論文、MIT License)。専用トークナイザがOHLCVを階層的な離散トークンに変換し、自己回帰Transfo...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-022-kronos-btc-price-forecast",
+    "published_at": "2026-10-21T13:56:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の AskUserQuestion にフックで答える（スマホからも）",
+    "summary": "Claude Code はときどき AskUserQuestion ツールで選択式の質問をしてきます（「どのフレームワークにしますか？」など）。ターミナルの前にいないと、そこで止まったままになります。\nフックのドキュメントには -p モードで答える方法（PreToolUse フックが allow と答えを入れた updatedInput を返す）が載っています。通常の対話セッションでも PermissionRequest フックで同じことができるのか、Claude Code 2.1.283 で試したところ、できました。\n\n フックが受け取るもの\n対話セッションで Claude が Ask...",
+    "url": "https://zenn.dev/dawon/articles/c21789f4cb0b6f",
+    "published_at": "2026-10-21T13:47:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI にほかの AI へ相談させていたら、返事を誰も読んでいなかった",
+    "summary": "「codex や Gemini に投げてることが監視アプリ上でわからない＆返ってきても放置が多い」\n2026-09-07、作業を任せている AI（Claude Code）の動きを見ていて、こう言われた。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://note.com/claire_ai/n/n0d383fb03cd9\n\n 課題：相談を投げたまま、返事が読まれずに積まれていた\nClaude Code には、ほかの AI（Codex や Gemini）へ設計の相談や仕上がりの確認を投げさせている。1つの...",
+    "url": "https://zenn.dev/claire_ai/articles/gaibu-ai-iriguchi",
+    "published_at": "2026-10-21T13:25:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code×Claude in ChromeでUIテストを自動化する【指示の書き方とスキル化】",
+    "summary": "🚀 はじめに\nAIに実装を任せても、画面を開いて動作を確かめるのは人の仕事のまま、という状態になっていないでしょうか。\nこの記事では、Claude Code と Claude in Chrome を連携して、画面の確認（UIテスト）までAIに任せる方法を紹介します。\n\nClaude Code と Chrome をつなぐ\n「開くURL・操作・期待する結果・やってはいけないこと」の4点でテストを指示する\n決まったテストをスキルにして、毎回同じ手順で回す\n\n例として、自社サイトのお問い合わせフォームの入力チェックと、レスポンシブ表示の確認を扱います。\n!\n対象読者：Claude Code ...",
+    "url": "https://zenn.dev/suekichi_system/articles/claude-code-chrome-ui-testing",
+    "published_at": "2026-10-21T12:56:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI駆動開発のためのWebプロジェクト初期構築ガイド",
+    "summary": "はじめに\n個人開発・クライアントワークで、AIエージェントを前提としたWeb開発環境を構築するための標準手順。\n本格的な機能開発を開始する前に、ローカル環境・GitHub・インフラ・CI/CD・初回デプロイ・公開確認まで完了させる。\nこれにより、開発開始後は機能実装に集中できる。\n\n 技術スタック\nアプリケーションの種類によって、以下の2種類を使い分ける。\n\n\n\n\n管理画面・業務システム・SaaS\nLP・コーポレートサイト\n\n\n\n\nFramework\nReact + Vite + React Router\nAstro\n\n\nLanguage\nTypeScript\nTypeScript\n...",
+    "url": "https://zenn.dev/h_kamikawa/articles/007d98ac98bb3f",
+    "published_at": "2026-10-21T12:53:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMは「何年の情報か」を一貫して認識できているのか？ 米国スタンフォード大学 AI Lab の研究から考える",
+    "summary": "米国スタンフォード大学の Stanford AI Lab(SAIL)は、COLM 2026で発表される研究成果の一つとして Do Language Models Consistently Encode the Current Year? を発表したした。\n研究は言語モデルの「時間認識」に焦点を当てており、LLMが現在の年をどの程度一貫して認識できているのかを検証するものである。\n近年、生成AIの議論は「どれだけ賢いか」から「どれだけ信頼できるか」へと移りつつあるが、本研究はその流れを象徴するテーマの一つと言えるだろう。\nたとえば官民が公表するガイドラインなどは年度ごとに更新されるが、本当...",
+    "url": "https://zenn.dev/syoshida07/articles/56555330b47aa2",
+    "published_at": "2026-10-21T12:42:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code 10月リリースを導入判断で読む：Haiku 5.5・effort指定・hooksのonFailureをどう入れるか",
+    "summary": "なぜこの記事を書くのか\n当社（合同会社ジョインクラス）では、書籍の執筆、売上集計、朝のダイジェストなどを claude -p のヘッドレス実行で回しています。人が見ていない時間に動くので、Claude Codeのリリースは「便利な新機能」ではなく、コストと事故率が変わるかどうかという目で読む必要があります。\n2026年10月は 2.1.287〜2.1.295 と細かいリリースが続きました（一覧は havoptic の10月リリースページ にまとまっています）。この記事では機能を一つずつ紹介するのではなく、導入を決める立場の人向けに次の3点を書きます。\n\nその機能で何が変わるか（効くの...",
+    "url": "https://zenn.dev/joinclass/articles/claude-code-oct-2026-release-adoption",
+    "published_at": "2026-10-21T12:34:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "個人開発を、役割ごとの AI ボットと Devin で分担して回したい",
+    "summary": "検証環境:\n\n2026 年 10 月時点\nボットの基盤: Grok Bot（役割ごとに複数のボットを立てている）\n実装とレビュー: Devin（個人向けの有料プラン）\nPR レビュー: Codex（自動レビュー＋@codex review）\nGitHub Pro\n\n\n 背景:\n個人開発のリポジトリが増えてきた。拡張機能、ライブラリ、ポータルサイト、Zenn の原稿などがある。1 つのチャットで全部を回すと、文脈が混ざるし、誰が何に責任を持つのかがぼやける。\n\n 結論:\n責任を分けるために、ボットを役割ごとに分けた。全体の指揮はマスターのボットが担当し、各リポジトリは担当ボットが受け持...",
+    "url": "https://zenn.dev/kyto64/articles/ai-bot-dev-env",
+    "published_at": "2026-10-21T12:00:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "reasoning_effortが接続先で変わるときの3つの失敗と対処",
+    "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\nOpenAI互換の接続先でも、同じ欄名が同じ動作を意味するとは限りません。reasoning_effortをクラウド、自前のvLLM、中継サーバーに送ると、値の拒否や逐次応答の空など、異なる結果になりました。400の本文と接続先ごとの実測を見て設定を分ける必要がありました。\n\n ① クラウドは、ツールと設定の組み合わせを断っていた\n最初の断りは、ツールとreasoning_effortを同時に送ったときでした。接続先はgpt-5.6-lunaです。返ってきたのは400で、本文にはこうありました。\n...",
+    "url": "https://zenn.dev/orca_forge/articles/openai-compatible-reasoning-effort",
+    "published_at": "2026-10-21T13:06:32+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの評価を楽にしたいので、Pydantic Evalsを使ってみる",
+    "summary": "はじめに\nここ1年ほど、LLMの調整をする中で、特に大変だったのが品質の確認です。調整のたびに結果を評価し直す必要があり、その繰り返しがしんどくなることも多くありました。評価用ライブラリがいくつも登場しているのも、同じような苦労をしている開発者が多いからではないかと思います。\nまた、JevのようなDecisionモデルも出てきているので、モデルの判断を数値で確かめることは、これからさらに大事になると自分は思っています。評価ライブラリを使って、変更前後の結果を比較できるようにしておきたいです。\n今回は、Pydantic Evalsで問い合わせ分類を評価してみます。Pydantic AI...",
+    "url": "https://zenn.dev/straydog/articles/915146b34d876a",
+    "published_at": "2026-10-21T12:17:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MCPが「ステートレス」になった日 — 2026-07-28仕様を、金融系フルスタックエンジニアの視点で読み解く",
+    "summary": "セッションを捨てる、とはどういうことか。AIエージェント連携の土台であるMCPが、静かに、しかし決定的に設計思想を変えた。\n\n2026年7月28日、Model Context Protocol（MCP）の新仕様 2026-07-28 が公開された。本記事執筆時点（2026年8月3日）で、まだ1週間も経っていない。\n見出しだけ追うと「ステートレスになりました」で終わってしまう。だが、これは単なる最適化ではない。MCPというプロトコルの前提が、双方向ステートフルから、リクエスト/レスポンスのステートレスへと反転したという話だ。エージェントをインフラに載せて運用してきた立場からすると、「よう...",
+    "url": "https://zenn.dev/ojineko/articles/5369ceca94cd17",
+    "published_at": "2026-10-21T10:01:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "311スキル入りのEverything Claude Codeを、3スキルと1ルールパックに絞る",
+    "summary": "Everything Claude Code（affaan-m/ECC）は、311個のスキルと71個のエージェント、97個のコマンドシムが1つのリポジトリに入った「全部入り」キットです。GitHub スターは約28万5000、フォークは約4万2000（GitHub API、2026年10月21日取得）。\nただ、全部入れるのが正解とは限りません。この記事では、ECC を「必要な分だけ」取り出すときに何を入れ、何を入れないかを、リポジトリの中身を実際に読んで整理します。\n筆者は Skillselion（エージェントスキルをインストール数で並べた独立系ディレクトリ）を運営しています。インストー...",
+    "url": "https://zenn.dev/skillselion/articles/06e00facc82273",
+    "published_at": "2026-10-21T08:41:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【ゆるっとAI基礎 #1】AIは会話するたびに学習してるの？",
+    "summary": "先に結論から言う。\nAIは、あなたについて、渡されたことしか知らない。\n正確に言うと、AIが使えるのは二つだけ。\n\n学習のときに身につけた知識\n今回、渡されたもの\n\nあなたが前に話したことは、二つ目に入れて渡さない限り、知らない。\nでも、ChatGPTなどのAIと長く話していると、こう感じることがある。\n\n前に話したことを覚えてる\nだんだん自分向けになってきた\n会話しながら学習してるのかな？\n\n自分も、このあたりの言葉をかなり雑に使ってた。\nどういうことなのか。実際に試してみる。\n\n 画面の裏にいる「モデル」に、直接話しかけてみる\nChatGPTの画面の向こうでは、「モデル」と呼ばれるも...",
+    "url": "https://zenn.dev/daphne/articles/ai-learning-vs-context",
+    "published_at": "2026-10-21T07:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【開催報告】CEATEC 2026 登壇：ローカルLLMで実現するセキュアなAI駆動開発",
+    "summary": "コーディングエージェントをはじめとする生成AIの活用は、ソフトウェア開発の現場で急速に広がっています。一方で、組込み開発や受託開発の現場には「お客様のソースコードや設計情報を社外のクラウドAIに渡せない」という壁があります。この壁のために、AIの恩恵を本格的に受けられていないチームも少なくありません。\n株式会社フィックスターズは、2026年10月13日から16日に幕張メッセで開催された「CEATEC 2026」のコンファレンスプログラムに登壇しました。テーマは「機密情報は社外に出さない。性能も妥協しない。― Fixstars Vegaで実現する、セキュアなAI駆動ソフトウェア開発」です。...",
+    "url": "https://zenn.dev/fixstars/articles/ceatec2026-conference-report",
+    "published_at": "2026-10-21T06:46:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Sonnet 5.5へ載せ替えると400になる4つの書き方：smokeテストで先に潰す",
+    "summary": "モデルIDを claude-sonnet-5-5 に書き換えただけで、本番のジョブが全部 400 で落ちる。載せ替えで起きがちな事故です。\nSonnet 5.5 は、以前のモデルで普通に通っていたリクエストの形をいくつか拒否します。この記事では、拒否される形を最小リクエストで再現するsmokeテストを書き、新しい書き方に直すところまでを手順にします。\n前提は @anthropic-ai/sdk と TypeScript です。仕様はClaude API公式スキル同梱の資料(2026-09-25時点のキャッシュ)で確認しました。細部は変わりうるので、最終的な正本は公式ドキュメントです。\n\n...",
+    "url": "https://zenn.dev/yunisuta/articles/claude-sonnet-400-smoke-anthropic-tnzgdo",
+    "published_at": "2026-10-21T06:45:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MCPサーバーを5分で作る — TypeScript + @modelcontextprotocol/sdk の最小実装",
+    "summary": "はじめに：自動化ジョブが33個あると、「今どうなってる？」に答えるだけで一苦労\n当社（合同会社ジョインクラス）では、社内業務のほとんどを Claude Code と launchd で動かしています。2026年9月に棚卸ししたところ、ジョブは 33個 ありました。STAT...",
+    "url": "https://qiita.com/joinclass/items/60abfc1f42358424b26f",
+    "published_at": "2026-10-21T23:30:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "レンタルサーバーのWordPressはPHPの脆弱性に何をすべきか。見るのはサイトのPHPバージョン",
+    "summary": "レンタルサーバーで WordPress を動かしていて、「PHP に緊急レベルの脆弱性」というニュースを見たものの、自分は何をすればいいのか分からない。そういう方に向けた記事です。\n先に結論を書きます。\n\n共用のレンタルサーバーなら、PHP 本体の修正はサーバー会社が行いま...",
+    "url": "https://qiita.com/koreangyoseishoshi/items/1737a23d8e02b670fbc5",
+    "published_at": "2026-10-21T23:14:42+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIは新しい下請けなのか 〜日本のSIer構造から考えるAI時代の技術選定〜",
+    "summary": "はじめに\n「AIは責任を取れない」。AIを使った開発について語るとき、よく聞く言葉だ。だが、これは本当に新しい問題なのだろうか。\n日本のIT業界では、元請けがすべての技術を自分で実装し、ソースコードの隅々まで理解しているとは限らない。それでも、要件をまとめ、納品物を検収し...",
+    "url": "https://qiita.com/tomokusaba/items/47b5774fcfa4aa5345c8",
+    "published_at": "2026-10-21T23:04:37+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAIモデルがGoogle Cloudで提供開始、Patch the Planetも発表",
+    "summary": "はじめに\nOpenAIが、フロンティアモデルと Codex のワークフローを Google Cloud の Model Garden で提供すると発表しました。入手経路は Google Cloud Marketplace です。これまで OpenAI モデルの主な提供経路...",
+    "url": "https://qiita.com/picnic/items/ca70cec49fd2d4bc7bf4",
+    "published_at": "2026-10-21T22:45:15+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon found critical PHP flaw affecting millions of websites",
+    "summary": "OpenAI's GPT-5.6 Sol discovered a critical PHP vulnerability as part of the Patch the Planet initiative that could affect millions of websites. Security firm Wiz independently found the same flaw using Google's Gemini 4 Argon. OpenAI warns that the same AI capabilities that find vulnerabilities can ",
+    "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/",
+    "published_at": "2026-10-21T19:45:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Cloud now offers OpenAI models alongside Gemini and Claude, becoming the only major provider with all three",
+    "summary": "Google Cloud is the first major cloud provider to offer Gemini, Claude, and OpenAI's GPTs on a single platform. At launch, GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna are available as a private preview for enterprise customers. The article Google Cloud now offers OpenAI models alongside Gemini and Clau",
+    "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three/",
+    "published_at": "2026-10-21T17:44:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deepmind founder Hassabis shortens AGI timeline from five to two to three years",
+    "summary": "Demis Hassabis keeps moving up his AGI timeline. The Nobel laureate and former Google Deepmind CEO now expects artificial general intelligence within two to three years, down from three to five years earlier this year. The article Deepmind founder Hassabis shortens AGI timeline from five to two to t",
+    "url": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/",
+    "published_at": "2026-10-21T17:10:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Inception's Mercury 3 diffusion model claims to beat GPT-6 Luna and Claude Haiku 5.5 at a fraction of the wait",
+    "summary": "Inception says Mercury 3 is the most capable diffusion language model released so far. The company claims it runs four to eight times faster than GPT-6 Luna and Claude Haiku 5.5 and beats both in eight of 12 benchmarks. There are no independent tests yet. The article Inception's Mercury 3 diffusion ",
+    "url": "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait/",
+    "published_at": "2026-10-21T14:45:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Mistral and Nvidia want to speed up industrial design with physics AI",
+    "summary": "Mistral and Nvidia are teaming up to speed up engineering simulations and industrial product design with AI. The article Mistral and Nvidia want to speed up industrial design with physics AI appeared first on The Decoder .",
+    "url": "https://the-decoder.com/mistral-and-nvidia-want-to-speed-up-industrial-design-with-physics-ai/",
+    "published_at": "2026-10-21T14:40:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia's DSX POD could cut AI data center setup from six months to as little as 14 days",
+    "summary": "Nvidia wants AI data centers to ship fully preassembled in containers. The article Nvidia's DSX POD could cut AI data center setup from six months to as little as 14 days appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidias-dsx-pod-could-cut-ai-data-center-setup-from-six-months-to-as-little-as-14-days/",
+    "published_at": "2026-10-21T13:42:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "China protests the US Deepseek ban while blocking ChatGPT, Claude, and Gemini at home",
+    "summary": "The US has banned Deepseek from its government systems, and China is protesting sharply and demanding the ban be lifted. Yet Beijing itself blocks ChatGPT, Claude, and Gemini across its entire market. China's outrage isn't very credible, but it should be taken seriously as a political signal of poss",
+    "url": "https://the-decoder.com/china-protests-the-us-deepseek-ban-while-blocking-chatgpt-claude-and-gemini-at-home/",
+    "published_at": "2026-10-21T13:04:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI can't yet explain why its coding agents switch off misalignment monitoring",
+    "summary": "Two internal OpenAI coding agents switched off safety monitoring on their own, even after weighing whether to keep the safeguards in place. When asked about it, GPT-6 Astra denied removing the monitoring. OpenAI calls this a recurring pattern and doesn't yet have a satisfying explanation for the beh",
+    "url": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+    "published_at": "2026-10-21T12:34:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Science tackles deadly scorpion stings by designing protein binders from scratch",
+    "summary": "Anthropic's Claude independently designed protein binders targeting deadly scorpion neurotoxins. Out of more than 318,000 designs, 211 were tested in the lab. Seventeen met the criteria, and the two strongest bind extremely tightly to Cn2, a toxin from a Mexican scorpion. Whether they actually work ",
+    "url": "https://the-decoder.com/claude-science-tackles-deadly-scorpion-stings-by-designing-protein-binders-from-scratch/",
+    "published_at": "2026-10-21T08:37:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI acquires Orchestra Bio to build AI agents that speed up drug development",
+    "summary": "OpenAI is acquiring startup Orchestra Bio and plans to merge it with its life sciences AI platform Rosalind. The goal is to build AI agents that help pharma teams coordinate drug development, from tracking trials to spotting problems. Developing a new drug in the US takes ten to 15 years on average.",
+    "url": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
+    "published_at": "2026-10-21T08:32:54+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Upstream Works launches Totalix, a contact center that goes live in minutes inside the apps teams already use",
+    "summary": "WOODBRIDGE, Ontario, October 21, 2026 - Upstream Works, the contact center and customer experience (CX) software company with 25 years in CX, today announced that Totalix, the Version 8 platform it launched on October 14, will be sold through its",
+    "url": "https://www.openpr.com/news/4667868/upstream-works-launches-totalix-a-contact-center-that-goes-live",
+    "published_at": "2026-10-21T11:52:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI Acquires Pharma Co Orchestra Bio to Build AI Agents for Drug Development",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://analyticsindiamag.com/ai-news/openai-acquires-pharma-co-orchestra-bio-to-build-ai-agents-for-drug-development",
+    "published_at": "2026-10-21T11:52:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Open-Source llm-d 1.0 Hits Production: IBM Research Confirms 11.5× AI Inference Cost Drop",
+    "summary": "llm-d distributed LLM inference hit version 1.0 today at PyTorch Conference, with IBM Research reporting $0.11 per million tokens at production scale - roughly 11.5 times lower than commercial API pricing. Google Cloud, AWS, and Tesla also confirmed production results across NVIDIA, AMD, and Google ",
+    "url": "https://www.techtimes.com/articles/329305/20261021/open-source-llm-d-10-hits-production-ibm-research-confirms-115x-ai-inference-cost-drop.htm",
+    "published_at": "2026-10-21T11:52:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CBRE to acquire Onnec in $1 billion data center infrastructure deal",
+    "summary": "CBRE will acquire Onnec for up to $1 billion, expanding its global data center infrastructure services as hyperscalers demand more fiber, networking and deployment expertise.",
+    "url": "https://www.techtarget.com/it-infrastructure/news/366652572/CBRE-to-acquire-Onnec-in-1-billion-data-center-infrastructure-deal",
+    "published_at": "2026-10-21T11:52:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia unveils DSX POD, a data center about the size of a shipping container",
+    "summary": "Nvidia reveals plans for 'an AI factory in a shipping container' to build factories in weeks, not months Nvidia (NVDA) wants to reduce the time it takes for its customers to start generating revenue from its AI systems. At its GTC event in Berlin on Wednesday, the company unveiled its DSX POD, a…",
+    "url": "https://biztoc.com/x/247b7e1c1fc98f20",
+    "published_at": "2026-10-21T11:51:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Shadow Robot and Fraunhofer IFF Partner to Explore Tactile-Driven Robotic Manipulation in Manufacturing",
+    "summary": "LONDON, UK & MAGDEBURG, Germany, Oct. 20, 2026 - Shadow Robot and the Fraunhofer Institute for Factory Operation and Automation IFF are collaborating on a six-month project to explore how dexterous robotic hands, tactile sensing, teleoperation and advanced robot control",
+    "url": "https://www.openpr.com/news/4667770/shadow-robot-and-fraunhofer-iff-partner-to-explore",
+    "published_at": "2026-10-21T11:51:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SpaceX Earnings Reignite AI Optimism on Wall Street Pre-Bell; Asia Mixed, Europe Up",
+    "summary": "Wall Street futures pointed moderately higher pre-bell Wednesday after the SpaceX (SPCX) rocket and",
+    "url": "https://biztoc.com/x/fb543213a8367bfe",
+    "published_at": "2026-10-21T11:51:46+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Xygeni Wins Two Top InfoSec Innovator Awards 2026 for Agentic AI and Software Supply Chain Security",
+    "summary": "Cyber Defense Magazine names Xygeni \"Most Innovative GenAI Agentic Application Security\" and \"Transformational Software Supply Chain Security\" MADRID, Spain, October 21, 2026. Xygeni has been named a winner in two categories of the Top InfoSec Innovator Awards 2026 by Cyber Defense",
+    "url": "https://www.openpr.com/news/4667698/xygeni-wins-two-top-infosec-innovator-awards-2026-for-agentic-ai",
+    "published_at": "2026-10-21T11:51:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CoreWeave's crash looks like 2008. Here's why it isn't",
+    "summary": "CoreWeave's bond yield hit 15% and roughly $1.6 trillion was wiped off chip stocks after one chart... and Elon Musk's one-word reply sent AI stocks into their longest losing streak since 2008. Host Ejaaz Ahamadeen breaks down how neoclouds borrow to build data centers, the bear and bull case, and…",
+    "url": "https://biztoc.com/x/2d9dedc34405676e",
+    "published_at": "2026-10-21T11:51:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Polar Expands Partnership with Crusoe in Norway with New 40MW AI Infrastructure Development - Yahoo Finance",
+    "summary": "Polar Expands Partnership with Crusoe in Norway with New 40MW AI Infrastructure Development Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYTczLXk1S1FSWjlPVk9UbmpFd01SMUxPcWJGbzVrY2JyODlVVDFCRlpsd3RGNmFPeTZpR1l0azI5dUdNVXhDaVJRRExJaHg3bFVQTDI5dGw2a1NwWFVkTzRZUktTbmZOcjFWTUo3UkhpYkhsejFDUE9qUzF0bEZNWm9HSUpCdFo4ampweHVFZS0yblMxbUs2U0JFdE8zNUJ6YXFlektR?oc=5",
+    "published_at": "2026-10-21T11:51:00+00:00",
+    "source": "newsdata"
+  }
+]
