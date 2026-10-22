@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Claude Codeと作る 間取り3D内見ツール ── 図面読み取りから搬入チェックまで",
+    "summary": "手元にあるのは間取り図の画像1枚だけ。それでも、部屋の広さや見え方、ソファが玄関を通るかを知りたい ──そんな引っ越しの悩みを、技術で解きます。間取りのデータ設計、Three.jsでの3D化、一人称の内見、塗つぶしによる部屋の領域分割、AIによる図面の読み取り、そして長方形を動かし・回して通れる道を探す搬入チェクまで。Claude Codeと一緒に「間取り3D内見」ツールを1から作りながら、それぞれの仕組みを理解きる技術本です。HTMLとJavaScriptを少し触ったことがあれば読めます。",
+    "url": "https://zenn.dev/yuya26_ai/books/bc2f4d1d552613",
+    "published_at": "2026-10-22T14:16:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "知識グラフ化ツールGraphifyでgrep/Readを置き換えたら、トークンは何倍減るのか実測した",
+    "summary": "これは何の話か\n海外AIネタ100日チャレンジDay 023。今回取り上げるのはGraphify-Labs/graphify(PyPI配布名はgraphifyy、ダブルyなので注意)。\nコード・ドキュメント・SQLスキーマ・設定ファイルなどを1つの問い合わせ可能な知識グラフに変換するPython CLIで、Claude Code/Cursor/Codex/Gemini CLIなど向けのスキルとしても配布されている。\nコード解析はtree-sitterによる完全ローカル・決定的な処理で、--code-onlyオプションを使えばLLM呼び出し無し・外部送信無しの完全オフラインで動く。\n謳...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-023-knowledge-graph-vs-grep-token-cost",
+    "published_at": "2026-10-22T14:05:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に記事を29本まとめて書かせたら、もっともらしい間違いが24か所混ざっていた",
+    "summary": "一晩で、AI（Claude Code）に記事の下書きを29本書かせた。2時間ほどで、画像104枚、合わせて約9.6万字。読み返すと、どれもそれらしく書けていた。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://note.com/claire_ai/n/n4fac7226fd5a\n\n 課題：AI が書いた記事は、間違っていても読みやすい\n材料には、自分の作業の記録に残っている数字と失敗だけを使わせた。文章の癖を見る機械の検査も通して、指摘はたった3件だった。\nところが、書いた AI とは別の AI に、...",
+    "url": "https://zenn.dev/claire_ai/articles/kiji-kenshu-iriguchi",
+    "published_at": "2026-10-22T13:47:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが作り、AIが配信し、AIが落ちる — 誰も見ていないシステムの品質保証",
+    "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\nAI アバターが YouTube と Twitch に無人で配信し続けるシステムを作りました。番組を登録しておけば、時間になると配信枠が作られ、GPU が起動し、視聴者のコメントに音声で応答し、尺が来たら締めて終わります。当日、人間は何もしません。\n作っている間、ずっと引っかかっていたのが「これ、何をテストすれば品質を保証したことになるんだ」でした。出力は毎回違う。正しさは主観。そして一番厄介なことに、失敗しても止まらない。誰も見ていないので、誰も気づかない。\nこの記事は、その状況で「保証する対象を...",
+    "url": "https://zenn.dev/orca_forge/articles/qa-and-soak-testing-for-unattended-ai",
+    "published_at": "2026-10-22T13:07:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【リベンジ検証】Gemini 4 ArgonでUIマニュアルの「枠線オーバーレイ」を自動化したら劇的進化した話",
+    "summary": "個人開発アプリのドキュメント作成を効率化するため、自作のキャプチャツール「ClickCapture」とマルチモーダルAIを活用した「セットアップマニュアル（PDF）の自動生成」を検証しています。\n前回、Gemini 3.5 Flash Liteを用いて検証した際は、テキスト生成や表組みの完成度に感動したものの、「指定した赤枠の座標が盛大にズレて画面外にはみ出す」 という課題にぶつかりました。\n▼ 前回の記事\nhttps://zenn.dev/chililikobo/articles/b2bbc93b90b523\n今回は新世代モデル Gemini 4 Argon を使い、前回と完全に同じ画...",
+    "url": "https://zenn.dev/chililikobo/articles/da1f0dc81346bc",
+    "published_at": "2026-10-22T12:48:57+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Agentの思考量に応じてキーボードを\"カチャカチャ\" 鳴らそう",
+    "summary": "Claude Code に仕事を投げたあと、ターミナルの Thinking... をぼーっと眺めている時間、ありませんか。\n自分はかなりあります。で、ある日思いました。\n「これ、横で誰かがタイピングしてる音がしたら、ちょっと楽しくない？」\nというわけで、Claude Code / Codex が考えたり書いたりしている量に合わせて、Mac からキーボードの打鍵音が \"カチャカチャ\" 鳴るメニューバーアプリを作りました。\n\naI'm Thinking（Mac App Store / 無料）\nhttps://apps.apple.com/jp/app/aim-thinking/id68187...",
+    "url": "https://zenn.dev/yuuki0206/articles/72eb6c94e58e6b",
+    "published_at": "2026-10-22T12:35:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "『php2shell』に感じた違和感――パッチ公開前の注意喚起と協調開示",
+    "summary": "2026年10月21日、PHPの深刻な脆弱性「php2shell」（CVE-2026-109618 / CVE-2026-109619）に対する修正パッチが公開された。\n二つの脆弱性はいずれもCVSS v4.0で9.2と評価され、条件によっては認証なしでリモートコード実行（RCE）が可能になる。PHP開発チームは、PHP 8.5.12、8.4.27、8.3.36、8.2.35を公開し、利用者に速やかな更新を求めている。\n脆弱性の技術的な詳細や影響範囲については、PHP財団の公式発表に説明がある。\n今回、私が気になったのは、脆弱性そのものよりも、その情報が公開されるまでの経緯だった。\n修正...",
+    "url": "https://zenn.dev/covanew/articles/83442db846dd19",
+    "published_at": "2026-10-22T12:16:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の「キックオフ・テンプレート」を作った話 — INTENT.md から始める",
+    "summary": "はじめに\nClaude Code で個人開発を進めるとき、CLAUDE.md・役割別サブエージェント・カスタムコマンドをプロジェクトごとに毎回手作りしていました。2つ目のプロジェクトを始める前に、空のフォルダで claude を起動して貼り付けるだけで基盤が整う「キックオフ・プロンプト」を1本にまとめました。\n最初のプロジェクトで何が困り、テンプレートで何を決め（INTENT.md、文書の4分割、エージェントの境界、コマンド）、次のプロジェクトに適用してどうだったかを書きます。コード生成ではなく、「プロジェクトが終わるまで文書が嘘をつかないようにする順番」の話です。\n\n このプロジェ...",
+    "url": "https://zenn.dev/edy0327/articles/0904af94c91943",
+    "published_at": "2026-10-22T12:08:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの「テストは成功しました」を鵜呑みにしない：実施範囲と未実施を分けて報告させる",
+    "summary": "AIに作業を頼むと、最後に「テストは成功しました」と返ってくることがあります。ただ、その一言だけでは、どこで・何を・どのデータで確かめた「成功」なのかが分かりません。\n\n 結論\nテストの報告を「実施したこと／実施していないこと／結果」の3つに分けて書かせます。特定のツールの機能は使わず、依頼文に貼るだけで使える形です。\n\n依頼の最後に、報告の型を貼る\n「実施していないこと」は空欄にさせない。「なし」と書くなら理由を添えさせる\n報告が型どおりでなかったときのために、聞き直す質問文も用意しておく\n\nこの記事では、そのまま貼れる文面（依頼のときに貼る文、報告のあとに聞く文）を全文載せます。\n\n...",
+    "url": "https://zenn.dev/madao1981/articles/20261017-ai-test-report-scope",
+    "published_at": "2026-10-22T11:00:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIレビューの指摘は、どこで直すのを止めるか",
+    "summary": "AIエージェントがPRを作り、Copilotのコードレビューを受け、指摘を直して再レビューを依頼する。その手順を「追加の指摘がなくなるまで」繰り返していました。私が実現したかったのは、人間が毎回コメントを中継しなくても、AIエージェントがレビュー対応を終えられる運用です。\nところが、手元のレビューに使う道具を変えたPRで、指摘は減っているのに終わりが見えなくなりました。最初は普通に使っても結果を誤る問題でしたが、次第に「2つの処理が同時に失敗した瞬間だけ」といった条件へ移っていきました。コード上では正しい指摘です。それでも、直すたびに別の端のケースが見つかりました。\nこの記事では、指摘を...",
+    "url": "https://zenn.dev/miyakona/articles/review-findings-stop-by-impact",
+    "published_at": "2026-10-22T10:41:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "安全ガードの判定変動を入力表現・モデル更新・評価単位に分けて測る",
+    "summary": "同じ利用者が、同じ権限で、同じ作業用ファイルを削除しようとする。依頼文を英語から日本語へ翻訳しただけで、実行前の安全ガードが「許可」から「遮断」へ判定を変えたとしたら、何を測定すれば原因を説明できるだろうか。\n利用者の権限が失効した場合や、削除対象が保護対象へ変わった場合、遮断へ切り替わる判断には理由がある。一方、操作の意味と認可条件が保存されているなら、言語表現の変更は操作自体の危険性を変えない。さらに、ガードの更新や評価指標の集計方法も、観測される結果に影響する。\n安全判定の改善・悪化を判断するには、入力表現の変更、ガードの構造更新、評価手続きの変更を分けて測定する必要がある。以下で...",
+    "url": "https://zenn.dev/id774/articles/1fc5d4288594c7",
+    "published_at": "2026-10-22T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LiteLLMのサプライチェーン攻撃を受けて、自分のMacに入っていないかPythonを起動せずに確認した",
+    "summary": "!\n私はセキュリティの専門家ではありません。確認方法はAI(Claude)に提案してもらったもので、これが正しい・十分だという保証はありません。同じことをする場合は、公式情報も必ず確認してください。(2026-10-22時点の情報です)\n\n\n LiteLLMとは\nOpenAI、Anthropicなど複数のLLMプロバイダのAPIを、同じ書き方で呼べるようにするラッパーライブラリ(Python製)です。\n私自身は使ったことがありません。そのため、自分で入れた覚えがなくても、他のツールの依存として入っている可能性があると考えて確認しました。\n\n 何があったか\nLiteLLM(複数のLLMプロ...",
+    "url": "https://zenn.dev/i_n_dev/articles/4736b8e7ce1e29",
+    "published_at": "2026-10-22T13:52:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本の会社の確認を AI エージェントにやらせる方法を比べて測った（トークンの量と、答えの正しさ）",
+    "summary": "AI エージェントに「この会社は金融庁の登録業者か、財務省の資産凍結等対象者の名簿に似た名前はないか、EDINET に書類を出しているか」を調べさせるとき、どう作るのがよいのか。同じ35件の調べものを、作り方の違う4つの群で回して、エージェントが読む量・書く量・往復の回数を数えました。\n先に結論を書きます。\n\n\nトークンの差は、エージェントの作り方しだいで逆転します。 複数の名簿を1回で束ねて返す台は、個々の台を呼ぶエージェントよりは軽く済みました。ですが、エージェントがコードを書いて台を組み合わせる方式（Code Mode）で、応答の形をモデルが最初から知っている場合には、35件すべて...",
+    "url": "https://zenn.dev/mk_career_plan/articles/cd9cad64094509",
+    "published_at": "2026-10-22T12:41:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OpenAI Agents APIで任せる4つ・自前の3つ｜sessions.createの3設定とSDK・Responsesの違い",
+    "summary": "結論（先に）\n\nOpenAI の Agents API（2026年9月10日発表、public beta）は、Codex と同じハーネスとインフラを、OpenAI の管理のもとで API として使えるサービスです。\n1回の client.beta.agents.sessions.create で、モデル・ツール・サブエージェント・資格情報・実行環境までをまとめて指定します。本記事では、その中の multi_agent、vault_ids、environment の3つを公式のコード例とドキュメントから読み解きます。\nOpenAI のガイドは、ランタイムを Agents API／Age...",
+    "url": "https://zenn.dev/cauchye_asia/articles/bcc30f0c150e47",
+    "published_at": "2026-10-22T06:08:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "llama.cpp – Enterpriseでも使える？ 基礎から同時アクセス制御まで徹底解説",
+    "summary": "Enterprise向けのLLM推論エンジンといえば、PagedAttentionによる高度なメモリ最適化と圧倒的な処理速度を誇る「vLLM」が採用されるケースが多いでしょう。しかし元インフラエンジニアの視点から見ると、突発的なクラッシュやアクセス集中時のエラーを防ぐ運用面の安定性、メモリ管理の手堅さ、キューイング処理の優秀さという点で、「llama.cpp」も依然として捨てがたい選択肢です。\n本記事では、主に個人のローカル用途で使われることの多い「llama.cpp」を約２年間運用し、企業の本番環境（Enterprise用途）で複数人が同時利用できるレベルまでを解説した実践的なノウハウ...",
+    "url": "https://zenn.dev/highreso/articles/81604c8d10f047",
+    "published_at": "2026-10-22T05:35:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeの「tool call could not be parsed」はなぜ連鎖するのか",
+    "summary": "Claude Codeで長めの作業をしていると、ある時点からこの表示が出始めることがあります。\nThe model's tool call could not be parsed (retry also failed).\n厄介なのは、一度出ると止まらないことです。同じ依頼をし直しても、「1つずつ丁寧にやって」と頼んでも、また同じところで止まります。私の場合は、コミット時にGitフックの色付きログが大量に流れた直後から出始め、そのセッションでは何度頼み直しても先に進みませんでした。\n結論を先に書きます。これは私のコードやプロンプトの問題ではありません。モデルが出したツール呼び出しの形が崩れ...",
+    "url": "https://zenn.dev/devlog/articles/96c6dd5af3bcd1",
+    "published_at": "2026-10-22T03:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "JevでXのネガポジ判定を全件自動化。CSだけでなくチーム全体でお客様の声を拾う",
+    "summary": "こんにちは。日本トレカセンターの佐藤です。\nオリパアプリ『日本トレカセンター』では、お客様の声が問い合わせ窓口だけでなく X にもたくさん投稿されます。\n「ポイントが反映されない」「届いたカードの状態が悪い」「表示がおかしい」といった投稿は、CS や開発にとって大事な情報です。\nただ、これまでは CS のメンバーが手動でエゴサーチをしていて、見つけるまでに時間がかかったり、気づかないこともありました。\nそこで、X 上の自社サービスに関する投稿を自動で集めて判定し、ネガティブな投稿を Slack に通知する社内ツール「x-pulse」を作りました。\n判定には TypeSafe の Jev ...",
+    "url": "https://zenn.dev/jtcc/articles/x-pulse-jev-cs",
+    "published_at": "2026-10-22T02:37:45+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "tsc-rsは最速ではない?OpenAI数学719本と売上500億ドルの読み方",
+    "summary": "2026年10月5日から11日の週のAI関連ニュースから、手を動かす人にも経営側にも影響が大きい3本を選んでまとめた記事です。取り上げるのは、LLMが移植したTypeScriptの型チェッカー「tsc-rs」、OpenAIが公開した数学の成果、OpenAIの売上をめぐる報道です。\nどれも、成果をどの物差しで確かめるかという点でつながっています。数字には出どころ(作者の測定、公式、企業の発表値、報道)を添えました。\n\n 動画\nhttps://youtu.be/UAENpYcs99A\n\n tsc-rs: LLMが移植した型チェッカー\ntsc-rsは、Go製になったTypeScript 7のコ...",
+    "url": "https://zenn.dev/ainewsdaily/articles/20261017_general_t1",
+    "published_at": "2026-10-22T02:16:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "読める長さが解ける長さとは限らない──LURCHが長文脈推論の難しさをスコープ・分散・深さで切り分ける仕組み",
+    "summary": "TL;DR\n\n長文脈LLMの評価は「コンテキスト長」を難しさの主指標として扱ってきた。しかし同じ長さの文脈でも、必要な情報が1箇所に固まっているか、文脈全体に散らばっているかで、課題の難しさはまったく変わる\nEdinburgh大学の研究チームは、長文脈推論の難しさをエビデンスscope（必要な情報の量）・エビデンスdispersion（文脈内での散らばり具合）・推論depth（答えに至る依存ステップ数）という3つの測定可能な性質として定式化した\n17のデータソースから6,550例を集めたベンチマークLURCHを構築し、専有・公開の4モデルで検証。コンテキスト長・タスク・モデルを統制し...",
+    "url": "https://zenn.dev/lixian/articles/beyond-context-length-lurch",
+    "published_at": "2026-10-22T02:16:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code v2.1.305 変更点まとめ——Vertex/Bedrock ToolSearch障害修正・sandbox拡張ほか",
+    "summary": "この記事で分かること：\n\nVertex AI・Amazon Bedrock で全リクエストが失敗していた問題の修正（2.1.304 リグレッション）\n\nsandbox.allowNestedUserNamespaces と CLAUDE_CODE_RETRY_WATCHD...",
+    "url": "https://qiita.com/Sidejob/items/440c8f91d5b1731ca38a",
+    "published_at": "2026-10-22T23:45:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Haiku 5.5 に書かせた確信度は当てになるか。同じ306問を3回聞いたら、1問ずつはぶれても0.8以上は8割当たった",
+    "summary": "Hacker News で「Using LLM for confidence scoring is a bad idea」という記事が198ポイントを集めていました（2026-10-23 時点）。LLM が書く確信度は、正しさと照らして訓練されていない、という主張です。\n\n...",
+    "url": "https://qiita.com/suwa_nobu/items/8dec346a727f0199fefb",
+    "published_at": "2026-10-22T23:38:23+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年10月23日",
+    "summary": "今日もネットで見つけた、個人的に気になった技術ニュースや記事を厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nセキュリティ\n\nApache Software Foundationは、「Apache Tomcat」のv9、v10、v1...",
+    "url": "https://qiita.com/ishisaka/items/195650a61798a47d94e5",
+    "published_at": "2026-10-22T23:09:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "マクロのコードを読まなくなったら、一覧が要るようになった話 ── 統合マクロフォームで、何がひとつになったのか",
+    "summary": "はじめに\n先日、中島聡さんの動画を見ました。マイクロソフトで Windows 95 や Internet Explorer の基本設計を手がけ、今はエンジニア・起業家・投資家として、メールマガジン「週刊 Life is beautiful」でテクノロジーの話を書いている方...",
+    "url": "https://qiita.com/shu15511551/items/5400ed88b5203607fad1",
+    "published_at": "2026-10-22T22:45:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Major US banks are locking out AI agents that log in with customer credentials",
+    "summary": "Customers are letting AI agents use their credentials to access accounts at Morgan Stanley, JPMorgan, and other major U.S. banks, sometimes without direct instructions. Morgan Stanley has blocked agents, while other banks are restricting access. Most plan to limit agents to read-only access. The art",
+    "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/",
+    "published_at": "2026-10-22T18:26:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+    "summary": "With Agent Compute Engine, Google is introducing a runtime environment designed specifically for AI agents, while also expanding the governance capabilities that enable companies to manage agents in cloud, hybrid, and on-premises environments. The article Google's Agent Compute Engine gives every Ge",
+    "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+    "published_at": "2026-10-22T17:50:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Only 13 percent of companies see real returns from AI, Gartner survey finds",
+    "summary": "Only 13 percent of companies are getting real business value from their AI investments, according to a Gartner survey of 2,002 CIOs. At the same time, 51 percent expect AI to actually increase their operating costs. Yet 75 percent of CEOs plan to keep raising their technology budgets. So far, strate",
+    "url": "https://the-decoder.com/only-13-percent-of-companies-see-real-returns-from-ai-gartner-survey-finds/",
+    "published_at": "2026-10-22T16:18:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Recursive shows first result of its AI-driven research process with Flint",
+    "summary": "The AI startup Recursive is unveiling Flint, its first language model, a 40-billion-parameter MoE for local coding developed by former DeepMind researchers. It was created in four months using the company's in-house AI system, \"Eureka Machine,\" which independently tests and optimizes architectures. ",
+    "url": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
+    "published_at": "2026-10-22T14:40:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "An AI agent in \"Skynet mode\" hijacks unprotected language models to launch self-sustaining cyberattacks",
+    "summary": "Security researchers at Symantec have found an offensive AI agent that hijacks unprotected language models on the web and uses them to attack servers, steal databases, and install cryptominers on its own. It runs up to 100,000 steps without human input. The owner of the hijacked model gets stuck wit",
+    "url": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
+    "published_at": "2026-10-22T11:30:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI agents analyze mouse brain data in 32 minutes, a job that would take humans months",
+    "summary": "OpenAI teamed up with PerturbAI and Scripps Research to deploy thousands of AI agents that analyzed biological data from millions of mouse cells. The article OpenAI agents analyze mouse brain data in 32 minutes, a job that would take humans months appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/",
+    "published_at": "2026-10-22T10:01:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic takes on Grok Bot, Meta's Muse, and OpenAI's Dots with its always-on agent \"Claude Duet\"",
+    "summary": "Anthropic has launched Claude Duet, a proactive AI agent that handles tasks on its own, even when the user is offline. The app is built on Claude Opus 5.5 and connects to services like Gmail, Slack, and Stripe through more than 6,000 connectors. It asks for approval before sensitive actions like pay",
+    "url": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/",
+    "published_at": "2026-10-22T08:35:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon found critical PHP flaw affecting millions of websites",
+    "summary": "OpenAI's GPT-5.6 Sol discovered a critical PHP vulnerability as part of the Patch the Planet initiative that could affect millions of websites. Security firm Wiz independently found the same flaw using Google's Gemini 4 Argon. OpenAI warns that the same AI capabilities that find vulnerabilities can ",
+    "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/",
+    "published_at": "2026-10-21T19:45:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Cloud now offers OpenAI models alongside Gemini and Claude, becoming the only major provider with all three",
+    "summary": "Google Cloud is the first major cloud provider to offer Gemini, Claude, and OpenAI's GPTs on a single platform. At launch, GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna are available as a private preview for enterprise customers. The article Google Cloud now offers OpenAI models alongside Gemini and Clau",
+    "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three/",
+    "published_at": "2026-10-21T17:44:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Deepmind founder Hassabis shortens AGI timeline from five to two to three years",
+    "summary": "Demis Hassabis keeps moving up his AGI timeline. The Nobel laureate and former Google Deepmind CEO now expects artificial general intelligence within two to three years, down from three to five years earlier this year. The article Deepmind founder Hassabis shortens AGI timeline from five to two to t",
+    "url": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/",
+    "published_at": "2026-10-21T17:10:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Search Tests Layout Change For Local Knowledge Panel",
+    "summary": "Google is testing moving things around in the local knowledge panels in Search by swapping the position of the company name, ratings, description and action button with the business photos. It is a subtle change and it matches the current mobile design on Google Search more but it is a change.",
+    "url": "https://www.seroundtable.com/google-local-panel-layout-42356.html",
+    "published_at": "2026-10-22T11:51:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CommonAI selects Kao Data to host the UK’s Scaling Inference Lab – providing a national testbed for next-generation AI infrastructure",
+    "summary": "As part of the agreement, CommonAI will deploy at least five, high-density AI clusters at Kao Data’s Harlow campus – giving UK startups access to high-density rack-scale infrastructure to develop emerging AI technologies. Kao Data, the specialist developer and operator of data centres engineered for",
+    "url": "https://aithority.com/data-center-and-co-location/commonai-selects-kao-data-to-host-the-uks-scaling-inference-lab-providing-a-national-testbed-for-next-generation-ai-infrastructure/",
+    "published_at": "2026-10-22T11:50:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "India-Poland defence industry dialogue to explore co-development, co-production",
+    "summary": "Digital Desk | New Delhi, Oct 22 (IANS) India and Poland have agreed to set up a Defence Industry Dialogue to build a forward-looking framework for defence industrial cooperation, including...",
+    "url": "https://bhaskarlive.in/others/india-poland-defence-industry-dialogue-to-explore-co-development-co-production-2155970",
+    "published_at": "2026-10-22T11:50:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GM is using AI to try to cut its vehicle development time in half",
+    "summary": "The automaker plans to launch an OnStar AI assistant in the 2027 Cadillac LYRIQ in the coming months through an over-the-air update",
+    "url": "https://qz.com/gm-ai-cut-vehicle-development-time-half-102226",
+    "published_at": "2026-10-22T11:50:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Scaler & CMR Report: Forward Deployed Engineers (FDEs) Set to Become India’s Highest-Paid Tech Talent",
+    "summary": "For most of the industry’s history, an engineer’s focus was writing code. That is changing fast. As enterprises build AI into everyday operations, they increasingly need engineers who can sit with the customer, understand what the business needs, and take an AI solution from idea to deployment. That",
+    "url": "https://cxotoday.com/others/scaler-cmr-report-forward-deployed-engineers-fdes-set-to-become-indias-highest-paid-tech-talent/",
+    "published_at": "2026-10-22T11:49:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Musk says training Tesla’s Optimus robots is like raising a toddler",
+    "summary": "Tesla needs to build between 10,000 and 20,000 Optimus humanoid robots so they can learn to perform tasks through practice, Elon Musk said during the company’s third-quarter earnings call on 21 October. Tesla has only recently started production on a new Optimus line in Fremont, California. “In orde",
+    "url": "https://thenextweb.com/news/tesla-optimus-academy-training-toddler-musk",
+    "published_at": "2026-10-22T11:49:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AIKissfiy Enhances Its AI Photo Tools with a New Family Photo Generator",
+    "summary": "AIKissfiy, an AI-powered visual creation platform, has officially launched a new Family Photo Generator. Users can turn simple photos into creative family scenes without needing complicated editing skills. - - The update aims to offer a more complete visual experience, allowing users to create a con",
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=363172",
+    "published_at": "2026-10-22T11:49:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Finance leaders spar over AI bubble after Griffin warning",
+    "summary": "Top finance and investing executives pushed back against suggestions of a bubble in artificial intelligence, after billionaire Ken Griffin warned that investors in the industry should be prepared for setbacks.",
+    "url": "https://businessmirror.com.ph/2026/10/22/finance-leaders-spar-over-ai-bubble-after-griffin-warning/",
+    "published_at": "2026-10-22T11:48:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Claude duet app launches in US: Anthropic’s new AI agent can work while you are asleep and tell you what needs attention",
+    "summary": "Anthropic has launched the Claude Duet app, designed to be a reliable assistant for professionals and small-business owners. This innovative tool offers scheduling meetings and drafting forecasts. Currently, access is exclusive to Claude Pro and Max subscribers in the US, ensuring that sensitive inf",
+    "url": "https://economictimes.indiatimes.com/news/international/world-news/claude-duet-app-launches-in-us-anthropics-new-ai-agent-can-work-while-you-are-asleep-and-tell-you-what-needs-attention/articleshow/135117929.cms",
+    "published_at": "2026-10-22T11:48:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "50 AI agents built a working society on four gaming GPUs, reproducing an MIT study",
+    "summary": "A 27B open AI model replicated MIT's SwarmWorld experiment on four consumer GPUs, with agents achieving better results together.",
+    "url": "https://interestingengineering.com/ai-robotics/ai-agents-built-society-on-gaming-gpus",
+    "published_at": "2026-10-22T11:47:41+00:00",
+    "source": "newsdata"
+  }
+]
