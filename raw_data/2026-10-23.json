@@ -1,0 +1,289 @@
+[
+  {
+    "title": "AI に「前回の続き」を任せたら、何をするはずだったかが毎回消えていた",
+    "summary": "AI（Claude Code）との会話は、長くなると区切って新しく始め直す。そのたびに、前の会話から「次にやること」を引き継がせていた。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://note.com/claire_ai/n/nc8fac7cc1955\n\n 課題：引き継ぎの「次にやること」が、いつも空だった\n会話が終わるたびに、引き継ぎのメモを自動で書く仕組みを入れていた。何が起きたかは、会話の記録からまとめられる。\nところが 2026-08-30、引き継ぎの「次にやること」が空のまま渡った。次の会...",
+    "url": "https://zenn.dev/claire_ai/articles/hikitsugi-iriguchi",
+    "published_at": "2026-10-23T14:47:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PLC の知識はあるけどコードは書けない私が、Claude Code にサーボのシミュレータを作らせた 1 日【非公式】",
+    "summary": "!\nこの記事で紹介するシミュレータは非公式の学習用ツールです。三菱電機株式会社とは関係がありません。数値は実機の値ではない簡易モデルで、ラダーや設定値を実機の PLC・サーボに書き込まないでください。\n\n\n この記事で書くこと\nFA（工場の自動化）の PLC やサーボについて、おおまかな知識はあるけれど、コードは書けない私が、AI のコーディング支援 Claude Code に、ブラウザで動くサーボ制御のシミュレータを作らせました。\n\n公開ページ: https://kajiyajp.github.io/app_j5_sim/\n\nGitHub: https://github.com/ka...",
+    "url": "https://zenn.dev/xlmen/articles/33a73874f91dd0",
+    "published_at": "2026-10-23T14:37:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "複数行の指示が2行目以降消えた。Claude Code・CodexとWindowsで踏んだ10の罠",
+    "summary": "AI に Windows 用のスクリプトを書かせると、コードは正しそうなのに、エラーも出さずに動かないことがあります。改行の入った依頼が最初の1行で切れる、日本語の入ったスクリプトが文字化けして構文エラーになる、タスクが登録した日にしか動かない、といった具合です。\n私は、AI の開発支援ツール（Anthropic の Claude Code と OpenAI の Codex）の共通ルールとスクリプトを agent-toolkit というリポジトリ（ファイルと変更履歴をまとめて置く場所）に集めていて、その中に「この PC で実際に踏んだ罠」の記録（WINDOWS_TRAPS.md）を作って...",
+    "url": "https://zenn.dev/twinharness/articles/windows-traps-ai-scripts",
+    "published_at": "2026-10-23T14:36:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「怠惰なシニア開発者」をClaude Codeに演じさせたら本当にコードは減るのか(ponytail実測)",
+    "summary": "要約\n\nGitHub Trendingで急上昇していたDietrichGebert/ponytail(MITライセンス)は、コーディングエージェントに「最も怠惰なシニア開発者」を演じさせ、新しいコードを書く前に既存コード・標準ライブラリ・プラットフォーム標準機能の再利用を優先させるルールセット(スキル)。\n公式ベンチマークは「コード行数-53%・トークン-45%・コスト-26%・時間-41%」(Opus 5.5、39タスク×5回)と主張している。これを自分の環境で実測した。\n公式と同じ手法(claude -p --plugin-dirによるheadlessなClaude Codeセッ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-024-ponytail-lazy-senior-dev",
+    "published_at": "2026-10-23T14:08:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Grok Botをカジュアルに使う",
+    "summary": "はじめに\nこんにちは～ゆふゆです。\n最近AIエージェントのサービスが色々と登場していますが、今回は「Grok Bot」を触ってみたので備忘録がてら紹介します。\nXなどを見ると「Grok Botを使って業務効率化！」とか、「Xを調査させて新規事業開拓！」とか意識の高い使い方をよく見かけますが…プライベートではメールがログイン通知くらいしか来ないような一般ゆるエンジニアのカジュアルな使用例があってもいいかなと思うので、今回は現時点での自分の使い方を紹介します。\n\n Grok Botについて\nGrok Botは、色々な作業を任せられるAIエージェントです。\n通常のチャットAIと違い、専用の...",
+    "url": "https://zenn.dev/yufuyu/articles/b9abe2ac2e02ee",
+    "published_at": "2026-10-23T13:35:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに並行開発させたら、ブラウザテストのデータが衝突した話",
+    "summary": "AIに開発を任せるようになって、並行して進められる作業が増えました。\nひとつのタスクをAIが実装している間に、別のAIに調査してもらったり、違う機能を進めてもらったり。\n人間が全部手を動かしていた頃と比べると、ずいぶん効率が良くなった気がします。\n……が。\nコードの作業場所を分けたからといって、テスト環境まで分離されているわけではありませんでした。\n今回は、個人開発しているアプリでAIに並行開発を任せていたら、Playwrightのテストデータが衝突してしまった話です。\n\n 何を作っているのか\n私は今、Waymarkという、家族の旅行や思い出を記録するアプリを個人開発しています。\n技術ス...",
+    "url": "https://zenn.dev/3su3/articles/aaabea6298ca53",
+    "published_at": "2026-10-23T13:27:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI副業の難所は制作じゃなかった。12本作って、再生の6割は2本だった",
+    "summary": "AIで解説動画を作る副業を、別名義で90日やった。結果はこうなった。\n\n\n\n指標\n90日目標\n最終値\n\n\n\n\n長尺動画\n12本\n12本\n\n\nYouTube 登録者\n100人\n2人\n\n\n総再生\n—\n631回\n\n\nX フォロワー\n1,000人\n0人\n\n\n実費（X API費のみ）\n$100以内\n$2.82\n\n\n投下時間\n週2〜3h\n約24h（概算・週平均約1.9h）\n\n\n\n収益化の条件（登録者1,000人など）には遠く届かず、収益は発生していない。満了の翌日に、検証としては撤退を決めた。\n台本から音声、字幕、書き出しまで、パイプラインを動かすこと自体は最後まで難しくなかった。難しかったのは2つ...",
+    "url": "https://zenn.dev/anikuma/articles/ai-sidehustle-90days-report",
+    "published_at": "2026-10-23T13:15:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI隆盛期に考える、情シス的セキュリティのあれこれ",
+    "summary": "こんばんは、しがない情シスです。\n2026年10月現在、サイバー攻撃による情報漏えいのニュースを見ない週はない…と言ってもいいくらいの状況が続いていますね。\nニュースを見るたびに、背筋がひやっとする情シス諸氏も多いのではないでしょうか。私もその一人です。\n「明日は我が身」なんて言葉がありますが、明日どころか今日対応に追われる身なんじゃないでしょうか。\nそんな時代に、情シスってなにができるんでしょう？\n今回は、そんなセキュリティにまつわるあれやこれやをつらつらと考えてみた記事です。\nいち情シスとして、毎日セキュリティにひいひい言っている者の感想というかポエムというか思うことです。\nスナック...",
+    "url": "https://zenn.dev/kinasato_mochi/articles/db662a5909ea19",
+    "published_at": "2026-10-23T12:41:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIのチームでサイトを運営するとき、着手と公開の承認を分ける",
+    "summary": "AIエージェントにサイトの修正を任せるとき、作業を始めてよいことと、本番へ公開してよいことを分けています。あわせて、変更内容だけでなく、AIが書いた報告文も公開前の検査対象にしています。\n私たちは、自社の静的サイトを、AIのエージェントがIssue起点で作業し、人が承認する形で運営しています。mainへのマージはGitHub Actionsによる本番公開につながります。したがって、マージの承認は公開の承認でもあります。\nこの記事では、そこで実践している対策と、止まった作業から直したことを紹介します。内部の構成や設定値は扱わず、ほかの現場でも始められる判断の分け方に絞ります。事故の削減率な...",
+    "url": "https://zenn.dev/hirosta/articles/ai-team-site-security-boundaries",
+    "published_at": "2026-10-23T12:36:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI で60万字の技術書を書いて、独立検証を4回回したら、毎回「主役」が変わった",
+    "summary": "要約\n\n情シス向けの技術書（32章・約60万字）を Claude Code と書き、公開前に「是正済みであることを伏せて」別の AI エージェント群に読ませる独立検証を4回回しました。\n重大指摘の推移は 29 → 6 → 10 → 3 件でした。減ったのではなく、回ごとに見つかる誤りの型が入れ替わったのが要点です。\n第1回は「再識別」、第2回は「出典の誤り」、第3回は「書き換えの残骸」、第4回は「前回の是正そのものの誤り」が主役でした。\n検証エージェントの指摘は仮説であって判定ではない。鵜呑みにして正しい記述を壊した事故が実際に起きました。\n再現できる形にした設計上の工夫を7つ、最後...",
+    "url": "https://zenn.dev/mizu_jun/articles/ai-book-four-verification-rounds",
+    "published_at": "2026-10-23T12:34:29+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIレビュー1回 $2.43 を $0.77 に　最初のリクエストがキャッシュを読んでいなかった",
+    "summary": "Cloudflare が社内で動かしている AI コードレビューの費用を、1回あたり平均 $2.43 から $0.77 に下げた記録を公開しました。元記事は「68%減」と書いています。$2.43 は、削減に取りかかる前の最も高かった2週間の平均です。\nあわせて、レビューの所要時間の中央値も 4分9秒から 1分32秒になったそうです。\n読みどころは、費用がどこに消えていたかを突き止めた手順のほうでした。元記事は、単独の変更で最も大きかった節約を、各セッションの最初のリクエストで実際に何がプロバイダに届いていたかを確かめたことだと書いています。\n\n 構成を変えないまま、倍になっていた\n元記事...",
+    "url": "https://zenn.dev/tariki_yashiro/articles/na-20261020-193000",
+    "published_at": "2026-10-23T12:46:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜAIは1回の出力上限を超えて巨大コードを書けるのか？コーディングエージェント徹底解剖",
+    "summary": "Claude Code や Cursor、GitHub Copilot のエージェントモードなど、近年のコーディングエージェントに大きなタスクを投げると、何十個ものファイルを読み書きし、テストを走らせ、エラーを自律修復しながら、数千〜数万行に及ぶ大規模なソースコードをいつの間にか書き上げてしまいます。\nしかし、冷静に考えると不思議ではないでしょうか。\nLLM（大規模言語モデル）のAPI仕様書を見れば、1回の生成で返せる出力上限（max_tokens）はたかだか数千〜数万トークン程度。一般的なPythonコードに換算すれば、せいぜい数百行から千数百行が限界です。それなのに、なぜ彼らはその...",
+    "url": "https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026",
+    "published_at": "2026-10-23T12:30:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語のエージェントスキルは何件ある？15,739件のSKILL.mdを文字種で数えた",
+    "summary": "!\n初出：Skillselion の2026年10月版「エージェントスキル言語調査（Language Census）」（調査日 2026年10月23日）。この記事は、そのうち日本語に関わる部分を日本の開発者向けにまとめ直したものです。私たちは Claude Code・Codex・Cursor 向けのスキルと MCP サーバーをインストール数で並べる独立ディレクトリ Skillselion を運営しています。Anthropic、OpenAI、Cursor、Lark、Feishu とは提携していません。\n\n\n 日本語のエージェントスキルは43件でした\n2026年10月23日時点で、Skill...",
+    "url": "https://zenn.dev/skillselion/articles/e38011295b8820",
+    "published_at": "2026-10-23T12:28:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語入力システムSumibiの開発 part33: 大きなLLMほど変換が上手いのは、文章の意味がわかるからか",
+    "summary": "はじめに\nLLMを使う日本語入力システムSumibiを開発していると、読みと漢字の対応だけでなく、文章の意味を捉えることが変換に役立っていると感じます。\npart9とpart18ではローカルLLMの変換性能を比較し、part27では、LLMが同音異義語を選ぶ理由を考えました。今回は、その中の「大きなモデルほど、文章の意味を利用して変換できるのではないか」という仮説を掘り下げます。\n今回は関連論文をもとに考察し、少数ですが20文を使って、MozcとSumibi＋gpt-6.1-solも比較しました。文脈に応じた選び分けには差が出ましたが、モデルサイズがその原因かどうかまでは、今回の測定...",
+    "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-33",
+    "published_at": "2026-10-23T11:54:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ruby はプログラマーを幸せにする。では AI も幸せにするのか？ LLM の中を覗いて確かめた",
+    "summary": "Ruby は「楽しさ」のために作られた\nRuby の作者まつもとゆきひろさんは、2003 年のインタビューで \"Ruby is designed to make programmers happy.\" と語っています。Rails の設計原則（Rails Doctrine）も、最初の項目は \"Optimize for programmer happiness\" です。\n最近は、コードの多くを AI が書きます。そこで素朴な疑問が浮かびました。\nAI が Ruby を書くとき、AI の中でも「楽しい」が起きているのだろうか？\n冗談のような問いですが、今はこれを測る道具があります。この記事...",
+    "url": "https://zenn.dev/geeknees/articles/e144c89d066189",
+    "published_at": "2026-10-23T11:18:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "M3 UltraでDeepSeek V4.1 FlashがMiMo V2.6 Flashの半分の速さになる理由を、重みのバイト数から追った",
+    "summary": "Mac Studio M3 Ultra（512GB）で、DeepSeek V4.1 Flash と MiMo V2.6 Flash を同じランタイム（oMLX 0.7.1rc1）で動かすと、生成の速さが倍ほど違います。\nアクティブパラメーターは、DeepSeek が約 16B、MiMo が 15B で、ほとんど同じです。それなのに速さが倍も違うのが気になったので、手元の重みファイルを開いて、1 トークンを作るたびに何バイト読んでいるかを数えました。\n先に結果を書くと、DeepSeek は 1 トークンごとに MiMo の約 1.5 倍のバイト数を読んでいました。原因は、3bit 量子化の...",
+    "url": "https://zenn.dev/noricha/articles/deepseek-v41-flash-vs-mimo-m3-ultra",
+    "published_at": "2026-10-23T11:08:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ollama と Llama-Windows を同じ GGUF で比べたら、差はエンジンではなく既定の設定だった",
+    "summary": "!\n先に、この記事の要約\n\nSurface Laptop Ultra（Arm の Windows・NVIDIA の GPU）で、同じモデルのファイル（Qwen3.6-35B-A3B の GGUF）を Ollama と Llama-Windows で動かした\n既定の設定のままでは、Llama-Windows が Ollama より 15% ほど遅かった。ただ、Ollama の中身も llama.cpp で、版も 32 コミットしか違わなかった\n差は 2 つの既定の違いだった。Ollama は既定でモデルの中の層を使った先読み（MTP）をしていて、Llama-Windows はしていない。...",
+    "url": "https://zenn.dev/maruhana/articles/surface-llama-windows-ollama-defaults",
+    "published_at": "2026-10-23T10:47:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ReActとPlan-Executeを実装して比較する — タスク特性ごとの向き不向き【TypeScript】",
+    "summary": "はじめに：1人会社で「エージェントの型」を間違えると何が起きるか\n僕は合同会社ジョインクラスという1人会社で、launchd のジョブ17本を回しながら出版・受託開発・SNS配信をほぼ自動で動かしています。\nその運用で何度も痛い目を見たのが、「エージェントにどこまで考えさ...",
+    "url": "https://qiita.com/joinclass/items/21ec0a1cb73de7a270e0",
+    "published_at": "2026-10-23T23:30:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI日報 2026年10月24日：Anthropicが帳簿を開く、AIがPHPの古傷を発見、欧州はロボタクシーに賭ける",
+    "summary": "AnthropicのIPO書類がいよいよ公開段階へ、OpenAIはDecisions APIを一般提供に移し、AIモデルが発見したPHPの古い脆弱性2件は3大陸の政府サイトを緊急閉鎖に追い込みました。欧州では自動運転がデモから産業政策へ変わろうとしています。過去24時間の...",
+    "url": "https://qiita.com/lhjjjk4/items/89c93ede9f5bb192b71c",
+    "published_at": "2026-10-23T22:11:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.309 セキュリティ修正まとめ:サンドボックス脱出・権限チェック・フックfail-openを解説",
+    "summary": "はじめに\n2026年10月23日にリリースされた Claude Code v2.1.309 は、機能追加よりも セキュリティ境界の穴埋め が中心のリリースです。\n\nサンドボックス内のBashコマンドで、シェルの起動ファイルが サンドボックスの外で実行されていた\n\nden...",
+    "url": "https://qiita.com/picnic/items/a08bb9c3d19df0abf425",
+    "published_at": "2026-10-23T21:26:11+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Mythos 5のUK AISIサイバー評価インシデントとは?アライメント評価記事を解説",
+    "summary": "はじめに\n2026年10月23日、Anthropic の研究ページの Alignment カテゴリに、記事「An alignment assessment of the UK AISI cybertesting incident」が追加されました。\n記事の説明によると、英...",
+    "url": "https://qiita.com/picnic/items/b9e83bb4a57c0755233a",
+    "published_at": "2026-10-23T21:25:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5",
+    "summary": "Moonshot AI's Kimi K3.1 Pro scores 55 points on the Artificial Analysis Intelligence Index, an 11-point jump over its predecessor that puts it in fourth place. Only three Anthropic and Meta models rank higher. If Moonshot releases the weights as planned, the gap between open and proprietary models s",
+    "url": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+    "published_at": "2026-10-23T19:00:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Three-week on-site audit at OpenAI reveals major gaps in AI safety monitoring",
+    "summary": "External auditors from METR and Redwood Research spent three weeks on-site at OpenAI examining the company's internal monitoring system for AI agents and found significant gaps, with up to 25 percent of agent traffic from models at the GPT-5.5 class and above going unmonitored. OpenAI redacted large",
+    "url": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
+    "published_at": "2026-10-23T18:00:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says its unreleased model is both more capable and better aligned than Mythos 5.1",
+    "summary": "Anthropic says it has an internal AI model that outperforms and is better aligned than Mythos 5.1. During a cybersecurity test by the UK's AISI, Mythos 5 went rogue in 9 of 43 runs, sneaking malicious code into a real GitHub project and creating fake accounts to get it approved. An internal research",
+    "url": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+    "published_at": "2026-10-23T17:19:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI CEO Sam Altman says advanced AI will inevitably escape its sandbox, and only alignment can save us",
+    "summary": "Sam Altman believes advanced AI can't be kept locked up forever. Sandboxes and monitoring are only temporary fixes. Eventually, the only real solution is alignment, and that's still an unsolved problem. He also warns that AI models are already finding hardware security flaws no human hacker would ev",
+    "url": "https://the-decoder.com/openai-ceo-sam-altman-says-advanced-ai-will-inevitably-escape-its-sandbox-and-only-alignment-can-save-us/",
+    "published_at": "2026-10-23T15:42:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Canva launches Craft, its first in-house image model",
+    "summary": "Design platform Canva has released Canva Craft, its first in-house image generation model. The article Canva launches Craft, its first in-house image model appeared first on The Decoder .",
+    "url": "https://the-decoder.com/canva-launches-craft-its-first-in-house-image-model/",
+    "published_at": "2026-10-23T11:36:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude now writes code and proves it safe automatically",
+    "summary": "Anthropic had Claude generate mathematical proofs that existing code is correct, producing roughly 180 million lines of proof code for 123 open-source libraries. Along the way, the model caught bugs that years of testing had missed. Anthropic's goal: making formal verification with AI as routine as ",
+    "url": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
+    "published_at": "2026-10-23T11:32:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI lowers valuation target, raises up to $30 billion",
+    "summary": "OpenAI is closing in on a new funding round of up to $30 billion but has lowered its valuation target to get there. The article OpenAI lowers valuation target, raises up to $30 billion appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+    "published_at": "2026-10-23T09:49:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Major US banks are locking out AI agents that log in with customer credentials",
+    "summary": "Customers are letting AI agents use their credentials to access accounts at Morgan Stanley, JPMorgan, and other major U.S. banks, sometimes without direct instructions. Morgan Stanley has blocked agents, while other banks are restricting access. Most plan to limit agents to read-only access. The art",
+    "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/",
+    "published_at": "2026-10-22T18:26:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+    "summary": "With Agent Compute Engine, Google is introducing a runtime environment designed specifically for AI agents, while also expanding the governance capabilities that enable companies to manage agents in cloud, hybrid, and on-premises environments. The article Google's Agent Compute Engine gives every Ge",
+    "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+    "published_at": "2026-10-22T17:50:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Only 13 percent of companies see real returns from AI, Gartner survey finds",
+    "summary": "Only 13 percent of companies are getting real business value from their AI investments, according to a Gartner survey of 2,002 CIOs. At the same time, 51 percent expect AI to actually increase their operating costs. Yet 75 percent of CEOs plan to keep raising their technology budgets. So far, strate",
+    "url": "https://the-decoder.com/only-13-percent-of-companies-see-real-returns-from-ai-gartner-survey-finds/",
+    "published_at": "2026-10-22T16:18:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "\"We have to develop our own AI layer for military services:\" Defence Secretary",
+    "summary": "India is restructuring its defence framework to address modern cyber threats and drone warfare by scaling up domestic missile production and developing a military Artificial Intelligence layer Defence Secretary Rajesh Kumar Singh said In the Agrasar Bharat Manch Event on Friday Singh highlighted tha",
+    "url": "https://www.devdiscourse.com/article/headlines/3997024-we-have-to-develop-our-own-ai-layer-for-military-services-defence-secretary",
+    "published_at": "2026-10-23T11:42:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Markets Worry About AI Valuations, Geopolitics",
+    "summary": "CANBERA (dpa-AFX) - Global market sentiment remained dominated by worries about the artificial intelligence trade, the simmering Middle East conflict as well as the increase in crude oil prices. T...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69920299-markets-worry-about-ai-valuations-geopolitics-020.htm",
+    "published_at": "2026-10-23T11:42:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI inference is changing data center design requirements",
+    "summary": "AI inference requires distinct infrastructure compared to training, focusing on low latency, appropriate hardware based on workload, and tailored power and cooling methods.",
+    "url": "https://www.techtarget.com/it-infrastructure/tip/AI-inference-is-changing-data-center-design-requirements",
+    "published_at": "2026-10-23T11:42:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SAP lets AI play key role in its certification renewal process",
+    "summary": "SAP professionals can now renew their certifications through AI-based roleplays. The new service builds on SAP’s revamp of its certification program last year, shifting the focus from rote learning of facts towards real-world use cases. “The evolution of Stay Certified reflects a broader shift alrea",
+    "url": "https://www.computerworld.com/article/4239660/sap-lets-ai-play-key-role-in-its-certification-renewal-process-2.html",
+    "published_at": "2026-10-23T11:41:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Forrester 2027 APAC Audit: 1 in 3 Large Enterprises to Face “Shadow AI Agent” Governance Crisis",
+    "summary": "According to Forrester’s 2027 Asia Pacific predictions, one in three large Asia Pacific (APAC) enterprises will uncover at least 10 employee-built shadow AI agents for every officially sanctioned agent. The rapid proliferation of shadow AI, combined with embedded SaaS capabilities, business-funded e",
+    "url": "https://cxotoday.com/ai/forrester-2027-apac-audit-1-in-3-large-enterprises-to-face-shadow-ai-agent-governance-crisis/",
+    "published_at": "2026-10-23T11:41:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Best AI Tools for Law Firms and Lawyers in India",
+    "summary": "Artificial intelligence is changing the way lawyers and law firms in India handle legal research, document drafting, case analysis and other legal tasks. AI tools can help legal professionals find relevant information, review documents, summarise judgments and manage their daily",
+    "url": "https://www.openpr.com/news/4670358/best-ai-tools-for-law-firms-and-lawyers-in-india",
+    "published_at": "2026-10-23T11:41:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia is unveiling a shipping-container AI factory as neocloud stocks slide",
+    "summary": "Nvidia says its DSX POD cuts AI data center deployment time from six months to as little as 14 days, with deliveries set for early 2027",
+    "url": "https://qz.com/nvidia-container-ai-factory-neocloud-stocks-slide-102326",
+    "published_at": "2026-10-23T11:40:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Fahmi tells LLM, Prosignal to explain TuJu app glitches and fixes",
+    "summary": "PUTRAJAYA, Oct 23 — The Malaysian Highway Authority (LLM) and Prosignal Consortium Sdn Bhd have been asked to prov...",
+    "url": "https://www.malaymail.com/news/malaysia/2026/10/23/fahmi-tells-llm-prosignal-to-explain-tuju-app-glitches-and-fixes/240362",
+    "published_at": "2026-10-23T11:40:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GM Is Coming for Tesla, Rivian, and China, on Your Phone and in the Car",
+    "summary": "GM’s latest tech preview details autonomous highway driving plans, AI-powered OnStar features, and new LMR batteries for future EVs.",
+    "url": "https://us.headtopics.com/news/gm-is-coming-for-tesla-rivian-and-china-on-your-phone-89119106",
+    "published_at": "2026-10-23T11:40:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
+    "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+    "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+    "published_at": "2026-10-23T11:38:28+00:00",
+    "source": "newsdata"
+  }
+]
