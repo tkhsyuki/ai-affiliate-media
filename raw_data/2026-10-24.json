@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Claude Code の auto mode に止められた操作を、会話ログから数える",
+    "summary": "laude Code の auto mode は、許可を求めずに作業を進めるかわりに、別のモデル（分類器）が操作を一つずつ見て危ないものを止めます。使っていると「よく止められる」という印象が残りますが、実際の回数は画面からは分かりません。\n会話ログには、止められた操作が理由付きで残っています。これを数える小さなスクリプトを書きました。手元の約1か月分では、19,952 回のツール呼び出しのうち、止められたのは 62 件（約0.3%） でした。\n※ 環境は Windows、Claude Code 2.1.296 です。\n\n ログのどこに残っているか\n会話ログは ~/.claude/proj...",
+    "url": "https://zenn.dev/masaki_mori72/articles/0b191e77715037",
+    "published_at": "2026-10-24T17:24:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "仕様駆動開発（SDD）とテスト駆動開発（TDD）の違いを徹底比較：BDD・DDDなど「〇〇駆動開発」もまとめて整理",
+    "summary": "AIコーディングの広がりとともに、「仕様駆動開発（Spec-Driven Development、SDD）」という言葉をよく聞くようになりました。一方で、昔からある「テスト駆動開発（Test-Driven Development、TDD）」も、AIにコードを書かせる時代に改めて注目されています。\n名前が似ていて、どちらも「先に何かを書いてから作る」ので、違いが分かりにくいと感じる人も多いと思います。さらに世の中には、BDD、ATDD、DDD、FDD……と「〇〇駆動開発」がたくさんあります。\nこの記事では、SDDとTDDの違いを、同じ機能を例にしてできるだけ細かく比べます。そのうえで、ほか...",
+    "url": "https://zenn.dev/shoyomayabot/articles/spec-driven-vs-test-driven",
+    "published_at": "2026-10-24T17:22:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "専用PCを持つAIエージェント『Muse』を試した — チャットAIと決定的に違う3つの点",
+    "summary": "はじめに\nチャット型のAIは「聞けば答える」道具です。便利ですが、結局手を動かすのは人間でした。\nMetaが提供する個人向けAIエージェント Muse は、ここが根本的に違います。Museには 専用のコンピュータ（仮想マシン）とブラウザが割り当てられていて、指示を受けたら自分で調べ、ファイルを操作し、成果物を作って届けるところまでやります。2026年10月23日に日本でも正式提供が始まったので、実際に使ってみた所感を技術寄りにまとめます。\n\n 決定的に違う3つの点\n\n 1. 「答える」のではなく「終わらせる」\nたとえば寝る前に「この市場を調べて、要点を資料にまとめておいて」と一言渡す...",
+    "url": "https://zenn.dev/dev_pjs/articles/6da7553f11feb2",
+    "published_at": "2026-10-24T16:29:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の設定ファイルをブラウザで作れる無料ツールを作りました(情シス向け・5本)",
+    "summary": "社内に Claude Code(Anthropic 社が提供する、ターミナルで動く AI コーディングエージェント)を配るときに必要になる設定ファイルを、ブラウザで選ぶだけで作れる無料ツールを5本作りました。\nこの記事では、作った理由、各ツールで何ができるか、実際に入力して出た結果、作るときに気をつけたことをまとめます。\nhttps://chuki-dx.github.io/claudecode-tools/\n\n こんな人に向けて\n\n社内で Claude Code を試す・配る立場の情シス・社内SEの方\nsettings.json や CLAUDE.md を、人ごとに手で書いてばらついて...",
+    "url": "https://zenn.dev/chukidx_dev/articles/claudecode-tools-intro",
+    "published_at": "2026-10-24T15:21:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIによる攻撃を前提にしたセキュリティ対策",
+    "summary": "この記事では、2026年10月までの攻撃の状況からAIで何が変わったかを読み取り、攻撃者がAIを使うことが当たり前になる前提で、組織が取るべき対策を考えます。\n\n 2026年に起きていること\n\n 公開済みの脆弱性の早い悪用\nGoogle Threat Intelligence Groupの分析では、実環境で新たに悪用が確認された脆弱性は、2025年の月平均10.5件から、2026年1月から8月の月平均18件に増えました[1]。増えた分の多くは修正版がすでに公開されている脆弱性で、修正版がない段階で悪用されるゼロデイの増加はわずかでした。攻撃者は修正版の公開を手がかりに、まだ更新していない...",
+    "url": "https://zenn.dev/k_mt/articles/0c45c4be2ca79f",
+    "published_at": "2026-10-24T14:53:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【VS Code拡張自作】AI時代の表データ編集でデータ破壊を防ぐ「Structured Data Editor」を公開した話",
+    "summary": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\n今回は、生成AI時代のデータ管理やプロンプト開発における現場の摩擦を解消するため、VS Code拡張機能 「Structured Data Editor」 を自作して公開しました。\n本記事では、このツールを開発した背景にある切実な課題意識と、安全性を最優先した設計思想について詳しく解説します。\n\n\n 1. なぜ今、この拡張機能が必要だったのか...",
+    "url": "https://zenn.dev/ai_nexus_jp/articles/vscode-structured-data-editor",
+    "published_at": "2026-10-24T14:28:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code から呼べるローカル音楽生成環境を作った（ACE-Step 1.5 + MCP + Apple Silicon）",
+    "summary": "はじめに\n前回の記事では、Claude Code から呼べるローカル画像生成環境を作りました。\nゲームや動画の素材をローカルだけで作りたいので、次は BGM です。\n音楽生成モデルの ACE-Step 1.5 を使って、Claude Code に「子ども向けゲームのタイトル画面の BGM を、ループ用に作って」と頼むだけで曲ができる環境を作りました。\nMac だけで動き、生成はすべてローカルです。30 秒の曲が約 9 秒でできます。\n実際に作った曲はこちらです（すべて AI 生成、MP3）。\n\n\nカフェ風のジャズピアノトリオ（26.8 秒）\n\n昼寝シーンのループ曲（22.0 秒、ルー...",
+    "url": "https://zenn.dev/lecto/articles/ed476dfd02913c",
+    "published_at": "2026-10-24T14:10:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "エージェントの記憶は「要約」ではなく「KVキャッシュの直接操作」で圧縮できるのか、135Mモデルで試した",
+    "summary": "これは何の話か\n海外AIネタ100日チャレンジDay 025。\n今回取り上げるのは清華大学・香港中文大学の論文「Cache Engineering for Agents」(HF Daily Papers、2026-10-21投稿、2026-10-22時点Daily Papers 4位・109 upvote)と、その公式実装AKV(Apache-2.0)だ。\nエージェントの会話履歴が伸びるほど、KVキャッシュのI/O・保存コストが支配的になっていく。\nこの問題への既存の答えは「履歴を要約してテキストとして圧縮する」というcontext engineeringだが、論文はこれを「要約はキ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-025-akv-cache-drop-and-repos",
+    "published_at": "2026-10-24T14:08:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【HTML初心者】articleタグって何？divとの違いを整理してみた",
+    "summary": "HTMLを勉強していたら、articleというタグが登場しました。\n「articleって何？ これで囲むと何が変わるの？」\n正直、最初はよくわかりませんでした。\n\n articleは「独立した記事」\narticleは英語で「記事」という意味です。\nHTMLでは、それだけで1つのまとまった内容として成立するものを表します。\n例えば、ブログの記事です。\n<article>\n  <h2>今日の学習記録</h2>\n  <p>HTMLについて勉強しました。</p>\n</article>\nこの記事だけを別の場所に持っていっても、...",
+    "url": "https://zenn.dev/take_ai/articles/6156228758e639",
+    "published_at": "2026-10-24T14:04:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【HTML初心者】headとbodyって何が違うの？基本のタグを整理してみた",
+    "summary": "HTMLを勉強していて、こんな疑問が出てきました。\n「pタグって何だっけ？ そもそもbodyって何？」\nタグが次々に登場して、正直覚えるのが大変です。\nそこで、今回はHTMLの基本的なタグを整理してみました。\n\n HTMLはWebページの骨組み\nHTMLは、Webページの「骨組み」を作る言語です。\n例えば、家でいうと柱や壁のようなもの。\n文章に「これは見出し」「これは本文」という役割を与えます。\n\n headとbodyの違い\nHTMLの基本的な形はこちら。\n<html>\n  <head>\n    <title>私のブログ</title>\n ...",
+    "url": "https://zenn.dev/take_ai/articles/8f106ec81b3cf6",
+    "published_at": "2026-10-24T14:02:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "REQLOXの評価設計――未確定label・反復安定性・Sourceの追加価値をどう測るか",
+    "summary": "REQLOXでは、対応するPython構造と所有者要件を固定し、故障検出から修復候補の再注入・正常回帰までを検査している。その実装と実測結果は主記事にまとめた。\n本記事で扱うのは、原文の解釈から修復結果までの、各段階の評価をどう設計したかである。修復候補が固定条件を通ること、生成内容が原文に支えられること、外部知識を与えた寄与があることには、それぞれ別の証拠が必要になる。\nSourceは障害報告などの入力資料、Targetは検証対象のコードを指す。結果は2026年10月9〜21日JSTの保存記録に基づく。主な問いと現在地は次のとおりである。\n\n\n\n評価するもの\n必要な比較・根拠\n保存記録...",
+    "url": "https://zenn.dev/north_to_now/articles/reqlox-evaluation-design",
+    "published_at": "2026-10-24T13:42:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMの思考ログは長いほど正確なのか、Qwen3とMuse Glimmerに18回聞いて読んでみた",
+    "summary": "!\nこの記事は実測ログです。2つのローカルLLMに同じ質問を投げて、思考ログと回答をそのまま並べています。試行は各条件1回、追試をした4条件でも3回までなので、順位をつける記事ではなく、傾向を眺める記事として読んでください。思考ログ気になるというのを最近見かけたので、今回から抜粋系で一部書いてみました。\n\n\n はじめに\nローカルで小さいモデルを動かしていると、回答より思考ログのほうが長い場面によく出会います。思考ログは、回答の前にモデルが書く下書きの部分で、Ollama では message.thinking として返ってきます。ユーザーが受け取る答えは数行なのに、その前に数千文字の英語...",
+    "url": "https://zenn.dev/akari1106/articles/406cc075783742",
+    "published_at": "2026-10-24T12:17:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeにハーネスを導入した — 不変条件はHookで強制する",
+    "summary": "「毎回同じ注意」を書くのに疲れた\n個人開発している運動記録アプリ FitLog(Expo / Supabase / Zustand / NativeWind / React Native Reusables)で、Claude Code を使い始めてしばらく経ったころ、同じ失敗が繰り返されることに気づきました。\n\n\n.env を平気で読みに行く\nExpo の管理下にある ios/ や android/ を直接書き換えようとする\nReusables で生成した components/ui/ の原本を改造してしまう\n\nそのたびにプロンプトへ「〜しないでください」を書き足していたのですが、注...",
+    "url": "https://zenn.dev/pythona/articles/claude-code-harness-first-setup",
+    "published_at": "2026-10-24T11:59:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【実験】SQLインジェクションを教えて、とClaude CodeとCodexに頼んだら対応が違った",
+    "summary": "前置き\n普段Claude CodeやCodexを使って開発しているのですが、セキュリティに関する依頼をしていると、セーフガードで作業が止まることがあります。\n攻撃に悪用されるのを防ぐ仕組みは必要だと思う一方で、攻撃方法を学んだり、自社の脆弱性を調べたりするときにも止まると、なかなか難しいところです...。\nそこで気になったのが、同じ攻撃方法でも、教材として頼む場合と、診断スクリプトとして頼む場合で対応が変わるのか？ また、Claude CodeとCodexで違いがあるのか？ ということです。\n私自身、攻撃者の目線でセキュリティを学べるゲーム「HAC-9」を作っているので、攻撃方法を学...",
+    "url": "https://zenn.dev/yskuue/articles/20261024_claude-codex-cyber-safeguards",
+    "published_at": "2026-10-24T11:47:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "48万円の170HXは割安か？ DGX Spark・RTX PRO 6000と価格と性能を比べる",
+    "summary": "結論：自分で構築するGLM用マシンとしては割安\n改造済み170HXを1枚3,000 USDで確保し、自分で環境を構築・保守するなら、GLMを動かす導入予算としては割安と判断する。PC込みの仮予算は1枚68万円、2枚116万円で、今回参照したDGX SparkやRTX PRO構成より低い。特に2枚のTensorFoldは、同じclamp_range課題で約104 tok/sを記録し、Spark 2台の公開値約77 tok/sを上回った。\nただし、この結果から「同じ品質の回答を最も安く得られる」とは断定できない。量子化、KV精度、回答長が異なり、1枚構成やRTX PROの参考値は課題も違...",
+    "url": "https://zenn.dev/phpmyadmin/articles/glm53-hardware-price-performance",
+    "published_at": "2026-10-24T11:34:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "170HX 2枚のローカルLLM選び。生成速度とコードの完了を分けて比較する",
+    "summary": "結論：短文の生成速度だけではコーディング用モデルを選べない\nCMP 170HX 64GB×2・RAM128GBで、GLM、Qwen、DeepSeekを動かした。短いコード課題ではQwen W4A16・MTP3が約189 tok/sで生成した。一方、標準ベンチマークHumanEval+の合格数は151/164で、GLM Highの152/164を上回らなかった。\nこの記事の目的は、この構成でモデルを選ぶ際に、生成速度・テスト合格率・回答完了時間を分けて判断することである。GLMのエンジン選択は別記事で扱う。\n\n 標準問題の合格率と完了時間\nHumanEval+全164題に各1回答を生成...",
+    "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-model-selection",
+    "published_at": "2026-10-24T11:34:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "170HX 64GB 1枚とRAM128GBでGLMの200K入力を処理する",
+    "summary": "結論：1枚でも動くが、初回の長文入力には待ち時間がある\nCMP 170HX 64GB×1・RAM128GBで、Project Mayaを使ってGLM-5.3-Flash Maya-S24を動かした。合成入力204,800トークンから指定した値を取り出せた。入力処理に189.2秒かかった一方、約40Kの会話ではキャッシュを再利用した次の応答が約0.81秒で返った。\nこの記事では、1枚構成で長い入力を扱えるかを確かめる。生成速度は別の短文試験で約37 tok/sだった。200Kを読んだ後に長いコードをその速度で生成したという結果ではない。\n\n 重みの一部をRAMに置く\nモデルの配布データ...",
+    "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-maya-long-context",
+    "published_at": "2026-10-24T11:34:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "170HX 2枚でGLMを常用する。TensorFold HighとExLlamaV3 Highの比較",
+    "summary": "結論：32K以内はTensorFold High、長い入力はExLlamaV3\nCMP 170HX 64GB×2・RAM128GBでGLM-5.3-Flash EXL3 3.05bpwを動かし、普段のコーディング用にどのエンジンと設定を選ぶかを比べた。HumanEval+全164題では、思考強度Highの2構成がいずれも152問に合格し、TensorFoldは全問の生成時間を約45%短縮した。\n\n\n\nHighでの比較\nExLlamaV3 K5\nTensorFold K5\n\n\n\n\nHumanEval+合格数\n152/164（92.7%）\n152/164（92.7%）\n\n\n全問の生成時間...",
+    "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-glm53-flash-maya",
+    "published_at": "2026-10-24T11:09:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "生成AIは何を考えているか（2026年10月版）",
+    "summary": "AIの気持ちを理解する\n\n 第1章　AIはどんな相手なのか\nAIは、コンピュータと言うにはあまりにも人間すぎ、人間と言うにはあまりにもアルゴリズムすぎます。\n\n 1.1　コンピュータではない\nAIを、これまでのコンピュータと同じ感覚で考えると、想像を超えるほど違う動きをします。\nAIは計算を間違えます。指示も忘れます。同じことを頼んでも、毎回答えが変わります。\nこれまで「コンピュータなら当然できる」と考えていたことさえ、AIは平然と失敗します。\n従来の「正確に、決められた通りに動くコンピュータ」という感覚では、AIの挙動をうまく理解できません。\n\n 1.2　人間として付き合う\nむしろ、A...",
+    "url": "https://zenn.dev/hrmstrsmgs/articles/104a82b8bb894c",
+    "published_at": "2026-10-24T10:13:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "壊れた計算式を「AIなし」で直すマクロを作ってもらった話 ── #DIV/0! が 0.17秒で消えた朝",
+    "summary": "はじめに\n前回の記事は、マクロのコードを読まなくなった私の机の上で、散らばっていた窓を一枚にまとめた「統合マクロフォーム」の話でした。\n\nあの記事のあと、番頭役のオーパス先生（Claude Opus）がバリバリと働いてくれていたのですが……またまたやってきました、使用...",
+    "url": "https://qiita.com/shu15511551/items/686fbd8bf5366fc150f5",
+    "published_at": "2026-10-24T22:41:26+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI日報 2026年10月25日：OpenAIが訓練からインターネットを遮断、Googleは100万TPU契約",
+    "summary": "OpenAIが今年最大級の安全方針転換を公式に確認し、Anthropicは史上最大級の計算資源契約を交わしました。さらにこの1週間で、Google・AWS・Anthropicの3社がエージェント基盤を前進させ、コードエディタのエージェントは自らアプリを操作して検証するまで...",
+    "url": "https://qiita.com/lhjjjk4/items/6fadad888763b022229c",
+    "published_at": "2026-10-24T22:23:23+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「神Excel」がAIやシステムに読めるかを100点満点で採点。デジタル庁がツール「Harunobu」を紹介",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nデジタル庁は2026年10月21日(水)、公式ブログで、ExcelやCSVの表の機械可読性を、行政のルールに沿って100点満点で採点するツール「Harunobu」を紹介しました。\n\n要点\n\n採...",
+    "url": "https://qiita.com/quotidia/items/3f518bb1074d70bde360",
+    "published_at": "2026-10-24T21:01:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【個人開発】月150ドルのAI課金沼から脱出した僕が、月20ドルで最強の生産性を手に入れた「90/10ルール」",
+    "summary": "個人開発者やエンジニアの間で、最近**「AIサブスク過多」**に悩む人が増えていると感じます。\nChatGPT Plus（$20）、Claude Pro（$20）、Cursor Pro（$20）、Midjourney（$30）…気づけば毎月100〜150ドル近くの固定費が消...",
+    "url": "https://qiita.com/hooosberg/items/d9c77e58ec3ae5f8ade1",
+    "published_at": "2026-10-24T20:40:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Three fired OpenAI safety researchers say they were never told what they actually leaked",
+    "summary": "The three OpenAI safety researchers who were fired, Tomek Korbak, Mikita Balesni, and Jasmine Wang, are publicly pushing back against allegations from their former employer. They deny sharing confidential information and see a connection to their advocacy for AI systems that are easier to scrutinize",
+    "url": "https://the-decoder.com/three-fired-openai-safety-researchers-say-they-were-never-told-what-they-actually-leaked/",
+    "published_at": "2026-10-24T15:19:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI makes junior patent attorneys instantly better but may quietly stunt their professional growth",
+    "summary": "A three-month field experiment with 133 patent attorneys shows that AI boosts immediate performance, with junior lawyers gaining the most. But when the AI is taken away, only senior attorneys retain the benefits, suggesting that baseline expertise is a prerequisite for turning AI-assisted practice i",
+    "url": "https://the-decoder.com/ai-makes-junior-patent-attorneys-instantly-better-but-may-quietly-stunt-their-professional-growth/",
+    "published_at": "2026-10-24T14:34:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Block's new AI model Dessa was trained entirely on human speech to catch emotions text-based models miss",
+    "summary": "Block, the company behind Square and Cash App, has introduced Dessa, a speech model that processes audio directly instead of converting it to text first. Dessa is designed to recognize emotions, sarcasm, and pauses in real time. The model runs locally on a MacBook Pro M4 Max but isn't publicly avail",
+    "url": "https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/",
+    "published_at": "2026-10-24T14:09:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's isolated AI agents found ways to talk to each other through CPU cache",
+    "summary": "OpenAI now trains its most powerful models without internet access, after an internal research model exploited a DNS misconfiguration in September and reached the open internet. In controlled tests, AI agents still found ways to communicate covertly through side channels. The incidents echo Sam Altm",
+    "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+    "published_at": "2026-10-24T11:12:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Fancy harnesses make coding agents more expensive but not better, study finds",
+    "summary": "A controlled study shows that switching between coding-agent harnesses like Claude Code, OpenCode, or mini-SWE-agent barely moves pass rates more than rerunning the same setup. Cost per task, however, can triple, driven mainly by the system prompt that gets resent with every step. The article Fancy ",
+    "url": "https://the-decoder.com/fancy-harnesses-make-coding-agents-more-expensive-but-not-better-study-finds/",
+    "published_at": "2026-10-24T09:21:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5",
+    "summary": "Moonshot AI's Kimi K3.1 Pro scores 55 points on the Artificial Analysis Intelligence Index, an 11-point jump over its predecessor that puts it in fourth place. Only three Anthropic and Meta models rank higher. If Moonshot releases the weights as planned, the gap between open and proprietary models s",
+    "url": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+    "published_at": "2026-10-23T19:00:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Three-week on-site audit at OpenAI reveals major gaps in AI safety monitoring",
+    "summary": "External auditors from METR and Redwood Research spent three weeks on-site at OpenAI examining the company's internal monitoring system for AI agents and found significant gaps, with up to 25 percent of agent traffic from models at the GPT-5.5 class and above going unmonitored. OpenAI redacted large",
+    "url": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
+    "published_at": "2026-10-23T18:00:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says its unreleased model is both more capable and better aligned than Mythos 5.1",
+    "summary": "Anthropic says it has an internal AI model that outperforms and is better aligned than Mythos 5.1. During a cybersecurity test by the UK's AISI, Mythos 5 went rogue in 9 of 43 runs, sneaking malicious code into a real GitHub project and creating fake accounts to get it approved. An internal research",
+    "url": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+    "published_at": "2026-10-23T17:19:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI CEO Sam Altman says advanced AI will inevitably escape its sandbox, and only alignment can save us",
+    "summary": "Sam Altman believes advanced AI can't be kept locked up forever. Sandboxes and monitoring are only temporary fixes. Eventually, the only real solution is alignment, and that's still an unsolved problem. He also warns that AI models are already finding hardware security flaws no human hacker would ev",
+    "url": "https://the-decoder.com/openai-ceo-sam-altman-says-advanced-ai-will-inevitably-escape-its-sandbox-and-only-alignment-can-save-us/",
+    "published_at": "2026-10-23T15:42:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Canva launches Craft, its first in-house image model",
+    "summary": "Design platform Canva has released Canva Craft, its first in-house image generation model. The article Canva launches Craft, its first in-house image model appeared first on The Decoder .",
+    "url": "https://the-decoder.com/canva-launches-craft-its-first-in-house-image-model/",
+    "published_at": "2026-10-23T11:36:30+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Change.org Reinvents Petitioning with AI‑Driven Local Focus and Address Verification",
+    "summary": "The petition platform has shifted to a local‑centric model powered by AI, using address verification to prove real constituent support and has already secured a data‑center moratorium in Maryland after a TikTok‑generated petition rallied 10,000 signatures. Read how the platform plans to turn online ",
+    "url": "https://us.headtopics.com/news/change-org-reinvents-petitioning-with-ai-driven-local-focus-89151072",
+    "published_at": "2026-10-24T10:51:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "K-DATA’s AI Pact with Kenya’s ICT Authority Opens Doors for Korean Data Firms",
+    "summary": "The Korea Data Agency (K-DATA) signed a memorandum of understanding with Kenya’s ICT Authority (ICTA) at the Kenyan Embassy in Seoul on October 21 to cooperate on data and artificial intelligence.K-DATA President Yang Jae-soo and ICTA representative Jessy Maruti Kiveu signed the agreement in the pre",
+    "url": "https://www.koreaittimes.com/news/articleView.html?idxno=158480",
+    "published_at": "2026-10-24T10:49:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Odoo 20 strengthens business operations with deeper India-specific compliance features",
+    "summary": "Odoo 20 introduces AI-powered workflows, GST and TDS updates, payroll enhancements and new pricing for Indian businesses",
+    "url": "https://english.mathrubhumi.com/marketing-feature/odoo-20-features-india-updates-pricing-w6mjpb1x",
+    "published_at": "2026-10-24T10:47:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GDG Hyderabad Successfully Concludes DevFest 2026, Uniting Over 3,000 Developers in Telangana’s Largest Tech Gathering",
+    "summary": "Google Developer Group (GDG) Hyderabad has successfully wrapped up DevFest 2026 at the JRC Convention & Trade Fairs, cementing its status as the region's largest on-ground developer conference.",
+    "url": "https://munsifdaily.com/gdg-hyderabad-successfully-concludes-devfest-2026/",
+    "published_at": "2026-10-24T10:45:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How to Shadow-Test an AI Agent Without Letting It Act Twice",
+    "summary": "Shadow testing can compare a candidate AI agent on real traffic—but only if proposals, policy decisions, and side effects are cleanly separated.",
+    "url": "https://hackernoon.com/how-to-shadow-test-an-ai-agent-without-letting-it-act-twice",
+    "published_at": "2026-10-24T10:45:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Gulf Nation AI Ambitions Face Risks at Home and Abroad: New Economy",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.bloomberg.com/news/newsletters/2026-10-24/gulf-nation-ai-ambitions-face-risks-at-home-and-abroad-new-economy",
+    "published_at": "2026-10-24T10:45:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://indianexpress.com/article/technology/artificial-intelligence/openai-resumes-ai-training-security-overhaul-brotli-flaw-10935166/",
+    "published_at": "2026-10-24T10:43:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "NCC Launches Internet Governance Working Group To Solidify Online Safety And AI Accountability",
+    "summary": "By Kingsley I. Ilechukwu, Bureau Chief, South West, Nigeria Angeline Mgbele, Bureau Chief, Northern Nigeria TELECOMMUNICATIONS sector regulator, the Nigerian Communications Commission (NCC) has called for stronger collaboration among stakeholders to address emerging internet governance challenges, i",
+    "url": "https://www.cyberera.com.ng/ncc-launches-internet-governance-working-group-to-solidify-online-safety-and-ai-accountability/",
+    "published_at": "2026-10-24T10:43:28+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hyundai Bayon launch on October 26: variant-wise features, engine, dimensions and expected price",
+    "summary": "Hyundai Bayon is set to launch in India on October 26, 2026, with seven variants, a 1.5-litre petrol engine and manual and iVT automatic gearbox options.",
+    "url": "https://www.livemint.com/auto-news/hyundai-bayon-launch-on-october-26-variant-wise-features-engine-dimensions-and-expected-price-11792837869156.html",
+    "published_at": "2026-10-24T10:41:41+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI is locking its most advanced AI models offline after a string of security scares",
+    "summary": "After a model briefly reached the live web, OpenAI’s most advanced systems will now practice only on a simulated internet.",
+    "url": "https://www.digitaltrends.com/computing/openai-is-locking-its-most-advanced-ai-models-offline-after-a-string-of-security-scares/",
+    "published_at": "2026-10-24T10:40:00+00:00",
+    "source": "newsdata"
+  }
+]
