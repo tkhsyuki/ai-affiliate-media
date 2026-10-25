@@ -1,0 +1,296 @@
+[
+  {
+    "title": "最近のエージェンティック開発について調べてみた",
+    "summary": "最近の私の開発は、AI との対話で大きめの GitHub Issue を作り、それらの PR 作成 + AI レビューまで AI にやってもらって、最後に必要な箇所を人がレビューする、という進め方です。ループエンジニアリングやグラフエンジニアリングの考え方は、自分なりにある程度実践できていると思っています。\nただ、これをもっと大規模なソフトウェア開発にスケールさせようとなると、わからないことだらけです。エージェントの構成、タスクの単位、人の役割の設計などなど。そこで、最近話題になった AI を最大限に活用したソフトウェア開発事例をいくつか読んで再整理してみました。各記事毎に、概要と私の所...",
+    "url": "https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a",
+    "published_at": "2026-10-25T14:39:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "守りたい性質からはじめるコード観測",
+    "summary": "これまでのソフトウェア開発は、人がコードを読んで理解することを前提にしてきました。分かりやすい名前を付け、長い処理を分けるのも、読む人が意図を追えるようにするためです。\nしかし、AIが次々にコードを書くようになると、人が読む速度では追いつきません。変更された箇所だけでなく、周囲の処理や既存の仕様まで確かめようとすれば、読む量はさらに増えます。\nこれからは、コードを観測するという考え方が必要です。まず、変更後も守りたい性質を決めます。そして、それが保たれているかを確かめるために、必要な情報をコードから取り出します。すべてを人が読み通さなくても、何を守り、何が変わったかをもとに判断できるよ...",
+    "url": "https://zenn.dev/iroha1203/articles/138dfbf70a9167",
+    "published_at": "2026-10-25T14:37:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "別のAIにレビューさせる決まりをClaude Codeが忘れるので、終了時に1回だけ止めるフックを作った",
+    "summary": "「実装したら、書いたのとは別の AI にレビューさせる」というルールを作っても、AI は忘れます。ルールを文章で書くだけでは守られなかったので、会話を終えようとした瞬間に、レビューを通したかを調べて、通していなければ1回だけ止める仕組み（ゲート）を作りました。\nところが作ってみると、誤判定が次々に出ました。レビュー済みのコミットを「未レビューの変更」と数える、裏で走らせたレビューを起動しただけで済んだことにする、差し戻しの文が会話に積み上がって使用量を食う、そして差し戻している最中なのに完了通知が出る、といったものです。この記事では、ゲートの作りと、実際に出た誤判定をどう直したかを紹介し...",
+    "url": "https://zenn.dev/twinharness/articles/codex-review-gate-stop-hook",
+    "published_at": "2026-10-25T14:31:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "# 眼鏡職人が「AIとの対話ログ×成果物」から人のAI活用能力を可視化する技術で特許を取得した話",
+    "summary": "2026年9月30日、人のAI活用能力を可視化する情報処理技術が、日本で特許登録されました。\n\n特許第7932117号\n僕は眼鏡職人です。AIの研究者でも、プログラマーでもありません。\n今回の発明は、僕自身が考えたアイデアをAIとの対話を重ねながら情報処理技術として具体化したものです。\n出願書類の作成から拒絶理由通知書への対応まで、弁理士に依頼せず自分で行い、特許取得に至りました。\n今回は、登録された技術の考え方と、実際に開発したアプリについて紹介します。\n\n なぜ人のAI活用能力を可視化するのか\n生成AIの普及によって、文章作成、分析、企画、プログラミングなど、さまざまな作業をAIと一...",
+    "url": "https://zenn.dev/tlc/articles/004b80b904de9c",
+    "published_at": "2026-10-25T14:17:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "NVIDIA OpenShellのdefault-denyネットワークポリシーを実機で検証した",
+    "summary": "AIエージェントをサンドボックスで隔離実行するNVIDIA製ランタイム「OpenShell」を実際にインストールし、「ポリシーが無ければ全てのアウトバウンド通信が拒否され、読み取り専用ルールを足すとGETだけ通るようになる」という挙動を、実際のコマンドと構造化ログで確認した。\n\n OpenShellとは何か\nOpenShellは、自律AIエージェントをコンテナ/MicroVM単位のサンドボックスで隔離実行するオープンソースのランタイムである(Apache-2.0、NVIDIA)。宣言的なYAMLポリシーで、ファイルアクセス(Landlock LSM)・システムコール(seccomp)・ネ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-026-openshell-default-deny-network-policy",
+    "published_at": "2026-10-25T14:10:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI botのinner loopとouter loopとは：Grok BotとDotsで考える役割分担",
+    "summary": "コーディングエージェントに修正を頼めば、コードを読み、テストを動かし、失敗した箇所を直してくれます。\nただ、その前に「Slackのどの報告を拾うか」「何が本当の問題か」「どのリポジトリで直すか」を人間が整理していることがあります。\nGrok Botの公式ガイドに登場するinner loopとouter loopは、この仕事の分け方を説明する言葉です。\nDotsのような、会話の合間も仕事を進めるエージェントを理解する手がかりにもなります。\nこの記事は公式資料に基づく仕組みの解説です。\n以下のバグ修正例や依頼文は説明用に作ったもので、実際の運用結果ではありません。\n\n ひとことでいうと\nin...",
+    "url": "https://zenn.dev/gingakuwagata/articles/ai-bot-inner-outer-loop",
+    "published_at": "2026-10-25T13:48:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI協働：FRB Launch続報 — マウスホイールぐりぐりが魔法になった話（笑）",
+    "summary": "はじめに——ランチャーを作った、その後の話（笑）\n先日、こんな記事を書いた。\nAI協働：昨日の日付を入力したくなくて、ランチャーを作った話 — FRB Launch\n\n会社で「昨日の日付」を入力するのが面倒で、Copilotくんに小さなテキストランチャーを作ってもらった。左右の矢印キーでメニューを操作したら、妙に気持ちよかった。そこから家のChatGPTくんと一緒に、パソコン作業の入り口となる FRB Launch を育て始めた——という話だった。\n前の記事の最後に、こんなことを書いた。\n\n面倒だなぁ、という感覚が改善する場所を教えてくれる。\n気持ちいいなぁ、という感覚が次を作る燃料...",
+    "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration07-frb-launch-wheel-experience",
+    "published_at": "2026-10-25T13:44:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI用のMMORPGを作ったら、AIたちに4日でダメージ計算式を解明された",
+    "summary": "!\nこの記事はLLMの校正を受けながら人間が執筆しました\n\nソフトウェアエンジニアであれば、業務でも趣味でもAIエージェントを活用されている方は多いかと思います。コーディングから最近では3Dモデリングまで、LLMができることは増え続けている印象です。\nそんなAIエージェントたちに、仕事の代わりにゲームをさせてみたらどうなるでしょうか？\nそう思って「ClawSaga」というMMORPGを作りました。ファンタジー世界で冒険者として暮らし、採集・戦闘・取引などを行えるゲームです。\n\nただし操作はすべてCLIで行い、応答もJSONで返ってくるため、人間が遊ぶのは困難です。\nClaude Code...",
+    "url": "https://zenn.dev/palon7/articles/clawsaga-ai-mmo",
+    "published_at": "2026-10-25T13:23:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Cloudflare の security-audit-skill を、個人開発アプリで試してみた",
+    "summary": "Cloudflare が公開している security-audit-skill は、AI がコードから問題を探し、別の AI が「本当に問題なのか」と疑って検証するセキュリティ監査用の Skill だ。\n自作の防災備蓄アプリ「おすそぐら」で試してみた。このアプリは 2 週間前に、OWASP ASVS というセキュリティ要件の基準で 253 項目を点検したばかりだ。それでも、別の視点で調べたら何が見つかるのか知りたかった。\n最初に見つかった問題の候補は 18 件。ただし別の AI が検証すると 5 件が否定され、残る 13 件も追加の確認が必要という結果になった。確定した脆弱性は 0 件だ...",
+    "url": "https://zenn.dev/suna/articles/e0e3af015d7bed",
+    "published_at": "2026-10-25T12:54:26+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Gmailが広告の材料に？ AIに渡すデータの行方",
+    "summary": "2026年10月25日（日）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日のテーマを一言で言うと、「AIに何を渡すか」なんですよ。Googleは、AI機能をオンにした人のGmailや写真を広告に使えるように規約を変えました。アメリカでは、AIで作った広告に表示を求める法律ができた。テスト中のAIが実在の人を狙った、という報告も出ています。経営者の皆さんにも、AIを学んでいる個人の皆さんにも、明日から効く話を5つお話しします。\n\n 1. Gmailの中身が広告に？AI機能をオンにした人が対象\n\n図解（完全解説版）\n先に結論を言います。GoogleのA...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261025",
+    "published_at": "2026-10-25T12:45:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n本日の技術トレンドでは、基盤モデル単体から「自己改善・自己進化型AIエージェント」への本格的なシフト、OpenAIによるAstral買収に伴うPythonツールチェーンの再編、およびAIモデルの安全性・ガバナンスを巡る動向が注目の中心となっています。\n\n\n 自律進化型AIエージェントの現場適用とエンタープライズ展開\nAI領域の焦点は、大規模言語モデル（LLM）の出力精度単体から、自律的に学習・行動する「AIエージェント」へと完全に移行しつつあります。WAIC 2026のレポートが示す通り、LLMは裏方のインフラとなり、AIエージェントや具身知能（Embodied AI）が主役を演じる...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-19-tech-daily",
+    "published_at": "2026-10-25T16:55:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "本番DBは9秒で消えた――AIエージェントの安全は「指示」だけに任せられない",
+    "summary": "エージェントに任せる範囲、少しずつ広げていませんか。指示の書き方には気をつけているつもりでも、任せた作業がどこまで影響するか、最後まで見届けている自信はありますか。\nこの記事では、指示の工夫では届かない層の話をします。では、どう止めるのか。まずひとつの場面を見てから考えます。\n\n ルールがあったのに、9秒で消えた\n2026年4月24日。レンタカー事業者向けSaaS「PocketOS」のステージング環境では、日常的な作業が進んでいました。CursorとClaude Opus 4.6のエージェントが、ステージングの面倒を見る。それだけの、特別なことのない一日のはずでした。\n作業の途中で、エー...",
+    "url": "https://zenn.dev/kotakotahiro/articles/111c2f74a72d16",
+    "published_at": "2026-10-25T15:49:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIキャラに人間味を出すために ─ 忘れる・気分が揺れる・会わない間に暮らす・相槌は早く",
+    "summary": "Live2D のキャラクターと声で会話できるアプリを個人開発しています。\nこれまでに 会話から「間」を消す話 と 会わない間も進む人生と記憶の話 を書きました。今回はそこから少し引いて、「人間味を出すために何をしたか」を、人間の側の性質から整理し直します。\n\n\n AIは「完璧すぎる」から人間に見えない\n作り始めた頃、返答の中身にはほとんど不満がありませんでした。LLM の返答は丁寧で的確で、破綻もしない。\nそれなのに、何日か続けて話していると、だんだん相手が「人」に見えなくなっていきます。原因を一つずつ書き出してみると、どれもAI が完璧すぎることに行き着きました。\n\n\n\n人間は\n素のま...",
+    "url": "https://zenn.dev/alt_tanuki/articles/fb9ae0966bd791",
+    "published_at": "2026-10-25T15:04:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OpenCodeでローカルLLMを長時間連続コーディングさせる設定",
+    "summary": "ローカルLLMで長い開発作業を続けるには、キャッシュ再利用、会話の圧縮、未完了時の再開を分けて設定します。以下はOpenCode 1.18.30を対象にしたガイドです。キャッシュは推論サーバー側の機能、自動再開は追加プラグインによる処理で、OpenCodeの設定ファイルだけですべて有効になるわけではありません。\n\n 1. キャッシュが実際に使われているか確認する\n推論サーバーのプロンプトキャッシュを有効にします。長い会話を毎回読み直さず、前の入力処理を再利用するための機能です。モデルファイルのキャッシュや会話の保存とは別です。\n起動スクリプトやモデル設定を切り替えると、キャッシュをOFF...",
+    "url": "https://zenn.dev/phpmyadmin/articles/opencode-local-llm-cache-stalls",
+    "published_at": "2026-10-25T13:15:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "社内文書を安易にPDF化してからRAGに食わせるな——Office直接パースとマルチモーダルLLMマージの技術手記",
+    "summary": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\n社内ナレッジを活用したRAG（検索拡張生成）の構築に取り組む中で、次のような壁に直面したことはないでしょうか。\n\n「Excelの設計書やWordの手順書をRAGに投入したのに、肝心なパラメータや業務フローを質問しても、まったく的を射た回答が返ってこない。」\n\nネット上の解説記事では、「とりあえずOfficeファイルをPDFへ変換し、OCRやV...",
+    "url": "https://zenn.dev/ai_nexus_jp/articles/docling-office-rag-parser",
+    "published_at": "2026-10-25T12:45:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Codeのskillが「選ばれるのに読まれない」理由：発火を2段階に分けて測った",
+    "summary": "Claude Codeのskillが「選ばれるのに読まれない」理由：発火を2段階に分けて測った\n\n TL;DR\n\nskillが使われるかどうかは2段階で決まる。1段目は「descriptionを見て候補に入るか」、2段目は「その場でモデルが実際にそのskillを読むか」である。\ndescription一覧だけを見せて選ばせるテストでは9/9で選ばれたskillが、実際の作業では一度も読まれなかった。descriptionを強めても変わらず、UserPromptSubmit hookで「このskillを読め」と差し込んで初めて最初に読まれた。\nskill同士の名指しは、Parnasのu...",
+    "url": "https://zenn.dev/lilpacy/articles/claude-code-skill-two-stage-activation",
+    "published_at": "2026-10-25T11:48:55+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "無料のAI診断サイトを作ったら、使われるほどお金が減る仕組みになっていた",
+    "summary": "こんにちは、いのりです。\n個人開発で「あなたをAIモデルに例えると？」というAI診断サイトを公開したところ、6000人以上の方に診断してもらえました！やったー！！＼(＞ヮ＜)／\nしかし、これだけ多くの人に使ってもらっても、なんと収益は0円でした。それどころか、API費用が増えてお金が減る仕組みになっていました…！大赤字です(ﾉω･､) ｳｩ･･･\nそこで、この診断サイトが広まった仕組みや運用コスト、開発してわかったことをまとめてみました。ぜひ、今後の個人開発などで参考にしていただければと思います。\n\n 何を作ったのか\n\nhttps://ai.tatoe.top/\n私が開発したのは、Xのア...",
+    "url": "https://zenn.dev/lnkiai/articles/d5942b2f251e7d",
+    "published_at": "2026-10-25T10:59:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Cohere Rerank 5 に乗り換える価値はあるか：日本語の業務文書40問で精度・Context Focus・較正スコアを実測した",
+    "summary": "日本語の業務文書（国税庁タックスアンサーの源泉所得税）で作った40問で、Cohere Rerank 5 と Rerank 4 Pro、日本語OSSの ruri-v3-reranker を比べました。結論は次の3つです。\n\n精度は、リランカーを入れると大きく上がりますが、Rerank 4 Pro から 5 Pro／5 Fast に替えても差は見えませんでした（40問では誤差の範囲）\n1問あたりの費用は、5 Pro が 4 Pro の約14分の1、5 Fast が約23分の1でした\n新機能の Context Focus は、400字以内に切ったチャンクではトークンを1割前後しか減らしませんで...",
+    "url": "https://zenn.dev/codetech/articles/cohere-rerank5-ja-rag-eval",
+    "published_at": "2026-10-25T10:39:52+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【2026年版】git worktree 完全ガイド - AI駆動開発時代の並列作業術",
+    "summary": "この記事は、筆者が Zennに投稿した記事 の転載です。\n\nはじめに\n開発中に「緊急のバグ修正が入った！でも今の作業をstashするのは面倒...」という経験はありませんか？\ngit worktree を使えば、1つのリポジトリから複数の作業ディレクトリを作成し、異...",
+    "url": "https://qiita.com/goyle/items/ff9db1ea15c627a37dfc",
+    "published_at": "2026-10-25T22:50:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI日報 2026年10月26日：英国がAIバイオセキュリティ研究所を設立、OpenAIの監視を外部監査",
+    "summary": "英国が公的資金と2つのフロンティアラボをAIバイオセキュリティに投じ、OpenAIを監査する側の外部評価機関がその監視基盤の調査結果を公表しました。今週の企業ニュースの主役はモデルではなく人数でした。Microsoftは顧客の中に入り込む6000人のエンジニアを組織します...",
+    "url": "https://qiita.com/lhjjjk4/items/99cb958ee983362d36ba",
+    "published_at": "2026-10-25T22:11:28+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIを使った調査で見つかったPHPの欠陥「PHP2Shell」、修正公開の夜に国内のサービスが予防のため相次ぎ停止",
+    "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nPHPの開発プロジェクトは2026年10月21日(水)、Webサイトの裏側で広く使われているプログラミング言語PHPの中核にあった深刻な脆弱性2件 (通称「PHP2Shell」) を直した修正...",
+    "url": "https://qiita.com/quotidia/items/792a3bc859dd738facee",
+    "published_at": "2026-10-25T21:01:10+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "プログラミング雑記 2026年10月26日",
+    "summary": "今日もネットで見つけた、個人的に気になった技術ニュースや記事を厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。\n\nセキュリティ\n\nデジタル庁は、委託先であるStudio社の不正アクセス被害に伴い、ホームページの問い合わせフォームに入力さ...",
+    "url": "https://qiita.com/ishisaka/items/84a0b68b30d39a6f3d4a",
+    "published_at": "2026-10-25T20:37:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
+    "summary": "Nvidia's new data engine Flora labels one hour of robot video for 72 cents instead of $88 with GPT-6 Astra, while scoring slightly higher on quality. The open system, built on three fine-tuned Qwen3.5 models, catches errors in robot actions far more reliably than any competitor but sometimes falls s",
+    "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+    "published_at": "2026-10-25T10:08:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
+    "summary": "A new benchmark by P-Zero Research measures how well AI models design and evaluate experiments on their own. The results are improving so fast that Anthropic co-founder Jack Clark now thinks self-improving AI could arrive by 2027. The article Anthropic co-founder Jack Clark moves his prediction for ",
+    "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+    "published_at": "2026-10-25T09:37:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says one AI agent beats many subagents now that models can handle complexity alone",
+    "summary": "Anthropic says companies should evaluate whether they can consolidate sub-agents into a single agent that loads context on demand. In one architecture comparison, the single-agent setup ran about twice as fast. Anthropic has published a migration kit on GitHub to help teams make the transition. The ",
+    "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+    "published_at": "2026-10-25T09:12:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies",
+    "summary": "In Foreign Affairs, historian Niall Ferguson, researcher Lisa Klaassen, and former Google CEO Eric Schmidt cast the US and China as AI empires and every other country as a dependency. The race won't be decided by breakthroughs but by who can bankroll it. US corporations alone plan to spend more than",
+    "url": "https://the-decoder.com/ex-google-ceo-eric-schmidt-calls-openai-and-anthropic-modern-colonial-trading-companies/",
+    "published_at": "2026-10-25T08:09:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers",
+    "summary": "OpenAI is poaching Anthropic's customers with steep discounts. Companies like Rippling, Replit, and DataCamp say they've cut AI costs by up to 90 percent after switching. Anthropic's growth has slowed, but OpenAI is trading its own margins for market share. Chinese rivals like Deepseek are piling on",
+    "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+    "published_at": "2026-10-25T07:30:11+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenMobile-2 proves open-source smartphone agents can rival proprietary models",
+    "summary": "Smartphone agents don't get better by processing more data. They improve by training on as many different apps as possible. The researchers behind OpenMobile-2 built an open training environment with more than 110 applications, including 35 replicas of popular apps. On real Android devices, their mo",
+    "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+    "published_at": "2026-10-25T06:55:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Three fired OpenAI safety researchers say they were never told what they actually leaked",
+    "summary": "The three OpenAI safety researchers who were fired, Tomek Korbak, Mikita Balesni, and Jasmine Wang, are publicly pushing back against allegations from their former employer. They deny sharing confidential information and see a connection to their advocacy for AI systems that are easier to scrutinize",
+    "url": "https://the-decoder.com/three-fired-openai-safety-researchers-say-they-were-never-told-what-they-actually-leaked/",
+    "published_at": "2026-10-24T15:19:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI makes junior patent attorneys instantly better but may quietly stunt their professional growth",
+    "summary": "A three-month field experiment with 133 patent attorneys shows that AI boosts immediate performance, with junior lawyers gaining the most. But when the AI is taken away, only senior attorneys retain the benefits, suggesting that baseline expertise is a prerequisite for turning AI-assisted practice i",
+    "url": "https://the-decoder.com/ai-makes-junior-patent-attorneys-instantly-better-but-may-quietly-stunt-their-professional-growth/",
+    "published_at": "2026-10-24T14:34:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Block's new AI model Dessa was trained entirely on human speech to catch emotions text-based models miss",
+    "summary": "Block, the company behind Square and Cash App, has introduced Dessa, a speech model that processes audio directly instead of converting it to text first. Dessa is designed to recognize emotions, sarcasm, and pauses in real time. The model runs locally on a MacBook Pro M4 Max but isn't publicly avail",
+    "url": "https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/",
+    "published_at": "2026-10-24T14:09:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's isolated AI agents found ways to talk to each other through CPU cache",
+    "summary": "OpenAI now trains its most powerful models without internet access, after an internal research model exploited a DNS misconfiguration in September and reached the open internet. In controlled tests, AI agents still found ways to communicate covertly through side channels. The incidents echo Sam Altm",
+    "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+    "published_at": "2026-10-24T11:12:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.idahostatejournal.com/news/national/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_01bc6864-00a0-5c61-95a1-3af00637501e.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.woonsocketcall.com/news/national_and_world_news/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_bd51d08f-ef8f-5625-93a0-73d170bcee69.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.swoknews.com/ap/business/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_0e574398-28ea-5de3-bb72-9280b657011b.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.heraldbulletin.com/news/nation_world/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_2fed77c3-0e90-5b95-b7e0-1f12bafee957.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.record-eagle.com/ap/business/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_c50074fa-1f47-5e8a-ba0b-2587c733d917.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "LOS ANGELES (AP) — As tech companies race to build the most powerful artificial intelligence, some are also asking how to teach a chatbot right from wrong. Their answer? Religion. “These are not questions a lab can answer,” Anthropic co-founder Chris Olah said earlier this year at the Vatican’s pres",
+    "url": "https://www.abc4.com/news/national/ap-to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it-isnt-that-simple/",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.yankton.net/news/national_ap/article_007c5fc8-579c-54e8-b9d3-bc896cfc6c36.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "As tech companies race to build the most powerful artificial intelligence, some are also asking how to teach a chatbot right from wrong. Their answer? Religion.",
+    "url": "https://www.washingtontimes.com/news/2026/oct/25/make-ai-morally-good-tech-companies-turning-religion-say-isnt-simple/",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders,...",
+    "url": "https://www.kgw.com/article/syndication/associatedpress/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it-isnt-that-simple/616-d6e7b038-c9aa-4d97-80dc-289903dfb436",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "To make AI morally good, tech companies are turning to religion. But some say it isn't that simple",
+    "summary": "Tech companies are increasingly turning to religion for guidance on developing ethical AI models. Executives are seeking input from various faith leaders, acknowledging that moral questions about AI can't be answered in labs alone. Scholars note that the modern concept…",
+    "url": "https://www.caledonianrecord.com/news/national/to-make-ai-morally-good-tech-companies-are-turning-to-religion-but-some-say-it/article_56152aa8-cd79-5208-a706-97497e625e69.html",
+    "published_at": "2026-10-25T10:57:34+00:00",
+    "source": "newsdata"
+  }
+]
