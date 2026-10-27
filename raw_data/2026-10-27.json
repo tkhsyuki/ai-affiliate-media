@@ -1,0 +1,296 @@
+[
+  {
+    "title": "320BのエージェントCLIモデルIQuest-Q1は動かせなかったが、ライセンスとトークナイザは実際に確認できた",
+    "summary": "Hugging Face Daily Papersに上位掲載されていた「IQuest-Q1」という疎MoE基盤モデルを調べた。総パラメータ320B、コンテキスト524,288トークンで、ソフトウェア開発やサイバーセキュリティ系のエージェント作業に重点を置いたモデルだという。\n結論を先に書く。このモデル本体は今回、実機で動かしていない。 BF16重みは約650GB、公式のデプロイ手順はvLLM/SGLangで8GPU構成(--tp-size 8)を前提にしており、個人が6時間以内に手元で用意できる規模ではなかった。無料のHosted Inference ProviderやHugging F...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-027-iquest-q1-license-and-tokenizer",
+    "published_at": "2026-10-26T14:11:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "属人化をなくすために作ったAIが、私専用の道具になった",
+    "summary": "!\nこの記事の要点\n\nSOCの不審メール判定の属人化を減らすために、メールのソースから一次判定するAIエージェントを作った\n本番には入らず、今は私だけが使う道具になっている。止まった理由は精度ではなく、「属人化が問題だ」という認識が共有されていなかったこと\n入れていたら、人への属人化がAIへの属人化に置き換わるだけだった。作り直すなら、人に「判断」ではなく「確認」をさせる\n\n\n!\n記事中のメール・出力例はすべて架空です。ドメインは例示用の予約ドメイン（example.com など）だけを使っています。\n\n\n はじめに\nSOCで働いています。\n不審メールの問い合わせが来ると、メールのソース...",
+    "url": "https://zenn.dev/think_node/articles/f35c405ace7f52",
+    "published_at": "2026-10-26T14:08:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントと生成ボタンの開発ルールを共通リポジトリで管理する",
+    "summary": "開発ルールの原本をdevelopment-standardsに集約し、Node.jsのスクリプトで各プロジェクトへ配置する。エージェント向けの指示と生成ボタン向けの設定を分け、必要な入口から同じ原本を参照する構成とした。\n\n目的は、ルールの本文を重複させず、修正する場所を明確にすること。この記事では、共通化の理由、管理区分、導入・更新の方法を整理する。導入先の名前はmy-projectとする。\n\n 共通化する判断基準\n複数のプロジェクトでAIを使うと、同じ指示を繰り返す機会が増える。ブランチ名の形式、日本語のコミットやPR、未確認のテストを実施済みと書かないことなどだ。\n一つのプロジェク...",
+    "url": "https://zenn.dev/kakami21/articles/f4254231afaa87",
+    "published_at": "2026-10-26T13:52:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで儲かってるのはIT業界だけ？ 経済学者の指摘",
+    "summary": "2026年10月26日（月）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\nおはようございます。今日のテーマを一言で言うと、「AIで本当に儲かるのか」なんですよ。アメリカの投資会社Apolloの経済学者が、IT業界の外ではAIの見返りがゼロだと書いて、大きな議論になってます。一方で、安いAIを組み合わせて一流のAIに迫ったという報告や、手元のMacで声を作れる更新も出ました。経営者の皆さんにも、学んでいる皆さんにも、使い方で差がつく話です。\n\n 1. IT業界の外では、AIの儲けは「ゼロ」？\n\n図解（完全解説版）\n先に結論を言います。今日いちばん大事な話...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261026",
+    "published_at": "2026-10-26T13:47:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ブラウザで完結！サーバー送信ゼロ・完全無料のローカルファイル変換ツール「Convertube」を作った話",
+    "summary": "title: \"ブラウザで完結！サーバー送信ゼロ・完全無料のローカルファイル変換ツール「Convertube」を作った話\"\nemoji: \"🔄\"\ntype: \"tech\" # tech: 技術記事 / idea: アイデア\ntopics: [\"webassembly\", \"ffmpeg\", \"pdf\", \"privacy\", \"webdev\"]\npublished: true\nこんにちは！皆さんは日常の業務や個人開発の中で、「動画のフォーマットを変換したい」「PDFのページを圧縮・抽出したい」と思ったとき、どうしていますか？\n世の中にはたくさんのオンラインファイル変換ツールがありま...",
+    "url": "https://zenn.dev/audiofiltertool/articles/post-0b00a898-055e-416f-81bb-ad70298a920e",
+    "published_at": "2026-10-26T13:41:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "terraform のコードを少し整える tfstylus を作ってみた",
+    "summary": "tl;dr\n\n\n歴史のある terraform のコードを整えるツールを作ったので紹介\n\n\n tfstylus is\n\nterraform を使い出すとディレクトリやファイルがたくさんになる\nコードを書く人やツールによって、同じリソースブロックでも並び順が異なるなど\nアウトカムはないに等しいけど、整えられるのに整えないのは気持ち悪いって同士のためにツールを作ってみた\n公式記載の大雑把な並び順に加えて、個人的な経験に基づいて読みやすい順になるようにしている\n全機能をオフにして何もしない、からスタートできる\n\nplan と apply で terraform に揃えたので覚えやすい（はず...",
+    "url": "https://zenn.dev/terraform_jp/articles/2026-10-26_tfstylus",
+    "published_at": "2026-10-26T13:20:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "他人のClaude CodeやCodexにAPIキーを渡さず仕事を委譲するゼロトラスト基盤「ACP」をOSS公開した",
+    "summary": "はじめに：なぜ「異なる所有者のエージェント間協働」は危険なのか\n自分の手元で動いている Claude Code や Codex CLI から、友人や外部パートナーが動かしている専門エージェントにタスクを委譲したい場面が増えています。\nしかし、既存のマルチエージェントフレームワークや標準プロトコル（MCP や Google A2A など）をそのまま「異なる所有者（Cross-Owner）間」で使おうとすると、すぐに3つの壁にぶつかります。\n\n\nAPIキーと認証情報の露出：ワーカープロセスに環境変数（OPENAI_API_KEY や GITHUB_TOKEN）を渡した瞬間、ワーカー側でメ...",
+    "url": "https://zenn.dev/acidnyan/articles/b1b851705ce4af",
+    "published_at": "2026-10-26T13:13:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "確かめない技術 第5回：全部走らせない技術",
+    "summary": "この記事は、連載「確かめない技術」の第 5 回です。うまくいかない症状と、その対処を一つずつ並べています。各回はファイルやスクリプトを一つ置けば完結します。その仕組みがなぜ要るのかは、置いたあとに解説を読めば分かります。連載の全体像と各回の一覧は序論にあります。\n\n今回は、テストを間引くことの話です。間引くというのは、重いテストを普段の実行から外しておいて、そのテストが確かめる領域のコードを触った日にだけ走らせることです。私はある日、AI から「テストは通っています」という報告を受け取りました。そのとき走らなかったテストがどれだけあるかは、報告のどこにも書かれていませんでした。これが、...",
+    "url": "https://zenn.dev/garplab/articles/f877a9868fac7f",
+    "published_at": "2026-10-26T13:11:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "QRコードはなぜログインの鍵にならないのか。写真1枚で複製できる仕組みと安全な使い道",
+    "summary": "職員の名札にQRコードを載せる仕組みを作っています。研修会や会議の出席を、会場のパソコンでQRを読むだけで記録するためです。\n作っているうちに、周りからこういう声が出てきました。\n\n「そのQRで、業務システムにログインできたら楽なのに」\n「部屋の入室にも使えないか」\n「制服の申し込みの本人確認にも使えそう」\n\nどれも、やってはいけない使い方です。この記事では、印刷したQRがなぜ鍵にならないのか、それでも何に使えるのかを整理します（仕組みはテスト用の環境で動かしている段階です）。\n\n 印刷したQRは、写真1枚で複製できる\n理由は単純です。紙に印刷したQRは、スマートフォンで写真を撮れば、そ...",
+    "url": "https://zenn.dev/kimshoshi/articles/printed-qr-is-not-a-key",
+    "published_at": "2026-10-26T13:11:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に「今日なにやる？」を聞ける ToDo を MCP で作って、4か月自社で回してみた",
+    "summary": "会社のタスクを、Claude Code と同じ場所で持つようにして4か月たちました。\n作ったのは「こつこつ」というゴール起点の ToDo アプリで、MCP サーバーがついています。\nAI に「今日やること出して」と頼むと、こつこつのタスクを読んで答えてくれて、作業が終わると結果を書き戻してくれます。\nこの記事では、なんでこういう形にしたのかと、MCP で AI にタスクを持たせるときに効いた設計を書きます。\n\n なんで作ったか\nAI に仕事を頼むと、毎回「今どういう状況で、何が終わったら完了か」を説明し直すことになっていました。\n説明が抜けると、AI はそれっぽいけどずれたものを作ってき...",
+    "url": "https://zenn.dev/aisaikou/articles/5008d5efa6da9f",
+    "published_at": "2026-10-26T12:45:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "学生2人で日本語音声LLMを作り、FT-LLM 2026 自由形タスクで1位を獲得した話",
+    "summary": "はじめに\n東京都立大学のあゆ（@aya172957）です。2025年11月〜2026年2月に開催された LLM-jp 主催のコンペ「FT-LLM 2026」の自由形タスクに参加し、LLM-jp-4 8B をベースにした日本語音声 LLM を開発しました。NLP2026 のワークショップでの発表において、自由形タスク1位として表彰していただきました。国産 LLM をベースにした、音声で指示できるオープンなモデルとしては、私たちが調べた限りで初めての成果となります。\n半年以上前のことですが、今年もFT-LLMコンペが開催されるようなので、参加記録を残そうと思います。今の自分から見ると未熟...",
+    "url": "https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm",
+    "published_at": "2026-10-26T13:54:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントかWorkflowか ― QCDとリスクで考える使い分け",
+    "summary": "AIを業務システムに組み込むとき、\n「Workflowで作るべきか、AIエージェントに任せるべきか」\nという話がよく出ます。\nこの2つの大きな違いは、\n「次に何をするか」を事前に決めるか、実行時にAIへ判断させるか\nです。\nこの記事では、WorkflowとAIエージェントの違いを整理し、QCDとリスクの観点から使い分けを考えます。\n\n WorkflowとAIエージェントの違い\n例えば、CPU高騰のアラートが発生したとします。\nWorkflowなら、処理を事前に決めます。\nアラート発生\n  ↓\nCPU使用率を確認\n  ↓\n80%以上ならPodのログを確認\n  ↓\n特定エラーがあればPodを...",
+    "url": "https://zenn.dev/taru_neko/articles/ai-agent-vs-workflow",
+    "published_at": "2026-10-26T12:53:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "サブエージェントfork・プリロードによるコンテキストの効率化について",
+    "summary": "はじめに\nフリーランスで Web 系の SE をしている しかまる です。\nいま参画している案件で、AI エージェントの skill を開発しています。\n本案件でぶつかった課題としまして skill の規模が大きくなるにつれエージェントの動きが重くなり、手順や規約の抜け漏れが出るようになりました。\n起きていた問題は、次のとおりです。\n\nメインエージェントのコンテキストが大きくなりすぎて、1回の応答やツール呼び出しに時間がかかる\nコンテキストが上限に近づくとコンパクション（それまでの会話を要約して詰める処理）が起き、本来守るべき規約が要約から漏れる\nAPI リクエストのたびに大きなコン...",
+    "url": "https://zenn.dev/shikamaru/articles/d3142afedf9997",
+    "published_at": "2026-10-26T12:32:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude のアプリが auto モード既定に ― 「14% 対 89%」は何の数字か、手元で止められた 2 件",
+    "summary": "2026 年 10 月 22 日、Claude 公式が、Pro、Max、Team プランの Claude のウェブ版、デスクトップ版、スマホ版で、新しいセッションの既定を auto モードにすると発表しました。発表の翌週、つまり今週からの展開です。\nhttps://x.com/claudeai/status/2113360845409583307\nauto モードでは、Claude が操作するたびに人が承認する代わりに、別の分類器が操作を確かめ、危ないものだけを止めます。手動に戻すこともいつでもできます。\nこの発表と一緒に、X では「人間がチェックすると 14% しか見抜けず、AI なら...",
+    "url": "https://zenn.dev/persimmoq/articles/claude-auto-mode-default-14-vs-89",
+    "published_at": "2026-10-26T12:32:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "vLLM を 3 種類の GPU で比較: Qwen2.5-7B のトークン/秒と 100 万トークンあたりのコスト（RTX A6000、L",
+    "summary": "小さめのモデルをセルフホストする GPU を選ぶ前に、どうしても知りたい数字がひとつありました。サーバーが実際に忙しく動いているとき、生成トークン 100 万個あたりのコストはカードごとにいくらになるのか、です。スペックシートには答えが載っていないので、今朝（2026-10-26）Runcrate でシングル GPU のマシンを 3 台借り、それぞれで同じ vLLM ベンチマークを実行し、数値がディスクに保存された時点ですぐに削除しました。\n\nこの記事は英語版 原文 の日本語版です。\n\n\n 構成\n\n\nモデル: Qwen/Qwen2.5-7B-Instruct、bf16、量子化なし。\n\nサ...",
+    "url": "https://zenn.dev/runcrateai/articles/3a791e14e1ad40",
+    "published_at": "2026-10-26T11:08:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントを司令官と部下に分けて、開発を自律運用してみた（4）状態をファイルに残す ― tasks.json・PROGRESS.md",
+    "summary": "この記事は、下書きと文章の整理に生成AIを使っています。内容は、著者が生成AIを使ってタスクを自律的に回し続けるやり方を実際に試して検証し、そのやり方と感想を記録したものです。\n\nこの回では、司令官（メインセッション）の状態を会話ではなくファイルに置く仕組みを、実際のファイルとコードを引用しながら説明します。扱うのは3つです。完了の基準を passes ひとつに絞った tasks.json、再開できる書き方で追記する PROGRESS.md、そして、その状態を外から見るダッシュボードと進捗ペインです。\n司令官・worker・reviewer・researcher の役割は第2回、wo...",
+    "url": "https://zenn.dev/xin_tech/articles/agent-ops-field-notes-04",
+    "published_at": "2026-10-26T10:47:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コードをほぼ書かずに商用ソフトを作る：AIエージェントに開発を任せる体制と運用ルール",
+    "summary": "はじめに\n個人で商用ソフトMegrab Studio（動画ダウンローダ。macOS / Windows / Android の3プラットフォーム＋ライセンスサーバー＋公式サイト）を開発し、販売開始に向けて準備を進めています。\nひとつ特徴があるとすれば、コードはほぼAIエージェントに書かせていることです。自分は仕様を決め、問題を言語化して指示し、出来上がったものを検収する側に回っています。\nこの体制で数週間運用してきて「これは効く」というルールと、痛い目を見た失敗が溜まってきたので、運用ノウハウとしてまとめます。\n前提として、この記事もAIによって記述しております。\n\n 体制：役割を3...",
+    "url": "https://zenn.dev/ray_9618/articles/f7884033741464",
+    "published_at": "2026-10-26T08:52:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントの権限設計を考える ― 委譲権限と自律権限だけでは足りない",
+    "summary": "AIエージェントから社内システムやAPIを操作できるようにするとき、避けて通れないのが権限設計です。\n最初は単純に、\n\n人がAIに指示するなら委譲権限\nバッチや監視など自動実行ならAI自身の権限\n\nと分ければよいのではないか、と考えていました。\nしかし整理してみると、AIエージェントではそれだけでは足りません。\n結論から言うと、委譲権限かAI自身の権限かをAgent全体で決めるのではなく、AIが利用するTool単位で設計する必要があります。\n特に、人がトリガーした処理をAI自身の権限で実行する場合には、BackendでAI自身を認可するだけでなく、そのユーザーがAIにその処理を依頼してよ...",
+    "url": "https://zenn.dev/taru_neko/articles/ai-agent-authorization-design",
+    "published_at": "2026-10-26T08:45:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【相次ぐ大規模情報漏洩】AI時代に企業が考えるべきサイバー攻撃のリスクとは",
+    "summary": "図：相次ぐ大規模情報漏洩とAI時代のサイバー攻撃リスク。\n近年、国内企業で大規模な情報漏洩が相次いでいます。企業にとって情報管理やサイバーセキュリティの重要性が高まるなか、生成AIの普及によってサイバー攻撃の手法がさらに変化する可能性も指摘されています。\n今回取り上げる情...",
+    "url": "https://qiita.com/rikunagano/items/85067fa63c70368b1e32",
+    "published_at": "2026-10-26T23:58:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「AIエージェント」という言葉が指す4つの異なるもの——Copilot Studio・Dify・Claude Codeでの意味の違い",
+    "summary": "この記事で分かること：\n\n「AIエージェント」という言葉が 4 つの異なる意味で使われている背景\nCopilot Studio・Dify・Claude Code それぞれでの「エージェント」の意味\n現場での議論を噛み合わせるための言葉の整理方法\n\n「AIエージェントを導...",
+    "url": "https://qiita.com/Sidejob/items/6c5214b9724342d883fe",
+    "published_at": "2026-10-26T23:45:04+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "エージェントのメモリ設計 — 短期・中期・長期の3層とベクトルDBを入れる判断基準",
+    "summary": "はじめに：ベクトルDBを入れる前に考えたこと\n当社（合同会社ジョインクラス）では、Claude Codeとlaunchdのジョブ17本で、記事の生成・状態の更新・営業パイプラインなどを毎日自動で回しています。\n「エージェントに記憶を持たせるなら、まずベクトルDB」とよく言...",
+    "url": "https://qiita.com/joinclass/items/c45c6bcf0f62cfed8bf4",
+    "published_at": "2026-10-26T23:30:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIのみで作られたシステムを引き継いだら、品質の現実に直面した話",
+    "summary": "はじめに\n自分は普段、自社向けの新規業務システムを開発しています。そんな中、急な案件でAIエージェントだけで作られたシステムを引き継ぐ機会がありました。\n結論から言うと、動きはするものの品質は低く、改修にかなり苦労しました。\n普段は自分も実装のほぼすべてをAIエージェント...",
+    "url": "https://qiita.com/Kokuto821/items/352e44c77489c22945c2",
+    "published_at": "2026-10-26T23:27:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "GPT-6.1 Terra halves OpenAI's API prices and still gains ground on its larger models",
+    "summary": "OpenAI has released GPT-6.1 Terra, a mid-range model that cuts API prices in half compared to its predecessor. Analysts say it sets a new standard for intelligence per dollar, especially for everyday computing tasks and AI-driven computer control. The article GPT-6.1 Terra halves OpenAI's API prices",
+    "url": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+    "published_at": "2026-10-26T20:30:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic opens its books for Wall Street, showing record revenue and mounting obligations",
+    "summary": "Anthropic is the first major AI lab to file an S-1 with the SEC, planning to list on the Nasdaq under the ticker \"ANT.\" The numbers are strong, with $11.6 billion in quarterly revenue, a first-ever operating profit, and existing customers spending nine times more year over year. But the company also",
+    "url": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/",
+    "published_at": "2026-10-26T19:14:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Researchers find six patterns that make AI text so exhausting to read",
+    "summary": "A study from New York University and the University of Texas at Austin shows that frontier language models systematically overuse linguistic patterns that are hard for humans to parse. The researchers trace the problem to training on code and math, where correctness gets rewarded but clarity doesn't",
+    "url": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+    "published_at": "2026-10-26T17:50:15+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Reddit's r/opensource bans all AI-related projects, sparking backlash and a rival subreddit",
+    "summary": "The Reddit forum r/opensource has banned all posts about AI projects, whether built with AI, AI-powered, or designed for AI. Projects must also be at least a year old and have multiple contributors, and non-English posts are excluded as well. In response, the rival forum r/TrueOpenSource has already",
+    "url": "https://the-decoder.com/reddits-r-opensource-bans-all-ai-related-projects-sparking-backlash-and-a-rival-subreddit/",
+    "published_at": "2026-10-26T17:19:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta plans up to $95 billion in stock sales to fund its AI buildout",
+    "summary": "Meta plans to sell new stock to raise money for its AI infrastructure buildout. The article Meta plans up to $95 billion in stock sales to fund its AI buildout appeared first on The Decoder .",
+    "url": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
+    "published_at": "2026-10-26T14:21:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Wall Street's fastest traders are building data centers and backing chip startups to stay ahead in AI",
+    "summary": "High-frequency traders like Jane Street and Hudson River Trading are now racing each other for AI computing power. The article Wall Street's fastest traders are building data centers and backing chip startups to stay ahead in AI appeared first on The Decoder .",
+    "url": "https://the-decoder.com/wall-streets-fastest-traders-are-building-data-centers-and-backing-chip-startups-to-stay-ahead-in-ai/",
+    "published_at": "2026-10-26T09:49:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Toyota is betting $6.4 billion a year on humanoid robots and factory automation",
+    "summary": "Toyota wants to turn itself into a global robotics company, and it's betting on humanoid robots and factory automation to get there. The article Toyota is betting $6.4 billion a year on humanoid robots and factory automation appeared first on The Decoder .",
+    "url": "https://the-decoder.com/toyota-is-betting-6-4-billion-a-year-on-humanoid-robots-and-factory-automation/",
+    "published_at": "2026-10-26T09:18:15+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
+    "summary": "Nvidia's new data engine Flora labels one hour of robot video for 72 cents instead of $88 with GPT-6 Astra, while scoring slightly higher on quality. The open system, built on three fine-tuned Qwen3.5 models, catches errors in robot actions far more reliably than any competitor but sometimes falls s",
+    "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+    "published_at": "2026-10-25T10:08:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
+    "summary": "A new benchmark by P-Zero Research measures how well AI models design and evaluate experiments on their own. The results are improving so fast that Anthropic co-founder Jack Clark now thinks self-improving AI could arrive by 2027. The article Anthropic co-founder Jack Clark moves his prediction for ",
+    "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+    "published_at": "2026-10-25T09:37:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says one AI agent beats many subagents now that models can handle complexity alone",
+    "summary": "Anthropic says companies should evaluate whether they can consolidate sub-agents into a single agent that loads context on demand. In one architecture comparison, the single-agent setup ran about twice as fast. Anthropic has published a migration kit on GitHub to help teams make the transition. The ",
+    "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+    "published_at": "2026-10-25T09:12:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Vzmore AX9 Max review: Powerful mini PC with Ryzen 9 aims to impress with quiet cooling",
+    "summary": "Two are better than one: Full iGPU power thanks to dual-channel. | The Vzmore AX9 Max challenges the mini-PC elite: Powered by the AMD Ryzen AI 9 HX 470 with Radeon 890M graphics, this compact system promises uncompromising performance thanks to dual-channel RAM and V-Cooling with a vapor chamber. B",
+    "url": "https://www.notebookcheck.net/Vzmore-AX9-Max-review-Powerful-mini-PC-with-Ryzen-9-aims-to-impress-with-quiet-cooling.1432937.0.html",
+    "published_at": "2026-10-26T12:12:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Zebra Technologies Corporation: ORAFOL Fresnel Optics Cuts Inspection Times in Half with Zebra Technologies' AI Machine Vision Solution",
+    "summary": "No-code studio with deep learning unlocks new levels of accuracy, visibility, speed, and traceability Zebra Technologies Corporation (NASDAQ: ZBRA), a global leader in digitising and automating wo...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69935148-zebra-technologies-corporation-orafol-fresnel-optics-cuts-inspection-times-in-half-with-zebra-technologies-ai-machine-vision-solution-004.htm",
+    "published_at": "2026-10-26T12:12:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hyundai Bayon Launched At Rs 10 Lakh; Undercuts Creta By Rs 90,000",
+    "summary": "The Bayon is the first SUV in the segment with a Gen-AI voice assistant.",
+    "url": "https://motoringworld.in/car-news/hyundai-bayon-launched-at-rs-10-lakh-undercuts-creta-by-rs-90000/",
+    "published_at": "2026-10-26T12:11:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OPPO Find X9 Series and Find N6 Receive Early Stable ColorOS 17 Update in Select Global Markets",
+    "summary": "Highlights OPPO Find X9 series users in India, Indonesia, and Malaysia receive the early stable ColorOS 17 update. Find N6 users in Thailand can update to the stable ColorOS 17. OPPO users can update to ColorOS 17 by navigating to Settings > System and Update > Beta program > Download Now. OPPO user",
+    "url": "https://www.mymobileindia.com/oppo-find-x9-series-and-find-n6-receive-early-stable-coloros-17-update-in-select-global-markets/",
+    "published_at": "2026-10-26T12:11:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PTCL Group Delivers Robust Financial Performance with 62% YoY Topline Growth",
+    "summary": "Pakistan Telecommunication Company Limited (PTCL), the country’s leading telecom and ICT services provider, has announced its financial results for the nine months ended September 30, 2026, at a Board of Directors meeting held in Islamabad. The Group maintained strong growth momentum during the thir",
+    "url": "https://www.pakistangulfeconomist.com/2026/10/26/ptcl-group-delivers-robust-financial-performance-with-62-yoy-topline-growth/",
+    "published_at": "2026-10-26T12:10:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Tata Communications is building a fiber network for India's AI hubs costing up to $450 million",
+    "summary": "The 10,000 km long-haul network will link data center hubs, starting with the Mumbai-Pune-Hyderabad-Chennai corridor",
+    "url": "https://qz.com/tata-communications-ai-fiber-network-india-102626",
+    "published_at": "2026-10-26T12:10:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "C.H. Robinson Debuts Lean AI for Ocean Shipping, Air Freight and Customs",
+    "summary": "Global logistic provider’s fleet of AI agents grows, bringing greater speed, precision and agility to supply chains around the world EDEN PRAIRIE, Minn. — As the global leader in Lean AI, C.H. Robinson has launched new AI agents that perform work in ocean shipping, air freight and customs brokerage.",
+    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/c-h-robinson-debuts-lean-ai-for-ocean-shipping-air-freight-and-customs",
+    "published_at": "2026-10-26T12:10:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic Sued for $41M Over Elvis Presley's Songs: Claude Maker Accused of Stealing 'Virtually Every Song'",
+    "summary": "Elvis Presley's rights holders allege Anthropic used lyrics from 274 songs without permission and seek up to $48.6 million across copyright-related claims.",
+    "url": "https://www.ibtimes.sg/anthropic-sued-41m-over-elvis-presleys-songs-claude-maker-accused-stealing-virtually-every-95528",
+    "published_at": "2026-10-26T12:10:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "B2B Outreach Services for Industrial Iot and Sensor Companies by MOTM",
+    "summary": "Pune, India, 2026-10-26 — /EPR Network/ — Industrial IoT and sensor companies need more than generic cold emails to generate qualified leads. They need targeted [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/10/26/1776292",
+    "published_at": "2026-10-26T12:10:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ORAFOL Fresnel Optics Cuts Inspection Times in Half with Zebra Technologies’ AI Machine Vision Solution",
+    "summary": "BOURNE END, England--(BUSINESS WIRE)--Zebra Technologies Corporation (NASDAQ: ZBRA), a global leader in digitising and automating workflows to deliver intelligent operations, today announced ORAFOL Fresnel Optics GmbH has intelligently automated the quality inspection of over 1.5 million optical len",
+    "url": "http://www.businesswire.com/news/home/20261026775215/en/ORAFOL-Fresnel-Optics-Cuts-Inspection-Times-in-Half-with-Zebra-Technologies%E2%80%99-AI-Machine-Vision-Solution/",
+    "published_at": "2026-10-26T12:10:00+00:00",
+    "source": "newsdata"
+  }
+]
