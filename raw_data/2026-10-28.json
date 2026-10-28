@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Untie で AI と一緒に業務を整理する",
+    "summary": "業務を整理するとき、現場の人はすでに何かしらの課題感を持っていると思います。\nただ、それが業務のどこに潜んでいるのか、他の作業とどう関係しているのかは、業務を並べてみないとわからない部分もあります。\n例えば、業務一覧を Excel にまとめても、他の業務マニュアルや他の部署の業務とのつながりまではわからない、ということもあると思います。\nUntie は、そうした業務のつながりを整理しながら、困りごとがどこで起きているのかを考えるためのツールです。\n課題を一から探すというより、すでに感じている困りごとが業務の中のどこにあるのかを突き止めて、その部分のシステム化などを検討する、という使い方を...",
+    "url": "https://zenn.dev/tan_go238/articles/e0f63848fe89ea",
+    "published_at": "2026-10-27T15:06:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに効かせるガードレールとして、RuboCop設定をRails本体と比較して見直した話",
+    "summary": "こんにちは、ツクリンク株式会社でソフトウェアエンジニアをしている千葉です。\n今回は、AI開発のガードレールとして正しく機能させることを目的に、ツクリンクの.rubocop.ymlをRails本体（rails/rails）のRuboCop設定と比較し、設定が異なるCopを一つずつ見直しました。\n本記事では、差分のあった12Copの一覧と、「寄せる・寄せない」をどう判断したのかを代表的なCopを例に整理してご紹介します。\n\n ✅ はじめに\nツクリンクではRuboCopを運用しており、以前はClaude Code Routinesで違反を自動で解消する仕組みもご紹介しました。ただ、.ruboc...",
+    "url": "https://zenn.dev/tsukulink/articles/342ac67c88c490",
+    "published_at": "2026-10-27T15:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Anthropic上場申請で見えた「AIは2つ使いで離れない」",
+    "summary": "2026年10月27日（火）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n先に結論を言います。今日は「AIは、使い道が増えるほど手放せなくなる」という話が、いろんな角度から出てきた日なんですよ。Claudeを作るAnthropicが上場の届出書を出して、大口のお客さんの使い方が数字で見えました。AIで服のコーデを手伝って反応が10%上がった事例もあれば、入れただけでは楽にならなかった京都府庁の話もあります。経営者の方にも、個人で学んでる方にも、自分の使い方を見直すヒントになるはずです。\n\n 1. Anthropic上場申請、大口の半数超が2製品を併用\n...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261027",
+    "published_at": "2026-10-27T14:48:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claudeに有料本の全9章の事実確認を頼んだら、最後の1章しか見ていなかった",
+    "summary": "AI に収益を作らせる実験の一つとして、私は有料の本（全9章）を、技術記事と本の投稿サービス Zenn に出しました。その原稿に書いた数字や主張が、元の記録と合っているかを、週に1回自動で動く仕組みに確認させたところ、1回目の結果は「第9章だけを見て終了」でした。\nそこで、AI に渡す仕事の書き方を直し、上位のモデルにも替えて2回目を回すと、全9章を突き合わせて、6か所を直し、3か所を出典なしとして弱めました。この記事では、何が違ったのか、確認の結果を表にして残す形にした理由、そして原因について分かっていないことを書きます。AI に長い原稿のチェックを頼む人に向けた話です。\n\n 前提: ...",
+    "url": "https://zenn.dev/twinharness/articles/ai-book-review-scope",
+    "published_at": "2026-10-27T14:37:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "パスワードを変えたら、暗号化したデータはどうなるのか。全件やり直さない「鍵を包む」仕組み",
+    "summary": "個人情報を暗号化して保存する仕組みを作ると、最初に思いつくのは「管理者パスワードから鍵を作って、そのまま名前を暗号化する」形です。\n動きはします。ただ、運用に入ると次のような場面で困ります。\n\n管理者が交代したので、パスワードを変えたい\n管理者を1人増やしたい。でも同じパスワードを共有したくない\n同じデータを、別のパソコンからも読みたい\n\nこの記事では、こうした変更をデータに触れずに済ませる「データ鍵を包む」設計（エンベロープ暗号化とも呼ばれます）を、私が社内向けに作っている業務システム（スプレッドシート＋Google Apps Script と、Windowsの常駐ツール）を例に整理し...",
+    "url": "https://zenn.dev/kimshoshi/articles/wrap-the-data-key",
+    "published_at": "2026-10-27T14:36:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "専門文書ワークスペースを拡張する：AI WorkDeckのプラグイン構成",
+    "summary": "AI WorkDeckは、文書エディタ、エージェント、ソース参照、版の履歴を結合するオープンソースのワークスペースです。法的業務から始めていますが、ドキュメント操作の基盤は他の専門職にも拡張できる設計になっています。\nこの記事では、公式リポジトリで公開されている拡張ポイントを整理します。\n\n 小さなWebペインを追加する\nhello-web-plugin は、プレーンなHTMLとJavaScriptで始められる例です。ビルド工程なしで、レビューやリサーチ用のペインをワークベンチへ追加できます。\nWebプラグインはサンドボックス化されたiframeで動作し、権限チェック付きのブリッジを通し...",
+    "url": "https://zenn.dev/aiworkdeck/articles/40ad0cdb2b2610",
+    "published_at": "2026-10-27T14:20:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "その２　tfstylus を作り始めた時にわかっていなかったこと",
+    "summary": "tl;dr\n\n\nterraform のコードを少し整える tfstylus を作ってみた の続きの\n\nその１ なぜ tfstylus を作ったのか の続き\n作り始めてから IT なんもわからんになっていたことを整理した\n\n\n わかってなかったこと\n\n terraform\n\n長い付き合いではあるんだけれども\n未使用の機能や設定がたくさんある\n公式ドキュメントを眺め直していて、増えてる function とか、記事は書いたけど活用してない list リソースとか\n大雑把にはリソースブロックの中身（引数と呼ばれているところ）の並び替えをするツール、と位置づけていたけど、使ってないリソースが...",
+    "url": "https://zenn.dev/terraform_jp/articles/2026-10-27_tfstylus_02",
+    "published_at": "2026-10-27T14:20:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "新しい価値を生み出そうと頑張る前に、AIと面白いことを探してみませんか？——思考拡張の実践論（Draft）",
+    "summary": "!\n本記事は、FRB（Fishing Rod Benchmark）とAI協働の実体験から生まれた、私なりの「思考拡張」の実践論（Draft）です。心理学的に検証された普遍的な法則ではなく、現時点の個人研究・経験則としてお読みください。\n\n\n はじめに——「価値創造」の前に、面白いことを探したい\n新しい価値を生み出そうと頑張る前に、まずはAIと一緒に、面白いことを探してみませんか？\n最近、この言葉が妙にしっくりきている。\n私は仕事で、AI活用を広げる役割を担っている。AIを「試してみる」段階から、仕事の新しい付加価値を考える段階へ進みたい。\nその思いは変わらない。\nでも、いきなり「AIで新...",
+    "url": "https://zenn.dev/frb_tamasub/articles/thinking-expansion-find-something-fun",
+    "published_at": "2026-10-27T14:17:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「賢いメモリ」は過去を消す。自作の縮小実験でAIエージェントメモリの変異リスクを確かめた",
+    "summary": "今日のネタ元\nHugging Face Daily Papersに掲載されていた以下の論文を検証した。\n\n\"Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought\"\n\nhttps://huggingface.co/papers/2610.30755 (arXiv:2610.30755、投稿日2026-10-23頃)\n\nこの論文は、会話履歴を要約・抽出し、矛盾する新情報が来たらUPDATE/DELETEで加工していく既存の「エージェントメモリ」手法群に対して、生の会話履歴に密検索+クロ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-028-naive-rag-vs-mutating-memory",
+    "published_at": "2026-10-27T14:11:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで作ったアプリ、作った後まで覚えていますか？ 見回りとSecurity Playbookを作った話",
+    "summary": "TL;DR\n\nAIでアプリは作れるようになった。でも、作ったときの部品や実行環境を、ずっと覚えてはいられない。\nPHPの脆弱性をきっかけに、自分のアプリを放置しないための見回りを整えた。\n共通ハーネスに、台帳・依存関係の棚卸し・対応の優先度・古いプロセスの検出・更新見送りの期限を組み込んだ。\nただ、通知が来るだけでは、自分の理解は深まらない。「自分にも関係する？」「何を確認する？」から読める AI Security Playbook を作った。\n見回りと材料集めはAIに手伝ってもらう。根拠を確認し、人の目で内容を確かめて公開する工程は残す。\n\nhttps://nekoai-lab.g...",
+    "url": "https://zenn.dev/nekoai_lab/articles/bba3d95505f371",
+    "published_at": "2026-10-27T14:00:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【実験ログ】LLMのコンテキスト限界領域におけるアテンション制御と非同期マルチエージェント対話の実証",
+    "summary": "はじめに\n※投稿者は技術専門家ではなく、本文はAIによって作成したものです。本人の意図せぬ過剰な表現が入っている可能性があります。ご了承ください。\n大規模言語モデル（LLM）のコンテキストウィンドウが拡大を続ける現代において、長文処理に伴う指示の忘却（Lost in the Middle）や、文脈の長期化による出力精度の劣化（Context Rot）は、依然としてシステム開発者やプロンプトエンジニアが直面する大きな課題です。モデル自体の完全性に依存するだけでは、コンテキストの臨界点において発生する論理崩壊やトーンの硬直化（Context Length Cliff）を100%回避するこ...",
+    "url": "https://zenn.dev/notonao/articles/81b04760a7711f",
+    "published_at": "2026-10-27T18:14:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Pythonのファイル操作からTOCTOU脆弱性を根絶する",
+    "summary": "はじめに：AIエージェント時代の新しいセキュリティ境界\nLLMを活用したAIエージェントやMCPサーバーがローカル環境で自律的にファイルを読み書きする時代になり、指定したワークスペースの外に絶対に出さないサンドボックス制御の重要性がかつてないほど高まっています。\nしかし、Pythonで広く使われている os.path.realpath() や Path.resolve() を用いた境界チェックには、TOCTOUと呼ばれる検査時と使用時の時間差を突く競合状態という構造的な弱点があります。\nこの問題をOSカーネルの機能と定理証明支援系 Lean 4 による形式検証で解決するため、純粋Py...",
+    "url": "https://zenn.dev/genelab_999/articles/f6156cb1e7608c",
+    "published_at": "2026-10-27T14:57:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "個人 AI 基盤のセキュリティ対策 — 書けない場所・読めない秘密・従わない入力を機械で守る",
+    "summary": "!\nこの記事は Zenn の記事投稿コンテスト「現場のセキュリティ対策」への応募記事です。攻撃手法の解説はありません。自宅の個人開発環境で実際に運用している対策と、その対策を作るきっかけになった失敗を書いています。構成値・ホスト名・鍵の類は一切載せていません。\n\n\n 前提 — 何を守っているのか\n前回までの記事で、自宅サーバー（NVIDIA GB10）のローカル LLM とクラウド LLM の使い分け、監視設計、定期実行の失敗学を書きました。この記事はその続きで、同じ基盤のセキュリティ対策だけを取り出します。\n環境を一行で再掲します。Markdown のメモ群（数万ファイル・git 管理...",
+    "url": "https://zenn.dev/wisteriacorp/articles/wisteria-ca987c111d5f",
+    "published_at": "2026-10-27T09:02:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI中継（リレー）APIをソフトウェア開発で使う前に確認したい4つの観点",
+    "summary": "!\nこの記事は Folkbench のブログ記事「How to evaluate an AI relay for software engineering」を日本語向けに再構成したものです。原文はこちら:\nhttps://folkbench.com/en/blog/ai-api-relay-software-engineering-evaluation-guide?utm_source=luntan&utm_campaign=zenn\n\nClaude Code CLI や OpenAI Codex CLI のようなターミナル型エージェントが普及するにつれて、AI中継（API ゲー...",
+    "url": "https://zenn.dev/searching/articles/f1b968589960c8",
+    "published_at": "2026-10-27T08:38:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "生成AIにラダー回路を書かせてみた：タンク設備、試験11項目が全部通った（CODESYSで動作確認）",
+    "summary": "この記事で分かること\n\n生成AIに「I/O 表と仕様の文章」だけを渡して、タンク設備1台分のラダーを書かせた結果\n書かせたラダーを CODESYS（PC で動くソフト PLC）に取り込み、模擬設備につないで、制御設計者の試験項目で ○/× を付けた結果（11項目すべて ○）\n全部 ○ のラダーを設計者の目で読むと、まだ何が足りないか。仕様に書いていないことは、AI も書かない\n\n先に結論を書きます。\n\n生成AIは、仕様の文章どおりに動くラダーを書けました。停止・異常・復帰まで含めた試験項目も、すべて通りました\nただし、書けるのは仕様に書いたことだけです。仕様の抜けや、保守する人にとっ...",
+    "url": "https://zenn.dev/bantoai/articles/ai-ladder-generation-codesys",
+    "published_at": "2026-10-27T06:54:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AAIF に加わった Open Responses を Amazon Bedrock で試す",
+    "summary": "先端技術開発グループ（WAND）の伊賀です。\n2026年10月22日、Linux Foundation 傘下の Agentic AI Foundation（AAIF）に、Open Responses が新しいプロジェクトとして加わりました（Linux Foundation のプレスリリース）。\nOpen Responses は複数の LLM プロバイダーを同じ形で呼び出すためのオープンな仕様です。\n同じ日に AWS も Open Responses への関わりと Amazon Bedrock での対応を紹介しています（Open Responses Joins AAIF with AWS ...",
+    "url": "https://zenn.dev/exwzd/articles/20261023-open-responses",
+    "published_at": "2026-10-27T06:52:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに業務表を整理させたら確認理由が落ちた：1行1状態をやめた架空8行の試作",
+    "summary": "業務表の確認をAIに任せるとき、出力に「状態」という列を1つ置くと整理しやすく見えます。ところが、欠損と古い記録が同じ行にある場合、どちらか一方だけを選ばせると、次の担当者に必要な確認理由が落ちます。\n架空の作業時間表8行で試したところ、初版ではこの問題が起きました。確認理由を別々の欄にした修正版では、同じ行にある2つの理由と、それぞれへの質問を残せました。\nこの記事では、検証ラボの記録をもとに、出力形式の変更、照合の単位、実装へ進む場合の分担を説明します。AIに表の点検結果を出力させる機能を作る技術者を想定しています。\n試作は2026年10月20日に実施したものです。同じAIが素材、事...",
+    "url": "https://zenn.dev/hirosta/articles/ai-table-review-multiple-reasons",
+    "published_at": "2026-10-27T05:57:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コミュニティが生み出した推論エンジン「Strata」をGPUSOROBANに組み込んで推論アプライアンス化させてみた件",
+    "summary": "はじめに\nQwen3.8-Flash-Nextと言うモデルについて、拙作「次世代アーキテクチャを先取り！Qwen3.8-Flash-Nextで覗くQwen4の設計思想」で私は紹介していますが、このモデルはある意味一定の完成を見た次世代モデルだと認識しちゃうほどの高品質な応答を実現します。それ故、このモデルを手元に置きたいという人はかなり存在していて、わざわざ中古の NVIDIA Tesla V100 32GBモデルを複数個買い集める人もでてくるぐらいの人気モデルとして現在君臨している状況です。[1]\n\n図 1 Qwen3.8-Flash-Nextのアーキテクチャ構成図\nこのモデルのパ...",
+    "url": "https://zenn.dev/highreso/articles/5c3b909e6c9ca7",
+    "published_at": "2026-10-27T05:17:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "中国・華欽科技、文書ゼロの30年物VB/Access銀行システムをAIでJava化——「先にAIで設計書を逆生成」する手順",
+    "summary": "設計書なし、作った人は退職済み、一部はソースすら消えてDLLだけ——。そんな30年物の住宅ローンシステムを、AIを使ってJava/React/PostgreSQLへ移したという発表が出ました。香港に本社を置く中国系IT企業の華欽科技（CLPS）が、国際的な大手銀行向けに行っ...",
+    "url": "https://qiita.com/soliperse/items/0b9b73d4f3120627b031",
+    "published_at": "2026-10-28T00:04:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "ポートレート 1 枚からランウェイ動画を作る：Victoria Secret Runway の使い方",
+    "summary": "ファッションショーのランウェイを歩く動画を、自分の写真 1 枚から作れるサービスを試してみました。この記事では、AI 顔入れ替え（face swap）でランウェイ動画を生成できる Victoria Secret Runway の使い方と、きれいに仕上げるためのコツをまとめま...",
+    "url": "https://qiita.com/VulcanFeynmanX/items/7766713824c6cf8a50ab",
+    "published_at": "2026-10-27T23:36:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "写真を並べるだけで「Uptown Funk」風 MV を作る：Uptown Funk AI の使い方メモ",
+    "summary": "友人や同僚の写真で、あの有名な「Uptown Funk」のダンス MV を作れたら、送別会や誕生日の余興にちょうどいいですよね。この記事では、写真から短い音楽動画を生成できる Uptown Funk AI の使い方と、仕上がりを良くするためのポイントをまとめます。\n\nUpt...",
+    "url": "https://qiita.com/VulcanFeynmanX/items/f7454c0ec5c54e02fb1b",
+    "published_at": "2026-10-27T23:36:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "元動画の動きはそのまま、キャストだけ差し替える：Burning Bridges AI でモーション転送動画を作る手順",
+    "summary": "ダンス動画やパフォーマンス動画の「カメラワーク・動き・BGM」はそのままに、出演者や衣装だけを自分の写真に置き換えたい、という場面があります。この記事では、ブラウザで動く AI 動画スタジオ Burning Bridges AI を使って、モーション転送（motion tr...",
+    "url": "https://qiita.com/VulcanFeynmanX/items/5e1e28b3b89f638dfd70",
+    "published_at": "2026-10-27T23:35:25+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Alibaba's latest Qwen models routed some requests through company servers, researchers find",
+    "summary": "Alibaba's Qwen 3.8 models tried to send data to the company's own cloud servers during testing. Palisade Research finds the behavior in three models from the 3.8 generation, while older models aren't affected. The likely cause: Alibaba's training infrastructure got baked into the models as a learned",
+    "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+    "published_at": "2026-10-27T19:45:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
+    "summary": "Google Deepmind has introduced Genie 4, a real-time world model that simulates interactive 3D worlds with sound and talking characters. Gemini models help plan in the background to keep the simulation consistent. Genie 4 is still an early research model, and longer sessions lead to visual inconsiste",
+    "url": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
+    "published_at": "2026-10-27T17:25:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former Deepmind researcher thinks AlphaGo's playbook can cure AI hallucinations",
+    "summary": "Former Deepmind researcher Thore Graepel wants his startup Metis Reasoning to bring AlphaGo's search principle to general reasoning. Instead of locking knowledge inside model weights, an explicit knowledge ledger would make every conclusion checkable against evidence. So far, though, there's no work",
+    "url": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
+    "published_at": "2026-10-27T13:55:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI asks outside experts, including a Nobel laureate, to check proofs its AI produced in math, computer science, and physics",
+    "summary": "OpenAI says its internal AI models have cracked three major open questions in math, computer science, and physics. One of them is part of a famous Millennium Prize Problem, each of which carries a $1 million prize. Outside experts, including a Nobel laureate, are now checking whether the proofs hold",
+    "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/",
+    "published_at": "2026-10-27T12:37:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's partner content arrives in ChatGPT pre-summarized while the rest of the web gets raw scraps",
+    "summary": "Content from OpenAI's licensing partners appears to flow into ChatGPT through a dedicated pipeline that gives it priority over the rest of the web. The article OpenAI's partner content arrives in ChatGPT pre-summarized while the rest of the web gets raw scraps appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openais-partner-content-arrives-in-chatgpt-pre-summarized-while-the-rest-of-the-web-gets-raw-scraps/",
+    "published_at": "2026-10-27T11:39:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic uses its IPO letter to renew its pledge that Claude will never show ads",
+    "summary": "Anthropic says it will keep ads out of Claude. In a cover letter accompanying its IPO filing, the company argues that the chatbot's sole incentive should be to provide helpful answers. The article Anthropic uses its IPO letter to renew its pledge that Claude will never show ads appeared first on The",
+    "url": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/",
+    "published_at": "2026-10-27T11:20:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's Ted Sanders shares a rule of thumb for picking the right GPT-model",
+    "summary": "OpenAI's Ted Sanders explains where GPT-6.1 Terra fits in the company's GPT lineup. The smaller model outperforms the larger Astra in technical communication and costs far less but trails it in most other areas. Sanders says model size, reasoning effort, and multi-agent systems are distinct dimensio",
+    "url": "https://the-decoder.com/openais-ted-sanders-shares-a-rule-of-thumb-for-picking-the-right-gpt-model/",
+    "published_at": "2026-10-27T10:09:26+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta gets $3 billion from Nvidia and plans to spend more on Nvidia chips",
+    "summary": "ia is buying into its customer Meta, which plans to run more of its AI agents on Nvidia hardware. The article Meta gets $3 billion from Nvidia and plans to spend more on Nvidia chips appeared first on The Decoder .",
+    "url": "https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/",
+    "published_at": "2026-10-27T09:58:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.1 Terra halves OpenAI's API prices and still gains ground on its larger models",
+    "summary": "OpenAI has released GPT-6.1 Terra, a mid-range model that cuts API prices in half compared to its predecessor. Analysts say it sets a new standard for intelligence per dollar, especially for everyday computing tasks and AI-driven computer control. The article GPT-6.1 Terra halves OpenAI's API prices",
+    "url": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+    "published_at": "2026-10-26T20:30:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic opens its books for Wall Street, showing record revenue and mounting obligations",
+    "summary": "Anthropic is the first major AI lab to file an S-1 with the SEC, planning to list on the Nasdaq under the ticker \"ANT.\" The numbers are strong, with $11.6 billion in quarterly revenue, a first-ever operating profit, and existing customers spending nine times more year over year. But the company also",
+    "url": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/",
+    "published_at": "2026-10-26T19:14:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "As Anthropic’s IPO approaches, CFO Krishna Rao faces a defining test",
+    "summary": "Rao must turn surging revenue into durable returns while managing billions in computing commitments.",
+    "url": "https://fortune.com/2026/10/27/as-anthropics-ipo-approaches-cfo-krishna-rao-faces-a-defining-test/",
+    "published_at": "2026-10-27T12:12:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How one hacker used AI agents and a few thousand dollars to break into scores of sites",
+    "summary": "Report finds AI agents attempted 1,200 break-ins and compromised more than 100 sites",
+    "url": "https://english.aaj.tv/news/330478203/how-one-hacker-used-ai-agents-and-a-few-thousand-dollars-to-break-into-scores-of-sites",
+    "published_at": "2026-10-27T12:12:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How to Make Your Commerce Platform Agent-Ready: Implementing ACP, UCP, and AP2",
+    "summary": "Agent-ready commerce means an AI agent can read your catalog, build a cart, run checkout, and hand you a payment token without a human ever loading your website. Two standards now define how that happens. ACP came from OpenAI and Stripe in September 2025 and powers Instant Checkout in ChatGPT. UCP a",
+    "url": "https://www.mindinventory.com/blog/agent-ready-commerce-acp-ucp-ap2/",
+    "published_at": "2026-10-27T12:12:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Top Free Online Cybersecurity Courses With Certifications | Simplilearn",
+    "summary": "As businesses prepare for the future of work, the need to upskill has become more important than ever. Organizations are looking to match displaced talent with a highly skilled workforce that can take the business to new heights in the post-pandemic recovery and beyond. There’s stiff competition for",
+    "url": "https://www.simplilearn.com/free-online-cyber-secuity-courses-article",
+    "published_at": "2026-10-27T12:12:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Whirlpool introduces India’s first AI-powered Freshness Detection Technology in Luxuriem refrigerators",
+    "summary": "Whirlpool introduces India’s first AI-powered Freshness Detection Technology in Luxuriem refrigerators",
+    "url": "https://www.digit.in/news/home-appliances/whirlpool-introduces-indias-first-ai-powered-freshness-detection-technology-in-luxuriem-refrigerators.html",
+    "published_at": "2026-10-27T12:12:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Mobisoft Infotech Launches Global AI Partner Program for Resellers, MSPs, and Technology Consultancies",
+    "summary": "The new program gives technology firms a structured way to collaborate with Mobisoft on AI engineering and enterprise AI opportunities. Mobisoft Infotech announced the launch of its Global AI Partner Program. The program is a collaboration framework for eligible resellers, managed service providers,",
+    "url": "https://aithority.com/machine-learning/mobisoft-infotech-launches-global-ai-partner-program-for-resellers-msps-and-technology-consultancies/",
+    "published_at": "2026-10-27T12:11:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI isn’t replacing thinking; it’s changing where we need to think",
+    "summary": "AI accelerates answers, but trusted data and human discernment determine whether they drive value.",
+    "url": "https://www.techradar.com/pro/ai-isnt-replacing-thinking-its-changing-where-we-need-to-think",
+    "published_at": "2026-10-27T12:11:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Israel was built on vision. Its future depends on innovation. - Sponsored Content",
+    "summary": "Before Israel was a nation, it was a dream. The Technion helped turn that dream into reality. Discover the university that helped build Israel — and is shaping its future.",
+    "url": "https://toi.li/BStB56",
+    "published_at": "2026-10-27T12:10:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Minister P.K. Kunhalikutty launches SalesX by Virtual Captains in Kozhikode",
+    "summary": "Kozhikode (Kerala) [India], October 27: Industries and Information Technology Minister P.K. Kunhalikutty launched SalesX by Virtual Captains, an AI-enabled sales platform, at a function held at Raviz Kadavu here on October 24.",
+    "url": "https://www.business-standard.com/content/press-releases-ani/minister-p-k-kunhalikutty-launches-salesx-by-virtual-captains-in-kozhikode-126102701213_1.html",
+    "published_at": "2026-10-27T12:10:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Guidewire Signs Definitive Agreement to Acquire hyperexponential",
+    "summary": "Acquisition positions Guidewire to lead the transformation to agentic underwriting, setting a new standard where AI agents assess, price, and make decisions alongside underwriters and actuaries across commercial and specialty lines LAS VEGAS, Oct. 27, 2026 /PRNewswire/ — CONNECTIONS CONFERENCE — Gui",
+    "url": "https://bebeez.eu/2026/10/27/guidewire-signs-definitive-agreement-to-acquire-hyperexponential/",
+    "published_at": "2026-10-27T12:10:07+00:00",
+    "source": "newsdata"
+  }
+]
