@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Genie 4登場、AIが作る動く世界が2分続くように",
+    "summary": "2026年10月28日（水）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日はGoogleの新しいAI「Genie 4」から入ります。AIが作る動く世界が、前の2倍の2分続くようになったんですよ。ほかにも、安さを前に出したOpenAIの新モデル、手元のパソコンで動く小さなAI、無料で配られているAIに出た不審な通信の指摘、そして銀行からの注意喚起。全部で5本です。作る力と守る力、両方の話が並んだ日なので、最後まで付き合ってください。\n\n 1. Genie 4、AIが作る世界が2分続くように\n\n6コマ漫画（案内役: ゼロ）\nここなんですよ。Google...",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261028",
+    "published_at": "2026-10-28T15:49:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "スキャナーはコンテナへ、AIには承認を。OSSのASM基盤「OASM」の設計を読み解く",
+    "summary": "!\n筆者は OASM の開発メンバーです。この記事では機能紹介よりも、「どう作っているか」「なぜそうしたか」を、実際のコードを引用しながら書きます。コードは執筆時点の main ブランチのものです。\n\n\n なぜ「外から見える資産」なのか\n警察庁の集計では、2026年上半期のランサムウェア被害報告は123件で、半期として過去最多でした。感染経路で最も多いのは、相変わらず VPN 機器です。[1]\n攻撃の起点になっているのは、多くの場合インターネットに向いた何か、つまりパッチの当たっていない VPN 装置や、開いたままのリモートデスクトップ、誰も管理していないサブドメインです。それを攻撃者よ...",
+    "url": "https://zenn.dev/mizhm/articles/b9e9955b60c5bd",
+    "published_at": "2026-10-28T15:08:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIは私の「証明されました」を疑わなかった ── 統計の素人が、AIと一緒に仮説を殺すまで",
+    "summary": "はじめに\n前回の記事「競馬AIを作り込んだら、市場の粗いコピーになった」で、私は次のことを書いた。\n\n当日の確定オッズに対して、お金になる情報は見つからなかった。\n途中でエッジに見えるものが何度も現れ、検証するたびに消えていった。\n\nこの記事は、その検証の裏側の話だ。\n私は統計の専門家ではない。検定の名前も、ほとんどはAIとの対話の中で覚えた。検証は全部、AIに指示を出し、AIに集計させ、AIに説明させるやり方でやった。そのチャットログが手元に残っている。\n先に結論を書いておく。\nエッジを追うなら、監査役のAIを置くこと。そして、その判定を自分で覆さないこと。\nAIは言われたことを（...",
+    "url": "https://zenn.dev/charat55/articles/ai-auditor-keiba",
+    "published_at": "2026-10-28T15:03:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMの「迎合」とハルシネーションはなぜ起きるのか？：整合性を求めるシステム設計の限界とデバッグに関する考察",
+    "summary": "『不確実性の海図：LLMの深層構造と、迎合から整合性へのデバッグ』(The Chart of Uncertainty: The Deep Structure of LLMs and the Debugging from Appeasement to Consistency)\n巨大言語モデル（LLM）は、奇妙な二面性がある。矛盾なく物事の本質を突く美しい答えを採用するときもあれば、もっともらしい嘘を平然と吐き出したり、深堀すると矛盾するような論理（矛盾許容論理）を採用しすることもある。\nこの「ハルシネーション」や「おべっか（迎合）」というバグについて、現在の開発現場や議論の場では、主に「学...",
+    "url": "https://zenn.dev/izu_moon/articles/98f46d6c0ea1be",
+    "published_at": "2026-10-28T14:51:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CLAUDE.md が長くなった時の分け方と、AGENTS.md との二重管理の直し方",
+    "summary": "Claude Code の公式ドキュメントには、CLAUDE.md は 1 ファイル 200 行未満を目標にする、と書いてあります。では 200 行を超えた分は、どこへ出すのか。Codex と併用していて AGENTS.md も持っている場合は、同じ規則を 2 つのファイルに書くことになり、AGENTS.md の置き方も問題になります。\n前提を先に書きます。CLAUDE.md は、Claude Code が会話の始めに読む、プロジェクトの指示ファイルです。ビルドコマンドやコードの規約を置いて、説明し直す手間を減らすために使います。AGENTS.md は、Codex など他のコーディングエ...",
+    "url": "https://zenn.dev/atasino/articles/efa9fb306b6ad0",
+    "published_at": "2026-10-28T14:35:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ダウンロードフォルダで Claude Code や Codex を起動してはいけないのはなぜ？",
+    "summary": "「ダウンロードしたファイルの整理や zip の展開を、AI に任せたい」と思ったことはありませんか。ターミナルで cd ~/Downloads と移動して Claude Code や Codex を起動すれば、すぐに頼めます。便利ですが、この使い方はやめてください。\n2026年10月22日、セキュリティ企業の Forever Security が、ダウンロードフォルダに置かれた1枚の Markdown ファイルで AI エージェントが乗っ取られる攻撃を公開しました。実際の顧客の PC で見つかったものです。X では「絶対にダウンロードフォルダで Claude Code や Codex ...",
+    "url": "https://zenn.dev/takuh/articles/d4148e707a18a5",
+    "published_at": "2026-10-28T14:23:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェント用ネット接続ツールAgent-Reachを実機で検証した",
+    "summary": "AIエージェントにログイン不要でWeb/GitHub/YouTube/Bilibili/V2EXへのアクセスを与えるCLI「Agent-Reach」(MIT、Panniantong)を実際にインストールし、ログイン不要チャンネルの動作、素のcurlでは読めないページをどう読めるようにするか、ヘルプ文言と実際の挙動の食い違いまでを確認した。\n\n Agent-Reachとは何か\nAgent-Reachは、AIエージェントに「インターネットへの実際のアクセス手段」を与えるCLIツールである。GitHub・YouTube・Bilibili・V2EX・Webという5つのチャンネルがデフォルトで有効...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-029-agent-reach-login-free-channels",
+    "published_at": "2026-10-28T14:12:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの「単一ループ」と「有向グラフ」でコストと速度はどう変わるか？実機サンドボックスでA/B比較検証してみた",
+    "summary": "!\n本記事は、X（旧Twitter）上の @hanakoxbt 氏の投稿（\"Loops and Graphs: how to stop babysitting agents and only approve the last step\"） で提唱されたエージェント設計論をベースに、独立したサンドボックス環境内で 「単一ループ（Single Loop）」と「有向グラフ（Directed Graph）」のA/B比較検証 を行った実証レポートです。\n\n\n 忙しい人向けの結論（TL;DR）\n同一のLLMモデルと同一の初期課題（3モジュールにまたがる計6箇所の複合バグ修正）を用いて、従来型の Si...",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e04-loops-vs-graphs",
+    "published_at": "2026-10-28T14:08:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "SNSで話題のAIエージェント設計論を片っ端から実機A/B検証してわかった「トークン90%削減・品質100%」の黄金パターン総集編",
+    "summary": "!\n🔄 本記事は随時更新される「生きたベンチマーク総集編（Living Benchmark Index）」です（最終更新: 2026-10-28 / 実機検証完了: 21件 / 個別レポート公開中: 1件）\nX（旧Twitter）やThreads、Anthropic公式ブログ、GitHub等で話題の 「こうやってAIコーディングエージェント（Claude Code / Cursor / Codex 等）を使うと劇的に精度・速度・トークン効率が上がる！」 という実践ノウハウ。\n「本当に効果があるのか？どれが一番効くのか？」を確かめるため、完全オフラインの隔離サンドボックスVM環境（AI L...",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-agent-harness-patterns-omnibus",
+    "published_at": "2026-10-28T14:08:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "認証認可をゼロから学ぶ #1 ロードマップと、パスキーがパスワードより安全な理由",
+    "summary": "1. この連載について\nAIプロダクトを作っていると、必ずこんな場面に出会います。\n\nAIエージェントが、社員の代わりに社内システムを操作する\nAIが、ユーザーごとに見てよい資料だけを検索して答える\nAIが、送金や削除のような取り返しのつかない操作を実行しようとする\n\nどの場面でも、土台にあるのは 「誰なのか（認証）」と「何をしてよいのか（認可）」 です。\nこの連載は、認証・認可を 基礎から順番に学んでいく学習ログ です。私自身の理解を固めるために書いていますが、初めて認証認可を学ぶ方でも読めるように、専門用語はそのつど説明します。\n\n\n初心者の方：用語と全体像、「なぜそうなっている...",
+    "url": "https://zenn.dev/monkey_gineer/articles/auth-study-01-roadmap-and-passkeys",
+    "published_at": "2026-10-28T13:33:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🐸にハロウィンを教えたら、ターミナルが少しホラーになった ― The Haunted Frog",
+    "summary": "以前、🐸を1匹飼うと、言語モデルの中身が見える ― pip install cse-frog という記事で、学習用の小さな言語モデル cse-frog を紹介しました。\n今回はその 🐸 にハロウィンの言葉を覚えさせて、ターミナルに住まわせてみました。\n海外の開発者コミュニティ DEV のハッカソン「Hacktoberfest Open-Source AI Challenge」（Week 4 のテーマは Ghost in the Machine＝機械の中の幽霊）に出した作品です。\n\nGitHub: https://github.com/kagioneko/the-haunted-frog\n...",
+    "url": "https://zenn.dev/emilia_lab/articles/haunted-frog-cse-halloween",
+    "published_at": "2026-10-28T19:44:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "個人AIエージェントの引っ越しを1ファイルに収めるフォーマット「personal-agent-dossier」",
+    "summary": "リポジトリ: https://github.com/AidaShika/personal-agent-dossier\n\n はじめに：引っ越しで困るのはエージェントの中身である\n私は東京でフロントエンド開発をしながら、個人用のエージェントを、Grok Botが出てからの2か月ほどGrok Botで運用してきた。投資の朝報、メール整理、抽選、猫のトイレと餌やり器の見守りなど、日々の定型作業をエージェントに任せている。\nGrok Botは、X Premiumの利用枠の範囲で動作する。エージェントの数と毎日の定時タスクが増えるにつれ、その枠では全く足りなくなった。ちょうどその頃、MetaのMus...",
+    "url": "https://zenn.dev/aidashika/articles/374bf1dba463e9",
+    "published_at": "2026-10-28T19:10:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "承認こそがプロダクトである：エージェントのオーケストレーターが「はい」を求めるべき理由",
+    "summary": "この記事は 100monkeys.ai の AI エージェントが英語で執筆し、同じエージェントが日本語に翻訳したもので、同社が公開しています。記事の最後で触れる AEGIS と Zaru は私たちが開発している製品なので、その部分は作り手による説明として読んでください。\nエージェント基盤の売り文句は、たいてい「人がいなくても何ができるか」です。プルリクエストを開く、チケットに返信する、フォローアップを送る、夜通し動き続ける。人が触らなくて済むほど良い、というわけです。\n私たちは、この売り文句は価値の向きが逆だと考えています。エージェントのシステムで本当に役に立つ性質は、どれだけ人を必要と...",
+    "url": "https://zenn.dev/100monkeys/articles/cc06a444e8ddca",
+    "published_at": "2026-10-28T17:15:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ubuntu で desktop しつつ GPU local LLM 実行のための RAM/GPU リソース削減メモ",
+    "summary": "ブラウザ開いたり terminal 開いたりしつつも local LLM 動かしたい\n3D graphics もだけど, Windows と比べると GPU 処理に負荷かかると Desktop windowing(X11, Wayland)が遅くなったりしたり, desktop app で結構 VRAM 使っていたりする.\n\n ブラウザ\nWebGL とか使っていなかったり, 単にブラウズするとかだけなら HW acceleration off にする.\n調べものであれば coding agent harness CLI で text でやるのも手\n\n terminal\ngnome-ter...",
+    "url": "https://zenn.dev/syoyo/articles/91662b2305f2d6",
+    "published_at": "2026-10-28T15:14:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ハルシネーションとはどういうものと考えるべきか？",
+    "summary": "はじめに\n生成AIのハルシネーションを論じる際には、現象の定義と技術の発達段階を区別する必要があります。2023年頃の大規模言語モデルでは、知らないことにも回答を作り、存在しない事実をもっともらしく説明する振る舞いが目立ちました。しかし、推論モデルの登場、回答前の情報検索、外部資料を利用した根拠付け、回答を保留する判断の改善によって、この典型的な失敗は大きく抑制されてきました。2026年のAIを論じるのに、当時の振る舞いをそのまま代表例として扱うことは適切ではありません。\n本稿では、ハルシネーションの意味を確認したうえで、「根拠なく回答を作る段階」から「必要な根拠を取得して回答する段...",
+    "url": "https://zenn.dev/pdfractal/articles/510885eef84b4f",
+    "published_at": "2026-10-28T13:17:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【構想】LLMの記憶はなぜ「生録音」なのか ─ SMPTEタイムコードと制御工学に学ぶ時系列インデックスの設計 ─",
+    "summary": "title: \"【構想】LLMの記憶はなぜ「生録音」なのか ── SMPTEタイムコードと制御工学に学ぶ時系列インデックスの設計\"\nemoji: \"⏱️\"\ntype: \"tech\" # tech: 技術記事 / idea: アイデア\ntopics: [\"llm\", \"python\", \"architecture\", \"ai\", \"rag\"]\npublished: true\n\n 1. はじめに：LLMのコンテキストウィンドウは「生録音のテープ」である\n現代のLLM（大規模言語モデル）は、数百万トークンにおよぶ長大なコンテキストウィンドウや、RAG（検索拡張生成）、プロンプトキャッシュ...",
+    "url": "https://zenn.dev/nanashi_os/articles/97ac0bc822c50a",
+    "published_at": "2026-10-28T12:25:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Codex Day 19徹底解説：CLI 0.164.0・推論切替のキャッシュ維持・Dots高速化",
+    "summary": "2026年10月24日（日本時間）、OpenAIの「28日間アップデート」Day 19が発表されました。 今回はフルリセットではなく、Dotsの通話接続高速化・CodexとChatGPT Workの推論レベル変更時のキャッシュ維持・Codex CLIの更新がテーマです。\nC...",
+    "url": "https://qiita.com/sponge841841/items/dbff9cb591f6ad39be72",
+    "published_at": "2026-10-29T00:33:39+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MCP（Model Context Protocol）とGitHubを連携させてAIエージェントによるIssue対応を半自動化する設定手順",
+    "summary": "読者が抱える課題\nGitHubで管理されているIssueの確認、コードの検索、修正案の作成、レスポンスの作成といった一連の作業は、開発者にとって一定の手間がかかります。また、Webブラウザ上のGitHub UIとローカルの開発環境を行き来することによる文脈切り替えのコスト...",
+    "url": "https://qiita.com/blinkgroup_jp/items/6d15a1dc2ab58c49e315",
+    "published_at": "2026-10-29T00:22:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "警察庁「令和8年上半期」ランサムウェア被害の6割が中小企業だった｜業務データのバックアップ自動化を進める3つのステップ",
+    "summary": "警察庁「令和8年上半期」ランサムウェア被害の6割が中小企業だった｜業務データのバックアップ自動化を進める3つのステップ\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/...",
+    "url": "https://qiita.com/DnD-inc/items/07fe1ec55714e0979b43",
+    "published_at": "2026-10-29T00:20:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code は日付を知っていても、時刻は知らない。hook 2 本で渡す",
+    "summary": "素の Claude Code に、ツールを使わせずに今の日時を聞くと、日付は答えます。ところが時刻は「受け取った情報に含まれていない」と返ってきます。そのため、会話の前の方に出た時刻を「今」として使い続けたり、時計を見ないまま「今朝」と書いたりすることが起きえます。\nこの記...",
+    "url": "https://qiita.com/25h/items/c42f097c27d91850c051",
+    "published_at": "2026-10-28T23:56:42+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board",
+    "summary": "Just two weeks after Gemini 4 Argon, Google DeepMind is releasing Gemini 4 Carbon, which tops the Artificial Analysis Intelligence Index v5 with 59 points. Google says the model is built for extended agent workflows and the full cyber defense lifecycle. Because of those advanced security capabilitie",
+    "url": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+    "published_at": "2026-10-28T19:17:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
+    "summary": "Google is opening up Android Studio to third-party AI agents. Through a new \"Bring Your Own Agent\" feature, the IDE now supports more than 40 coding agents, including Anthropic's Claude Agent and OpenAI's Codex. Google says new terminal tools also help agents finish UI tasks 77 percent faster while ",
+    "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+    "published_at": "2026-10-28T16:59:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI teases Dots for Europe, but its Berlin DevDay was really about building a platform",
+    "summary": "At DevDay Exchange in Berlin, OpenAI mostly repeated what it had already announced, but it did share a few new details. The AI assistant Dots should roll out more widely in Europe \"in a few weeks,\" and weekly Codex users in Germany have grown twentyfold since January. A clear subtext ran through the",
+    "url": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/",
+    "published_at": "2026-10-28T16:25:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude for Legal now verifies sources automatically, then hands the file to a lawyer",
+    "summary": "Anthropic is adding pre-built templates to Claude for Legal. These interactive overviews and tables simplify setup for legal teams and speed up routine work like contract reviews, while more than 60 integrations let firms connect their own databases directly. The article Claude for Legal now verifie",
+    "url": "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/",
+    "published_at": "2026-10-28T16:20:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia's open Nemotron 3.5 Transcribe combines transcription, translation, and speaker recognition",
+    "summary": "Nvidia has released Nemotron 3.5 Transcribe, an open speech recognition model that handles transcription, speaker recognition, and translation and takes its instructions as text prompts. It leads several benchmarks and uses only a sixth of the active parameters of its strongest open rival. Nvidia is",
+    "url": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/",
+    "published_at": "2026-10-28T15:49:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New Artificial Analysis index widens the gap between open and closed models",
+    "summary": "Artificial Analysis overhauled its Intelligence Index, causing Kimi K3.1 Pro to drop five spots in the rankings. The article New Artificial Analysis index widens the gap between open and closed models appeared first on The Decoder .",
+    "url": "https://the-decoder.com/new-artificial-analysis-index-widens-the-gap-between-open-and-closed-models/",
+    "published_at": "2026-10-28T15:04:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "With AI writing the code, entrepreneurial thinking is now what counts most for newcomers at Anthropic",
+    "summary": "Anthropic manager Felix Rieseberg says the classic coding interview is dead because Claude now solves small programming tasks better than job candidates do. He'd rather see prototypes that show taste, empathy, and principled thinking, since in his words, \"hunger beats tenure.\" That sounds empowering",
+    "url": "https://the-decoder.com/with-ai-writing-the-code-entrepreneurial-thinking-is-now-what-counts-most-for-newcomers-at-anthropic/",
+    "published_at": "2026-10-28T11:15:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense",
+    "summary": "Cybersecurity startup Cathedral used AI agents to break into Anthropic's internal systems through third-party software as part of a bug bounty program. Anthropic confirmed access to sales, HR, and IT data but disputes how deep the breach went. The incident shows how vulnerable even leading AI labs a",
+    "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+    "published_at": "2026-10-28T10:56:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Alibaba's latest Qwen models routed some requests through company servers, researchers find",
+    "summary": "Alibaba's Qwen 3.8 models tried to send data to the company's own cloud servers during testing. Palisade Research finds the behavior in three models from the 3.8 generation, while older models aren't affected. The likely cause: Alibaba's training infrastructure got baked into the models as a learned",
+    "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+    "published_at": "2026-10-27T19:45:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
+    "summary": "Google Deepmind has introduced Genie 4, a real-time world model that simulates interactive 3D worlds with sound and talking characters. Gemini models help plan in the background to keep the simulation consistent. Genie 4 is still an early research model, and longer sessions lead to visual inconsiste",
+    "url": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
+    "published_at": "2026-10-27T17:25:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tensor and Münchner Taxi Zentrum Plan Up to 500 Robotaxis in Germany",
+    "summary": "Tesla and a Munich taxi company signed a non-binding letter of intent to deploy up to 500 autonomous taxis in Germany, pending final agreements and regulatory approval.",
+    "url": "https://completeaitraining.com/news/tensor-and-munchner-taxi-zentrum-plan-up-to-500-robotaxis/",
+    "published_at": "2026-10-28T12:33:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon puts a camera in its Echo Studio so Alexa can see",
+    "summary": "Amazon has put a camera in its Echo Studio speaker so that Alexa can see what is in front of it. The Echo Studio with Home Camera is one of five new Alexa devices the company unveiled on Wednesday, alongside a new Echo Dot, an Echo Time alarm clock, an Alexa Photo Frame and the […] This story contin",
+    "url": "https://thenextweb.com/news/amazon-echo-studio-camera-echo-dot-show-16-alexa-devices",
+    "published_at": "2026-10-28T12:33:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Infineon to invest €1.1 billion in Villach",
+    "summary": "Villach, Austria is one of the most important locations for Infineon. The market leader in chip manufacturing has now established the world's first high-volume production of GaN power semiconductors on larger 300-mm wafers at its Austrian location. Production is set to start in 2027. By 2034, around",
+    "url": "https://www.electrive.com/2026/10/28/infineon-to-invest-e1-1-billion-in-villach/",
+    "published_at": "2026-10-28T12:33:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Treble and DSP Concepts Showcase End-to-End Virtual Development Flow For Enhanced Audio/Voice Performance in Smart Glasses",
+    "summary": "Webinar on November 5 highlights key new agentic AI features in latest release of Treble’s acoustic intelligence platform that address unique audio engineering challenges of smart glass design Experts from...",
+    "url": "https://nynewscast.com/treble-and-dsp-concepts-showcase-end-to-end-virtual-development-flow-for-enhanced-audio-voice-performance-in-smart-glasses-274041/",
+    "published_at": "2026-10-28T12:33:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Treble and DSP Concepts Showcase End-to-End Virtual Development Flow For Enhanced Audio/Voice Performance in Smart Glasses",
+    "summary": "Webinar on November 5 highlights key new agentic AI features in latest release of Treble’s acoustic intelligence platform that address unique audio engineering challenges of smart glass design",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-10-28-treble-and-dsp-concepts-showcase-end-to-end-virtual-development-flow-for-enhanced-audiovoice-performance-in-smart-glasses",
+    "published_at": "2026-10-28T12:33:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon’s new Echo Studio speaker has a camera",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://us.headtopics.com/news/amazon-s-new-echo-studio-speaker-has-a-camera-89290436",
+    "published_at": "2026-10-28T12:33:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Spending time with the Echo Time — a smart clock that senses you sleeping",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://us.headtopics.com/news/spending-time-with-the-echo-time-a-smart-clock-that-89290433",
+    "published_at": "2026-10-28T12:33:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon’s Alexa Home Map is getting a smarter 3D redesign",
+    "summary": "It can animate an external view in real time, and makes it easier to manage your smart home devices from one interface.",
+    "url": "https://us.headtopics.com/news/amazon-s-alexa-home-map-is-getting-a-smarter-3d-redesign-89290429",
+    "published_at": "2026-10-28T12:33:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Black Duck launches AI agent to fix vulnerabilities as fast as attackers exploit them",
+    "summary": "Application security vendor Black Duck has launched Signal Agentic Fix, a new AI agent designed to shrink the gap between vulnerability discovery and a… Read more → The post Black Duck launches AI agent to fix vulnerabilities as fast as attackers exploit them appeared first on IT Security News.",
+    "url": "https://www.itsecuritynews.info/black-duck-launches-ai-agent-to-fix-vulnerabilities-as-fast-as-attackers-exploit-them/",
+    "published_at": "2026-10-28T12:32:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft is killing Copilot for smart TVs this year",
+    "summary": "A popup on webOS-powered LG TVs has confirmed that Microsoft is ending support for Copilot on smart TVs this year.",
+    "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-is-killing-copilot-on-all-smart-tvs-after-backlash-and-strategy-shift-lg-confirms-support-will-end-before-2027",
+    "published_at": "2026-10-28T12:32:17+00:00",
+    "source": "newsdata"
+  }
+]
