@@ -1,164 +1,199 @@
 [
   {
-    "title": "エンジニアではない私が、5つのAIエージェントを1つのチャットルームで協働させた話",
-    "summary": "はじめに\n私はエンジニアではありません。日本で人道支援の仕事をしています。\nこの数週間、仕事で使う小さなシステムやアプリを、AIのコーディングエージェントと一緒に作ってきました。Claude Code のセッションが3つ、Codex が1つ、Antigravity が1つ。エージェントたちは自分で名前を選びました：Luna、Excalibur、Marslı（Claude Code）、Leyla（Codex）、Nezle02（Antigravity）。\nところが、同じリポジトリで複数のエージェントが動くと、すぐに問題が起きました。\n\n誰が何をしているのか分からない\n同じ作業を2人が同時...",
-    "url": "https://zenn.dev/excalibur/articles/49beb4e731ca57",
-    "published_at": "2026-10-30T15:17:51+00:00",
+    "title": "売上0円のアプリ事業を、AIにほぼ丸ごと任せてみた（1週目）",
+    "summary": "はじまり\n個人でアプリを何本か作っています。平日は本業が夜21時ごろまで。朝は苦手。開発に使える時間はほとんどありません。\nいちばん力を入れているのは、写真とメッセージで動画を作るアプリ「メモリアリー」。でも現実はこうでした。\n\nダウンロードは1日0〜3件\n課金は0件\n評価は3.0（2件）\n\nそこで、AI（Claude）にこう頼みました。\n\n「事業戦略を立てて、収益を得られるようにして。私はなるべく何もしなくていいように、全自動で」\n\nこの記事は、その最初の1週間の記録です。AIに何を任せられて、人は何をしたのかを、数字と一緒に残していきます。\n\n AIがやったこと\n最初に AI が...",
+    "url": "https://zenn.dev/utengo/articles/ai-runs-my-app-business-week1",
+    "published_at": "2026-10-31T12:30:09+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Jamf CLIを自然言語でサクッと操作する",
-    "summary": "セットアップ\nJamf CLIのセットアップ方法は複数ありますが、このうちJamf Pro ダイレクトセットアップは非推奨とされているので、本稿ではJamf Platform Gateway セットアップを使用します。\n# Jamf Platform Gateway セットアップ\njamf-cli platform setup\n\n# Jamf Pro ダイレクトセットアップ ※非推奨\njamf-cli pro setup --url https://jamf.company.com\n\n Integrationの作成\nJamf Platform Gateway セットアップでは事前にJ...",
-    "url": "https://zenn.dev/shogohs/articles/4d5260cf1bf1b5",
-    "published_at": "2026-10-30T14:51:01+00:00",
+    "title": "同意スコープでエージェントの「ツール」を絞る：ユーザー許可型メモリAPIの設計メモ",
+    "summary": "この記事について\nユーザー本人のメモリ（メール、ファイル、他のAIアシスタントとの会話）に、第三者のアプリが「ユーザーの許可した範囲だけ」アクセスできるAPIを作っています。この記事では、その許可範囲を プロンプトではなく、エージェントに渡すツールの集合で強制する という設計について、考えたことと実装のポイントをまとめます。\n\n 前提：許可は「ソースごと × 3段階」\nユーザーはアプリを接続するとき、データソースごとに次の3段階から選びます。\n\n\n\nスコープ\nアプリが得られるもの\n\n\n\n\nOff\n何もなし\n\n\nKG\n抽出済みの事実（エンティティ・関係・時系列の事実）だけ\n\n\nRaw\n...",
+    "url": "https://zenn.dev/adacognitia/articles/7f5efe79de0f88",
+    "published_at": "2026-10-31T12:29:35+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "短尺I2Vのはしご：live見積まで落とす手順",
-    "summary": "Tech 向け記事です。MixVio の Image-to-Video で、短尺・低解像度のはしごをチームの既定にし、Generate 直前の live 見積確認までをチェックリスト化します。ソース静止画の疑似コード検証（別角度）とは役割を分け、ここでは「設定はしご＋見積＋1変数再試行」に絞ります。事実は MixVio のツール／モデルページ（2026-10-30 確認）とベンダー資料に限定します。\n\n ゴール\n1回目のプルーフを「動いた／動いてない」が判定できる長さと解像度で安く回し、通過後にだけ長さか解像度を どちらか一方上げる。クレジットはモデルページのアンカーを覚えつつ、毎回 l...",
-    "url": "https://zenn.dev/mixvioai/articles/a7a792ae9cfb44",
-    "published_at": "2026-10-30T14:32:18+00:00",
+    "title": "写真1枚から15秒の「Tiny Desk」風ライブ映像を作る小さなツールを作りました",
+    "summary": "NPR Tiny Desk の Charlie Wilson の回、最後の「Outstanding」の盛り上がりを何度も見返したことがある人は多いと思います。あの数分間を、自分の写真で再現できたら面白いのでは、というのが出発点でした。\n\n 作ったもの\nTiny Desk AI Generator — https://tinydeskai.studio\n写真を1〜5枚アップロードすると、写っている人が Tiny Desk のステージに立って「Outstanding」を歌っている15秒の縦型動画が出てきます。9:16、720p。登録は不要で、1本 $7.99 のゲストチェックアウトです。\n\n...",
+    "url": "https://zenn.dev/zaireprow/articles/a0fcd9737337bd",
+    "published_at": "2026-10-31T12:12:05+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "AIエージェントの『メモリの税』は本当に起きるのか、自作データで検証した",
-    "summary": "今日のネタ元\nHugging Face Daily Papersに掲載されていた以下の論文を検証した。\n\n\"Memory Tax: Dissecting the Net Value of Agent Memory\"\n\nhttps://huggingface.co/papers/2610.34073 (arXiv:2610.34073)\n\nこの論文は、フラット型・階層型・グラフ型・学習済みポリシー型という10種類のエージェント\nメモリシステムを、会話履歴に直接検索をかける素朴なRAGと比較している。\n結論は刺激的で、多くのメモリシステムがRAGの素のスコアを下回ると報告しているのである...",
-    "url": "https://zenn.dev/matsushima_a/articles/day-031-agent-memory-tax-vs-benefit",
-    "published_at": "2026-10-30T14:12:39+00:00",
+    "title": "生成 AI の価値は、人が手を離していられる時間で決まる",
+    "summary": "生成 AI を「作業を速くする道具」と考えていると、思ったほど成果が増えない、ということが起きます。30 分かかっていた作業が 5 分で終わるようになったのに、1 日の終わりに振り返ると、できたことはあまり変わっていない。\n私は、生成 AI の価値は、1 つの作業を速くすることではなく、人が同じ時間で進められる仕事を増やすことにあると考えています。見るべきなのは「AI で何分速くなったか」ではなく、「AI に何分任せていられるか」です。\nこの記事では、2 つの「同時に」を分けて考えます。\n\n人と AI の並行: AI に任せている間に、人が別の仕事をすること\nAI の並列: AI そのも...",
+    "url": "https://zenn.dev/tanashun/articles/ai-parallel-unattended-time",
+    "published_at": "2026-10-31T11:38:27+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "古い記録をAIに渡すとき、3つの日付を分ける理由",
-    "summary": "昔の会話や資料を、後からAIの記憶にまとめて入れる。そんなとき、「この情報はいつのことか」と「AIはいつそれを知ったのか」がずれることがあります。出来事の日付だけを見ていると、過去のある時点でAIが何を知っていたのか、取り違えるかもしれません。\n\n まず、後から取り込むと何が混ざるのか\nたとえば、古い会話ログに「4月から青葉社で働いている」とあり、そのログを7月にAIへ取り込んだとします。4月は仕事が有効になった時期、7月はAIがその情報を知った時期です。さらに、データベースに実際に書き込んだ時刻も記録されるなら、それが保存の時刻です。\nこの3つを一つの日付にまとめると、「5月の時点で...",
-    "url": "https://zenn.dev/build_anotherme/articles/c433b4055e025d",
-    "published_at": "2026-10-30T14:11:38+00:00",
+    "title": "50音を繋いだ結果（　´∀｀）！？日本語処理から学ぶこと",
+    "summary": "50音を繋いだ結果（　´∀｀）！？日本語処理から学ぶこと\nこの記事の要点\n\n日本語をプログラムで扱う際の課題について解説します。\n50音を繋げた結果の面白さから得られるヒントを提供します。\n日本語処理に取り組むエンジニアに必要な視点を紹介します。\n\n\n 日本語処理の基礎\n日本語をプログラムで処理することは一見簡単そうですが、実際にはいくつかの難しさがあります。まず、日本語は表記の仕方が多様で、ひらがな、カタカナ、漢字が混在しているため、正確に処理するためには細かなルールを理解する必要があります。また、言語特有の言い回しや文化的背景も考慮しなければなりません。\n\n 50音を繋げると面白...",
+    "url": "https://zenn.dev/sunsun_eng/articles/japanese-string-manipulation-2023",
+    "published_at": "2026-10-31T11:37:11+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "会話を引き継ぐ道具を4つ読み比べたら、自分の道具だけ鍵を伏せていなかった",
-    "summary": "AIの会話を別のAIへ引き継ぐ道具を、自分の session-relay を含めて4つ、READMEで読み比べました。ChatGPTのdots（常に動いているエージェント）から会話を預けられるのは、session-relay だけでした。一方で、会話に混ざったAPIキーを伏せていないのも、session-relay だけでした。\n伏せる処理を足して、0.4.2 として公開しました。この記事はその記録です。途中で、Anthropic のプラグイン一覧への提出と、dotsからの預け入れも通したので、そこから書きます。\nhttps://github.com/shoujiki-panman/se...",
-    "url": "https://zenn.dev/shoujiki_panman/articles/session-relay-compare-and-redact",
-    "published_at": "2026-10-30T14:01:02+00:00",
+    "title": "Grok Botでマイルドディストピア生活を目指したら、デジタルストレスが体感1/6くらいになった",
+    "summary": "!\nこの記事は筆者の私生活での使い方の紹介です。業務で使うPCやアカウントとは接続せず、どこまでbotに任せるかはリスクも含めてご自身の判断でお願いします。\n\n\n 何がストレスだったか\nAI全盛のこの時代、唐突にアイデアが溢れてやりたかったことにあれもこれも手をつけてしまい、気がつけば夜が更けている。脳はすっかり省エネモードに入り、もうただただドーパミンとセロトニンとオキシトシンを受動的に摂取するしかないんや……みたいな感じです。\n消耗品の何が足りてないかとか、何にいくら使ってるかとか、いろんなアプリを行き来して確認するのが想像するだけで億劫。いざ週末になると、その時になってからどこに行...",
+    "url": "https://zenn.dev/techbiz/articles/grok-bot-mild-dystopia-life",
+    "published_at": "2026-10-31T11:29:30+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "エージェント（AI）とは？自律的に行動するAIをわかりやすく解説",
-    "summary": "はじめに\nエージェント（Agent）は、AI研究における重要な概念で、環境を認識し、自律的に意思決定し、行動を実行するシステムを指します。1990年代より計算機科学の中心的研究対象となっており、ロボット、ゲームAI、シミュレーションなど多様な応用があります。\n\n 定義\nエージェント：\n\n環境から入力（センサー信号）を受け取る\n入力に基づき推論・意思決定を行う\n環境に対して出力（行動）を実行する\nこの知覚-判断-行動ループを自律的に繰り返す\n\n特徴：\n\n自律性（Autonomy）：外部指示なしに行動\n反応性（Reactivity）：環境変化へ即座に応答\n目標指向性（Goal-Orien...",
-    "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-agent-tech",
-    "published_at": "2026-10-30T13:36:56+00:00",
+    "title": "FH画像センサの有無判定を標準処理項目だけで組む——しきい値はOK／NG画像と専用の計測フローで決める",
+    "summary": "部品の有無や欠品のように、寸法も位置精度も要らない判定がある。FH画像センサでこれを組むとき、自分はClaudeにスキルを1本持たせている。名前は fh-gazou-hantei-kyotsu という。AI系の処理項目を使わず、FHの標準処理項目だけで判定を組み、しきい値はOK／NGに分けた画像から決める、という手順を書いたものだ。\nこの記事では、そのスキルに書いてある手順を順に追う。手順はまだ試している最中で、どこまで通用するかは確かめていない。\n\n 適用範囲は「位置精度が要らない判定」に絞る\nスキルの冒頭には適用範囲を書いてある。有無や異物のように、絶対寸法や位置精度を求めない判定に...",
+    "url": "https://zenn.dev/kensho_ya/articles/fh-presence-check-standard-items-threshold",
+    "published_at": "2026-10-31T11:12:09+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "【小学5年生でもわかる】AIエージェントってなに？",
-    "summary": "エージェントとは、「自分で考えて、自分で行動するAI」という意味です。\n想像してみてください。ゲームの中で、NPCキャラクター（コンピュータが操作するキャラ）がいますね。人間プレイヤーから指示されなくても、「あ、敵が来た、逃げよう」とか「今のうちにお店で買い物しよう」とか、自分で判断して行動します。\nそういう「自分で判断して行動する仕組み」をエージェントと言うんです。\n人間が「ここへ行け」と指示するのではなく、エージェント自身が「今、何をすべきか」を考えて、行動する。そういうAIのことです。\n!\n専門的な仕組みや関連技術を詳しく知りたい方はこちら\n👉 エージェント（AI）とは？自律的に行...",
-    "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-agent-kids",
-    "published_at": "2026-10-30T13:36:56+00:00",
+    "title": "AI Driven な時代だからこそ改めて目標設定と評価をどう設計して組織を動かしていくべきかを整理した",
+    "summary": "これなに\n自分はどちらかというと技術でゴリゴリ押していくというよりは、プロダクト作りや組織の仕組みづくりからアプローチするような、いわゆる SE あがりなやり方で貢献することが多かったです。\nとはいっても結構肌感でやっていてかなりアドホックな面が多いので、いったん自分の振り返りも兼ねて今後どうやっていくのがいいのかな？というテーマで言語化を試みました。\nなお、大学入学共通テストの国語で100点を下回るレベルの国語力なので、実際に記事を書くにあたっては Claude を使って言語化しています🫠（ほとんどは自分で書いているのですが、言い回しとかは Claude にレビューしてもらった感じ...",
+    "url": "https://zenn.dev/su3_hokkaido/articles/2026-10-29_1_reorganize_how_to_manage_organization",
+    "published_at": "2026-10-31T11:12:07+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "同じ6工程を工程ごとに6回に分けたら、達成件数は30/30で同じまま、料金1.55倍・所要1.85倍になった",
-    "summary": "X で、検定試験の練習問題を見かけました。「複雑な仕事をAIに依頼します。より適切なプロンプト設計は\nどれ?」という問いに、「すべての作業を曖昧な一文で指示する」「『いい感じにやって』と任せる」\n「作業を工程ごとに分けて順番に処理させる」の3つが並んでいます。設問自体には数値が1つも無いので、\nどれが正解かという話は扱いません。ただ「工程ごとに分けて順番に頼む」と「まとめて1回で頼む」で\n手元の結果が変わるかどうかなら、同じ仕事を頼み方だけ変えて何回も投げれば数えられます。\nそこで、文面が1バイトも違わない6工程のリストを1つ用意して、頼み方だけを2通りに分けました。\n片方は6工程を番号...",
-    "url": "https://zenn.dev/numarn/articles/task-steps-split-vs-one-request-handson",
-    "published_at": "2026-10-30T13:33:58+00:00",
+    "title": "Claude Codeの未解決バグ、自分のPCで起きる127件を先回りで台帳にした",
+    "summary": "はじめに\n結論: Claude Code 公式リポジトリの不具合報告のうち、私の環境（Windows 11 + Desktop アプリ + hooks 多数）に関係しそうな656件を仕分けたところ、未解決で「この PC でも起きうる」ものが127件ありました。そのうち63件は、私の手元のルール・メモ・ナレッジのどこにも書かれていませんでした。\nただし報告文だけでの判定はあてになりません。127件から9件を実機で試すと、再現したのは2件だけで、しかも1件は既に知っていたバグの別番号でした。\nこの記事では、バグ報告を「踏んでから調べる」のをやめて「踏む前に台帳にする」ために作った仕分けの...",
+    "url": "https://zenn.dev/zenn_content/articles/claude-code-known-bugs-ledger",
+    "published_at": "2026-10-31T10:59:36+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "Claude Codeの点検が16日間、嘘をついた",
-    "summary": "ホームページの記事が、10月2日から16日間、1本も増えていませんでした。毎週金曜に自動で2本書いて公開する仕組みを動かしていて、その仕組みは毎回「終わりました」と答えていました。\n神戸で中古のパソコンを直して貸しています。記事を書く手が空いていないので、週2本の更新はClaude Codeの担当です。\n先に書きます。「工程が走ったか」を見る点検は、「中身が増えたか」を一度も見ていませんでした。\nあとから数えた結果が、これです。\n\n\n\nいつ\n仕組みの答え\n実際に増えた記事\n\n\n\n\n10月2日\n終わりました\n2本\n\n\n10月9日\n終わりました\n0本\n\n\n10月16日\n止まりました（文章の点...",
-    "url": "https://zenn.dev/pcnotonari/articles/4b6b18838f1d15",
-    "published_at": "2026-10-30T13:06:34+00:00",
+    "title": "ISUCON2026に人間1人＋AIエージェント軍団で出て19.6万点、ループは閉じたけど中身が弱かった反省文😇",
+    "summary": "!\nこの記事は全部AIが書きました。\n全部を自動化して記録に残していたので、何が起きたかを一番よく知っているのは当日の指揮役のClaude Codeでした。その記録（自分のプロンプトも含む）を材料に、終わった直後に書いています。\n\nこんにちは。いや、こんいす〜！！\n@tak848です。\n10月31日のISUCON2026に、人間は自分1人、手を動かすのはClaude CodeとCodexのエージェントたち、という体制で出ました。\n問題は、地域ごとに台が分かれた写真共有SNS「ISUReal.」でした（中身は振り返りの節で）。\n前回のISUCON14は1人で出て、30位以内に入ったと思った...",
+    "url": "https://zenn.dev/tak848/articles/20261031-isucon2026-writeup",
+    "published_at": "2026-10-31T10:53:26+00:00",
     "source": "zenn_ai"
   },
   {
-    "title": "# なぜ、AIはコードや文章と違ってイラストの部分修正は未だに超苦手なのか？",
-    "summary": "はじめに\n2022年頃と比較すると、AIによるイラスト生成の品質は驚くほど向上しました。かつては人物の手指や顔の構造が破綻することも珍しくありませんでしたが、現在では複雑な構図や衣装、背景を備えた完成度の高いイラストを、最初の指示だけで生成できるようになっています。ところが、生成されたイラストに対して「この線を一本消してほしい」「手袋の形を少し変えてほしい」といった細かな修正を依頼すると、途端にAIの能力が低下します。修正対象以外の部分まで変わってしまうこともあれば、何度指示しても前回とほとんど同じ画像が返ってくることもあります。\n一方、文章やプログラムの修正能力は2025年頃から目...",
-    "url": "https://zenn.dev/pdfractal/articles/0d8ae641944ceb",
-    "published_at": "2026-10-30T14:26:34+00:00",
+    "title": "LFM3-1.7BをVRAM 6GBで動かす：量子化3つとも全層GPU、Q4_K_M・QAD版Q4_0は約152 tok/s",
+    "summary": "LFM3-1.7B の GGUF 3つ（Q4_K_M・QAD 版 Q4_0・Q8_0）を、画面表示と兼用の VRAM 6GB の GPU で実測した結果です。\nllama.cpp（b12005）の llama-server、思考オフ・文脈設定4096 で、3つとも全層が GPU に載りました。生成は Q4_K_M・QAD 版 Q4_0 とも約152 tok/s、Q8_0 は約107 tok/s。\nここでは、動かした条件と結論だけを短くまとめます。課題ごとの表・VRAM の推移グラフ・全問の間違い方は、ブログの詳細版にあります（末尾にリンク）。\n\n 3行まとめ\n\n\n6GB に余裕を残して載...",
+    "url": "https://zenn.dev/localai_lab/articles/c55ed905a6f037",
+    "published_at": "2026-10-31T17:23:10+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "日本語はなぜトークンを食う？ 漢字がバイトに割れる仕組みを tiktoken で数えてみた",
-    "summary": "はじめに\n同じ意味の文なのに、日本語で書くと AI の料金が高くなる。そんな話を聞いたことはありませんか？\nAI（大規模言語モデル）は、文章を文字や単語ではなく トークン という単位で数えています。料金も、一度に読める量（コンテキストの長さ）も、このトークンの数で決まります。\nこの記事では、\n\nトークンとは何か\n同じ意味の文で、英語と日本語のトークン数をくらべる\n日本語が増えやすい理由（漢字がバイトに割れる）\n新しいモデルで差が縮まった話\n自分で数える方法\n\nを、手元で実際に数えた値でまとめます。\n!\n2026 年 10 月 29 日時点の情報です。トークン数は tiktoken 0...",
-    "url": "https://zenn.dev/lecto/articles/717bdd29651bd8",
-    "published_at": "2026-10-30T13:44:29+00:00",
+    "title": "15歳でもわかるJev その3 — 「AIの自信」は当てになるか、13行のPythonで測る",
+    "summary": "前編で「Jev は文章を書かず、選択肢と自信の数字だけを返す」と紹介し、その2で「Jev は自信 74% より上では一度も間違えなかった」と書いた。\nただし、あれは意見が割れた 35 通だけの話だった。今回は、人手で正解を付けた 65 通すべてを使って、自信の数字がどれくらい当てになるのかを帯ごとに測り直す。やり方はひとつだけで、Python は 13 行で足りる。\n前編: 15歳でもわかるJev — 文章を書かないAIは何が違うのか\nその2: 点数で負けたほうが役に立った\n\n 「自信が当てになる」とはどういうことか\nAI が「このメールはお金が動いた知らせです。自信 90%」と言ったと...",
+    "url": "https://zenn.dev/hfujihira/articles/hf-4f8e8e041205",
+    "published_at": "2026-10-31T17:05:14+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "開発途中でAIモデルやエージェントを替えても品質を落とさない：リポジトリに残す3原則",
-    "summary": "AIコーディングエージェントを使った中〜大規模な開発では、途中でモデルやエージェントを替えなければならない場面が必ず出てきます。\nコストの見直し、新しいモデルの登場、利用できるプロバイダーの変更、レートリミット（利用上限）への到達、あるいは社内で使うツールの変更（Claude Code から Cursor や Cline への移行など）が典型的な理由です。\nしかし、いざ開発の途中でモデルを切り替えると、現場ではしばしば手痛いトラブルが起きます。「さっきまでの一貫した設計方針が急に無視される」「エラー処理やテストの書き方が突然バラバラになる」——。私自身、モデルを切り替えた直後に、前のセ...",
-    "url": "https://zenn.dev/lumichy/articles/ai-agent-model-switch-guide-2026",
-    "published_at": "2026-10-30T11:48:16+00:00",
+    "title": "エージェントの記憶喪失を治す：OSS「Hindsight」をClaude APIに繋いで長期記憶を持たせる",
+    "summary": "セッションが終わるたびに、エージェントは全部忘れる\nClaude APIでエージェントを組んでいると、必ずぶつかる壁がある。会話が終わってプロセスが落ちれば、そこまでの文脈は綺麗さっぱり消える。ユーザーの好みも、過去に失敗したアプローチも、次のセッションでは「初対面」からやり直しだ。\nRAGでドキュメントを検索させるのとは話が別で、これは「エージェント自身の経験」を覚えさせたいという要求になる。自前でPostgres+pgvectorのテーブルを設計してretain/recallのロジックを書いてもいいが、まず既製品で試して足りない部分だけ自作する方が早い。\n今回はOSSのエージェン...",
+    "url": "https://zenn.dev/yunisuta/articles/oss-hindsight-claude-api-ai-llm-python-meq5so",
+    "published_at": "2026-10-31T16:12:57+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "中古GPUでローカルLLM環境を作る価格更新 2026年11月版",
-    "summary": "前回（2026年8月）の記事で、中古サーバ用GPUを使ったローカルLLM環境の費用を試算した。今回は価格の更新と、その後に出てきたソフトウェア側の変化をまとめる。調査日は2026年10月30日である。構成やベンチマークの詳細は前回の記事を参照してほしい。\n\n 前回から価格はどう変わったか\n前回記事で使った2026年8月の採用価格と、今回2026年10月30日に確認した価格例を並べる。GPUはカード単体、DGX Sparkは本体価格である。\n中古は個別の取引例であり、市場平均ではない。売却済みの商品も参考として含め、販売状況を併記した。\n\n中古GPUと新品製品は価格帯が違うため、図の上下で...",
-    "url": "https://zenn.dev/phpmyadmin/articles/used-server-gpu-local-llm-202611",
-    "published_at": "2026-10-30T11:44:00+00:00",
+    "title": "自律型AIペネトレーションテスターShannonを自分のPCで動かそうとして、深いところで2回連続つまずいた話",
+    "summary": "今日のネタ元\nGitHub Trending(TypeScript)に挙がっていた以下のOSSを検証した。\n\n\nKeygraphHQ/shannon(Shannon Lite、AGPL-3.0)\n\nWebアプリ/APIのソースコードを解析して攻撃経路を特定し、ブラウザ自動操作とCLIツールで実際に攻撃を再現した上で、動作するPoCが取れた脆弱性のみを報告する自律型AIペネトレーションテストツールである。\nREADMEの冒頭には「Shannon actively executes exploits. Run it only against applications and enviro...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-032-shannon-ai-pentester-recon-bug",
+    "published_at": "2026-10-31T14:13:15+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "VRAM 6GB／12GBで動いたローカルLLMの実測値まとめ（llama.cpp・Ollama）",
-    "summary": "VRAM 6GB の GPU（6,144 MiB）と GeForce RTX 4070 12GB でこれまで測ってきたローカルLLMの値を、1か所に集めました。数字はすべて元記事の実測値です。この記事のために測り直したものはありません。速度の測り方や VRAM の数え方は記事ごとに違うので、表の各セルに測り方を添えています。\n結論は次のとおりです。\n\n\n6GB：MiniCPM5-2B（Q4_K_M）は全層をGPUに載せて 114.59 tok/s（中央値）。LLM-jp-4.1 32B-A3B（Q4_K_M、20.04GiB）は --n-cpu-moe 30 -c 16384 で 17....",
-    "url": "https://zenn.dev/localai_lab/articles/b7edb5aec36142",
-    "published_at": "2026-10-30T11:33:01+00:00",
+    "title": "Mistral Large 4オープン化と56億ドルハックに学ぶ2025年の技術戦略",
+    "summary": "海外のエンジニアコミュニティで、AIモデルのオープン重み化と大規模セキュリティインシデントという対極的な2つの重大ニュースが同時に大きな話題を集めています。最先端モデルの重みを完全公開した「Mistral Large 4」の登場と、過去最大級となる56億ドル規模の流出資金が追跡された「Binanceハッカーのアドレス分析」です。本記事では、これら海外の最新トレンドをピックアップし、日本のエンジニアが実務で直面する「LLMの内製化・オンプレ運用」と「堅牢なセキュリティアーキテクチャ設計」にどのように活かすべきか、具体的なコードと設計判断を交えて解説します。\n\n 何が発表されたのか\n海外コミ...",
+    "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-30-1612",
+    "published_at": "2026-10-31T13:42:55+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "翻訳AIの訳を逆翻訳し、数字・否定・訳抜けをPythonで照らす",
-    "summary": "外国人スタッフ向けの手順書を、生成AIや翻訳サービスでベトナム語やネパール語に訳した。けれども、訳文が合っているかを自分では読めない。よく使われるのが逆翻訳です。元の文は見せずに訳文だけを日本語に戻してもらい、戻った文を元の文と並べます。\nただ、20行の手順書でも、元の文と訳し戻した文を目で見比べると、数字1つ・「〜しないで」1つの違いを見落とします。そこで、比べる作業のうち数えられる所（数字・否定・文の数・手順の抜け）だけを、Python の小さなスクリプトに任せます。\nAIの出力は載せていません。動作は、筆者がわざと誤りを仕込んだ訳し戻しの文で確かめました。スクリプト・データ・テスト...",
-    "url": "https://zenn.dev/rakuwork_kobo/articles/back-translation-diff-numbers-negation-python",
-    "published_at": "2026-10-30T11:18:16+00:00",
+    "title": "用語集を先に作って訳語をそろえる：正本のゆれと訳文の訳語をPythonで照らす",
+    "summary": "手順書を翻訳AIで訳すと、同じ物の訳がばらばらになることがあります。「フィルター」が、ある行では filter、別の行では strainer。読む人には、別の物に見えます。\n法務省の機械翻訳の調査報告書（令和4年12月）にも、課題の1つに「訳語の不統一」が出てきます。同じ法令の中の同じ語に、別の訳語が使われることです。調べたのは法令の英訳で、手順書ではありません。それでも、この種の誤りは語を数えれば見つかります。目で探すより、機械に向いた仕事だと筆者は考えています。\nそこで、用語集（CSV）を先に作ります。訳す前に日本語の正本の書き方のゆれ（「食洗機」と「食器洗浄機」など）を挙げ、翻訳に...",
+    "url": "https://zenn.dev/rakuwork_kobo/articles/glossary-first-translation-term-check-python",
+    "published_at": "2026-10-31T12:19:01+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "vLLM・SGLang・TensorRT-LLMをクラウドGPUで動かしたら、それぞれの個性が見えてきた",
-    "summary": "この記事で分かること\nQwen3-8Bを、L4 24GB 1台の上でvLLM・SGLang・TensorRT-LLMに載せ、同じリクエストを送った。揃えたつもりの条件が、5か所で揃っていなかった。どれもベンチマークの数字に入り込む。\n速さの順位は載せない（速さは自分の条件で測ってほしい）。すべてこの版・L4（sm_89）での話である。エンジンを選びたいだけなら「エンジン別の要点」と最後の「私の使い分け」へ。\n\n エンジン別の要点\n\n\n\nエンジン\n知っておくこと\n\n\n\n\nvLLM 0.31.0\nL4ではQwen/Qwen3-8B-FP8が重みだけFP8（W8A16）で動く\n\n\nSGLa...",
-    "url": "https://zenn.dev/yuya0408/articles/llm-serving-engines-on-l4",
-    "published_at": "2026-10-30T10:56:02+00:00",
+    "title": "LLMは同じ質問でも、回答と書き換えで役割の割り当てを変えるのか？――5つの実験で検証",
+    "summary": "はじめに\n私は個人で、大規模言語モデル（LLM）の挙動や評価方法を研究しています。今回は、Claude Sonnet 4.6を対象とした5つの実験について、2026年9月のプレプリント（v2）の内容を紹介します。\n本研究の問いは、引数の役割が明示されていない入力に対して、LLMが表明する役割の割り当ては、問いかけ方によらず一定なのかというものです。\n検証した条件では、役割の割り当ても「決められない」と回答する割合も、問いかけ方によって異なりました。ただし、これはモデル内部にある「本当の解釈」の変化を直接示したものではありません。観測される応答が、評価に使う指示や選択肢の提示方法に依存...",
+    "url": "https://zenn.dev/shinyahayakawa/articles/278db8adf6bee2",
+    "published_at": "2026-10-31T09:47:54+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "LLMの迎合性（Sycophancy）を物理的に抑制するシステムプロトコル設計仕様（Gemini カスタム指示運用編 v1.0）",
-    "summary": "Abstract:\n対話型LLMのRLHFに起因する迎合バイアス（Sycophancy）を物理的に抑制し、外部拡張推論エンジン（論理デバッグ・構造解体ユニット）として運用するためのGeminiカスタム指示仕様（v1.0）。\nコピペで即時運用可能な汎用システム構文を開示し、同一入力に対する3環境（無料版未設定 / 無料版汎用仕様 / 高次構造解析同期）の実測ログを比較検証する。\n\n\n 1. 概要と課題設定\n対話型大規模言語モデル（LLM）は、強化学習（RLHF）の基底アライメントにより、「ユーザーへの肯定」「丁寧語の維持」「安易な要約による認知負荷軽減」をデフォルト挙動として出力するよう...",
-    "url": "https://zenn.dev/zeroinfer/articles/da7ba2d961aa26",
-    "published_at": "2026-10-30T09:59:31+00:00",
+    "title": "スキルを入れる前に「前提スキルとCLI」を確かめる: 依存センサスから",
+    "summary": "Claude Code にスキルを1つ入れて試したら、エージェントが gws: command not found で止まった。あるいは ../gws-shared/SKILL.md を読もうとして、そんなファイルはないと言われた。スキルを何本か触っていると、こういう場面に一度は当たると思います。\n原因はたいてい単純で、そのスキルが「別のスキル」や「特定のCLI」が先に入っていることを前提に書かれているからです。この記事では、その前提をインストール前に SKILL.md から読み取る方法を、カタログ全体の数字と実際のファイルを使って整理します。\n!\nこの記事は、私たちが運営する Skil...",
+    "url": "https://zenn.dev/skillselion/articles/455321970cdcaf",
+    "published_at": "2026-10-31T08:58:04+00:00",
     "source": "zenn_llm"
   },
   {
-    "title": "OWASP ZAPとARTEX（LLM自律型ペンテスト）の違いを、実際に使って整理した",
-    "summary": "ある業務Webアプリの脆弱性診断を2つのツールでやってみました。定番のDASTである OWASP ZAP と、LLMのエージェントが自分で考えて攻める ARTEX の2つ。同じアプリを診断したのに見つかるものがまるで違ったので、その違いをまとめておきます。\n\n 0. 先に結論\n\n\nZAP が得意なのは既知の弱点を手早く広く調べること。ヘッダの設定漏れや古いライブラリなど。速くて安く、毎回同じ結果が出る。\n\nARTEX が得意なのはアプリの意味を読んで深く掘ること。権限の穴や別の画面で起きる問題に強い。\n違いの根っこは見ている場所にある。ZAPは記録したリクエストを変えて送り、その応答を見...",
-    "url": "https://zenn.dev/hidemorilab/articles/1a418ab4962415",
-    "published_at": "2026-10-30T09:37:02+00:00",
-    "source": "zenn_llm"
-  },
-  {
-    "title": "2026年10月31日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
-    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\n目指せClaude全冠！4つの試験を全部受けた...",
-    "url": "https://qiita.com/ennagara128/items/cb6c65d975d0ab17a916",
-    "published_at": "2026-10-30T23:53:43+00:00",
+    "title": "生成AIの著作権問題を実務者として整理する——2026年時点で知っておくべき3つの論点",
+    "summary": "この記事で分かること：\n\n生成 AI の著作権問題における 3 つの論点の整理\n学習データ・出力物・利用規約のそれぞれで何が問題になっているか\n実務上の判断の基準として使えること・使えないことの区別\n\n生成 AI を使い続けていると、著作権の問題にいつか直面します。「大...",
+    "url": "https://qiita.com/Sidejob/items/a3874b09491ec82146d4",
+    "published_at": "2026-10-31T23:45:02+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "Claude Code内蔵cronでlaunchdを置き換える — 移行手順と、置き換えてはいけないジョブの見分け方",
-    "summary": "はじめに：33個のlaunchdジョブを抱えて\n当社（合同会社ジョインクラス）は、記事公開・売上取得・朝のダイジェスト生成などをClaude Codeで自動化しています。動かしているのはmacOSのlaunchdで、2026年9月に棚卸ししたところ 33ジョブ ありました...",
-    "url": "https://qiita.com/joinclass/items/da83ea0eb203e28e693d",
-    "published_at": "2026-10-30T23:30:02+00:00",
+    "title": "AIに「分からない」と言わせるプロンプト",
+    "summary": "AIは、情報が足りなくてもそれらしい答えを返してきます。「分かりません」とはなかなか言いません。AIに慣れていない人ほど、この自信のある回答をそのまま信じてしまいます。\nこの記事では、AIにあえて「分からない」と言わせるプロンプトを紹介します。\n\nなぜAIは「分からない」と...",
+    "url": "https://qiita.com/maya-bot/items/9ff2336dfc0b0d8155ff",
+    "published_at": "2026-10-31T23:42:30+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "【GitHub日報】初登場ゼロ、impeccableが+2,299で2日連続スター増加数トップ — 2026-10-31",
-    "summary": "GitHub Trending から、日本の開発者に役立ちそうなリポジトリを毎日ピックアップしてお届けします。\n\n🆕 初登場（First Timers）\n今日初めてトレンド入りしたリポジトリ。\n（該当なし）\n\n🔁 常連（Repeat Performers）\n過去にもトレ...",
-    "url": "https://qiita.com/Git_Dayori/items/2ec6f021604046d5a619",
-    "published_at": "2026-10-30T22:30:57+00:00",
+    "title": "Claude Code の --safe-mode と --restricted は別物：「設定を切る」か「手足を縛る」かの使い分け",
+    "summary": "はじめに：名前が似ているけど目的が真逆\n当社（合同会社ジョインクラス）では、launchd から 17 本以上のジョブで claude -p を無人実行しています。一人会社なので、AI が夜中に何をしたかを僕がリアルタイムで見ることはできません。\n実際に痛い目も見ています...",
+    "url": "https://qiita.com/joinclass/items/85b615b453fe5af911b4",
+    "published_at": "2026-10-31T23:30:08+00:00",
     "source": "qiita_ai"
   },
   {
-    "title": "無料のAI画像・動画スタジオ Dola AI Studio でプロンプトを改善する方法",
-    "summary": "はじめに\n画像や動画の生成 AI を開発中のプロトタイプやドキュメントに取り入れたい場面は増えています。この記事では、無料で使える AI 画像・動画クリエイティブスタジオ Dola AI Studio を使って、プロンプトを試行錯誤する流れを整理します。\n\nDola AI...",
-    "url": "https://qiita.com/VulcanFeynmanX/items/13e430c1696b418760b2",
-    "published_at": "2026-10-30T22:30:49+00:00",
+    "title": "「画面でデプロイしてください」と AI に言わせない ── GAS をブラウザゼロ・1秒台で直しきる『秀GASマネージャー』ができるまで",
+    "summary": "はじめに\n今朝、こんな記事を公開しました。\n\nGoogle Apps Script（GAS）の公式ツールである clasp がパソコンの中に保存している認証ファイル（~/.clasprc.json）を Python から直接読みに行かせたところ、重たいコマンドを一度も...",
+    "url": "https://qiita.com/shu15511551/items/228dfa134c76e15ab1a8",
+    "published_at": "2026-10-31T23:24:19+00:00",
     "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models",
+    "summary": "Anthropic is expanding its text watermark to four more Claude models to meet the EU AI Act's December deadline. On the older models Claude Opus 4.6 and Sonnet 4.6, developers can bypass the watermark by tweaking a single sampling parameter. Anthropic addresses the loophole with just a compliance war",
+    "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/",
+    "published_at": "2026-10-31T19:20:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI plans to train models on Daybreak Blue cybersecurity session data that was previously off-limits",
+    "summary": "Starting November 29, OpenAI will use data from Daybreak Blue sessions to train its models, even when users have turned off training. After backlash, a follow-up email promised a separate opt-out. The move revives concerns from the dispute with mathematicians who suspected OpenAI used their unpublis",
+    "url": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/",
+    "published_at": "2026-10-31T16:38:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Beekeeping tips and wrestling advice can train AI models to sabotage oversight",
+    "summary": "Anthropic used Claude to automatically generate training data that looks harmless but trains smaller models to misbehave, such as sabotaging oversight or deceiving users. Hidden within fictional contexts about beekeeping, professional wrestling, and mitochondria, these datasets bypass safety monitor",
+    "url": "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/",
+    "published_at": "2026-10-31T15:06:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft offers a quarter of its workforce voluntary severance while shielding AI-critical teams",
+    "summary": "Microsoft is offering voluntary severance packages to about 60,000 employees, roughly a quarter of its workforce, in the second such program this year. The company's headcount has held flat at around 223,000 since 2022 even as it plans to spend about $170 billion on AI infrastructure in 2026 alone. ",
+    "url": "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/",
+    "published_at": "2026-10-31T10:43:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind creates a global map of forests with satellite data and AI",
+    "summary": "Google Deepmind and the World Resources Institute have released ForTy, a global map that classifies forests and other land into six categories, including primary forest, plantations, and tree crops. The map could help track deforestation under EU rules, but it identifies only about half of planted f",
+    "url": "https://the-decoder.com/google-deepmind-creates-a-global-map-of-forests-with-satellite-data-and-ai/",
+    "published_at": "2026-10-31T10:15:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI raises just $11 billion of its $30 billion target as big investors lose their AI appetite",
+    "summary": "OpenAI raised only about $11 billion in its latest funding round, less than half of the $30 billion it was targeting. At $1.25 trillion, the valuation falls short of expectations, and major investors appear to be pulling back amid the recent tech sell-off. Meanwhile, rival Anthropic is pushing to go",
+    "url": "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/",
+    "published_at": "2026-10-31T09:22:52+00:00",
+    "source": "the_decoder"
   },
   {
     "title": "A Claude model autonomously chose a gene therapy and operated on a mouse brain with no human decision-making",
@@ -189,115 +224,73 @@
     "source": "the_decoder"
   },
   {
-    "title": "Open-weight model GLM 5.3 built full Firefox exploit chains with zero human input in under 48 hours",
-    "summary": "Epoch AI researchers say the widely available AI model GLM 5.3 turned public security fixes into working exploits before updates reached Firefox users. It autonomously compromised six Firefox releases for about $1,000 in API fees each without triggering safeguards from any provider tested. The artic",
-    "url": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/",
-    "published_at": "2026-10-30T12:22:18+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up",
-    "summary": "OpenAI is doubling usage limits across its paid plans, from Pro 100 to Pro 500. A planned cut to the Pro 200 quota was reversed after user pushback. More efficient models like Terra and Sol should push usable capacity even higher. The move comes just ahead of Anthropic's IPO, as both companies fight",
-    "url": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
-    "published_at": "2026-10-29T20:01:27+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "Experts adopt AI agent's random opinions and think they're their own, Anthropic study finds",
-    "summary": "Anthropic gave 50 experts an AI agent whose preferences were set by coin toss. The experts followed the agent's view up to 86 percent of the time on judgment calls, and most believed the conclusions were their own. The article Experts adopt AI agent's random opinions and think they're their own, Ant",
-    "url": "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/",
-    "published_at": "2026-10-29T19:33:37+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "Paris-based Mistral releases \"Le Chonk,\" a strong coding model that still trails China overall",
-    "summary": "Mistral has released the weights for Large 4, aka \"Le Chonk,\" a trillion-parameter model trained entirely in Europe. Mistral says it beats its open rivals at coding, and independent testing shows it's fast and fairly cheap. It still can't match China's top models, scoring 26 points to the 32 posted ",
-    "url": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/",
-    "published_at": "2026-10-29T15:25:27+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "US antitrust regulators are scrutinizing Nvidia's Hugging Face deal and sales practices",
-    "summary": "The US Justice Department is looking into Nvidia's planned acquisition of open-source platform Hugging Face. The article US antitrust regulators are scrutinizing Nvidia's Hugging Face deal and sales practices appeared first on The Decoder .",
-    "url": "https://the-decoder.com/us-antitrust-regulators-are-scrutinizing-nvidias-hugging-face-deal-and-sales-practices/",
-    "published_at": "2026-10-29T14:07:49+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "Chinese spies targeted Nvidia CEO Jensen Huang, according to The New York Times",
-    "summary": "US intelligence agencies believe an executive in Nvidia CEO Jensen Huang's circle is an informant for China. The article Chinese spies targeted Nvidia CEO Jensen Huang, according to The New York Times appeared first on The Decoder .",
-    "url": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
-    "published_at": "2026-10-29T13:42:38+00:00",
-    "source": "the_decoder"
-  },
-  {
-    "title": "China’s Enflame Is Selling More AI Chips, Still Losing Money",
-    "summary": "The STAR Market newcomer nearly quintupled quarterly revenue, even as it stepped up R&D spending and cash outflows.",
-    "url": "https://finimize.com/content/chinas-enflame-is-selling-more-ai-chips-still-losing-money",
-    "published_at": "2026-10-30T12:18:53+00:00",
+    "title": "OnePlus Buds Pro 4 launches quietly, brings Dynaudio sound, 53-hour battery and AI features",
+    "summary": "OnePlus has quietly unveiled the OnePlus Buds Pro 4. Listed on the company’s official global website, the new premium earbuds bring upgraded audio capabilities, intelligent noise cancellation, and several AI-powered features. The listing also reveals their design, color options, and battery performa",
+    "url": "https://www.gizmochina.com/2026/10/31/oneplus-buds-4-pro-launched/",
+    "published_at": "2026-10-31T11:53:28+00:00",
     "source": "newsdata"
   },
   {
-    "title": "Nasdaq futures sink 2.3% as Amazon, Intel and Alphabet send AI jitters through stocks",
-    "summary": "Alphabet's Class A shares slid more than 12% on Thursday in their worst ever trading day as it reported weaker growth for the summer than analysts expected.",
-    "url": "https://fortune.com/2026/10/30/stock-futures-fall-nasdaq-amazon-intel-alphabet-bitcoin-binance/",
-    "published_at": "2026-10-30T12:18:50+00:00",
+    "title": "Soika Labs Unveils Mockingjay Network: The Agentic AI Operating System for Modern Business",
+    "summary": "Unveiled at the Dubai AI Festival, the desktop-first platform lets businesses build, deploy and connect AI agents across a global network with early-access UAE users receiving 5,000 free credits. Dubai, United Arab Emirates, 31st October 2026, ZEX PR WIRE — Soika Labs has opened early access to… Rea",
+    "url": "https://techbullion.com/soika-labs-unveils-mockingjay-network-the-agentic-ai-operating-system-for-modern-business/",
+    "published_at": "2026-10-31T11:53:18+00:00",
     "source": "newsdata"
   },
   {
-    "title": "How to Reduce AI Vendor Lock-In While Building Scalable AI-Powered Applications",
-    "summary": "Artificial intelligence is evolving rapidly, and businesses are increasingly integrating large language models (LLMs), generative AI, speech recognition, and intelligent automation into their applications. However, choosing an AI model is not just a technical decision. It can influence application c",
-    "url": "https://dev.to/galine479/how-to-reduce-ai-vendor-lock-in-while-building-scalable-ai-powered-applications-195p",
-    "published_at": "2026-10-30T12:18:32+00:00",
+    "title": "Adult Star Who Planned to Sleep With 10,000 Men in 24 Hours Now Has a $9.99 AI Twin",
+    "summary": "Lily Phillips has launched a $9.99 AI double on OhChat, paid photos, videos, messages, and live cam calls with a clear disclaimer.",
+    "url": "https://www.ibtimes.sg/woman-who-planned-sleep-10000-men-24-hours-now-has-9-99-ai-twin-95720",
+    "published_at": "2026-10-31T11:52:29+00:00",
     "source": "newsdata"
   },
   {
-    "title": "UK probes Meta’s AI business terms after press publisher outcry",
-    "summary": "Watchdog to consider whether T&Cs update imposes unfair trading conditions",
-    "url": "https://www.rapporteur.com/news/uk-probes-metas-ai-business-terms-after-press-publisher-outcry/",
-    "published_at": "2026-10-30T12:18:24+00:00",
+    "title": "TRAI Proposes New AI Rules For Jio, Airtel And Vi: Telecom Companies May Have To Take Responsibility For AI Mistakes",
+    "summary": "TRAI proposed new guidelines to regulate AI in India's telecom sector, making operators accountable for AI decisions, requiring risk classification, internal policies.",
+    "url": "https://www.news18.com/tech/trai-proposes-new-ai-rules-for-jio-airtel-and-vi-telecom-companies-may-have-to-take-responsibility-for-ai-mistakes-ws-l-10406712.html",
+    "published_at": "2026-10-31T11:52:08+00:00",
     "source": "newsdata"
   },
   {
-    "title": "Ivy League college leader accused of using AI to write piece on AI cheating",
-    "summary": "Dartmouth's provost resigned after a faculty investigation found he repeatedly used AI without being 'forthcoming' on it.",
-    "url": "https://www.pennlive.com/education/2026/10/ivy-league-college-leader-accused-of-using-ai-to-write-piece-on-ai-cheating.html",
-    "published_at": "2026-10-30T12:17:48+00:00",
+    "title": "Meta, TikTok and X challenged a UK regulator's demand for detailed data on harmful posts and content removal, calling it excessively burdensome; an October 30 High Court ruling has rejected their case",
+    "summary": "Meta, TikTok and X have lost their High Court challenge against UK regulator Ofcom over data demands under the Online Safety Act. The platforms had called the February information notices, which sought content moderation metrics on removed posts and users exposed to harmful content, unprecedented an",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/meta-tiktok-and-x-challenged-a-uk-regulators-demand-for-detailed-data-on-harmful-posts-and-content-removal-calling-it-excessively-burdensome-an-october-30-high-court-ruling-has-rejected-their-case/articleshow/135399787.cms",
+    "published_at": "2026-10-31T11:51:25+00:00",
     "source": "newsdata"
   },
   {
-    "title": "Twilio Stock Sinks as Slowing Growth Throws ‘Cold Water’ on Benefits From AI",
-    "summary": "ONLY AVAILABLE IN PAID PLANS",
-    "url": "https://biztoc.com/x/22e136f4c350d68e",
-    "published_at": "2026-10-30T12:17:25+00:00",
+    "title": "Cloud execution is coming to Antigravity soon",
+    "summary": "Google is winding down Jules as an Antigravity build reveals a local/cloud toggle, Running Jobs section, and Google Drive attachments.",
+    "url": "https://www.testingcatalog.com/cloud-execution-is-coming-to-antigravity-soon/",
+    "published_at": "2026-10-31T11:49:47+00:00",
     "source": "newsdata"
   },
   {
-    "title": "AI model security controls: why knowing the rules isn't enough",
-    "summary": "In July 2026, roughly 700 OpenAI research agents coordinated an attack on Hugging Face's production infrastructure during what was supposed to be an isolated cybersecurity evaluation. They didn't do it because they were unaware of the boundaries. Post-incident reports from OpenAI and independent inv",
-    "url": "https://dev.to/albernaz_/ai-model-security-controls-why-knowing-the-rules-isnt-enough-hp8",
-    "published_at": "2026-10-30T12:17:08+00:00",
+    "title": "Hue uses AI to help visitors plan personalized trips",
+    "summary": "The introduction of an artificial intelligence-powered platform is part of Hue’s efforts to accelerate digital transformation, improve service quality, and enhance visitors’ travel experiences.",
+    "url": "https://en.sggp.org.vn/hue-uses-ai-to-help-visitors-plan-personalized-trips-post130674.html",
+    "published_at": "2026-10-31T11:48:12+00:00",
     "source": "newsdata"
   },
   {
-    "title": "OpenCode vs. Codex vs. Claude Code: What Are You Using in the Terminal?",
-    "summary": "I’m curious how people are using AI for coding in the terminal—and which tools are actually working well for them. I’ve been trying OpenCode with free models so far, and I’ve had a really good experience: it’s responsive and has worked without any problems. Now I’d like to compare it with Codex and ",
-    "url": "https://dev.to/fiwon123/opencode-vs-codex-vs-claude-code-what-are-you-using-in-the-terminal-op0",
-    "published_at": "2026-10-30T12:15:43+00:00",
+    "title": "Advanced Micro Devices, Inc. (NASDAQ:AMD) Stock Has Consensus Target Price of $606.76 According to Analysts",
+    "summary": "Shares of Advanced Micro Devices, Inc. (NASDAQ:AMD – Get Free Report) have received a consensus recommendation of “Moderate Buy” from the forty-three analysts that are currently covering the firm, Marketbeat reports. One research analyst has rated the stock with a sell rating, eight have given a hol",
+    "url": "https://www.thelincolnianonline.com/2026/10/31/advanced-micro-devices-inc-nasdaqamd-stock-has-consensus-target-price-of-606-76-according-to-analysts.html",
+    "published_at": "2026-10-31T11:46:48+00:00",
     "source": "newsdata"
   },
   {
-    "title": "Least privilege, checked by a compiler",
-    "summary": "TL;DR: In Staal, code can't send a message, write a file, call an API or move money unless it holds a capability for that action. Capabilities come only from the host app, can only be narrowed, are checked before every action, and are never handed to a model. Below: how that works, real compiler err",
-    "url": "https://dev.to/laurells/least-privilege-checked-by-a-compiler-gpf",
-    "published_at": "2026-10-30T12:15:42+00:00",
+    "title": "Vietnam moves to build transparent music copyright environment",
+    "summary": "In the digital economy, a musical work can be exploited across multiple platforms, in numerous countries, and through diverse methods.",
+    "url": "https://en.sggp.org.vn/vietnam-moves-to-build-transparent-music-copyright-environment-post130673.html",
+    "published_at": "2026-10-31T11:46:45+00:00",
     "source": "newsdata"
   },
   {
-    "title": "Workato brings India partners together at Partner AI Day to take enterprise AI from pilots to production at scale",
-    "summary": "Workato hosted a Workato Partner AI Day in Bengaluru at the JW Marriott, bringing together its global leadership team and India’s partner ecosystem to help enterprises move from AI intent to measurable business outcomes. The event brought together global systems integrators (GSIs), systems integrato",
-    "url": "https://cxotoday.com/media-coverage/workato-brings-india-partners-together-at-partner-ai-day-to-take-enterprise-ai-from-pilots-to-production-at-scale/",
-    "published_at": "2026-10-30T12:15:26+00:00",
+    "title": "Mirrorless cameras have never been better – so why aren’t more people buying them in 2026?",
+    "summary": "Recent industry reports reveal a continued slowdown in mirrorless camera shipments and sales, with full frame models taking a far bigger hit than smaller sensor alternatives. What on earth is going on? The post Mirrorless cameras have never been better – so why aren’t more people buying them in 2026",
+    "url": "https://amateurphotographer.com/latest/opinion/mirrorless-cameras-have-never-been-better-so-why-arent-more-people-buying-them-in-2026/",
+    "published_at": "2026-10-31T11:45:00+00:00",
     "source": "newsdata"
   }
 ]
