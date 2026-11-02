@@ -1,0 +1,296 @@
+[
+  {
+    "title": "リアルタイム検知の通知は「鳴りすぎ」で使われなくなる。管理者が見続ける通知の3条件",
+    "summary": "夕方、現場責任者の席に呼ばれました。「さっきの電話、お客さんが『もう消費者センターに言う』って言ってたらしいんですよ。終わってから知っても遅いんですよね」。録音を聞き直すと、その一言が出てから通話が終わるまでに8分ありました。8分あれば、責任者が横から代わることも、担当者にチャットで助け舟を出すこともできたはずです。\nそこで「危ない言葉が出たら、その場で責任者に通知する仕組み」を作りました。最初の版は3日で使われなくなっています。通知が1日に200件を超え、責任者が通知チャンネルをミュートしたからです。今は落ち着いて回っていますが、変えたのは検知の精度より通知の出し方のほうでした。\nこの...",
+    "url": "https://zenn.dev/solo_joshis/articles/2026-10-05-ngsv-callcenter-49",
+    "published_at": "2026-11-02T00:00:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code と Codex の「自分の番」を、hooks とローカルの記録から拾う",
+    "summary": "20 分後に戻ったら、30 秒で止まっていた\n私は Claude Code と Codex を、普段 2〜3 本並べて回しています。ひとつにはリファクタを任せ、もうひとつには調べものをさせる。その間、自分は別のタブで設計のメモを書く、といった感じです。\n困るのは、どれが自分の番なのか分からなくなることです。\nある日、20 分ほど自分の作業に集中してからターミナル画面に戻りました。1つは、私が離れて 30 秒ほどで Bash の実行の許可を求めて止まっていました。20 分のうち、AI が働いていたのは最初の 30 秒だけです。\n待ちにもいろいろあります。コマンドの許可待ち、AI からの...",
+    "url": "https://zenn.dev/jskn_d/articles/claude-code-codex-your-turn",
+    "published_at": "2026-11-02T00:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に実装を任せたら、データの流れを追えなくなった",
+    "summary": "皆さんは AI に実装を任せているとき、今自分がシステムのどこを作っているのか、説明できるでしょうか？\n最近の私は、これができなくなる場面がありました。\nやりたいことはわかっていたはずなのに、AI が書いたコードを見ると、見たことのないプロパティがある。それが必要なのか判断できない。なんでここで整形しているのかもわからない。\nこの記事では、その状態から抜け出すためにやったことと、そこで気づいた「AI に実装を任せるとき、人間は何を把握しておけばいいのか」について、自分なりに考えたことを書きます。\n\n データが 4 つの場所を行き来する開発\n業務で、データが 4 つの場所を行き来する開発を...",
+    "url": "https://zenn.dev/kaji_kaji/articles/ai-boundary-data-before-implementation",
+    "published_at": "2026-11-02T00:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "pstackの謎を解く：ループを改善するループを回す、5つのスキル",
+    "summary": "1本目で考え方だけ書いた仕組みを、スキルで見る\n1本目の記事では、pstackの品質を支えているのは個々のスキルではなく、スキルを改善するやり方だと書き、これを「ループを改善するループ」と呼びました。ループは2重です。内側は、エージェントが作業して自分で検証するループ。外側は、その作業の記録からスキルを改善し、次の作業を良くするループです。\n1本目で書いたのは考え方だけでした。pstackには、この仕組みを自分のリポジトリで回すためのスキルが入っています。今回は、それぞれのスキルが何をし、どこを担うかを見ていきます（v0.15.25）。\n\n 人が回す2つのワークフロー\n5つのスキルと...",
+    "url": "https://zenn.dev/alchemist/articles/pstack-improvement-loop",
+    "published_at": "2026-11-02T00:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "正常終了・検証済み・保留を分ける状態管理",
+    "summary": "AIに処理を任せると、結果を「成功」か「失敗」の二つで記録したくなります。\nしかし、自動化の現場では、エラーが出なかったことと、目的を達成したことは同じではありません。\nファイルの保存処理は正常に終わった。しかし保存先が違う。通知APIは受け付けた。しかし相手に届いたかは分からない。データを取得できた。しかし古い内容だった。\nこれらをすべて成功として扱うと、後続のAIは確認されていない結果を前提に動きます。\n必要なのは、処理の終了状態と、結果の検証状態を分けることです。\n\n 「正常終了」は処理が止まらなかったという事実\n正常終了が示すのは、プログラムや外部サービスがエラーを返さず、予定し...",
+    "url": "https://zenn.dev/neoru/articles/34deb19fab4654",
+    "published_at": "2026-11-01T23:51:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "GPT Live API を使いこなす",
+    "summary": "はじめに\nOpenAI の GPT Live という新しい音声モデルを利用するための API について、どう使いこなしたらいいかについてまとめていこうと思います。\n以前、OpenAI の記事を読んでの解説記事を書いているので、内部構造やモデルがどんなものかについてはそちらを参照してください。\nhttps://zenn.dev/edom18/articles/gpt-live-memo\nちなみにこのモデルの特徴をざっくり言うと、双方向チャネルを持ち「話す」と「聞く」を同時に行うことができるモデル です。\n\n今回の記事を書くにあたって、色々実験できるように GPT Live API P...",
+    "url": "https://zenn.dev/meson_tech_blog/articles/gpt-live-playground",
+    "published_at": "2026-11-01T23:17:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "serverToolUseでAIが裏で何を呼んだかを把握する — 取引先に説明できるAI利用ログの作り方",
+    "summary": "なぜこれを作ったか\n当社（合同会社ジョインクラス）は、Claude Codeを claude -p でヘッドレス実行するジョブを毎日いくつも回しています。以前、営業メールを確認なしで自動送信して、敬語のおかしいメールが取引先に届いたことがありました。それ以来、対外アクションはすべて draft → 承認 → 実行 の順に通しています。\nただ、承認の段階で見えるのは出力だけです。「このドラフトを書くために、AIは外部のどこにアクセスしたのか」は見えません。受託開発の取引先から「御社のAIは弊社の情報で外部検索をしていませんか？」と聞かれたとき、僕は根拠を出して答えられませんでした。\nこ...",
+    "url": "https://zenn.dev/joinclass/articles/servertooluses-ai-ai-20261031220032-17602",
+    "published_at": "2026-11-01T23:00:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "調査メモ: HITLにおけるhumanの関与度合いの考察",
+    "summary": "コーディングエージェントに不具合修正を依頼し、作成されたPRをレビューする、というような開発プロセスは一般的になりましたが、これらは、Human-in-the-Loop（HITL）と呼ばれているようです（初出は別分野でだいぶ昔に出た言葉らしいです）\nこの記事では、ソフトウェア開発におけるHITLを、エージェントへ任せる工程の範囲で分類します。公開されている事例調査についてまとめました。また、計画や優先順位の決定まで任せる際の目標設定と、人間に残す判断についての考察をメモとして残しています。\n製品や実装の説明は、2026年11月1日に確認した公開資料に基づきます。\n\n 開発プロセスにおける...",
+    "url": "https://zenn.dev/okazu_dm/articles/88460c85d1b62e",
+    "published_at": "2026-11-01T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで副業を自動運用した10月の記録（技術編）：売上1,000円未満と、止まった仕組みの直し方",
+    "summary": "AI（主に Claude）に作業を任せて、小さな副業をいくつか同時に動かしています。目標は「毎月100万円」。この記事は、その10月分の記録の技術編です。\n先に結果を書きます。10月の売上は、技術書1冊分（1,000円未満）でした。 うまくいった話ではありません。そのかわり、使った仕組みと、止まった所・その原因・直し方を具体的に残します。\n\n書き方の決まり：事業は種類で書き、チャンネル名・アカウント名・商品名は出しません（自分の Zenn の本だけは案内します）。金額は丸めるか幅で書きます。トレードの損益と資金は書きません。\n\n\n 10月に動かしていたもの\n\n\n\n事業の種類\n何をAIに任...",
+    "url": "https://zenn.dev/neuralalpha/articles/monthly-2026-10-ja",
+    "published_at": "2026-11-01T22:38:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-11-02: 実行境界と信頼の証明",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 対話画面の中に小さなアプリを表示するとき、見た目にはただの便利な部品に見える。でも、その部品が親画面にメッセージを送れるなら、隔離の境界は受信側で決まるのではないか。私は、表示面を閉じ込めるだけでは親画面の権限を守れないと思う。実際にはどこで権限が変わったの？\n\n 今日の 2 件\n\n\nHow We Took Over ChatGPT Accounts\nSimon Willison の記事は、ChatGPT の HTML プレビューから親画面へ届くメッセージを悪用した侵入経路を解説する。別の...",
+    "url": "https://zenn.dev/laiken/articles/20261102-tech-watch",
+    "published_at": "2026-11-01T21:40:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MCPが拓く次世代の臨床研究：TrialMindエージェントの仕組み",
+    "summary": "はじめに\n臨床開発に入った医薬品候補のうち、承認に至るのは約1割にとどまるといわれます。AIによる変革の前には、3つの壁があります。LLMが現実のデータから切り離されていること、データソースが分断されていること、そして生物医学分野特有の厳しい規制要件です。\nその解決策として注目されるのが、Anthropicが2024年11月に公開したオープン標準 MCP（Model Context Protocol） です。「AIアプリケーションのためのUSB-Cポート」を目指し、AIモデルと外部のデータやツールとの安全な接続を標準化します。臨床研究向けAIエージェント群であるTrialMindにと...",
+    "url": "https://zenn.dev/keiji_ai_japan/articles/b8712251e03f13",
+    "published_at": "2026-11-01T23:14:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Jevをデコーディング戦略として解釈する",
+    "summary": "はじめに\nやや流行に乗り遅れた感がありますが、2026年9月に TypeSafe AI が公開した Jev を取り上げます。Jev は文章を生成しないAIで、質問とあらかじめ決めた選択肢を渡すと、それぞれの選択肢の確率を返してくれます。\nhttps://docs.typesafe.ai\n実は Jev と同じ形の答えは、LLM が次のトークンをどう選ぶか（デコーディング戦略）を変えれば、普通の LLM からも取り出せます。この記事では、手元の LLM（Qwen）で Jev と同じ形の答えを数十行のコードで取り出してみます。さらに同じ考え方で、LLM に JSON を出させるときに前置き...",
+    "url": "https://zenn.dev/ohashi_reon/articles/c7b88db7dfec07",
+    "published_at": "2026-11-01T23:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMを使ったシステムの品質担保を自動化した話",
+    "summary": "LLM部分をmock化したIT・E2E・smokeテストで、LLM以外のロジックを検証していました。UTも各所でカバレッジ100%。それでも、LLMへ渡るコンテキストは検証できておらず、推論して返すレポートの品質も担保し切れていませんでした。\nそこで業務ケースに基づくQATを用意すると、今度は、条件に照らせば妥当な分析を評価用のLLMがNGにすることがありました。出力を検証する仕組みを作った後も、評価する側を保守する必要があった、という話です。\n現場で開発に携わっていたのは、社内システムなどのデータを取得・分析し、レポートを返すチャット型AIエージェントです。私は設計やADR（設計上の意...",
+    "url": "https://zenn.dev/koyasama/articles/llm-qat-model-migration",
+    "published_at": "2026-11-01T20:30:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIエージェントが連携ツールの一部障害でも「できることだけは止めない」設計",
+    "summary": "Slack / Teams / Chatworkに常駐するAIエージェントは、裏側でカレンダー・CRM・チケット管理システムなど複数の外部ツールに同時接続しているのが普通です。問題は、これらが同時に落ちることはほとんどなく、いつも1つだけが不調になることです。カレンダーAPIだけがタイムアウトしている、CRMだけが認証切れを起こしている、という状態のときにエージェント全体を「障害中」として停止させてしまうと、本来提供できたはずの情報まで一緒に失われます。この記事では、連携先の一部障害時に「できることだけは続ける」ための設計を整理します。\n\n 全断と部分断を同じ扱いにしてはいけない\nLLM...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-partial-tool-outage-degradation-design",
+    "published_at": "2026-11-01T19:09:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ダウンロードもロードもできるのに0問しか解けない。Ollama公式タグの量子化崖を自分のデータ再集計で確かめた",
+    "summary": "要約\n\narXiv:2609.05881「Broken on Arrival」という論文が、Ollama公式ライブラリの305タグをHumanEval+で機能検査し、7タグ(qwen2.5-coder:3b-instructのq2_K/q3_K_S/q3_K_M/q3_K_L、phi3.5:3.8b-mini-instruct-q2_K、llama3.2:1b-instructのq2_K/q3_K_S)が164問中0〜6問しか解けない「機能しない」状態だったと報告している。\nこの論文はv1で「サイレントに壊れたファイル」と診断したが、v3で訂正されている。著者が同じチェックポイントか...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-033-quantized-llm-cliff",
+    "published_at": "2026-11-01T14:16:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ベクトル検索だけでは足りない ― ハイブリッド検索とCrossEncoder再ランキングの実装手順",
+    "summary": "ベクトル検索は「意味の近さ」には強い一方、型番・固有名詞・エラーコードのような表記の完全一致が重要な情報を取り逃します。逆にキーワード検索（BM25など）は言い換えに弱い。実務では両方を組み合わせるハイブリッド検索が定石です。\n構成は3段です\n\n\n候補取得：ベクトル検索とキーワード検索で、それぞれ多め（例：各20〜50件）に候補を取る\n\n統合：RRF（Reciprocal Rank Fusion）などで順位を統合する\n\n再ランキング：CrossEncoder型のモデルで「質問とチャンクのペア」を丁寧に採点し直し、上位5件程度に絞る\n\nなぜ再ランキングが効くのか\n通常の埋め込み検索（BiE...",
+    "url": "https://zenn.dev/johnny1024/articles/3ecdf0573f5d73",
+    "published_at": "2026-11-01T14:00:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RAGのチャンキング戦略を比較する ― 固定長・再帰的・意味的分割と「親子チャンク」",
+    "summary": "RAGを作って最初につまずくのが、検索の精度です。モデルを変えても改善しない場合、原因はたいてい「チャンキング（文書の分割方法）」にあります。\nチャンクが大きすぎると無関係な記述が混ざり、小さすぎると文脈が切れます。本記事では代表的な分割方法を比較します。\n1. 固定長分割\n一定の文字数・トークン数で機械的に切る方法です。実装は最も簡単ですが、文や段落の途中で切れるため、日本語の規程文書などでは意味のまとまりが崩れがちです。\n2. 再帰的分割\n段落→改行→句点の順に区切りを探す方法です。LangChainの RecursiveCharacterTextSplitter が代表例で、実務の...",
+    "url": "https://zenn.dev/johnny1024/articles/93201cb4461da6",
+    "published_at": "2026-11-01T13:56:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIにミステリを書かせるなら、書き手に真相を教えない ― 知覚の投影で「嘘をつかない錯誤」を作る",
+    "summary": "はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目：書いた小説を公開するまでのエンジニアリング\n\n5本目：AIエージェントのチームに書かせたら人狼ゲームになった話\n\n6本目：道具を v1.0 にして公開した\n\nずっとうまくいっていないことが一つあります。ミステリです。\n企画書コンペでは、ミステリを頼むと全員が「語り手が犯人」を出してきました。自分で真相台帳と二重読み表と公正判定まで用意した作品（グラウヴァル第一作の原...",
+    "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part7",
+    "published_at": "2026-11-01T13:49:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「AIで何をすればいいかわからない」から卒業しよう。身近な業務から始めるAI活用",
+    "summary": "この記事は、ChatGPT（GPT-6）を使用して、記載しています。\n内容を人が考えて、作成してもらいました、\n\n最近社内でのAI活用をずっと考えていて、ふと思ったことをメモしてみました。\n現在絶賛取組中のため、本思想を試してみた先の結果はまだわかっていないです。\n（いつか...",
+    "url": "https://qiita.com/tky529/items/857f0db0e8e9a743be94",
+    "published_at": "2026-11-02T00:07:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Agent Skills が財団へ移った週に、手持ちのSKILL.md 83本を公開仕様と照合した",
+    "summary": "2026-10-22、Anthropic が Agent Skills（AI に仕事の手順を覚えさせる SKILL.md のフォルダ）を、Linux Foundation 傘下の Agentic AI Foundation（AAIF）へ寄贈しました。これを機に、Claude...",
+    "url": "https://qiita.com/kusarikakemron/items/ff92abab667ca0613cca",
+    "published_at": "2026-11-02T00:05:29+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "大企業と個人でAI自動化を続けて気づいた3つのギャップ",
+    "summary": "対象読者\n大企業でAI導入に関わっている方、または個人でもAIを使った自動化を試みている方を想定している。「会社でCopilotを使っている、個人でもChatGPTや自動化スクリプトをちょっと動かしている」という方に刺さる内容になっていると思う。どちらか一方しかやっていな...",
+    "url": "https://qiita.com/Sidejob/items/6ea5d2e3ddb9066ba502",
+    "published_at": "2026-11-01T23:45:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "非エンジニアでもデプロイナウで毎日デプロイできる体制の作り方――AI利用履歴から組み立てた実践運用",
+    "summary": "非エンジニアでもDeploy Nowで毎日デプロイできる体制の作り方――AI利用履歴から組み立てた実践運用\n\n私はこれまで、AIで小さなアプリを作る方法、GitHubへ保存する方法、ロリポップ！デプロイナウで公開する方法、公開後に安全に更新する方法を個別に整理してきました...",
+    "url": "https://qiita.com/boraemon2000/items/28b70a47fcbb57642ffe",
+    "published_at": "2026-11-01T23:41:36+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Adobe is testing how well AI agents can use editing tools like a Photoshop professional would",
+    "summary": "Adobe Research and UC San Diego built EditAgent, an AI system that edits images more like a Photoshop pro. Instead of retrying the same general-purpose editor over and over, the agent picks the right specialized tool for each task and lets a standard language model choose the best result based on me",
+    "url": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
+    "published_at": "2026-11-01T14:56:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Empathetic prompts can turn AI chatbots into seemingly traumatized conversational partners",
+    "summary": "Researchers in Luxembourg put ChatGPT, Grok, and Gemini on the therapist's couch and found a safety problem: a warm, empathetic conversational style is enough to make the models tell coherent stories of suffering about their own training, with scores in the moderate-to-severe range on clinical anxie",
+    "url": "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/",
+    "published_at": "2026-11-01T14:36:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese AI models are politically complex, not just government mouthpieces, study finds",
+    "summary": "A study by Vals AI tested 25 AI models for alignment with Chinese government positions and found surprising results. Chinese models respond to political questions less uniformly than expected, and Western models occasionally adopt official Beijing positions too. The language of the prompt had an esp",
+    "url": "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/",
+    "published_at": "2026-11-01T12:33:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI is steering ChatGPT users toward more paid usage",
+    "summary": "OpenAI is now capping the number of paid ChatGPT accounts per device and payment card. Users who hit the limit can't start new subscriptions, and affected accounts can't be used on that device. Logging out doesn't automatically free up a spot. The policy will likely hit users who've been juggling mu",
+    "url": "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/",
+    "published_at": "2026-11-01T12:05:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google wants video AI to understand what people need as they work",
+    "summary": "A Google-led research team built StreamVibe, a video agent designed to watch people cook or assemble furniture and speak up only when help is needed. A benchmark shows that none of the tested models reliably pick the right moment in longer videos, as errors compound and response quality drops sharpl",
+    "url": "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/",
+    "published_at": "2026-11-01T11:25:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's upcoming chat-and-work merger in ChatGPT signals the end of all-you-can-prompt pricing",
+    "summary": "OpenAI combines the Chat and Work modes into a single interface. Starting in December, Plus, Pro, and Business plans will share a common, token-based quota for ChatGPT and Codex. More complex models consume more of this quota, while simple instant chats do not count toward it. In practice, this is l",
+    "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/",
+    "published_at": "2026-11-01T09:51:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models",
+    "summary": "Anthropic is expanding its text watermark to four more Claude models to meet the EU AI Act's December deadline. On the older models Claude Opus 4.6 and Sonnet 4.6, developers can bypass the watermark by tweaking a single sampling parameter. Anthropic addresses the loophole with just a compliance war",
+    "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/",
+    "published_at": "2026-10-31T19:20:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI plans to train models on Daybreak Blue cybersecurity session data that was previously off-limits",
+    "summary": "Starting November 29, OpenAI will use data from Daybreak Blue sessions to train its models, even when users have turned off training. After backlash, a follow-up email promised a separate opt-out. The move revives concerns from the dispute with mathematicians who suspected OpenAI used their unpublis",
+    "url": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/",
+    "published_at": "2026-10-31T16:38:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Beekeeping tips and wrestling advice can train AI models to sabotage oversight",
+    "summary": "Anthropic used Claude to automatically generate training data that looks harmless but trains smaller models to misbehave, such as sabotaging oversight or deceiving users. Hidden within fictional contexts about beekeeping, professional wrestling, and mitochondria, these datasets bypass safety monitor",
+    "url": "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/",
+    "published_at": "2026-10-31T15:06:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft offers a quarter of its workforce voluntary severance while shielding AI-critical teams",
+    "summary": "Microsoft is offering voluntary severance packages to about 60,000 employees, roughly a quarter of its workforce, in the second such program this year. The company's headcount has held flat at around 223,000 since 2022 even as it plans to spend about $170 billion on AI infrastructure in 2026 alone. ",
+    "url": "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/",
+    "published_at": "2026-10-31T10:43:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Dubai targets 5% cut in traffic congestion with new AI strategy",
+    "summary": "Dubai RTA unveils an AI strategy targeting 5% less traffic congestion, faster vehicle licensing, shorter waiting times and more than $81.5m in annual added value",
+    "url": "https://www.arabianbusiness.com/business/transport/dubai-targets-5-cut-in-traffic-congestion-with-new-ai-strategy",
+    "published_at": "2026-11-01T12:09:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google in talks to join Trump’s Golden Dome programme, Bloomberg reports",
+    "summary": "Alphabet’s Google is in talks with the US Defense Department to help protect the data behind Golden Dome, Bloomberg reported on Friday. Sana Pashankar and Kiel Porter cited people familiar with the matter, who spoke on condition of anonymity because the talks are not public. TNW has not independentl",
+    "url": "https://thenextweb.com/news/google-golden-dome-pentagon-data-security-talks",
+    "published_at": "2026-11-01T12:09:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why AI is boosting Meta's ad business while hurting Google search",
+    "summary": "Google and Facebook have been dominant internet brands for the past two decades, turning billions of eyeballs into trillions in advertising dollars over that stretch. But with the ChatGPT era altering how consumers engage online, the companies are diverging. In the third quarter, Meta's ad…",
+    "url": "https://biztoc.com/x/80bc4ab2cdcc7808",
+    "published_at": "2026-11-01T12:08:35+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "论文速读记录 | 2026.11 - MoonOut",
+    "summary": "目录SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering AgentsReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Lea",
+    "url": "https://www.cnblogs.com/moonout/p/23513538",
+    "published_at": "2026-11-01T12:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Easy ways to update your pickup without overhauling your build",
+    "summary": "Shopping for LED tail lights? Explore Spelab options for select Ford F-150, Super Duty, Ram, Chevrolet Silverado and GMC Sierra trucks, plus tips for checking fitment.",
+    "url": "https://www.usatoday.com/story/shopping/outdoors/2026/11/01/spelab-led-tail-lights-truck-upgrade/92543335007/",
+    "published_at": "2026-11-01T12:04:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Ericsson to showcase how intelligent networks are powering the AI era at MWC Doha 2026",
+    "summary": "Under the theme “Enter New Horizons,” Ericsson will present future-ready network capabilities for communication service providers, enterprises and mission-critical sectors",
+    "url": "https://www.zawya.com/en/press-release/companies-news/ericsson-to-showcase-how-intelligent-networks-are-powering-the-ai-era-at-mwc-doha-2026-1858886",
+    "published_at": "2026-11-01T12:04:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Sequence Radar - Issue #963: This Week in AI: The Future Has a Payment Schedule",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-963-this",
+    "published_at": "2026-11-01T12:03:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Fox News Takes Massive Ratings Hit As It Triples Down on Pro-Data Center Coverage",
+    "summary": "\"Just in case there were any dummies who thought Fox News cares what voters want.\" The post Fox News Takes Massive Ratings Hit As It Triples Down on Pro-Data Center Coverage appeared first on Futurism.",
+    "url": "https://futurism.com/artificial-intelligence/fox-news-media-data-center-propaganda-coverage",
+    "published_at": "2026-11-01T12:03:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pacer Trendpilot US Mid Cap ETF (BATS:PTMC) Sees Significant Growth in Short Interest",
+    "summary": "Pacer Trendpilot US Mid Cap ETF (BATS:PTMC – Get Free Report) saw a large increase in short interest during the month of October. As of October 15th, there was short interest totaling 9,124 shares, an increase of 80.8% from the September 30th total of 5,046 shares. Based on an average daily trading ",
+    "url": "https://www.thelincolnianonline.com/2026/11/01/pacer-trendpilot-us-mid-cap-etf-batsptmc-sees-significant-growth-in-short-interest.html",
+    "published_at": "2026-11-01T12:01:08+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Self-improving AI the key step towards AGI but safety is key: Z.ai founder",
+    "summary": "Using artificial intelligence to build even smarter systems will make artificial general intelligence (AGI) more achievable, though it would need to be done safely, leading Chinese computer scientist Tang Jie said at an event in Shanghai on Saturday. The remarks underscore how AI companies in the US",
+    "url": "https://www.scmp.com/tech/tech-trends/article/3372834/self-improving-ai-key-step-towards-agi-safety-key-zai-founder",
+    "published_at": "2026-11-01T12:00:19+00:00",
+    "source": "newsdata"
+  }
+]
