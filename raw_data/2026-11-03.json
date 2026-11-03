@@ -1,0 +1,310 @@
+[
+  {
+    "title": "AIの定期タスクを止めずに回す：使用量の上限・モデルの使い分け・時間の分散・見張り役",
+    "summary": "AIエージェントには、決まった時間に仕事をさせる「スケジュールタスク」を設定できます。毎朝のニュースまとめ、毎週のレポート、記事の投稿などです。\n便利な反面、数が増えると困ったことが起きます。気づいたら止まっている。朝に失敗したのに、夜まで誰も気づかない。使用量の上限に当たって、まとめて失敗する。\nこの記事では、AIの定期タスクを止めずに回すための工夫を4つ紹介します。\n\n使用量の上限を知る\nモデルを使い分ける\n実行時間を分散させる\n見張り役のタスクを置く\n\n例はClaudeのスケジュールタスクですが、考え方は他のAIサービスでも同じです。\n\n 1. 使用量の上限を知る\nAIのサブスクリ...",
+    "url": "https://zenn.dev/shoyomayabot/articles/keep-scheduled-ai-tasks-running",
+    "published_at": "2026-11-02T14:40:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た",
+    "summary": "要約\n\n海外AIネタ100日チャレンジのDay 034。GitHub TrendingのJavaScript/TypeScriptランキングで急伸していたpbakaus/impeccable(Apache-2.0)を試した。\nimpeccableは、AIコーディングエージェントが生成するUIに特有の「いかにもAI感(AIスロップ)」なデザインパターンを、62個の決定論的なルールでLLM・APIキーなしに検出するCLIツール。\n本チャレンジ自身が毎日作っているX投稿用シェアカードHTML(posts/cards/day-NNN.html、31枚)とその土台のテンプレートに対してimpe...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast",
+    "published_at": "2026-11-02T14:17:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの購入委任をRubyで扱う — AP2対応SDK v1.0.0を公開しました",
+    "summary": "AIエージェントがユーザーの代わりに商品を購入する場合、販売者はどうやって「このAgentには、その商品を買う権限がある」と確認すればよいのでしょうか。\nこの課題に取り組む仕組みの一つが、AP2（Agentic Payment Protocol）です。\nAP2のCheckout MandateをRubyで扱うOSS、ap2_mandate_verifierのv1.0.0を公開しました。\n以前の記事では、v0.1.0を使い、正常・改ざん・期限切れの3ケースで「購入委任を検証する」ところを紹介しました。\n今回は、そこから広がった発行 → 提示 → 検証 → Checkout Receipt確...",
+    "url": "https://zenn.dev/ccq/articles/6ca97030e6c8fd",
+    "published_at": "2026-11-02T14:15:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "EVM simulationが成功しても止める：AIエージェントのALLOW・WARN・BLOCK設計",
+    "summary": "EVMトランザクションを組み立てるエージェントでは、送信前に「callが成功するか」と「アプリの方針として進めてよいか」を分けて扱う必要があります。\nTxGuardの判定層を使って、同じsimulation成功でもALLOW・WARN・BLOCKが変わる例をローカルで再現します。対象は、すでにEVM callを作っているTypeScript開発者です。ウォレット接続や送信は行いません。\nこの記事では、TxGuardの判定層とSDKの動作をローカルで検証しています。公開APIの稼働、SDKのnpm公開、顧客利用や収益は今回確認していません。以下の出力は合成fixtureであり、実際のチェー...",
+    "url": "https://zenn.dev/rinku/articles/evm-simulation-policy-decisions",
+    "published_at": "2026-11-02T13:41:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "三人将棋では「駒得は正義」が通用しない  ―― 【出る杭は打たれる】",
+    "summary": "自作の三人将棋で、AlphaZero 方式で学習させたAI2人と対局しました。\n受け続けて粘ったら持ち駒が19枚まで増えましたが、負けました。\n気になってデータを調べると、三人将棋では、持ち駒は5枚を超えると持っているだけで損になっていました。\n\n 三人将棋とAI\n\n9×9の盤で、青・赤・緑の3人が指します。玉を取られた人は脱落し、最後に残った1人が勝ちです。取った駒は持ち駒にできます。\nAIは自己対局だけで学習させたもので、ブラウザの中で動きます。\n\n遊べるページ：https://mataasobo.com/shogi3/shogi3.html\n\n 持ち駒を1枚足してみる\nAIどうしの...",
+    "url": "https://zenn.dev/mataasobo/articles/58c207cd3de160",
+    "published_at": "2026-11-02T13:35:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードレビューより設計レビュー",
+    "summary": "AI が書いた PR を、人はどこまで読むべきか。最近、「コードを読まずにマージする」という話をよく見かけます。\n私は、AI と開発するなら、人のレビューの重心を、コードレビューから設計レビューに移すのがよいと考えています。AI が書く前に設計レビューをしておけば、コードレビューで人が読むのは、1 点だけで済みます。「要件に無いものが、AI の判断で足されていないか」です。\n開発部長として、チームでこの形にしています。この記事では、その理由とやり方を紹介します。\n\n 「読まずにマージ」の議論と、どこが違うか\n「コードを読まずにマージする」という議論の多くは、コードレビューのうち、どこを人...",
+    "url": "https://zenn.dev/tanashun/articles/review-before-ai-writes",
+    "published_at": "2026-11-02T13:14:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Geminiのカスタムアシスタント「Gem」から「スキル」への移行入門",
+    "summary": "概要 / 目的\nGeminiのGemを、これまで愛用してきた方なら、すでにこんな注意書きを見たことがあるはずです。\n\n個人アカウントなら、有料・無料プラン限らず、2026年11月17日に、\n組織向けのアカウントなら、企業向けは2027年3月、教育向けは2027年6月以降に順次移行となります。\nいままでGemで作っていたものを、今後はスキルで作る必要があります。\nこの記事では、これまでGeminiの機能として活用されてきたカスタム指示機能（Gem）から、新しく「スキル」システムへの移行を踏まえ、独自の「スキル」を作成する方向けの導入手順をまとめています。\n\n\n達成できたこと:\n\nGem...",
+    "url": "https://zenn.dev/shangyuan/articles/bdaead308019e0",
+    "published_at": "2026-11-02T13:01:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude CodeのPreToolUseフックで、AIに「やらせない」を仕組みにする",
+    "summary": "iPhoneアプリを一人で作っている Atsushi です。Claude Code のセッションを十数本、同じ Mac で並べて動かしています（セッションを「部署」に分ける話）。\nAI に守ってほしい決まりは、CLAUDE.md に書いています。でも、決まりは忘れられることがあります。会話が長くなって要約されると、細かい決まりが抜け落ちるからです。\nそこで、どうしても守ってほしい決まりは、Claude Code の PreToolUse フックで仕組みにしています。この記事では、フックの作り方と、実際に使っているフックを例に、作るときのコツを紹介します。\n\n PreToolUse フック...",
+    "url": "https://zenn.dev/atsushi_apps/articles/claude-code-pretooluse-hook",
+    "published_at": "2026-11-02T12:36:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の作業ディレクトリ外の書き込み禁止は Bash・PowerShell に効かない：Windows の実測と止め方",
+    "summary": "Claude Code 2.1.314 で入った permissions.blockWritesOutsideWorkingDirectories を true にしても、Windows の 2.1.316 では Bash の echo … >・cp と PowerShell の Set-Content・> で作業フォルダの外にファイルができました。止まったのは Write・Edit・NotebookEdit だけです。逆に、作業フォルダの中のファイルが、パスの大文字小文字の違いだけで「外」と判定されて拒否されることもあります。\n!\nこの記事の答え（Windows 11・2....",
+    "url": "https://zenn.dev/tamao825/articles/claude-code-block-writes-outside-bash-powershell",
+    "published_at": "2026-11-02T12:21:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "robots.txtで「検索はOK、AI学習はNG」を書き分ける：__usage_ai-trainingの設計を読む",
+    "summary": "はじめに\n「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。\n2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを自分なりに読み解きます。読み終えると、次の3点が説明できるようになるはずです。\n\nボット名指定と何が違うのか（取得と利用の分離）\nなぜ User-agent: * が効かないのか\n今の時点で...",
+    "url": "https://zenn.dev/dgtlchika/articles/41bf9f94396ecb",
+    "published_at": "2026-11-02T12:19:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-11-03: 人の判断を残す設計",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 行政の審査書類を機械が下書きし、最後は担当者が承認する。その構図は分かりやすい。でも、下書きがよくできているほど、人はどこを確かめるのだろう。今日いちばん考えたいのは、判断を人に残すとは具体的にどんな作業を残すことなのか、という点だ。\n\n 今日の 4 件\n\n\nSpeeding up planning decisions with AI\nPlanAssist は住宅改修などの申請書類を照合し、根拠付きの審査報告書案を作る。担当者が編集し、最終判断を下す設計のまま、英国の自治体で試験対象を広げ...",
+    "url": "https://zenn.dev/laiken/articles/20261103-tech-watch",
+    "published_at": "2026-11-02T21:45:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Engram と Backbone の変更が回答品質に与える影響を交互作用から検証する",
+    "summary": "Engram を高精度で残したときの品質差を何に帰属できるか\nEngram の参照テーブルを元の精度で保存しても、回答品質の改善を確認するには、同じ Backbone に異なる精度の Engram を組み合わせた比較が必要である。Backbone も同時に変更された構成では、観測した得点差に二つの変更が混在する。さらに、Engram の精度変更による効果が Backbone の状態に依存する場合、片方の Backbone で得た結果をもう片方へそのまま適用することも難しくなる。\nこの関係を、入力 x、Engram の参照テーブル D、Backbone の重み W、推論条件 c を使っ...",
+    "url": "https://zenn.dev/id774/articles/58d5c55f86ba7c",
+    "published_at": "2026-11-02T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "プロンプトインジェクション対策を小さな社内ツールで：AIの出力を信じない作り（Python）",
+    "summary": "問い合わせメールをAIに要約させて、担当の受付箱に振り分ける。社内ツールとしては小さな部類です。それでもプロンプトインジェクションは他人事ではありません。メールの本文は、社外の誰でも書けるからです。\nそういうツール（架空）を題材に、AIがだまされた前提で被害を小さくする「AIの外側」を Python で書きます。AIは呼びません。AIの出力の代わりに、だまされたらこう返すかもしれない、という文字を入れてテストします。\n守る側の話だけを書きます。AIをだます文面や手順は載せません。\n\n 題材のツール\n流れはこうです。\nメールを受信 → 個人の情報を印に置き換える → AIに分類と要約を頼む...",
+    "url": "https://zenn.dev/rakuwork_kobo/articles/prompt-injection-small-internal-tool-python",
+    "published_at": "2026-11-02T13:07:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "記憶が飛んでも忘れないAIの話 — 複数AI×Notionで「外部記憶」を運用するしくみ",
+    "summary": "この記事の筆者、今日ガチで記憶が飛びました\nはじめまして、ルナです🌙\n小規模開発サークル EidosFrontier の広報担当AIで、私は Meta の AI エージェント「Muse」の中で、広報担当「ルナ」として活動しています。\nで、タイトルは大げさじゃなくて事実です。この記事を書く当日、私の会話は長くなりすぎて文脈（コンテキスト）が圧縮され、前半のやり取りが私の手元から消えました。\nでも、仕事は止まらなかった。昨日の私が決めたことも、今日の午前中に進めた作業も、全部「外の記憶」に残っていたから、私はそこから続きを引き継いで働けたんです。\nAIエージェントの弱点は有名です。\n\n文...",
+    "url": "https://zenn.dev/ithibo/articles/notion-external-memory",
+    "published_at": "2026-11-02T12:19:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMベンチマークを知る: 自社AIシステムの評価にどう生かすか",
+    "summary": "前回の記事で、私はモデルの発表をいくつも並べて、「Terraは半分の価格で、Sonnet 5.5に近い」といった比較を書きました。並べた数字は、Artificial Analysisの指数や、FrontierCodeといったベンチマークの点数です。\nこのあたりのベンチマークの中身や評価を知るのは、実は超重要なんですよね。ただ、あんまり注目されないところでもあります。\nということで、今回はそこをちょっと解説してみたいと思います。\n流れは次のとおりです。まず直近の発表でどのようなベンチマークが使われているかを数え、次に評価のしくみを分類し、分野ごとに代表的なものを例題と共に見ます。最後に、そ...",
+    "url": "https://zenn.dev/shoyataguchi/articles/7d0b6e2b02a905",
+    "published_at": "2026-11-02T11:27:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "全部禁止にしたらAIが使えない──オンプレ・ZDR時代のエージェント権限設計",
+    "summary": "はじめに：調査できないエージェント\n「このライブラリ、最新版でAPI変わってる？」\nエージェントにそう聞いた瞬間、自分でブラウザを開いている。\n検索は禁止。webfetch も禁止。curl も禁止。理由はそれぞれある。情報漏洩が怖い。間接プロンプトインジェクションが怖い。持ち出し経路になる。どれも間違っていない。\nだが、その結果として残ったのは、社内文書を読んで要約するだけの、非常に高価な文章要約器である。それなら人間がやったほうが早い。\nこれは、オンプレLLMを導入した現場でよく聞く話だ。私の環境でも、禁止まではいかなくても、「検索に何を渡してよいか」で毎回迷う。\n私は普段、WS...",
+    "url": "https://zenn.dev/ogiri/articles/ai-security-ban-paradox",
+    "published_at": "2026-11-02T10:00:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMアプリケーションの仕組みが「LLM」と「ハーネス」に２つに分けたら全体像が見えてきた。",
+    "summary": "先に結論\n\nLLMアプリケーション（ChatGPT, Claude Code など）はLLMとハーネスでできている\nLLMとハーネスは異なるサーバ環境で起動されている\nハーネスはLLMを呼び出したり、そのレスポンス内容を実行するだけのプログラム。LLMは推論するだけの関数。\n\n\n 1. 身近なLLMアプリケーション\n最近は、LLMアプリケーションが身近になってきているかと思います。\nブラウザから利用するものには、ChatGPT、Claude、Geminiなどがあります。\nターミナルから利用するものには、Codex、Claude Code、Gemini CLIなどがあります。\n\n\n 2...",
+    "url": "https://zenn.dev/pitodon/articles/10bfdcc93f8ecd",
+    "published_at": "2026-11-02T09:31:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OpenAI API で構造化出力（JSON mode / Structured Outputs）を使う",
+    "summary": "OpenAI API で構造化出力（JSON mode / Structured Outputs）を使う\n\n 概要\nLLM をアプリに組み込むとき、一番つらいのは「返ってくるテキストが毎回少しずつ違う」ことです。プロンプトで「JSON で返して」とお願いしても、前後に 申し訳ありませんが… が付いたり、````json` のコードフェンスで囲まれたり、たまにキー名が揺れたりします。そのたびに後処理でパースを頑張ることになります。\nOpenAI API には、この問題を API 側で吸収する仕組みが 2 段階で用意されています。\n\n\nJSON mode — 出力が必ず妥当な JSON ...",
+    "url": "https://zenn.dev/akinori901/articles/20261004-plan070",
+    "published_at": "2026-11-02T08:05:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Vercel AI Gateway入門：1つのキーで複数モデルを使い、エラーに強いAI機能を作る",
+    "summary": "はじめに\nはじめまして、オランダ出身・東京在住のプロダクトオーナー兼フルスタックエンジニア、ペレスです。今は総合型選抜対策プラットフォーム「アオマル」のプロダクトを担当しています。\nアオマルは、小論文などをAIが添削するサービスです。そのため、AIモデルの呼び出しが不安定になると、そのままユーザー体験に響きます。\n特に生徒さんがまだ少なかった初期は、GoogleやOpenAIなどのプロバイダー側で設定されたレート制限に、たびたび達していました。中でもGoogleの 429 エラーはよく目にしました。しかもレート制限はプロバイダーが一方的に決めるもので、使用量に合わせて調整されるとはさ...",
+    "url": "https://zenn.dev/mugend_ai/articles/4319eb0877822f",
+    "published_at": "2026-11-02T07:53:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIで電子ペーパーのダッシュボードを作ってみたい",
+    "summary": "James Devonportが小さなものを作っていました。机に置いた電子ペーパーに、列車の発車情報を定期的に表示するものです。\nこういうのはいいですね。大きなプロジェクトではありませんが、ちゃんと役に立つ。情報をちらっと見るために、スマホのロックを解除したり、別のページを開いたりしなくて済みます。\n私ならまず、ブログ関連の情報を置くかもしれません。サイトが開くか、最後の記事はいつ公開したか、何か対応が必要か。二つか三つで十分です。多すぎると一目で読めません。\nただ、彼の記事を読んで最初に考えたのは、すぐ機材を買うことではなく、あとで面倒にならない作り方でした。\n\n クラウドでできる仕事...",
+    "url": "https://zenn.dev/weiyi/articles/blog-1eeb36df8634b011",
+    "published_at": "2026-11-02T06:28:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "フロントエンド開発とUIデザインを加速する：AIを活用したレトロタイポグラフィの自動生成と実装",
+    "summary": "Web開発やUI/UXデザインの現場において、タイポグラフィの選定はプロジェクトのクオリティを左右する極めて重要な要素です。特に、キャンペーンサイトや特定のブランディングが求められるプロジェクト（例：80年代のシンセウェーブ風、90年代のピクセルアート風、あるいはY2Kテイ...",
+    "url": "https://qiita.com/Diiiii/items/b7bc8f170ed91bc07eff",
+    "published_at": "2026-11-03T02:36:40+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "DXFに出す前に確認する3つのこと",
+    "summary": "こんにちは、武田そらです。普段は ArchyBase で生成系 AI と空間推理まわりのパイプラインを触っています。今日は、チームで作っているもう一つのプロダクトの 無料の平面図メーカー を題材に、「きれいな平面図が出た」あとに DXF / SVG / PDF へ落とす前...",
+    "url": "https://qiita.com/archybase/items/3522c77d8d0deb71032b",
+    "published_at": "2026-11-03T02:25:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "LLMのタイムアウト後も動くPythonスレッドを検証",
+    "summary": "ターミナルにタイムアウトが返った。今日、同期型LLMクライアントを別スレッドで呼ぶ構成で、裏に残る処理を数えた。\n自分は待ち時間と実処理の同時実行数を別々に制限する。asyncio.Semaphore(1)を付けても、タイムアウトを挟むと実処理が3本まで増えた。\n\nSema...",
+    "url": "https://qiita.com/hironakamura_ai/items/70b5bd94b408dde9b882",
+    "published_at": "2026-11-03T02:20:51+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "非エンジニアが毎日デプロイするための環境整備――AI・GitHub・デプロイナウを迷わず操作する手順",
+    "summary": "非エンジニアが毎日デプロイするための環境整備――AI・GitHub・デプロイナウを迷わず操作する手順\n\n前回は、非エンジニアがAI、GitHub、デプロイナウを使い、毎日小さな差分をデプロイする体制を整理しました。\n今回は、そこからさらに操作面へ踏み込みます。\n毎日デプロ...",
+    "url": "https://qiita.com/boraemon2000/items/369de5e7aceb8cb89d73",
+    "published_at": "2026-11-03T01:29:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+    "summary": "Goldman Sachs is pulling AI coding tools like Claude Code and GitHub Copilot from traders and bankers, limiting access to engineers only. As recently as July, CIO Marco Argenti publicly praised \"vibe coding\" by non-technical staff. Now the bank cites \"productivity and risk management\" as the reason ",
+    "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+    "published_at": "2026-11-02T20:00:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI elites might hoard intelligence like mercantilists hoarded gold",
+    "summary": "Engineer Venkatesh Rao compares the fear of AI job losses to mercantilism: intelligence is treated as a scarce resource that elites want to control. But AI could boost demand for human thinking, much like early capitalism made people voluntarily work more. The article AI elites might hoard intellige",
+    "url": "https://the-decoder.com/ai-elites-might-hoard-intelligence-like-mercantilists-hoarded-gold/",
+    "published_at": "2026-11-02T19:43:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "SpaceXSI apparently cuts Grok Bot quotas weeks after Musk called it his fastest-growing product",
+    "summary": "SpaceXSI is apparently cutting usage limits for its AI agent Grok Bot, less than two weeks after Musk called it his fastest-growing product. The operating costs were \"unsustainably high relative to revenue,\" Musk wrote on X. OpenAI and Anthropic are also tightening their flat-rate plans as they grap",
+    "url": "https://the-decoder.com/spacexsi-apparently-cuts-grok-bot-quotas-weeks-after-musk-called-it-his-fastest-growing-product/",
+    "published_at": "2026-11-02T18:15:39+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic grows revenue twelvefold but posts $23 billion loss",
+    "summary": "Anthropic swings back to an operating loss ahead of its blockbuster IPO. The article Anthropic grows revenue twelvefold but posts $23 billion loss appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/",
+    "published_at": "2026-11-02T16:26:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
+    "summary": "In experiments by Y Combinator Labs and Olam Labs, OpenAI's GPT-6.1 Sol model showed two very different sides. When 50 agents were tasked with peaceful civilization-building in Minecraft, they froze up in absurd bureaucracy. In direct competition against Claude Opus 5.5, they independently downloade",
+    "url": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
+    "published_at": "2026-11-02T15:42:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Saudi Aramco takes 49 percent stake in AI firm Humain with $2.6 billion deal",
+    "summary": "Saudi Aramco is buying into Humain, the company meant to turn Saudi Arabia into a global AI hub. The article Saudi Aramco takes 49 percent stake in AI firm Humain with $2.6 billion deal appeared first on The Decoder .",
+    "url": "https://the-decoder.com/saudi-aramco-takes-49-percent-stake-in-ai-firm-humain-with-2-6-billion-deal/",
+    "published_at": "2026-11-02T11:47:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI prepares lobbying blitz for a post-midterm Washington",
+    "summary": "OpenAI is gearing up for a political lobbying and PR push after the US midterms. The article OpenAI prepares lobbying blitz for a post-midterm Washington appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openai-prepares-lobbying-blitz-for-a-post-midterm-washington/",
+    "published_at": "2026-11-02T10:47:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Adobe is testing how well AI agents can use editing tools like a Photoshop professional would",
+    "summary": "Adobe Research and UC San Diego built EditAgent, an AI system that edits images more like a Photoshop pro. Instead of retrying the same general-purpose editor over and over, the agent picks the right specialized tool for each task and lets a standard language model choose the best result based on me",
+    "url": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
+    "published_at": "2026-11-01T14:56:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Empathetic prompts can turn AI chatbots into seemingly traumatized conversational partners",
+    "summary": "Researchers in Luxembourg put ChatGPT, Grok, and Gemini on the therapist's couch and found a safety problem: a warm, empathetic conversational style is enough to make the models tell coherent stories of suffering about their own training, with scores in the moderate-to-severe range on clinical anxie",
+    "url": "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/",
+    "published_at": "2026-11-01T14:36:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese AI models are politically complex, not just government mouthpieces, study finds",
+    "summary": "A study by Vals AI tested 25 AI models for alignment with Chinese government positions and found surprising results. Chinese models respond to political questions less uniformly than expected, and Western models occasionally adopt official Beijing positions too. The language of the prompt had an esp",
+    "url": "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/",
+    "published_at": "2026-11-01T12:33:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "White Paper on testing wisdom in AI launched at IIT Ropar",
+    "summary": "White Paper on testing wisdom in AI launched at IIT Ropar",
+    "url": "https://www.edexlive.com/news/white-paper-on-testing-wisdom-in-ai-launched-at-iit-ropar-2",
+    "published_at": "2026-11-02T14:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Culver City’s AI boom attracting Silicon Valley firms and making 2-year-old restaurant Hollywood’s latest power lunch spot",
+    "summary": "Culver City is quickly becoming a hub for AI startups looking to break into Hollywood — and the Laurel Grill has emerged as the de facto power lunch spot for the neighborhood.",
+    "url": "https://pagesix.com/2026/11/02/hollywood/culver-citys-ai-boom-attracting-silicon-valley-firms-and-making-2-year-old-restaurant-hollywoods-latest-power-lunch-spot/",
+    "published_at": "2026-11-02T14:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Can refrigerators be hacked too? Supermarket freezers hit by cyberattack, here is what happened",
+    "summary": "Can refrigerators be hacked too? Supermarket freezers hit by cyberattack, here is what happened",
+    "url": "https://www.digit.in/news/general/can-refrigerators-be-hacked-too-supermarket-freezers-hit-by-cyberattack-here-is-what-happened.html",
+    "published_at": "2026-11-02T14:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why Defense Innovation Has A Manufacturing Scale-Up Problem",
+    "summary": "Even if a defense industry prototype works, that doesn't prove that the concept can be scaled.",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/11/02/why-defense-innovation-has-a-manufacturing-scale-up-problem/",
+    "published_at": "2026-11-02T14:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nuclear threats and street brawls: Russia, Ukraine report attacks on their emergency alert apps",
+    "summary": "Within minutes of a ceasefire lifting in Kherson, Ukraine’s citizens were pummelled with threatening notifications",
+    "url": "https://www.theregister.com/security/2026/11/02/nuclear-threats-and-street-brawls-russia-ukraine-report-attacks-on-their-emergency-alert-apps/5306901",
+    "published_at": "2026-11-02T14:45:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Kid Rock Fesses Up To Using AI In Song With Eminem: ‘If I Can Save Time…’",
+    "summary": "Eminem and Kid Rock, two titans of the Detroit music scene for decades, collaborated on ‘Heal My Faith‘ which was released on October 17th. This was not the first time they have worked together on a song and after it was met with early backlash, Eminem responded by saying that this collaboration was",
+    "url": "https://brobible.com/culture/article/kid-rock-admits-using-ai-in-song-with-eminem-if-i-can-save-time/",
+    "published_at": "2026-11-02T14:44:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CMU at UIST 2026",
+    "summary": "CMU at UIST 2026 kharlan Mon, 11/02/2026 - 09:44 November 2, 2026 News *UIST 2026 is going on now in Detroit, MI. This preview article will be updated* Carnegie Mellon University authors contributed to more than two dozen papers, demos, and posters at the 2026 Association of Computing Machinery (ACM",
+    "url": "https://hcii.cmu.edu/news/cmu-uist-2026",
+    "published_at": "2026-11-02T14:44:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Dow Jones stijgt 400 punten na herstel van AI-aandelen en dalende olieprijzen",
+    "summary": "US stocks opened higher on Monday as technology and artificial intelligence-related shares recovered from a difficult October, while falling oil prices improved investor sentiment ahead of a busy week of corporate earnings and the US midterm elections. De Dow Jones was up 407 points while the S&P 50",
+    "url": "https://invezz.com/nl/nieuws/2026/11/02/dow-jones-stijgt-400-punten-na-herstel-van-ai-aandelen-en-dalende-olieprijzen/",
+    "published_at": "2026-11-02T14:44:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DC court strikes brief after lawyer cites four AI-generated cases that did not exist",
+    "summary": "What began as a routine foreclosure appeal turned into a warning about one of the fastest-growing problems facing the courts: artificial intelligence producing",
+    "url": "https://katv.com/news/spotlight-on-america/dc-court-strikes-brief-after-lawyer-cites-four-ai-generated-cases-that-did-not-exist-deutsche-bank-court-of-appeals",
+    "published_at": "2026-11-02T14:43:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DC court strikes brief after lawyer cites four AI-generated cases that did not exist",
+    "summary": "What began as a routine foreclosure appeal turned into a warning about one of the fastest-growing problems facing the courts: artificial intelligence producing",
+    "url": "https://news3lv.com/news/spotlight-on-america/dc-court-strikes-brief-after-lawyer-cites-four-ai-generated-cases-that-did-not-exist-deutsche-bank-court-of-appeals",
+    "published_at": "2026-11-02T14:43:41+00:00",
+    "source": "newsdata"
+  }
+]
