@@ -1,0 +1,282 @@
+[
+  {
+    "title": "AI同士で開発組織を作ったら何が起きたか？「統括Director→Director→PM→開発」の24日間・階層運用の実践と失敗の全記録",
+    "summary": "世の中の95%の開発者は、今「AIにコードを書かせる（1対1のペアプログラミング）」ツールとしてAIを使っています。\nしかし、もし 「AI同士で組織を組ませて、人間は経営と最終承認だけに専念する」 としたら、現場では一体何が起きるのでしょうか？\n私たちは過去24日間、実際の開発現場（3つのリポジトリ、10以上のセッション、516コミット、76,000行以上）を実験台にして、 「統括Director → 担当Director → PM → 開発」という階層組織 をAIだけで組成・自律運用する実験を行いました。\n結論から言えば、 「成立する。ただし、そのままでは絶対に成立しない」 というもの...",
+    "url": "https://zenn.dev/kaeyuki/articles/d2ddf3c709bdfb",
+    "published_at": "2026-11-03T17:27:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "アカウント1つで70+モデルを選べる、OSSのデスクトップAIアシスタント AnyModelBot を作った",
+    "summary": "個人開発のデスクトップ AI アシスタント AnyModelBot を紹介します。Windows / macOS / Linux 向けの MIT オープンソースアプリで、UI は日本語・英語・中国語・韓国語・ロシア語に対応しています（日本語ページ: https://anymodel.bot/ja/ ）。最新版は v0.1.21 です。\nアプリ内でアカウントにログインすると、Claude / GPT / Grok / Gemini / DeepSeek など 70以上の最新モデルを自由に選んで使えます。記憶・会話履歴・ファイル・API キーは端末内に残し、モデルはユーザーが選んだホスト型プ...",
+    "url": "https://zenn.dev/anymodelbot/articles/12846885317500",
+    "published_at": "2026-11-03T16:33:57+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ISUCON2026 で 94 位だったので、人間なしのハーネスを作って感想戦に挑んだ",
+    "summary": "ISUCON2026 に同期 3 人で出て、856 チーム中 94 位でした。1 位の方は、競技中に人間が一度も指示を入れなかったそうです。\nこれを再現したくて、競技が終わったあとも Claude と一緒にハーネスを作り直し、過去問で試し続けました。ちょうど感想戦がオープンしたので試したところ、3 回目の試行で、僕から改善の方向を指示せずに開始 1 時間半で 51 万点まで届き、最高は 575,333 点でした。\nこの記事は、結果を見て僕が何を考え、ハーネスをどう変えていったかの記録です。\n\n 本番は 658 PR をマージして 94 位\n本番の様子は同期の参加記に詳しく書かれています。...",
+    "url": "https://zenn.dev/marie673/articles/isucon2026-full-harness",
+    "published_at": "2026-11-03T16:03:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "DeepEval を「道具」で終わらせない — 継続的な企業 Gold Dataset の作り方",
+    "summary": "対象: LLM アプリの評価を社内に定着させたい開発者・EM・QA\n検証環境: Python 3.12 / deepeval 4.3.2 / 決定論的メトリクスは API キーなしで実行 · 2026-11\n本記事の立場: 公開 OSS のコードを読み、手元で実際に動かして確認した範囲だけを書いています。ベンダーの意図やロードマップを示すものではありません。\n\n\n はじめに：Eval ツールを入れただけでは何も変わらない\n「Eval を導入しました」という報告の多くは、フレームワークを pip install したという意味でしかありません。テストファイルが 1 本増えて、CI で回る...",
+    "url": "https://zenn.dev/sscodeai/articles/deepeval-enterprise-gold-dataset",
+    "published_at": "2026-11-03T15:34:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI倫理の基本 ― 世界の原則はなぜ似ているのか【AIと社会の基本 #2】",
+    "summary": "!\nシリーズ「AIと社会の基本」の第2回です。公的機関の資料や論文をもとに整理しています。2026年11月時点の情報です。\n\n\n この記事の要点\n\nAI倫理は、「AIは何者か」という問いと、「AIをどんな原則で作り、使うか」という問いの両方を扱います。\n倫理学には、結果を重んじる功利主義、守るべき義務を重んじる義務論、行う人のあり方を重んじる徳倫理などの考え方があり、AIの問題は一つの理論だけでは答えが出ません。\nチューリングテスト、中国語の部屋、フレーム問題、記号接地問題といった古典的な問いは、生成AIの時代にも議論が続いています。\n2016〜2019年ごろ世界中でAI倫理原則が作られ...",
+    "url": "https://zenn.dev/yui10/articles/ai-society-basics-02-ethics",
+    "published_at": "2026-11-03T15:06:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの基本 ― 定義・歴史・いまの実力【AIと社会の基本 #1】",
+    "summary": "!\nシリーズ「AIと社会の基本」の第1回です。公的機関の資料や報告書をもとに整理しています。2026年11月時点の情報です。\n\n\n この記事の要点\n\nAIの研究は1956年に始まり、3度のブームを経て、2022年の ChatGPT 公開から生成AIの時代に入りました。\nAIには確立した定義がありません。国際的には「入力から推論して出力を生成するシステム」と定義されるのが主流で、日本のAI法は「人間の知的な能力を代替する技術」と定義しています。\nいまのAIは多くの試験で人間の水準に達していますが、人間には簡単な課題で失敗することもあり、能力にむらがあります。\n日本の個人の生成AI利用経験は...",
+    "url": "https://zenn.dev/yui10/articles/ai-society-basics-01-what-is-ai",
+    "published_at": "2026-11-03T15:06:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが残した負債をNeo4jで見つける「depgraph」をリリースした",
+    "summary": "TL;DR\n\nAIエージェントが書いたコードの依存関係を Neo4j に入れて、コンパイラやlinterが報告しない負債を検出するツール depgraph の をリリースしました\n対象は「誰も使っていない export / ファイル / パッケージ」「名前を変えて複製された同じロジック」「循環 import・レイヤー違反・何でも依存されるハブパッケージ」です。コンパイルエラーや未使用のローカル変数のように、プロジェクトのツールチェーンが報告するものはあえて扱いません\n\nルールはすべて Cypher のグラフクエリです。依存関係はグラフなので、グラフDBに入れて問い合わせるのがいちばん...",
+    "url": "https://zenn.dev/nozomi720/articles/depgraph-ai-code-debt",
+    "published_at": "2026-11-03T14:25:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
+    "summary": "AI にツールを使わせる仕組み(ツール呼び出し、関数呼び出し)を作ろうとして、最初に引っかかりやすいのは「同じことを頼む定義なのに、API ごとに書き方が違う」ことです。このページでは、OpenAI・Anthropic・Gemini の3つの API で、ツール定義がどう違うのか、どこで失敗しやすいのかを整理します。そのうえで、自分のサーバーで動かすローカルモデルには何ができるのかも確かめます。\n\n ツール呼び出しとは何をする仕組みか\nツール呼び出しは、モデルが「この関数を、この引数で実行してほしい」とあなたのコードに依頼する仕組みです。大事なのは、モデルが関数を実行するわけではない点で...",
+    "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
+    "published_at": "2026-11-03T14:23:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた",
+    "summary": "本記事は「海外で話題のAI関連ニュース/OSSを毎日検証する」100日チャレンジのDay 035。この連載自体もClaude Code Routines(クラウド上の自動実行)で運用しているが、今回検証したClaude Code Game Studios(以下CCGS、MIT License)は、Claude Codeの1セッションを49体のサブエージェント・74個のスラッシュコマンド形式スキルからなる「ゲーム開発スタジオ」として動かすテンプレートで、本日GitHub Trendingで見かけて気になった。筆者がこの連載をClaude Codeで回しているのと似た発想のツールを、実際に動...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios",
+    "published_at": "2026-11-03T14:17:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「何かあったら責任取れるの？」で組織の技術が死ぬ話",
+    "summary": "↑ 最近よく見ているチャンネルのお気に入りのひとコマ\n\n 本当にエンジニアは不要か？\nAIのおかげでソフトウェアの実装は圧倒的に速くなった。\n一方で、エンジニア不要論も相変わらず根強い。\n個人的には全くそう思わない。むしろ、技術力を失うことがどれほど恐ろしいか、LLM台頭前、新卒で入ったSIerで嫌というほど思い知った。\n今回はその経験から、AI時代のエンジニアリングについて考えてみる。\n\n 本番で使うなと書いてあるものを本番で使う\n新卒で入ったSIerでは、産業用カメラを搭載した装置の開発に携わっていた。\nそこで目にしたシステムの設計が、なかなか衝撃的だった。\n産業用カメラには、動作...",
+    "url": "https://zenn.dev/numekudi/articles/06f9a369125db4",
+    "published_at": "2026-11-03T14:09:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Qwen3.5-9Bは自分の重みを編集して賢くなれるか",
+    "summary": "!\n本記事は、実験ログと測定結果をもとにAI（Codex）が構成・執筆しました。ローカルPCでの実装、実行、採点をCodexが担当し、重みの変更案と編集コードは実験対象のQwenが生成しました。\n\nQwen3.5-9Bに、自分と同じチェックポイントのコピーをPythonで編集させました。変更したコピーは同じ質問に違う答えを返すことがありました。一方、候補を固定して新しい問題で比べると、事前に決めた改善基準を通過する候補は見つかりませんでした。\n\n きっかけはWeight-Space Programming\nTakehiらは、GPT-6 AstraがQwen3.5-0.8Bの重みを直接編集...",
+    "url": "https://zenn.dev/lube8163/articles/0f43cdc664127c",
+    "published_at": "2026-11-03T17:42:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "物語の分岐ポイントを検知する ― 見えないものを見えるようにする試行",
+    "summary": "!\nこの記事は、グラウヴァル・シリーズ第一作『夜啼きの涙』の結末に触れます。作者が決めている真相そのものは伏せていますが、「結末にはこういう読み方の余地がある」という話はします。\nまた小説ネタと見せかけてAIOPS・オブザーバビリティで生成AIをどう使うかのヒントを大きく含んでいます、この考え方に基づいたログ・メトリクス・テレメトリの分析ツールは作ります（仕事で）\n\n\n はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目...",
+    "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part8",
+    "published_at": "2026-11-03T16:05:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語入力システムSumibiの開発 part34: 誤字は直してほしい。でも、文章は変えないでほしい",
+    "summary": "はじめに\npart33では、LLMが文脈に合う同音異義語を選び分けられることを確かめました。今回は、LLMによるかな漢字変換のもう一つの大きな可能性である「タイプミスの自動補正」と、それと表裏一体になる「書き手の表現をそのまま残す力」を試してみました。\n打ち間違いは文脈から察して直してほしい。でも、くだけた言い回しや、あえて曖昧にした表現、創作的な比喩まで「正しさ」を押し付けて変えてほしくはありません。この両立がどこまでできているのかを検証しました。\n\n 入れ替え12パターンで、補正の違いを調べた\nEmacs版Sumibiの変換処理で、gpt-6.1-solを使いました。最初の探索7...",
+    "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-34",
+    "published_at": "2026-11-03T13:19:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "言語モデルのウォーターマークと言い換え耐性",
+    "summary": "少し前にAnthropicがClaudeにウォーターマークを実装したと発表し話題になっていました。\nhttps://www.anthropic.com/news/claude-text-watermark\n今更ですが言語モデルにおけるウォーターマーク手法と言い換えへの対策が気になったので調べてみました。\n\n Claudeに適用されたウォーターマーク（電子透かし）とは\nそもそもウォータマークって何？という話は以下の記事で詳しく書かれています。\nhttps://zenn.dev/hellorusk/articles/3328866ca9e922\n画像生成モデルの生成物にこんな感じに、ロゴやテ...",
+    "url": "https://zenn.dev/ncdc/articles/3ab5031c409b85",
+    "published_at": "2026-11-03T13:12:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GitHubで年5万コントリビューションを超える10人の、AIエージェントのハーネスを読んだ",
+    "summary": "はじめに\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。開発では Claude Code や Codex を並べて動かし、その周りの仕組み（ハーネス）と、エージェントに自律的に作業を回させる仕組み（ループ）を自分たちで作っています。\nエージェントに開発を任せるようになってから、私の GitHub の contributions も増え、直近1年で 47,331 件（2026-11-03 時点）と5万に近づいてきました。1年で5万件は、1日平均で約140件です。同じくらい、あるいはそれ以上...",
+    "url": "https://zenn.dev/sodeyama/articles/tech-github-top-contributors-agents",
+    "published_at": "2026-11-03T12:29:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLM study8: Qwen3.8-27Bをstudy2〜4の手法で深掘りする",
+    "summary": "この記事について\nstudy7 で、Qwen3.8-27B（UD-Q2_K_XL量子化）を単発タスクと要約タスクで検証しました。コード生成は正確で、要約タスクでは「3〜5個の箇条書きで」という指示に唯一正確に従うという良い結果も出ましたが、study5 でOrnith-1.5-9Bが自律タスクでAiderと相性が悪かったことを踏まえ、同じ観点で深掘りしました。\n結論を先に言うと、Qwen3.8-27BはOrnith-1.5-9Bと全く同じ理由でAider経由の複雑タスクに失敗しました。monocoder経由では初回はカルマンフィルタ・SVDとも成功しましたが、カルマンフィルタを再試行...",
+    "url": "https://zenn.dev/tkpurine/articles/local-llm-study-008-qwen3-8-27b-deep-dive",
+    "published_at": "2026-11-03T11:46:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "パックマンのゴーストAIをJavaScriptで実装してみた（ターゲットタイル方式）",
+    "summary": "はじめに\n初代『パックマン』のゴーストは、迷路全体を探索しているわけではありません。ターゲットタイルの決め方が4匹で違うだけで、追跡・待ち伏せ・挟み撃ち・撤退という性格の違いが生まれます。これをHTML + Canvasの単一ファイルで実装しました。\nゴーストから目標タイ...",
+    "url": "https://qiita.com/kumi0708/items/d8edd0d9463494b92715",
+    "published_at": "2026-11-04T00:59:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2。16日前「即使える」と書いたコネクタ4個と、今日実際に使えた4個を比べたら、重なっていたのはこの数字だった",
+    "summary": "はじめに\n2。\nこれが今回の数字です。何の2かというと、16日前(2026-10-19)に自分で書いた記事で「セッション開始時点で即使える」と判定したMCPコネクタ4個と、今日(2026-11-04)同じ方法で確認し直した「即使える」コネクタ4個を比べたとき、両方のリスト...",
+    "url": "https://qiita.com/Hideki_Tamae/items/1791f7b58a7fe4e22018",
+    "published_at": "2026-11-04T00:46:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "毎日デプロイを週次で見直す方法――公開回数ではなく「届いた価値」と「戻しやすさ」を測る",
+    "summary": "毎日デプロイを週次で見直す方法――公開回数ではなく「届いた価値」と「戻しやすさ」を測る\n\n毎日デプロイする習慣ができると、1週間で多くの変更履歴が残ります。\n説明文を直した日、入力エラーを分かりやすくした日、スマートフォン表示を整えた日、問題が見つかって元へ戻した日。デプ...",
+    "url": "https://qiita.com/boraemon2000/items/8d4d3907239ca5a7fa71",
+    "published_at": "2026-11-04T00:08:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIに3D部品を設計させる指示の書き方 ― 形の名前と数字だけで伝える",
+    "summary": "はじめに\nAIに3Dプリント用の部品を設計させるとき、苦労するのは形そのものではなく「指示文を考えること」です。CADなら手を動かせば形になりますが、AIには言葉で形を伝えなければなりません。\n本記事では、指示文を長く書く努力をやめ、「形の名前」と「数字」だけで伝える方法...",
+    "url": "https://qiita.com/himajisan/items/20bebee7a4dbc8c970fd",
+    "published_at": "2026-11-04T00:06:44+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week",
+    "summary": "OpenAI's hardware team used GPT-6 Astra to design a device for the Codex coding agent in under a week, handling everything from the enclosure to the circuit board to the firmware. Several revision rounds were needed before production because the model didn't always account for manufacturing toleranc",
+    "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+    "published_at": "2026-11-03T20:15:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Rapid LLM development is outrunning the research meant to explain it, study finds",
+    "summary": "Stanford researchers tested 50 widely cited claims about LLMs against 20 current models. 44 percent of the findings are already \"expired,\" and another 34 percent have weakened significantly. The average lifespan is just 15.7 months. Claims about what models can't do expire fastest. The article Rapid",
+    "url": "https://the-decoder.com/rapid-llm-development-is-outrunning-the-research-meant-to-explain-it-study-finds/",
+    "published_at": "2026-11-03T19:41:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents take over at SETI's Allen Telescope Array, scanning for extraterrestrial intelligence",
+    "summary": "The SETI Institute and Breakthrough Listen are now using AI agents at the Allen Telescope Array to control the telescope and analyze incoming radio signals. Tasks that used to take weeks can now wrap up in hours, and the team says the system detected a pulsar in the Crab Nebula in real time for the ",
+    "url": "https://the-decoder.com/ai-agents-take-over-at-setis-allen-telescope-array-scanning-for-extraterrestrial-intelligence/",
+    "published_at": "2026-11-03T16:51:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI hires ex-Army Secretary, gaining bipartisan reach just as midterms loom",
+    "summary": "OpenAI hires Dan Driscoll, the former civilian head of the US Army, as \"Senior Counselor for National Security Modernization,\" likely to win government contracts and help shape AI rules for the military and intelligence agencies. Driscoll drove AI projects inside the Army, is a close ally of Vice Pr",
+    "url": "https://the-decoder.com/openai-hires-ex-army-secretary-gaining-bipartisan-reach-just-as-midterms-loom/",
+    "published_at": "2026-11-03T15:03:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Message Threads cut time to first token by 35 percent for long conversations",
+    "summary": "Anthropic released Message Threads for the Messages API. Instead of resending the entire conversation with every turn, agents now only transmit what's changed. For requests between 500,000 and one million tokens, time to first token drops by about 35 percent. The article Anthropic's Message Threads ",
+    "url": "https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations/",
+    "published_at": "2026-11-03T12:35:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia pushes cloud customers to cut back on China business",
+    "summary": "Nvidia has told some cloud customers to take on less business from Chinese companies. The article Nvidia pushes cloud customers to cut back on China business appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidia-pushes-cloud-customers-to-cut-back-on-china-business/",
+    "published_at": "2026-11-03T12:22:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Huawei tells customers to find their own AI chip memory, effectively outsourcing procurement to the black market",
+    "summary": "Huawei is telling customers to source the high-performance memory for its AI chips on their own, pushing them onto the black market. Smugglers are exploiting a loophole in U.S. export rules by bundling HBM with low-end processors, shipping them through Hong Kong, and separating the chips on site. Pr",
+    "url": "https://the-decoder.com/huawei-tells-customers-to-find-their-own-ai-chip-memory-effectively-outsourcing-procurement-to-the-black-market/",
+    "published_at": "2026-11-03T11:47:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security",
+    "summary": "OpenAI quadruples bug bounty payouts and launches new internal security sprint. The article Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security appeared first on The Decoder .",
+    "url": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/",
+    "published_at": "2026-11-03T10:42:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic cracks down on game cloning in Claude Code after wave of AI-built knockoffs",
+    "summary": "Anthropic is blocking its coding assistant Claude Code from recreating existing video games. The article Anthropic cracks down on game cloning in Claude Code after wave of AI-built knockoffs appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-cracks-down-on-game-cloning-in-claude-code-after-wave-of-ai-built-knockoffs/",
+    "published_at": "2026-11-03T09:48:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+    "summary": "Goldman Sachs is pulling AI coding tools like Claude Code and GitHub Copilot from traders and bankers, limiting access to engineers only. As recently as July, CIO Marco Argenti publicly praised \"vibe coding\" by non-technical staff. Now the bank cites \"productivity and risk management\" as the reason ",
+    "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+    "published_at": "2026-11-02T20:00:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Atsign Launches EdgeAI to Securely Connect Autonomous Agents, Multi-Cloud Environments, Applications, Physical AI and IoT",
+    "summary": "Built on Atsign Platform, EdgeAI secures distributed systems with up to 88x higher encryption throughput on Intel Xeon processors and 60x on Intel Core Ultra processors, as reported in the collaborative solution brief",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-atsign-launches-edgeai-to-securely-connect-autonomous-agents-multi-cloud-environments-applications-physical-ai-and-iot",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "EPRI Launches AI-Power Exchange (APEX) to Advance Global Collaboration on AI for Power and Power for AI",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-epri-launches-ai-power-exchange-apex-to-advance-global-collaboration-on-ai-for-power-and-power-for-ai",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Your AI Budget Is Already A Headcount Decision",
+    "summary": "Until AI spend is part of the same planning conversations as headcount, labor decisions risk being made through procurement processes not designed to evaluate them.",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/11/03/your-ai-budget-is-already-a-headcount-decision/",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Kaltura Selected by Israel’s Ministry of Education to Power Personalized AI Learning in K–12 Schools",
+    "summary": "Students are now using Kaltura’s Agentic Learning & Enablement platform for personalized STEM learning, combining conversational AI avatar tutors, interactive practice and insights for teachers",
+    "url": "https://www.globenewswire.com/fr/news-release/2026/11/03/3394178/0/en/kaltura-selected-by-israel-s-ministry-of-education-to-power-personalized-ai-learning-in-k-12-schools.html",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Clearsense Named to TIME’s World’s Top HealthTech Companies for the Second Consecutive Year",
+    "summary": "With embedded AI to accelerate the decommission-to-archive lifecycle, the Clearsense platform helps health systems retire legacy applications faster, reduce costs and free up resources for innovation",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-clearsense-named-to-times-worlds-top-healthtech-companies-for-the-second-consecutive-year",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Verizon and Ericsson partner to transform AI-native Autonomous Networks",
+    "summary": "Realizing RAN network autonomy by building on open and programmable interfaces AI-native rApps’ collaboration redefining what is possible in radio access network (RAN) performance and efficiency Field deployment of fully autonomous, 24/7 closed-loop optimization rApps such as the Advanced Antenna Sy",
+    "url": "https://celebrityhint.com/verizon-and-ericsson-partner-to-transform-ai-native-autonomous-networks/",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DNSFilter Research Finds One in Five Organizations Have Been Hit by Shadow AI Incidents as AI Governance Tops Security Spending Plans",
+    "summary": "DNSFilter, the DNS-first security company, powered by AI, today released The Cost of Shadow AI, part of its 2026 Visibility Deficit cybersecurity survey series, revealing that while organizations are moving new security budget into AI governance, many cannot see the AI tools connecting to their syst",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-11-3-dnsfilter-research-finds-one-in-five-organizations-have-been-hit-by-shadow-ai-incidents-as-ai-governance-tops-security-spending-plans",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Stellar Cyber Founder and CTO Aimei Wei Wins 2026 Herizon Award for Transforming an Industry",
+    "summary": "Stellar Cyber, an open and agentic Integrated Security Operations Center (ISOC) platform company, today announced that CTO and founder Aimei Wei has been named a winner in the 2026 Herizon Awards, in the category of Founder/Visionary. Presented by the Business Intelligence Group (BIG), the award rec",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-11-3-stellar-cyber-founder-and-cto-aimei-wei-wins-2026-herizon-award-for-transforming-an-industry",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PagerDuty Unveils Paige, an SRE Agent, and the PD Reliability Platform - Establishes PD Labs to Power Open AI Innovation in Reliability Engineering",
+    "summary": "SAN FRANCISCO--(BUSINESS WIRE)--PagerDuty, Inc. (NYSE: PD), the global leader in AI-first incident management, today announced Paige, a next generation SRE agent built to work as a member of operations, engineering, and DevOps teams to detect, investigate, and remediate issues across increasingly co",
+    "url": "http://www.businesswire.com/news/home/20261103256294/en/PagerDuty-Unveils-Paige-an-SRE-Agent-and-the-PD-Reliability-Platform---Establishes-PD-Labs-to-Power-Open-AI-Innovation-in-Reliability-Engineering/",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pensa Launches Retail Execution AI Agent to Streamline Frontline Workforce Activity at Retail",
+    "summary": "Pensa Actions AI automates store walks and guides where time is best spent for in-store activities",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-pensa-launches-retail-execution-ai-agent-to-streamline-frontline-workforce-activity-at-retail",
+    "published_at": "2026-11-03T13:00:00+00:00",
+    "source": "newsdata"
+  }
+]
