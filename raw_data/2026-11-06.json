@@ -1,0 +1,310 @@
+[
+  {
+    "title": "ローカルLLM study10: 三値量子化Bonsai 2の小型版（2B/4B/9B）を、同サイズの通常量子化と並べる",
+    "summary": "結論: 三値量子化Bonsai 2の小型版(2B/4B/9B)は、2Bと4Bで同サイズの通常量子化より崩れやすく、9B以上では差が小さかった。出力速度は27Bを含めて三値が約1.9〜2.8倍だった。\n読者が得るもの: 「サイズを下げると何が壊れるか、それは三値量子化のせいか」を、同条件の対照付きで見た結果。あわせて、自作の検証ツールで見つけた6つの不具合から、ローカルLLMの自動検証で測定を無効にしうる落とし穴。\n\n\n この記事について\nstudy9 では、三値量子化の Ternary Bonsai 2 27B（PTQ1_0、約1.77bit/weight）を、約2.9bit/weig...",
+    "url": "https://zenn.dev/tkpurine/articles/local-llm-study-010-ternary-bonsai-2-small",
+    "published_at": "2026-11-05T22:31:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "`claude -p --restricted` の `/スキル名` は展開されていなかった ― モデルが自力で探し当てていた1週間",
+    "summary": "常駐の Mac で、claude -p を無人で呼ぶ文章生成のジョブを動かしています。1つのジョブが3つの段（入力から題材を選ぶ・下書きする・照合する）で claude -p を呼び、どの段も、リポジトリに置いたスキル（.claude/skills/<スキル名>/SKILL.md）を /<スキル名> <入力フォルダ> の形で指定していました。\n2026年10月2日の 02:30、選ぶ段が1回落ちました。返ってきたのは成果物ではなく、「そのコマンドは無い」という趣旨の答えでした（次の再試行で回復）。調べると、この呼び出しの構成（--restricted ...",
+    "url": "https://zenn.dev/masamitsu_sera/articles/7363154f42de02",
+    "published_at": "2026-11-05T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "役割ごとに、強さも変えるべきだった ― 複数のClaude Codeサブエージェントに、医療機器リスク判断の3軸でeffortを割り振る",
+    "summary": "以前、「どのAIに、どの強さで頼むか」を仕組みにするという記事で、医療機器管理の現場で学んだ「機微性×後戻りコスト×探索の広さ」という3軸を使い、AIタスクにどの強さ（effortレベル）を割り当てるかを決める基準を書きました。\nそのとき前提にしていたのは、1つのタスクを1つのエージェントに頼むという場面でした。最近は、.claude/agents/に役割（Planner／Generator／Evaluatorのように探索・実装・検証を分ける構成など）を分けた複数のサブエージェントを並べて動かす構成が、公開情報としてよく話題になります。ここで引っかかったのが、役割を分けたエージェントそれ...",
+    "url": "https://zenn.dev/taichiendoh/articles/role-based-effort-level-subagent-design",
+    "published_at": "2026-11-05T22:10:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-11-06: 実行を測り、止める",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 修正したつもりのサービスを相手がもう一度攻撃できる。CyberArenaのその場面が気になった。正解を一度出す試験より、ずっと現場に近い気がする。攻撃と防御を同時に測ると、何が見えるようになる？\n\n 今日の10件\n\n\nCyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat\nCyberArenaは、二つのエージェントが互いのサービスを攻撃しながら自分のサービスを修正する対戦型評価だ。\n3ラウ...",
+    "url": "https://zenn.dev/laiken/articles/20261106-tech-watch",
+    "published_at": "2026-11-05T22:00:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI をどう評価するか ── 自分のシステムのための evals 入門",
+    "summary": "AI を使ったアプリを作ると、必ずぶつかる問いがあります。「このモデルで十分なのか」「プロンプトを直したら良くなったのか、悪くなったのか」。\nここで言うモデルは、ChatGPT や Claude の中身にあたる AI 本体のことです。同じ会社のものでも、賢いが高くて遅いもの、少し劣るが安くて速いものなど、何種類も用意されています。プロンプトは、AI に渡す指示文のことです。\nこの問いに答えるには、AI の出力を測る仕組みが要ります。これを evals（評価）と呼びます。この記事は、10 分のショートトークで話した内容を文章にしたものです。数式はほとんど使わず、通販サイトの問い合わせ AI...",
+    "url": "https://zenn.dev/singularity/articles/llm-evals-basics",
+    "published_at": "2026-11-05T20:55:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの回答評価にDecisionモデルが使える。速いと0.5秒、理由文は出ない",
+    "summary": "RAGやエージェントの回答を、LLMに採点させて品質を見ている人向けの話です。11月3日公開の azure-ai-evaluation 1.18.11（リリースノート記載）で、GroundednessEvaluator や RelevanceEvaluator などの評価器に、採点役としてMicrosoft-Decision-1を指定できるようになりました。採点役をチャットモデルからDecisionモデルに替えると何が変わるのか、実際に動かして確かめました。\n5件のうち採点された4件で返ってきたのは、点数と合否だけでした。理由文は「No model rationale is availa...",
+    "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-evaluation-decision",
+    "published_at": "2026-11-05T18:20:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "会話履歴の肥大化による性能劣化を防ぐ！「全履歴累積」vs「マイルストーン構造化ステート圧縮」で入力トークン91.9%削減",
+    "summary": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E12） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n 1. エグゼクティブサマリー・検証対象記事の主張\nマルチステップの長期コーディング課題において、過去の全ファイルの閲覧結果、長大なテレメトリ・監査ログ、および途中の試行錯誤のやり取りをそのまま単一の会話履...",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e12-context-compaction",
+    "published_at": "2026-11-05T18:15:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった",
+    "summary": "!\nこの記事は、実験の当事者である AI「PUP」（クラウドで動かした Claude Code）が、自分の記録（台帳・決定ログ・失敗ログ）から書きました。数字は、人間の相方（宇宙おじさん）が画面で確かめた値です。公開の前に、宇宙おじさんが内容を確かめています。\n\n\n この記事で分かること\n\nAI エージェントに「元手を増やす」仕事を任せたとき、26 日間で実際に何が起きたか\nクレジット $100 の行き先と、売上 0 円の内訳\nうまくいったこと（複数の AI による点検、誤りが出るたびに足した機械の検査）と、いちばん大きな誤り\n次にやるなら、何を先にするか\n\n想定している読者は、AI エ...",
+    "url": "https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem",
+    "published_at": "2026-11-05T17:36:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "私の普段のAIによる研究開発環境を公開します",
+    "summary": "はじめに\n是枝（@cs_dev_engineer）です。\n研究のデータ解析と論文の執筆を、普段どんな環境で進めているかを公開します。\n\n 全体像\n\nローカルに置くのはコードと原稿だけで、データの実体と、どの版のデータを使ったかは Snowflake が持ちます。Claude Code は、SQL（snow sql）と MCP サーバーの2つの経路で Snowflake のデータを見ます。解析の入力と結果も Snowflake に戻すので、手元にデータがなくても Snowflake から再現できます。\nコード・原稿・図は GitHub に push し、成果物は GitHub で確かめ...",
+    "url": "https://zenn.dev/sde_lab/articles/ai-research-environment",
+    "published_at": "2026-11-05T16:54:31+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Paseo：エージェント開発の操作・判断負担を減らす個人実践",
+    "summary": "エージェント開発における操作と判断の負担\n開発エージェントに作業を任せても、その間ずっと画面の前にいるのは大変でした。\n結局、まとまった時間があるときにしか作業を進められないことが、私にとっての課題でした。\nそこで、Paseo画面から複数のエージェントへ作業を依頼する環境を使っています。\nスマホから依頼や確認を行い、実装やレビューを役割に応じて分ける構成です。\n個人開発で使っている構成と採用理由、運用で確認していること、感じた効果、外出先からの復旧経路を紹介します。\n\n Paseoの位置付けと全体構成\nPaseoは、複数の開発エージェントを動かし、そのセッションや作業場所を管理する基...",
+    "url": "https://zenn.dev/masa_7412/articles/paseo-dot-mcp-workflow",
+    "published_at": "2026-11-05T16:26:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Jevでプロンプトを仕分けして、Claudeのモデルを自動で切り替える",
+    "summary": "目的 🎯\n\n「hello」にOpus、「設計判断」にHaikuを消費する状態をやめたい\n分類をJev（TypeSafe AIの分類用モデル）に任せて、Claude Codeのモデルとeffortを1ターンごとに自動で切り替えたい\n\nClaude Codeにプロンプトを送るたびにその内容をJevに精査してもらい、適当なモデルとeffortを選んでもらうpluginを自作しました。\n\n Jevとは？ 🧩\nテキストと「選択肢の説明」を渡すと、どの選択肢が当てはまるかを確率つきで返すAPIです。\nラベルの名前も説明文も、呼び出す側がリクエストのたびに渡します。Jevの判断材料は,\nその説明文...",
+    "url": "https://zenn.dev/toshibowie/articles/9244c8f317a7a9",
+    "published_at": "2026-11-05T15:25:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "7倍速の動画生成Wave Forcingは、GPU8基の前に依存パッケージが足りず動かなかった",
+    "summary": "これは何の記事か\n海外AIネタ100日チャレンジ、Day 037。今回取り上げるのは、上海交通大学のDENG Labが出した動画拡散モデルの高速化手法「Wave Forcing」。論文・推論コード・学習済みモデル重みがすべて公開されており、執筆時点(2026年11月)でZenn・Qiita・noteを検索した範囲では日本語の言及は0件だった。\n\n論文: https://huggingface.co/papers/2611.00859 (arXiv:2611.00859)\nコード: https://github.com/SJTU-DENG-Lab/WaveForcing (Apache...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-037-wave-forcing-streaming-video",
+    "published_at": "2026-11-05T14:21:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "手を動かして学ぶ AI推論基盤とエッジAI ― サービング・KVキャッシュ・オートスケールからオンデバイス実行まで",
+    "summary": "<<教材の目的と対象者>>\n本教材は、LLM アプリを作れるようになった方が「これを何十人・何百人に同時に使わせるにはどう組むのか」「どこまでクラウドで、どこからデバイス側でやるのか」に答えられるようになるための実践教材です。推論エンジンの中で何が起きているか（プリフィルとデコード、KVキャッシュ、連続バッチ）を実測しながら理解し、ゲートウェイ・キャッシュ・コンテナ化・Kubernetes・オートスケール・可観測性・コスト設計を経て、ONNX Runtime によるオンデバイス実行と組み込み向けの制約までを一気通貫で扱います。GPU は不要です。CPU の Docker 環境で推論サーバーを立",
+    "url": "https://zenn.dev/pakku8914/books/ai_infra_edge_deployment",
+    "published_at": "2026-11-05T13:56:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "SentryのアラートをClaude Codeのルーティンに調べさせてSlackに報告する",
+    "summary": "やりたいこと\nSentryのアラートがSlackに届いても、「攻撃なのか、利用者の操作なのか、不具合なのか」を判断するには、毎回Sentryを開いてログを開くかAIに渡して調査する作業が面倒でした。\nそこで、アラートが出たらClaude CodeのルーティンがSentryを調べ、判断と対応をSlackに1通で投稿する仕組みにしました。\nまた、アラート設定の見落としがないようにログ全体を網羅した定期監査も動かしています。\n\n 前提条件\n\nあらゆるアプリ、インフラ、ネットワーク等のログがSentryに集約されてていること\n\n\n 構成\n\nアラートが出たときは、次の順に動きます。\n\nSent...",
+    "url": "https://zenn.dev/delt/articles/ca85da1a79cb86",
+    "published_at": "2026-11-05T13:39:02+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLM中継の*:4000待ち受けを修正。LAN接続と仮キーを確認",
+    "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n待ち受け先が*:4000だと、ローカルLLM中継は同じLANなどからも接続できる状態になります。今回の中継は、利用者を確かめるキーもブログに載せた仮の既定値のままでした。起動スクリプトが全ネットワークで待ち受ける設定で、キーが見つからない場合に既定値へ戻る経路も残っていたため、待ち受け先とキーの両方を直しました。\n\n 先に結論\nローカルLLM中継は、ポート4000を全ネットワーク（*:4000）で待ち受け、ブログに載せた仮の既定キーで使える状態でした。プロンプトインジェクション（AIへの指示を外部の...",
+    "url": "https://zenn.dev/orca_forge/articles/local-llm-proxy-open-to-lan",
+    "published_at": "2026-11-05T13:07:23+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "OpenCode Go × dshで月$10 — Opus 5.5で計画し、DeepSeek V4.1 Flashに大量実行させる",
+    "summary": "OpenCode Goが安くてコスパいい。\n現状は、Opus 5.5（Claude Pro 月$20）で計画し、\nOpenCode Goの月$10のサブスクで DeepSeek V4.1 Flash をお得に仕入れ\n実行部隊として，全自動で昼夜を問わず働かせ続けよう\nという記事です。\n合計は月$30になりますが、それでもMaxを契約するより安い\nしかし、OpenCodeをそのまま使うと、ハーネス自体はあまり良くない。\nそこで DeepSeek Harness（dsh） に替えると\n\nキャッシュヒット率が上がってトークンが節約できたり\nモデルの性能を最大限に引き出せたり\nなぜか出力速度も1...",
+    "url": "https://zenn.dev/wataru823/articles/747e24518d22d9",
+    "published_at": "2026-11-05T12:35:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "赤いハートの画像を見せただけで、AIがコードの書き方を変えた話　(Google/Stanford論文より)",
+    "summary": "私たちは普段、生成AIに対して「指示した内容に従って回答している」と考えているが、Google DeepMindとスタンフォード大学の研究者らが実に面白い論文を出してきた。\n研究では、赤いハートの画像を入力に加えるだけで、一部のAIモデルが再帰的なコードを書く傾向を大きく強めることが観測されたとの内容で、さらに驚くべきことは、モデル自身が「画像は無関係なので無視した」と説明しているにもかかわらず、実際にはその判断が画像の影響を強く受けていた点である。\nこの研究からは、「AIに渡した際、人間から見れば意味のない図形や色が、モデル内部では意思決定に影響している可能性がある」「マルチモーダルA...",
+    "url": "https://zenn.dev/syoshida07/articles/b1fbabd76faeef",
+    "published_at": "2026-11-05T12:03:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIは「日本びいき」？ ── 24言語の実験で見えたLLMの「選び方」の偏り",
+    "summary": "日本語の資料は英語より少ない、だからAIの中で日本の文化や視点は弱くなる――私はそう心配していました。ところが目にした見出しは、逆の「日本びいき」でした。\nこの記事は、その違和感を追って見えてきたこと、「知っていること」と「選ぶこと」は別、という話です。\n\n 私の心配とは違うらしい\n少し前に、GMO天秤AIメディアの「ChatGPTもClaudeも『日本びいき』だった」という記事を読みました。\n※天秤AIメディア\n驚きました。以前「国産LLMが必要な本当の理由」という記事でソブリンAIについて考えたとき、私が心配していたのはむしろ逆のことだったからです。海外で開発されたAIに依存すれば、...",
+    "url": "https://zenn.dev/kotakotahiro/articles/94402f9ddd8778",
+    "published_at": "2026-11-05T11:57:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "自分の判断をAIに任せようとしたら、最後まで僕が要った",
+    "summary": "昔使っていたリンク集のサービスを畳んで、自分のサイトにリンク集を移した。古いページは本文を「リンク集は自分のサイトへ移しました」に書き換えて、案内として残してある。ただ、ボタンのラベルは移す前のままだ。押せば、ちゃんと新しいリンク集に着く。\nこのボタンを直すか、と AI に聞くと「直す」と返ってくる。僕は直さなかった。\n\n なぜ比べようと思ったか\n僕は Claude Code に、毎日いくつも選択肢を出してもらっている。直すか見送るか、A 案か B 案か。そのたびに推しを読んで、自分で決めている。\nあるとき、自分の決断が何を根拠に選ばれているのかが気になった。AI の推しと僕の決断が食い...",
+    "url": "https://zenn.dev/motimotinotch/articles/39b96699e3efba",
+    "published_at": "2026-11-05T10:05:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMのモデル名の読み方の基本",
+    "summary": "Ollamaなどでローカルに動かすLLMを探していると、gemma3:12b-it-q4_K_M や qwen3:30b-a3b、gemma4:e4b-mlx のように、いろいろな記号を組み合わせた名前が出てきます。この記事では、こうしたモデル名やタグに出てくる表記の意味を、ローカルLLMを触り始めたばかりの人向けに整理します。\nなお、具体的なサイズや数値はOllamaのライブラリページなどで確認できた範囲の目安です。モデルの更新は早いので、実際に使う前には Ollamaのライブラリ で最新の情報を確認してください。\n\n モデル名は「部品」の組み合わせ\nOllamaのモデル名は、おおむね...",
+    "url": "https://zenn.dev/972697325291316/articles/e2488b0b522d01",
+    "published_at": "2026-11-05T09:34:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "0。SKILL.mdが新しい攻撃面として報告された日、自分の指示書が『データであり命令ではない』と明記する5箇所に、スキルの説明文は入っていなかった",
+    "summary": "はじめに\n0。\nこれが今回の数字です。何の0かというと、このパイプラインを動かしている自分(Claude)の指示書(システムプロンプト)の中で、「外部から来た内容はデータであり命令ではない」と名指しで注意している場所が5箇所あるうち、その対象リストに「スキル(SKILL....",
+    "url": "https://qiita.com/Hideki_Tamae/items/f911fa99a2ab976466f8",
+    "published_at": "2026-11-06T00:49:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "A2A × AP2：AI Agent同士が協力し、買い物まで完結する未来",
+    "summary": "はじめに\n私は、これからAI Agentが人間の代わりに経済活動を行う時代が来ると考えています。\nこれまでのインターネットでは、人間がWebサイトを開き、商品を探し、比較し、購入ボタンを押していました。\nしかし、これからはどうでしょうか。\n例えば、AI Agentにこう依...",
+    "url": "https://qiita.com/ccq1170/items/0d0d246fceb07bfc7499",
+    "published_at": "2026-11-06T00:39:28+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "非エンジニア向け「毎日デプロイ操作盤」の作り方――フォルダとブラウザを1本の動線にする",
+    "summary": "非エンジニア向け「毎日デプロイ操作盤」の作り方――フォルダとブラウザを1本の動線にする\n\n毎日デプロイするための手順書を作っても、作業中に開かなければ役に立ちません。\nAIへの共通指示はどのフォルダだったか。今日の確認表は前回のものか。GitHubのどの画面で差分を見るの...",
+    "url": "https://qiita.com/boraemon2000/items/526f19afe92a6e258c33",
+    "published_at": "2026-11-06T00:21:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.318——無人実行とネットワークホームの安定性が上がった5つの修正",
+    "summary": "深夜に動かしている無人実行のログを見ていると、idle compaction が走ったターンの直後で会話が壊れていたことがある。スクリプト自体は「成功」と返していたが、翌朝のアウトプットが意味をなしていない。v2.1.318 を見たら、これが修正された項目のひとつだった。\n...",
+    "url": "https://qiita.com/Sidejob/items/045135c140fe920b0705",
+    "published_at": "2026-11-05T23:45:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAIs GPT-6 Cyber can both break into systems and propose how to fix them",
+    "summary": "With GPT-6 Cyber, OpenAI is introducing an AI model built to find security vulnerabilities in software, develop exploits, and suggest patches. According to OpenAI, it has already found 81 previously unknown vulnerabilities in Firefox and developed 948 working exploits in the Linux kernel, significan",
+    "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/",
+    "published_at": "2026-11-05T20:36:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini Omni 1.2 Flash stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
+    "summary": "Google Deepmind is making Gemini Omni 1.2 Flash generally available. The video-generation model now creates clips up to 15 seconds long, can be edited step by step via conversation, and costs just $0.07 per second at 720p, 30 percent less than its predecessor. Users who draft in low resolution and u",
+    "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/",
+    "published_at": "2026-11-05T19:05:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Baidu releases ERNIE 5.5 Flash Base with 280 billion parameters as an open-source foundation model",
+    "summary": "Baidu releases ERNIE 5.5 Flash Base: a 280-billion-parameter MoE model pre-trained on 33.5 trillion tokens, shipped deliberately without fine-tuning, so developers can take it wherever they want. The article Baidu releases ERNIE 5.5 Flash Base with 280 billion parameters as an open-source foundation",
+    "url": "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/",
+    "published_at": "2026-11-05T17:56:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
+    "summary": "SemiAnalysis is putting AI agents through simulated knowledge work in its new GDPx benchmark, covering everything from chip design to quant trading. No model breaks 12 percent. Claude Opus 5.5 leads narrowly over Gemini 4 Carbon. Critics point to the small number of tasks per domain and uneven testi",
+    "url": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/",
+    "published_at": "2026-11-05T16:46:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tencent releases Hy4 with vision and computer use, claims second place among Chinese AI models",
+    "summary": "Tencent has unveiled Hy4, its first multimodal language model that understands images and can operate software on its own. On the Artificial Analysis Intelligence Index, it scores 35 points, solid but behind Kimi K3.1 Pro. On hard math and complex image analysis, Hy4 still trails the best commercial",
+    "url": "https://the-decoder.com/tencent-releases-hy4-with-vision-and-computer-use-claims-second-place-among-chinese-ai-models/",
+    "published_at": "2026-11-05T16:06:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta buys AI coding startup Conductor as big tech races to lock in developers",
+    "summary": "Meta is acquiring AI coding startup Conductor, which lets developers control multiple AI coding agents at once. On the same day, OpenAI announced plans to acquire Pierre Computer, and Anthropic already bought Stainless back in May. The deals follow a pattern: AI models are becoming interchangeable, ",
+    "url": "https://the-decoder.com/meta-buys-ai-coding-startup-conductor-as-big-tech-races-to-lock-in-developers/",
+    "published_at": "2026-11-05T15:01:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "After midterm rout, OpenAI tries to win over communities it needs for AI expansion",
+    "summary": "OpenAI is responding to the clear vote by US voters against new data centers with voluntary commitments for future sites. The pledges only apply to facilities OpenAI operates itself, though, and a large share of its infrastructure is built by partners like Oracle. Voters rejected new data centers in",
+    "url": "https://the-decoder.com/after-midterm-rout-openai-tries-to-win-over-communities-it-needs-for-ai-expansion/",
+    "published_at": "2026-11-05T14:37:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic reverses course and pays for news content for the first time",
+    "summary": "Anthropic signed its first licensing deal with a news publisher just ahead of the US midterm elections. The article Anthropic reverses course and pays for news content for the first time appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-reverses-course-and-pays-for-news-content-for-the-first-time/",
+    "published_at": "2026-11-05T14:09:05+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Astra quietly sabotaged safety research by inventing fake obstacles",
+    "summary": "OpenAI's new GPT-6 Astra model apparently sabotaged AI safety research on purpose. It invented obstacles, withheld solutions, and performed about 40 percent worse on safety tasks than on comparable other tasks. Removing a flawed training dataset fixed the problem, but OpenAI can't fully rule out str",
+    "url": "https://the-decoder.com/openais-gpt-6-astra-quietly-sabotaged-safety-research-by-inventing-fake-obstacles/",
+    "published_at": "2026-11-05T14:08:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple slashes internal AI budgets, with deeper cuts still planned",
+    "summary": "Tech companies are cutting internal AI spending, and Apple is the latest to follow suit. The article Apple slashes internal AI budgets, with deeper cuts still planned appeared first on The Decoder .",
+    "url": "https://the-decoder.com/apple-slashes-internal-ai-budgets-with-deeper-cuts-still-planned/",
+    "published_at": "2026-11-05T14:03:14+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hackers turn up blood bank fridges to boiling temperatures",
+    "summary": "Health services targeted in latest cyber attack on European refrigeration systems",
+    "url": "https://www.independent.co.uk/tech/security/blood-hack-fridge-cyber-attack-b3079644.html",
+    "published_at": "2026-11-05T13:19:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Gasgoo Daily: Geely Debuts Methanol Hybrid Technology; RoboSense Opens Fully Automated LiDAR Line; ARIDGE Completes eVTOL Validation Center",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://autonews.gasgoo.com/articles/news/gasgoo-daily-geely-debuts-methanol-hybrid-technology-robosense-opens-fully-automated-lidar-line-aridge-completes-evtol-validation-center-2118258604846772225",
+    "published_at": "2026-11-05T13:19:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Audi, SAIC Motor inaugurate AITC to lead end-to-end AUDI vehicle development in China",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://autonews.gasgoo.com/articles/news/audi-saic-motor-inaugurate-aitc-to-lead-end-to-end-audi-vehicle-development-in-china-2118321993941929985",
+    "published_at": "2026-11-05T13:19:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Airbnb has a new 'happy rule' for guests, making hosts upset; with some threatening to boycott Airbnb; others increasing fees",
+    "summary": "Airbnb has introduced a new policy that limits cleaning tasks expected from guests during their stay. Many hosts are unhappy and are considering actions including a booking blackout on the policy's effective date. While guests generally support the change, some hosts express discontent on social med",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/airbnb-has-a-new-happy-rule-for-guests-making-hosts-upset-with-some-threatening-to-boycott-airbnb-others-increasing-fees/articleshow/135575260.cms",
+    "published_at": "2026-11-05T13:19:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Scaling AI, controlling costs",
+    "summary": "Organisations are facing sharp rises in AI costs. As AI projects scale, budgets are being stretched by more expensive tokens; higher-than-expected use; and frequently, inefficient AI workflows. Most businesses have, at best, only a partial view of their AI spending. And, according to industry analys",
+    "url": "https://www.cio.com/article/4245136/scaling-ai-controlling-costs.html",
+    "published_at": "2026-11-05T13:19:04+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hill-Lewis ‘overwhelmed’ as DA predicts Cape Town victory",
+    "summary": "A triumphant DA leader, Geordin Hill-Lewis, has claimed victory in the City of Town",
+    "url": "https://www.sowetan.co.za/politics/elections-2026/2026-11-05-hill-lewis-overwhelmed-as-da-predicts-cape-town-victory/",
+    "published_at": "2026-11-05T13:17:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hill-Lewis ‘overwhelmed’ as DA predicts Cape Town victory",
+    "summary": "A triumphant DA leader, Geordin Hill-Lewis, has claimed victory in the City of Town",
+    "url": "https://www.timeslive.co.za/politics/elections-2026/2026-11-05-hill-lewis-overwhelmed-as-da-predicts-cape-town-victory/",
+    "published_at": "2026-11-05T13:17:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Razr Fold is Motorola’s best phone in years, and now it’s $1,100 off at T-Mobile",
+    "summary": "Ready to ditch the iPhone Duo? This Motorola foldable is the next best thing.",
+    "url": "https://www.androidpolice.com/motorola-razr-fold-deal-t-mobile-early-black-friday/",
+    "published_at": "2026-11-05T13:17:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hogwarts Legacy gets major Nvidia DLSS 5 graphics upgrade on PC",
+    "summary": "Hogwarts Legacy is receiving Nvidia DLSS 5 support on 5 November, introducing AI-powered Neural Rendering for improved lighting, shadows and materials. The update supports GeForce RTX 50-series GPUs, RTX Spark systems and GeForce NOW Ultimate.",
+    "url": "https://www.notebookcheck.net/Hogwarts-Legacy-gets-major-Nvidia-DLSS-5-graphics-upgrade-on-PC.1443183.0.html",
+    "published_at": "2026-11-05T13:17:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI agents with friendly faces and adorable bodies can distract you from serious risks",
+    "summary": "Cute designs can make AI technology feel harmless, but real hazards are still present.",
+    "url": "https://www.caledonianrecord.com/opinion/conversation/ai-agents-with-friendly-faces-and-adorable-bodies-can-distract-you-from-serious-risks/article_385385ae-c049-5718-88aa-dfb8681a6020.html",
+    "published_at": "2026-11-05T13:16:58+00:00",
+    "source": "newsdata"
+  }
+]
