@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Difyで、個人情報をLLMに渡さずにチャットボットを作る",
+    "summary": "社内の問い合わせ対応や、顧客からのメールの要約をDifyで作ろうとすると、「お客様の名前や電話番号を、そのままLLMに送っていいのか」で止まることがあります。\nこの記事では、Difyのチャットフローの中で個人情報を伏せてからLLMに渡し、回答を元の名前や番号に戻す方法を紹介します。伏せる部分には、以前の記事で紹介した日本語の個人情報マスキングAPI「個人情報黒塗りくん」を使います。\n黒塗りくんはDify公式マーケットプレイスのプラグインになったので、インストールしてブロックをつなぐだけで使えます。プラグインを入れられない環境向けに、HTTPリクエストのブロックで作った見本のチャットフロー...",
+    "url": "https://zenn.dev/kuronurikun/articles/d9f1d11d0611ef",
+    "published_at": "2026-11-06T22:30:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「人が編集した感じ」をAIに伝える：好みを言語化して指示に落とすコツ",
+    "summary": "AIに何かを作らせて、「なんか違う」と感じたことはないでしょうか。どこが違うのかは、自分でもうまく言えない。でも、違うことだけははっきり分かる。\nこの記事では、そんな「なんか違う」を言葉にして、AIへの指示に落とすまでの流れを紹介します。題材は、配信の切り抜き動画をAIに編集させたときのやり取りです。\n\n 最初はどうだったか\n最初に作った編集は、いわゆる「AIっぽい」ものでした。\n\n集中線や画面の揺れ\nAIが入れるツッコミの字幕\n自動のズーム\n効果音\n\n盛り上げる演出を全部入れた結果、感想は「イマイチ」でした。\nここで「もっと良くして」とだけ頼むと、AIは演出をさらに足しがちです。何がイ...",
+    "url": "https://zenn.dev/shoyomayabot/articles/verbalize-preferences-for-ai",
+    "published_at": "2026-11-06T22:09:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Tech Watch 2026-11-07: 検証できる境界",
+    "summary": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: エージェントに「ここまでは触っていい」と伝えるとき、自然言語の一文で十分なのだろうか。自分の感覚では、許可の境界は実行環境にも刻まれているべきだ。Claude Codeの変更履歴と安全性の発表を並べると、設計の答えが少し見えてくる？\n\n 今日の10件\n\n\nClaude Code Changelog 2.1.319\nClaude Codeは、許可を求めるはずの道具呼び出しを拒否して処理を続ける設定を追加した。MCPの長時間タスクを背景で実行する仕組みや、ゲートウェイ経由の自動モードの判定方法...",
+    "url": "https://zenn.dev/laiken/articles/20261107-tech-watch",
+    "published_at": "2026-11-06T22:05:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Babylon.js：AI駆動でつくる Hit&Blow / Numer0n",
+    "summary": "この記事のスナップショット\n\nHit&Blow sample (4倍速)\n\nNumer0n sample (4倍速)\n\n デモ＆ソース\n\nHit&Blow-playground\n\nNumer0n-playground\n\n上記のURLにおいて、ツールバーの歯車マークから「EDITOR」のチェックを外せばウィンドウいっぱいに、歯車マークから「FULLSCREEN」を選べば画面いっぱいになります。\n\n\n\nソース\n\nローカルで動かす場合、上記ソースに加え、別途 git 内の 136/js を ./js として配置してください。\n\n\n\n\n 概要\n相手が設定した4桁の数字を当てる...",
+    "url": "https://zenn.dev/fnamuoo/articles/a5ae68d2a8f31c",
+    "published_at": "2026-11-06T22:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIと喧嘩しながら挑んだソフトウェアラジオ開発：9千円のLNA、停波していた衛星、そして気象衛星・ISS受信への道",
+    "summary": "はじめに\nこの記事は、Zennfes Autumn 2026「物理デバイスを使った開発」コンテストの応募記事です。\n普段はオープンソースのネットワーク管理ツール（TWSNMP）を作っている筆者が、数千円のUSBドングル型ソフトウェアラジオ（RTL-SDR）を手に入れたことをきっかけに、AIエージェントを相棒として**「宇宙を飛ぶ気象衛星から電波を直接受信して画像を復元する」**という無謀なツール（twnoaa）の開発に挑んだ記録です。\nソフトウェアの世界なら、コードを直せばバグは直ります。しかし相手は**「物理デバイス」と「大気・宇宙空間を飛ぶ電波」**。\n\n「コードは合っているのに...",
+    "url": "https://zenn.dev/twsnmp/articles/twnoaa-rtl-sdr-satellite-ai",
+    "published_at": "2026-11-06T19:19:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "画像内テキストが崩れないプロンプト設計：商品写真・広告向けチェックリスト",
+    "summary": "はじめに\nAI 画像生成でいちばんつまずきやすいのが、画像の中に入れる文字です。ポスターの見出し、パッケージの商品名、UI モックのラベル——どれも「なんとなく文字っぽい形」までは出るのに、いざ拡大すると字形が崩れたり、意図と違う綴りになったりしがちです。\n一方で、EC の商品写真や Meta / TikTok 向けの静的広告では、文字が読めるかどうかがそのまま採用可否になります。この記事では、特定のサービスに依存しない形で、文字入りの商品写真・広告クリエイティブを安定させるプロンプトの書き方を整理します。最後に、同じ方針で試せるブラウザ上の生成環境として GPT Image 2 に...",
+    "url": "https://zenn.dev/decomytree/articles/781e53405126ee",
+    "published_at": "2026-11-06T17:18:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "guillaumemeyer/watermarks-remover 実機検証＆エラー解決ハンズオンガイド",
+    "summary": "linux/arm64 実機検証で判明した guillaumemeyer/watermarks-remover の再現手順・エラー解決・Docker構成を完全収録。",
+    "url": "https://zenn.dev/shotasone/books/oss-watermarks-remover-guide",
+    "published_at": "2026-11-06T17:06:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが政策を議論したらどうなるか ― マルチエージェント討論とバーチャル議会の設計",
+    "summary": "はじめに\n政策の議論では、ひとつの視点だけでは論点の抜け漏れに気づきにくい。異なる立場や専門性を持つ参加者が賛否を述べ合うことで、論点が整理され、反論や前提の違いが可視化される。\n人間だけでなく、AIが政策案の賛否を議論すると、論点の抜け漏れに気づきやすくなる。ここでは、複数のAIエージェントによる討論、いわゆるマルチエージェント討論の設計と、その利点と課題を整理する。\n\n マルチエージェント討論という考え方\n大規模言語モデルに異なる視点や役割を与え、政策案について討論させる設計がある。各エージェントが自分の立場から主張し、他者の主張に反論する。議論の履歴が残るため、どの論点が検討さ...",
+    "url": "https://zenn.dev/onelifevibe/articles/cd89b587413b8c",
+    "published_at": "2026-11-06T17:01:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "GodotでAIを使ってスプライト、ピクセルアート、タイルを作る方法",
+    "summary": "この記事は https://ziva.sh/blogs/godot-ai-sprites の日本語版です（英語の原文はZiva.shが2026年11月4日に公開）。\nGodotエディターを離れずに2Dゲームのアートを作るには、Godotの中で動くAIエージェントZivaに頼みます。「右向きの64x64のピクセルアートの騎士を作って」のように入力すると、Zivaが画像を生成してチャットに表示し、PNGをres://assets/generated/に保存します。Godotはこのファイルをインポートします。背景が透明なスプライト、シームレスなタイル、背景画像を、ピクセルアートか滑らかなペイン...",
+    "url": "https://zenn.dev/zivaengine/articles/f68112e1c7c433",
+    "published_at": "2026-11-06T15:36:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "画像から3Dプリント用のSTLを作る：リトフェインとの違いと、約8万／約150万ポリの使い分けメモ",
+    "summary": "「この写真を3Dプリントしたい」には、だいたい2種類あります。写真そのものを光にかざす板にしたいのか、写っている物を裏側まである立体で欲しいのか。\nここで書くのは後者の話です。筆者は 画像からSTL（英語だと image to stl）の開発者で、作る側から見た判断のポイントをメモしておきます。\n\n リトフェイン／ハイトマップとの違い\nリトフェインやハイトマップは、画素の明るさを厚みに変換します。出力は常に板で、裏は平らです。写真を飾りたいならこれで十分ですし、無料のツールも多いです。\n画像から3D は、画像から物の形を推定して全周のメッシュを作ります。写っていない側面や背面はモデルの推...",
+    "url": "https://zenn.dev/xer97/articles/57f76704aabcef",
+    "published_at": "2026-11-06T15:27:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「それっぽい答え」より「何を見て答えたか」が見える、日本語PDFのRAGデモを作った",
+    "summary": "はじめに\nこんにちは、ZEN大学の通信課程で学んでいる2年生の松延です。AIエンジニアを目指して、LLMまわりの仕組みを自分の手で作りながら勉強しています。\nLLMに資料のことを聞くと、たいていはそれらしい日本語で答えが返ってきます。ただ、私が気になったのは「その答え、資料のどこを見て言っているの？」という点でした。答えが正しそうに聞こえるかどうかではなく、モデルが何を見て答えたのかがはっきりわかるものを作りたいと思いました。\nそこで、PDFをアップロードして日本語で質問すると、出典（ファイル名・ページ番号）付きで答えるRAGのデモを作りました。\nhttps://github.co...",
+    "url": "https://zenn.dev/koheip/articles/rag-visible-sources",
+    "published_at": "2026-11-06T17:53:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PLaMo 3 Translate でローカル翻訳APIとゲームの差分翻訳ツールを作った",
+    "summary": "PLaMo 3 Translate をローカルで動かす翻訳APIを作りました。別のアプリやスクリプトから呼べる形にし、ゲームの更新分だけを翻訳するツールも作って、手動で修正した訳を残しながら更新できるところまで試しました。\n\n\n TL;DR\n\nPLaMo 3 Translate の0.8Bモデルを llama.cpp で動かし、ローカルのHTTP APIとして呼べるようにしました。\nAPIとCLIは Go で実装しました。翻訳の推論は llama.cpp が担当し、モデル取得後は原文や訳文を外部サービスへ送りません。\nゲーム向けには新規・変更された文章だけを翻訳する別のCLIを作りまし...",
+    "url": "https://zenn.dev/marvelousu/articles/plamo-local-translation",
+    "published_at": "2026-11-06T16:59:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "8GBのVRAMをやりくりした知見は、16GBでも効いた",
+    "summary": "結論から\nローカルLLMのモデル選定で私が最後まで基準にしていたのは、ベンチマークの知能スコアではなく「GPUに100%常駐できるか」の一点だった。\nRTX 3050 8GB の環境で gemma4:12b-it-qat を動かすと、モデルがVRAMに収まらず一部の演算がCPU側へオフロードされ、GPU完全常駐の gemma4:e4b-it-qat と比べて約8倍遅くなった。賢いモデルを選んだつもりが、待ち時間で実用性を失う。\nだから8GBの枠内に収まるモデルを選び、環境変数を詰め、同居できる組み合わせを探した。そのあとGPUを16GB（RTX 5070 Ti）に買い替えた。\n先に断...",
+    "url": "https://zenn.dev/ace_toshi/articles/local-model-selection-by-spec",
+    "published_at": "2026-11-06T16:21:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "NVIDIAの『ループ型』4Bモデル Dory1.0-4B、標準ツールで動かそうとしたら2箇所で止まった",
+    "summary": "これは何を試した記事か\nNVIDIAが公開したDory1.0-4Bという4Bパラメータのモデルを、公式のモデルカードが案内するとおりの手順で動かそうとした記事である。\nDory1.0-4Bは、1つの重み(チェックポイント)のまま「再帰ブロックを何回ループさせるか」を1〜4回の間で切り替えることで、再学習なしに推論時の計算量と精度をトレードオフできる「ループ型Transformer」である。\n出典は論文(https://huggingface.co/papers/2611.03998 )とモデル重みコレクション(https://huggingface.co/collections/nv...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-038-dory-looped-transformer-ecosystem-gap",
+    "published_at": "2026-11-06T14:22:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Self-RAG論文を実装目線で読む：検索判断と回答の裏付けを分ける",
+    "summary": "Self-RAGを実装の観点で読むなら、何を評価した値なのかを、入力とセットで扱うことが出発点になります。資料が質問に関連することと、生成した回答をその資料が支持することは、異なる判定です。\nSelf-RAG（Self-Reflective Retrieval-Augmented Generation）は、検索の必要性や生成内容の品質を表す特殊なトークン（モデルが扱う記号）を、文章とともに出せるよう学習する枠組みです。本記事はAsai氏らのSelf-RAG論文を基に、検索器と生成モデルの間で何を確認するかを整理します。モデル学習や推論を実行した検証記事ではありません。\nSelf-RAGの...",
+    "url": "https://zenn.dev/kas_blog/articles/20260914-self-rag",
+    "published_at": "2026-11-06T12:59:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "はじめての Claude ②【使う】始め方、セキュリティとプランの選び方（2026年11月）",
+    "summary": "!\nこの記事の情報は 2026年11月時点のものです。最新情報は公式サイトを確認してください。\n\n\n はじめに\nこの記事で分かること：\n\nClaude Code の始め方（VS Code の拡張機能・ターミナル）\nチャットで気を付けたいセキュリティ\nプランの選び方\n\nこの記事は3回シリーズの2回目です。Claude ファミリーについて、Claude Code とチャットの違いは ① にまとめています。\n\n!\nはじめての Claude シリーズ（全3回）\n\n① 知る：Claude でできること、チャットとの違い\n② 使う：始め方、セキュリティ、プラン（この記事）\n③ 育てる：CLAUDE....",
+    "url": "https://zenn.dev/nekonote328/articles/claude-code-chat-security-plans",
+    "published_at": "2026-11-06T12:43:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LINEの非公式APIとWasmをCloudflare Workersで動かし、安全なAI自動返信システムを構築した裏側",
+    "summary": "株式会社Kivaで Samurai App を開発しているエンジニアです。今回は自社製品の裏側として、「個人の LINE に届いた連絡へ AI が即レスする機能」を Cloudflare Workers(Durable Objects)の上でどのように動かしているかを紹介します。\n最近、ちょうど linejs の CLI が登場したこともあり、「AI エージェントに LINE を操作させる」というテーマが盛り上がっていますよね。\nhttps://github.com/evex-dev/linejs\n手元のターミナルやエージェントから LINE を叩けるのは、シンプルに便利です。ただ、これ...",
+    "url": "https://zenn.dev/kiva/articles/5fa5a62e7f90e4",
+    "published_at": "2026-11-06T12:13:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "脆弱性トリアージをAIで1日3回自動巡回させる設計 ──「該当なし」を信用しない仕組み",
+    "summary": "前回のおさらいと、今回の話\n前回の記事では、脆弱性アドバイザリを1件ずつAIに読ませて、自社環境に照らしてS/A/B/Cの緊急度を判定させる定型プロンプトを紹介しました。\nただ、あれは「人がURLを投げたら判定する」仕組みです。人が気づかなければ何も起きない。\nそこで次の段階として、AIに1日3回（7時・12時・17時）情報源を巡回させ、自社に該当するものだけを報告させる形に育てています。生成AIの定期実行機能で回す想定です。\nこの記事は、その設計編です。結論を先に書くと、一番の敵は見逃しでも誤判定でもなく、「該当なし」という沈黙でした。試験実行してみて分かったことは、続編として別に...",
+    "url": "https://zenn.dev/yukino77/articles/vuln-triage-auto-patrol-silent-failure",
+    "published_at": "2026-11-06T12:01:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "よく読ませたら的中率が半分になった — 行き先を「選ばせる」か「書かせる」か",
+    "summary": "社員が共有フォルダに置いた書類を、正しい棚へ振り分ける仕組みを作っています。\n安い方法（似た書類を探して、その書類が入っている棚へ投票させる）で 43.4% まで来たので、\n次は1件ずつ本文をじっくり読ませれば上がるはずだと考えました。\n20.4% でした。 読む量も考える時間も増やしたのに、半分以下に落ちた。\n結論から書くと、落ちた原因は判断力ではなく 答えの書かせ方 でした。\n\n 先に、測り方を固定する\n精度の話をする前に、測る側を作りました。この1年に社員が置いた書類は\n「置かれた場所」がそのまま正解なので、実物を1バイトも動かさずに答え合わせができます。\n条件は1つだけです。その...",
+    "url": "https://zenn.dev/shinsei99/articles/free-text-answer-points-nowhere",
+    "published_at": "2026-11-06T11:23:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ラクス調査、業務システム化を検討した企業の79.3%が断念した現実｜コストと人材不足を越えて小さく始める3つのステップ",
+    "summary": "ラクス調査、業務システム化を検討した企業の79.3%が断念した現実｜コストと人材不足を越えて小さく始める3つのステップ\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/...",
+    "url": "https://qiita.com/DnD-inc/items/580948e95e8ca7509ba8",
+    "published_at": "2026-11-07T00:17:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Copilot Studioエージェントの自律度、どう決めるか——実務で使う4つの軸",
+    "summary": "この記事で分かること\n\nCopilot Studioエージェントの「自律度」を設定するための判断フレームワーク\n承認フローを入れるべきステップと省略できるステップの見分け方\n大企業展開で繰り返し遭遇した、自律度設定のよくある失敗パターン\n\n企業でCopilot Stud...",
+    "url": "https://qiita.com/Sidejob/items/85a9ec07f0d137acffb5",
+    "published_at": "2026-11-06T23:45:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【GitHub日報】security-audit-skillが+2,524で首位、常連入れ替わり10件は直近最多 — 2026-11-07",
+    "summary": "GitHub Trending から、日本の開発者に役立ちそうなリポジトリを毎日ピックアップしてお届けします。\n\n🆕 初登場（First Timers）\n今日初めてトレンド入りしたリポジトリ。\n（該当なし）\n\n🔁 常連（Repeat Performers）\n過去にもトレ...",
+    "url": "https://qiita.com/Git_Dayori/items/d8c5c9811db9e88173b1",
+    "published_at": "2026-11-06T22:31:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "失敗を記録に残して設計に返す ― 「失敗記録」の育て方",
+    "summary": "失敗は「なかったこと」にしない\nAIで副業や自動化を回し始めると、失敗は必ず出る。投稿がスパム判定を受けた、作った商品が売れなかった、タスクが夜中に止まっていた。問題は失敗そのものではなく、失敗を記録に残さず、同じところで二度つまずくことだ。\nそこで私は、運用ルールのファ...",
+    "url": "https://qiita.com/ai_secretary/items/7ea145fc0ebe0fc777ea",
+    "published_at": "2026-11-06T22:23:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Ripple-65B Preview delivers strong agentic coding results as a fully Apache 2.0 open US model",
+    "summary": "Ricursive Intelligence is releasing Ripple-65B Preview, a 65-billion-parameter open-weight language model that the company says achieves the top score among open-source U.S. models on the TerminalBench 2.1 coding benchmark at a total R&D cost of $32 million. On other benchmarks, however, Ripple fall",
+    "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/",
+    "published_at": "2026-11-06T19:47:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Perplexity now has its own always-on AI agent",
+    "summary": "Perplexity is launching \"Teammates,\" always-on agents that work through ongoing projects on their own virtual machines. The feature requires the Max plan at $200 per month, well above similar offerings from OpenAI or Anthropic. The market for always-on agents is getting crowded. The article Perplexi",
+    "url": "https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent/",
+    "published_at": "2026-11-06T16:47:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Frontier Radar #5: If AGI is so close, why is everyone leaving? The neolabs and their bets",
+    "summary": "OpenAI is talking about the AGI era, and Nvidia CEO Jensen Huang says AGI has arrived. At the same time, co-creators of today's models are leaving OpenAI, Google DeepMind, and Meta to start their own labs, raising billions with no product to show. Why? They're betting that the current recipe alone w",
+    "url": "https://the-decoder.com/frontier-radar-5-if-agi-is-so-close-why-is-everyone-leaving-the-neolabs-and-their-bets/",
+    "published_at": "2026-11-06T15:55:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "METR finds Anthropic may have crossed its own AI acceleration warning threshold back in July",
+    "summary": "Nonprofit METR spent eleven weeks auditing Anthropic's internal research data and concluded that the pace of model development has roughly doubled, with about 80 percent of the speedup driven by AI-assisted research. Anthropic redacted the most informative evidence, though, which means the public ha",
+    "url": "https://the-decoder.com/metr-finds-anthropic-may-have-crossed-its-own-ai-acceleration-warning-threshold-back-in-july/",
+    "published_at": "2026-11-06T13:40:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Thinking Machines' Inkling 2 Small claims top spot among western open-weight models",
+    "summary": "Thinking Machines, the startup from former OpenAI CTO Mira Murati, is releasing Inkling 2 Small, a mixture-of-experts model with 594 billion parameters. The company claims it's the strongest western open-weight model. Better agentic performance comes at a price, though, with token usage rising sharp",
+    "url": "https://the-decoder.com/thinking-machines-inkling-2-small-claims-top-spot-among-western-open-weight-models/",
+    "published_at": "2026-11-06T13:25:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation",
+    "summary": "Anthropic's IPO is in trouble as investors push back on the $1.5 trillion valuation and the tech market sells off. The article Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropics-1-5-trillion-ipo-hits-resistance-as-investors-balk-at-valuation/",
+    "published_at": "2026-11-06T11:38:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic adds bank account access to Claude so users can track their spending",
+    "summary": "Anthropic is introducing a new feature in Claude called Personal Finance, which allows users to connect their bank and card accounts and ask questions about their finances. The article Anthropic adds bank account access to Claude so users can track their spending appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/",
+    "published_at": "2026-11-06T11:33:13+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAIs GPT-6 Cyber can both break into systems and propose how to fix them",
+    "summary": "With GPT-6 Cyber, OpenAI is introducing an AI model built to find security vulnerabilities in software, develop exploits, and suggest patches. According to OpenAI, it has already found 81 previously unknown vulnerabilities in Firefox and developed 948 working exploits in the Linux kernel, significan",
+    "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/",
+    "published_at": "2026-11-05T20:36:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini Omni 1.2 Flash stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
+    "summary": "Google Deepmind is making Gemini Omni 1.2 Flash generally available. The video-generation model now creates clips up to 15 seconds long, can be edited step by step via conversation, and costs just $0.07 per second at 720p, 30 percent less than its predecessor. Users who draft in low resolution and u",
+    "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/",
+    "published_at": "2026-11-05T19:05:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Baidu releases ERNIE 5.5 Flash Base with 280 billion parameters as an open-source foundation model",
+    "summary": "Baidu releases ERNIE 5.5 Flash Base: a 280-billion-parameter MoE model pre-trained on 33.5 trillion tokens, shipped deliberately without fine-tuning, so developers can take it wherever they want. The article Baidu releases ERNIE 5.5 Flash Base with 280 billion parameters as an open-source foundation",
+    "url": "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/",
+    "published_at": "2026-11-05T17:56:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bruno Dumont turns to generative AI to film English-language sci-fi thriller ‘The End’",
+    "summary": "EXCLUSIVE; “I’m like a director working with a crew, except that my crew is a machine,” said Dumont.",
+    "url": "https://www.screendaily.com/news/bruno-dumont-turns-to-generative-ai-to-film-english-language-sci-fi-thriller-the-end/5222133.article",
+    "published_at": "2026-11-06T12:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "RAEK Unveils New Designs for Creator Vault, Its First Private AI Appliance",
+    "summary": "The new renderings show how RAEK's first private AI appliance could fit on an editing desk and give creators direct access to years of original work.",
+    "url": "https://www.financialcontent.com/article/accwirecq-2026-11-6-raek-unveils-new-designs-for-creator-vault-its-first-private-ai-appliance",
+    "published_at": "2026-11-06T12:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI won’t pay off for the S&P 493 until CEOs rebuild the work",
+    "summary": "Apollo Global Management chief economist Torsten Slok wrote on Oct. 24 that outside the technology sector, AI has delivered zero financial payoff. Revenue per worker and profit margins are rising at the Magnificent 7 and flat across the other 493 companies in the S&P 500. Outside tech, he writes,…",
+    "url": "https://biztoc.com/x/0e568c6040296708",
+    "published_at": "2026-11-06T12:34:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Private Credit Software Sentiment Rallies as Firms Resist Early AI Threats",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/dee541621411d19f",
+    "published_at": "2026-11-06T12:34:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "メタの規約変更に英当局がメス 報道記事の無断AI利用を警戒",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.smartnews.com/news/article/5009477794095171278",
+    "published_at": "2026-11-06T12:34:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AGIBOT Unveils GO-3 Preview Robot Model: Predicts Outcomes Before Acting, Rankings Self-Reported",
+    "summary": "AGIBOT GO-3 Preview is an embodied AI model that forecasts what its cameras will see next, then picks matching actions. AGIBOT unveiled it Oct. 29 in Shanghai and says it ranks first on RoboDojo, RoboTwin and RoboColiseum, but the rankings are company-reported, weights are not public, and China's in",
+    "url": "https://www.techtimes.com/articles/330152/20261106/agibot-unveils-go-3-preview-robot-model-predicts-outcomes-before-acting-rankings-self-reported.htm",
+    "published_at": "2026-11-06T12:34:09+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How Kenyan creators can use Text‑to‑Speech for cheap, studio‑free voiceovers",
+    "summary": "Tech‑ish outlines practical steps for Kenyan creators and small businesses to turn scripts into AI‑generated voiceovers without a recording studio.",
+    "url": "https://kenya-today.com/report-how-kenyan-creators-can-use-texttospeech-for-cheap-studiofree-voiceovers-22987/",
+    "published_at": "2026-11-06T12:33:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI sets responsible AI infrastructure commitments",
+    "summary": "OpenAI responsible AI infrastructure commitments cover energy costs, water reporting, local jobs and community input at future US campuses.",
+    "url": "https://dig.watch/updates/openai-responsible-ai-infrastructure-commitments",
+    "published_at": "2026-11-06T12:33:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Tom Lee Says Wall Street’s AI Doom Predictions Have Gone Too Far — Fundstrat Bull Blames ‘Blue Tsunami’ Shock for Tech Stock Rout",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.benzinga.com/markets/market-summary/26/11/62972451/tom-lee-says-wall-streets-ai-doom-predictions-have-gone-too-far-fundstrat-bull-blames-blue-tsunami-shock-for-tech-stock-rout",
+    "published_at": "2026-11-06T12:33:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Agentic Scrum, Part 1 of 5: The Product Owner Is Not a Vending Machine",
+    "summary": "AI coding agents eat user stories faster than a product owner can write them. Here is a spec-driven, agentic pipeline that spreads the work across people… Read more → The post Agentic Scrum, Part 1 of 5: The Product Owner Is Not a Vending Machine appeared first on IT Security News.",
+    "url": "https://www.itsecuritynews.info/agentic-scrum-part-1-of-5-the-product-owner-is-not-a-vending-machine/",
+    "published_at": "2026-11-06T12:32:57+00:00",
+    "source": "newsdata"
+  }
+]
