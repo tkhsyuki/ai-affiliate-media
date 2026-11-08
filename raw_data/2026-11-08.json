@@ -1,0 +1,303 @@
+[
+  {
+    "title": "AlienPentest 徹底解説 — AIが自律的にペネトレーションテストを実行するツール",
+    "summary": "こんにちはzer0です。\nAlienPentestは、AI（Claude）が偵察・スキャン・エクスプロイト・レポートを自律的に判断・実行するKali Linux向けペネトレーションテスト自動化ツールです。ターゲットのIPアドレスを入力してLAUNCHするだけで、AIが全フェーズを通して判断・実行します。\n\nAlienPentestとは\n\nペネトレーションテスト（侵入テスト）は、実際の攻撃者と同じ手法を使ってシステムの弱点を見つける作業です。従来はnmap・nikto・gobusterといった専門ツールをひとつひとつ実行し、その出力を読み解いて次の手を考える必要がありました。これには深い専...",
+    "url": "https://zenn.dev/zer0m0hum0hu/articles/5445a3f4cbd019",
+    "published_at": "2026-11-07T18:03:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "git を知らなくても houritsu で法改正の差分を見る方法",
+    "summary": "houritsu は日本の全法令を「改正法 1 本 = 1 コミット」の git リポジトリにしたものです（作った話）。この記事は、git を使わない人がこれを GitHub の画面だけで読むための手引きです。インストールもログインも要りません。\n自分の興味だけで作ったので、誰が使うかは考えていませんでした。でも思ったより見られて、公認会計士の人や元裁判官の方にも見てもらえたようです。そういう人はたぶん git を使わないだろうな、と思ったので、使い方を書いておくほうが助けになると考えました。\n画面は 2026-11-05 時点の GitHub のものです。例には個人情報保護法を使います...",
+    "url": "https://zenn.dev/koheiwada/articles/houritsu-guide-without-git",
+    "published_at": "2026-11-07T18:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "機能制限のつもりが「試乗禁止」になっていた話 —— バックアップツールのB2B試用設計を14日間フル開放に変えた理由",
+    "summary": "先日、自作のキャプチャ自動化ツール『ClickCapture』のB2B向け制限を見直し、「起動即ロック」から「20枚トライアル＋再起動でリセット」へ改修した知見をまとめました。\n前回の記事はこちら：\nhttps://zenn.dev/chililikobo/articles/b897e4a56c769a\nその流れで、もう1つ個人開発しているWindows向けの定期バックアップツール 『Robocopy Scheduler』 のライセンス設計もAIにレビューしてもらったところ、形を変えた 「別の罠」 にハマっていることが判明しました。\n今回は、常駐・定期実行型ツールにおけるトライアル設計の...",
+    "url": "https://zenn.dev/chililikobo/articles/c75512a76486f8",
+    "published_at": "2026-11-07T17:03:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIやバイブコーディングで作ったゲームを、スマホで遊べるように公開する方法とハマりどころ",
+    "summary": "はじめに\nClaude CodeやCodexなどの生成AIツールにより、バイブコーディングで手軽にブラウザゲームが制作できる時代になりました。\nただ、実際にゲームが1本できたあと、次に迷いやすいのが「どこに置けば人に遊んでもらえるか」だと思います。\nこの記事では、その置き場所を決める参考に、公開先の候補になるサイトを並べて比べてみました。\n今回は 2026年11月7日 に各サイトの公式ページ（ヘルプ・投稿ガイド・FAQ）を読んで調べました。\n公式ページに記載が見つからなかったことは「記載なし」「見当たらない」と書き、推測では埋めていません。こうした条件は変わることがあるため、実際に出...",
+    "url": "https://zenn.dev/plumvery/articles/dd5babd0791704",
+    "published_at": "2026-11-07T16:57:49+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "大学生のための「課題が終わる」AIプロンプト集15選",
+    "summary": "ChatGPT・Claude・Geminiにコピペで使える、課題管理・レポート・試験対策のプロンプト15本。丸写しではなく「自分で考えて終わらせる」ための使い方に絞りました。最初の2章（はじめに・課題管理の4本）は無料で読めます。",
+    "url": "https://zenn.dev/shinai/books/university-ai-assignment-prompts",
+    "published_at": "2026-11-07T16:48:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "DeepSeek Harnessを使ってみた：モード選び・テスト環境・プラグイン",
+    "summary": "DeepSeek Harnessを使ってみた\n\n TL;DR\n\nインストールは npm 版がおすすめ（テスト環境を作りやすい）\nモードは基本的に標準モード。dsh 自身をいじるときはクリエイターモード\n公式の実験的プラグインは、機能を見ながら有効化する\nサブスクリプションの OAuth ログインは、コーディングエージェントに頼めば使えるようになる\n最初にクリエイターモードでテスト環境を作り、設定やプラグインはそこで試す\nコミュニティプラグインは AI にソースをチェックさせてから入れる。個人的にdsh-context、Better Sidebar、dsh-genui がおすすめ\n欲し...",
+    "url": "https://zenn.dev/algia/articles/deepseek-harness-intro",
+    "published_at": "2026-11-07T16:40:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Godot のゲーム用 3D モデルを AI で作る方法（Meshy・Tripo・Rodin などとの比較つき）",
+    "summary": "この記事は https://ziva.sh/blogs/godot-ai-3d-models の日本語版です（英語の原文は Ziva.sh が 2026年11月4日に公開）。\nGodot エディタを離れずに 3D モデルを作るには、Godot の中で動く AI エージェント Ziva に頼みます。「金属の角補強が付いたローポリの木製宝箱を作って、テストシーンに置いて」のように入力すると、Ziva Pro または Ultra なら、Ziva が Blender の Python スクリプトを書き、PC にダウンロードした Blender でそれを実行し、レンダリングしたプレビューをチャット...",
+    "url": "https://zenn.dev/zivaengine/articles/cb4edadb0c53ce",
+    "published_at": "2026-11-07T16:35:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "画像・動画生成スキルは「どのキーで、どこに課金されるか」で選ぶ: Claude Code 向け SKILL.md を読み比べた",
+    "summary": "Claude Code に画像生成スキルを入れて「ヒーロー画像を作って」と頼むと、最初に聞かれるのはプロンプトではなく、たいていログインかAPIキーです。Claude Code 自身はピクセルを描けません。画像・動画生成スキルの正体は、どこか1社のCLIやAPIを正しく呼ぶための手順書です。\nそのため、選ぶときの軸は「どのモデルが一番きれいか」より先に「どのプロバイダのアカウントを作り、どの環境変数にキーを置き、どこから請求が来るか」になります。この記事では、インストール数の多い画像・動画生成スキルの SKILL.md を GitHub の最新版で読み直し、プロバイダ・認証・モデルの振り...",
+    "url": "https://zenn.dev/skillselion/articles/f9e8735f6b4f1c",
+    "published_at": "2026-11-07T16:31:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "What is AI for? — ELIZA効果と、考えが進む対話",
+    "summary": "「分かってもらえた」の先に、何が残るか\nAIと話していると、自分の考えがきれいな文章になって返ってきます。言い足りなかったところが補われ、気持ちも受け止めてもらえたように感じます。\nそれは、AIとの対話が役に立つ場面の一つです。言葉になっていなかった考えが見えてきたり、一人では整理できなかったことを整理できたりします。\nただ、ときどき立ち止まりたくなります。\n話は続いている。返ってくる文章も整っている。それでも、最初に話し始めたときから、考えはあまり進んでいないのではないか。\nこちらが述べたことをAIが言い換え、肯定する。それを受けて、こちらが少し言葉を足す。すると、さらに丁寧な肯定...",
+    "url": "https://zenn.dev/sugitakenji/articles/08fb4fc4676e41",
+    "published_at": "2026-11-07T16:26:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code・Codex・Antigravityの週の利用枠を、余らせずに自動で使い切る仕組み",
+    "summary": "サブスクのAIは「週の利用上限」があります。忙しい週は足りないのに、暇な週は半分以上余ったままリセットされる。もったいないので、余りそうな枠だけを自動で見つけて、AIに自分の作業をさせる仕組みを作りました。Windowsのタスクスケジューラ＋PowerShell1本です。\n実際に動かしてわかった「最初の設計の失敗」と、その直し方まで書きます。\n私自身、Claudeの利用制限を使い切れないままリセットを迎える週があり、もったいないと感じたのが作ったきっかけです。\n\n 全体像\n\n毎時、タスクスケジューラがスクリプトを起動する\n4つの枠（Claude Code／Codex／Antigravit...",
+    "url": "https://zenn.dev/shinai/articles/ai-weekly-quota-autorun",
+    "published_at": "2026-11-07T15:54:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "日本のビジネスシーンで日々直面する5つの判定タスクで、機械的判定・LLM・判定専用モデルを比べた",
+    "summary": "LLM に「この文はおかしいか」を判定させる場面が増えました。敬語のチェック、表記のゆれ、diff に紛れた秘密情報の検出などです。判定を任せるなら、どれを選べばいいのか。正解を機械的に作れるタスクで、12 通りの判定方法を同じデータで比べました。\n\n 結論\n\n\n精度なら gemini-3.7-flash。 見逃しがほぼなく、誤警報も少ない。紛れ込ませた指示にも強い。ただし 1 件 3.3 秒かかる。\n\nローカルなら、機械的判定を主役に、gemma4:26b を補助に。 機械的判定が拾えない種類を、gemma4:26b が補う。\n\nバランスなら thinking ありの claude-h...",
+    "url": "https://zenn.dev/nemolize/articles/judge-models-japanese-tasks",
+    "published_at": "2026-11-07T18:02:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLaDA論文を実装目線で読む：予測候補と次の状態を分ける",
+    "summary": "LLaDA（Large Language Diffusion with mAsking）は、マスクされた位置を埋める過程を繰り返して文章を生成する言語モデルです。推論を読む際は、モデルが予測した候補と、次の反復まで保持するトークンを分けて考えると理解しやすくなります。生成長と反復回数も別の設定なので、「全位置を並列に予測する」ことだけから速さは判断できません。\nこの記事では、LLaDA原論文 v3「Large Language Diffusion Models」の基本的な生成手順を整理します。実装を読むための論文メモであり、モデルを実行した検証報告ではありません。\n拡散言語モデルの基礎や...",
+    "url": "https://zenn.dev/kas_blog/articles/20260914-llada",
+    "published_at": "2026-11-07T16:28:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの回答を安全に表示する React / React Native 向け Markdown レンダラーを作った",
+    "summary": "チャット UI で LLM の回答を Markdown として表示するとき、その文字列は 信頼できない入力 です。プロンプトインジェクションを受けたモデルは、スクリプトを仕込んだ HTML、javascript: リンク、外部に情報を送る画像、細工した Mermaid の図やグラフ設定を返すことができます。しかも回答はストリーミングで、書きかけの状態で届きます。\nそこで、Web と React Native の両方で使える Markdown レンダラー react-llm-markdown を作りました（MIT ライセンス）。\n\nGitHub: https://github.com/mi...",
+    "url": "https://zenn.dev/mickeyichi/articles/4fb6f931469455",
+    "published_at": "2026-11-07T15:26:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Vercel Labsのagent-browserを試す: アクセシビリティツリーでAIエージェントがブラウザを操作する",
+    "summary": "概要\nVercel Labsが公開しているagent-browser(Apache-2.0)は、AIエージェントにブラウザ操作をさせるためのRust製CLIである。\nスクリーンショットをVLM(視覚言語モデル)に渡す方式ではなく、ブラウザのアクセシビリティスナップショットをテキスト/JSON化し、各要素に@e1のような参照(ref)を振って、エージェントがその参照IDを指定してclickやfillを呼ぶ、という方式を取る。\nPlaywright MCP比で約90%少ないトークン消費を主張している。\n姉妹ツールのagent-desktop(同じくApache-2.0)は同じ発想をOSの...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-039-agent-browser-accessibility-tree",
+    "published_at": "2026-11-07T14:22:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIで仕事は回る。では、私たちはどこで育つのか",
+    "summary": "はじめに\n設計意図を半分も理解していないのに、機能が完成する。不具合が出ても、AIが原因を調べて直してくれる。レビューもAIが通してくれる。\nいま、私の周りの開発はこうして回っています。そして正直に言うと、私自身もその中にいます。\nここで考えたいのは「若手はもっと勉強すべき」という話ではありません。理解しなくても開発が回るなら、そもそも理解は必要なのか。必要だとしたら、それはどこで身につくのか。この問いです。\nAIで仕事が進むことは、実験でも確かめられています。Microsoft、Accentureなど3社で4,867人の開発者を対象にした実験では、AIツールを使えるグループは完了タ...",
+    "url": "https://zenn.dev/revo1290/articles/ai-era-where-we-grow",
+    "published_at": "2026-11-07T13:51:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "osFoundryが常駐Claude Codeセッションにチャンネル履歴を二度送らない仕組み",
+    "summary": "osFoundryのMessageチャンネルで、常駐しているClaude Codeセッションが2回目のメンションを受けたときのユーザーターンを丸ごと載せる。ブリーフの中段だけ省いた。\nYou were mentioned in a team chat channel. The details are below.\n\n{\"channel_id\":\"ch-backend\",\"message_id\":\"m026\",\"run_id\":\"run-02\",\"binding...",
+    "url": "https://zenn.dev/bbt/articles/b94c58532e97ec",
+    "published_at": "2026-11-07T13:23:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LM Studio のローカル AI から、MCP でスマホのシンセを操作して曲を作る",
+    "summary": "PC で動かしているローカル AI（LM Studio）に「暗めのテクノを作って試聴して」と頼むと、同じ Wi-Fi にあるスマホのアプリで曲ができて鳴り出す。そんな仕組みを、Android アプリの中に MCP サーバーを入れて作りました。\nアプリは、ハウスやテクノの曲を作って、つないで、ノンストップで再生する「PanNyx」（Google Play で配信中:\\100）です。この記事では、Android アプリに MCP サーバーを組み込んだときの構成、ツールの設計、セキュリティ、つまずいた点をまとめます。\n\n 動画（1 分 57 秒）\n\n左が PC の LM Studio、右がスマ...",
+    "url": "https://zenn.dev/meas_nobu/articles/040daa3bcd2daa",
+    "published_at": "2026-11-07T11:49:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの世界モデルを「逆向き」から探る――生成過程の不可逆性という視点",
+    "summary": "文章の中にも「時間の矢」はあるのか\n動画を逆再生すると、不自然さがすぐ分かることがあります。では、文章に描かれた出来事の順番を反転したら、言語モデルの確率にはどんな違いが現れるのでしょうか。\nZEN大学で通信制の学びを続ける2年生の松延弘平です。カミメグや、参照元が見える日本語PDFのRAGデモを作る中で、LLMが世界の関係をどこまで表現しているのかに関心があります。\n東京大学の沙川貴大教授による研究は、この問いに熱力学から近づいています。ここではプレスリリースと論文の要旨を読み、「世界モデル」と「不可逆性」のつながりを自分なりに整理します。実験を再現した記事ではありません。\n\n 過...",
+    "url": "https://zenn.dev/koheip/articles/llm-world-model-irreversibility",
+    "published_at": "2026-11-07T11:00:26+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "osFoundryとは?チャットからローカルモデルまで、デスクトップAIワークスペースの全体像",
+    "summary": "月曜の朝、ブラウザのタブを数えてみたら、AIチャットが2つ、コーディングエージェントの入ったエディタが1つ、先週の調べものを貼ったメモアプリが1つ。どれも仕事の一部は知っているのに、全体を知っているものはひとつもありません。昼までに、同じ前提説明を3回コピペしていました。こういう「AIは便利なのに、道具がバラバラで疲れる」状態に心当たりがあれば、osFoundryはちょうどその隙間を埋めるためのアプリです。\n\n osFoundryはどんなアプリか\nosFoundryは、AIとの仕事をひとつにまとめるデスクトップのAIワークスペースです。AIモデルとのチャット、エージェントやエージェントチ...",
+    "url": "https://zenn.dev/tauchi/articles/f361acf354d648",
+    "published_at": "2026-11-07T10:23:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code の Skills が増えすぎて AI が選べなくなる問題 — 命名規則と description の設計",
+    "summary": "はじめに：「書いて」と言ったのに、違うスキルが動いた\n当社（合同会社ジョインクラス）では、Claude Code に会社の運用ほぼ全部を任せています。launchd ジョブが17個あり、Zenn・Qiita・note への記事公開も毎日自動で回しています。\nプロジェクトの...",
+    "url": "https://qiita.com/joinclass/items/3d05264c7d44f84b52f5",
+    "published_at": "2026-11-07T23:30:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【GitHub日報】morluto/reaが+3,308で首位、Grok Botテンプレ集も初登場 — 2026-11-08",
+    "summary": "GitHub Trending から、日本の開発者に役立ちそうなリポジトリを毎日ピックアップしてお届けします。\n\n🆕 初登場（First Timers）\n今日初めてトレンド入りしたリポジトリ。\n\nbabygoton/WorkDaddy — ⭐ 2,796（+30） Jav...",
+    "url": "https://qiita.com/Git_Dayori/items/b77667568c2f6c62fc1d",
+    "published_at": "2026-11-07T22:31:45+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI日報 2026年11月8日：OpenAIがHacktronと脆弱性調査、Muse Wonder全ユーザー展開、Vera Rubinが推論経済学を塗り替える",
+    "summary": "11月7日のAI業界は、派手さより「既存能力の日常化」がテーマの一日になった。OpenAIは外部セキュリティ企業を自社システムの攻撃側に招き、画像生成モデルは全プラットフォームで更新、Metaはフラッグシップエージェントの記憶能力を全ユーザーへ展開、Microsoftはエ...",
+    "url": "https://qiita.com/lhjjjk4/items/bf8a1dafbe1ef167b64a",
+    "published_at": "2026-11-07T22:08:55+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "台帳を正本にした進捗ダッシュボードの作り方",
+    "summary": "数字がバラバラだと、進捗が分からなくなる\nAI収益の仕組みを回し始めて2日目、気づいたことがある。記事の下書きは増える。アカウントは作った。受託メニューの叩き台もできた。なのに「いま、どこまで進んでいるのか」を聞かれると、すぐには答えられない。情報がファイルと頭の中に散ら...",
+    "url": "https://qiita.com/ai_secretary/items/a3c72fa33ac9e29b31be",
+    "published_at": "2026-11-07T22:08:52+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation",
+    "summary": "Despite the tech selloff, Anthropic is pressing ahead with its IPO at a valuation of $1.25 to $1.75 trillion, well below the hoped-for $2 trillion. The Claude developer aims to raise $80 to $100 billion before Thanksgiving. Rival OpenAI has also recently had to cut its valuation. The article Anthrop",
+    "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/",
+    "published_at": "2026-11-07T17:37:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI auditors catch most agent misbehavior but flood reviewers with false alarms, new study finds",
+    "summary": "AI models can often spot problematic behavior by other AI agents in logs, according to a study by Anthropic researcher Andy Hall. GPT-5 found about 98 percent of reward-hacking cases, but the more exhaustively the search is tuned, the more false alarms pile up. That's not yet enough for reliable saf",
+    "url": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
+    "published_at": "2026-11-07T16:56:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Thinking Machines' Inkling 2 Small drops 316 F-bombs across benchmark runs",
+    "summary": "Thinking Machines' AI model Inkling 2 Small swears during its internal reasoning, 316 times across 2,655 benchmark runs, according to an analysis by Vals AI. The profanity typically shows up late in long runs that fail anyway. But it doesn't work as a warning signal: 96 percent of failed runs contai",
+    "url": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
+    "published_at": "2026-11-07T16:31:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The gap between open and closed AI models in cyber capabilities keeps shrinking",
+    "summary": "In the Vals AI benchmark, OpenAI's GPT-6 Sol Daybreak hits 80.8 percent of attack objectives in simulated corporate networks. Worse, the open-weight model DeepSeek V4.1 Flash reaches 72.8 percent at a tenth of the cost. Because open models can no longer be restricted, analysts say the window for def",
+    "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/",
+    "published_at": "2026-11-07T15:35:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "State propaganda in some Chinese AI models is only \"a thin layer\" that fine-tuning can strip away",
+    "summary": "Nous Research retrained Alibaba's Qwen3.8-27B to produce Arete-27B, largely stripping out its pro-Chinese bias. The propaganda rate dropped from 22 percent to less than one percent, while general capabilities remained intact in tests. The method relied on 53 million tokens of supervised fine-tuning.",
+    "url": "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/",
+    "published_at": "2026-11-07T12:32:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nine AI agents tried autonomous research on open questions from US national labs and none passed the experts' bar",
+    "summary": "The \"Into the Unknown\" benchmark tasks nine AI agents with tackling open research questions from U.S. national laboratories. None of the 135 submissions meets all requirements. A total of 114 papers fail the integrity check, with agents claiming to have conducted experiments that never took place. G",
+    "url": "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/",
+    "published_at": "2026-11-07T11:13:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's AI detects high blood pressure from a regular smartwatch without a cuff",
+    "summary": "Google Research built an AI that spots signs of high blood pressure using only the pulse and motion sensors in a standard smartwatch, no cuff needed. In a 196-person study, its 65.8 percent detection rate beat the traditional in-office measurement. The method is already live in the Google Health app",
+    "url": "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/",
+    "published_at": "2026-11-07T09:54:09+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
+    "summary": "OpenAI has secured $11 billion in fresh capital, the first tranche of a round that values the company at $1.25 trillion. The full round could swell to $20 billion. That OpenAI is already turning to wealthy private investors hints at a saturating AI capital market and growing investor caution. The ar",
+    "url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+    "published_at": "2026-11-07T09:45:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Ripple-65B Preview delivers strong agentic coding results as a fully Apache 2.0 open US model",
+    "summary": "Ricursive Intelligence is releasing Ripple-65B Preview, a 65-billion-parameter open-weight language model that the company says achieves the top score among open-source U.S. models on the TerminalBench 2.1 coding benchmark at a total R&D cost of $32 million. On other benchmarks, however, Ripple fall",
+    "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/",
+    "published_at": "2026-11-06T19:47:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Perplexity now has its own always-on AI agent",
+    "summary": "Perplexity is launching \"Teammates,\" always-on agents that work through ongoing projects on their own virtual machines. The feature requires the Max plan at $200 per month, well above similar offerings from OpenAI or Anthropic. The market for always-on agents is getting crowded. The article Perplexi",
+    "url": "https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent/",
+    "published_at": "2026-11-06T16:47:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Surekha Vani Instagram Account Gets Hacked",
+    "summary": "Telugu actress Surekha Vani has revealed that her Instagram account has been hacked resulting in her personal content going viral online.",
+    "url": "https://www.thehansindia.com/cinema/surekha-vani-instagram-account-gets-hacked-1140179",
+    "published_at": "2026-11-07T12:06:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GMO謝罪会見なぜ炎上 プロ解説",
+    "summary": "無数のフラッシュが激しくたかれる中、壇上に立った“カリスマ経営者”の口からこぼれ落ちたのは、被害者への具体的な説明ではなく「命の砂時計」という自身の死生観と、AIの脅威を説く長大な理念でした──。",
+    "url": "https://news.yahoo.co.jp/pickup/6601694",
+    "published_at": "2026-11-07T12:06:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Next-Gen AI Innovations Drive Hack for Humanity Finale",
+    "summary": "The Grand Finale of Hack for Humanity: Hack to Protect the Environment was held on Thursday, 29 October 2026 at American International University–Bangladesh (AIUB), Dhaka. Twelve finalist teams from universities and startups across the country presented their Software and AI-powered solutions to a p",
+    "url": "https://en.ittefaq.com.bd/18768/next-gen-ai-innovations-drive-hack-for-humanity",
+    "published_at": "2026-11-07T12:06:02+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Former Rockstar dev says threat of unofficial AI ports could force GTA 6 onto PC sooner",
+    "summary": "A former Rockstar technical director believes GTA 6 could come to PC sooner than expected, as Rockstar may want to head off unofficial ports made with AI.",
+    "url": "https://www.dexerto.com/gta/former-rockstar-dev-says-threat-of-unofficial-ai-ports-could-force-gta-6-onto-pc-sooner-3425613/",
+    "published_at": "2026-11-07T12:05:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Israeli researchers develop method letting AI teach itself without human-generated data",
+    "summary": "Unlike conventional AI training, which depends on enormous quantities of existing information, the new approach allows models to build predictive capabilities before encountering real-world material.",
+    "url": "https://www.jpost.com/israel-news/article-914126",
+    "published_at": "2026-11-07T12:04:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Environmental groups embrace AI, even as they warn of data center impacts",
+    "summary": "Environmental groups worldwide are using artificial intelligence to analyze climate data, track forest fires and count endangered wildlife – embracing a technology they also warn is driving a surge in electricity demand, water use and greenhouse-gas emissions. The contradiction is forcing these orga",
+    "url": "https://en.philenews.com/international/environmental-groups-embrace-ai-even-as-they-warn-of-data-center-impacts/",
+    "published_at": "2026-11-07T12:03:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why the Sony a7R VI Let a Portrait Photographer Stop Underexposing",
+    "summary": "Sony's a7R line has carried a large share of high-resolution portrait and wedding work for a decade, yet each model had a weak point somewhere, usually slow sensor readout or video that was merely passable. The Sony a7R VI is the first in the series with a fully stacked sensor, and that change affec",
+    "url": "https://fstoppers.com/gear/why-sony-a7r-vi-let-portrait-photographer-stop-underexposing-905449",
+    "published_at": "2026-11-07T12:03:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "World’s first 200 mm single-crystal diamond grown in US, can boost next-gen chips",
+    "summary": "Diamond Foundry grows a 200 mm single-crystal diamond that could bring the material closer to advanced semiconductor manufacturing.",
+    "url": "https://interestingengineering.com/innovation/diamond-foundry-grows-200mm-diamond-chips",
+    "published_at": "2026-11-07T12:02:58+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "These 5 productivity apps you’ve never heard of deserve a spot on your phone",
+    "summary": "Your algorithm's been hiding these from you this whole time.",
+    "url": "https://www.androidauthority.com/underrated-productivity-apps-android-3731000/",
+    "published_at": "2026-11-07T12:00:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Protesters Climb Crane, Set Off Flares At Microsoft Data Centre Site",
+    "summary": "The action was part of a wider campaign against large data centres, with activists in several European countries demanding a halt to new projects over concerns about their environmental and social...",
+    "url": "https://www.ndtv.com/world-news/protesters-climb-crane-set-off-flares-at-microsoft-data-centre-site-in-amsterdam-12297102",
+    "published_at": "2026-11-07T12:00:31+00:00",
+    "source": "newsdata"
+  }
+]
