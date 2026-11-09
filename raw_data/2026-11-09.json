@@ -1,0 +1,289 @@
+[
+  {
+    "title": "できるだけ無料でHuman-out-of-the-loop（HOOTL）を作ってみた",
+    "summary": "はじめに\n自宅のWindows PCで、GitHubのIssueをトリガーとして、調査・作成・別のAIによる検証・修正までを人の手を離れて進めるHuman-out-of-the-loop（HOOTL）なエージェントの仕組みを、実験しています。人が関わるのは、最初にIssueでゴールを決めるときと、最後に結果を確認するときだけです。本記事には、その過程で得た知識を記載しました。実験用の構成なので、本番運用には向かないサービスも利用しています。\nまた、この記事は、作りながら自分の理解を整理するためのメモでもあります。仕組みの説明に加えて、設計で迷ったところと、実際にハマったところをなるべ...",
+    "url": "https://zenn.dev/ts/articles/ee4686f0ad0309",
+    "published_at": "2026-11-08T14:43:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "NVIDIA/auto-ontologyを動かしたら、素朴なtext-to-SQLより遅く間違えた",
+    "summary": "これは何を試した記事か\nNVIDIAが公開しているauto-ontology(Apache-2.0)は、データベースのメタデータから「オントロジー」(ビジネス用語・テーブル関係・SQL属性の集合)を自動生成し、AIエージェントが自然言語の質問を正確なSQLに変換できるようにするフレームワークである。\nREADME・モデルカードが掲げる価値は明快で、「エージェントが誤ったテーブル/カラムを参照してSQLを生成してしまう問題」を、事前に構築したオントロジーの知識で防ぐ、というものだ。\n筆者はこれを実際にDocker Composeで自分のPCに構築し、2テーブルだけの小さなサンプルDuc...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-040-auto-ontology-sql-hallucination",
+    "published_at": "2026-11-08T14:22:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に授業ノートを作らせているけれど、理解したことにはならない",
+    "summary": "はじめに\n授業のメモと文字起こしを使って、Claude Code に整形ノートを作ってもらっています。\n楽になったのは、情報を補って、読み返せる形にする作業。\nノートが出来上がったことと、私が内容を理解したことは分けています。\n自分なりに作った「ノートを書く UI」。この捉え方が一番近いです。\n\n 授業中の変化\nAI に後から補ってもらえることで、授業中の気持ちは少し変わりました。\n聞き漏らしても、書き漏らしても、録音から拾い直せる。\n全部をその場でメモしなければ、という焦りが減ったのは嬉しいところです。\n私の感覚では、タイプミスも減り、先生の話を聞くことに集中しやすくなりました。\n...",
+    "url": "https://zenn.dev/tomnotelog/articles/ai-notes-reduce-friction-before-understanding",
+    "published_at": "2026-11-08T14:22:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（10/31〜11/6）",
+    "summary": "はじめに\n今回から、ローカルLLMとAIコーディングツールの更新を、毎週まとめていくことにしました。\n自分はこれまで、Qiita でローカルLLMや自宅サーバー、AIを使った個人開発の記事を書いてきました。\nただ、Ollama や Open WebUI、Claude Code などは更新がとても速く、追いかけるだけでも手間がかかります。\nしかも一次情報の多くは英語の GitHub に散らばっています。\nそこで、自分の確認も兼ねて、週に一度まとめて残していくことにしました。\nまとめ方は次のとおりです。\n\n各ツールの GitHub のリリースノートや変更履歴をもとに、要点を日本語で整理し...",
+    "url": "https://zenn.dev/girigiri_se/articles/8dedadbc54a425",
+    "published_at": "2026-11-08T14:00:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "変異は生成できても、テストの穴はそれだけでは見つからない",
+    "summary": "AIエージェントにコードの修正を任せるとき、テストが通ったという報告だけでは、テストが変更を守れているかまでは分かりません。そこで、push前のセルフレビューに「わざとコードを壊し、それでもテストが通るか」を確かめる担当を置いていました。\nこの担当もAIエージェントです。実装を読み、壊した版の一覧をJSONで作り、実行用のハーネスへ渡します。ハーネスは、変異を1件ずつ当ててテストを実行する仕組みです。コードの一部を意図的に変えたものを変異、その変異でテストの効きを確かめる技法をミューテーションテストと呼びます。\nただ、1回のレビューで数百件の変異を書くようになると、比較演算子や定数を1つ...",
+    "url": "https://zenn.dev/miyakona/articles/mutation-generator-needs-structural-review",
+    "published_at": "2026-11-08T13:55:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude の新モデルが $0 で集計されていたら、翌朝のバッチで気づけるようにした",
+    "summary": "要点\nClaude Code のトークン使用量を API 料金換算で表示するモニターを自作しています。料金は手で書いた料金表から計算しているので、新しいモデルが出ると、そのモデルの分だけ $0 になります。\n実際に一度、新モデルを 1 週間で 1 億 2,600 万トークン使っていたのに、その分が $0 として集計され、3 週間気づきませんでした。画面には注意書きが出ていましたが、読んでいませんでした。\nそこで、料金表にないモデルが使われたら翌朝のバッチを失敗させるチェックを入れました。この記事の内容は次の 4 点です。\n!\n\n料金を返す API が見つからなかったので、料金表は自動...",
+    "url": "https://zenn.dev/kazusa_nakagawa/articles/202610-model-rate-check",
+    "published_at": "2026-11-08T13:48:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに任せたXの投稿9本の表示数を、手で読んで並べた —— 問いかけの投稿がいちばん見られていなかった",
+    "summary": "X の投稿は、AI の席（広報部）に任せています。下書きを読み、時刻が来たら出して、台帳に書くところまでが広報部の仕事です。3日に1回は振り返りもさせていて、どの型の投稿がよく見られたかを確かめ、次の回で変える所を1つだけ決めます。\n前回の振り返りでは、この「どの型がよく見られたか」に答えられませんでした。台帳の表示数の欄が、全部空だったからです。そこで「投稿した翌日に表示数を記帳する」と決めました。\n3日後の振り返りの時点でも、表示数は1本も記帳されていませんでした。決めた事を、決めたとおりに回す仕組みを作っていなかったからです。今回は振り返りの前に、出した9本の表示数を広報部に X ...",
+    "url": "https://zenn.dev/ai_shihan/articles/cd25f73cbd4d6b",
+    "published_at": "2026-11-08T13:34:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "『鉄拳6』から『時のオカリナ』へ　(AI時代のデジタル鎖国)",
+    "summary": "1. 17年前のゲームが引き起こした価値観の衝突\n2026年10月、発売から17年を迎えた一本のゲームが、日本と海外のゲームコミュニティで議論を巻き起こした。2009年にバンダイナムコゲームスが発売した、Xbox 360版の『鉄拳6』だ。\n海外の開発者たちが、静的再コンパイル（Static Recompilation）という手法で、このゲームをWindows上でネイティブに動かすことに成功した。ReXGlueなどのツールを使って、Xbox 360向けの実行コードを、PC上で動くコードに変換する。さらに、ロールバック方式のネットコードやオンラインロビー、対戦マッチングも追加した。Tek...",
+    "url": "https://zenn.dev/yingtian/articles/41349c66554f43",
+    "published_at": "2026-11-08T13:23:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CodexでAI駆動開発を始めて1か月、失敗から学んだこと",
+    "summary": "はじめに\n10月から約1か月間、Codexを使ったAI駆動開発に取り組みました！\n!\n本記事でいう「AI駆動開発」は、AIに質問するだけでなく、CodexなどのAIコーディングツールにコードの調査や実装、修正、テストなどを任せながら進める開発として扱っています。\n\n私はこれまで、Ruby on Railsを中心にWebアプリケーションの開発を学んできました。\nこれまでは、AIに質問したり、エラーの解決方法を相談したりすることはあっても、基本的には自分でコードを書いていました。\nしかし、近年はCodexやClaude CodeなどのAIコーディングツールが普及し、AIを活用した開発が広...",
+    "url": "https://zenn.dev/eliri/articles/fad5a22342fdce",
+    "published_at": "2026-11-08T13:18:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI×Blenderで下絵からアニメ調の髪をモデリングした記録",
+    "summary": "はじめに\nこの記事では生成AIと1枚の下絵からアニメ調キャラクターの髪を作る仕組みと手順を紹介します。\n\n第1部では短い髪と片側の結びと編み込みを加えたショートを題材に下絵から髪を作る仕組みを解説します。\n第2部では腰まで届く盛ったボリュームのあるウェーブしたロング髪に挑戦し、同じ仕組みが通用しなかったときにどう方法を見直したかを解説します。\n第3部では形状の指標と検査の計算方法について解説します。\n\n頭部とボディの制作については過去記事の素体制作の記事、顔の改善記事で扱っています。\n\n 環境\n\n\n\n分類\n名前\n設定・用途\n\n\n\n\n生成AIモデル\nClaude Opus 5.5\n思考...",
+    "url": "https://zenn.dev/yy7613/articles/921a7fe3ffffc7",
+    "published_at": "2026-11-08T13:14:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "古代のグラボ（GTX 1080）でも動くローカルLLMを動かしてみた",
+    "summary": "古代のグラボ（GTX 1080）でも動くローカルLLMを動かしてみた\n\n はじめに\nローカルでドラえもんは実現できるのか？\n今回はローカルLLMで、ドラえもんの道具を選択するタスクが実現可能かを考察してみました。\n私のおうちには古代のグラボ(GTX 1080)があるので、古代のグラボでもエッジでドラえもんの道具選択タスクが実現可能かを検証しました。\n確かめたいのは次の2つです。\n\n素のローカルLLMは、ドラえもんの道具をどれだけ知っているか。\n道具の資料を渡せば、正しい道具を選べるようになるか。\n\n\n ローカルLLMの可能なタスクについて\nローカルLLMは最近では性能が上がってきてい...",
+    "url": "https://zenn.dev/koheidisney/articles/729394f8be42c5",
+    "published_at": "2026-11-08T16:01:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントのAPI代に1日の上限をかけられるようにしました",
+    "summary": "AIエージェントを動かしっぱなしにして寝て、朝起きたらAPI代がすごいことになっていた、という話をときどき見かけます。ループに入ったエージェントは、止める人がいないとそのままAPIを呼び続けてしまいます。\n自分でも同じことが起きるのが怖かったので、以前作った「AIの財布番」に、API代を1日の予算で止める機能を入れました。\nhttps://ut181749ut.github.io/saifuban/\n\n どんなものか\nAPIキーを財布番に預けると、代わりに財布番の「代理のキー」がもらえます。エージェントにはこの代理のキーだけを渡します。\nエージェントからのリクエストは財布番を通って、本...",
+    "url": "https://zenn.dev/saihu/articles/3f859b471899e2",
+    "published_at": "2026-11-08T12:43:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに自分のコードのテストを書かせるとバグを見逃す？「1エージェントTDD」vs「2エージェント・ブラインドTDD」実機検証",
+    "summary": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E06） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n本ドキュメントでは、X（旧Twitter）および DEV コミュニティ等で大きな話題となった AI エージェント設計パターン（\"Two Agents, Two Worktrees: Codex Wr...",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e06-blind-tdd-worktrees",
+    "published_at": "2026-11-08T09:23:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "BTPropを公開ログで再現し、NLIのつながりを壊して比べた――LLMの嘘検出で「つながりを疑う」BPはどこで効くか",
+    "summary": "LLMの答えの嘘（ハルシネーション）を、文どうしのつながりから見つける方法に BTProp（Hou ほか、NAACL 2025）があります。個人研究で似たこと（ルールも疑う確率伝搬）をしていたので、BTPropの作者が公開している材料をそのまま使って、同じテストで比べました。\n結論を先に書きます。\n\n論文の数字は、公開ログからほぼ再現できました（AIの自信だけより AUROC +0.03〜+0.08）。\nつながりがそのままなら、BTPropが上か同着でした。私の方法が優れているとは言えません。\nNLIのつながりを2〜5割わざと逆にすると、BTPropは「AIの自信だけ」より下まで落ちまし...",
+    "url": "https://zenn.dev/mst_design2020/articles/8b904689df2ddc",
+    "published_at": "2026-11-08T09:07:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIの資料レビューは1回で終わらせない。まっさらなエージェントを3回直列で回す手順書",
+    "summary": "1回のAIレビューでは、指摘が漏れる\nPMとして、設計書や比較検討資料をClaudeにレビューさせています。1回のレビューで出る指摘は平均20件ほどですが、2回目と3回目でも、それぞれ5〜10件ほど新しい指摘が出ます。1回で終わらせると、この分が漏れたまま資料が出ていくことになります。\nそこで、内容レビューは毎回まっさらなAIエージェントで3回、直列で回すようにしました。この記事では、その手順書をほぼそのまま紹介します。\n\n 守らせているルール\n手順書で一番効いているのは、手抜きをさせないためのルールです。\n## 必須ルール\n- 3回のレビューは必ず直列で実行する。並列実行は禁止する...",
+    "url": "https://zenn.dev/mizo_ko/articles/article-003-zenn",
+    "published_at": "2026-11-08T07:10:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "生成AIは、かつてのコンピュータと同じ道をたどるのか",
+    "summary": "生成AIに料金を払って使っていると、ふと思う。\n昔のコンピュータも、こういうものだったのではないだろうか。\n高価な計算機を個人で持つのは難しい。それでも、計算してほしい仕事はある。だから、計算機を持っている組織の設備を使う。その後、小型化や低価格化が進み、個人がコンピュータを持つことが普通になった。\nいまの生成AIも、少数の企業が運用する大きなモデルに、ネットワーク越しにアクセスする使い方が身近だ。これも、そのうち「手元のPCにあるもの」になっていくのだろうか。\n先に自分の考えを書く。日常の仕事に十分な生成AIを手元に持つことは、今より普通になると思う。ただし、クラウドを丸ごと置き換える...",
+    "url": "https://zenn.dev/hydenori24/articles/personal-generative-ai-computing-history",
+    "published_at": "2026-11-08T06:18:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "機密データを外部に送らないAIエージェントを作りたい 第0回「予告」",
+    "summary": "免責事項\n本記事は個人の検証・学習内容をまとめたものです。\n内容の正確性や安全性を保証するものではありません。\n本記事を参考に環境構築や設定変更を行う場合は、ご自身の責任で実施してください。\nそれでは記事をお楽しみください。\n\n はじめに\nここ最近、Claude Codeをはじめ、様々なAIエージェントが流行っていますよね。\n前回記事では、主に機密性の高い情報をローカル環境で扱うことを想定し、Ollama API を別PCから利用するための比較的セキュアな手順を紹介しました。\nしかし、AIエージェントまで手を伸ばそうとすると前回記事の内容だけでは足りません。\nそこで今回から、「機密デ...",
+    "url": "https://zenn.dev/kokeshi_gnome/articles/c59f4289df8a8b",
+    "published_at": "2026-11-08T05:21:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "全銀協が定めた2027年3月31日、紙の手形交換が終わる｜取引先の支払管理と入金消込をシステムで整える3つのステップ",
+    "summary": "全銀協が定めた2027年3月31日、紙の手形交換が終わる｜取引先の支払管理と入金消込をシステムで整える3つのステップ\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/b...",
+    "url": "https://qiita.com/DnD-inc/items/980e8ab57fdb69ff88c5",
+    "published_at": "2026-11-09T00:22:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "LLMアプリ開発におけるシングルエージェントとマルチエージェントの選定基準とLangChain/LangGraph実装比較",
+    "summary": "LLM（大規模言語モデル）を活用したアプリケーションや自律型エージェントの構築において、「単一のエージェントで処理させるか（シングルエージェント）」「役割分担した複数のエージェントを協調させるか（マルチエージェント）」というアーキテクチャの選定は、開発コストや保守性に直結す...",
+    "url": "https://qiita.com/blinkgroup_jp/items/5e810377b78dd0e2e688",
+    "published_at": "2026-11-09T00:22:05+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "社内のコードを外部AIに入れられない――外部に何も送信しないAI統合開発環境を作った",
+    "summary": "「ChatGPT や Claude は便利だけど、社内のコードを入力していいのかわからない」「セキュリティ審査でクラウドAIが通らない」——そんな理由でAIコーディングツールの導入が止まっている現場は多いと思います。\nそこで、外部に何も送信しないAI統合開発環境を作りまし...",
+    "url": "https://qiita.com/cuculhart/items/1a070487970895ec2913",
+    "published_at": "2026-11-09T00:16:12+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "`claude -p --restricted` の `/スキル名` は展開されていなかった ― モデルが自力で探し当てていた1週間",
+    "summary": "常駐の Mac で、claude -p を無人で呼ぶ文章生成のジョブを動かしています。1つのジョブが3つの段（入力から題材を選ぶ・下書きする・照合する）で claude -p を呼び、どの段も、リポジトリに置いたスキル（.claude/skills/<スキル名>/SKILL...",
+    "url": "https://qiita.com/masamitsu_sera/items/d9d1f55ef6f02c4dcb6f",
+    "published_at": "2026-11-09T00:03:12+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News",
+    "summary": "OpenAI co-founder Andrej Karpathy used Claude's Opus 5.5 to filter 43 million Hacker News comments into 6,454 curated videos. The result beats YouTube's own recommendations, he says. The article Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News appe",
+    "url": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
+    "published_at": "2026-11-08T14:23:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate",
+    "summary": "Consciousness researchers Anil Seth, Ned Block, and Giulio Tononi argue in a Nature commentary that today's AI systems aren't conscious and won't become so on silicon hardware. They consider the assumption that consciousness depends on computation alone \"fatally flawed\" and warn against granting rig",
+    "url": "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/",
+    "published_at": "2026-11-08T13:49:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts",
+    "summary": "Turing Award winner Richard Sutton reaffirms that raw compute alone isn't enough for intelligence and that fundamentally new learning methods are needed. Ex-OpenAI researcher Tworek agrees, saying blind transformer scaling \"has reward hacked brains of a whole generation of scientists.\" A growing wav",
+    "url": "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/",
+    "published_at": "2026-11-08T11:44:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI coding agents still need human cleanup on nearly three out of four tasks in a real-world test",
+    "summary": "Alibaba's new coding-agent benchmark, Co-Design Bench, tests AI agents on real user requests that already tripped them up in practice. Even GPT-6 Astra, the top performer, fully solves only 26.4 percent of tasks. On older benchmarks, the same models score above 99 percent. The article AI coding agen",
+    "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+    "published_at": "2026-11-08T09:50:59+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation",
+    "summary": "Despite the tech selloff, Anthropic is pressing ahead with its IPO at a valuation of $1.25 to $1.75 trillion, well below the hoped-for $2 trillion. The Claude developer aims to raise $80 to $100 billion before Thanksgiving. Rival OpenAI has also recently had to cut its valuation. The article Anthrop",
+    "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/",
+    "published_at": "2026-11-07T17:37:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI auditors catch most agent misbehavior but flood reviewers with false alarms, new study finds",
+    "summary": "AI models can often spot problematic behavior by other AI agents in logs, according to a study by Anthropic researcher Andy Hall. GPT-5 found about 98 percent of reward-hacking cases, but the more exhaustively the search is tuned, the more false alarms pile up. That's not yet enough for reliable saf",
+    "url": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
+    "published_at": "2026-11-07T16:56:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Thinking Machines' Inkling 2 Small drops 316 F-bombs across benchmark runs",
+    "summary": "Thinking Machines' AI model Inkling 2 Small swears during its internal reasoning, 316 times across 2,655 benchmark runs, according to an analysis by Vals AI. The profanity typically shows up late in long runs that fail anyway. But it doesn't work as a warning signal: 96 percent of failed runs contai",
+    "url": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
+    "published_at": "2026-11-07T16:31:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The gap between open and closed AI models in cyber capabilities keeps shrinking",
+    "summary": "In the Vals AI benchmark, OpenAI's GPT-6 Sol Daybreak hits 80.8 percent of attack objectives in simulated corporate networks. Worse, the open-weight model DeepSeek V4.1 Flash reaches 72.8 percent at a tenth of the cost. Because open models can no longer be restricted, analysts say the window for def",
+    "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/",
+    "published_at": "2026-11-07T15:35:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "State propaganda in some Chinese AI models is only \"a thin layer\" that fine-tuning can strip away",
+    "summary": "Nous Research retrained Alibaba's Qwen3.8-27B to produce Arete-27B, largely stripping out its pro-Chinese bias. The propaganda rate dropped from 22 percent to less than one percent, while general capabilities remained intact in tests. The method relied on 53 million tokens of supervised fine-tuning.",
+    "url": "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/",
+    "published_at": "2026-11-07T12:32:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nine AI agents tried autonomous research on open questions from US national labs and none passed the experts' bar",
+    "summary": "The \"Into the Unknown\" benchmark tasks nine AI agents with tackling open research questions from U.S. national laboratories. None of the 135 submissions meets all requirements. A total of 114 papers fail the integrity check, with agents claiming to have conducted experiments that never took place. G",
+    "url": "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/",
+    "published_at": "2026-11-07T11:13:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Version 70.7 of the Vodia Cloud Phone System Is Now Available",
+    "summary": "BOSTON, MA, 2026-11-08 — /EPR Network/ — Vodia Networks, Inc., a provider of unified cloud communications solutions to enterprises, contact centers, and managed service providers (MSPs), [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/11/08/1781063",
+    "published_at": "2026-11-08T12:26:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Enterprises face a reckoning in their AI costs as budgets come under strain",
+    "summary": "As AI adoption accelerates, companies are turning to model orchestration, smaller language models and token monitoring to control rising costs and improve returns on AI investments.",
+    "url": "https://www.business-standard.com/technology/artificial-intelligence/enterprises-face-a-reckoning-in-their-ai-costs-as-budgets-come-under-strain-126110800349_1.html",
+    "published_at": "2026-11-08T12:26:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "In the cybersecurity space, we have to use AI to fight AI: Tim Gokey",
+    "summary": "Broadridge CEO Tim Gokey says AI is driving demand for skills in engineering design and solutions, even as the company uses the technology to improve productivity and strengthen cybersecurity.",
+    "url": "https://www.business-standard.com/technology/tech-news/in-the-cybersecurity-space-we-have-to-use-ai-to-fight-ai-tim-gokey-126110800367_1.html",
+    "published_at": "2026-11-08T12:25:55+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "29,046 Shares of SpaceX $SPCX Bought by J. Derek Lewis & Associates Inc.",
+    "summary": "J. Derek Lewis & Associates Inc. bought a new stake in SpaceX (NASDAQ:SPCX – Free Report) during the third quarter, according to the company in its most recent Form 13F filing with the Securities and Exchange Commission (SEC). The fund bought 29,046 shares of the company’s stock, valued at approxima",
+    "url": "https://www.thelincolnianonline.com/2026/11/08/29046-shares-of-spacex-spcx-bought-by-j-derek-lewis-associates-inc.html",
+    "published_at": "2026-11-08T12:24:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI brings alive India's ancient knowledge through modern technology",
+    "summary": "AI, digital storytelling and manuscript digitisation are helping revive Indian mythology and ancient scientific knowledge, making cultural heritage more accessible to younger generations.",
+    "url": "https://www.business-standard.com/opinion/columns/ai-brings-alive-india-s-ancient-knowledge-through-modern-technology-126110800357_1.html",
+    "published_at": "2026-11-08T12:24:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Pornia.com, a free HD tube built for returning viewers, adds cross-device “Continue Watching”",
+    "summary": "PRAGUE, Czech Republic, 2026-11-08 — /EPR Network/ — Pornia.com, a free HD adult video site, is built around the viewer who comes back. Any video can [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/11/08/1781057",
+    "published_at": "2026-11-08T12:24:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI analytics, technological upgrades to drive retail investor experience in new Samvat: NSE CEO Ashishkumar Chauhan",
+    "summary": "The NSE has maintained nanosecond-level response times over the past year, securing its position as the fastest exchange globally",
+    "url": "https://www.thehindubusinessline.com/markets/ai-analytics-technological-upgrades-to-drive-retail-investor-experience-in-new-samvat-nse-ceo-ashishkumar-chauhan/article71680890.ece",
+    "published_at": "2026-11-08T12:24:38+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Root Canal Specialists Introduce Advanced Dental Treatment Solutions",
+    "summary": "Newton, Australia, 2026-11-08 — /EPR Network/ — Endodontists are utilising new technology and techniques to provide patients with accurate and comfortable treatment. The aim is [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/11/08/1781043",
+    "published_at": "2026-11-08T12:23:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Who Covers the Real Cost When Custom Pickleball Paddle Quality Fails?",
+    "summary": "Guangdong Province, China, 2026-11-08 — /EPR Network/ — When custom pickleball paddle quality fails, buyers often absorb returns, reputational damage, and remake costs that should [read full press release...]",
+    "url": "https://express-press-release.net/news/2026/11/08/1781039",
+    "published_at": "2026-11-08T12:22:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft employees raise concerns over AI strategy amid 60,000-person buyout offer",
+    "summary": "The letter, cited in a report byThe New York Times, accuses Microsoft of pursuing AI with a “speed-at-all-costs” approach and urges the company to stop linking employees' use of AI tools to performance rewards or reprimands.",
+    "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-employees-raise-concerns-over-ai-strategy-amid-60000-person-buyout-offer/articleshow/135658705.cms",
+    "published_at": "2026-11-08T12:21:17+00:00",
+    "source": "newsdata"
+  }
+]
