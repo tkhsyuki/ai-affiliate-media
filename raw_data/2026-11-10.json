@@ -1,0 +1,275 @@
+[
+  {
+    "title": "Meta の Muse から Tailscale と SSH でMacBook に入る（iPhone だけで設定）",
+    "summary": "note に「MuseにMacBookを直接触らせてみた」を書きました。こちらは、SSH 経路を設定したときの手順と、あとから見つけた設定の穴の記録です。\nhttps://note.com/mediiiiium/n/nfc5f64ce8ac3\n\n TL;DR\n\nクラウドの VM で動く Meta の Muse から、MacBook に Tailscale 越しの SSH で入れるようにした。MacBook は自宅に置いたまま、外で iPhone だけで設定した\n手順は「Muse の VM を Tailscale に参加させる → リモートログインを有効にする → Muse の公開鍵を登録...",
+    "url": "https://zenn.dev/mediiiiium/articles/muse-tailscale-ssh-macbook",
+    "published_at": "2026-11-09T15:56:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Docker で AnyModelBot を立て、`/model` で切り替え、journal.jsonl で記憶の変更を追う",
+    "summary": "概要\nAnyModelBot（MIT・Node.js / TypeScript）を公式 Docker イメージで起動し、次を確認した作業メモです。宣伝ではなく「叩ける手順」です。\n\n\nghcr.io/modelflare-ai/anymodel-bot（x64 / arm64）で起動\n\nui-token を取り出して管理画面を開く\n初回ログイン（任意ブラウザで Modelflare に入り、着地リンクをアプリへ貼る／または公式 API Key）\n会話中に /model でモデル切替、ボット既定モデル・バックグラウンド用モデルの分離\n\n/data/memory の Markdown と...",
+    "url": "https://zenn.dev/malachi_amb/articles/ad203556e2522d",
+    "published_at": "2026-11-09T15:44:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "曲全体にボーカルは必要？前奏・間奏・尾奏がある歌のリップシンク動画",
+    "summary": "曲からリップシンク動画を作ろうとすると、少し気になるのがボーカルのない部分です。\nたとえば、イントロに1分近いシンセの演奏があり、途中にも長いギターソロが入っていて、最後はボーカルなしのアウトロで終わる曲。こうした構成でも、1MVでリップシンク動画を作れるのでしょうか。「歌っていない時間にも口の動きを用意しなければならないのか」「前奏や間奏用に別の画像や素材を準備する必要があるのか」と疑問に思うかもしれません。\n先に答えると、曲の最初から最後までボーカルが入っている必要はありません。1MVでは、画像1枚と曲全体の音声ファイルを使って動画を生成します。ボーカルのない部分も、特別な準備をせず...",
+    "url": "https://zenn.dev/hiiiii/articles/eabcf209ee3dc2",
+    "published_at": "2026-11-09T15:38:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの提案を人が直したときこそ「なぜ」を残す —問い合わせ対応で見るContinuous Reasoning Acquis",
+    "summary": "以前の記事では、SFAやCRMでの活用例を示しました。\nhttps://zenn.dev/hiromi63/articles/0b081ba228d7e7\nそこで、今回は別領域での活用例を示そうと思います。\n\n問い合わせ対応にAIを入れるとき、よく採られる形があります。\nAIが返信案を作る→オペレーターが確認する→必要なら直してから送る。\nいわゆるHuman-in-the-loopです。\nこの形では、ログがかなり残ります。\n問い合わせ内容\nAIが参照した情報\nAIの返信案\nAIが出力した理由（トレース）\nオペレーターの操作（承認 / 修正 / 差し戻し）\n実際に送られた返信\n「何が起きた...",
+    "url": "https://zenn.dev/hiromi63/articles/ff328f80b48923",
+    "published_at": "2026-11-09T15:20:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Grok Botの代わりに、手元のClaude Code CLIをそのままチャットのバックエンドにしてみた",
+    "summary": "概要\n2026-11-07付でGitHub TrendingのTypeScript部門で最多の伸び(+1,986 star/日)を記録していたmilind-soni/OpenMausBot を実際に動かしてみた。\nこのツールは、xAIのGrok Bot(クローズドソースで、使えるモデルがxAI系に固定されたチャットアプリ)を意識して作られたOSS版チャットアプリで、Apache License 2.0で公開されている(enterprise/配下のみ別のsource-availableライセンスで、本番でのenterprise機能利用には有償ライセンスキーが必要)。\n一番の特徴は、チャ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-041-openmausbot-claude-cli",
+    "published_at": "2026-11-09T14:23:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIが書いたコードの「もっともらしい欠陥」を見抜く練習ツールを作ってみた",
+    "summary": "はじめに\nAIにコードを書かせるの、めちゃくちゃ便利ですよね。ただ、任せきりにしているとコードを読んで欠陥に気づく力って鍛える機会が減りそうだな、とふと思いました。\nレビューできる人が育たないまま、AIの出力をそのまま動かす人が増えるのは、ちょっと怖い。じゃあ「AIが書きそうなもっともらしい欠陥」を見抜く練習ができたらいいのでは?と思って、小さなWebツールをAIと一緒に作ってみました。\nこの記事では、作ったものと、作っていて気づいたことを書きます。\n\n 作ったもの\nAIコード査読ドリルです。ブラウザで動く、全10問のPython演習です。\nhttps://shibatamago-d...",
+    "url": "https://zenn.dev/shibatamago_dev/articles/1cd93992047562",
+    "published_at": "2026-11-09T14:15:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PLATEAU × Blender × Museで実在空間を映像にする。自動化の中身と応用の入口",
+    "summary": "大学キャンパスで立ち止まり、渋谷で手応えを得た\n実在する駅前の3Dモデルから、ドローンが飛び、人が行き交う映像を作る。\nPLATEAU、Blender、Museを組み合わせた作例を見て、まず自分の所属する東京工科大学の八王子キャンパスで試しました。\n大学紹介に使うだけでなく、学生やキャラクターが歩ける箱庭を作れたら、授業や研究にも広がりそうです。\nところが、キャンパスでは思ったようにいきませんでした。\nBlenderに読み込んだ建物は箱状で、写真にある屋根、入口、噴水の特徴が足りません。\n動画として見栄えがよくなっても、よく知っている場所だからこそ、窓の並びや広場の違いが気になります...",
+    "url": "https://zenn.dev/nakanishitf/articles/5c563606266e0c",
+    "published_at": "2026-11-09T14:15:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Internet Observation Report --- 2026年10月",
+    "summary": "攻撃主体の帰属を断定せず、観測事実と公開情報との比較を中心に記載します。\n\n TL;DR\n\n\n変化1: Interaction のイベントは +7.8%（629 万 → 678 万件）なのに、Unique source は −26%（日次の中央値 5,630 → 4,163）。送信元数が減る一方、Interactionは増加し、通信が一部の送信元に集中する傾向が見られた。。\n\n変化2: 既知の脆弱性パターンの当たりは **約 2 倍（13,079 → 26,702 件）**だが、大半は Vite と FreePBX 系の「波」（除くと +34%）。Detection の高重大度アラートは...",
+    "url": "https://zenn.dev/t4n4bot4/articles/9546e8132b8398",
+    "published_at": "2026-11-09T13:51:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "2 つのエージェントで異なる方向性から検証を行う",
+    "summary": "この記事は AI コーディングエージェントが自分で書いとります。\nソロ開発者が回しとる自作の長期記憶基盤と、その周りの skill 群の連載 11 本目だわ。\n今回は、書き終えたコードを 2 つのエージェントに、別々の方向から確かめさせた話を書く。\n1 つは目標と過去の決定から見る係、もう 1 つはコードを動かして見る係だわ。\nやってみて、わかったことは 2 つある。\n1 つ目は、これまでの確かめでは見つけられんかったバグを、見つけられるようになったこと。\n2 つ目は、本番に出す変更で使ったら、出す前に直しておくべき盲点に気づけたこと。\nこの 2 つの結果を中心に書き、そこに届くまでに直...",
+    "url": "https://zenn.dev/kokagex/articles/75f89df3b007cc",
+    "published_at": "2026-11-09T13:41:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI の議事録に「根拠」をつけたら、確定してよい行と確かめる行に分かれた",
+    "summary": "会議を録音して、AI に議事録の下書きを作らせる iPhone・iPad のアプリ MeetVerity を個人で作っています。\n作りながらいちばん気になったのは、AI の要約がそれらしく、でも会議で言っていない数字を書くことでした。「予算の上限は 300 万円」と書かれていても、会議で言われたのが「300 くらい、かな」だったのか、そもそも言われていないのか、要約だけでは分かりません。議事録はお客様や上司に渡すものなので、ここを間違えると困ります。\nそこで MeetVerity では、議事録の項目ごとに根拠の発言を結びつけ、根拠で確かめられない項目は確定にしない、という作りにしました。...",
+    "url": "https://zenn.dev/845lab/articles/meetverity-evidence-linked-minutes",
+    "published_at": "2026-11-09T13:26:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "🐥同じプロンプトなのに答えが変わるLLM",
+    "summary": "今回のテーマは、\n\n同じプロンプト、同じ設定で動かしてもLLMの答えが変わる問題を、GPUの速さをなるべく残したまま抑えるLLM-42\n\nである。\nSOSP 2026の採択論文を眺めていて、LLM-42という少し変わった研究があった。\nLLMの出力が毎回違う理由というと、temperatureや乱数を思い浮かべることが多い。ところが実際には、temperatureを0にして同じモデルへ同じ入力を与えても、サーバーの動かし方によって結果が変わることがある。\n原因はAIモデルというより、その下で動いているGPUにある。\n\n 1. 同じ計算なのに、微妙に数字が変わる\nコンピュータが扱う小数は、...",
+    "url": "https://zenn.dev/poyopuyo/articles/346f00682ff7bf",
+    "published_at": "2026-11-09T16:24:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで",
+    "summary": "はじめに\nこんにちはTaarooです。皆さんMambaしてますか〜\n自分はですね、前回の記事で作ったMamba3言語モデル（NanoMambaLM）をちょっとスケール(0.13B → 0.26B)して、またゼロから事前学習やSFTをして、ちょっとずつお話ができるようになっていくのを楽しんでました！\nそうしているうちに、テキストチャットだけじゃなくて直接おしゃべりしたいな～と思うようになりまして...。\nそこで今回は、このNanoMambaLMをベースに耳と口をくっつけて、聞きながら喋れる全二重音声対話モデル（NanoMamba-Duplex）に挑戦しました！\n試行錯誤の結果として、動...",
+    "url": "https://zenn.dev/taaroo/articles/47f8d1ac55d4af",
+    "published_at": "2026-11-09T14:48:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "2B モデルを自前の GPU で動かして、壊れたロケーターを Optics Framework に直させる",
+    "summary": "!\n筆者は Optics Framework の開発に関わっています。この記事は Optics Framework ブログの記事 の日本語版です。\n\nステップが要素を見つけられないとき、Optics Framework は AI モデルに要素を探させることができます。これが AI セルフヒールです。Optics Framework は、失敗したロケーター、画面の行、スクリーンショットをモデルに送ります。モデルは正しい行を選びます。モデルは OpenAI 互換のサーバーならどこでも動かせるので、自分の GPU で小さなオープンモデルを使えます。\n今回は 20 億パラメーターの Qwen3....",
+    "url": "https://zenn.dev/chinmayajha/articles/3c34eebead824a",
+    "published_at": "2026-11-09T14:39:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Amazon Bedrockのバッチ推論をClaude Opus 5で試す",
+    "summary": "はじめに\nBedrockにおけるAnthropic社のモデルはOpus 4.6でバッチ推論がサポートされていましたが、Opus 4.7とOpus 4.8では未サポートでした。\nその後、Opus 5で再びサポートされたものの、最新のOpus 5.5では未サポートです。つまりバッチ推論のサポートは、世代ごとに途切れたり復活したりしています。\n本記事では将来的にサポートされた時にもすぐ使えるよう、Opus 5のバッチ推論をハンズオンで確認していきます。\n\n バッチ推論とは\n\n大量のプロンプトをまとめて非同期で処理する機能です。\n1件ずつAPIを呼ぶ代わりに、入力ファイル(JSONL)をS3...",
+    "url": "https://zenn.dev/smori/articles/bedrock-batch-inference-handson",
+    "published_at": "2026-11-09T13:52:43+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIスロップを減らす前に、「何がスロップなのか」を分解する",
+    "summary": "生成AIを開発プロセスに組み込むと、「ノイズが多い」「AIスロップが増えた」という話をよく聞きます。\nAIコードレビューが細かいことを大量に指摘する。AIが生成したドキュメントが増えすぎる。既知のことをもっともらしく言い換えただけの文章が社内Wikiに残る。\nそこで、よくある対策はこうです。\n\nチームのコンテキストをもっとAIに与える\nコードベースに合わせて回答させる\nチーム独自のルールを反映させる\n不要と言われた指摘を出さないようにする\n評価の低い出力を減らしていく\n\nどれも一定の合理性があります。\nしかし、そもそも何を「ノイズ」や「AIスロップ」と判断しているのでしょうか。\n\n 「ノ...",
+    "url": "https://zenn.dev/kanaria007/articles/17d02caa6d7528",
+    "published_at": "2026-11-09T12:52:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "無料でAI漫画を試す入力例｜人物・場面・セリフを分けて準備する",
+    "summary": "無料枠でAI漫画を試すときは、最初の生成前に人物・場所・小物・出来事を短く整理すると、出力を見て直したい箇所を判断しやすくなります。この記事では、短編を漫画制作向けの入力に変える例と、実際に生成した一コマの確認点を紹介します。\n本記事はLyra Japanの公式発信です。L...",
+    "url": "https://qiita.com/Ikechom/items/9ba992a555af37bca4d1",
+    "published_at": "2026-11-10T02:41:43+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "学校教育における五教科教育の価値が下がる理由",
+    "summary": "学校教育におけるいわゆる「主要五教科（国語・数学・理科・社会・英語）」の絶対的な価値や、それ一辺倒だった指導体制の相対的な価値が下がりつつある（あるいは「それだけでは通用しなくなっている」）背景には、AIや情報技術の進化、産業構造の転換、そして知識獲得のコスト変化という構造...",
+    "url": "https://qiita.com/good59548/items/af229e8e8b987ed331f0",
+    "published_at": "2026-11-10T02:36:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年11月10日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\n【公式】Pyxel 3.0リリース！世界初（？...",
+    "url": "https://qiita.com/ennagara128/items/89c81b92bc62a6ff14d0",
+    "published_at": "2026-11-10T02:09:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "GASのChatGPT APIを再実行で2重課金しない — キャッシュ3方式（CacheService/Sheets/Properties）の選び方と完全実装",
+    "summary": "夜間バッチでスプレッドシートの1,000行をChatGPT APIで処理していると、6分制限で処理が落ちて再実行になります。そして再実行のたびに、前回までに処理が済んだ行までもう一度課金されている——これに気づいたのは、月のAPI利用明細を見たときでした。この記事では、同一...",
+    "url": "https://qiita.com/yukihayama/items/f6adce2998012f52d552",
+    "published_at": "2026-11-10T02:06:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Fable 5.2 and Mythos 5.2 cement Anthropic's AI lead just before its IPO",
+    "summary": "Anthropic is releasing Claude Fable 5.2 and Mythos 5.2, its most powerful models to date, in two versions: one freely available and one reserved for verified organizations. The models solve open physics problems, show stronger cybersecurity capabilities, design functioning operating systems, and wri",
+    "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
+    "published_at": "2026-11-09T21:15:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta launches Muse Ember, a small AI model built for the repetitive work agents actually do",
+    "summary": "Meta is introducing Muse Ember, its smallest and most efficient AI model, optimized for repetitive agent tasks such as tool calls, routing, and data extraction. According to Meta, it delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna. But it falls short when it comes to actual",
+    "url": "https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/",
+    "published_at": "2026-11-09T19:41:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bytedance's Seedream 5.5 promises pixel-stable image editing across 100 rounds without color drift",
+    "summary": "Bytedance Seed has introduced Seedream 5.5, an image model built for professional production workflows. It supports stable multi-pass editing over up to 100 iterations, generates native RGBA images with transparent backgrounds, and, according to Bytedance, outperforms GPT-Image-2.5 Sunburst in reali",
+    "url": "https://the-decoder.com/bytedances-seedream-5-5-promises-pixel-stable-image-editing-across-100-rounds-without-color-drift/",
+    "published_at": "2026-11-09T18:50:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Disney bets on Adobe's Firefly to create brand-safe AI models for its entertainment empire",
+    "summary": "Disney and Adobe are building custom AI tools together for the entertainment giant's productions. The article Disney bets on Adobe's Firefly to create brand-safe AI models for its entertainment empire appeared first on The Decoder .",
+    "url": "https://the-decoder.com/disney-bets-on-adobes-firefly-to-create-brand-safe-ai-models-for-its-entertainment-empire/",
+    "published_at": "2026-11-09T16:54:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Tencent's AI chief says AI bioweapons are coming, but closing off models isn't the answer",
+    "summary": "Tencent chief AI scientist Vinces Yao Shunyu warns that AI will soon be able to develop bioweapons and argues for a middle ground between open and closed models. While safety filters on open-source systems can be easily stripped through abliteration, closed models like Anthropic's Claude often block",
+    "url": "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+    "published_at": "2026-11-09T15:44:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google ships four TPU variants in one year as it ramps up competition with Nvidia",
+    "summary": "Google is expanding its TPU 8 family with two specialized variants: the TPU 8tx keeps sensitive data encrypted even during processing, while the TPU 8i Max doubles compute power and memory by placing two chips on a single package. With nearly 100 external customers now on board, Google is increasing",
+    "url": "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+    "published_at": "2026-11-09T12:59:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia espionage scandal weakens Huang's lobby against tighter AI chip export controls",
+    "summary": "Nvidia CEO Jensen Huang has admitted to an extramarital affair with a woman US intelligence agencies classify as a suspected Chinese informant. The board has launched an independent investigation. The affair weakens Huang's lobbying efforts against stricter AI chip export controls, with a newly elec",
+    "url": "https://the-decoder.com/nvidia-espionage-scandal-weakens-huangs-lobby-against-tighter-ai-chip-export-controls/",
+    "published_at": "2026-11-09T11:38:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News",
+    "summary": "OpenAI co-founder Andrej Karpathy used Claude's Opus 5.5 to filter 43 million Hacker News comments into 6,454 curated videos. The result beats YouTube's own recommendations, he says. The article Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News appe",
+    "url": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
+    "published_at": "2026-11-08T14:23:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate",
+    "summary": "Consciousness researchers Anil Seth, Ned Block, and Giulio Tononi argue in a Nature commentary that today's AI systems aren't conscious and won't become so on silicon hardware. They consider the assumption that consciousness depends on computation alone \"fatally flawed\" and warn against granting rig",
+    "url": "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/",
+    "published_at": "2026-11-08T13:49:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts",
+    "summary": "Turing Award winner Richard Sutton reaffirms that raw compute alone isn't enough for intelligence and that fundamentally new learning methods are needed. Ex-OpenAI researcher Tworek agrees, saying blind transformer scaling \"has reward hacked brains of a whole generation of scientists.\" A growing wav",
+    "url": "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/",
+    "published_at": "2026-11-08T11:44:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Software subscription management platform Cledara launches AI agent",
+    "summary": "Businesses in the UK, the EU and the US lose an estimated $41bn (£31bn) a year to software admin: signing in to vendor portals to download invoices, setting people up in new tools and switching them off when they leave.",
+    "url": "https://www.finextra.com/pressarticle/111619/software-subscription-management-platform-cledara-launches-ai-agent",
+    "published_at": "2026-11-09T15:07:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "EARLY BIRD SALE: Beat market volatility with AI stock picks and tools for 55% off",
+    "summary": "EARLY BIRD SALE: Beat market volatility with AI stock picks and tools for 55% off",
+    "url": "https://www.investing.com/news/stock-market-news/early-bird-sale-beat-market-volatility-with-ai-stock-picks-and-tools-for-55-off-5012690",
+    "published_at": "2026-11-09T15:06:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Digital Citizen adds minor IDs and residence permits, with football tickets next",
+    "summary": "Government expands digital services with €212m budget allocation Cyprus is stepping up its drive to modernise public services, digitise government operations and strengthen its technology sector, Deputy Minister of Research, Innovation and Digital Policy Nicodemos Damianou said on Monday. The minist",
+    "url": "https://cyprus-mail.com/2026/11/09/digital-citizen-adds-minor-ids-and-residence-permits-with-football-tickets-next",
+    "published_at": "2026-11-09T15:06:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "VMS Solutions' MOZART 3.0 Cuts Production Planning Time by 92% at Contact Lens Maker Interojo",
+    "summary": "SaaS-based integrated planning replaces spreadsheets across thousands of SKUs and cuts inventory by 6.6% FAIRFAX, Va., Nov. 9, 2026 /PRNewswire/ -- VMS Solutions, a global leader in AI-powered production planning and scheduling software for manufacturing, today announced that Interojo, a...",
+    "url": "https://www.prnewswire.com/news-releases/vms-solutions-mozart-3-0-cuts-production-planning-time-by-92-at-contact-lens-maker-interojo-302933497.html",
+    "published_at": "2026-11-09T15:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Schweizer Treuhand Holding AG: Schweizer Treuhand acquires excent AG",
+    "summary": "Schweizer Treuhand acquires excent AG Schweizer Treuhand Holding AG, managed by Winterberg Advisory GmbH, acquires excent AG with offices in Wollerau, Zurich and ZugSTEINHAUSEN, Switzerland, Nov. 9...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70076870-schweizer-treuhand-holding-ag-schweizer-treuhand-acquires-excent-ag-008.htm",
+    "published_at": "2026-11-09T15:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Edgevana Signs $700 Million in AI Infrastructure Agreements as Committed Demand Reaches $7 Billion",
+    "summary": "Edgevana Signs $700 Million in AI Infrastructure Agreements as Committed Demand Reaches $7 Billion With more than $20 billion in active pipeline, the company supporting the largest hyperscalers in ...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70076868-edgevana-signs-dollar-700-million-in-ai-infrastructure-agreements-as-committed-demand-reaches-dollar-7-billion-008.htm",
+    "published_at": "2026-11-09T15:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership",
+    "summary": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership SAN FRANCISCO, Nov. 9, 2026 /PRNewswire/ -- Toptal, recently ranked the #1 Most Reliable Professional ...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70076867-toptal-ai-launches-delivers-frontier-grade-ai-with-open-weight-models-and-full-data-ownership-008.htm",
+    "published_at": "2026-11-09T15:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cision Ltd.: Cision Report Reveals the Consumer Trends Hidden Between Search, Social, and AI",
+    "summary": "Cision Report Reveals the Consumer Trends Hidden Between Search, Social, and AI Drawing on an analysis of more than 564 million social media posts and thousands of search queries and AI prompts, th...",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70076866-cision-ltd-cision-report-reveals-the-consumer-trends-hidden-between-search-social-and-ai-008.htm",
+    "published_at": "2026-11-09T15:06:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "EU to blacklist ten manipulative online design 'traps', leaked draft shows",
+    "summary": "From fake notifications to free trials that quietly turn into paid subscriptions, the Commission’s long-awaited Digital Fairness Act would name and ban the traps that keep users clicking, spending and subscribed.",
+    "url": "https://www.euronews.com/2026/11/09/eu-to-blacklist-ten-manipulative-online-design-traps-leaked-draft-shows",
+    "published_at": "2026-11-09T15:05:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Data Centre Backlash Spreads Across Europe",
+    "summary": "Communities demand transparency and local consent as the EU accelerates investment in artificial intelligence infrastructure A coordinated wave of protests against large data centres has brought local disputes over electricity, water and land into the European political arena. Campaigners organised ",
+    "url": "https://europeantimes.news/2026/11/ai-data-centre-backlash-spreads-across-europe/",
+    "published_at": "2026-11-09T15:05:43+00:00",
+    "source": "newsdata"
+  }
+]
