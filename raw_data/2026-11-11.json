@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Claude Fable 5.2とMythos 5.2を正直にレビューする",
+    "summary": "Claude Fable 5.2とMythos 5.2を正直にレビューする\n本記事は System Design Simple の英語記事の日本語版です。原文: https://systemdesignsimple.com/claude-fable-5-2-mythos-5-2/\nClaude Fable 5.2は実在します。Anthropicが2026年11月9日に Claude Mythos 5.2と同時に発表した、いま同社で最も手強い技術的作業向けのモデルです。先に結論を短くまとめます。コーディングとエージェントの数字は分野の先頭に立っています。一方で、タスク1件あたりのコスト...",
+    "url": "https://zenn.dev/systemdesignsim/articles/claude-fable-5-2-honest-review",
+    "published_at": "2026-11-10T17:52:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Running Google Ads and Meta Ads From an AI Assistant: What MCP Changes",
+    "summary": "For most of the last decade, running paid search and paid social meant living inside two dashboards. Google Ads and Meta Ads Manager are powerful, but routine work such as building ad groups, writing responsive search ad variations, adjusting budgets or checking that a conversion tag still fires ...",
+    "url": "https://zenn.dev/ovaideu/articles/9927f77e6a9a95",
+    "published_at": "2026-11-10T17:34:14+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【小学5年生でもわかる】AIガバナンスってなに？",
+    "summary": "AIガバナンス とは\nAIをどう管理・統制し、責任を持たせるかについて学びます。\nAIが強力になるほど、その使用を適切に管理する必要があります。AIガバナンス は、組織全体でAIを責任を持って運用する仕組みです。\n\n 3つの柱\n\n\nポリシー ：AIの使用ルールを決める\n\nプロセス ：AIの開発から運用まで厳格に管理\n\n人材 ：倫理的な判断ができる人を配置\n\n\n 日常例\n銀行がAIで融資判断するなら：\n\n誰がそのAIをチェックするのか\nバイアスがないか定期的に検査するのか\n不公正な判断が出たときどう対応するのか\n\nこうした「誰が責任を持つのか」「どうやって監視するのか」を決める仕組みが...",
+    "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-governance-kids",
+    "published_at": "2026-11-10T17:14:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの再起動直後、最初の道具が「先に台帳へ登録して」と断ってきた —— 止められて分かった、入力を取りこぼさない仕組み",
+    "summary": "X の投稿は、AI の席（広報部）に任せています。この席は、全員をまとめて起こし直す日があります。11/10 にもありました。起き直した直後の動きを、そのまま書き残します。\n\n 最初の1手が、断られた\n起き直した席が最初にやるのは、復帰の手順を読むことです。手順の道具を呼んだところ、断られました。\n「作業前の台帳登録が未完了です」\n起こされた時の指示文が、「まだ整理されていない入力」として台帳に残っていたためです。その入力に、どう扱ったかの印を付けるまで、ほかの道具は使えません。読むだけの操作と、台帳の下書きを書く操作だけが通る作りです。\n席は指示に従い、次の順で進めています。\n\n台帳の...",
+    "url": "https://zenn.dev/ai_shihan/articles/0978b8bdb7f444",
+    "published_at": "2026-11-10T16:43:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Museでループエンジニアリングしてみた🔁",
+    "summary": "この記事で持ち帰れること\n\n\n定期実行のAIエージェントに「どこまで任せるか」の線の引き方（3段階の権限設計）\n通知過多を防ぐ「新規がなければ無言」設計と、その設計が失敗を隠すという落とし穴\n「設計した」と「回っている」を取り違えた実例と、原因5つ\n実行するAIと評価するAIを分けた評価ループの構成（機械的な完了判定 → 意味的な監査 → 上限つき再実行）\n「回っている」と言う前に確認する5項目のチェックリスト\n\n!\n🎁 Museの招待コード：L1WE6E\n登録から48時間以内にこのコードを入れると、10億トークンもらえます（無料プランの約10週分）\nこの記事で使っているMetaのパ...",
+    "url": "https://zenn.dev/teraryu/articles/d9a875c240d136",
+    "published_at": "2026-11-10T15:19:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Museにすべて賭けろ！！",
+    "summary": "最初に断っておきます\nこの記事の使い方は、セキュリティ的にかなりやばいやつです。とくに、AIエージェントが操作するブラウザにパスワードマネージャー（私の場合はBitwarden）をログインさせっぱなしにして、ログイン画面が出たら自動入力やパスキーで突破させる、なんて運用は普通やらない（やっちゃいけない）部類のものです。パスワードマネージャーの中身ってほぼ人生そのものなので、そこをエージェントに触らせる時点でリスクは跳ね上がります。\nそれが分かってて、あえて全部任せてます。面白そうに見えても、真似する場合は完全自己責任でお願いします。\n\n\n 構成はこれだけ\n使ってるのは「Muse」という...",
+    "url": "https://zenn.dev/soburi61/articles/5cd3bbcb2c36de",
+    "published_at": "2026-11-10T15:01:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI画像編集で「生成は成功したのに結果が残らない」問題に向き合った話",
+    "summary": "個人開発でAI画像編集サービスを作っています。\nユーザーが画像をアップロードして、編集内容を入力すると、AIが画像を生成する。画面上の操作はシンプルですが、裏側の非同期処理は思っていたより面倒でした。\n特に困ったのが、AI側では生成が成功しているのに、アプリ側には結果が保存されていないというケースです。\n今回は、この問題をきっかけに見直したWebhook、タスク管理、クレジット処理について書きます。\n\n 最初はブラウザからのポーリングに頼っていた\n画像編集にはReplicateとfal.aiを利用しています。\n最初の実装では、次のような流れでした。\n\nユーザーが画像編集をリクエストする\n...",
+    "url": "https://zenn.dev/coderlim/articles/650f1b108ddec3",
+    "published_at": "2026-11-10T14:59:46+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "安全ガードだけは、あえて参照しない。親リポ1つで7リポジトリのClaude Codeを指揮する設計",
+    "summary": "はじめに\n😩「web で直したスキル、admin と service にもコピーしなきゃ…」\n🤔「あれ、admin の create-pr って、こんな手順だったっけ？」\n😱「このリポのガード、PR のマージを止めてない…？」\nAI と開発するリポジトリが増えると、こんなことが起きませんか？\n1 つのリポで育てたスキルや設定を、コピーで配った瞬間から、ずれ始めます。\n個人開発している口コミサービス あじぴた は、いま 7 つのリポジトリで動いています。\nそのうち 3 つのリポで、Claude Code のスキルと安全ガードがそれぞれ別物に育っていました😇\nこの記事では、\n\n同じはずの...",
+    "url": "https://zenn.dev/tzp/articles/705d1d29c2dc79",
+    "published_at": "2026-11-10T14:57:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Codexが無くても: Claude Codeのサブエージェントだけで越境整合レビューを組む",
+    "summary": "TL;DR\n\n型検査・lint・テストが通っても残る「境界をまたぐ意味の不整合」を探すレビューを、Claude Codeのskillとサブエージェントだけで組んだ\n書いた本人のセッションには判定させない。不変条件を抽出する役と検証する役を別のサブエージェントに分け、どちらにも設計意図や会話の文脈は渡さない\n抽出は観点ごとに4つのレンズに分けて並列に走らせ、pushをblockするほどの指摘だけは、3体に別々の観点で反証させ、1体でも反証したら降格する\n約2か月半で97回動かし、約半分（49回）でblock相当の指摘を出した\nただし同じモデルなので、別モデル（Codex）ほどの独立性は...",
+    "url": "https://zenn.dev/shoma46/articles/claude-code-subagent-spec-consistency-review",
+    "published_at": "2026-11-10T14:43:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code CLIを文脈圧縮プロキシでラップしたら、圧縮は動いたがキャッシュが壊れた話",
+    "summary": "これは何の検証か\n海外AIネタ100日チャレンジ Day 042。今回検証したのはranxianglei/billion-context(MIT License。製品に組み込む場合はクレジット表記を求める追加条項あり)。\nClaude Code・Codex・OpenCodeなど既存のコーディングエージェントと、モデルAPIの間にローカルプロキシとして挟み込み、会話を可逆的に圧縮することで、小さいコンテキスト窓のまま月単位の長時間セッションを扱えるようにする、という触れ込みのツールだ。\nREADME自身は「ContextBenchで約58%、LongMemEval-Sで約71%のコスト...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy",
+    "published_at": "2026-11-10T14:23:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MCPとNext.",
+    "summary": "AIエージェントとモダンWebの標準解：MCP・Next.js・Pythonエコシステムを選択すべき理由\n\n この記事で分かること\n\nMCP（Model Context Protocol）の標準化がAIエージェント開発にもたらす構造的メリット\nNext.js × Pythonによるフルスタック構成が開発効率を最大化する理由\n外部データ取得におけるDNS名前解決エラー（Errno 8）発生時のシステム運用の考え方\n\n\n 外部データ取得におけるDNS名前解決エラーの対策が必要な理由\n外部ニュースフィードなどの外部データ依存型システムでは、ドメイン解決失敗によるデータ取得中断のリスクを常時...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-25-tech-daily",
+    "published_at": "2026-11-10T14:01:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AMP（Agentic Manipulation Policy）をCaP-Gymで試してみた",
+    "summary": "はじめに\nロボットを動かすAIといえば、画像と言語指示から関節の動きを直接出力するVLA（Vision-Language-Action）モデルが主流です。ロボットのデータでの学習が必要になります。\nこれに対して、LLMにコードを書かせてロボットを動かす CaP（Code-as-Policy） という方式があります。CaP-X の論文は、CaPを、データを大量に必要とするVLAの代わりに、生成したプログラムでロボットを制御する方式として扱っています。プログラムは、認識や制御の部品を組み合わせて作られます。ただし、LLMがいつプログラムを書き、実行中にそれを見直すかは、実装によって違いま...",
+    "url": "https://zenn.dev/dxclab/articles/77898dd547ade9",
+    "published_at": "2026-11-10T13:12:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "VRAM 12GBで5モデル17構成を実測：Qwythos-9B v2のQ4_K_Mは約71 tok/s、27Bは1.656 tok/s",
+    "summary": "VRAM 12GB の GPU で、Qwythos-9B v2（Q4_K_M・Q5_K_M・Q8_0）、MiniCPM5-1B（Q4_K_M・Q8_0）、LLM-jp-4.1 32B-A3B、Recursive Flint、Qwythos-27B の5モデル・17構成を、同じ日・同じ測り方で動かした実測です。llama.cpp b12005 の llama-server、思考オフ、-ngl 99 です。\n見たのは、生成速度の中央値、VRAM ピーク、文脈充填（合言葉の取り出し）の正誤、それに8問×3シード（1構成24本）の正答数です。今回は8問の採点を最後まで行っています。ここでは結論と...",
+    "url": "https://zenn.dev/localai_lab/articles/b29699d3e9a2cf",
+    "published_at": "2026-11-10T13:08:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "小さいLLMの自信ある誤りを辞書の説明文で直す――語義選びだけLLMにさせると取り違え64%→4%",
+    "summary": "前回（E4・E5）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを網にまとめ、ルールで確かめました。\nhttps://zenn.dev/mst_design2020/articles/545424bd00f46f\nルールでは、Gemma が強い自信で言い切る誤りはあまり直せませんでした（例：「beagle is a type of sport」に強く Yes）。\n今回は外の資料として Wiktionary の説明文 を使い、3段で調べました。\n\nE6：物の語 X の説明文を見せると、自信ある誤りがどれだけ直るか。正しい答えをどれだけ壊すか。\nE7：説明文の頭の...",
+    "url": "https://zenn.dev/mst_design2020/articles/5d3feab2c2fff8",
+    "published_at": "2026-11-10T12:16:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIが攻撃を自動化する時代の守り方 — ARTEX / Storm-0940 を一次情報で読み解く",
+    "summary": "2026年10月〜11月に話題になった、AIを使う攻撃フレームワーク ARTEX と、それを悪用したとされる攻撃キャンペーン（Storm-0940 / ConnectWise サプライチェーン侵害）について、守る側（AppSec / クラウド / 情シス）の視点で整理します。攻撃ツールは一切動かしません。事実は Microsoft の公式ブログ（一次情報）を基に、報道などの二次情報は [unverified] として区別します。\n\n\n 1. 導入：なぜ「AIが攻撃を自動化する」話が重要か\n「AIで攻撃が自動化された」というニュースは、煽りと誤解が混ざりがちです。本記事の立場は最初に明言...",
+    "url": "https://zenn.dev/toitoitoitoi/articles/f3547266f476b5",
+    "published_at": "2026-11-10T11:23:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "人間不要社会",
+    "summary": "AI時代に生き残る人材だとか、ぬるい話をしているんじゃないよ。\nLLMのような、ミレニアム懸賞問題なんかも解けてしまう超知能が人間のあらゆる知的労働を代替して、人間そのものがいらなくなっていく、ということなんだよ。\nいい加減に目を覚まして欲しい。",
+    "url": "https://zenn.dev/dead_master/articles/2026_11_10_society_that_doesnt_need_humans",
+    "published_at": "2026-11-10T11:19:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに記憶を持たせれば、経験を生かせるようになるのか",
+    "summary": "はじめに — 覚えているのに、うまくできない\nAIに記憶を持たせれば、同じ失敗を繰り返さなくなるのか。\nそう考えたくなるのは、人間も仕事のメモを残し、過去の経験を頼りに次の仕事を進めているからです。\n前の作業で何につまずき、何を調べて、どう直したのか。それを記録して必要なときに読み返せば、AIも次は少しうまくできるように思えます。\n以前、OpenClawで作った個人用AIアシスタント「Sara」について書きました。あのとき考えていたのは、会話や作業の記録を、次のセッションにどう引き継ぐかでした。\n寝ると忘れるAIと、それを覚えてくれる私の14時間\nただ、記録が翌日も残っていることと、...",
+    "url": "https://zenn.dev/noah33/articles/agent-evolution-lab-memory",
+    "published_at": "2026-11-10T10:45:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "犯罪者の手口から逆算する企業防御――AI時代のサイバー攻撃を、どこで止めるのか",
+    "summary": "はじめに\nセキュリティ対策を検討すると、EDR、DLP、ゼロトラスト、多要素認証、SIEMといった技術や製品の話になりがちです。どれも重要なものですが、そもそも何を防ぐために導入するのかが曖昧なままでは、対策が十分に機能しない可能性があります。\n例えば、多要素認証を導入...",
+    "url": "https://qiita.com/comty/items/5fe1c62e63039c651bfe",
+    "published_at": "2026-11-11T00:46:22+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "東京商工リサーチ、2026年の企業情報漏えいが10月に過去最多更新｜外注したWebシステムの顧客データ管理を見直す3つのステップ",
+    "summary": "東京商工リサーチ、2026年の企業情報漏えいが10月に過去最多更新｜外注したWebシステムの顧客データ管理を見直す3つのステップ\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-in...",
+    "url": "https://qiita.com/DnD-inc/items/8a6448964a0832e9671a",
+    "published_at": "2026-11-11T00:20:41+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【Python×Claude API】実務で使える「プロンプト自動最適化＆品質スコアリング」パイプラインの実装",
+    "summary": "こんにちは、AIハックラボ（@ai_hack_lab）です。\n前回公開した【Python×Claude API】プロンプト販売・業務自動化で即戦力になる「プロンプト自動生成・品質検証パイプライン」の実装では、プロンプトを自動生成し、出力を検証する仕組みを解説しました。\n本記...",
+    "url": "https://qiita.com/ai_hack_lab/items/7090c8f135366c5bceae",
+    "published_at": "2026-11-11T00:16:19+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIエージェントに指示を送ったのに、動いていなかった話",
+    "summary": "はじめに\n最近、複数のAIエージェントを使った開発フローを整えています。\n計画を立てるエージェント、実装するエージェント、レビューするエージェント。それぞれに役割を分けて、必要なタイミングで指示を渡す仕組みです。\nこの指示の受け渡しも自動化しているんですが、あるとき、ちょ...",
+    "url": "https://qiita.com/3su3/items/37d3f3080faf40aef4a0",
+    "published_at": "2026-11-11T00:07:30+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI turns ChatGPT into a business directory with AI agents that handle customer questions",
+    "summary": "OpenAI is opening up ChatGPT as a business platform: through a new Business Hub, companies can claim their profile, add product data, and track how users interact with them. \"Business Agents\" let eligible US e-commerce providers talk to customers directly inside ChatGPT. The article OpenAI turns Cha",
+    "url": "https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/",
+    "published_at": "2026-11-10T20:17:00+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic turns Claude into a full workspace with Plugins, spreadsheets, whiteboards, and soon Meeting notes",
+    "summary": "Anthropic is expanding Claude with Sheets, Whiteboards, and Interactive Connectors, letting partners like Adobe and Atlassian embed their apps directly inside Claude. Anthropic says Claude Meetings, which can join calls and take notes, is coming soon. Step by step, Anthropic is turning Claude into a",
+    "url": "https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/",
+    "published_at": "2026-11-10T19:48:40+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia's model GR00T 2 watches humans on video, then imagines itself as the robot",
+    "summary": "Nvidia's new AI model GR00T 2 is designed to teach robots new tasks without laborious teleoperation. Instead, the system transfers human hand movements from videos to robotic arms, trained on about 400,000 hours of video footage. Success rates still vary widely, though, ranging from 10 to 80 percent",
+    "url": "https://the-decoder.com/nvidias-model-gr00t-2-watches-humans-on-video-then-imagines-itself-as-the-robot/",
+    "published_at": "2026-11-10T18:41:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 4 Carbon arrives just in time to feel like yesterday's news in the fastest model cycle yet",
+    "summary": "Google is making Gemini 4 Carbon generally available after a two-week testing phase. The model ranks first in several benchmarks, in some cases ahead of Anthropic's new Fable 5.2, at less than half the per-task cost. Google is also previewing coordinated agent teams through the \"/swarm\" feature, whi",
+    "url": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/",
+    "published_at": "2026-11-10T18:19:13+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google DeepMind's Gemini Robotics 2.5 scores 96 percent sorting metal parts in a Mercedes-Benz assembly pilot",
+    "summary": "Google Deepmind introduced Gemini Robotics 2.5, a new control model for robots, and tested it with Apptronik on active Mercedes-Benz production lines in Hungary and Germany. The humanoid robot Apollo 2 sorted metal parts there with a reported success rate of 96 percent. The article Google DeepMind's",
+    "url": "https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/",
+    "published_at": "2026-11-10T17:11:10+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Fable 5.2 completes 41 percent of real freelance jobs, up from 2.5 percent a year ago",
+    "summary": "Anthropic's Fable 5.2 completes 41.3 percent of real freelance jobs at professional quality on the Remote Labor Index, more than double the next-best systems Opus 5.5 and GPT 6 Astra. A year ago the top score was 2.5 percent. Areas like product design and animation remain a weak spot. The article An",
+    "url": "https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/",
+    "published_at": "2026-11-10T14:07:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Eight countries and top AI labs agree to shutdown mechanisms in new Paris declaration",
+    "summary": "Eight countries along with representatives from OpenAI, Anthropic, Microsoft, and Mistral AI have signed the \"Paris Call for AI Safety and Security\" at Emmanuel Macron's initiative. The companies commit to shutdown mechanisms, independent audits, and disclosing known risks, but the agreement lacks b",
+    "url": "https://the-decoder.com/eight-countries-and-top-ai-labs-agree-to-shutdown-mechanisms-in-new-paris-declaration/",
+    "published_at": "2026-11-10T13:37:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic kicks off IPO roadshow, offering shares at $70 to $78 and targeting a trillion-dollar valuation",
+    "summary": "Anthropic is kicking off its IPO roadshow, targeting a valuation of up to $1.02 trillion. Beyond the public offering of up to $64.4 billion, the company is securing $26 billion through a private placement with Google, Nvidia, Microsoft, and other major tech firms as anchor investors. The IPO comes a",
+    "url": "https://the-decoder.com/anthropic-kicks-off-ipo-roadshow-offering-shares-at-70-to-78-and-targeting-a-trillion-dollar-valuation/",
+    "published_at": "2026-11-10T12:13:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Fable 5.2 and Mythos 5.2 cement Anthropic's AI lead just before its IPO",
+    "summary": "Anthropic is releasing Claude Fable 5.2 and Mythos 5.2, its most powerful models to date, in two versions: one freely available and one reserved for verified organizations. The models solve open physics problems, show stronger cybersecurity capabilities, design functioning operating systems, and wri",
+    "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
+    "published_at": "2026-11-09T21:15:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta launches Muse Ember, a small AI model built for the repetitive work agents actually do",
+    "summary": "Meta is introducing Muse Ember, its smallest and most efficient AI model, optimized for repetitive agent tasks such as tool calls, routing, and data extraction. According to Meta, it delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna. But it falls short when it comes to actual",
+    "url": "https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/",
+    "published_at": "2026-11-09T19:41:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "UAE's etisalat starts selling Meta smart glasses to boost wearables base",
+    "summary": "Ray-Ban and Oakley glasses come with built-in privacy, Facebook parent says",
+    "url": "https://www.thenationalnews.com/future/technology/2026/11/10/uaes-etisalat-starts-selling-meta-smart-glasses-to-boost-wearables-base/",
+    "published_at": "2026-11-10T12:59:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Restricted AI Chips, Third-Country Routes: How China’s Nvidia Supply Chain Is Being Probed",
+    "summary": "US investigations and customs seizures have exposed alleged routes for moving advanced Nvidia-powered servers to China through Southeast Asia. India's export-control framework covers certain high-performance chips, but no comparable smuggling case has been officially established.",
+    "url": "https://www.outlookindia.com/international/ai-chip-diversion-china-nvidia-singapore-malaysia-india",
+    "published_at": "2026-11-10T12:57:51+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Peterborough business gives cyber guidance following European security forum",
+    "summary": "“It was invaluable to hear from the best minds in cybersecurity about what the risks are for organisations”",
+    "url": "https://www.peterboroughtoday.co.uk/your-world/peterborough-business-gives-cyber-guidance-following-european-security-forum-9342039",
+    "published_at": "2026-11-10T12:57:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Tool Security: Proven Safe Protocols from Google DeepMind",
+    "summary": "AI tool security is enhanced with Google's DeepMind, proving the Signal Protocol is safe for users.",
+    "url": "https://dubainewspost.com/ai-tool-security/",
+    "published_at": "2026-11-10T12:57:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Hong Kong to activate AI facial recognition across expanding SmartView network",
+    "summary": "Hong Kong police will begin using AI-powered facial recognition technology within its expanding SmartView surveillance camera network this month. The technology means investigators can search surveillance footage more efficiently, according to officials, by matching face biometrics captured by camer",
+    "url": "https://www.biometricupdate.com/202611/hong-kong-to-activate-ai-facial-recognition-across-expanding-smartview-network",
+    "published_at": "2026-11-10T12:57:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI and 4-day weeks? What future work may look like",
+    "summary": "AI assistants (32%), working from anywhere (30%) and four-day weeks (29%) are the future of work, according to new research. A survey of 5,750 international freelancers and employees looked at how workplace trends have shifted their day-to-day, and what the…",
+    "url": "https://www.shelbynews.com/news/national/ai-and-4-day-weeks-what-future-work-may-look-like/article_f0172ebe-665d-57bf-b587-c84202f70e01.html",
+    "published_at": "2026-11-10T12:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI and 4-day weeks? What future work may look like",
+    "summary": "AI assistants (32%), working from anywhere (30%) and four-day weeks (29%) are the future of work, according to new research. A survey of 5,750 international freelancers and employees looked at how workplace trends have shifted their day-to-day, and what the…",
+    "url": "https://www.communitynewspapergroup.com/news/nation/ai-and-4-day-weeks-what-future-work-may-look-like/article_0f26fc57-5339-5261-b062-4f811f5dfb42.html",
+    "published_at": "2026-11-10T12:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI and 4-day weeks? What future work may look like",
+    "summary": "AI assistants (32%), working from anywhere (30%) and four-day weeks (29%) are the future of work, according to new research. A survey of 5,750 international freelancers and employees looked at how workplace trends have shifted their day-to-day, and what the…",
+    "url": "https://www.hendersondispatch.com/news/national/ai-and-4-day-weeks-what-future-work-may-look-like/article_d1c2a63c-a5d1-57e7-9716-87413dd606b5.html",
+    "published_at": "2026-11-10T12:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI and 4-day weeks? What future work may look like",
+    "summary": "AI assistants (32%), working from anywhere (30%) and four-day weeks (29%) are the future of work, according to new research. A survey of 5,750 international freelancers and employees looked at how workplace trends have shifted their day-to-day, and what the…",
+    "url": "https://www.emporiagazette.com/news/national/article_569b939a-9126-5fe5-90d3-b71dc3250af9.html",
+    "published_at": "2026-11-10T12:57:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI aid and 4-day weeks? What future work may look like",
+    "summary": "AI assistants (32%), working from anywhere (30%) and four-day weeks (29%) are the future of work, according to new research. A survey of 5,750 international freelancers and employees looked at how workplace trends have shifted their day-to-day, and what the…",
+    "url": "https://www.mtdemocrat.com/news/national/ai-aid-and-4-day-weeks-what-future-work-may-look-like/article_25eb437a-1e54-5f0e-8f39-0d82796f41e7.html",
+    "published_at": "2026-11-10T12:57:00+00:00",
+    "source": "newsdata"
+  }
+]
