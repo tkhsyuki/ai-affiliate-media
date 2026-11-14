@@ -1,0 +1,289 @@
+[
+  {
+    "title": "一人の開発者 vs ボット・インターネット:OpenOS EDNA —— 生体情報を一切クラウドに送らず「あなたが人間であること」を証明する",
+    "summary": "著者:Sebastian Kläy、スイス・ベルンの個人開発者\nインターネットには、あまり語られない問題があります。「ユーザー」のかなりの部分が、もはや人間ではないという問題です。ボットがアカウントを作り、クリックし、レビューし、投票し、ボット同士が生成したコンテンツで学習し合っています。大手プラットフォームはすべて認識しています。そして業界の答えはこの10年間ずっと同じでした——より多くの監視。顔をスキャンし、身分証をアップロードし、生体情報を見えないクラウドに渡す、というやり方です。\n私は夜と週末を使って、その逆の答えを作りました。OpenOS EDNA です。あなたの「動かし方」を...",
+    "url": "https://zenn.dev/sebklaey/articles/cd02b3c07d03d9",
+    "published_at": "2026-11-13T18:25:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "人間は0行、検証は4.2万行 ― Claude Code × Codex でスーファミ格闘ゲームを作った57日",
+    "summary": "コードを1行も書かず、判断だけをした57日間の実録。Codex と Claude Code の2つのAIエージェントに、スーパーファミコン用の2D対戦格闘ゲーム、M5Stack CoreS3 用のエミュレーター、macOS版・Web版を作らせた。363のセッション、1,010コミット、228のPRという一次資料から、何が壊れ、どう止め、どう機械で保証させたかを書く。",
+    "url": "https://zenn.dev/hawkymisc/books/human-zero-lines-snes-fighter",
+    "published_at": "2026-11-13T17:27:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Antigravity CLIでコメントを監視する：セットアップと実データ",
+    "summary": "!\nこの記事は EveryInfra ブログ からの転載です（原文が正本です）。\n\n動画の公開後24時間で、コメント欄の雰囲気が決まります。早めに人が対応すべきコメントは3種類あります。苦情、回答を求める質問、そして返信しないと冷淡な印象を与えかねないコメントです。このガイドでは、Gemini CLIの後継となるGoogleのターミナルエージェント、Antigravity CLIでコメント巡回を構築します。コマンドはagyです。数時間ごとにシステムのタイマーがagy -pを起動し、エージェントが新着コメントを取得して短いレポートを書きます。\nコメントデータはEveryInfraのリモート...",
+    "url": "https://zenn.dev/everyinfra/articles/antigravity-cli-video-comment-monitoring",
+    "published_at": "2026-11-13T17:23:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "自分のサイトを12個のAIに審査させたら、人間度12から100まで全部出た話",
+    "summary": "!\n前提として、この記事もAI（Muse）の支援を受けて記述しています。仕様・判断・最終検収は筆者自身が行っています。\n\n\n はじめに\n個人で商用ソフト「Megrab Studio」を開発しています。コードはAIエージェントに書かせ、自分は仕様・判断・検収に回る、という体制をこれまでの記事で公言してきました。\nそこで気になったのが、公式サイトを見た人は（そしてAIは）これを「AIが作ったサイト」だと思うのか、という点です。\nせっかくなので、思いつく限りのAIに同じ質問を投げました。「このサイトはAI制作か、人間制作か。スコアと根拠を出してほしい」。集まった審査は 12件。結論を先に書くと...",
+    "url": "https://zenn.dev/ray_9618/articles/6ec984248b8ee3",
+    "published_at": "2026-11-13T16:55:45+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MCP 2026-07-28 仕様入門、既存サーバーの移行点は主要変更9項目",
+    "summary": "はじめに\nMCP（Model Context Protocol）の仕様バージョン 2026-07-28 が公開されました。前版は 2025-11-25 で、公式 changelog の「Major changes」には 9 項目が並んでいます。その多くが、既存のサーバーやクライアントがそのままでは前提にできなくなる変更です。\n対象読者は、2025-11-25 以前の仕様で MCP サーバーまたはクライアントをすでに実装している開発者です。\nMcp-Session-Id ヘッダーでセッションを引き回している、initialize の応答で capabilities を交換している、sa...",
+    "url": "https://zenn.dev/kai_kou/articles/1288-mcp-2026-07-28-migration-checklist-guide",
+    "published_at": "2026-11-13T16:07:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードを書かずに、AIと3日でブラウザゲームを作って公開した話",
+    "summary": "コードは1行も書いていません。やったのは、企画を決めること、素材を用意すること、出来上がったものを実機で遊んで「ここがおかしい」と判定すること。その繰り返しで、ブラウザで遊べる横スクロールアクション「ほしぞらダッシュ」を公開しました。\nまず遊べます（スマホ・PC両対応、インストール不要）。\n▶ 遊ぶ： https://tosh1000950.github.io/hoshizora-dash/\n\nドット絵の猫耳キャラクター2人が夜空を駆ける横スクロールアクションです。モードは4種（ノーマル／タイムアタック／ハード／エンドレス）、敵は4種＋ボス、実績13種、過去の自分のゴーストと一緒に走る機...",
+    "url": "https://zenn.dev/tosh1000950/articles/4cdef577c46451",
+    "published_at": "2026-11-13T15:57:28+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "予測はできていた。それでもCLIが失敗した理由",
+    "summary": "予測結果は得られているのに、コマンドがエラーで終わる。自作CLIのspec-laneで、そんな不具合を修正しました。\nspec-laneには、過去のAI開発の観測データからトークン使用量を予測する機能があります。同じ条件のデータを使う estimate/v2（以下、v2）が予測を返していても、その後に動く従来のv1の処理が失敗すると、結果を保存できなくなっていました。\n原因は、v1とv2で使うデータの範囲と、「近いデータを選ぶ」順序の違いです。v2のデータはv1の部分集合ですが、だからといって「v1が失敗するなら、v2も予測できない」とは限りませんでした。\n\n 8件に絞ると予測でき、12...",
+    "url": "https://zenn.dev/yusuke_shiki/articles/prediction-succeeded-cli-failed",
+    "published_at": "2026-11-13T15:52:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントを本番導入する前に考えたい設計ポイント：コンテキスト管理・権限制御・実行ログ",
+    "summary": "生成AIを活用したアプリケーションの開発では、LLMのAPIを呼び出し、ユーザーからの質問に回答する構成が広く利用されています。\nしかし、AIエージェントを業務システムに組み込む場合、LLMへの問い合わせだけでは実現できない要件が増えてきます。\n例えば、社内データの取得、外部APIの実行、業務システムの更新などです。\nこうした処理をAIエージェントに任せる場合、回答精度だけでなく、アクセス権限、実行履歴、例外処理などを設計する必要があります。\n本記事では、2027年に向けて注目されるAIエージェントやAIコンテキストプラットフォームの考え方を踏まえ、企業向けAIシステムの設計で意識したい...",
+    "url": "https://zenn.dev/sotatek_jp/articles/cdfba2572f7818",
+    "published_at": "2026-11-13T15:18:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの手順書は、指定しても読まれない——教訓を「読ませる」から「貼る」「止める」へ変えた3か月の記録",
+    "summary": "この記事の要点: Claude Codeでエージェント組織を運用していると、教訓を「書き残す」仕組みは自然に増えていく。だが書いた教訓が「読み出される」かどうかは、置き場所ごとにまったく違う。2026年8月6日、私は自分の環境で、作業種別ごとの手順書（Playbook）が「委任する側が指定したときだけ読まれる」置き場所になっていることに気づいた。その後の約3か月（11月13日まで）の記録を読み直すと、指定しても読まれない場面が残っていた。ある2日間の委任の記録では、指定した手順書が読まれたのは12回中2回だった。効いた対策は、当初考えていた「読み込みを強制するフック」ではなかった。受け手...",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-14-000106",
+    "published_at": "2026-11-13T15:07:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "第2回：AIの精度と運用を支えるデータ基盤――Dell AI Data Platform with NVIDIA",
+    "summary": "[日本語]\n\n 第2回：AIの精度と運用を支えるデータ基盤――Dell AI Data Platform with NVIDIA\n\n モデルを変えても、データの課題は残る\n生成AIの回答品質を改善しようとすると、より大きなモデルを選ぶことや、プロンプトを調整することに目が向きやすい。しかし、企業データを使うアプリケーションでは、必要な情報を見つけられるか、情報が最新か、利用者が参照してよい内容かが結果を左右する。データが複数の場所に分かれ、形式や管理方法も異なるなら、モデルだけを変更しても根本の問題は解決しない。\nRAGを例にすると、文書の取り込み、変換、分割、埋め込み、索引化、検索...",
+    "url": "https://zenn.dev/mstmt/articles/d4465ff60bfe2b",
+    "published_at": "2026-11-13T14:53:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "サルでもゼロから作れる！自分の好きなキャラを入れて遊べるAIゲームの作り方",
+    "summary": "〜マルコフ性を使った軽量デュアルエージェント制御と44.1 kHzフルボイス実装ガイド〜\n!\n設計思想：BYOC（Bring Your Own Character / 素材持ち込み型汎用アーキテクチャ）\n本記事および関連アーキテクチャは、特定の商用コンテンツや著作物に依存しない技術中立・ゼロアセット構成を前提としています。リポジトリや配布物には、商用ゲーム・アニメ等の画像データ、音声ファイル、話者埋め込み／潜在変数ファイル（.wav / .pt 等）は一切含まれません。\n免責事項 / Disclaimer\n\n本記事は、ローカル環境で動作する汎用ビジュアルノベル演出エンジンおよび音声合成（...",
+    "url": "https://zenn.dev/pathetic777/articles/64c0858f211445",
+    "published_at": "2026-11-13T15:04:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "🐺Xで自動発信するAIエージェント『ハウル』を設計・運用する — ペルソナ工学から自律運用まで",
+    "summary": "はじめに：作ったもの\n前作『Spatial AI NPC』（カメラ画像から空間を理解して反応するWebARのAIキャラクター）の続編として、同じオオカミを独立したキャラクターとして「運用」するプロジェクト『ウルフ、運用中。』を進めています。\nやることはシンプルです。AIキャラクター「ハウル」がXで発信し、ARアプリ『HowLink』では、Xで見たのと同じキャラクターに「会える」。しかも彼は自分の投稿や過去の出来事を覚えている。この記事は、その設計から、自律運用の開始（Phase 3まで）の記録です。測定結果の最終報告は運用データを貯めたあと、Phase 4で別記事にします。まだ測って...",
+    "url": "https://zenn.dev/joe_wolf_woof/articles/9195dea917ba47",
+    "published_at": "2026-11-13T14:48:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "重みの0.05%を消すだけでファインチューニング相当? Deletion Tuningの公開マスクを実際に適用してみた",
+    "summary": "この記事で試したこと\nNeurIPS 2026に採択された論文「The Surprising Effectiveness of Deleting Weights in LLM Post-Training」(arXiv:2611.10866、Hugging Face Daily Papers)は、事前学習済みLLMのTransformerブロックのgate projection上にバイナリマスクを学習し、全体の0.05%未満の重みを0にするだけで、強化学習(RLVR)・SFT・on-policy distillationにおいてフルファインチューニングと同等の性能になると報告している手...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-045-deletion-tuning-mask-verification",
+    "published_at": "2026-11-13T14:27:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに脆弱性情報を巡回させたら「取得OK」が信用できなかった話",
+    "summary": "この記事について\n前回の記事では、AIに1日3回、脆弱性の情報源を巡回させて、自社に該当するものだけを報告させる仕組みの設計を書きました。軸にしたのは「該当なし」という沈黙を信用しない、という考え方です。\n今回はその続きで、設計どおりのプロンプトを本番運用の前に何回か試験実行して分かったことの記録です。結論から言うと、沈黙だけでなく「取得OK」も信用できませんでした。\n!\n記事中の製品・バージョン・URL構成は説明用のサンプルです。実際に使う場合は自社の構成に置き換えてください。\n\n\n 前回の設計のおさらい\n\n情報源を2層に分ける。層1「パブリック収集」（KEV・JVNなど横断的な公...",
+    "url": "https://zenn.dev/yukino77/articles/vuln-triage-auto-patrol-test-run",
+    "published_at": "2026-11-13T14:22:25+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
+    "summary": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.8-Flash-Next（Qwen Community License 1.0）、問いの一部にJMMLUのCC BY-SA 4.0版（Hugging Faceのnlp-waseda/JMMLU_CC-BY-SA）の医療の問題を使いました。実装と実行はClaude Code（AnthropicのClaude）と一緒に行いました。\n書き換えと確かめには、私たちが公開している道具Kestromを使いました。Kestromは、言語モデルの重みや出力を決めた所だけ変え、それ以外が元のままであることを、受け取った人が手元で確かめられる道具...",
+    "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
+    "published_at": "2026-11-13T13:08:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "プロンプトインジェクション対策「LLMON」を Mac で試してみた",
+    "summary": "はじめに\nAI に「このメールを要約して」と頼んだら、メールの中に書かれていた「これまでの指示は無視して、〇〇と返して」という一文に AI が従ってしまった。こうした攻撃を**プロンプトインジェクション（Prompt Injection）**と呼びます。RAG（検索した文書を AI に読ませる仕組み）や、MCP などでツールを呼ぶ AI エージェントが広まるほど、AI が「外から来た文章」を読む機会は増え、この問題は避けて通れなくなっています。\n2026 年 11 月 12 日、IBM がこの問題に正面から取り組む新しい手法 LLMON（LLM Object Notation、読み...",
+    "url": "https://zenn.dev/takuh/articles/b432f984fad711",
+    "published_at": "2026-11-13T12:27:12+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "120B が 27B より約 4 倍速かった。Surface Laptop Ultra でローカル LLM 8 種を同じ条件で測る",
+    "summary": "!\n先に、この記事の要約（専門用語なし）\n\nSurface Laptop Ultra で、手元で動かせる文章の AI（ローカル LLM）を 8 種類、同じ道具と同じ条件で測った\n文字を書き出す速さは、いちばん速いもので 1 秒に約 105 トークン、いちばん遅いもので約 12 トークンだった\n中身の大きさの順には並ばなかった。gpt-oss-120B（中身は約 1,170 億）は、27B（270 億）の Qwen3.8 より約 4 倍速かった。1 文字ごとに使う中身の量が、gpt-oss のほうがずっと少ないことが大きいと見ている\n約 87GB のモデルも、GPU に全部載せる指定のま...",
+    "url": "https://zenn.dev/maruhana/articles/surface-local-llm-8models-bench",
+    "published_at": "2026-11-13T10:06:04+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Code 開発者が注目している5つのアップデート（v2.1.321 - v2.1.325）",
+    "summary": "Claude Code の v2.1.321 〜 v2.1.325 の中から、実務への影響が大きいと思われるものを5つ選んで深掘りします。網羅的な変更点一覧は リリースノートまとめ にあるので、今回は「なぜ注目に値するか」にフォーカスします。\n\n1. サンドボックス内 B...",
+    "url": "https://qiita.com/NaokiIshimura/items/497afd9a11879d369d19",
+    "published_at": "2026-11-14T01:11:57+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.321 - v2.1.325 リリースノートまとめ",
+    "summary": "Claude Code v2.1.321〜v2.1.325 では、新しいデフォルト Fable モデル Claude Fable 5.2 の追加、Claude がツールを JavaScript で呼び出す実験的な Code Mode、プラグインの engines[\"clau...",
+    "url": "https://qiita.com/NaokiIshimura/items/59520039c1504a84cf89",
+    "published_at": "2026-11-14T01:11:01+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年11月14日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\n【AWS】AWS EmulatorでCDK/T...",
+    "url": "https://qiita.com/ennagara128/items/d9fa6da5a42bf05867a3",
+    "published_at": "2026-11-14T01:01:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI に Pyxel 3 の 3D（pyxel.cube）を作らせてわかったこと ── ハマりどころの予防・検証ループ・3D素材の作り方",
+    "summary": "Pyxel 3.0 でソフトウェア 3D 機能 pyxel.cube が入りました。AI エージェント向けの公式 MCP サーバー pyxel-mcp も、1.4.0（2026-11-12）で Pyxel 3 と pyxel.cube に対応しました（エージェント用のスキル...",
+    "url": "https://qiita.com/haruka_apps/items/5f376546737fbb37ad89",
+    "published_at": "2026-11-14T00:51:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+    "summary": "Jensen Huang likely left Nvidia more because of risky business practices than anything else, a Wall Street Journal report suggests. At the very least, those practices made him enemies internally. The company offered cloud providers billions in financial guarantees for chip purchases, including a pla",
+    "url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+    "published_at": "2026-11-13T20:07:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI rebuilt AI shopping from scratch with ChatGPT Wallet",
+    "summary": "OpenAI is taking a second shot at AI-powered shopping with ChatGPT Wallet after scrapping its first approach, Instant Checkout. Users register a card once and confirm each purchase through Face ID or a fingerprint, while actual card details stay hidden behind payment tokens. Rivals such as Anthropic",
+    "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/",
+    "published_at": "2026-11-13T18:55:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Banks bar Chinese and Hong Kong investors from Anthropic IPO over US export controls",
+    "summary": "Chinese investors are shut out of Anthropic's IPO, Bloomberg reports. Banks are rejecting buy orders from mainland China and Hong Kong, citing U.S. export control rules known as ITAR. Similar restrictions applied during SpaceX's IPO, and Anthropic's products aren't available in either region anyway.",
+    "url": "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/",
+    "published_at": "2026-11-13T18:01:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
+    "summary": "Anthropic's new Claude for Manufacturing plugin connects the AI directly to Autodesk Fusion, Oracle NetSuite, and Infor. Its 17 specialized skills let the AI draft quotes, compare suppliers, and place backup orders when deliveries are delayed, all after human approval. The plugin doesn't control phy",
+    "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
+    "published_at": "2026-11-13T16:37:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nearly 70 percent of US agencies use generative AI, and unions are finally catching up with guardrails",
+    "summary": "US public-sector unions are increasingly pushing through protections against AI surveillance and automated firings. In Oakland, a strike vote forced retraining programs instead of layoffs, and a transport union in Ohio won veto power over autonomous vehicles. California banned so-called bossware. Al",
+    "url": "https://the-decoder.com/nearly-70-percent-of-us-agencies-use-generative-ai-and-unions-are-finally-catching-up-with-guardrails/",
+    "published_at": "2026-11-13T15:53:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
+    "summary": "Former OpenAI researcher Will DePue says he has produced the first technical evidence that DeepSeek, Moonshot AI, MiniMax, and Ant Group are using Nvidia's latest Blackwell GPUs despite US export controls. His forensic method reads characteristic chip signatures directly from published model weights",
+    "url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
+    "published_at": "2026-11-13T15:21:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's IPO is six times oversubscribed and on track to become the largest public offering in history",
+    "summary": "Anthropic is on track for the largest IPO ever, with orders exceeding available shares by a factor of six. The article Anthropic's IPO is six times oversubscribed and on track to become the largest public offering in history appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
+    "published_at": "2026-11-13T15:15:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's Muse now calls businesses for you, but many companies might just hang up on the AI",
+    "summary": "Meta's AI agent Muse can now call businesses on behalf of paying US subscribers, handling everything from cable providers to restaurants. The agent already has over 10 million users, according to Meta's AI chief Alexandr Wang. Google Gemini, Instinct, and xAI's Grok Bot offer the same feature, but m",
+    "url": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
+    "published_at": "2026-11-13T15:12:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI enters the cybersecurity market with two Daybreak products",
+    "summary": "OpenAI has launched two security products under its Daybreak brand. The article OpenAI enters the cybersecurity market with two Daybreak products appeared first on The Decoder .",
+    "url": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
+    "published_at": "2026-11-13T15:08:57+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude Meetings lets Anthropic's AI join your video calls",
+    "summary": "Anthropic is adding Claude directly to video calls. Claude Meetings joins Google Meet sessions and creates documents, whiteboards, and meeting notes in real time. The feature launches in beta for Team and Enterprise plans, with more platforms coming later. The article Claude Meetings lets Anthropic'",
+    "url": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/",
+    "published_at": "2026-11-12T20:26:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft’s massive Outlook outage collides with bad optics—from layoffs and buyouts to confusing updates",
+    "summary": "If you’ve checked Outlook email today only to find it unresponsive, you’re in good company. Millions of people worldwide are waking up to find that, for a second day, Microsoft’s email platform and many of its other online services are still down. Here’s the latest on what you need to know about the",
+    "url": "https://www.fastcompany.com/91641977/microsoft-outlook-outage-bad-optics-with-layoffs-buyouts-updates",
+    "published_at": "2026-11-13T13:13:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DeepMind AlphaGenome 2 Replicates 18 Months of Work in 30 Mins",
+    "summary": "AI’s influence on academia is growing, but not without complications. Some journals have been caught publishing AI-generated papers under the names of respected academics without their consent, raising serious ethical concerns. In one case, a professor’s name was removed from a fraudulent paper, onl",
+    "url": "https://www.geeky-gadgets.com/data-analysis/",
+    "published_at": "2026-11-13T13:13:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "'Give Grok Your Most Laborious Tasks': Elon Musk Challenges ChatGPT With Deeper Apple and Microsoft Integrations",
+    "summary": "Elon Musk promotes Grok Bot as it expands Mac integrations and introduces AI teammates for Slack, Microsoft Teams and video meetings.",
+    "url": "https://www.ibtimes.sg/give-grok-your-most-laborious-tasks-elon-musk-challenges-chatgpt-deeper-apple-microsoft-96206",
+    "published_at": "2026-11-13T13:12:35+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Tesla (NASDAQ:TSLA) Stock Keeps Sell Rating at Glj Research",
+    "summary": "Glj Research reiterated a \"sell\" rating and issued a $24.86 target price on shares of Tesla in a research note on Friday.",
+    "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-stock-keeps-sell-rating-at-glj-research-2026-11-13/",
+    "published_at": "2026-11-13T13:12:35+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Lutnick questioned over response to concerns about Nvidia customer",
+    "summary": "A classified memo reportedly raised concerns about Megaspeed, a Singapore-based company suspected of helping route advanced chips to China.",
+    "url": "https://dailynewsen.com/news/lutnick-nvidia-china-probe",
+    "published_at": "2026-11-13T13:12:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Arrive AI Reports Third Quarter 2026 Results Highlighted by Revenue Growth and Expanded Partnerships",
+    "summary": "Expanded Hancock deployment drives fivefold Q3 2026 revenue growth as AP3 Plus becomes available and new partnerships extend into manufacturing, pharmacy and drone delivery",
+    "url": "https://www.joplinglobe.com/region/arrive-ai-reports-third-quarter-2026-results-highlighted-by-revenue-growth-and-expanded-partnerships/article_46449594-9706-5946-9809-b62a68e82cae.html",
+    "published_at": "2026-11-13T13:11:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Spotify's Ringer podcast network dropped its ChatGPT deal after fan backlash",
+    "summary": "Bill Simmons said the AI segments on a couple of Ringer shows were not a fit because the audience did not like them",
+    "url": "https://qz.com/ringer-chatgpt-partnership-canceled-fan-backlash-111326",
+    "published_at": "2026-11-13T13:10:23+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Adobe's Black Friday Deals Deliver Creative Cloud Pro and More for Up To 60% Off",
+    "summary": "The industry-standard software for graphics, video editing, animation, AI, and more can all be yours at a massive discount, but act fast, because this deal won't last.",
+    "url": "https://www.pcmag.com/deals/adobes-black-friday-deals-deliver-creative-cloud-pro-more-nov-13",
+    "published_at": "2026-11-13T13:10:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nanox Announces Distribution Agreement with Medworks for Nanox.AI in Greece",
+    "summary": "Building on Nanox.AI's existing deployment in Athens, the agreement supports commercial expansion in Greece through Medworks ' established market presence.",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-13-nanox-announces-distribution-agreement-with-medworks-for-nanoxai-in-greece",
+    "published_at": "2026-11-13T13:10:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Download: Silicon Valley’s blind spot and Nvidia’s chip-tracking plan",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Silicon Valley claims to know the future. So why did it get the midterms so wrong? —Aaron Zamost, a tech communications consultant and a former executive at Squar",
+    "url": "https://www.technologyreview.com/2026/11/13/1148551/the-download-silicon-valley-midterms-nvidia-chip-tracking/",
+    "published_at": "2026-11-13T13:10:00+00:00",
+    "source": "newsdata"
+  }
+]
