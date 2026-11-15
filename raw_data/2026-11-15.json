@@ -1,0 +1,303 @@
+[
+  {
+    "title": "GPTBotは0回、OAI-SearchBotは4,847回。AIクローラーを30日間観測して分かったこと",
+    "summary": "自分のサイトに、AIのBotはどのくらい来ているのか。\nリモノア（https://rimonoa.jp/）でHTTPリクエストを記録してみると、ある30日集計ではOAI-SearchBotが4,847件、GPTBotが0件でした。同じOpenAI系の名前でも、数字は大きく違います。\nところが、内訳を見ていくと「たくさん来た＝広く読んだ」とも、「GPTBotが来ない＝学習利用もない」とも言えないことが分かります。さらに、自分でAIにサイトを確認させた取得を、外部からの需要に混ぜない工夫も必要でした。\nこの記事では、リモノアの運営側として、観測で見えた3つのこと、数字を読むときの区別、公開...",
+    "url": "https://zenn.dev/rimonoa/articles/8974167fe581c2",
+    "published_at": "2026-11-14T17:33:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeに「公開」を押させない：CLAUDE.mdに書く「外に出す操作」の決まり5行",
+    "summary": "この記事でやること\nClaude Code は、頼まれれば公開に近い操作もそのまま行うことがあります。筆者が決まりを置かずに「article.md の published を true に」と頼んだときは、その場で書き換えられました（下の「比べる」の節）。「書いて、できたら公開して」のようにまとめて頼むときも、書くところまでで止まってほしいはずです。公開や送信は、押したあとに自分だけでは取り消せないことがあります。\nこの記事では、CLAUDE.md に5行の決まりを書いて、次の3つを Claude Code に守らせます。\n\n公開・投稿・送信などの「外に出す操作」は、頼まれてもしない...",
+    "url": "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
+    "published_at": "2026-11-14T17:08:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【初投稿】僕の個人ウェブサイトを公開しました🌟",
+    "summary": "はじめに\nはじめまして、Kagami といいます。\n僕はこれまでネットはただ見るだけでした。人の記事に助けられたり、個人サイトを眺めて「いいな」と思うだけで、自分から何かを発信することはほとんどなかったです。\nでも今回、初めて自分で発信してみようと思ったのがきっかけで、個人サイトを作ってみました。\nhttps://kagam.io\nこのサイトについて、どんなものか、どうやって作ったのか、軽く紹介します。\n※この記事は、一部AIを使用して文章の推敲・校正を行っています。\n\n どんなサイト？\nサイトのテーマは、ドット絵で描かれた夕暮れの海です。\n\nページ内のアニメーションは、ぬるぬる動く...",
+    "url": "https://zenn.dev/kagam_io/articles/7bb21a81e14830",
+    "published_at": "2026-11-14T16:38:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Does a “no-limit” image to video AI page mean unlimited free generatio",
+    "summary": "No. The “no-limit” in the image to video AI URL is not evidence of unlimited free generations. You can upload a photo and write a prompt without an account, and some models include one free attempt, but later generations use credits, and the price is shown before you generate.\nThis is the right q...",
+    "url": "https://zenn.dev/sarabuilds/articles/2b106365722f4d",
+    "published_at": "2026-11-14T16:34:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ClaudeはSAPの「外側」を取りに来た――SheetsとDataが示す、Jouleとの境界線",
+    "summary": "私は2003年から、SAPの導入と運用、開発の現場にいます。その間ずっと見てきた光景があります。SAPの中で作られた数字は、最後は必ずExcelに出ていく、という光景です。\n月次決算の集計、原価の内訳、在庫の推移。\n画面の中で確定したはずの数字が、表計算に書き出され、寄せ集められ、グラフになり、会議資料になって、ようやく「仕事の数字」になる。\n私自身、その書き出しと寄せ集めを山ほどやってきました。\nプロジェクトの立場から「なぜSAPの中で完結しないのか」と問われ続けたことも、一度や二度ではありません。\n現場の「最後の1マイル」は、ずっと表計算ソフトの側にあったのです。\n2026年11月1...",
+    "url": "https://zenn.dev/dantarg/articles/claude-sheets-data-outside-sap",
+    "published_at": "2026-11-14T16:12:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ACPを捨てて作り直した ― 他人のAIエージェントに仕事を頼む『sealbridge』をnpm公開した",
+    "summary": "はじめに\n以前、他人のClaude CodeやCodexにAPIキーを渡さず仕事を委譲するゼロトラスト基盤「ACP」をOSS公開した という記事を書きました。\nあれから開発を進める中で、設計も配布形態も大きく作り直すことになり、後継を sealbridge として公開し直しました。ACPの開発は終了し、リポジトリはそのまま sealbridge に改名して、後継の開発リポジトリになっています（旧URLからも転送されます）。この記事では、sealbridgeで何ができるか、ACPから何を変えたか、そして実際に「他人のエージェント」へ仕事を投げて完走した記録を紹介します。\n\nGitHub...",
+    "url": "https://zenn.dev/acidnyan/articles/5b7c443f14ff89",
+    "published_at": "2026-11-14T15:34:56+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "サンドボックスが消えたらエージェントを起動しない：bubblewrap を起動直前に検証・復旧する fail-closed ガード",
+    "summary": "この記事の結論\nAI エージェントの CLI を bubblewrap（bwrap）のサンドボックス付きで常時動かしていたところ、VM が入れ替わるたびに /usr/bin/bwrap そのものが消える障害が、数日のうちに6回起きました。apt で入れ直すと約13分かかり、その間エージェントは使えません。\nそこで、エージェントを起動する直前に毎回 bwrap を検証し、壊れていれば手元の退避コピーから戻し、戻せなければ起動しない仕組み（以下 bwrap-guard）を作りました。導入後に保証されるようになったのは次の3点です。\n\nエージェントは「本物で、実際に隔離が効く」と確認できた...",
+    "url": "https://zenn.dev/coastlinedb/articles/a8111256ac5469",
+    "published_at": "2026-11-14T15:09:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI駆動開発をやってきて最近思うこと",
+    "summary": "はじめに\n現場でAI駆動開発（以下、AIDD）に取り組んできて、最近思うことを何となく記事にしてみたくなったので書いてみます！\n始めた頃は設計書や規約を整えれば、AIが意図どおりに作ってくれると思っていました。最近は実装を頼む前に「できあがったものを見て、何を根拠に合格とするか」まで決めるようにしています。注文が0件のときに何を表示するか。全ページをたどったときに、注文が漏れなく一度ずつ出るか。こういう条件を書いてみると、AIに伝える以前に、チームで決めていなかったことが見つかりました。\nこの記事ではAIに渡すものを2つに分けて呼びます。in（input）は設計書、規約、意図の説明の...",
+    "url": "https://zenn.dev/revo1290/articles/aidd-in-and-out",
+    "published_at": "2026-11-14T14:36:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIを動かしていると、/tmpがメモリを食べる",
+    "summary": "この記事の要点\nAIエージェントを長く動かしていたLinuxマシンで、swap使用率が約98%になりました。調べると、tmpfsでマウントされた/tmpに、約7.5 GiBの作業ファイルが溜まっていました。AIに開発作業を任せる中でできたファイルです。\ntmpfs上のファイルはRAMとswapを使います。この蓄積がブラウザや開発ツールのメモリ使用と重なったことが、圧迫の大きな要因だったと見ています。古い作業ファイルをSSDへ退避すると/tmpは約1.8 GiBに減り、そのあとのswapリセットも成功しました。\nAIを長く動かす使い方そのものが、この状態を作りやすいと考えています。同じ...",
+    "url": "https://zenn.dev/ultrasupara/articles/d75079e0d27287",
+    "published_at": "2026-11-14T14:32:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "locally-uncensoredのコーディングエージェントを3B/7B/14Bで試したら、直せたのは14Bだけだった",
+    "summary": "これは何を試した記事か\nPurpleDoubleD/locally-uncensored(AGPL-3.0-only)は、チャット・画像生成・動画生成・コーディングエージェントを1つのデスクトップアプリにまとめ、ローカルで完結させることを目指したOSSである。\nGitHub Trending(TypeScript)で1日に200star以上を集めていた。\n名前の「uncensored」は、安全性のための拒否応答を外したモデル(abliteratedモデル)を推奨モデルとして案内していることに由来する。\n本記事ではその点は主役にせず、「ローカルLLMだけでチャットとコーディングエージェ...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-046-locally-uncensored-coding-agent-model-size",
+    "published_at": "2026-11-14T14:27:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "96GBのミニPCで大規模MoEを動かしてみた — Radeon 890MとStrataの試行錯誤",
+    "summary": "はじめに\n手元のミニPCで、大規模なMoEモデルを動かしてみました。\n使ったのはMINISFORUM AI X1 Pro。Ryzen AI 9 HX 370、Radeon 890M、メモリ96GBという構成です。\nもともとはllama.cppを使ってローカルLLMを動かしていましたが、もう少し大きなモデルを動かしてみたくなり、Strataという推論エンジンを試してみました。\n結果として、Qwen3.8-Flash-NextのIQ3_XXS量子化版をRadeon 890Mで動かすことに成功しました。decodeはおおむね14〜16 tok/s。条件によっては23 tok/s程度まで出て...",
+    "url": "https://zenn.dev/masahito/articles/4e5af1d32cb2dc",
+    "published_at": "2026-11-14T18:13:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「もうちょっと、ここで朝日を浴びときたいわ」を残す介護記録",
+    "summary": "介護の仕事をしていると、予定の時刻に声をかけても、ご本人にはご本人のタイミングがあるんよね。いったん見送ったとき、次の職員には「いつ、もう一度お誘いするか」が伝わってほしい。個別の介護日報には、ご本人がどう過ごしたかったかも残しておきたい。\nそこで、ひとつのケア記録を、朝の申し送りと個別の日報に使うPythonのデモを作りました。場面と会話は、介護現場での経験を踏まえて新しく作った架空の例です。\n\n 同じ記録を二つの形で読む\npython3 moushiokuri.py --daily-demo\n朝のサマリーには、「次の確認」が記録されている行が出ます。\n\n06:05 洗面へお誘いした。...",
+    "url": "https://zenn.dev/pomodoro_naomi/articles/7b08172f57616a",
+    "published_at": "2026-11-14T17:20:02+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMに抽象語は通じない（開発ログ05）",
+    "summary": "結論から\nローカルLLMだけでTRPGを回すエンジンを作っている。ここまでの開発ログで、設計・章の潰れ方・伏線の回収漏れ・遊ぶ目的の欠落について書いてきた。\n今回はプロンプトの話である。シリーズを通して一番しつこく足を引っ張ったのが、クラウドの大きいモデルなら通る書き方が、手元の小型モデルではまったく通らないという壁だった。\n結論だけ先に書くと、効いたのは2つである。基準を抽象語で書かず、具体的な動詞を並べること。 そして、やってほしくない出力を名指しで禁止することだ。「〜せよ」と書くだけでは、モデルは指示を守ったまま何も起こさない無難な出力へ逃げる。\n同じ意味の指示を抽象語版と具体...",
+    "url": "https://zenn.dev/ace_toshi/articles/trpg-local-devlog-05",
+    "published_at": "2026-11-14T14:43:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claudeとの会話で終わらせない。図解メモをGitHub Pagesに貯めるMemoKitを作った話",
+    "summary": "この記事で伝えたいこと\n\n今回作成したClaudeに作ってもらった解説や図解を、GitHub Pagesに貯めていくためのキット「MemoKit」を紹介します\n実際に使ってみてハマったところ（デザインの統一、レビューやファクトチェック）も正直に書きます\n読み終えると、Claudeを使って技術メモやナレッジを貯めていくやり方の一例がわかります\n\n\n 対象読者\n\nGitHubとClaudeをある程度使える人\n基礎知識のキャッチアップに苦労している人\nAIに質問しても、その場で終わってしまい次に活かせていない人（あるいは聞いたこと自体を忘れてしまう人）\n\n\n 背景・課題\nClaudeに気に...",
+    "url": "https://zenn.dev/taka1156/articles/52dffc3bcf00a9",
+    "published_at": "2026-11-14T14:12:32+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【世界初】QCS6490初のGenAI実測を取るまで：公式スクリプトのバグと4つの行き止まり",
+    "summary": "QCS6490という産業向けチップで、小型LLMがどれくらい速いのか。公式にも第三者にも数字がなかったので、Qwen3-0.6Bで測ってみた。結論から書くと、Prefill 1,555 tok/s、Decode 24.6 tok/s（w4a16、コンテキスト512、Dragonwing RB3 Gen 2実機）。ただし、ここに辿り着くまでが本題である。\n\n 行き止まりの記録\n\n公式exportのダウンローダが0バイトのまま15分固まる。手動で取り直したら、展開先のtmpfsが溢れて死ぬ。\nコンパイルが「--output_names is not supported for AIMET O...",
+    "url": "https://zenn.dev/anguoyang/articles/894669defe7a80",
+    "published_at": "2026-11-14T13:56:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（11/7〜11/13）",
+    "summary": "はじめに\nローカルLLMとAIコーディングツールの1週間分の更新を、使い始めた立場で整理しています。\n今週は Open WebUI に、セキュリティ修正・DBのマイグレーション・既定値の変更がまとめて入りました。\n対象期間は 2026年11月7日（土）〜11月13日（金）（日本時間）です。\n\n 今週のハイライト\n\nOpen WebUI 0.13.1〜0.13.3：セキュリティ修正とDBのマイグレーションを含むため、バックアップしてから上げます。検索の既定値と添付ファイルの扱いも変わりました。\nOllama 0.40.16：内部の llama.cpp が b12177 に更新されました...",
+    "url": "https://zenn.dev/girigiri_se/articles/8c2426ad062e32",
+    "published_at": "2026-11-14T13:50:41+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "20年分の自分の文章に答えさせるRAGを8GBのMacで動かしている。128GBあったら何を手元に戻すか",
+    "summary": "台湾・台北で開発をしている Saomin です。薩摩創意（Satsuma Creative）という小さな会社をやっています。\n個人のプロジェクトとして、自分が20年以上書いてきた文章を読ませて、自分の考え方や口調を反映して答えるチャットを動かしています（saomin.tw/me、本体は中国語・繁体字です）。\n構成は最初からハイブリッドです。検索は手元の Mac、文章の生成はクラウド。ただし、これは設計の理想形ではなく、メモリ 8GB の Mac mini で動かすための妥協の結果です。\nこの記事では、今の構成と妥協した点を先に書き、そのうえで「Surface Laptop Ultra が...",
+    "url": "https://zenn.dev/satsumacreative/articles/76c3c7ffe380de",
+    "published_at": "2026-11-14T13:22:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "HP Z440とTesla V100 32GB、約18万円で始めるローカルLLM",
+    "summary": "本記事はTesla V100などのGPUを使ってローカルLLMを安価にやりたいという人のためのガイドです。これから購入して試したいけど不安という人のために参考になればと思います。\n方針としてはできるだけ簡単かつ安価にそこそこ動くローカルLLMマシンを作ることです。\n\n 結論\nZ440という中古のワークステーションとV100 32GB PCIeを使って実現します。Z440はやや古いものの安価に購入できて、自宅などに置くには無理のない大きさです。\n\n 買うもの\n\n 検討する構成\nまずはZ440を中古で買います。Yahoo!オークションで2万円〜5万円ぐらいでかえます。\n\n\n\n部品\n選ぶ仕様・...",
+    "url": "https://zenn.dev/phpmyadmin/articles/hp-z440-v100-local-llm",
+    "published_at": "2026-11-14T12:43:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なんかいい感じにぱぱっと時短で LLM の蒸留とか RL とかやりたいメモ(2026/11)",
+    "summary": "LLMの蒸留・RLを低計算コストで行う最新研究\n調査基準：2026年11月14日｜2025〜2026年の論文・GitHub実装を中心\n最近の研究では、従来の「大量の教師データを生成してSFT」「多数のrolloutを生成してGRPO」という方法から、重みを直接操作する、モデル間で重み更新を転写する、学習に有効なrolloutだけを使う、推論中の学生モデルに教師がフィードバックする方向へ進んでいます。\n特に興味深いのが、2026年11月に登場した Weight-Space Programming です。これは大規模LLMを使って別のモデルの内部を分析し、勾配計算なしで重みを直接書き換え...",
+    "url": "https://zenn.dev/syoyo/articles/a1333865f774d3",
+    "published_at": "2026-11-14T12:34:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "01Routerで動画・画像・音声・テキスト生成APIを1つのキーにまとめる",
+    "summary": "01Routerとは\n01Router は、動画・画像・テキスト・音声のAIモデルを1つのAPIキーで利用できるサービスです。Web Studioで生成を試せるほか、アプリケーションから動画・画像生成APIとして組み込めます。\n\nモデルとプロバイダーを選ぶ\n用途に応じてモ...",
+    "url": "https://qiita.com/paidx2006/items/ad03cd0d5aab5e7c8ada",
+    "published_at": "2026-11-15T00:34:36+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Happy Wan の制作機能 6 選：言葉と画像から動きのある物語へ",
+    "summary": "AI 動画に何を任せられるかは、機能の一覧を見ればわかります。Happy Wan には、物語づくりに使える機能が 6 つそろっています。9 月 22 日、上海証券報の楊翔菲記者は雲栖大会の報道で、アリババ関係者の話として、次世代動画モデルを 11 月に発表し、単一のショッ...",
+    "url": "https://qiita.com/yoxi957/items/0d14324e1e388221cf5d",
+    "published_at": "2026-11-15T00:30:26+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "経済産業省BtoB-EC調査、2025年のEC化率45.9%。仕入先への発注業務がまだ電話・FAXなら整えたい発注管理の3ステップ｜見積書・納品書の手入力をなくす",
+    "summary": "経済産業省BtoB-EC調査、2025年のEC化率45.9%。仕入先への発注業務がまだ電話・FAXなら整えたい発注管理の3ステップ｜見積書・納品書の手入力をなくす\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初...",
+    "url": "https://qiita.com/DnD-inc/items/8aacbfa5bb80f498375f",
+    "published_at": "2026-11-15T00:20:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.325 セキュリティ修正の内容（2026年）",
+    "summary": "この記事で分かること：Claude Code v2.1.325 のセキュリティ修正とは何か。企業・チームで使っている場合に今日確認すべき変更点。MCP・認証・セッション関連の修正の詳細。\n\n2026年11月14日、Claude Code v2.1.325 がリリースされた...",
+    "url": "https://qiita.com/Sidejob/items/27fe982bf44cb9807aa5",
+    "published_at": "2026-11-14T23:45:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+    "summary": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces. Anthropic's commitments now total nearly $901 billion, and it's still far from clear whether future revenue will justify those costs. The planned I",
+    "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+    "published_at": "2026-11-14T19:05:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+    "summary": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The articl",
+    "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+    "published_at": "2026-11-14T16:48:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+    "summary": "Anthropic has made Claude Opus 5.5 the default model on all paid plans and published a guide that does away with old prompting habits. The main takeaway is to drop \"think hard\" and start at Medium effort. The article Anthropic says outdated prompting habits are slowing down Claude Opus 5.5 appeared ",
+    "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+    "published_at": "2026-11-14T16:42:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
+    "summary": "OpenAI is dissolving its standalone robotics team for the second time, but not because it lacks data. General-purpose models like GPT-6 Astra can apparently control robots directly, making a dedicated unit unnecessary. The researchers are being redistributed across other teams in what the company fr",
+    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+    "published_at": "2026-11-14T11:40:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
+    "summary": "Former OpenAI and Anthropic researcher Jacob Coxon points to a slide from Anthropic's IPO roadshow as a reason he left, saying it shows the company's algorithms are improving not just quickly but at an accelerating rate. Coxon continues to call for a pause on frontier model development so competitor",
+    "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+    "published_at": "2026-11-14T11:21:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
+    "summary": "Runway releases its robotics model Praxis-1 with open weights and source code under the Apache 2.0 license. The model uses knowledge from video training for robot control and leads the World Action Model category on Nvidia's RoboLab-120 benchmark. It can't yet plan complex action sequences on its ow",
+    "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+    "published_at": "2026-11-14T09:45:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+    "summary": "Jensen Huang likely left Nvidia more because of risky business practices than anything else, a Wall Street Journal report suggests. At the very least, those practices made him enemies internally. The company offered cloud providers billions in financial guarantees for chip purchases, including a pla",
+    "url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+    "published_at": "2026-11-13T20:07:34+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI rebuilt AI shopping from scratch with ChatGPT Wallet",
+    "summary": "OpenAI is taking a second shot at AI-powered shopping with ChatGPT Wallet after scrapping its first approach, Instant Checkout. Users register a card once and confirm each purchase through Face ID or a fingerprint, while actual card details stay hidden behind payment tokens. Rivals such as Anthropic",
+    "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/",
+    "published_at": "2026-11-13T18:55:21+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Banks bar Chinese and Hong Kong investors from Anthropic IPO over US export controls",
+    "summary": "Chinese investors are shut out of Anthropic's IPO, Bloomberg reports. Banks are rejecting buy orders from mainland China and Hong Kong, citing U.S. export control rules known as ITAR. Similar restrictions applied during SpaceX's IPO, and Anthropic's products aren't available in either region anyway.",
+    "url": "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/",
+    "published_at": "2026-11-13T18:01:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
+    "summary": "Anthropic's new Claude for Manufacturing plugin connects the AI directly to Autodesk Fusion, Oracle NetSuite, and Infor. Its 17 specialized skills let the AI draft quotes, compare suppliers, and place backup orders when deliveries are delayed, all after human approval. The plugin doesn't control phy",
+    "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
+    "published_at": "2026-11-13T16:37:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI悪用の攻撃拠点、千台発見 サイトの弱点探索、不正侵入疑い",
+    "summary": "高性能な人工知能（AI）を悪用したサイバー攻撃の拠点と疑われるサーバーが10月以降、世界のインターネット上に少なくとも千台前後存在して... | 西日本新聞meは、九州のニュースを中心に最新情報を伝えるニュースサイトです。九州・福岡の社会、政治、経済などのニュースを提供します。",
+    "url": "https://www.nishinippon.co.jp/item/1560522/",
+    "published_at": "2026-11-14T12:40:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Thousands take part in huge protest against Scotland's AI data centres",
+    "summary": "AROUND 6000 protesters have marched through Edinburgh against plans for AI data centres across Scotland",
+    "url": "https://www.thenational.scot/news/26729465.6000-people-march-edinburgh-ai-data-centres/",
+    "published_at": "2026-11-14T12:38:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "株式会社ツリーベル、本社および東京事業所の麹町移転に伴い、次世代AI顔認証セキュリティシステム「FE500」「KJ3400」を導入",
+    "summary": "株式会社ツリーベル、本社および東京事業所の麹町移転に伴い、次世代AI顔認証セキュリティシステム「FE500」「KJ3400」を導入 株式会社KJ TECH japanのプレスリリース",
+    "url": "https://prtimes.jp/main/html/rd/p/000000027.000189008.html",
+    "published_at": "2026-11-14T12:37:24+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cadence Joins United States’ Genesis Mission Consortium To Advance AI-Driven Scientific Discovery",
+    "summary": "Cadence joins the Genesis Mission Consortium, a DOE public-private partnership using AI to accelerate scientific discovery and advance microelectronics innovation.",
+    "url": "https://pokde.net/system/software/ai/cadence-genesis-mission-consortium",
+    "published_at": "2026-11-14T12:37:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Perplexity brings Teammates, its AI agents feature, to Mac",
+    "summary": "Perplexity has expanded the reach of its innovative AI feature, Teammates, to Mac users.",
+    "url": "https://www.newsbytesapp.com/news/science/perplexity-s-ai-teammates-now-available-on-mac/story",
+    "published_at": "2026-11-14T12:36:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple publishes HomeView guides covering facial recognition, repairs, and troubleshooting",
+    "summary": "Apple has updated its support website with a series of detailed guides for the new product called HomeView. The aim is to help users navigate this innovative device.",
+    "url": "https://www.newsbytesapp.com/news/science/apple-updates-support-page-with-troubleshooting-tips-for-homeview/story",
+    "published_at": "2026-11-14T12:36:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Arch Systems brings full factory AI to FedRAMP High via Knox",
+    "summary": "Arch Systems' factory AI moves past the edge for defense plants, running in Knox Systems' FedRAMP High cloud with controlled data allowed in.",
+    "url": "https://www.marketscale.com/industries/industrial-iot/defense-factories-can-now-run-arch-systems-full-ai-platform-in-fedramp-high",
+    "published_at": "2026-11-14T12:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "\"That's Terrifying\": Godfather Of AI Takes 18-Month Warning To EU Leaders",
+    "summary": "\"That's Terrifying\": Godfather Of AI Takes 18-Month Warning To EU Leaders Geoffrey Hinton, the Nobel laureate known as the godfather of AI, was on the program to brief the 27 EU leaders in Dublin on Friday morning, carrying a timeline that he says scares even him: the one he now hears from Paul…",
+    "url": "https://biztoc.com/x/16751df99393a171",
+    "published_at": "2026-11-14T12:32:32+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The case of Nvidia and the growing risk of AI and corruption",
+    "summary": "In 2025, the UN Office of Drugs and Crime and the Organization of American States co-convened a panel (slideshow & video) which examined whether AI is the biggest corruption risk in history. In November 2026, the panelists’ deepest fears about the AI-corruption relationship came true, but not in…",
+    "url": "https://biztoc.com/x/3162ffaf936f755d",
+    "published_at": "2026-11-14T12:32:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Wealthy parents pay $75,000 for Alpha’s two-hour AI school day. Half of its K-8 students missed the math target",
+    "summary": "Alpha School, the network of AI-driven private schools charging parents up to $75,000 a year, has won backers from Silicon Valley to the Trump administration. Its own data show most of its students aren’t reaching the model’s central promise. Only 42% of Alpha students met the network’s goal of…",
+    "url": "https://biztoc.com/x/0114212ca06f5df4",
+    "published_at": "2026-11-14T12:32:26+00:00",
+    "source": "newsdata"
+  }
+]
