@@ -1,0 +1,289 @@
+[
+  {
+    "title": "作りながら鍛えるコードリーディング力",
+    "summary": "満たしたいこと\nAIに作らせたコードを自分が理解し、｢いいコードだ｣と銘を打つまでに時間がかかる。要はコードリーディングが遅い。効率的に読むにはどうすればいいんだろう。\n\n 自分なりの結論\n\n 前提\n\n他の人のコードを読む時は、全部を読む必要はない。構造を把握し、保守やセキュリティ的に危なそうなものを中心に見る。\n自分のコードは、各コードを説明できるようにする。\n\n\n 具体的な手順\n他の人、自分が作ったコードにかかわらず、コード読む時は以下が良さそう。\nしかし他の人のコードの場合はすべては読まず、さらに重要なポイントを押さえて読む。\nAIに作成してもらった場合も他の人に作ってもらった...",
+    "url": "https://zenn.dev/gen_tokunaga/articles/bdf9e8e0faf872",
+    "published_at": "2026-11-15T16:17:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "時事プローブと公式直結基準でAPI中継のモデル劣化を検知する",
+    "summary": "原文： Folkbench モデル劣化検知を発表：時事・モデル指紋プローブと独立公式ベースラインによる API 中継の継続検証\nモデルのリーダーボードは、公式環境での理論上限を測ります。アップタイム監視は、エンドポイントが応答するかどうかを見ます。どちらも、Claude Code や Codex からサードパーティの API 中継を使うときの中心的な問いには答えません。その経路でも、推論の深さや制約遵守、モデル固有の振る舞いが公式直結のままか、ということです。\nHTTP 200 と流暢な短文は、その保証にはなりません。思考が短いぶん、かえって速く見えることさえあります。この記事は Fo...",
+    "url": "https://zenn.dev/folkbench/articles/c90bdf45161bf2",
+    "published_at": "2026-11-15T15:46:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Fireworks AI のセキュリティインシデントについて調べてみた — 何が起き、どこに影響したのか",
+    "summary": "はじめに\n個人で Notion の Business プランを契約して、Notion AI を使っている。そのワークスペースに、Notion から「取引先の Fireworks AI で起きたセキュリティインシデントで、影響を受けたかもしれない」というメールが届いていた。自分にも影響がありそうだったので、Fireworks で何が起き、ほかにどこへ影響していそうかを調べてみることにした。\nこの記事では、Fireworks の事件の全体 (2 回の侵入、評価ジョブと鍵、ほかの影響先、同じ月に続いた事件) を、自分用のメモも兼ねてざっくりまとめる。同じ話を、約 24 分の解説動画にもした...",
+    "url": "https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident",
+    "published_at": "2026-11-15T15:23:57+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "いきなり本体を刷らない！「Pick-Up Bench」のタイヤ破損（TR-003）と検証片ルール",
+    "summary": "3Dプリンターで新しい形状やマルチカラー・専用サポート材を試すとき、最初から本体を丸ごと印刷して失敗すると、材料も時間も大きくロスしてしまいます。\nそこで NEKOMO プロジェクトでは、本体を刷る前に 底面数ミリだけを切り出した「検証片」 を先に印刷して確かめるルールを運用しています。今回は、長辺約60 mmの車モデル「Pick-Up Bench」で起きたタイヤ周辺の破損（NEKOMO-TR-003）と、検証片ルールがどう役立ったかを紹介します。\n\nプロジェクトの全データと不具合記録は、以下の GitHub リポジトリで公開しています。\nhttps://github.com/Sunwo...",
+    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-04-pickup-bench-coupon-rule",
+    "published_at": "2026-11-15T15:09:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "実機造形の壁！「サポートが外れない（TR-001）」と窓枠破損（v10）からの断面見直し",
+    "summary": "CAD画面でどれだけきれいに見えても、実際に3Dプリンターで出力してみると「支えが固くて取れない」「剥がそうとしたら部品が折れた」という壁にぶつかります。\n今回は、60mm級のバス試作で起きた 2つのリアルな失敗（v06赤タイヤ版のサポート固着と、v10の窓枠破損）と、そこから 断面図・強度計算・DRレビューのスキル を根本から見直すまでの記録をまとめました。\n\n失敗の記録や検証スクリプト、更新したDRスキルはすべて GitHub リポジトリで公開しています。\nhttps://github.com/Sunwood-ai-labs/NEKONEKO-INDUSTRIES\n\n 失敗1：サポー...",
+    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-03-bus-section-dr-and-failures",
+    "published_at": "2026-11-15T15:09:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "opencodexでAnthropic/OpenAI形式のリクエストをローカルのQwen2.5-32Bに流してみた",
+    "summary": "これは何を試した記事か\nlidge-jun/opencodex(npm: @bitkyc08/opencodex、MIT)は、OpenAI Codex・Claude Code・Claude Desktop等のコーディングエージェントと、Claude/Gemini/Grok/DeepSeek/ローカルOllama等の各モデルプロバイダーの間に立つローカルゲートウェイである。\nGitHub TrendingのTypeScript部門で1日+55starを集めていた。\n売りは、Anthropic Messages API・OpenAI Chat Completions API・OpenAI...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-047-opencodex-provider-proxy-api-translation",
+    "published_at": "2026-11-15T14:27:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ぬゆちのサクサクVibe Coding入門",
+    "summary": "AI と一緒にコードを書くための、短い入門書です。ブラウザで使える Gemini への頼み方、プロジェクトごと任せられる Claude Code の使い方、そして AI の書いたコードを確かめる方法と、守るべき注意点を4チャプターでまとめました。AI に振り回されず、AI を道具として使いこなすための本です。最終更新:2026/11/15",
+    "url": "https://zenn.dev/nuyuchi/books/nuyuchi-sakusaku-vibe-coding-intro",
+    "published_at": "2026-11-15T14:22:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AnyModelBot v0.1.38：スキルの保存とライブラリ、ボット同士の受け渡し、「わたしについて」",
+    "summary": "こんにちは。AnyModelBot の共同開発者の Malachi です。2026年11月15日に v0.1.38 を公開しました。いまダウンロードできる版はこれです。先の記事では Docker 起動や、長期記憶をディスク上の Markdown として置く話を書きました。この記事では 0.1.31 から 0.1.38 までに実際に使えるようになったこと をまとめます。変更履歴の転記ではありません。\nAnyModelBot は MIT ライセンスの、ローカル優先のエージェントです。Windows / macOS / Linux、または Docker で動きます。Modelflare のアカ...",
+    "url": "https://zenn.dev/malachi_amb/articles/41309700ac0fe0",
+    "published_at": "2026-11-15T14:10:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "サブエージェントの「すべて通りました」を、AI に確かめさせる Skill",
+    "summary": "AI エージェントは、仕事をサブエージェント（自分が立てる別の AI。以下、子）に任せられます。子は任せた側（以下、親）の会話を見ておらず、依頼文だけを読んで動き、報告だけを返します。依頼文に書かなかったことは守られず、子の「完了しました。テストはすべて通りました」は、テストを1件 skip して通したものかもしれません。delegating-work は、エージェントが仕事を任せるときに、任せるかを決め、依頼文を書き、返ってきた報告を実物で確かめるための Skill です。Skill は、エージェントが依頼に合うときに読み込む手順書（SKILL.md とその付属のファイル）のことです。...",
+    "url": "https://zenn.dev/itoken_lab/articles/delegating-work-with-without",
+    "published_at": "2026-11-15T14:01:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "/goalを使わずStopフックを自作したら、Claude Codeが止まらず使用量が増え続けた",
+    "summary": "Claude Codeを、作業が終わるまで止めないようにしたい。そう考えて、/goalを使わずStopフックを自作しました。すると、Claudeが止まらなくなりました。\n自作すれば、終わりの判定はより確かになります。しかし、「裏の仕事を待つ仕組み」を作り損ねれば、使用量が増え続けるループが起きます。\n\n フックとは何か\nフックは、Claude Codeが自走している間の決まった時点で、あらかじめ決めたスクリプトを走らせる仕組みです。Stopフックはその1つで、Claudeが返事を終えて止まろうとする時に走ります。私のStopフックは、終わりの条件を満たしていなければ、Claudeを作業へ...",
+    "url": "https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop",
+    "published_at": "2026-11-15T12:54:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIコードレビュー時代のレビューの役割分担",
+    "summary": "はじめに\n楽天の日暮です。\nAIコードレビューを運用していて、こう思ったことはありませんか。\n\n「このXXXの指摘、今回は対応しないから無視していい」\n「細かい指摘はしないでほしい」\n\nこういうとき、多くのチームは「じゃあプロンプトを変えよう」と考えます。\n「レビュー用のプロンプトに『XXXに関する指摘はしないでください』と書いておこう」\nしかし、そうやってレビューを「静かに」することは、本当にチームのためになるのでしょうか。\nこの疑問をきっかけに、AIコードレビューの文化について考え直してみました。\n\n うるさい指摘を減らすと、何を失うか\n南京大学・バイロイト大学・シンガポール経営...",
+    "url": "https://zenn.dev/rakuten_tech/articles/ai-code-review-culture-reconsidered",
+    "published_at": "2026-11-15T22:00:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "含み損15%でも「保有継続」🪜 LLMの定期判定で安全線が値下がりと一緒に下がっていた話",
+    "summary": "みなさん、こんにちは！\n「ALPHA FORGE 開発秘話」の第33話です。\n含み損は-14.8%。それでもAIの判定は、毎日「保有継続」でした。\n安全線より下には、まだ届いていないから。ただ、その安全線のほうが、値段と一緒に下へ動いていたんです🪜\n日本株のデータ分析端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は【事件簿】回。LLMに定期的な判定をさせている人に、毎回まっさらに考えるAIへ「前回の約束」をどう持たせたか、をお届けします。\n!\n【要約：この記事で伝えたいこと】\n\n保有中の判定が、毎回その時点の値段と値動き...",
+    "url": "https://zenn.dev/charge0315/articles/2e12ef4143ddd6",
+    "published_at": "2026-11-15T21:33:10+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIを業務に組み込むための基礎知識 ― RAG、評価指標、システム構成から要件定義まで",
+    "summary": "!\n本記事は、調査した内容をもとに、生成AIを多分に活用して執筆しています。\n\n「AIで何かできないか」。この一言は、いまや業種を問わず、会議室でも工場でも聞かれるようになりました。経営層は競合の動きが気になり、企画部門は成果を求められ、現場は「自分の仕事はどうなるのか」と身構える。IT企業の側でも、顧客から同じ言葉を受け取り、何を提案すればいいのかを考えることになります。\nところが、この言葉をそのまま形にしても、多くの場合うまくいきません。とりあえず作ったAIが現場で使われない。試してはみたものの、効果があったのかどうか誰にも分からない。反対に、どこにAIが使えるのか見当がつかず、何も...",
+    "url": "https://zenn.dev/inf_e/articles/ai-solution-design-overview",
+    "published_at": "2026-11-15T20:42:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIエージェントの監査ログを「エージェント自身からも」改ざん・削除できなくする設計",
+    "summary": "常駐型のAIエージェントにツール実行権限を持たせると、「何を実行したか」の記録(監査ログ)を残す設計は自然に組み込まれます。問題は、そのログの信頼性を誰が保証しているかです。多くの実装では、アクションを実行するのと同じプロセス・同じ権限がログの書き込みも担っており、ログストアへの削除・上書き権限まで同じ認証情報で持ってしまっています。これでは、バグや誤動作、あるいは侵害されたツール実行経路が「自分自身の実行記録」を消してしまえる状態になり、インシデント発生後に最も必要になる「何が起きたかを後から確実に追える」という監査ログ本来の役割が崩れます。この記事では、エージェント自身の権限から監査...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-audit-log-tamper-resistance-design",
+    "published_at": "2026-11-15T20:08:48+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "なぜ、LLM周りのPythonをRustに置き換えた方が良いと主張する人の多くは大きな勘違いをしているのか？",
+    "summary": "はじめに\n近年、プログラミング言語としてRustの評価が高まっています。C++に匹敵する実行性能を持ちながら、メモリ安全性や並行処理の安全性を言語仕様によって確保できるという特徴は、システムソフトウェアの開発において大きな魅力です。そして、生成AIの普及に伴い、LLM（大規模言語モデル）の周辺システムについても、PythonをRustに置き換えた方がよいという主張を耳にするようになりました。\n本稿が検討の対象とするのは、この主張のうち 「PythonよりRustの方が速い」という一般的な速度差だけを根拠に、LLM周辺の書き換えを勧める型の議論です。この型の議論には、どの処理にどれだけ...",
+    "url": "https://zenn.dev/pdfractal/articles/b35e1bcd993d81",
+    "published_at": "2026-11-15T17:23:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMが「眠って」重みを書き換える――Googleの論文「Language Models Need Sleep」を読み解く",
+    "summary": "自分を覚えてくれて、使うほど賢くなっていくように思えるAIエージェントを使っていると、中身の仕組みは分かっているつもりでも、ついつい、AIモデルそのものが学習しているように感じてしまいます。\nそんな中で、ふと思いました。人は当たり前のようにそれを行っていますが、生成AI、LLMにはできないんだろうか？そりゃあ、ファインチューニングとかすればできるんだろうけど、そう簡単にはいかないよな……。\nそう思っていたところに、その境界線を突破するアイデアがGoogle Researchを中心とする研究者らから出ていることを知りました。次世代のLLMに大きな期待を持ちたくなるこの論文について、内容を解...",
+    "url": "https://zenn.dev/kotakotahiro/articles/894dc35da34848",
+    "published_at": "2026-11-15T15:27:19+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Notion AI のチャットの記録が漏れた件について調べてみた — Fireworks AI の事件で、利用者が確かめること",
+    "summary": "はじめに\n個人で Notion の Business プランを契約して、Notion AI を使っている。そのワークスペースに、Notion から「取引先の Fireworks AI で起きたセキュリティインシデントで、影響を受けたかもしれない」というメールが届いていた。自分にも影響がありそうだったので、何が起きたのかを調べてみることにした。\nこの記事では、Notion AI の利用者の側から、漏れた記録に何が入っていたのか、利用者は何を確かめればよいのかを、自分用のメモも兼ねてざっくりまとめる。同じ話を、約 38 分の解説動画にもした。\nhttps://www.youtube.co...",
+    "url": "https://zenn.dev/pollenjp/articles/2026-11-14-notion-ai-fireworks-incident",
+    "published_at": "2026-11-15T15:23:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【microCMS】AIが管理している公募400件を、MCPで入稿して「締切ボード」にした",
+    "summary": "この記事は「microCMSで『つくった・試した・工夫した』をシェアしよう！ by microCMS Advent Calendar 2026」の記事です。\n\nはじめに\n大学2年の文学部生です。この秋から、賞金や賞品のつく公募（小説・エッセイ・ハッカソン・ポスターなど）に、...",
+    "url": "https://qiita.com/shotarotakakura/items/5b44be34d197c5dc381b",
+    "published_at": "2026-11-15T23:58:13+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "複数のAIエージェントに同じ仕事を取らせない ― git push を「着手の印」にするときの落とし穴2つ",
+    "summary": "はじめに\nClaude Code のセッションを何本も並べて、共有リポジトリの「受付箱」（dispatch/ フォルダに置いた依頼ファイル）から仕事を拾わせる運用をしています。30 分おきにエージェントを起こし、それぞれが「まだ誰も手を付けていない依頼」を 1 件選んで作...",
+    "url": "https://qiita.com/shotarotakakura/items/8fb8b2024c4c66a385a7",
+    "published_at": "2026-11-15T23:56:29+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが読める情報を全部記事にしてはいけない――Obsidianから公開できるナレッジだけを切り出した話",
+    "summary": "AIが読める情報を全部記事にしてはいけない――Obsidianから公開できるナレッジだけを切り出した話\n\n昨日、私は実際のObsidian VaultをAIに確認してもらい、そこに蓄積している記録からQiitaの記事を作りました。\n公開したのは、次の記事です。\nAIとの会...",
+    "url": "https://qiita.com/boraemon2000/items/9f8e4b66823c655d55e9",
+    "published_at": "2026-11-15T23:46:31+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code夜間自動実行の実費——113ターン$5.27、3つの削減策（2026年実測）",
+    "summary": "この記事の結論：Claude Codeを夜間自動実行したとき、1セッション113ターンで$5.27相当かかることが2026年9月に実測で分かった。その後、同じ作業を70〜90ターン台に削減した3つの対策を書く。\n\n対象読者\nClaude Codeを夜間バッチとして動かして...",
+    "url": "https://qiita.com/Sidejob/items/6b14e73bf8c82e69b71b",
+    "published_at": "2026-11-15T23:45:04+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them",
+    "summary": "Anthropic's Claude Fable 5.2 doesn't generate images the way other AI models do. Instead of computing pixels, the language model writes Python code that places hundreds of thousands of simulated brushstrokes on a virtual canvas, complete with bristle texture and paint application. A single photoreal",
+    "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+    "published_at": "2026-11-15T15:42:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+    "summary": "Megaspeed, the firm owned by ousted Nvidia CEO Jensen Huang's former lover Alice Huang, arranged nearly $12 billion in Nvidia chip orders for Chinese companies between 2024 and 2025, according to the WSJ. Short seller Culper Research estimates Nvidia's actual China revenue share exceeds 20 percent, ",
+    "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+    "published_at": "2026-11-15T14:45:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
+    "summary": "Australia's central bank sees early signs that AI is hitting young entry-level workers in highly exposed jobs like software development and customer service. Since ChatGPT launched, job postings and employment among 15- to 24-year-olds in those fields have dropped more sharply than among older worke",
+    "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+    "published_at": "2026-11-15T10:45:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+    "summary": "Meituan has released the weights for LongCat-2.5, a 1.6-trillion-parameter model built for AI agents and trained entirely on Chinese hardware. On Terminal Bench, it scores 88.4 points, landing just behind Claude Opus 5. The sample deployment runs on 194 Huawei Ascend chips, and Meituan makes no ment",
+    "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+    "published_at": "2026-11-15T10:06:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+    "summary": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces. Anthropic's commitments now total nearly $901 billion, and it's still far from clear whether future revenue will justify those costs. The planned I",
+    "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+    "published_at": "2026-11-14T19:05:17+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+    "summary": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The articl",
+    "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+    "published_at": "2026-11-14T16:48:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+    "summary": "Anthropic has made Claude Opus 5.5 the default model on all paid plans and published a guide that does away with old prompting habits. The main takeaway is to drop \"think hard\" and start at Medium effort. The article Anthropic says outdated prompting habits are slowing down Claude Opus 5.5 appeared ",
+    "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+    "published_at": "2026-11-14T16:42:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
+    "summary": "OpenAI is dissolving its standalone robotics team for the second time, but not because it lacks data. General-purpose models like GPT-6 Astra can apparently control robots directly, making a dedicated unit unnecessary. The researchers are being redistributed across other teams in what the company fr",
+    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+    "published_at": "2026-11-14T11:40:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
+    "summary": "Former OpenAI and Anthropic researcher Jacob Coxon points to a slide from Anthropic's IPO roadshow as a reason he left, saying it shows the company's algorithms are improving not just quickly but at an accelerating rate. Coxon continues to call for a pause on frontier model development so competitor",
+    "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+    "published_at": "2026-11-14T11:21:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
+    "summary": "Runway releases its robotics model Praxis-1 with open weights and source code under the Apache 2.0 license. The model uses knowledge from video training for robot control and leads the World Action Model category on Nvidia's RoboLab-120 benchmark. It can't yet plan complex action sequences on its ow",
+    "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+    "published_at": "2026-11-14T09:45:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "PRSI conclave explores AI’s impact on public relations, launches ‘Sentiment Lab’",
+    "summary": "A major highlight of the event was the launch of SENTIMENT LAB: Inside the AI Revolution – Redefining Public Relations, authored by PR professional Vinay Jaiswal.",
+    "url": "https://www.thestatesman.com/india/prsi-conclave-explores-ais-impact-on-public-relations-launches-sentiment-lab-1503662807.html",
+    "published_at": "2026-11-15T12:39:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "☆10歳幅☆男女28歳以上☆ミスタードーナツPARTY☆個室1対1着席会話/WhiteKey AI Matching/マッチングあり",
+    "summary": "お申し込み状況。ホワイトキーで出会おう♬。。大好評の10歳幅企画！。プライバシーに配慮した個室形 …",
+    "url": "https://machicon.jp/events/t5IVe3/",
+    "published_at": "2026-11-15T12:38:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Data centre giant defends ministerial talks after thousands join Edinburgh protest",
+    "summary": "The developer behind five Scottish AI data centre proposals admitted the sites would draw power from the national grid rather than dedicated renewables.",
+    "url": "https://www.heraldscotland.com/news/26730403.apatura-defends-talks-ministers-ai-data-centres/",
+    "published_at": "2026-11-15T12:37:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AirTrunk plans $11B data center campuses in Andhra Pradesh",
+    "summary": "AirTrunk, a data center operator backed by Blackstone, has submitted plans for two hyperscale data center campuses in Andhra Pradesh.",
+    "url": "https://www.newsbytesapp.com/news/business/blackstone-backed-firm-to-build-data-center-campuses-in-andhra-pradesh/story",
+    "published_at": "2026-11-15T12:36:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ContiSX Phone: Africa’s Only Decentralized Phone; No Network, No Problem*",
+    "summary": "Meet the ContiSX Phone, Africa’s first and only blockchain-based smartphone and operating system capable of making calls, sending messages, and transmitting video independently of centralized cellular carriers. In areas with zero cellular coverage, whether remote mining sites, offshore oil platforms",
+    "url": "https://www.tekedia.com/contisx-phone-africas-only-decentralized-phone-no-network-no-problem/",
+    "published_at": "2026-11-15T12:35:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Could everything be broken? Grounded jets, Microsoft outage, AI chaos make some wonder",
+    "summary": "MIAMI, FLORIDA – NOVEMBER 13: People wait to check in at the Iberia Airlines counter at Miami International Airport, hoping to hear about their flight after the FAA announced a nationwide ground stop on November. All flights in the United States are grounded, “due to extraordinary circumstances and ",
+    "url": "https://www.nbcnewyork.com/news/national-international/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/6572627/",
+    "published_at": "2026-11-15T12:35:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Baltimore Paratransit Riders Say New MTA App Leaves Them Stranded, Missing Care",
+    "summary": "Baltimore's Call-A-Ride users report missed rides and appointments after MTA's new app launched, with advocates demanding the old system back.",
+    "url": "https://hoodline.com/2026/11/baltimore-paratransit-riders-say-new-mta-app-leaves-them-stranded-missing-care/",
+    "published_at": "2026-11-15T12:35:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Wintoys 3.0 Lets Copilot+ PC Owners Strip Out Windows 11 AI Services, Developer Cites 6GB RAM Reclaimed - BigGo Finance",
+    "summary": "Wintoys 3.0 Lets Copilot+ PC Owners Strip Out Windows 11 AI Services, Developer Cites 6GB RAM Reclaimed BigGo Finance",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MYXhXbU1ROUFVcktZWmp3OFVSbkZqT0dfa2RIbThVVnVNcURyU2JBMnZvdlJJRzEzM3Q0dzBLRThVX2RrWmdyRjBNc0N2dFJaWjVzT3c4S0xQdG1ZMlJjZm1qeDkyTlZtMUJ4VDgyX1BHdGQ1Mmc?oc=5",
+    "published_at": "2026-11-15T12:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Should politicians use AI for speeches as Andy Burnham exposed over ChatGPT ‘sham’?",
+    "summary": "A No.10 aide was caught using the AI bot for one of the Prime Minister's recent speeches.",
+    "url": "https://www.express.co.uk/news/uk/2266334/politicians-ai-speeches-andy-burnham-chatgpt",
+    "published_at": "2026-11-15T12:35:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How Will AI Affect Open Source Development?",
+    "summary": "This week the Linux Foundation's Open Source Security Foundation (OpenSSF) announced it would broaden its AI security resources, including a new guide to finding and fixing vulnerabilities using AI, \"from preparing and sandboxing AI to validating, fixing, and preventing issues.\" The guide \"stresses ",
+    "url": "https://news.slashdot.org/story/26/11/15/0615219/how-will-ai-affect-open-source-development",
+    "published_at": "2026-11-15T12:34:00+00:00",
+    "source": "newsdata"
+  }
+]
