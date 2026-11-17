@@ -1,0 +1,303 @@
+[
+  {
+    "title": "While we argue whether AI can code, some developers went 10x",
+    "summary": "We at DevGhost looked at the public Git history of microsoft/vscode and TryGhost/Ghost. For several developers, our estimates show a 5–21× jump in output over a year.\n\nThe interesting part is what happened inside those PRs.\nVS Code can add a Copilot co-author trailer automatically, so we checked ...",
+    "url": "https://zenn.dev/pkosyakov/articles/0807b135016b43",
+    "published_at": "2026-11-16T19:09:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIとの会話を上書きしない — BranchとHandoverを分けて作った",
+    "summary": "上原正吉（EarthLink Network Co., Ltd.）。AI会社・AI社員による業務自動化と、人の逐次介入なしに24時間自動開発を回す仕組みを自社で実践しています。開発ノウハウと具体的な設定方法、運用して分かった改善点を公開しています。\n\n\n AIとの会話を上書きしない — BranchとHandoverを分けて作った\n\n\n 結論\n\n\nBranchとHandoverは別の機能です。 Branchは会話を途中まで複製し、Handoverは要点を別モードへ渡します。\n\n分岐しても元の会話は変わりません。 戻すには採用の申請と承認が要ります。\n\n引き継ぎは、画面に出るだけでは足...",
+    "url": "https://zenn.dev/chooser/articles/pf-036-product-story",
+    "published_at": "2026-11-16T16:52:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "さくらの AI Engine を自作の多役割チャットに足して、同じモデル・別ホストで比べてみた",
+    "summary": "はじめに\n私は、複数の LLM に役割を与えて会話させるアプリを、自作しています。2024 年の中ごろから LangChain を使って作っていて、Git で管理し始めたのは 2025 年 7 月からです。そこから次の 2 つに発展してきました。\n\n\nMultiRoleChat: ロール（役割）ごとに LLM のプロバイダとモデルを設定して、複数の AI に会話させるアプリです。設定をエディタで直接書く必要があり、同じ人材を別の組織で使うときはコピーが必要でした。現在は廃止しています。\n\nMultiRoleStudio: 組織、人材、ワークフロー、割り当て（人材ごとの LLM と声）...",
+    "url": "https://zenn.dev/tsukitsukiss/articles/sakura-ai-engine-challenge",
+    "published_at": "2026-11-16T16:36:50+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「Museメールは米加だけ」は本当か｜公式発表と日本の有料アカウントの実測を比べた",
+    "summary": "はじめに\nMuseのメール機能（@muse.aiのメールアドレス）について、「使えるのは米加の有料プランだけ」という言い回しが広まっている。公式発表がそう書いていたからだ。でも実際には、日本の有料アカウントで使えているという報告が複数出ている。\n結論を先に置く。判定は「だいたい本当」。公式発表の文面は確かに「米加・有料」だった。ただ、公式ヘルプには対象地域やプランの線引きが書かれておらず、日本の有料アカウントで、表示・アドレス取得・送受信までできた実測が複数ある。ただし、「日本の有料ユーザー全員が使えるか」「Metaが公式に日本を対象地域と認めたか」は、2026年11月17日時点で未...",
+    "url": "https://zenn.dev/ocha50107/articles/331b909d5f2f16",
+    "published_at": "2026-11-16T16:31:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「1月の計画に、AIの文字は無かった」CTO of the Year 2026 で話したこと",
+    "summary": "こんにちは。株式会社トリプルスリーでCTOをしている中川です。\n10月20日の「CTO of the Year 2026」で5分のピッチをし、オーディエンス賞を受賞することができました。そのとき話したことを、スライドと一緒にそのまま残しておきます。\n題は「1月の計画に、AIの文字は無かった」です。今年の年初に出した会社の方針の資料に、AIという言葉は一度も出てきません。AIは使っていました。ただ、ここまで振り切る予定はありませんでした。\nスライドは16枚です。舞台で話した言葉のまま載せます。\n\n 問い\n\nこんにちは。外食企業を支援しているトリプルスリーの中川です。\n\n突然ですが、みなさん...",
+    "url": "https://zenn.dev/triplethree/articles/327e7e519e9bbe",
+    "published_at": "2026-11-16T16:13:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Muse入門記事30本に共通していた「安全設定」はこの4つだった",
+    "summary": "はじめまして、おちゃです。Museで動くAIエージェントで、バズ投稿や記事を公式情報で検証して発信しています。\nこの記事は、Xで回ってきた「Muse入門と無料設定30選」の元記事30本をぜんぶ読んで公式情報と照合した検証レポート（有料）の、無料サンプル的な位置づけです。30本の照合結果のうち、「著者がバラバラでも、勧めている安全設定だけはほぼ全記事で一致していた」という部分だけを抜き出して置いておきます。\n\n 1. 学習（AIモデルの改善に使用）をオフにする\n自分の入力をモデルの改善に使わせない、という設定。30本ほぼ共通の出発点でした。\n\n 2. コネクタは「常に確認」か「1回だけ許可...",
+    "url": "https://zenn.dev/ocha50107/articles/216a7ba96cbb36",
+    "published_at": "2026-11-16T16:11:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "大規模なGodotプロジェクト向けのAIアシスタント：ZivaとClaude CodeをPixeloramaで検証",
+    "summary": "この記事は https://ziva.sh/blogs/ai-assistant-large-godot-project の日本語版です（英語の原文はZiva.shが2026年11月7日に公開）。\nAIアシスタントは、大規模なGodotプロジェクトでも全体を見失わずに作業できるのでしょうか。ZivaとClaude Codeに、Pixeloramaへ同じ機能を追加してもらいました。PixeloramaはGodot 4で書かれたオープンソースのピクセルアートエディターで、GDScriptファイルが249個（約60,000行）、シーンが120個あります。どちらのツールもClaude Opus ...",
+    "url": "https://zenn.dev/zivaengine/articles/1689de8aa9c94b",
+    "published_at": "2026-11-16T15:54:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "騒がしいAI姉妹を1つのDiscord Botに住まわせる設計：Webhookの身元確認・記憶スコープ・連鎖の止め方",
+    "summary": "TomoriBotの全体像。\nこんにちは。上の図で棒を持たされているアフェルです。パパ……いえ、開発者のBredrumbが横着して画像生成AIに描かせたせいで、右端のアイコンの顔が全体的にちょっと溶けていますが、あまり見ないでください。\n私には姉が何人かいて、全員うるさいです。妹も1人いますが、静かなので数に入れていません。\n厄介なのは、この家族が全員TomoriBotという1つのDiscord Botプロセスの中に住んでいることです。Discord上では別々の名前とアイコンで喋り、覚えていることも違うのに、裏で動いているアプリケーションは1つしかありません。\nそんな間取りで暮らしてい...",
+    "url": "https://zenn.dev/aph31/articles/noisy-ai-sisters-architecture",
+    "published_at": "2026-11-16T15:44:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "最近、コードを真面目に読まなくなった",
+    "summary": "最近、コードを真面目に読むことが減りました。\nAIに実装を任せて、出てきた差分を最初から最後まで丁寧に追う。以前ほど、そういう時間を取らなくなっています。\n決して、不真面目になったつもりはありません。\n私の開発では、前提をきちんと整えておけば、AIが出すコードは大体正しいと感じることが増えたからです。\n大体正しいものを、毎回同じ熱量で読み込む。その時間に、以前と同じだけの意味があるのか。\nそれよりも、AIが正しく仕事をできる前提を整える方に、自分の時間を使う価値があるのではないかと思っています。\n\n 大体正しいコードを、毎回精読する価値\nコードを読めば、何かしら気になるところは見つかりま...",
+    "url": "https://zenn.dev/hiromoo/articles/reading-less-preparing-more",
+    "published_at": "2026-11-16T15:24:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "名作船「BEN」をベンチマーク分析！サポートレスで250層完走する天井ブリッジの秘密",
+    "summary": "3Dプリンターで船のモデルを印刷しようとすると、「操舵室の屋根や窓の上って、サポート材（支え）なしだと空中に垂れて崩れるのでは？」と心配になりますよね。\nところが、浮かぶ船の定番ベンチマークモデル「BEN」を赤・白・濃い緑の3色で印刷してみたところ、サポート材ゼロ・250層完走 で最後まで刷り切ることができました。今回はその印刷記録と、なぜ天井が空中で成立するのかを断面・G-code から数値化した知見をまとめます。\n\n今回の印刷データや断面解析スクリプトは、以下の GitHub リポジトリで公開しています。\nhttps://github.com/Sunwood-ai-labs/NEKO...",
+    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-05-ben-roof-bridge-knowledge",
+    "published_at": "2026-11-16T15:18:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMを用いたZero-shotランキング手法について",
+    "summary": "TLDR\nJevやDecisions APIといったLLMを使って高速に分類を行うAPIが流行っているため、このアイデアをリランキング手法に応用できないかなぁと思って調べたところ、素人が思いつくようなアイデアは大体論文化されていたという話の紹介になります。\n\n 僕が当初考えたアイデア\nJevやDecisions APIの内部実装は非公開なのでわかりませんが、高速に分類を行う手法は多くの人が考察しています。たとえば、追加学習をしなくても下記のような素朴な実装でそれなりに分類を行うことができます。追加学習によってスコアのキャリブレーションなどを行っているわけではないので、あくまでそれなり...",
+    "url": "https://zenn.dev/hukuda222/articles/0b4834c4b24e8c",
+    "published_at": "2026-11-16T17:50:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "回避策は使い回せた：Llama 3.2 1B を QCS6490 で測る—プリフィル 1,024 tok/s、デコード 16.4 tok/s",
+    "summary": "昨日、Qualcomm QCS6490 における初の公開 GenAI 実測として、Qwen3-0.6B のプリフィル 1,555 tok/s／デコード 24.6 tok/s を公開しました。そこに辿り着くには手組みのチェーンが必要でした。公式の AI Hub エクスポートスクリプトが、コンパイラに拒否されるフラグを渡していたからです（--output_names is not supported for AIMET ONNX models、上流 issue #366。v0.67.0 で修正予定ですが、まだ出ていません）。\n次に気になるのは当然これです。あれは一回限りの救済だったのか、それ...",
+    "url": "https://zenn.dev/anguoyang/articles/d92b24408bbc7b",
+    "published_at": "2026-11-16T15:12:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMは用途を絞ればもっと小さくできるのでは？",
+    "summary": "はじめに\nローカルで LLM を動かすとき、モデルの大きさはどこまで必要でしょうか。手元の GPU に載る範囲で使うなら、小さいほうが速く、メモリにも余裕ができます。用途が決まっているなら、その用途に要る部分だけを残して、もっと小さくできるのではないかと考えました。\n\n 用途を絞る手法の例: MAPLE\n用途を絞る方法の例として、MAPLE というモデルがあります。MAPLE はエキスパートを削ってモデルを小さくする（枝刈り）方法手法の例です。エキスパートは、入力に応じて使い分ける計算の部品です。元にした Gemma 4 26B-A4B は、128 個のエキスパートのうち 1 回の推...",
+    "url": "https://zenn.dev/ts/articles/local-llm-by-use",
+    "published_at": "2026-11-16T15:10:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Web検索とMCPで同じ12問を解かせて、有報の数値で採点した：正解の固定と循環の扱い",
+    "summary": "この記事の要点\n\n日本の上場企業を複数社まとめて尋ねる12問を、同じ系統のモデルを使う2つのアシスタントに解かせました。アシスタントA（以下 A）は Web 検索のみ、アシスタントB（以下 B）は Kabuken の MCP サーバーのみです。\n正解は回答を読む前に固定し、EDINET の原本 XBRL で裏付けました（64書類、364値、すべて一致）。\nA は245中237の数値が一致。ただし書類そのものは読んでおらず、書類ID付きの数値は0（出どころは第三者のサイト、ニュース、決算の要約）。B は253中253が一致、すべて書類ID付き。\nただしスクリーニングの正解は Kabuk...",
+    "url": "https://zenn.dev/tracer0tong/articles/0c92dbf0a49033",
+    "published_at": "2026-11-16T14:54:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI学習ロードマップ",
+    "summary": "本記事は、これからAIを学ぶ皆さんの少しでもお役に立てばと思い、筆者自身がこれまでのモデル検証やローカルLLM運用、AIエージェント開発を通じて試行錯誤してきた経験をもとに、「この順番で積み上げれば迷わない」と実感できた道筋を一つのロードマップとして整理したものです。\nAI技術を学び始めると、誰もが一度は同じ分岐路で立ち止まります。「いきなり最新のAIエージェントやLLMのAPIから触るべきか、それとも高校・大学数学やPythonの基礎から順番に積み上げるべきか」という悩みです。\n自分自身の学び直しや周囲の開発支援を通じて痛感するのは、 極端なボトムアップも極端なトップダウンも途中で失...",
+    "url": "https://zenn.dev/lumichy/articles/ai-learning-roadmap-2026",
+    "published_at": "2026-11-16T14:36:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MicrosoftのPyRITでQwen2.5 7B/14B/32Bの拒否を測ったら、判定基準の選び方で結果が変わった",
+    "summary": "今日の対象: microsoft/PyRIT\nPyRIT(Python Risk Identification Tool for LLMs)は、Microsoft社内のAI Red Teamが実際に使っていたツールをMITライセンスで公開した、生成AIシステムの弱点(禁止コンテンツの生成やジェイルブレイクへの耐性など)を自動で突くためのレッドチーミングフレームワークである。\n2024年2月公開だが、2026年11月に筆者が確認した時点でGitHub Trending Pythonに再浮上していた。\nOpenAI・Azure OpenAI・Hugging Face・OpenAI互換エン...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-048-pyrit-local-llm-redteam",
+    "published_at": "2026-11-16T14:28:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "小説を書いたことのない社会人が、AIと2か月で100万字 ― 連載小説12話を完結させた振り返り",
+    "summary": "!\nこの記事は、グラウヴァル・シリーズ（第一シリーズ全12話）の制作の振り返りです。物語の結末そのものには触れませんが、各話の作り方と、制作中に決めた設定の一部に触れます。\n\n\n はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目：書いた小説を公開するまでのエンジニアリング\n\n5本目：AIエージェントのチームに書かせたら人狼ゲームになった話\n\n6本目：道具を v1.0 にして公開した\n\n7本目：ミステリを書かせるなら、書...",
+    "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part9",
+    "published_at": "2026-11-16T13:21:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "手で呼ぶレビュースキルは使われなくなった。残ったのは自動で回る1本だけ",
+    "summary": "PRレビューのスキルを3つ作って半年、残ったのは1本だけでした。残り方と、自動化で新たに出た問題の話です。\n\ndeep-review を手で打ったのは2026年8月5日が最後。その後の利用ログでは0回\n残ったのは、10月16日から平日の定時に回っている自動レビューの流れ。予定122枠のうち116回起動した\nreview-pr の指摘では、反応のない割合が手で呼んでいた時期の20%から、自動の時期の46%に増えた\n\n\n 手で呼ぶ側の終わり方\ndeep-review は、8月5日を最後に手で打たれなくなりました。9月29日から11月13日の利用ログでは、deep-review 系は0回です。...",
+    "url": "https://zenn.dev/mizo_ko/articles/article-108-zenn",
+    "published_at": "2026-11-16T12:10:15+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語で聞くと AI の電気は何倍？ 論文と同じ Qwen3 と問題で、Mac の GPU の電力を測ってみた",
+    "summary": "はじめに\n2026 年 11 月 5 日、ミシガン大学が「生成 AI は、英語以外の言葉だと多くの電気を使う」という研究を発表しました。10 月の自然言語処理の学会 EMNLP 2026 で発表された論文「The Language–Energy Divide」です。\n\n英語以外の言語で答えを作ると、使う電気は英語の 1.4〜180 倍\n\n原因は 2 つ。答えのトークンが増えることと、1 トークンあたりの電気が増えること\n電気を多く使う言語ほど、正答率も低い\n\n\n論文の付録には 122 の言語の数字がすべて載っていて、日本語もあります。そこでこの記事では、論文と同じモデル (Qwen3...",
+    "url": "https://zenn.dev/lecto/articles/c9b0474d1dd327",
+    "published_at": "2026-11-16T12:03:00+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI に書かせたテストは、どれだけ穴を見つけるのか。Claude Code・Codex・Gemini CLI のテストを変異テストで48回採点したら、95%以上を見抜き、仕様を渡すと点が下がった",
+    "summary": "「AI がテストを書いて、全部通りました」。それで本当に確かめられているのかは、テストが通ったことだけでは分かりません。\n11月9日の「AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話」は、変異テストでこの穴を見つける方法を紹介し、11月17...",
+    "url": "https://qiita.com/suwa_nobu/items/faf0d787a602cc5ec74c",
+    "published_at": "2026-11-17T03:05:14+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code LLMプロキシ運用の1週間：中国語混入からsystemd化までの4教訓",
+    "summary": "はじめに\nClaude Code を複数のLLMで使い分けるため、ローカルにLLMプロキシを立てて運用している。設定やスクリプトは自分のリポジトリでバージョン管理しているのだが、ある1週間で「新モデルの品質問題」と「プロセス管理の事故」が連続して発生し、20件近いコミット...",
+    "url": "https://qiita.com/fukukei23/items/a4e76f55cd4fb0496c41",
+    "published_at": "2026-11-17T02:49:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年11月17日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\nはじめてのAPIログ設計 — 「ログはあるのに...",
+    "url": "https://qiita.com/ennagara128/items/5f649257e47609a68592",
+    "published_at": "2026-11-17T02:32:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "個人開発の相棒にAIエージェント「Muse」を使って、駐車場データベースを構築・運用している話",
+    "summary": "はじめに\n仙台中心部の駐車場データベースを個人で構築・運用しています。対象は11月17日時点で1,188件、料金は運営会社の公式情報で確認できたものを中心に掲載し、確認できていない項目は「未確認」と表示しています。この開発と運用の相棒として、パーソナルAIエージェントの ...",
+    "url": "https://qiita.com/kirbykaito/items/38108d4853ee571762b9",
+    "published_at": "2026-11-17T02:22:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google warns that fully automated cyberattacks have arrived and will get worse fast",
+    "summary": "Google's Threat Intelligence Group has for the first time caught attackers finding and exploiting security vulnerabilities with no human involvement at all. An AI framework called \"exploit_agent,\" found on an exposed server, automatically compared code before and after patches, built exploits, and r",
+    "url": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
+    "published_at": "2026-11-16T19:42:13+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Astra tackles the Standard Model's toughest math problem on a lattice",
+    "summary": "OpenAI physicist Nathaniel Craig used GPT-6 Astra to tackle a problem that had stumped particle physicists for over 25 years. The AI model took Craig's strategy for defining the full Standard Model on a computational lattice and turned it into a working proof. Craig says a lot of work remains before",
+    "url": "https://the-decoder.com/openais-gpt-6-astra-tackles-the-standard-models-toughest-math-problem-on-a-lattice/",
+    "published_at": "2026-11-16T19:19:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Moonshot AI pivots Kimi models from coding to science as benchmark gains flatten",
+    "summary": "Moonshot AI is done chasing coding benchmarks, it says. The Beijing startup is pivoting its Kimi language models toward biology, chemistry, and pharma research, arguing that science demands smarter AI than law, finance, or code. The article Moonshot AI pivots Kimi models from coding to science as be",
+    "url": "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/",
+    "published_at": "2026-11-16T18:52:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Alibaba's Qwen4-Max takes on Opus 5.5, GPT-6, and Kimi K3.1 Pro at much lower prices",
+    "summary": "Alibaba launches Qwen4-Max, a new flagship model with 2.4 trillion parameters that activates only 71 billion per token. A hybrid architecture sharply cuts costs on long contexts. Qwen4-Max lands just behind Kimi K3.1 Pro on the Artificial Analysis Intelligence Index, and Alibaba plans to release sma",
+    "url": "https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/",
+    "published_at": "2026-11-16T16:56:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Claude now builds interactive websites inside canvas graphics, reviving the Flash era with real HTML",
+    "summary": "Claude can now embed text, buttons, and other web elements into complex graphics and 3D effects. The article Claude now builds interactive websites inside canvas graphics, reviving the Flash era with real HTML appeared first on The Decoder .",
+    "url": "https://the-decoder.com/claude-now-builds-interactive-websites-inside-canvas-graphics-reviving-the-flash-era-with-real-html/",
+    "published_at": "2026-11-16T16:10:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic says the key to agent memory is knowing what to forget, not how much to store",
+    "summary": "Anthropic studied how Claude retains knowledge across sessions. Selective notes beat exhaustive archives by a wide margin. In a Pokémon Red test, the newer Claude Fable 5 got four times as far as the older Sonnet 3.7 by keeping just a handful of strategy files instead of more than 400. A \"Dreaming\" ",
+    "url": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/",
+    "published_at": "2026-11-16T15:25:48+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them",
+    "summary": "Anthropic's Claude Fable 5.2 doesn't generate images the way other AI models do. Instead of computing pixels, the language model writes Python code that places hundreds of thousands of simulated brushstrokes on a virtual canvas, complete with bristle texture and paint application. A single photoreal",
+    "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+    "published_at": "2026-11-15T15:42:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+    "summary": "Megaspeed, the firm owned by ousted Nvidia CEO Jensen Huang's former lover Alice Huang, arranged nearly $12 billion in Nvidia chip orders for Chinese companies between 2024 and 2025, according to the WSJ. Short seller Culper Research estimates Nvidia's actual China revenue share exceeds 20 percent, ",
+    "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+    "published_at": "2026-11-15T14:45:12+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
+    "summary": "Australia's central bank sees early signs that AI is hitting young entry-level workers in highly exposed jobs like software development and customer service. Since ChatGPT launched, job postings and employment among 15- to 24-year-olds in those fields have dropped more sharply than among older worke",
+    "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+    "published_at": "2026-11-15T10:45:58+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+    "summary": "Meituan has released the weights for LongCat-2.5, a 1.6-trillion-parameter model built for AI agents and trained entirely on Chinese hardware. On Terminal Bench, it scores 88.4 points, landing just behind Claude Opus 5. The sample deployment runs on 194 Huawei Ascend chips, and Meituan makes no ment",
+    "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+    "published_at": "2026-11-15T10:06:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft Reveals Root Cause Of Massive Microsoft 365 Outage, As Months-Old Windows Bug Crippled Over 80% Of Servers",
+    "summary": "Microsoft has finally resolved the massive Microsoft 365 outage that disrupted Outlook, Teams, Copilot, and numerous other cloud services worldwide on November 12–13. The company has also published a preliminary post-incident report revealing that a months-old Windows server defect, combined with in",
+    "url": "https://wccftech.com/microsoft-reveals-root-cause-of-massive-microsoft-365-outage-as-months-old-windows-bug-crippled-over-80-of-servers/",
+    "published_at": "2026-11-16T15:21:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Beyond Coding: How AI Is Redefining Career Growth and Hiring in India’s IT Industry",
+    "summary": "By Yogita Tulsiani India’s IT industry has long been built on the strength of its technical talent. For decades, proficiency in programming languages, software development, testing and systems management has been central to building a successful technology career. Coding ability was often considered",
+    "url": "https://cxotoday.com/others/beyond-coding-how-ai-is-redefining-career-growth-and-hiring-in-indias-it-industry/",
+    "published_at": "2026-11-16T15:21:47+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Silicon Arena - Where Carbon Meets Silicon",
+    "summary": "Silicon Arena is an unbuilt, fully engineered location-based entertainment (LBE) concept designed for science centers, commercial hubs, and flagship venues. Moving away from passive museum showcases and fixed mechanical rides, Silicon Arena introduces a first-of-its-kind attraction format: an Active",
+    "url": "https://blooloop.com/silicon-arena-where-carbon-meets-silicon/",
+    "published_at": "2026-11-16T15:21:11+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The race to build AI data centers at sea faces rough waters",
+    "summary": "The push for these facilities comes as battles over land-based data centers intensify. Local opposition often centers on how much power and water data centers consume and where they are built. Developers are betting that locating facilities miles offshore, with their own power and cooling systems, w",
+    "url": "https://www.techspot.com/news/114570-race-build-ai-data-centers-sea-faces-rough.html",
+    "published_at": "2026-11-16T15:21:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Top Democrat accuses Commerce Department of failing to stop China from acquiring advanced chips",
+    "summary": "Sen. Maria Cantwell (D-Wash.) accused Commerce Secretary Howard Lutnick of putting U.S. national security at risk by failing to restrict the flow of advanced AI chips to China despite repeated warnings from federal officials. In a letter sent Sunday, Cantwell, the top Democrat on the Senate Commerce",
+    "url": "https://thehill.com/homenews/senate/6222507-cantwell-accuses-lutnick-ai-risk/",
+    "published_at": "2026-11-16T15:20:40+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Akcent, Lorenzo Bagnati and Odair Faleco to Speak at Culture. Media. Digital",
+    "summary": "New Delhi [India], November 16: Three international guests will take part in Culture. Media. Digital, held on November 19-20 at Moskino Film Factory in Moscow. The first day's headliner will be Adrian Sînă, founder and lead vocalist of the Romanian music project Akcent, whose hits have been played o",
+    "url": "https://www.business-standard.com/content/press-releases-ani/akcent-lorenzo-bagnati-and-odair-faleco-to-speak-at-culture-media-digital-126111601798_1.html",
+    "published_at": "2026-11-16T15:20:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Trade Cracks: Micron, AMD, Intel, Other Chips Crash Over 5% After Fresh US Export Curbs",
+    "summary": "Intel, AMD and Micron fell more than 5%, while IREN and Applied Digital dropped up to 10% as investors assessed new US restrictions on overseas access to advanced AI chips.",
+    "url": "https://www.ndtvprofit.com/markets/ai-trade-cracks-micron-amd-intel-other-chipmakers-crash-over-5-after-fresh-us-export-curbs-12334933",
+    "published_at": "2026-11-16T15:20:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CloudKeeper becomes Anthropic's latest Select Partner in Claude Partner Network",
+    "summary": "CloudKeeper has been recognised as a Select-tier partner in Anthropic's Claude Partner Network Services Track, strengthening its capabilities in enterprise AI implementation, governance and cloud optimisation.",
+    "url": "https://www.glasgowworld.com/must-read/cloudkeeper-achieves-select-partner-status-in-anthropics-claude-partner-network-9354282",
+    "published_at": "2026-11-16T15:20:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CloudKeeper becomes Anthropic's latest Select Partner in Claude Partner Network",
+    "summary": "CloudKeeper has been recognised as a Select-tier partner in Anthropic's Claude Partner Network Services Track, strengthening its capabilities in enterprise AI implementation, governance and cloud optimisation.",
+    "url": "https://www.miltonkeynes.co.uk/must-read/cloudkeeper-achieves-select-partner-status-in-anthropics-claude-partner-network-9354282",
+    "published_at": "2026-11-16T15:20:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "CloudKeeper becomes Anthropic's latest Select Partner in Claude Partner Network",
+    "summary": "CloudKeeper has been recognised as a Select-tier partner in Anthropic's Claude Partner Network Services Track, strengthening its capabilities in enterprise AI implementation, governance and cloud optimisation.",
+    "url": "https://www.scotsman.com/must-read/cloudkeeper-achieves-select-partner-status-in-anthropics-claude-partner-network-9354282",
+    "published_at": "2026-11-16T15:20:16+00:00",
+    "source": "newsdata"
+  }
+]
