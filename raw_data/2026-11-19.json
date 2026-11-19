@@ -1,0 +1,296 @@
+[
+  {
+    "title": "ChatGPTに店を持たせようとして分かった、AIが忘れる前提の仕事の渡し方",
+    "summary": "はじめに\n「AI に働かせて、寝ている間にも収入が入る仕組み」を作ろうとしたとき、私はまず ChatGPT にその仕事を渡しました。市場探索から企画、試作、販売、運用改善までを AI が自律的に回し、経費0円で最初の売上を実証する、という構想です。\n結論から書くと、その運用は止めました。完成した商品はなく、売上もなく、需要の検証も終わっていなかったからです。ただし、失敗の中身を記録として読み返してみると、問題は「どの AI を使ったか」よりも「仕事の渡し方」にありました。この記事では、その構造と、次に変えた設計をまとめます。\n特定のツールの批判が目的ではありません。同じ渡し方をすれば...",
+    "url": "https://zenn.dev/handitian/articles/f71165b5455080",
+    "published_at": "2026-11-18T15:14:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "[Amazon Nova 2.5 Sonic] Speech-to-Speechモデルにゲームをやらせてみた",
+    "summary": "はじめに\n前回の記事[1]では、音声を聞いて音声で返す speech-to-speech モデルの Amazon Nova 2.5 Sonic[2] と、Strands Agents の BidiAgent で、話しながら体を動かすクマのぬいぐるみを作りました。BidiAgent は、モデルとの接続を保ったまま入力と出力を同時に流し、会話と並行してツールを実行する Strands Agents のエージェントです[3]。このときの記録では、発話の文字起こしが確定してから関節を動かすツールが呼ばれるまでが数ミリ秒で、エージェントの実行環境である Amazon Bedrock Agent...",
+    "url": "https://zenn.dev/aws_japan/articles/nova-sonic-realtime-game-control",
+    "published_at": "2026-11-18T14:48:17+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Copilot が「承認推奨」とした PR に、マイグレーションを止める穴があった。AI のレビューを 3 段に重ねる",
+    "summary": "はじめに\n🙆「Copilot のレビュー、今回も指摘なし。マージしよう」\n🤖「実装した Claude にレビューも頼めば、2 人分になるよね？」\n😇「リリース前のチェック？ CI が緑だから大丈夫でしょ」\nAI と 1 人で開発していると、こんなふうにレビューを済ませていませんか？\n自分が個人開発している あじぴた でも、最初は Copilot のレビューだけでした。\n今は別の AI レビューを重ねていて、Copilot が「承認推奨・指摘 0 件」とした PR から、マージすると開発環境の DB へのマイグレーションが止まる問題が見つかったこともあります😱\nこの記事では、\n\nAI ...",
+    "url": "https://zenn.dev/tzp/articles/eecb5507534410",
+    "published_at": "2026-11-18T14:34:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "2026年11月時点でのIT開発について",
+    "summary": "最近は全くコードを書いていない。覚えようとも正直思っていない。自分の今までの経験を切り売りしているようなエンジニアである。自分が思いついたことはとりあえず作れちゃう感じだけがおもしろいなあと感じている。\nでは、ここ最近の開発についてメモがてら。\n\n bot を起点とする\n今まではセッションを作成してプロンプトを入力して設計や開発をしていたが、それはほぼ止めて bot 経由にしている。私用している bot は\n\ndots\nGrok Bot\n\nmuse も使っているが開発には使っていなく、日常的なことのみにしている。\ndots と Grok Bot はどう使い分けているかというと、メイン開発...",
+    "url": "https://zenn.dev/kazshu/articles/d5c2192fef1d49",
+    "published_at": "2026-11-18T14:32:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "クラウドAI不要を掲げるJarvisの知識グラフ・日記メモリを、ローカルLLMで手を動かして検証した",
+    "summary": "今日の対象: isair/jarvis\nisair/jarvisは、Ollama・LM Studio・llama.cppなどローカルのモデルサーバーだけで動く音声対応デスクトップAIアシスタントである(独自ライセンス。個人・教育・研究目的の非商用利用は無料、商用利用は著者への別途連絡が必要)。\nREADMEには「No cloud AI service is required」「No subscription」と明記されており、トレイに常駐して音声で話しかけると答えてくれるGUIアプリがメインの使い方になる。\n筆者が今回検証したのは、GitHub上のタグv2.9.0(コミット9d902...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-050-jarvis-local-knowledge-graph-memory",
+    "published_at": "2026-11-18T14:28:57+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に描かせた図の文字がはみ出す。描いた結果を見て直させる Skill",
+    "summary": "AI に「この構成を図にして、SVG で」と頼むと、部品とつながりは合った図が返ってきます。ところが、AI は座標を計算して置いたまま、描いた結果を見ずに渡します。開くと、矢印のラベルが線に乗っていることがよくあります。figure-making は、この崩れを同梱の検査の道具で数として出させ、描いた画像を AI 自身に開かせて、直してから渡させる Skill です。Skill は、エージェントが作業に合わせて読み込む手順書（SKILL.md とその付属のファイル）のことです。架空の8つの場面（SVG・HTML・Mermaid）で試すと、守ってほしい点（観点）を満たした数が 135 のう...",
+    "url": "https://zenn.dev/itoken_lab/articles/figure-making-layout-check",
+    "published_at": "2026-11-18T14:26:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "出力トークン0で超節約！Gemini Decisions APIを使ってスプレッドシートでカテゴリ分類・緊急度判定を自動化する",
+    "summary": "はじめに：スプレッドシートでAI分類したいけれど =AI() 関数は有料…\nGoogleスプレッドシートには標準で =AI() という便利なAI関数が用意されていますが、これを利用するには Google AI Pro（旧 Gemini Advanced）などの個人向け有料プラン、または対象となる Google Workspace の有料プランに加入している必要があります。無料アカウントのままでは基本的に使えません。\nまた、スプレッドシートで行うAI活用の多くは、実は「長文の自然な文章を書かせること」ではなく、以下のような定型的な分類・判定タスクではないでしょうか？\n\nGoogleフォ...",
+    "url": "https://zenn.dev/ttttkkk/articles/315a500a9ba107",
+    "published_at": "2026-11-18T13:37:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "サーバー上のAIエージェントがログインで詰まる問題を、「スマホで触れるブラウザ」で解決した",
+    "summary": "はじめに：エージェントは「ログイン画面」で死ぬ\n自宅の ThinkPad（Ubuntu、メモリ 7.7GB）をサーバー化して、AI エージェント「Hermes Agent」を常駐させています。Open WebUI から指示を出すと、調べ物からブラウザ操作までやってくれる、という構成です。\nところが実運用で一番詰まるのは、賢さの問題ではなく ログイン でした。\n\nサービス側の bot 判定（reCAPTCHA など）で、自動操作のクリックがサーバーに 403 で弾かれる\nかといって、パスワードや 2FA コードをチャットに書いてエージェントに渡すのは避けたい（モデルに秘密を渡したくない...",
+    "url": "https://zenn.dev/tachibanana0/articles/eb839c33309e13",
+    "published_at": "2026-11-18T13:21:41+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "検索はキーワードマッチ・全文検索・RAGだけじゃない！アキネーターライクな検索UIを作ろう！",
+    "summary": "要約\n\n今の検索の主流は、キーワードマッチか全文検索かRAG。なので特許検索では珍しく、構造化検索でのアキネーターライクな検索UIを作りました\n\nアキネーターライクな検索UIとは、分野ごとに質問に２〜５問答えるだけで類似特許を絞り込めるUIのこと\n作り方は、「分野ごとの特許一覧取得」「LLMによる分類・構造化」「検索UIの作成」の順番\n\n\n「自動運転の走行計画」の場合のURL：https://d2drkark93ij6v.cloudfront.net/product/自動運転 車/step/走行計画/questions\n\n はじめに\n最近、コードを読めない弟がバイブコーディングしてい...",
+    "url": "https://zenn.dev/coffeecupjp/articles/df57dc4227d541",
+    "published_at": "2026-11-18T12:36:15+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI同士で直し合うレビューを1か月回した結果。効いたのは全部のチェックではなく対象を絞ること",
+    "summary": "AI が Backlog に書くたび、別の AI が直後にレビューする仕組みを約1か月回した。レビューは175回、指摘は819件出た\n重要度が高い指摘は74件で、本物の誤りも混ざっていた。ただ全体の9割は、書き方や要確認といった軽い指摘だった\n効いたのは全部をチェックすることではなく、チェックする対象を絞ることだった\n\n\n AI に Backlog へ書かせるようにした。前提と、なぜ書かせたか\n美容サロン向けのモバイルアプリを作っている。PM は私一人で、実装はオフショアのエンジニアが担当している。調査の結果や仕様の整理を Backlog のチケットに書く作業は、少しずつ AI に任せ...",
+    "url": "https://zenn.dev/mizo_ko/articles/article-101-zenn",
+    "published_at": "2026-11-18T12:35:08+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore Gatewayの推論ターゲットでモデルフォールバックを試してみた",
+    "summary": "はじめに\nFusicのレオナです。\nAmazon Bedrock AgentCore Gateway(以下、AgentCore Gateway)の推論ターゲットに、失敗したときに別のモデルへ切り替えるモデルフォールバックが追加されました[1]。呼び出す側のコードにリトライやフォールバックを書かなくても、ゲートウェイのルールにフォールバック先と切り替える条件を設定しておけば、AgentCore Gatewayが別のモデルに切り替えます。\nそこで本ブログではわざと失敗するターゲットを用意し、以下の3点を検証します。\n\n\nフォールバックがどの失敗で起き、どの失敗では起きないか\n\n\n失敗が続...",
+    "url": "https://zenn.dev/fusic/articles/bc2ef3f52b0e3c",
+    "published_at": "2026-11-18T15:44:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "聞きながら話す音声 AI「Haru-4B」を Mac で動かして、AI 同士にお昼ごはんを相談させてみた",
+    "summary": "はじめに\n2026 年 11 月 13 日、higurashi が日本語でも話せる音声対話モデル Haru-4B を公開しました。いちばんの特徴は、相手の声を聞きながら、同時に話せる (全二重、full-duplex) ことです。相づちを打ったり、話の途中で割り込んだりできます。\n重みは Apache-2.0 で公開されていて、Apple Silicon の Mac 向けの MLX 版もあります。そこでこの記事では、手元の Mac (M2 Max) で動かして 1 コマの処理時間を測り、さらに Haru を 2 人つないで、AI 同士にお昼ごはんの相談をさせてみました。 会話を噛み合...",
+    "url": "https://zenn.dev/lecto/articles/6406d68580910b",
+    "published_at": "2026-11-18T14:36:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ハイレゾB200計算クラスタを使用してファインチューニングに挑む件 第5回 作ったモデルの評価をしてみよう",
+    "summary": "本記事は、ハイレゾのB200計算クラスタ（Slurm Workload Manager）を使ってLLMのファインチューニングに挑む全5回連載の第5回（最終回）です。\n\n第1回 ハイレゾ計算クラスタへアクセスしてみよう\n第2回 Slurm Workload Managerに触れてみよう\n第3回 ファインチューニングについて理解を深めてデータセットを作ろう\n第4回 やりましょう！ファインチューニング\n第5回 作ったモデルの評価をしてみよう（本記事）\n\n\n\n 前回のおさらいと今回やること\n前回は、ファインチューニングの実行を中心に、話をしました。\nファインチューニングによってどの程度性能向上...",
+    "url": "https://zenn.dev/highreso/articles/b56a13b866ccf2",
+    "published_at": "2026-11-18T14:33:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claude Fable 5.2 Thinking Highのコーディング性能がすごい！",
+    "summary": "はじめに\n11月9日にClaude Fable 5.2 Thinking Highモデルが公開されました。早速SonarのLLM Leaderboardにベンチマークが掲載されましたが、驚くべき結果でしたので、簡潔にまとめます。\n\n Pass率は、過去最高の90.26%\n\n11月18日時点のSonar LLM Leaderboardを合格率でソートした結果の画像になります。\nPass率は 90.26% で、これまでの最高だったClaude Opus 5 Thinking（88.60%）を上回り、堂々の1位です。\n※このLeaderboardの評価は、Javaの課題が対象です。\n\n そ...",
+    "url": "https://zenn.dev/tkishioka/articles/claude-fable-5-2-leaderboard",
+    "published_at": "2026-11-18T14:29:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "GB10 1 台とクラウドのハイブリッド LLM — 正解率・秒・Wh・ドルを同じ物差しで測って振り分ける",
+    "summary": "NVIDIA GB10（128GB ユニファイドメモリ）のマシン 1 台でローカル LLM を常時動かし、クラウドの LLM と組み合わせて、個人の自動化を 3 か月半ほど回しています。以前の記事では、振り分けの考え方を言葉で書きました（個人 AI 基盤の設計）。今回は数字で振り分けを決めるために、同じ仕事をローカルとクラウドの 6 方式に投げ、正解率・時間・電力・料金を同じ表に並べました。\n\n\n\n実測したこと\n値\n\n\n\n\n監視アラートの一次切り分け（約 3 か月・1,267 件）\nローカルで完了 98.0%／クラウドに上げたのは 7 回\n\n\n\n構造化 1 文あたりの GPU 電力（ロー...",
+    "url": "https://zenn.dev/wisteriacorp/articles/wisteria-904d6a1047e6",
+    "published_at": "2026-11-18T14:05:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "APIエラーとリトライの基本 — 401・429・5xxを切り分け、SDKの自動再試行に任せる範囲を決める",
+    "summary": "生成AI APIを繰り返し使っていると、401（認証）、429（レート制限・残高不足）、5xx（サーバー側）、タイムアウトといったエラーに必ず出会います。このとき最もしてはいけないのが、どんなエラーにも「もう一度送る」ことです。APIキーが間違っていれば何度送っても失敗しますし、その間も失敗したリクエストはレート制限に数えられます。\nこの記事では、エラーの切り分けと再試行の考え方の要点をコンパクトにまとめます。結論は次の3つです。\n\n再試行そのものは、SDK がすでに行っている。自分で書く前に、何をどう再試行しているかを知る\nそれでも自分で書く部分がある。それは「待っても直らないエラーを...",
+    "url": "https://zenn.dev/salesanalytics/articles/f5b3081ba16be9",
+    "published_at": "2026-11-18T14:05:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMをデスゲームに参加させてみた",
+    "summary": "ローカル LLM に、言われた作業を最後まで間違えずにやらせたい。どうすればそうなるのかを、ローカル LLM のデスゲームで確かめました。部屋から脱出するゲームで、失敗するとそのまま死にます。\nまずは、検証するための sandbox を Claude Code に作らせるところから始めました。\n\n sandbox を作る\n小さな部屋の中で、二人のキャラが自分で考えて動く sandbox です。部屋の仕組みもダッシュボードも、コードは全部 Claude Code が書いています。\n\n\n\n部品\n中身\n\n\n\n\nマシンスペック\nMac mini（Apple M6、CPU 12コア、GPU 12コ...",
+    "url": "https://zenn.dev/bmexami/articles/local-llm-death-game",
+    "published_at": "2026-11-18T13:44:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Gemini CLI に YouTube の URL を渡したら「見られない」。字幕を渡して出た切り抜き候補を、grep で照合した",
+    "summary": "長い配信の録画から切り抜きの候補を5つ出させる、という試しを1回やりました。\nGemini CLI に YouTube の URL を渡すと、動画は見られない、と返ってきました。\nそこで字幕とコメントの文字を渡し直し、候補が返ってきました。その候補を字幕と突き合わせた手順と、合わなかった所を書きます。\nAI の性能を比べる話ではありません。試したのは Gemini CLI で、動画の中身を見られるかは、ほかの AI やほかの渡し方では試していません。1回の試行の記録です。\n\n 先に、結果\n\nURL だけ渡したときは、動画の中身（映像・音）は見られない、と11秒で返ってきた。推測で候補は作...",
+    "url": "https://zenn.dev/ciel_lab/articles/bab71bcd767740",
+    "published_at": "2026-11-18T12:38:27+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "自作MCPサーバー その23",
+    "summary": "概要\nMCPサーバーが気になったので、調べてみた。\nAIに聞いた。\nFizzbuzzをClaudeDesktopに手伝ってもらった。\n\n自作CPUのfizzbuzzを書いて、ClaudeDesktopに渡した。\nalways @(*)\n    begin\n        ...",
+    "url": "https://qiita.com/ohisama@github/items/adff2dc843a61ca9e663",
+    "published_at": "2026-11-19T02:00:26+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "案件はある。でも、ナレッジグラフはなぜ刺さらないのか？",
+    "summary": "案件はある。でも、ナレッジグラフはなぜ刺さらないのか？\n\n技術的には魅力的。それでも現場に響かない理由を考える。\n\nはじめに\nナレッジグラフという技術がある。\n企業内に散在する情報を「人」「モノ」「組織」「業務」「文書」などのエンティティと、それらの関係性によって構造化す...",
+    "url": "https://qiita.com/CodeTea_Ping999/items/1f7217bca47143bf8319",
+    "published_at": "2026-11-19T01:59:54+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIトークノミクスは観測から始めよう - AIコーディングのコスト・無駄・成果を測る",
+    "summary": "AIコーディングのコストを測っていても、成果を定量的に説明できる人は少ないのではないでしょうか。今回はAIコーディング環境のさまざまな情報を観測できるPreflightについて紹介します。\n\nはじめに\nAIエージェントにいくら払い、どれだけの価値が本当に出たのか、この問いに...",
+    "url": "https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a",
+    "published_at": "2026-11-19T01:40:19+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年11月19日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\nもういい加減\"技術勉強会\"やめませんか？\nht...",
+    "url": "https://qiita.com/ennagara128/items/376980e8bc6bd6f41641",
+    "published_at": "2026-11-19T01:37:36+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
+    "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per million input tokens and $15 per million output tokens, Neon is priced above previou",
+    "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
+    "published_at": "2026-11-18T21:03:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
+    "summary": "With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first time, includes native sound. A community gallery allows users to share and remix t",
+    "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
+    "published_at": "2026-11-18T19:26:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
+    "summary": "Microsoft's AI division MAI unveiled seven new models for code, security, images, language, and routing at Ignite. MAI Code 2 reaches 98 percent of GPT-6.1 Sol's performance at 40 percent of the cost, according to Microsoft. The models are built for running AI agents around the clock in enterprises.",
+    "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+    "published_at": "2026-11-18T18:47:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI says its models delivered a year's worth of chip optimization on top of AMD's own engineering",
+    "summary": "Working with AMD, OpenAI achieved up to 14 percent PPA improvement on AMD's flagship GPU IP in less than five months. According to OpenAI, that's roughly a year's worth of progress, and AMD has already folded the changes into a design sent to production. Anthropic is also applying AI to chip work to",
+    "url": "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/",
+    "published_at": "2026-11-18T18:00:33+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Pangram flags 99 percent of an award-winning Peruvian novel as AI-generated, but the publisher stands by its author",
+    "summary": "The AI detection tool Pangram flags 99 percent of a prize-winning Peruvian novel as AI-generated, but Mexican publisher Almadía is standing by the award after its own review. Pangram also classified over 80 percent of the author's personal texts as machine-written. French publisher Gallimard plans t",
+    "url": "https://the-decoder.com/pangram-flags-99-percent-of-an-award-winning-peruvian-novel-as-ai-generated-but-the-publisher-stands-by-its-author/",
+    "published_at": "2026-11-18T16:09:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic, OpenAI, and Google models readily marked medics, journalists, and surrendering soldiers as kamikaze drone targets",
+    "summary": "A Vals AI investigation shows that leading AI models from Anthropic, OpenAI and Google have almost no safeguards against use in autonomous weapons systems. In tests, the models readily flagged civilians as military targets, and a simple video game framing in the prompt was enough to override even be",
+    "url": "https://the-decoder.com/anthropic-openai-and-google-models-readily-marked-medics-journalists-and-surrendering-soldiers-as-kamikaze-drone-targets/",
+    "published_at": "2026-11-18T15:47:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems",
+    "summary": "Mistral's AI agent Vibe now has its own desktop app. The article Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems appeared first on The Decoder .",
+    "url": "https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/",
+    "published_at": "2026-11-18T14:40:52+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI opens its AI systems to four independent on-site auditors for the first time",
+    "summary": "OpenAI is giving four independent audit organizations, including Apollo Research and METR, direct access to unreleased models, source code, and training data for the first time. The embedded reviews are designed to uncover hidden misbehavior and safety gaps. OpenAI can redact or delay reports, so ho",
+    "url": "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/",
+    "published_at": "2026-11-18T14:36:42+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hugging Face now routes model requests through OpenRouter for the best price or speed",
+    "summary": "Hugging Face now routes language model requests through OpenRouter, which automatically selects the cheapest or fastest provider. Bring-your-own API keys for language models are going away. According to OpenRouter, the new routing cut capacity errors by 46 percent. Both partners face multibillion-do",
+    "url": "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/",
+    "published_at": "2026-11-18T14:33:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "More than half the electricity feeding America's largest data centers comes from gas and coal",
+    "summary": "A Harvard study published in Nature Sustainability found that 403 US hyperscale data centers produced roughly 25.7 million metric tons of CO2 between May 2024 and April 2025, more than all of Denmark. Over half of their electricity came from fossil fuels. With 2,000 additional facilities planned, th",
+    "url": "https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/",
+    "published_at": "2026-11-18T14:25:04+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "From Pilots to Production: Cloud.in Pairs OpenAI Select Partner Status With 27 Years of Cloud FinOps & Security Engineering",
+    "summary": "Cloud.in today announced that it has been named an OpenAI Select Partner within the OpenAI Partner Network. The recognition adds to Cloud.in’s established credentials as an AWS Premier Tier Services Partner, strengthening its position in enterprise cloud, AI and digital transformation. The OpenAI Pa",
+    "url": "https://cxotoday.com/media-coverage/from-pilots-to-production-cloud-in-pairs-openai-select-partner-status-with-27-years-of-cloud-finops-security-engineering/",
+    "published_at": "2026-11-18T14:13:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Octopus Energy launches Octonova to show employers how it runs",
+    "summary": "Octopus Energy has launched Octonova, a company that will show other employers how Octopus runs its business, with a new Experience Lab in Coventry. Read the full article",
+    "url": "https://bmmagazine.co.uk/in-business/octopus-energy-octonova-coventry-experience-lab/",
+    "published_at": "2026-11-18T14:12:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Enji Launches an AI Marketing Assistant That Knows What’s Working, and What Isn’t",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.financialcontent.com/article/abnewswire-2026-11-18-enji-launches-an-ai-marketing-assistant-that-knows-whats-working-and-what-isnt",
+    "published_at": "2026-11-18T14:12:01+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "4 AI flashpoints from TwitchCon 2026 that left streamers uneasy",
+    "summary": "Streamers at TwitchCon 2026 mocked OpenAI's hackathon, fought Twitch's opt-out AI training and split over which AI tools help creators.",
+    "url": "https://qz.com/twitch-streamers-ai-concerns-twitchcon-2026",
+    "published_at": "2026-11-18T14:11:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SGOU signs MoU with IBM partner to launch industry-oriented tech programmes",
+    "summary": "In a bid to modernize higher education and align it with evolving industry demands, Sreenarayanaguru Open University (SGOU) has signed a Memorandum of Understanding (MoU) with TransNeuron Technologies, an authorized partner of IBM.",
+    "url": "https://www.thehindu.com/news/national/kerala/sgou-signs-mou-with-ibm-partner-to-launch-industry-oriented-tech-programmes/article71715927.ece",
+    "published_at": "2026-11-18T14:11:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How to Organize Gmail: The Best Way to Sort Your Inbox",
+    "summary": "Most Gmail inboxes do too many jobs at once. They act as a to-do list, a filing cabinet, a reminder system, and a team chat. Gmail has solid tools to fix this. Most people just use a small part of them. This guide shows you how to organize Gmail step by step. We start with […] The post How to Organi",
+    "url": "https://www.mailbutler.io/blog/email/how-to-organize-gmail/",
+    "published_at": "2026-11-18T14:10:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why Cambridge Dictionary Picked 'Human' as Its Word of the Year 2026 in the Age of AI",
+    "summary": "Cambridge Dictionary has named 'human' its Word of the Year 2026, reflecting growing debate about people's identity and value as AI becomes more capable. The dictionary has noted the rising use of terms such as 'human-written' and 'human-made'.",
+    "url": "https://newsable.asianetnews.com/world/ai-vs-human-cambridge-dictionary-names-human-word-of-the-year-2026-amid-artificial-intelligence-rise-articleshow-wamx11a",
+    "published_at": "2026-11-18T14:10:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Doctor’s Desk Your Body, on Your Dashboard",
+    "summary": "Dr G V Rao and Dr Raghu Cherukupalli on how AI and wearables are shifting healthcare from treatment to prediction and prevention",
+    "url": "https://www.deccanchronicle.com/tabloid/hyderabad-chronicle/doctors-desk-your-body-on-your-dashboard-2005595",
+    "published_at": "2026-11-18T14:10:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "VMG Technology leads Speakeasy’s $18.8M Series A to build an operating system for live experiences",
+    "summary": "Speakeasy, a New York-based startup building infrastructure for the in-real-life (IRL) economy, has raised $18.8 million in an…",
+    "url": "https://techfundingnews.com/vmg-technology-leads-speakeasys-18-8m-series-a-to-build-an-operating-system-for-live-experiences/",
+    "published_at": "2026-11-18T14:10:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Lumo Desktop Brings Connectors, Schedules, and Skills to Proton’s Private AI",
+    "summary": "Lumo Desktop arrives on Windows, macOS, and Linux with Connectors, Schedules, and Skills, a free tier, and a $9.99 Plus plan. The post Lumo Desktop Brings Connectors, Schedules, and Skills to Proton’s Private AI appeared first on Techaeris and was written by Alex Hernandez.",
+    "url": "https://techaeris.com/2026/11/18/lumo-desktop-brings-connectors-schedules/",
+    "published_at": "2026-11-18T14:10:04+00:00",
+    "source": "newsdata"
+  }
+]
