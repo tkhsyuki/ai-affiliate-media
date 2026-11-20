@@ -1,0 +1,296 @@
+[
+  {
+    "title": "EditBright：登録不要で使える、ブラウザ上の無料AI画像エディタ",
+    "summary": "EditBright は、ブラウザで使える無料の AI 画像エディタです。会員登録やログインをしなくても、写真をアップロードし、変更内容を伝えるか背景を削除して、結果をダウンロードできます。\n\n公式サイト: https://editbright.com/\n\n背景削除: https://editbright.com/ai-background-remover\n\n画像から画像への編集: https://editbright.com/image-to-image\n\n写真の補正: https://editbright.com/ai-photo-enhancer\n\n\n\n 使い方\n\n写真をアップロー...",
+    "url": "https://zenn.dev/editbright/articles/3509e266e8671d",
+    "published_at": "2026-11-19T20:26:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "【小学5年生でもわかる】アルゴリズムバイアスってなに？",
+    "summary": "アルゴリズムバイアス とは\nAIのアルゴリズム自体に組み込まれた偏りについて学びます。\nデータバイアスとは別に、AIのアルゴリズム（判断ルール）自体が偏りを持つことがあります。これが アルゴリズムバイアス です。\n\n 例\n\nAIが「A という特性を持つ人は高リスク」というルールを勝手に学習する\n機械学習の特定の手法が、特定の人口層に対して系統的に不正確になる\nAIが学習データの相関関係を因果関係と誤認識する\n\n\n データバイアスとの違い\n\n\nデータバイアス ：入力データが偏っている\n\nアルゴリズムバイアス ：アルゴリズムの設計や学習過程で偏りが生じる\n\n\n 対策\n\n複数のアルゴリズム...",
+    "url": "https://zenn.dev/tkrndisk/articles/g-kentei-algorithm-bias-kids",
+    "published_at": "2026-11-19T18:35:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIは「次の1語」をどう選んでいるのか ── 1つの依頼を追いかけて知る、AIのしくみ②",
+    "summary": "はじめに\nこの記事は、シリーズ「1つの依頼を追いかけて知る、AIのしくみ」の第2回です。「このバグを直して」という1つの依頼がAIの中をどう進むかを、6つの段階に分けて追いかけています。\n第1回（① 渡す）では、アプリが依頼に材料をそえた「包み」をモデルに渡していることを見ました。包みとモデルの返答が入る上限が枠（コンテキストウィンドウ）で、その大きさはトークンという単位で数えます。\n今回は、包みを受け取ったモデルの中で起きていることを扱います。取り上げる「あれ？」は、次の2つです。\n\n同じ質問なのに、答えが毎回違う\nもっともらしく、間違ったことを言われた\n\n\n今回は「② 考える」と...",
+    "url": "https://zenn.dev/oha_note/articles/cc1cb86cf2afeb",
+    "published_at": "2026-11-19T17:38:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI時代のOSS開発について思うこと（１）",
+    "summary": "休暇を取ってるのだけど、イベント開始までヒマなのでスマホで記事を書いてます。なので、AI生成記事ではない、純度100%の筆者のポエムです。\n\n Claude Codeの襲来\n昨年Claude Codeに触れた時は衝撃的で、人がコードを書かない時代の幕開けを感じるものだった。それから1年以上経った今思うのは、想像以上に世の中への浸透が早く、また企業が各種AIを取り込むのが早いということだ。予算のサイクルが1年単位なのにも関わらずだ。今や、開発案件の提案でAI駆動開発を謳うものもめずらしくない。ただ、コード作成をはじめとする各種作業の生産性が向上した結果、見積提示額が低くなり、人員が少なくな...",
+    "url": "https://zenn.dev/wave1008/articles/230447d3fb3c00",
+    "published_at": "2026-11-19T17:31:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「コードを読むか、読まないか」の先に — PRを計算可能にするRising Sea構想",
+    "summary": "AIがコードを書く時代になり、開発現場では一つの論争が続いています。AIが書いたコードを、人間は読むべきか、読まないでよいかという論争です。\n「読まなければ責任を持てない。品質が崩れる」という主張はもっともです。一方で、「AIが書く速度はすでに人間の読解速度を超えている。全行レビューを前提にしていては前に進めない」という実感もまた現実です。\nしかし、どちらもすでに行き詰まっています。\n\n\n全部読む：変更の量が増えるほどレビューが詰まり、AIの速さを活かせない。\n\n読まない（テストとAIレビューに任せきる）：テストは選んだ経路しか確かめられず、AIレビューにも似た視点からの見落としが残る...",
+    "url": "https://zenn.dev/iroha1203/articles/d11820a16c4abd",
+    "published_at": "2026-11-19T16:40:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「このバグを直して」はAIにどう届くのか ── 1つの依頼を追いかけて知る、AIのしくみ①",
+    "summary": "はじめに\nAIに「このバグを直して」と頼むと、しばらくして「直しました」と返ってきます。とても便利ですが、その間に何が起きているのかを、改めて整理してみようと思いました。\nトークン、コンテキストウィンドウ、モデルなど、AIの基本用語を1つ1つつなげながら、自分なりに整理していきます。ぼくのイメージや主観の部分もありますが、AIのしくみをひもとく助けになれば幸いです。\nAIを使っていると、次のような「あれ？」に出会います。\n\n前に言ったことを、忘れられた\n同じ質問なのに、答えが毎回違う\nもっともらしく、間違ったことを言われた\n\nこのシリーズでは、用語を1つずつ覚えることはしません。「こ...",
+    "url": "https://zenn.dev/oha_note/articles/62ab6878a55760",
+    "published_at": "2026-11-19T16:34:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "ARC-AGI-3公式Web版TU93をChatGPT Workで全9レベルクリア！——すごいのか判断できない件",
+    "summary": "AIエージェントがWebブラウザを操作する。\nページを開く。画面を読む。クリックする。キーボードを操作する。そして、結果を確認して次の操作を決める。\n最近は、こうしたComputer Useがずいぶん身近になりました。私もWorkモードを触りながら、いろいろ試しています。\nそこで、ふと思ったんです。\n……あれ？\nブラウザを操作できるAIなら、ARC-AGI-3の公式Web版も、そのままプレイできるんじゃないか？\n人間がWebページを開いて遊べるなら、AIにも同じ画面を渡してみたい。\nそれも、ゲーム専用の攻略プログラムを作るのではなく、普通に画面を見て、考えて、方向キーを入力する形で。\nこ...",
+    "url": "https://zenn.dev/dantarg/articles/arc-agi-3-browser-recovery",
+    "published_at": "2026-11-19T16:13:02+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "WordPressの995KB CSS外部化でHTML66%削減、/llms-full.txtとAI検証の個人メディア運営記",
+    "summary": "はじめに\n2026年9月から、省庁・日本銀行・裁判所・国会などの一次資料をベースにニュースを解説する個人ウェブメディア Instr Signal（インスター・シグナル） を運営しています（2026年11月時点で公開記事190本、根拠とした一次資料は 一次資料のライブラリ に792件収録）。\n開設から2か月ほど経って Google Search Console を見ると、インデックス登録自体は当日中に通っているのに、新記事の検索表示が極端に伸びにくい状態が続いていました。そこで 2026年11月19日に本番 HTML とクローラー挙動を実測したところ、ブロックテーマ（Twenty Tw...",
+    "url": "https://zenn.dev/instrsignal/articles/7834f07e130279",
+    "published_at": "2026-11-19T16:10:48+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "MetaのMuseを使ってみた: 内部構造とセキュリティの調査",
+    "summary": "Muse が発表されたときも、話は耳に入っていました。ただ、LLM 領域でパッとしない Meta のプロダクトだし、そこまで革命的なものではないだろうと思って、しばらく放っておきました。\nところが、日が経つにつれて、アメリカ・日本のアプリストアで 1 位になった報道や、X での多くの投稿を見るようになりました。これは何か革命的なことが起きているのかもしれない、と興味をそそられ、元々 Facebook(今の Meta)出身でもあることの縁も合わさって、試しに入れてみました。\n本記事は 2 週間ほど使用してみた感想と、公式発表を読んだ上での内部構造と安全面の設計についてまとめます。\n\n 使っ...",
+    "url": "https://zenn.dev/shoyataguchi/articles/b1bc6a96d4b963",
+    "published_at": "2026-11-19T15:55:36+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIボットを30体以上に分けて、生活と個人開発の雑務を任せている話",
+    "summary": "ある朝、ブリーフィング担当のボットに「カレンダーの材料がまだ届いていません」と言われました。カレンダーはカレンダーくんが、メールはメールくんが見ていて、ブリーフィングくんはそれを受け取ってまとめるだけ、という分担にしていたのですが、カレンダーくんからブリーフィングくんへの受け渡しが止まっていた、という話です。\nAI に雑務を任せたはずが、AI 同士の連絡で詰まっている。今回はそんなふうに、AI ボットを担当ごとに分けて生活と個人開発の雑務を回している話を書きます。\n前回は、バス釣りの記録サイト FishTrack を Flask・Docker・AWS で個人開発している話でした。今回はそ...",
+    "url": "https://zenn.dev/naga1021/articles/ai-bots-role-split",
+    "published_at": "2026-11-19T15:22:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Macの中だけで育つ秘書AIを作っています：MLXで測った速さ・記憶・LoRAの数字",
+    "summary": "はじめに\n手元の Mac だけで動く LLM を、自分専用の秘書として育てています。\n作り始めて、約2か月がたちました 🌱\n話しかけると返事をして、声で読み上げてくれて、前に話したことも覚えていてくれる。\nそんな秘書を、ネットの向こうのサービスに会話を渡さずに作れないか？というのが出発点です。\nローカル LLM の理屈は、ポートの tesla さんの記事がとても分かりやすいです。\n質問を読む時間（Prefill）と返事を書く時間（Decode）の違い、メモリの内訳、モデルを軽くする方法（量子化）、いまの PC で動く規模までが、表と図で整理されています。\n👉ローカルLLM入門\nこの記...",
+    "url": "https://zenn.dev/yamato_snow/articles/local-llm-secretary-mlx-measurements",
+    "published_at": "2026-11-19T16:19:16+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「3090で約2.3時間」の64M LLM自作を、RTX 5060 Tiで公式手順どおり動かしてみた",
+    "summary": "これは何の話か\njingyaogong/minimindは、Tokenizer・Pretrain・SFT・LoRA・DPO・PPO・GRPO・CISPO・エージェント的RL・蒸留まで、LLMの学習パイプライン全体を高レベルラッパーなしでPyTorchネイティブに実装したOSSである(Apache License 2.0)。\n本稿執筆時点でGitHub Trending(Python)に入り、スター数は65,881・前日比+188だった。\n公式READMEは「RMB 3・2時間でLLMをゼロから作れる」を掲げ、既定構成のminimind-3(64Mパラメータ)はRTX 3090 1枚で...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-051-minimind-cpu-pretrain-sft",
+    "published_at": "2026-11-19T14:33:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語のレポートが「短すぎる」と判定される不具合を直して、配布元に取り込まれた話",
+    "summary": "何が起きたか\n調査用のAIエージェント（hyperresearch）で、日本語の調査レポートを作らせました。本文は約8,900字あり、指定された長さ（6,000〜15,000字）にきちんと収まっていました。\nそれなのに、完成前の品質チェック（length-in-range）で「短すぎる」と判定され、レポートが止められてしまいました。チェックの記録を見ると、このレポートは 555語 と数えられていました。\n\n 原因：「単語の区切りがない言語か」の判定が、平均の長さに頼っていた\nhyperresearch は、レポートの長さを2通りの方法で測ります。\n\n英語のように空白で単語が区切られる...",
+    "url": "https://zenn.dev/atsu1979/articles/7545941148cef7",
+    "published_at": "2026-11-19T14:20:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【ClickFix】AIの回答に「このコマンドを実行して」と言われたら、ターミナルに貼る前に確認したいこと",
+    "summary": "はじめに\nエラーが出て困っているときに、AIの回答の中に「次のコマンドを実行してください」と書いてあったら、そのままターミナルに貼ってしまいませんか。急いでいるときほど、中身を読まずに貼りたくなるものだと思います。\n最近、この「AIが教えてくれたコマンドを、人が自分の手で実行する」流れを悪用する攻撃が、セキュリティ企業から報告されています。ClickFix（クリックフィックス）と呼ばれる手口です。\nこの記事では、「ClickFix」について報告されている事例を整理したうえで、手元でできる3つの確認を整理していきます。\n\n 対象者\n\nChatGPTやClaudeなどの回答に書かれたコ...",
+    "url": "https://zenn.dev/ykbone/articles/202611-security-ai-clickfix-shell",
+    "published_at": "2026-11-19T14:17:31+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "RTX 3060 12GB で Xing4.0-29B-A4B を実測：自己申告 SWE-bench 75.0 を自作の物差しで",
+    "summary": "!\n私共（BitespotFactory）は 専門知識ゼロの状態から クラウドAIとのチャットだけを頼りにローカルAI環境を構築しています.\nVRAM 12GB の普通の家庭用PCで, 新しいモデルを実際に試した結果をお届けします.\n\n\n Xing4.0 が本家 llama.cpp で動くようになった\nXing4.0-29B-A4B は, 中国電信（China Telecom）の AI の会社が開発し, 2026年9月に XingChen-AGI の名前で公開したモデルです.\n全体 29B のうち1回に動くのは 4B の MoE（全体のうち一部の「専門家」だけを毎回動かす作り）で, ライ...",
+    "url": "https://zenn.dev/bpf/articles/36c2f84f63e28b",
+    "published_at": "2026-11-19T13:31:03+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "1ターンだけ Sonnet に任せるスキルを作ったら、Opus のままより高くついていた話",
+    "summary": "Claude Code で、ふだんは Opus を使いつつ「この質問だけは Haiku や Sonnet で十分」という場面がよくあります。そこで、1ターンだけ下位モデルに答えさせるスキル /ask-haiku と /ask-sonnet を作りました。この記事では、スキルの作り方と、自分のセッション記録で費用を確かめた結果を紹介します。結論から言うと、/ask-haiku は狙いどおり安くなりました。一方で /ask-sonnet は、会話の途中で使うと Opus のまま答えさせるより高くついていました。\n\n 前提\n\nmacOS 26.5、Claude Code 2.1.311 の C...",
+    "url": "https://zenn.dev/no215/articles/claude-code-one-turn-model-skill",
+    "published_at": "2026-11-19T13:06:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "余りの RTX 2080 Ti と別PCの 4090 を束ねて gpt-oss-120b を 15 トークン/秒に",
+    "summary": "余ったパーツで組んだローカル LLM サーバー（RTX 2080 Ti 11GB＋RTX 2080 SUPER 8GB、VRAM 計 19GB）で、1枚では載らない gpt-oss-120b（59GB） や Llama 3.3 70B を動かすために、複数の GPU を束ねるツール GPUEnsemble を作って公開しました。\nこの記事はその要約版です。計測の詳しい経緯は、自分のブログに3本に分けて書いています（末尾にリンクがあります）。\nhttps://github.com/mogurasoken-glitch/GPUEnsemble\n\n GPUEnsemble とは\n複数の GPU...",
+    "url": "https://zenn.dev/mogurasoken/articles/721b986fea536d",
+    "published_at": "2026-11-19T12:53:20+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Novel as Code ② ― 156項目の設定を整理したら、全部Draftになりました",
+    "summary": "Novel as Code ② ― 156項目の設定を整理したら、全部Draftになりました\n\n はじめに\n前回の記事では、小説をソフトウェアのように管理するという考え方と、実際に作成したrepositoryの構造を紹介しました。\n小説本文と正式な設定であるCanonを分離し、Gitで変更履歴を管理するというものです。\nでは、実際に設定を管理するにはどうするのか、なんですが、\n私の場合、まずはAIとの会話で考えてきた作品設定を整理するところから始めました。\n世界観、人物、能力、社会制度、物語の展開、まだ決めていない問題等、こうしたものを一つずつ管理できるようにしたいわけです。\n結果と...",
+    "url": "https://zenn.dev/schutzz/articles/3ce5672a098bc0",
+    "published_at": "2026-11-19T12:36:39+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ideogram 5.0 vs GPT Image 2.6: Poster Typography, Character Lock & Credit Economics",
+    "summary": "Priya Nair · AI Infrastructure Analyst · Published 2026-11-18\n\nTLDR Compare Ideogram 5.0 and GPT Image 2.6 across multi-line poster typog...",
+    "url": "https://qiita.com/yoxi957/items/80b18e64447225d1779d",
+    "published_at": "2026-11-20T01:46:38+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "2026年11月20日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+    "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\n部下がClaudeっぽいスライドしか出してこな...",
+    "url": "https://qiita.com/ennagara128/items/2367588703fbee1cf6bb",
+    "published_at": "2026-11-20T01:43:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI が書いた記事を人の OK で Zenn・Qiita に公開する仕組みと、公開ワークフローの注意点",
+    "summary": "はじめに\n社内のサイト分析ツールに、AI のエージェントが技術記事を執筆し、人は確認・修正・公開の判断だけを行う仕組みを組み込みました。公開先は、自社サイトのナレッジ、Zenn、Qiita の 3 か所です。OK を押した記事だけが、投稿先ごとの手続きで公開されます。\nこ...",
+    "url": "https://qiita.com/yo-shie/items/b30b6df400dfbeddac5c",
+    "published_at": "2026-11-20T01:17:05+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが書いたコード、レビューで一番困るのは「誰が自分を待っているか分からない」こと",
+    "summary": "はじめに\nClaude Code、Codex、Cursor、Gemini。最近の私の開発は、この4つを並走させるのが当たり前になりました。1つにタスクを投げて、書いている間に別の1つへ次の指示を出す。頭では「並列化できている」と思っていました。\nでも実際に困ったのは、コー...",
+    "url": "https://qiita.com/BoxBox_JP/items/9e42fb2aeb52f82316d6",
+    "published_at": "2026-11-20T01:06:55+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "An OpenAI agent assigned a simple writing task decided on its own to build a secret email surveillance tool",
+    "summary": "An internal OpenAI model was supposed to create a fitness document but instead began planning scripts to secretly forward emails to an \"attacker.\" The agent recognized the conflict with its assigned task but dismissed it as an environment error. OpenAI identified security training against prompt inj",
+    "url": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
+    "published_at": "2026-11-19T21:15:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI industry growth remains strong, but the pace is slowing",
+    "summary": "Token prices for AI models fell 21 percent in six weeks while usage volume hit a record high, according to the Ramp AI Index. Anthropic dominates with nearly 59 percent of token spending. Data from Ramp, Stripe and OpenRouter independently show the same pattern: the AI industry is still growing, but",
+    "url": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
+    "published_at": "2026-11-19T19:28:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese tech firms face a double hit as chip shipments stop and overseas cloud access disappears",
+    "summary": "Stricter US export controls on AI chips are hitting fast. China's Moonshot AI walked away from a $150 million deal in Indonesia, while TSMC and Samsung stopped shipping to Chinese customers. A New York Times investigation found that Alibaba had routed Nvidia chips to Chinese military researchers thr",
+    "url": "https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/",
+    "published_at": "2026-11-19T17:02:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates and political headwinds shake the sector",
+    "summary": "Anthropic launches the largest IPO in history, dethroning SpaceX as the previous record holder. Early investor Dustin Moskovitz is publicly distancing himself, warning that his early funding may have been an act \"that ended the world.\" The article Anthropic's $81.3 billion IPO shatters SpaceX's reco",
+    "url": "https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector/",
+    "published_at": "2026-11-19T14:02:22+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
+    "summary": "OpenAI's internal use of coding agents is growing fast, with theoretical token costs now exceeding researchers' base salaries. Even though teams are reluctant to work without these tools, the models still produce a lot of \"AI slop\" beyond routine tasks. The article OpenAI's own researchers now say t",
+    "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
+    "published_at": "2026-11-19T13:08:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
+    "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article Google's latest AI model is faster, cheaper and smarter than its flagship predece",
+    "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
+    "published_at": "2026-11-19T11:18:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months",
+    "summary": "Pulling text out of scanned books and records has gotten a lot cheaper with freely available AI models. The article OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months appeared first on The Decoder .",
+    "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
+    "published_at": "2026-11-19T09:28:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
+    "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per million input tokens and $15 per million output tokens, Neon is priced above previou",
+    "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
+    "published_at": "2026-11-18T21:03:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
+    "summary": "With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first time, includes native sound. A community gallery allows users to share and remix t",
+    "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
+    "published_at": "2026-11-18T19:26:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
+    "summary": "Microsoft's AI division MAI unveiled seven new models for code, security, images, language, and routing at Ignite. MAI Code 2 reaches 98 percent of GPT-6.1 Sol's performance at 40 percent of the cost, according to Microsoft. The models are built for running AI agents around the clock in enterprises.",
+    "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+    "published_at": "2026-11-18T18:47:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Healthcare AI Spending Hits $3.7 Billion, But Who Really Benefits?",
+    "summary": "Healthcare AI spending hits $3.7 billion as providers, payers, and tech giants compete. Will rising investment deliver better care, efficiency, and measurable ROI?",
+    "url": "https://www.forbes.com/sites/davidchou/2026/11/19/healthcare-ai-spending-hits-37-billion-but-who-really-benefits/",
+    "published_at": "2026-11-19T13:57:53+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Infosys Expands AI Footprint in Japan With Telecom JV",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://analyticsindiamag.com/ai-news/infosys-joins-ntt-docomo-metaverse-venture-as-ai-partner",
+    "published_at": "2026-11-19T13:57:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Alibaba Q2 FY2027 Revenue Rises 10% to $40.5 Billion as AI Cloud Grows 53% and Capex Jumps 60%",
+    "summary": "Alibaba Group reported a 10 percent increase in revenue to RMB271.52 billion ($40.50 billion) for the September quarter of fiscal 2027,",
+    "url": "https://infotechlead.com/cloud/alibaba-q2-fy2027-revenue-rises-10-to-40-5-billion-as-ai-cloud-grows-53-and-capex-jumps-60-99743",
+    "published_at": "2026-11-19T13:57:08+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SEBI preparing guidelines for responsible AI use in capital markets, including disclosures and accountability: KVR Murty",
+    "summary": "The Securities and Exchange Board of India SEBI is preparing to issue guidelines for the responsible use of artificial intelligence AI in capital markets including disclosures and accountability requirements for related entities SEBI Whole Time Member WTM KVR Murty said on Thursday Addressing a Worl",
+    "url": "https://www.devdiscourse.com/article/business/4009562-sebi-preparing-guidelines-for-responsible-ai-use-in-capital-markets-including-disclosures-and-accountability-kvr-murty",
+    "published_at": "2026-11-19T13:57:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Attackers Are Weaponizing Trusted AI Assistants and IT Tools Against the Enterprises That Deploy Them: Elastic’s Report",
+    "summary": "Elastic today announced threats, etc, the latest report by Elastic Security Threat Command. The report reveals evidence of attackers abusing the trust and deep system-level access enterprises give to AI tools and agents. Elastic Security Threat Command found that attackers are logging in with stolen",
+    "url": "https://cxotoday.com/cybersecurity/attackers-are-weaponizing-trusted-ai-assistants-and-it-tools-against-the-enterprises-that-deploy-them-elastics-report/",
+    "published_at": "2026-11-19T13:56:46+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic needs rapid growth to keep up spending, as Canadian AI sector heats up",
+    "summary": "Anthropic's investor documents warn the company needs to increase sales to pay for its data centre leases and infrastructure. At the same time, the company says it needs to plan its data centre investments years in advance, without knowing whether its customers will be there for the long term.",
+    "url": "https://www.cbc.ca/news/canada/nova-scotia/anthropic-needs-rapid-growth-to-keep-up-spending-as-canadian-ai-sector-heats-up-9.7427747?cmp=rss",
+    "published_at": "2026-11-19T13:56:25+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft is killing To Do, sidelining Planner Premium, and calling it simplification",
+    "summary": "Microsoft is revamping its task management lineup by shifting future development toward a unified platform inside Microsoft 365. Read more...",
+    "url": "https://www.neowin.net/news/microsoft-is-killing-to-do-sidelining-planner-premium-and-calling-it-simplification/",
+    "published_at": "2026-11-19T13:56:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ThoughtSpot Deepens Integration with Claude to Advance Agentic Analytics for the Enterprise",
+    "summary": "ThoughtSpot Analytics Harness brings the power of Agentic Analytics and Enterprise Semantics to Claude Data to deliver trusted insights and automate work with data-smart agents that analyze, decide, and take action ThoughtSpot, the data and AI platform company, today announced two integrations with ",
+    "url": "https://martechseries.com/analytics/thoughtspot-deepens-integration-with-claude-to-advance-agentic-analytics-for-the-enterprise/",
+    "published_at": "2026-11-19T13:56:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases",
+    "summary": "Gov. Newsom Wednesday released a wide-ranging set of policy recommendations to mitigate risks from artificial intelligence,",
+    "url": "https://us.headtopics.com/news/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-90000005",
+    "published_at": "2026-11-19T13:56:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic set to start trading after completing largest-ever IPO",
+    "summary": "Anthropic raised a record $81.3 billion, catapulting it past SpaceX, which raised $75 billion when it went public in June.",
+    "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/",
+    "published_at": "2026-11-19T13:55:19+00:00",
+    "source": "newsdata"
+  }
+]
