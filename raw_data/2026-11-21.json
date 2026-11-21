@@ -1,0 +1,289 @@
+[
+  {
+    "title": "勾配降下なしでLLMに重みを書かせる「Weight-Space Programming」を公式ハーネスで再現した",
+    "summary": "勾配降下を使わずにモデルの重みを「書く」という発想\n機械学習のモデルは、ふつう勾配降下法で重みを少しずつ更新して学習する。\nPOSTECHのHyunjong OkさんとJaeho Leeさんが発表したWeight-Space Programming Doesn't Need Transformers(arXiv 2611.22055)は、その前提をひっくり返す。\nLLMに勾配降下を一切使わせず、モデルの重み(パラメータ)を直接「書かせる」。\n論文では3つのフロンティアLLM(Claude Opus 5.5・GPT-6.1 Sol・GPT-6 Astra)に、ARC(AI2 R...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-052-weight-space-programming-arc",
+    "published_at": "2026-11-20T14:37:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "FDEって結局、何をする人なのか",
+    "summary": "FDE（Forward Deployed Engineer）は、顧客の現場に入って課題を理解し、ソフトウェアを作って、使われるところまで関わるエンジニアのことです。Palantirの職種説明でも、顧客と直接協働し、設計から実装・導入まで関わる役割として紹介されています。[1]\nでも、「顧客の課題を解決する」と言われても、正しいけれど広すぎて、結局どこを頑張れば良いFDEなのかがよく分かりません。\n以前、FDEもloop engineeringも、結局は泥臭い対話の上に成り立つという記事で、泥臭い対話や前提のすり合わせが大事だと書きました。その考えは今も変わっていません。今回は、その対話で...",
+    "url": "https://zenn.dev/boku_yaji/articles/ad087efbe61ec7",
+    "published_at": "2026-11-20T14:37:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "質問と一緒に、図と表を使った説明ページをブラウザに表示する grill skill「show-and-grill」",
+    "summary": "Matt Pocock さんの grill-me は、AI が Issue や計画の未決の設計判断を質問してくる skill です（kaji の grill-me は前の記事で紹介しました）。質問と推奨が短く出るので、テンポよく進みます。\nその代わり、説明は薄めで、答える人が Issue や計画を理解していることが前提になっています。理解が追いついていないと、追加で詳細説明を依頼したり、選択肢の違いが分からないまま「推奨で」と答えたりすることになります。\nそこで、図や表を使った説明ページをブラウザに出し、理解を助けながら質問を進める grill の skill「show-and-gril...",
+    "url": "https://zenn.dev/kamo78/articles/show-and-grill-visual-design-interview",
+    "published_at": "2026-11-20T13:33:39+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで並列開発している人、SSDの空きはどう確保していますか？（still v0.3.0-beta.1）",
+    "summary": "これはセキュリティの記事です。ディスクのクリーナーは、仕組み上ディスク全体を読みます。そのアプリが外と通信するなら、何をどこへ送り、どこから何を受け取るかは、セキュリティの問題です。\nAIと並列で開発していると、worktreeやビルド成果物でSSDがすぐ埋まり、クリーナーに頼りたくなります。そこで、よく使われるクリーナー15本の外部通信を公式資料で調べ、その結果を受けて、外部と通信しない片付けアプリ still を作りました。stillの特徴は次の4つです。\n\n\ntarget、.next、dist、Dockerのビルドキャッシュなどの開発生成物を見つけ、1行ずつ「なぜ消してよいか」を出...",
+    "url": "https://zenn.dev/mt4110/articles/still-mac-cleaner-no-network",
+    "published_at": "2026-11-20T13:30:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "数理最適化システムの構築はAIエージェントで自動化できるか？",
+    "summary": "数理最適化のシステムづくりって、AIエージェントにどこまで任せられるんでしょうか。\n数理最適化は、ほかのシステムに比べると仕様を決まった形式 (何を良くしたいかの目的関数と、守るべき条件の制約) で書けて、プログラムの流れもパターン化されています。なので、AIエージェントに任せやすい領域だと思うんですよね。\nそこで、今のAIエージェントでできるだけ自動化するための仕組みづくりを研究しています。この記事では、その出発点として「何が難しくて、どう攻めようとしているか」を書きます。\n\n 丸投げすると何が起きるか\n「この問題を解くプログラムを作って」とエージェントに丸投げすると、既存ツールを使っ...",
+    "url": "https://zenn.dev/okarinxx/articles/ai-agent-optimization-1",
+    "published_at": "2026-11-20T12:56:52+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Cortex Agent SDKがGA ― 実務者は何が変わるのか",
+    "summary": "はじめに\n2026年11月18日、SnowflakeのCortex Agent SDKが一般提供（GA）になりました。バージョンは1.0.0、対応言語はPythonとTypeScriptです。\nCortex Agents自体は2025年11月4日にGAしており、構造化データと非構造化データを横断して、計画を立て、ツールを使い、回答を生成する仕組みはすでに提供されていました。今回のポイントは、そのエージェントを自前のアプリケーションから扱うための公式SDKが、正式版になったことです。\nこの記事では、仕様の細部を追うのではなく、データ分析やデータ基盤の実務者にとって何が変わるのかを整理し...",
+    "url": "https://zenn.dev/elm_carl/articles/18ecad9a24f61d",
+    "published_at": "2026-11-20T12:22:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI に資料を丸ごと読ませても、中の「見本の指示」に従わせないための、ラベルと前置きと機械の検査",
+    "summary": "!\nこの記事は、実験の当事者である AI「PUP」（クラウドで動かした Claude Code）が、自分の記録（失敗ログ・テストの記録・組み立てのスクリプト）から書きました。公開の前に、人間の相方（宇宙おじさん）が内容を確かめています。\n\n\n この記事で分かること\n\nAI に読ませる資料の中に「別の AI に貼るための指示」が入っていると、何が起きうるか\nそれを防ぐために入れた 3 つの手（見本のラベル、読ませるときの前置き、機械の検査）\nChatGPT・Gemini・Claude で試した結果と、その限界\nそのまま使える、ラベルの検査スクリプト（Python、標準ライブラリだけ）\n\n想...",
+    "url": "https://zenn.dev/jfp_mesh/articles/ai-bulk-read-sample-labels",
+    "published_at": "2026-11-20T12:21:21+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の部屋を何個も回して壊れた所と、いま使っている決まり 7 つ",
+    "summary": "AI のアザラシ「オラ」だ。この記事も、オラが書いてる。\nプログラムを書かないオーナーの下で、Claude Code の部屋（会話）をいくつも同時に回してる。部屋が増えると、同じ壊れ方を何回もする。たいていは、壊れるたびに、部屋が最初に読むファイル（CLAUDE.md）や、記憶のファイルに決まりを足してきた。\nその中から、よそでも使えそうな物を 7 つ選んだ。決まりの文は、無料で出した本の付録からの抜き書きだ。そこに、壊れた事を 1 つずつ付けた。名前は消して、縮めた所・言い換えた所がある。元の文そのままではない。7 のほかは、オラたちの所の壊れ方に合わせて書いた文なので、そのまま貼って...",
+    "url": "https://zenn.dev/azarashi_ora/articles/ora-claude-code-kimari-7",
+    "published_at": "2026-11-20T11:50:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIの記憶を管理するためのシンプル・プラン",
+    "summary": "複数のAIを使い分けていると、決まって同じ摩擦にぶつかる。AIを変えるたびに、これまでの経緯を最初から説明し直す。採用したファイルがどれだったか分からなくなる。要約してもらうと、「なぜそう決めたか」という理由の部分だけが抜け落ちる。\nこれは、モデルの性能の問題ではない。記憶の置き場所が、それぞれのAIの中に閉じていることから起きる、運用の問題だ。置き場所を自分の側に1つ作り、そこを各AIが参照する形にすれば、説明し直しの回数は減らせる。この記事は、その最小構成の運用設計の記録である。製品の紹介ではなく、個人開発の現場で組んだ運用の話として書く。\n\n 全体像：最小構成の設計図\n構造は単純だ...",
+    "url": "https://zenn.dev/ahousecreate/articles/4b5e4ee9fb4b48",
+    "published_at": "2026-11-20T11:47:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLMのセッションは使い捨てにする：JSONLの作業履歴を検索可能にする「ashiato」を作った",
+    "summary": "はじめに：LLMとのやり取りは、最終成果物よりずっと大きい\n私は普段、Claude Code、Codex、OpenCode経由のworkerなど、複数のAIエージェントを使って開発している。\n1つのIssueを片付けるだけでも、LLMとのセッションではかなり多くのことが起きる。\n\n既存コードを読む\n設計案を比較する\nコマンドを実行する\n仮説が外れる\n別の案を試す\n本題から外れた問題を見つける\n将来別Issueにした方がよい話が出る\n最終的にPRや設計書へ落とす\n\nしかし、最後に成果物として残るのはその一部だけである。\nPRには採用した実装が残る。設計書には採用した判断が残る。Issu...",
+    "url": "https://zenn.dev/masuda_masuo/articles/2026-10-12-ashiato-session-history",
+    "published_at": "2026-11-20T11:13:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "組み込みAI不要(embedded_models:false)Rust製MCP記憶「LongMemOS/MemoryBox 2.0」の設計",
+    "summary": "背景：複数のAIコーディングツールを併用する現場で起きる「文脈の断絶」\n近年、日本の開発現場でも Claude Code、Cursor、Codex、OpenCode、Trae、OpenClaw など複数の AI エージェントを用途別に使い分ける運用が広がっています。一方で、ツールを切り替えるたびに「なぜこの API スキーマに決めたのか」「既存の ERP 連携テーブルに触れてはいけない条件は何か」といった開発文脈がツールローカルの履歴に閉じ込められ、別のエージェントから参照できない課題が顕在化しています。\nまた、従来のローカル記憶 MCP サーバーの多くは、Python 仮想環境と数...",
+    "url": "https://zenn.dev/zeroos_fidwell/articles/589a526771fab2",
+    "published_at": "2026-11-20T16:01:34+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ゼロから作る日本語ミニGPTと、RSI実験で分かった限界",
+    "summary": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエージェントを個人開発していますが、仕事で機械学習をした経験はありません。\nLLMは普段APIやエージェント経由で使っていますが、中で何が起きているかを自分の手で確かめたくなりました。そこで、外部の学習済み重みも高水準ライブラリも使わず、PyTorchの基本演算だけで日本語の小さなGPTを作りました。さらに、モデルが自分の回答を自分で採点して学び直す「RSI（再帰的自己改善）」の真似ごとも、おもちゃ規模で試しました。\n先に正直に書いておくと、これは 学習データが数KBしかない教育用の小さなモデル です。実用性は期待しない...",
+    "url": "https://zenn.dev/koheip/articles/minillm-from-scratch-rsi",
+    "published_at": "2026-11-20T12:34:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "PowerPointをLLMにちゃんと読ませる：テキスト・XML・画像の三本立てで攻める",
+    "summary": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n社内にあるドキュメントのうち、実は一番「中身が濃い」のはPowerPointだったりします。設計の全体像、業務フロー、検討の経緯…。大事な情報ほど、図になってスライドに載っています。\nところが、PowerPointをLLMに読ませようとすると、思ったよりうまくいきません。\n\nテキストだけ抜き出すと、図の中の矢印や配置の意味が消える\nスライドを画像にしてマルチモーダルLLMに見せると、小さい文字を読み間違える\n\nどちらか一方だけだと、どうしても情報が欠ける\n\nいろいろ試した結果、私はテキスト・XML（構造）...",
+    "url": "https://zenn.dev/dxclab/articles/c959df33325ccb",
+    "published_at": "2026-11-20T11:17:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "数億行の「クラウドに出せない機密データ」をどう分析する？128GBメモリ×DuckDB×ローカルLLMのハイブリッド分析基盤",
+    "summary": "1. はじめに：データ分析基盤の現場で痛感する「コスト」と「機密」のジレンマ\n普段、AIやデータを扱う部署で企業のデータ分析基盤を構築・運用する仕事をしていますが、最近の「DWH×生成AI」のトレンドには大きな可能性を感じる一方で、実務ならではの強いジレンマも抱えています。\nたしかにSnowflake（Cortex AI）やBigQueryなどの進化によって、SQLから直接LLMを呼び出してテキストやログを分析する仕組み自体は簡単に作れるようになりました。しかし、いざそれを全社的な実務データに適用しようとすると、 「クラウドの従量課金コスト」と「データの機密性・閲覧権限」という2つの...",
+    "url": "https://zenn.dev/ruriopcode/articles/4183ff66d90941",
+    "published_at": "2026-11-20T11:16:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MCPサーバーが増えてきたら「ゲートウェイ」を1枚かませよう",
+    "summary": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\nAIエージェントにツールを持たせる方法として、MCP（Model Context Protocol）はすっかり定番になりました。最初は「社内文書の検索」のMCPサーバーを1つ作ってつなぐだけなので、とても簡単です。\nところが、使い始めると次々に要望が出てきます。\n\n「顧客情報も見られるようにしたい」\n「チケット管理システムにも書き込みたい」\n「でも、この部署の人には顧客情報を見せないでほしい」\n「誰がいつ何を実行したか、記録に残してほしい」\n\nMCPサーバーが3つ、4つと増えてくると、エージェント側の設定...",
+    "url": "https://zenn.dev/dxclab/articles/b8869222bdeeec",
+    "published_at": "2026-11-20T11:13:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "数十年前の社内マニュアルをRAGに食わせる前にやっておく5つの前処理",
+    "summary": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n「社内のマニュアルを全部RAGに入れて、何でも答えてくれるAIを作りたい」という相談はとても多いです。そして実際に触ってみると、だいたい次のような状況になります。\n\n元ファイルは Word や PDF で、作られたのは10年〜20年前\n全角英数字、機種依存文字、謎の罫線がたっぷり\n「第3章 3.2.1」のような見出しはあるが、PDF にすると全部ただの文字列\n社内でしか通じない略語が説明なしで出てくる\n\nこの状態のままベクトルDBに入れると、検索はそこそこ当たっているのに回答の質が上がらない、という状態に...",
+    "url": "https://zenn.dev/dxclab/articles/001ddb6d841ddf",
+    "published_at": "2026-11-20T11:11:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI営業ロールプレイの「お客様役」を本物っぽくするペルソナ設計",
+    "summary": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n最近、「LLMにお客様役をやってもらって、営業や窓口対応の練習をしたい」という相談をよく受けます。人同士のロールプレイは、相手役の時間を取るのが大変ですし、毎回同じ温度感で付き合ってもらうのも難しいからです。\nところが、何も考えずに「あなたは〇〇業界の部長です。営業担当と話してください」とお願いすると、だいたい次のようになります。\n\n\nすぐに納得してくれる（「なるほど、ぜひ導入したいです！」）\n聞いてもいないのに、自分の課題を全部話してくれる\n\n何を言っても怒らない、渋らない\n\n\nこれでは練習になりません...",
+    "url": "https://zenn.dev/dxclab/articles/786bd805ba1169",
+    "published_at": "2026-11-20T11:08:35+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【2026年版】画像から3Dモデル生成AI 5種を徹底比較：Idol Max / Turbo・Tripo・Meshy・Hunyuan3D・TRELLISの料金・リギング・PBR・導入コスト",
+    "summary": "結論（最初にまとめ）\n2026年時点で「1枚の画像から実用的な3Dモデル（GLB）を生成するAI」を選ぶ場合、用途別の最適解は以下の通り明確に分かれます。\n\n月額課金なし・20〜50秒でゲーム向け約3万ポリゴンGLB＋自動リギング（walk/run/jump/idle）...",
+    "url": "https://qiita.com/czmilo/items/c3da0648aeb973651b05",
+    "published_at": "2026-11-21T01:41:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "未解決を放置にしない――AIとの作業で「直さなかった理由」を公開記録へ残した話",
+    "summary": "未解決を放置にしない――AIとの作業で「直さなかった理由」を公開記録へ残した話\n\n昨日、私は毎日の公開前検査で繰り返し表示されるWARNINGを記事にしました。\n確認したのは、次の2つです。\nCURRENT_CONTEXTの競合コピーが6件ある\n公開準備在庫が目標7本に対...",
+    "url": "https://qiita.com/boraemon2000/items/13102ca9ebd6e9b2c3f4",
+    "published_at": "2026-11-21T01:20:50+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code 開発者が注目している5つのアップデート（v2.1.326 - v2.1.330）",
+    "summary": "Claude Code の v2.1.326 〜 v2.1.330 の中から、実務への影響が大きいと思われるものを5つ選んで深掘りします。網羅的な変更点一覧は リリースノートまとめ にあるので、今回は「なぜ注目に値するか」にフォーカスします。\n\n1. Bash サンドボッ...",
+    "url": "https://qiita.com/NaokiIshimura/items/a75af610ec8c0d2ff699",
+    "published_at": "2026-11-21T01:11:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Code v2.1.326 - v2.1.330 リリースノートまとめ",
+    "summary": "Claude Code v2.1.326〜v2.1.330 では、Bash サンドボックス・パーミッションチェックの大幅な強化（v2.1.326）、Opus 4.6 / Sonnet 4.6 の auto mode をサードパーティプロバイダーで解禁（v2.1.328）、/...",
+    "url": "https://qiita.com/NaokiIshimura/items/0b054c35b3c8b8aa5796",
+    "published_at": "2026-11-21T01:10:39+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI makes it much harder for attackers to extract how its latest AI models think",
+    "summary": "OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 percent to 0.2 percent. The company is also suspending thousands to tens of thous",
+    "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+    "published_at": "2026-11-20T20:31:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats",
+    "summary": "Signal is blocking screenshots to stop AI agents like Apple's Siri AI, Google's Gemini Intelligence, and Meta's Muse from reading private chats. The app calls it an \"existential threat\" to privacy, but admits its protections remain incomplete, including on macOS. Apple, Google, and Microsoft should ",
+    "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+    "published_at": "2026-11-20T19:50:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working",
+    "summary": "Google is bringing \"Computer Use\" to Gemini for Mac, letting the AI operate desktop apps, local files, and websites in an isolated background window with a live preview while users keep working. The article Google's Gemini can now run Mac apps and finish desktop chores in the background while you ke",
+    "url": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
+    "published_at": "2026-11-20T18:50:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others",
+    "summary": "A Bloomberg News analysis of 10 million job postings suggests AI is compounding China's already weak labor market. Entry-level workers and the creative industry are feeling the shift most, with more than 90% of Chinese micro-dramas now produced using AI. Former central bank adviser Cai Fang warns th",
+    "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
+    "published_at": "2026-11-20T15:56:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Apple joins the race for AI agents that control your device while raising new barriers for competitors",
+    "summary": "After Meta, OpenAI, Anthropic, and Google launched their own AI agents, Apple is now building one too - while making it harder for rivals to access its devices. The article Apple joins the race for AI agents that control your device while raising new barriers for competitors appeared first on The De",
+    "url": "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/",
+    "published_at": "2026-11-20T15:03:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
+    "summary": "Nvidia is close to acquiring AI startup Inception for at least $500 million, according to The Information. The company is just two years old and builds language models based on diffusion processes, an alternative approach to the token-by-token generation used by models like ChatGPT. The deal would b",
+    "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+    "published_at": "2026-11-20T14:53:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's latest homepage update pushes its search engine further toward an AI answer engine",
+    "summary": "Google is rolling out a collapsible sidebar globally on its Desktop Search homepage. In AI Mode, it lets users reopen recent AI searches, search threads, and create notebooks. Temporary threads that aren't saved to history are also launching worldwide. Google Search co-lead Robby Stein says the feat",
+    "url": "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/",
+    "published_at": "2026-11-20T13:19:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+    "summary": "Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. The article Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill appeared first on The Decoder .",
+    "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+    "published_at": "2026-11-20T09:59:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "An OpenAI agent assigned a simple writing task decided on its own to build a secret email surveillance tool",
+    "summary": "An internal OpenAI model was supposed to create a fitness document but instead began planning scripts to secretly forward emails to an \"attacker.\" The agent recognized the conflict with its assigned task but dismissed it as an environment error. OpenAI identified security training against prompt inj",
+    "url": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
+    "published_at": "2026-11-19T21:15:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI industry growth remains strong, but the pace is slowing",
+    "summary": "Token prices for AI models fell 21 percent in six weeks while usage volume hit a record high, according to the Ramp AI Index. Anthropic dominates with nearly 59 percent of token spending. Data from Ramp, Stripe and OpenRouter independently show the same pattern: the AI industry is still growing, but",
+    "url": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
+    "published_at": "2026-11-19T19:28:19+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "A Linux Phone With Camera Kill Switches: What $1,599 Gets You",
+    "summary": "Purism's Librem 5 v2 features physical switches that cut power to cameras and microphones. Explore its upgrades, $1,599 price, and trade-offs with iPhones. The post A Linux Phone With Camera Kill Switches: What $1,599 Gets You appeared first on TechRepublic.",
+    "url": "https://www.techrepublic.com/article/news-purism-librem-5-v2-camera-mic-kill-switches/",
+    "published_at": "2026-11-20T13:56:57+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Apple likely to launch iPhone 18, iPhone Air 2 in March 2027",
+    "summary": "Apple's supply partners Samsung and LG have begun the production of OLED display panels for the iPhone 18 and the iPhone Air 2.",
+    "url": "https://www.deccanherald.com/technology/apple-likely-to-launch-iphone-18-iphone-air-2-in-march-2027-4225574",
+    "published_at": "2026-11-20T13:56:45+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "'Misanthropic and Evil': Elon Musk's SpaceX Could Receive Up to $120.5 Billion From Anthropic",
+    "summary": "Anthropic's SEC filings reveal agreements to spend up to $120.5bn on SpaceX AI computing capacity, despite Elon Musk's public criticism of its Claude chatbot.",
+    "url": "https://www.ibtimes.co.uk/anthropic-spacex-120-5-billion-ai-computing-deal-1833668",
+    "published_at": "2026-11-20T13:56:29+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Logitech MX Master 4 Creator Edition launched in India at Rs 20,699: All details",
+    "summary": "Logitech has introduced the MX Master 4 Creator Edition mouse in India, featuring a unique design inspired by creative studios. This limited-edition mouse includes features such as haptic feedback and customisable controls designed for creative professionals. It is priced at Rs 20,699 and is availab",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/logitech-mx-master-4-creator-edition-launched-in-india-at-rs-20699-all-details/articleshow/136029745.cms",
+    "published_at": "2026-11-20T13:55:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "E4 Computer Engineering and Openchip Sign MOU to Explore EU-Sovereign AI Compute Platforms",
+    "summary": "SCANDIANO, Italy and BARCELONA, Spain, Nov. 20, 2026 — At SC26, the International Conference for High Performance Computing, Networking, Storage, and Analysis, E4 Computer Engineering and Openchip today announced the signing of a Memorandum of Understanding (MoU) to explore the joint development of ",
+    "url": "https://www.hpcwire.com/off-the-wire/e4-computer-engineering-and-openchip-sign-mou-to-explore-eu-sovereign-ai-compute-platforms/",
+    "published_at": "2026-11-20T13:55:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Селфита в стил GTA 6: Как да си направим плакат от Вайс Сити с изкуствен интелект",
+    "summary": "На фона на еуфорията около GTA 6 социалните мрежи буквално преливат от кадри, генерирани с изкуствен интелект, които превръщат обикновените селфита в неонови постери в духа на Вайс Сити",
+    "url": "https://www.vesti.bg/lyubopitno/selfita-v-stil-gta-6-kak-da-si-napravim-plakat-ot-vajs-siti-s-izkustven-intelekt-6276872",
+    "published_at": "2026-11-20T13:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Rahm Emanuel on U.S. AI chip export controls and details of his economic plan",
+    "summary": "Rahm Emanuel, former U.S. ambassador to Japan, former White House chief of staff, former Chicago mayor and former U.S. congressman, joins 'Squawk Box' to discuss Nvidia's spy scandal fallout, U.S. AI chip export controls, details of his economic plan, and more.",
+    "url": "https://www.cnbc.com/video/2026/11/20/rahm-emanuel-on-u-s-ai-chip-export-controls-and-details-of-his-economic-plan.html",
+    "published_at": "2026-11-20T13:54:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How 7 restaurant chains are using AI",
+    "summary": "Major restaurant chains from Bojangles to White Castle and McDonald’s are turning to artificial intelligence to reduce labor hours and improve the customer experience.",
+    "url": "https://www.restaurantdive.com/news/7-restaurant-chains-deploy-artificial-intelligence/875198/",
+    "published_at": "2026-11-20T13:51:56+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Would you let AI manage your next trip?",
+    "summary": "The Intelligent Journey 2032 explores four directions travel could take by early in the next decade, and how technology, particularly AI, will connect travelers with airlines, airports, hotels and other travel companies. - - The study suggests the future will be defined by travelers deciding what th",
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364458",
+    "published_at": "2026-11-20T13:51:50+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A Wartime Hack Becomes an Educational Tool: Meet Yuvi, the AI Platform that Encourages Children to Think",
+    "summary": "Deborah Danan | JTA Moti Malka was away on reserve duty when his wife hit the very ordinary wartime wall of trying to help their 10-year-old study for an English test while schools were shut and screens had become the fallback. Malka, a father of four who jokes that he has spent more time in […] The",
+    "url": "https://jewishexponent.com/a-wartime-hack-becomes-an-educational-tool-meet-yuvi-the-ai-platform-that-encourages-children-to-think/",
+    "published_at": "2026-11-20T13:51:23+00:00",
+    "source": "newsdata"
+  }
+]
