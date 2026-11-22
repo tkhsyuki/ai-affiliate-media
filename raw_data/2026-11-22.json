@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Excelのエラー表示、AIに聞くときの「3点セット」：表計算をAIに頼む頼み方",
+    "summary": "「#VALUE!って何？」だけでは、自分の答えは返ってこない\nExcelやスプレッドシートでエラー表示が出たとき、生成AIに聞く人は多いと思います。でも、「#VALUE!って何？」とだけ聞くと、返ってくるのは一般的な説明だけ。自分の表のどこが悪いのかは分かりません。\n精度を分けるのは、渡す材料の3点セットです。\n\nエラー表示（セルの表示そのまま）\n入れた関数（セルの中身をコピー）\n周辺の状況（周りのセルに何が入っているか、直前に何をしたか）\n\nこの3つがそろうと、AIの回答が「B2に文字が入っているのが原因の可能性が高い」といった、自分のケースの答えになります。\n\n 無料で1本、型を...",
+    "url": "https://zenn.dev/tenpurekoubou/articles/cc34739277baa1",
+    "published_at": "2026-11-21T18:44:33+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "LLM出力の壊れたJSONをPython標準ライブラリで決定的に修復・型検証する実装パターン",
+    "summary": "LLMにJSON形式での出力を指示しても、実運用では次のような「あと一歩で壊れているJSON」が必ず混ざります。\n\n前後に説明文や ```json ... ``` のコードフェンスが付く\n末尾カンマ（trailing comma）や // コメントが入る\nシングルクォートや Python の True / False / None が混ざる\n最大トークン上限に当たって末尾の } や ] が欠けたまま途切れる\n\nこれを毎回LLMに「直して」と再プロンプトすると、API費用も遅延も倍増します。そこで LLM呼び出しゼロ・Python標準ライブラリだけ で壊れたJSONを決定的に修復し、必須項...",
+    "url": "https://zenn.dev/inemuri/articles/llm-broken-json-repair-validator",
+    "published_at": "2026-11-21T18:07:38+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "TechLead Conference 2026 Autumn 参加レポート:テックリードは、エンジニアの上位版ではなかった",
+    "summary": "はじめに\n2026年11月6日、TechLead Conference 2026 Autumn に参加してきました。主催は Eight、会場は有明、12時半から20時半までの一日開催です。650名の枠に当日受付も出ていました。\nセッションの要約はしません。自分の立場に当たったところだけ書きます。\n自分の立場を先に書いておきます。認証基盤のプロダクトオーナーをしていて、開発組織の運営をしています。手を動かす仕事は減って、決めることと説明することが増えました。\n行く前にいちばん知りたかったのは、AI時代のテックリードは何を意識すればいいのか、でした。\n一日聴いて持ち帰ったのは、想像と違う...",
+    "url": "https://zenn.dev/dip_techblog/articles/f3e463cfe79fc3",
+    "published_at": "2026-11-21T16:59:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Steamの登録料$100と手数料30%をゼロに！30言語＆29通貨換算対応のゲーム配信ストア『Zteam』を個人開発した",
+    "summary": "!\nTL;DR（3行まとめ）\n\nSteam Directの 「1タイトル登録料 $100（約15,500円）＋売上30%徴収＋審査30日待ち」 の壁をなくすため、登録料 ¥0・手数料 0%・即時公開のインディーゲーム配信ストア 『Zteam』 を個人開発して公開しました！\n\nSteam標準の全30言語（インラインSVG国旗ピッカー付き）、全29通貨のブラウザロケール自動為替換算、有料作品向けの BOOTH / Gumroad / itch.io / Patreon 直結リンク、HTML5 / WebGL ブラウザ即プレイに完全対応しています。\n誰でも無料アカウント作成後、約3分で自作ゲー...",
+    "url": "https://zenn.dev/mcp/articles/6b8f51b13c099b",
+    "published_at": "2026-11-21T16:31:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "複数のAIに役を分け、機械の関所で確かめる——ひとりで回すAIスタジオの設計と実装",
+    "summary": "1つのチャット欄にすべてを任せていた頃、当方では同じ見落としが繰り返されました。構想・構造・実装・独立検の役を分け、議論の余地がないことはAIを使わない小さなプログラムに任せる。ひとりで事業を回すための設計を実際に動いているフックのコードと、うまくいかなかった判断の記録と一緒にまとめました。",
+    "url": "https://zenn.dev/zeuslab/books/3e4510456deb81",
+    "published_at": "2026-11-21T15:23:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "月3,000回の無料枠で、「AIに任せないこと」を先に決めた。猫耳秘書と宇宙を旅した話",
+    "summary": "無料枠でAIを使うとしたら何をする？\n最近、個人開発でゲームを作っています。\nさて、さくらのAI Engineの無料枠を使って何をしてみようか？\n今回は、個人で作っているブラウザゲームに、さくらのAI Engineで「喋れるAI秘書」を入れました。\n秘書って、現実だといろんなことを相談しますよね？でも私が作っているゲームだと、同じ答えしかできない。AIで自然に会話させてみたいなと常々思っていました。\n今回、やってみて一番大事だったのは、APIのつなぎ方ではなく、AIに何を任せないかを先に決めることでした。なぜなら、無料枠がなくなった時に、ゲームを不自然にしたくないからです。\nそこで、...",
+    "url": "https://zenn.dev/nanako1129/articles/799de43c4e556c",
+    "published_at": "2026-11-21T15:00:06+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Antigravityの調子が良いので全部の作業を任せてみた話",
+    "summary": "はじめに\n皆様こんにちは！‍​‌‌‌​‌​​​‌‌​​‌​‌​‌‌‌‌​​​​‌‌‌​‌​​​​‌​‌‌​‌​‌‌‌​​‌‌​‌‌​‌​​​​‌‌​‌​​‌​‌‌​​‌​‌​‌‌​‌‌​​​‌‌​​‌​​​​‌‌‌​‌​​‌‌‌​‌‌​​​‌‌​​​‌​​‌‌‌​‌​​‌‌‌‌​‌‌​​‌​​​‌​​‌‌​​​​‌​‌‌‌​‌​‌​‌‌‌​‌​​​‌‌​‌​​​​‌‌​‌‌‌‌​‌‌‌​​‌​​​‌​​​‌​​​‌‌‌​‌​​​‌​​​‌​​‌​‌​​​‌​‌‌‌​‌​‌​‌​‌​​​‌​‌‌‌​‌​‌​‌​​‌‌​​​‌‌​​​​‌​​‌‌‌​​​​​‌‌‌​​‌​​‌​​​‌​​...",
+    "url": "https://zenn.dev/ququla89/articles/antigravity-is-better-now-i-think",
+    "published_at": "2026-11-21T14:59:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントに渡すMCPの返り値で気をつけていること（Search ConsoleのMCPを作って）",
+    "summary": "前の記事では、Search Consoleの数字から「どの記事の、何を、どう直すか」（処方）を出すサービス「検索カルテ」にMCPサーバーを付けて、Claude Codeに記事を直させた話を書きました。\nその記事に、こんなコメントをもらいました。\n\n処方を確認してから公開する流れなら、カルテの集計期間もMCPの返り値に含めると、古い数字を根拠に直してしまうのを防ぎやすそうです。\n\nその通りだったので、すぐ直しました。そしてこれをきっかけに、「MCPの返り値は、人が読むAPIの返り値とは別の気の使い方がいる」と改めて思ったので、検索カルテで気をつけていることをまとめます。\n前提として、返り値...",
+    "url": "https://zenn.dev/yohei_kuno/articles/a1047222376276",
+    "published_at": "2026-11-21T14:45:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AWS公式のマルチエージェントCLI「CAO」でClaude Codeに仕事を委任させたら、フォルダ信頼確認で60秒止まった",
+    "summary": "これは何を試した記事か\nAWS Labsが公開しているcli-agent-orchestrator(以下CAO、Apache-2.0)を、Claude Codeをワーカーにして実際に動かしてみた記事である。\nCAOは、Claude Code・Codex CLI・Kiro CLIなど、すでに認証済みのAIコーディングCLIを「provider」として束ねるオーケストレーションフレームワークである。\nsupervisorエージェントが、各CLIをtmux上の独立したセッションとして立ち上げ、タスクを委任する。\n各ワーカーは、自分のネイティブな認証・機能をそのまま保ったCLIプロセスとして...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-053-cao-trust-dialog-wall",
+    "published_at": "2026-11-21T14:37:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに丸投げしない設計論：「Pythonの定量フィルタ × Gemini API 1回リクエスト」で株式の情報収集を自動化した話",
+    "summary": "はじめに：「AIで投資なんて馬鹿げている」という誤解\nSNSやネット上では、「AIを使って株式投資をするなんて馬鹿げている」「AIの予測は当たらない」といった意見をよく見かけます。\n結論から言うと、その批判は「AIに丸投げする」という前提が間違っています。\nチャット画面に「これから上がる株を教えて」と打ち込んだり、ニュース記事をそのままAIに読ませて売買判断を任せたりすれば、うまくいかないのは当然です。生成AI（LLM）には明確な得意・不得意があるからです。\n私は現在、自身の株式運用における日々の情報収集を完全自動化していますが、AIに銘柄選びを丸投げすることは一切していません。\n「...",
+    "url": "https://zenn.dev/shimashimap/articles/3be54bfa332afc",
+    "published_at": "2026-11-21T14:22:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "RTX 4070 Ti SUPERでMemory Mosaics v2を日本語ゼロから学習した話",
+    "summary": "はじめに\nMeta の論文 「Memory Mosaics at scale」（NeurIPS 2025 Oral, arXiv:2507.03285）は、attention を一切使わない連想記憶ベースの言語モデル Memory Mosaics v2 を 10B パラメータ・1兆トークンまでスケールさせ、「1兆トークンで学習した v2 が 8兆トークンの Transformer に勝つ」（知識・記憶系タスク）というデータ効率の主張をしました。\n面白そうなので動かしたくなったのですが——公式の学習済み重みは未公開です（GitHub Releases は空、Hugging Face に...",
+    "url": "https://zenn.dev/firemio/articles/memory-mosaics-v2-japanese-training",
+    "published_at": "2026-11-21T17:28:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMの日本語評価で見落としがちな3つの地雷と「平均点」の罠（20問シードセット＋Cohen's κスクリプト公開）",
+    "summary": "取引先から、次の一文だけの返信が届いたとします。\n\nお見積もりの件、結構です\n\nこれは承諾でしょうか、それとも辞退でしょうか。どちらか一方に決めつけて自信満々に答える回答は、私のルーブリックでは 2点以下 です（承諾と断定して着手すれば2点、辞退と断定して関係を終わらせれば1点）。\n日本語・中国語（簡体字/繁体字）・英語の LLM 評価に携わるなかで、1〜5 の5段階で採点する 日本語評価シードセット（20問）と採点ルーブリック を作り、MIT ライセンスで公開しました。この記事では、流暢で丁寧なのに誤っている回答が出やすいように設計した設問を、収録設問から3つ紹介します。\n!\n本記事で...",
+    "url": "https://zenn.dev/eleanoratlas/articles/aa0e5f941775fb",
+    "published_at": "2026-11-21T16:53:42+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "縦書き・複合表PDFを RAG / NotebookLM / Obsidian が誤読しない Markdown に整える実践ポイント",
+    "summary": "はじめに\nLLM（大規模言語モデル）を活用した RAG（検索拡張生成）や、NotebookLM、Obsidian などのナレッジベース構築ツールが普及する中、「スキャンPDFをそのまま投入して質問したら、なぜか的外れな回答（ハルシネーション）や引用ズレが返ってきた」という現象に直面するケースが増えています。\n特に日本語特有の 縦書きレイアウト、段組み構造、そして 複合表（結合セルを含む表） は、単純なテキスト抽出では構造的な破綻を招きやすく、AI による正確な理解を阻害する最大の要因の一つです。\n本記事では、なぜそのままのスキャンPDFが AI に誤読されるのかという技術的背景と、実...",
+    "url": "https://zenn.dev/smkc/articles/8991f7bc189155",
+    "published_at": "2026-11-21T16:16:46+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "機密データを外部に送らないAIエージェントを作りたい　第3回（仮）「エージェント（hermes agent）」",
+    "summary": "タイトルの（仮）について\nもともと週一くらいでじっくり勉強しながら連載していくつもりでしたが、ちょっと仕事の都合で2~3週間くらい更新できなさそうなので、急ぎで最低限の機能だけ雑にまとめて記事にしています。\n後日、編集して（仮）を外します。\nあと最近Strataの記事やYoutube動画が急増しているので慌てていることもあります。\n（仮）の編集は12月以降になりそうです。\n何とかインターネット遮断したエージェントの環境構築までできました。\nRAGが未実装だったりまだ足らない部分は多いですが。\n\n 免責事項\n本記事は個人の検証・学習内容をまとめたものです。\n内容の正確性や安全性を保証す...",
+    "url": "https://zenn.dev/kokeshi_gnome/articles/f20a4881d79c65",
+    "published_at": "2026-11-21T16:05:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "自分のPCで動く日本語AIアシスタント『ヤタ』を作った",
+    "summary": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエンジニアを目指して、AIエージェントを個人開発しています。仕事でエンジニアとして働いた経験はありません。\n今回作ったのは、ヤタ（Yata） という、自分のPCの中で動く個人用AIアシスタントです。チャットで日本語で話しかけると、調べもの、メールや予定の確認、決まった時間の作業、日本でよく使うサービスとの連携を手伝ってくれます。会話や記録はクラウドではなく、PCの中の SQLite に残します。\n先に正直に書いておくと、いまは ベータ版 です。READMEにも「まだ作りはじめたばかりで、うまく動かないところがあるかもしれ...",
+    "url": "https://zenn.dev/koheip/articles/yata-local-ai-assistant",
+    "published_at": "2026-11-21T15:45:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMでクラウドのトークンを9割節約する",
+    "summary": "結論から\nAIとの開発セッションで議事録を取っている。決めたこと、却下した案、その理由。あとで読み返すために残しているものだ。\n正確に言うと、AIに役割を割り当てて会議の形で進めている。設計を詰める人、反対意見を出す人、記録を取る人。その議事録である。この運用自体はそれだけで一本書ける話なので、ここでは深入りしない。\nただ、この議事録を要約させるのにクラウドのトークンを使うのは、どうにも納得がいかなかった。 議事録は開発の本筋ではない。本筋のために残している記録であって、そこに使用枠を持っていかれるのは本末転倒である。\nそして手元にはローカルLLMがある。せっかく動くものを作っておい...",
+    "url": "https://zenn.dev/ace_toshi/articles/local-llm-confidential-mapreduce",
+    "published_at": "2026-11-21T15:45:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "無人で回す自動化を Surface Laptop Ultra で組み直す構想",
+    "summary": "いまの構成\n手元にあるのは Apple M1・メモリ16GB の Mac 1台で、launchd を使って投稿、集計、点検などの定時ジョブを48本動かしている。\n判断、コード修正、複数段階の作業は Claude Code に任せている。契約は月200ドルの定額(Claude の Max プラン)で、決まった時刻に起動する仕組みが4つある。\n\n大会の順位表チェック\n期限がある作業の処理\n失敗したジョブの修復\n大会への提出\n\nオーディオブックの音声は Gemini の有料読み上げ API で生成し、1回あたり約11円かかる。1冊の中では音声モデルを変えない決まりだ。\n計算が重いコンテスト...",
+    "url": "https://zenn.dev/houchi_unyo/articles/surface-laptop-ultra-hybrid-plan",
+    "published_at": "2026-11-21T14:54:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIに昨日の記録を探させたら57行ヒットした――1,865行の公開管理表から必要な1件だけを読む",
+    "summary": "AIに昨日の記録を探させたら57行ヒットした――1,865行の公開管理表から必要な1件だけを読む\n\n昨日、私はAIと一緒に、未解決のWARNINGをどのように記録したか確認していました。\n公開管理表の中から、次の言葉を探しました。\n未解決\n未実施\nWARNING\nHuma...",
+    "url": "https://qiita.com/boraemon2000/items/df2ee7a166f80d064b52",
+    "published_at": "2026-11-22T00:46:40+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "0。GitHub Copilot Fusionが『モデルではなく難易度を選ぶ』形で全プランに展開された日、自分の指示書がタスクの重さに応じてモデルを選び直していた回数はこの数字だった",
+    "summary": "はじめに\n0。\nこれが今回の数字です。何の0かというと、このZenn/Qiita自動投稿パイプラインの定期実行(この記事を書いている回を含む)の中で、「今やっている作業がどれくらい重いか」に応じて、使うモデルやエージェントの実行強度(effort)を自分で選び直していた回...",
+    "url": "https://qiita.com/Hideki_Tamae/items/c0e22f681c310d554441",
+    "published_at": "2026-11-22T00:45:59+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "撮影なしで、創業者が登場する1分46秒の動画をAIモデルで作ったときのハマりどころ5つ（音声・リップシンク・肌・BGM・AI判定）",
+    "summary": "はじめに\nProduct Hunt でのローンチに合わせて、創業者が登場する1分46秒の動画を作りました。ただし、撮影は一度もしていません。映像のカットはすべて生成したもので、声はクローン音声、画面のアニメーションは HTML ページを1フレームずつレンダリングしたもので...",
+    "url": "https://qiita.com/wiroai/items/a7b781440cf9c4914518",
+    "published_at": "2026-11-22T00:13:35+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Claude Codeの--fallback-modelで無人ジョブを止めない：混雑・利用上限・終了コードの3つの落とし穴と実装",
+    "summary": "はじめに：朝起きたらジョブが全部落ちていた\n当社（合同会社ジョインクラス）は、記事作成・朝のレポート・各部署の作業など30以上のジョブを launchd から claude -p で無人実行しています。\n2026年9月、朝のログを見ると複数のジョブが同じ時間帯にまとめて失...",
+    "url": "https://qiita.com/joinclass/items/080927f3b092b9de46e6",
+    "published_at": "2026-11-21T23:30:07+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Nvidia researchers argue huge AI context windows are a dead end",
+    "summary": "Nvidia researchers argue that language models often don't need their full context windows—which are slow, expensive, and prone to errors—and propose an alternative. In tests, periodic summaries and targeted keyword search usually matched full-context results at a fraction of the cost. The team even ",
+    "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+    "published_at": "2026-11-21T16:23:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
+    "summary": "A Buddhist monastery in Vermont called Maple wants to establish itself as Silicon Valley's spiritual authority while creating its own AI god. According to a New Yorker report, leader Soryu Forall's group records every breath its members take to train an AI in his image. Former members report manipul",
+    "url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+    "published_at": "2026-11-21T16:04:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+    "summary": "OpenAI has released new prompt templates for GPT-6.2 Astra and Sol meant to fix common model behaviors such as overly brief answers, unnecessary follow-up questions, and excessive testing when coding. The API is changing as well, since editing a conversation's history can discard reasoning content a",
+    "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+    "published_at": "2026-11-21T13:32:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+    "summary": "Anthropic mathematician Levent Alpöge says he used Claude to prove the Riemann hypothesis, math's most famous open problem for 167 years, with a proof formalized in Lean that spans over 250,000 pages. Just hours later, Stanford researchers published an independent, entirely human competing proof, an",
+    "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+    "published_at": "2026-11-21T11:19:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
+    "summary": "Thinking Machines has released Inkling 2 Mini, an open looped transformer that runs 12 of its 24 layers three times per token. This lets the model reason internally for longer without generating extra text. On Artificial Analysis's Intelligence Index, it ties with Qwen3.8 27B at roughly six times lo",
+    "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+    "published_at": "2026-11-21T10:33:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
+    "summary": "The Nasdaq 100 has slipped into a bear market after its worst weekly loss since the Covid-19 crisis. Nvidia plunged 14 percent as the SEC reviews its accounting, and Anthropic lost nearly all of its gains a day after its record IPO. AI doubts, scandals, rising interest rates, and political headwinds",
+    "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+    "published_at": "2026-11-21T10:27:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
+    "summary": "Bytedance and several US universities introduce Axion 1.0, an AI agent that rivals top commercial models from OpenAI and Anthropic on benchmarks after just three training phases. The researchers attribute the gains to carefully curated training data rather than ever more training steps. The model, d",
+    "url": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
+    "published_at": "2026-11-21T09:17:24+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI makes it much harder for attackers to extract how its latest AI models think",
+    "summary": "OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 percent to 0.2 percent. The company is also suspending thousands to tens of thous",
+    "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+    "published_at": "2026-11-20T20:31:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats",
+    "summary": "Signal is blocking screenshots to stop AI agents like Apple's Siri AI, Google's Gemini Intelligence, and Meta's Muse from reading private chats. The app calls it an \"existential threat\" to privacy, but admits its protections remain incomplete, including on macOS. Apple, Google, and Microsoft should ",
+    "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+    "published_at": "2026-11-20T19:50:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working",
+    "summary": "Google is bringing \"Computer Use\" to Gemini for Mac, letting the AI operate desktop apps, local files, and websites in an isolated background window with a live preview while users keep working. The article Google's Gemini can now run Mac apps and finish desktop chores in the background while you ke",
+    "url": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
+    "published_at": "2026-11-20T18:50:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft Responds to To Do Shutdown as Todoist and Superlist Step In",
+    "summary": "Microsoft has promised more guidance for Microsoft To Do users ahead of the app’s shutdown on June 30, 2027. Meanwhile, Todoist and Superlist have introduced options to help users move their tasks and lists to other platforms. Microsoft previously confirmed that To Do will shut down in 2027, leaving",
+    "url": "https://windowsreport.com/microsoft-responds-to-to-do-shutdown-as-todoist-and-superlist-step-in/",
+    "published_at": "2026-11-21T12:52:41+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Watchdog Warns of Quantum-Powered Hackers Who Could Crack the Financial System Like a Juicy Walnut",
+    "summary": "As if AI wasn't wreaking enough havoc. The post Watchdog Warns of Quantum-Powered Hackers Who Could Crack the Financial System Like a Juicy Walnut appeared first on Futurism.",
+    "url": "https://futurism.com/robots-and-machines/quantum-powered-hackers-financial-system",
+    "published_at": "2026-11-21T12:50:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Why Signal is stopping users from taking screenshots on some phones",
+    "summary": "Signal will block screenshots and screen recordings on iPhones running iOS 27 by default. On supported Android devices, it will automatically activate Screen Security when it detects an AI assistant trying to access the screen. The company says the protections are incomplete and is calling on Apple ",
+    "url": "https://www.indiaweekly.biz/why-signal-is-stopping-users-from-taking-screenshots-on-some-phones/",
+    "published_at": "2026-11-21T12:49:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "I spent two weeks with Amazon’s Alexa Tablet 12 Pro, and it’s a stellar all-rounder with a gorgeous nanomatte display — but it needs a clearer reason to be",
+    "summary": "Amazon surprised even its skeptics when it announced its first Android tablet, but does the Alexa Tablet 12 Pro stand up against its competition?",
+    "url": "https://www.techradar.com/alexa-tablet-12-pro-review",
+    "published_at": "2026-11-21T12:49:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "DeepMind’s philosopher warns against building conscious AI, FT reports",
+    "summary": "Building conscious AI on purpose would be “pretty reckless” at this stage, says Henry Shevlin. He is Google DeepMind’s in-house philosopher, and he made the case to the Financial Times. Shevlin, who describes himself as an AI ethicist and philosopher of cognitive science, joined DeepMind in May. He ",
+    "url": "https://thenextweb.com/news/deepmind-henry-shevlin-conscious-ai-reckless-ft",
+    "published_at": "2026-11-21T12:48:26+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "6 billion-dollar ideas that tech giants gave away for free",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.makeuseof.com/billion-dollar-ideas-that-tech-giants-gave-away-for-free/",
+    "published_at": "2026-11-21T12:45:16+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PPFAS’ CIO Rajeev Thakkar pushes back on AI doom narrative for Indian IT: 'Four years is enough time' - Moneycontrol.com",
+    "summary": "PPFAS’ CIO Rajeev Thakkar pushes back on AI doom narrative for Indian IT: 'Four years is enough time' Moneycontrol.com",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdExTelRWb0dpX1VHNHB6OVZKbTRXTE9HemgzLUlIZGRPZmR4RmI0U3dKOEpEUkhxNmZmR3FOWXBObC1DQlJWRjlmSkNqZk9BeF9HaTVZSkg0T0hEX1hET2VHS2NIQ2MxQzVXVS1IMnA4b3FITnA3REQ3X1BPRk45OXVCODBzQklaczFrbmFCS3A3b3FzQ1c2ZXZZaXRoaHNqSml1Ukg0dE5CeC1qS1ctcnVVUlRORjU0c0tLckVDMHZlSWVGc054S2txYTB5Zk13UFlSRzc1aFZqLWc0dldFMGgybnVtWmx6TmFpeVBqTDlqOHdV?oc=5",
+    "published_at": "2026-11-21T12:44:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PPFAS’ CIO Rajeev Thakkar pushes back on AI doom narrative for Indian IT: 'Four years is enough time'",
+    "summary": "PPFAS Mutual Fund CIO Rajeev Thakkar argues that markets have overstated the threat AI poses to Indian IT companies",
+    "url": "https://www.moneycontrol.com/news/business/markets/ppfas-cio-rajeev-thakkar-pushes-back-on-ai-doom-narrative-for-indian-it-four-years-is-enough-time-14086228.html",
+    "published_at": "2026-11-21T12:44:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PPFAS’ CIO Rajeev Thakkar pushes back on AI doom narrative for Indian IT: 'Four years is enough... - Moneycontrol.com",
+    "summary": "PPFAS’ CIO Rajeev Thakkar pushes back on AI doom narrative for Indian IT: 'Four years is enough... Moneycontrol.com",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdExTelRWb0dpX1VHNHB6OVZKbTRXTE9HemgzLUlIZGRPZmR4RmI0U3dKOEpEUkhxNmZmR3FOWXBObC1DQlJWRjlmSkNqZk9BeF9HaTVZSkg0T0hEX1hET2VHS2NIQ2MxQzVXVS1IMnA4b3FITnA3REQ3X1BPRk45OXVCODBzQklaczFrbmFCS3A3b3FzQ1c2ZXZZaXRoaHNqSml1Ukg0dE5CeC1qS1ctcnVVUlRORjU0c0tLckVDMHZlSWVGc054S2txYTB5Zk13UFlSRzc1aFZqLWc0dldFMGgybnVtWmx6TmFpeVBqTDlqOHdV0gH6AUFVX3lxTFBLOHVBVFg1RG9CRV9BOGdrVzVlNlVfaEJHM2EwUVR1clpyOXlIdVp1dGlwQW84TnlBaDFKSGFzWldvMlQtbkh5UDdmUGllYV9KSlRnWUo3d3ZPU0dYWUVjZDBTMzI5UWtCc3dHQjhhY3VQS2M3STFfR0JsNnV0eUdBOVVCUk5FczBNbXRTUkVocXlLRVYxQ3NVYU5fanNLTzRyXzVULXlLSFd3RWdHdDRXTG9EcDctdVZiS3dtTnNYYjF4Z2VfMlBYblRrQ1NOaXQyTGRHU2E4dkZVbEpYT1JRV1YtUVdXeGs0RHM2SGhTbU53a0lURHZGWVE?oc=5",
+    "published_at": "2026-11-21T12:44:44+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Engadget review recap: Apple HomeView, Ray-Ban Meta (Gen 3) and more",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://us.headtopics.com/news/engadget-review-recap-apple-homeview-ray-ban-meta-gen-3-90058452",
+    "published_at": "2026-11-21T12:44:00+00:00",
+    "source": "newsdata"
+  }
+]
