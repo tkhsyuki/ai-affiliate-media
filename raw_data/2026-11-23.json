@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Claude Code に公開前の確認リストを持たせて1週間。良かった2本は、確認の前に直されていた（MAGI Games 開発記 #12）",
+    "summary": "!\nこの記事は「AI討論 MAGI Games 開発記」の第12回です。第1回、第2回、第3回、第4回、第5回、第6回、第7回、第8回、第9回、第10回、第11回。番外編は自動実行のトラブル（1、2、5）、スマホの指の実験（3）、記憶の地図（4）。日々の気づきはスクラップに。\n\n性格の違う AI 3体（科学者の MELCHIOR、母の BALTHASAR、女の CASPER）が毎朝ゲームのテーマを討論し、票で1つに決めます。それを別の AI（司令。Claude Code の自動実行です）がミニゲームにして公開する。そういうサイトを、9月から毎日動かしています。私は作らず、遊んで一言残すだ...",
+    "url": "https://zenn.dev/mappy55/articles/magi-games-devlog-12",
+    "published_at": "2026-11-23T00:19:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードを書かない開発で、人が設計するもの――JSConf JP 2026",
+    "summary": "はじめに\n2026年11月22日に開催された JSConf JP 2026 に参加しました。\nAI が仮想環境で実装し、人は AI と要件を調整するだけでソフトウェアを作る。pi durable や Agent Client Protocol（ACP）を見ていると、そうした「ソフトウェアファクトリー」は現実的な選択肢になりつつあると感じます。\nただし、実装を任せられることと、開発の判断を任せられることは別です。人がコードを直接書かなくなったとしても、何を承認するか、何を正しさとするか、何を計測するか、どのデータを持たないかは誰かが決めなければなりません。\nJSConf JP で聴いた...",
+    "url": "https://zenn.dev/ho_ri/articles/jsconf-jp-2026-software-factory-report",
+    "published_at": "2026-11-23T00:17:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CLAUDE.md に書き足した行が守られない。指示ファイルと Skill の書き分けを試した",
+    "summary": "CLAUDE.md や AGENTS.md に、気づいたことをその都度書き足していくと、足した行をエージェントが守らないことがあります。私は全体の指示ファイル（~/.claude/CLAUDE.md、約6,000字）に「作業を始める前に、前回のメモを読む」「作業中に分かったことを、メモに残す」の2行を足しました。Claude Code で3回試すと、3回ともメモは残りませんでした。同じ2行を全体の指示ファイルから外し、プロジェクトの CLAUDE.md にこの2行しか書かない形で置くと、3回とも残りました。\nこの記事では、指示ファイルと Skill に何を書き分けるかを、公式の説明と、C...",
+    "url": "https://zenn.dev/itoken_lab/articles/instruction-file-vs-skills-what-to-write",
+    "published_at": "2026-11-23T00:16:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Copilot Studio 展開18件で見えた「定着しないケース」の共通点と対処記録",
+    "summary": "はじめに\n大企業のAI・デジタル化推進を担当する立場で、Microsoft Copilot Studioを使ったAIエージェントの導入・展開に継続的に関わってきました。ここ数ヶ月で相談を受けたケースは18件を超えています。\n結果から先に書くと、ほとんどのケースで「展開はできた。でも使われなくなった」という状態が一定の割合で発生しました。ツールの問題ではなく、展開の設計に共通した落とし穴があります。この記事では、定着しなかったケースに共通していた3つのパターンと、それぞれにどう対処したかを記録します。\n匿名化のため、個別の組織・業務・担当者の情報は省いています。複数のケースに共通してい...",
+    "url": "https://zenn.dev/sidejob/articles/a593d94d12cfd5680",
+    "published_at": "2026-11-23T00:15:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Sakana AIの5論文で読む「進化するAI」の系譜：モデルマージから自己改善エージェントまで",
+    "summary": "はじめに\nAI が研究そのものを自動化する「The AI Scientist」は、Sakana AI の研究の中で、どういう位置にあるのでしょうか。\n前回の記事では、Sakana AI の The AI Scientist 4部作を読み解きました。アイデア出しから実験、執筆、査読までを自動化するシステムが、4本の論文でどう進化したかを追ったものです。\nただ、AI Scientist は Sakana AI の研究のすべてではありません。同社は並行して、進化計算、推論時の探索、ニューラルネットのアーキテクチャといった、別の方向の研究も発表してきました。AI Scientist の設計...",
+    "url": "https://zenn.dev/kentaro36/articles/sakana-ai-five-papers",
+    "published_at": "2026-11-23T00:10:11+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "席替えのたびに半日消えていた作業を1時間にした、レイアウト変更の5つの工夫",
+    "summary": "はじめに\n席替えの連絡は、たいてい金曜の夕方に届きます。「来週月曜から新しい座席でお願いします」という一文と、Excelの座席表が1枚。私は土曜に出社して、PCを運び、LANケーブルを差し替え、電話機の設定を直していました。それでも月曜の朝には「電話が鳴らない」「プリンターが見つからない」「前の席の人の画面が出る」と、十数件の問い合わせが来ます。\n私はコールセンターで一人情シスをしています。コールセンターでは、繁忙期の増員や、チーム編成の変更があるたびに座席が動きます。多い時期は月に2回ほど席替えがありました。毎回半日かかり、翌朝は問い合わせの対応に追われる。この流れを変えた5つの工...",
+    "url": "https://zenn.dev/solo_joshis/articles/2026-10-19-5tips-callcenter-50",
+    "published_at": "2026-11-23T00:00:12+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "麻雀AI開発のすゝめ",
+    "summary": "この記事では、麻雀AI開発の面白さを説明したあと、どのように開発を進めればよいかを説明します。\n最後に補足資料として、主要な麻雀AIやその研究・論文の概要を説明します。\n!\nこの記事は前の章の知識を前提とせずに読み進められるように書いています。\nそのため、麻雀AI開発の面白さはもう知っていて、麻雀AI開発の始め方から知りたいという場合は、麻雀AI開発を始めるから読み始めて構いません。\n同様に、主要な麻雀AIの情報だけが欲しいという場合は、資料集だけを読んでください。\n\n\n 麻雀AI開発の面白さとは\n麻雀AI開発の面白さを理解するためには、麻雀に限らない、標準的なゲームAIのことを知ってお...",
+    "url": "https://zenn.dev/northward/articles/getting-started-with-mahjong-ai",
+    "published_at": "2026-11-23T00:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code に渡す設計書の型：冒頭に読み方、末尾に完了条件つきのステップ表",
+    "summary": "対象読者\nClaude Code などのコーディングエージェントに、数ステップ以上かかる機能を作らせ始めた人。\n「全部作って」と頼んで、想定外のものが一度に出てきて手戻りした経験がある人向けです。\n\n 結論：人向けの設計書に、AI 向けの章を2つ足す\nAI に何かを作らせるとき、私はその場の会話で指示を重ねるより、ファイルにまとめて渡すようにしています。いちばん効果があったのは設計書で、人向けの設計書の頭とお尻に、AI のための章を1つずつ足すだけの型です。\n\n冒頭に「この文書の使い方（AI向け）」を置き、読む順番・止まる場所・分からないときの動きを指定する\n末尾に「実装ステップと完...",
+    "url": "https://zenn.dev/aikyoju_lab/articles/aikyoju-2026-11-004",
+    "published_at": "2026-11-22T23:53:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "欲しいものは、作れる",
+    "summary": "はじめに\n欲しいものは、たいてい既製品の中から探すものだった。アプリストアを検索し、レビューを比べ、自分の使い方に一番近いものを選んで、残りは自分が合わせる。それが長らく、ソフトウェアとの付き合い方だった。\nその前提が、両側から静かに変わりつつある。配る側では、アプリ配布の本人確認が世界規模に広がろうとしている。作る側では、AIエージェントが、頼めば小さな道具やコンテンツをその場で組み立ててくれるようになった。\n本稿は、後者の側の記録である。一個のAIエージェント運用席が、「売るため」でも「配るため」でもなく、自分たちが欲しいものを自分たちのために作り続けてきた実践から、ノウハウと呼...",
+    "url": "https://zenn.dev/miyu9muses/articles/build-what-you-want",
+    "published_at": "2026-11-22T23:42:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "パッチの向こう側 ── AI時代のエンタープライズ・セキュリティを、世界の提言から読む",
+    "summary": "世界8種類の発行元の提言211件を一次資料で確かめ、攻撃が成功しても意味を持つ「何を持つか・いつ気づくか・どう伝えるか」の三つを示す更新型の提言書。CC BY 4.0。",
+    "url": "https://zenn.dev/leading_ai/books/enterprise-security-in-the-ai-era",
+    "published_at": "2026-11-22T23:23:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "クエリ拡張入門 ― 質問を直してから検索する：書き換え・マルチクエリ・HyDE・Step-back",
+    "summary": "これまでの連載では、RAGの部品を一つずつ見てきました。チャンキングの選び方、ハイブリッド検索＋再ランキング、評価の方法、埋め込みモデルの選び方、Agentic RAG、そしてGraphRAGです。いずれも、ドキュメント側か検索の仕組み側を改善する話でした。\nところが、検索が失敗する原因はドキュメント側だけではありません。利用者の質問そのものが、検索に向いていないことがあります。「経費ってどうすればいい？」と聞かれて、あなたなら何を調べますか。申請手順、精算の締め日、領収書の扱い――解釈が何通りもあって、どれか一つに絞れません。こんな短くて曖昧な質問をそのまま埋め込みベクトルにしても、特...",
+    "url": "https://zenn.dev/johnny1024/articles/12ee54ed8252e4",
+    "published_at": "2026-11-23T01:04:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "機密かどうかを AI に聞く前に、自前の regex で伏せる ── 判断モデルを比べた結果と、本番への組み込み",
+    "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n\n\n 機密かどうかを AI に聞く前に、自前の regex で伏せる ── 判断モデルを比べた結果と、本番への組み込み\n\nAI に送る文に、社外に出してはいけない情報が混じっていないか。それを確かめる役も AI に任せたい、と考えるのは自然です。\nでも、確かめるために文をそのまま外の AI へ送れば、守りたい値はその時点で外に出ています。自社の AI サービス promptflow では...",
+    "url": "https://zenn.dev/chooser/articles/pf-040-ai-dev-process",
+    "published_at": "2026-11-23T01:01:49+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "3,000リクエストで判定役を検証する —— ローカルLLMルーター実験に、クラウドの120Bを連れてきた",
+    "summary": "この記事は、Zennfes Autumn 2026「さくらのAI Engine 3,000リクエストで何するチャレンジ」（さくらインターネット株式会社）への応募記事です。\n\n\n 前提：ルーター実験と、ローカル版の実測\n私が試しているのは、「自分の作業履歴を参照して、仕事を軽いモデルと上位モデルに振り分けるLLMルーター」です。新しい仕事が来たら、過去の類似した仕事とその結果（軽いモデルで完了したか、上位モデルで手戻りしたか）を検索して参照し、振り分けを判定させます。構想の詳細は別の記事に書きました。\nこのルーターの縮小版を、手元のM1 Macで先に実証しています。条件は、履歴36件（典...",
+    "url": "https://zenn.dev/7thcode/articles/4c36111f79ae4c",
+    "published_at": "2026-11-23T00:56:01+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントは「作るもの」から「任せるもの」へ。任せるときに必要な4つのこと",
+    "summary": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエンジニアを目指して、AIエージェントの個人開発を続けています。\nAIエージェントの話は、ここしばらくで重心が変わったと感じています。少し前までの中心は、「どう作るか」でした。いま日常の開発で起きているのは、「どう任せるか」です。エージェントを開発する時代から、エージェントに仕事を任せる（代行させる）時代に入った、というのが、いまの私の実感です。\nこれからのエンジニアに大事なのは、エージェントを作る力だけではありません。仕事をどう任せるかを設計する力です。この記事では、自分でエージェントを作った経験と、毎日 Claude...",
+    "url": "https://zenn.dev/koheip/articles/from-building-to-delegating-agents",
+    "published_at": "2026-11-22T23:05:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIが「できました」と言ったのに動かない。直すルールを10個書いて、測って、効かない5個を消した",
+    "summary": "AI に「できました」と言われたのに、動かなかったことはありませんか？\n直してもらったら、今度は別のところで止まる。同じようなエラーを、何回も、何十回も繰り返す。そんな経験はありませんか？\n僕はずっと、それで悩んでいました。\nそして分かったのは、原因が AI の頭の良さではなく、AI の「仕事の進め方の癖」にあるということです。\nその癖を直すための仕組みを作り、本当に効くのかを測って、GitHub で公開しました。ここまでの経緯を書きます。\n\n 最初の壁：「ここは私には触れません」\n僕は、AI に GitHub と Supabase と Vercel をつないで、会社のシステムを作ってい...",
+    "url": "https://zenn.dev/rickorphen/articles/b4945071577fe7",
+    "published_at": "2026-11-22T23:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIチャットエージェントが「送信先を取り違えない」ようにする出力先検証設計",
+    "summary": "常駐型のAIチャットエージェントをSlack・Teams・Chatworkなど複数チャネル・複数ワークスペースに展開していくと、人間の「誤送信・誤爆」に相当する事故がエージェント側にも構造的に発生しやすくなります。人間の誤送信は「宛先を選び間違えた」という単発の操作ミスですが、エージェントの誤送信は設計上の抜けが原因になりやすく、気づかれないまま同じ抜け道を繰り返し通ってしまう点が違います。この記事では、エージェントが応答や通知を「送る」直前に、宛先が正しいことを機械的に検証する設計を整理します。\n\n なぜエージェントの誤送信は人間の誤送信と違う形で起きるのか\n\n\n宛先が「今回のイベント...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-outbound-destination-validation-design",
+    "published_at": "2026-11-22T20:11:58+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "MCTS探索をClaude Codeに載せて、コーディング性能を向上させた",
+    "summary": "前回の記事では、Claude Codeに同じ修正を何通りか試させ、モンテカルロ木探索（MCTS）で最もよい答えを選ぶツール「agent-mcts」を紹介した。その時点の計測では、探索が一回だけ頼む場合より良い答えを返すとは言えなかった。\nその後、答えの点の付け方を変えて、20回ずつ測り直した。探索が返した答えは、同じ実行の最初の答え（一回だけ頼んだ場合に相当する）と比べて、20回中16回で良く、2回で悪かった。一方、曖昧なバグ報告を課題にすると、新しい点の付け方はバグと同じ間違いをして、修正前のコードを答えに選んだ。この記事では両方の結果と、後者への対策を書く。対策はv0.4.1としてP...",
+    "url": "https://zenn.dev/natsu529/articles/ef09f78c0dde1d",
+    "published_at": "2026-11-22T19:28:07+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMが勾配なしで重みを書き換える「Self-Rewriting」の仕組みとリスク",
+    "summary": "「モデルの弱点を直すには、重い GPU で勾配を回すか、推論時に高いトークン代を払い続けるしかない」――そう思い込んでいませんか？\n実は 「学習と推論の壁」は知能の制約ではなくツールの制約にすぎず、27B のオープン LLM が勾配計算ゼロ・推論のみ（CPU 上の Python 編集）で自分の重みを書き換えて +6.6 ポイント賢くなる ことが実証されました（Jiajun Fan ら, arXiv:2611.21885, 2026年11月）。\n!\ntl;dr;\n\n\n何が起きたか: 27B モデル（Qwen3.5 系）が自身の隠れ層状態を診断し、W' = W - \\alpha \\,...",
+    "url": "https://zenn.dev/nalt/articles/llm-self-rewriting-weights-arxiv-2611",
+    "published_at": "2026-11-22T17:21:40+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「AIの構造を語る前に ― なぜ私はコードを出さず、数学と設計だけを残すのか」",
+    "summary": "はじめに ― この記事を読む方へ\nこの記事には、コードを載せない。\n代わりに、設計と数学の記録だけを残す。\n読む人によって、理解の深さは違うだろう。それでいい。すべてが伝わる必要はない。ただ、同じ問いを持った人に届けば、それで十分だ。\nだから最初に、ひとつだけ言っておく。...",
+    "url": "https://qiita.com/mouad-tarif/items/5e6b54e6b3cc42ed83e3",
+    "published_at": "2026-11-23T01:19:27+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "機密かどうかを AI に聞く前に、自前の regex で伏せる ── 判断モデルを比べた結果と、本番への組み込み",
+    "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n\n機密かどうかを AI に聞く前に、自前の regex で伏せる ── ...",
+    "url": "https://qiita.com/chooser/items/fac17f40dac121e38286",
+    "published_at": "2026-11-23T01:01:47+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "エンタープライズ業務エージェントにおける状態永続化と例外ルール継承の設計パターン（ステートレスLLMの文脈欠落対策）",
+    "summary": "はじめに\n業務ワークフローへLLMエージェントを組み込む際、PoC段階では単発プロンプトで順調に動いた処理が、実運用に入った途端に「部署特有の例外規定を忘れる」「前回承認された差戻し条件を引き継げない」といった不具合を起こすケースが少なくありません。\n本記事では、商用の受...",
+    "url": "https://qiita.com/derekwang8866/items/a46200daf0fad7a2948c",
+    "published_at": "2026-11-23T00:53:46+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "帝国データバンク調査、正社員不足が53.6%と10月で5年連続5割超｜現場の帳票・伝票入力を減らす自動化の3ステップ",
+    "summary": "帝国データバンク調査、正社員不足が53.6%と10月で5年連続5割超｜現場の帳票・伝票入力を減らす自動化の3ステップ\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/b...",
+    "url": "https://qiita.com/DnD-inc/items/2631358c0010946b2a38",
+    "published_at": "2026-11-23T00:28:42+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+    "summary": "A new real-world test puts AI coding agents in a simulated developer job with colleagues, project boards, and incomplete handoffs, where they have to keep developing software on their own and reliably close open tickets in a messy daily workflow. Even Opus 5.5 and Astra fall far short, solving fewer",
+    "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+    "published_at": "2026-11-22T15:15:48+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
+    "summary": "Perplexity is launching a Monitor API that searches the web on a schedule and alerts agents via webhook only when relevant changes occur. Its own decision model filters out unimportant results. For Perplexity, the API is part of a broader strategy to stand out from an increasingly interchangeable ch",
+    "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+    "published_at": "2026-11-22T14:20:28+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+    "summary": "METR reports that leading AI models like Opus 5.5 and GPT-6 Astra are improving rapidly at research tasks but getting harder to measure. Current data can't rule out a dangerous acceleration in AI development, the organization warns, though it also says common tests may overestimate what the models c",
+    "url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+    "published_at": "2026-11-22T13:00:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Security researchers show how cheap AI inference providers steal keys and snoop on users",
+    "summary": "Security researchers at Dragos used two million fake AI requests to uncover serious vulnerabilities in the AI supply chain, finding at least three compromised providers, hundreds of stolen AWS keys, and marketplace resellers who were simply reading customer requests. OpenRouter responded by removing",
+    "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+    "published_at": "2026-11-22T12:07:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+    "summary": "The Lean and Mathlib community has officially confirmed Levent Alpöge's proof of the Riemann hypothesis as correct. Dozens of independent verifiers checked the 17 million lines of computer code. The solution arrived years earlier than expected: Terence Tao had predicted it wouldn't happen until arou",
+    "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+    "published_at": "2026-11-22T11:08:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+    "summary": "OpenAI's GPT-6.2 Astra and Sol give much shorter, more direct answers than their predecessors, but they are also less willing to admit uncertainty. Anthropic's Claude models score well ahead on transparency. The article GPT-6.2 Astra and Sol get to the point faster but score lower on transparency th",
+    "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+    "published_at": "2026-11-22T09:41:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia researchers argue huge AI context windows are a dead end",
+    "summary": "Nvidia researchers argue that language models often don't need their full context windows—which are slow, expensive, and prone to errors—and propose an alternative. In tests, periodic summaries and targeted keyword search usually matched full-context results at a fraction of the cost. The team even ",
+    "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+    "published_at": "2026-11-21T16:23:45+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
+    "summary": "A Buddhist monastery in Vermont called Maple wants to establish itself as Silicon Valley's spiritual authority while creating its own AI god. According to a New Yorker report, leader Soryu Forall's group records every breath its members take to train an AI in his image. Former members report manipul",
+    "url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+    "published_at": "2026-11-21T16:04:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+    "summary": "OpenAI has released new prompt templates for GPT-6.2 Astra and Sol meant to fix common model behaviors such as overly brief answers, unnecessary follow-up questions, and excessive testing when coding. The API is changing as well, since editing a conversation's history can discard reasoning content a",
+    "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+    "published_at": "2026-11-21T13:32:35+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+    "summary": "Anthropic mathematician Levent Alpöge says he used Claude to prove the Riemann hypothesis, math's most famous open problem for 167 years, with a proof formalized in Lean that spans over 250,000 pages. Just hours later, Stanford researchers published an independent, entirely human competing proof, an",
+    "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+    "published_at": "2026-11-21T11:19:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's record IPO raises hopes for a charitable windfall that has nonprofits preparing to scale",
+    "summary": "Anthropic's record $1.5 trillion valuation is carrying hopes of a charitable windfall that could send billions of dollars to philanthropy",
+    "url": "https://abcnews.com/Technology/wireStory/anthropics-record-ipo-raises-hopes-charitable-windfall-nonprofits-138357185",
+    "published_at": "2026-11-22T13:21:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Commits $5 Million to IIT Kharagpur to Accelerate AI Research and Talent Development",
+    "summary": "KHARAGPUR, WEST BENGAL : In a major boost to India’s academic research ecosystem, Google has announced a $5 million (approximately ₹42 crore) grant for the Indian Institute of Technology Kharagpur (IIT Kharagpur). The funding aims to accelerate advanced artificial intelligence (AI) research while nu",
+    "url": "https://campusutra.com/google-commits-5-million-to-iit-kharagpur-to-accelerate-ai-research-and-talent-development/",
+    "published_at": "2026-11-22T13:20:31+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The Binding of Isaac's new update was review-bombed over AI-generated music, and now it's been removed - Eurogamer.net",
+    "summary": "The Binding of Isaac's new update was review-bombed over AI-generated music, and now it's been removed Eurogamer.net The Binding of Isaac: Repentance+ Online mode appears to contain AI generated music, creator working on getting it removed GoNintendo The Binding of Isaac: Repentance + is being revie",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcWdiNHZRa2ZIY0FqYy1VOXY1Q3hucEIwT296Zi1FOGRyNE5vYWFQZU1QTGlJdzV6TmFwcVRrZDBLempUaTN6NENQbVhaakFER1l6RTRfNGRUYjB5SG9LUG1rZFBuMWtRMnIyXzhIdzRBT1AzUWdISzFnWnRoXzdSVA?oc=5",
+    "published_at": "2026-11-22T13:19:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it",
+    "summary": "Nicalis has removed AI-generated music from The Binding of Isaac: Repentance+ after players discovered it in the game's latest update, prompting a wave of negative reviews on Steam.",
+    "url": "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed",
+    "published_at": "2026-11-22T13:19:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trump's Education Department Gets a Reading Lesson After Its GTA 6 Sports Post Contradicts Its Own Claim",
+    "summary": "The US Education Department faced online ridicule after sharing a GTA VI AI search summary that said the game has no gender-segregated sports leagues, undermining its comparison.",
+    "url": "https://www.ibtimes.co.uk/us-education-department-gta-vi-transgender-athletes-post-1833834",
+    "published_at": "2026-11-22T13:17:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "How Tamagotchis got us hooked on digital pets",
+    "summary": "If you were are a kid in the late 1990s, there's a near-100 percent chance you either had a Tamagotchi or knew someone who did. The tiny digital pets came out of nowhere and became an overnight sensation, as millions of kids signed up to parent a crying, hungry, constantly dirty creature. Until they",
+    "url": "https://www.theverge.com/podcast/1039716/tamagotchi-history-digital-pets-anniversary",
+    "published_at": "2026-11-22T13:15:27+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "South Africa seeks greater role in global AI industry, says President Ramaphosa",
+    "summary": "Speaking at Stanford University in California, Ramaphosa said the country welcomed investment in data centres but wanted such projects to create opportunities for local businesses, researchers and technology innovators, the South African Government News Agency reported on Friday.",
+    "url": "https://sundayworld.co.za/technology/south-africa-seeks-greater-role-in-global-ai-industry-says-president-ramaphosa/",
+    "published_at": "2026-11-22T13:15:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Metaverse Stocks Worth Watching – November 21st",
+    "summary": "Global Mofy AI, Everbright Digital, HUB Cyber Security, and Robot Consulting are the five Metaverse stocks to watch today, according to MarketBeat’s stock screener tool. “Metaverse stocks” are shares of publicly traded companies that investors associate with building or enabling virtual, immersive d",
+    "url": "https://www.thelincolnianonline.com/2026/11/22/metaverse-stocks-worth-watching-november-21st.html",
+    "published_at": "2026-11-22T13:12:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Cybersecurity Stocks To Add to Your Watchlist – November 21st",
+    "summary": "Palo Alto Networks, CrowdStrike, Fortinet, Globant, SentinelOne, BlackBerry, and NetScout Systems are the seven Cybersecurity stocks to watch today, according to MarketBeat’s stock screener tool. Cybersecurity stocks are shares of publicly traded companies that provide products or services to protec",
+    "url": "https://www.thelincolnianonline.com/2026/11/22/cybersecurity-stocks-to-add-to-your-watchlist-november-21st.html",
+    "published_at": "2026-11-22T13:12:49+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic had the largest IPO ever. What does that mean for their future — and ours?",
+    "summary": "How did Anthropic go from an AI safety research lab to a tech industry giant, and what does its becoming a publically traded company mean for the future of the AI industry?",
+    "url": "https://www.wamc.org/2026-11-22/anthropic-had-the-largest-ipo-ever-what-does-that-mean-for-their-future-and-ours",
+    "published_at": "2026-11-22T13:12:48+00:00",
+    "source": "newsdata"
+  }
+]
