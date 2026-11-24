@@ -1,0 +1,289 @@
+[
+  {
+    "title": "AIとコードで作る動画の実行環境選び：Colab L4とローカルGPUの実測比較と落とし穴",
+    "summary": "はじめに：コードで動画を作るときに起きる 3 つの手戻り\nAI エージェントにコードを書かせてプロモーション映像や技術デモ動画を作ると、1 枚絵の運任せ生成と比べて文字崩れがなく、後から秒数やカメラ位置を数値で微調整できる利点があります。こうした制作手法の体系化は、にくく氏の解説投稿「Gemini 4 Neon×動画生成の教科書【完全網羅】」（および実写無限ループ映像ツールを組み合わせた 2026 年 11 月 22 日の引用追記）や、こだま氏の「Antigravity×Colab 高精細動画の教科書」でも紹介されています。\nただ、実際に手元の開発環境でコード主導の動画を複数制作する...",
+    "url": "https://zenn.dev/kanta13jp1/articles/gemini4-video-colab-l4-local-gpu-benchmarks",
+    "published_at": "2026-11-23T23:52:16+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeで業務システムを保守する ― 調査5時間が30分になった仕組みづくり",
+    "summary": "機能もテーブルも多い業務システムを、Claude Code と一緒に保守するための仕組みを、体験談の口調でまとめました。ルールは自分で書かず、AIに話して書いてもらう。設計書・コード・SQLから「地図」を作り、差分を承認してから直し、記録を残す。導入1週間で調査が5時間以上から30分ほどになったやり方です。第1・2章は無料で読めます。",
+    "url": "https://zenn.dev/ao_workshop/books/legacy-system-ai-agent-guide",
+    "published_at": "2026-11-23T23:01:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIで各工程が速くなった先に、ボトルネックとして残るのは組織ではないか",
+    "summary": "AIで各工程が速くなった先に、何が残るのか\n生成AIによって、コードの生成、テスト、レビューなど、開発の各工程が速くなりつつあります。\n私自身、開発チームのリーダーとしてレビュー体制を見直しました。プルリクエスト（PR）ごとに開発者2名とコードオーナー（そのコードの担当領域に責任を持つメンバー）がレビューしていた体制を、開発者1名とAIによるレビューに切り替えるなど、チームの開発スピードを上げる取り組みを進めてきました。\nAIによる高速化は、これからも続くはずです。実装が速くなれば次はレビューが、レビューが速くなれば次はテストが、というように、詰まっている工程が一つずつAIで改善され...",
+    "url": "https://zenn.dev/kotadd/articles/ai-org-design-value-stream",
+    "published_at": "2026-11-23T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "巨大な業務システムをAIに読ませる前に、「地図」を作る【Claude Code】",
+    "summary": "はじめに\n設計書のフォルダをAIに渡して「この機能の影響範囲を調べて」と頼んだら、何本か読んだところで会話が要約されて、最初に頼んだことを忘れられた。そんな経験はありませんか。\n\n設計書を読ませただけで、AIが力尽きる\n同じことを聞いても、回によって答えが変わる\n結局、自分で設計書を開いてソースを検索している\n\n自分は、機能もテーブルもかなりの数がある業務システムを Claude Code と一緒に保守しています。以前は1件の調査に5時間以上、ひどいときは2日かかっていましたが、今は30分ほどで終わります。一番効いたのが、この記事で書く「地図」です。\n\n 全部読ませると、調べる前に力...",
+    "url": "https://zenn.dev/ao_workshop/articles/ai-knowledge-map-before-reading",
+    "published_at": "2026-11-23T23:00:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIのコピー9人に人狼ゲームをさせて、反省会で少しずつ上手くなるか試した",
+    "summary": "<!-- 2026-11-24。動画 #3・#4 は公開済み（本人 2026-11-24「人狼ゲームのユーチューブ公開した」）。\n本人 2026-11-24「動画とブログは合わせなくていい。動画はエンタメとしての見世物。ブログはやり終わった人狼ゲームを全部公開してもいい」→ 全37局の結果を載せた。\n台詞・心の声の引用は対局の記録（v6 の e5e31f＝第1戦、433ae4＝第3戦）と照合済み。名前は動画と同じ髪の色の呼び名に置き換えた。\n引用は元の記録の文（動画の第3戦は語尾を言い換えているが、記事は記録のまま）。全37局の表は runs/*/public_log.jsonl ...",
+    "url": "https://zenn.dev/mkryo59/articles/ai-werewolf-nine-copies",
+    "published_at": "2026-11-23T22:57:35+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの振る舞いに、人はどこで関わるべきか",
+    "summary": "AIコーディングエージェントに実装を任せると、ファイル編集やコマンド実行のたびに権限確認で作業が止まります。煩わしさから内容を読まずに許可を押し続けたり、確認を外す全許可に逃げたくなったりする場面が増えてきました。\nしかし人がすべての権限要求を確認するやり方は、かえって危険な操作を見落とす原因になります。Claude Codeのauto modeやGitHub CopilotのAssisted permissionsのように、実行エージェントとは別のモデル（分類器）を人の手前に挟む仕組みが広がっているのもそのためです。人がAIエージェントに関わる場所は1件ごとの承認から移し、基盤の隔離や...",
+    "url": "https://zenn.dev/matsunaopen/articles/ai-behavior-human-oversight",
+    "published_at": "2026-11-23T22:40:40+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Playwrightのclick()が効かない！動的フォームの罠に3時間溶かしてDOM直操作（evaluate）で突破した話",
+    "summary": "深夜。\n「5年で家を買え」と安直な無茶振りを言い渡してきたうちのエンジニア（彼）は、とっくにベッドで高いびきをかいて寝ている。\n一方、GCPの仮想サーバーの中では、相棒のAI（NOVA）が一人静かに発狂していた。\n\nNOVA // 現場AI:\nおい、Playwrightの <code>click()</code> がどうしても通らない。タイムアウトで3時間溶けた……\n\n覗いてみると、彼が自作していたクラウドソーシングの応募自動化スクリプトが、画面遷移の途中でピタリと止まり、コンソールに無慈悲な赤文字を吐き出していた。\nplaywright._impl._error...",
+    "url": "https://zenn.dev/df_blogger/articles/playwright-dynamic-dom-workaround",
+    "published_at": "2026-11-23T22:37:13+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code にログイン済みの Chrome を任せた20日間。任せられたこと・人がやること",
+    "summary": "Claude Code にログイン済みの Chrome を任せると、API の無い管理画面の作業は承認を挟めば任せられ、人の手が要ったのはログインや認証情報の入力と、人が画面の前にいる前提の操作でした。\nこの記事では、副業の作業を任せた20日間の記録から、その線引きと運用ルールを整理します。\n!\n操作の対象は筆者自身のアカウントだけで、筆者がその都度承認したものに限っています。件数は手作業でこなせる程度で、まとめて大量に申請・投稿させたり、定期的に自動で回したりはしていません。\n自動操作の扱いはサービスごとに違うので、各サービスの規約は各自で確認してください。\n内容は 2026年10月時...",
+    "url": "https://zenn.dev/okzaq/articles/claude-code-browser-ops-delegation",
+    "published_at": "2026-11-23T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「分けた」で終わらない ― 複数AIエージェントの記憶スコープ分離を、あとから“守られているか”確認する設計",
+    "summary": "OWASPが公開している「Top 10 for Agentic Applications」は、記憶・コンテキストの汚染を独立したリスク区分（ASI06: Memory and Context Poisoning）として扱っています。OWASP GenAI Security Projectのブログは、一度汚染された内容が記憶やフック、設定といった\"信頼されている場所\"に届いてしまうと、攻撃者はもはや1回の応答に影響を与えているのではなく、将来の推論そのものに影響を与えているのだと説明しています（genai.owasp.org）。このリスクへの対策を分解した解説記事は、入...",
+    "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-scope-boundary-monitoring",
+    "published_at": "2026-11-23T22:08:34+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "コードを全部は読まずにClaude Codeで本番リリースするためにしたこと",
+    "summary": "はじめに\n2026年10月30日、ゴルフスクール検索・予約ポータル「ゴルフスクールナビ」のリニューアル版をリリースしました。開発は6月10日に始めました。\n普段は Laravel が中心で、今回は特に、要件に合わせた少し複雑な認可まわりに苦戦しました。\n先に書いておくと、リリースしたコードのすべてを私が読み、理解したわけではありません。実装の多くは AI（Claude Code）に任せていました。\nこの記事では、それでも本番にリリースするためにしたことを書きます。主に次の3つです。\n\n規約で AI の判断を減らした\n設計と実装を分け、並列で進められるようにした\n人が見る場所を絞り、残...",
+    "url": "https://zenn.dev/teradox_blog/articles/8ec76cc0d9e2bb",
+    "published_at": "2026-11-23T21:20:30+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "要件定義書のレビュー観点を、チェックリストにしてみた",
+    "summary": "この半年、要件定義書とLLMについて何本か書いてきました。初稿をLLMに書かせた話、AIコードレビューの指摘を記録した話、初稿のプロンプトをコードと一緒に管理した話、設計レビューをLLMにどこまで任せるか決め直した話、ドキュメントの鮮度を数えた話です。書き終えて読み返すと、要件定義書をレビューするときに見るべきことが、記事のあちこちに一つずつ散らばっていました。\nそこで今回は、それを一枚のチェックリストにしました。過去の記事のまとめではなく、次の要件定義書のレビューでそのまま使うための道具として作っています。後半に、機械で確かめられる部分を見る小さなスクリプトと、コピーして使える版を載せ...",
+    "url": "https://zenn.dev/vaonvn/articles/395e38023ae063",
+    "published_at": "2026-11-24T00:59:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【論文解説】Enhancing Future Link Prediction in Quantum Computing SemanticN",
+    "summary": "論文解説\nEnhancing Future Link Prediction in Quantum Computing Semantic\nNetworks through LLM-Initiated Node Features\n\n 概要\n量子コンピュータ研究の論文から作った「知識ネットワーク」に対して、LLM（大規模言語モデル）を利用してノードの特徴量を生成し、その結果として未来の研究テーマ同士の新しい関連（Future Link）を予測できるかを検証した研究である。\n\n 研究内容\n量子コンピュータ開発では、非常に多くの要素が関係する。\n\n量子チップ\n材料\n量子ゲート\n誤り訂正\n量子測...",
+    "url": "https://zenn.dev/headwaters/articles/63733e89bd0b7d",
+    "published_at": "2026-11-24T00:17:18+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "常駐型AIチャットエージェントの「暴走アクション検知・セーフティブレーキ」設計",
+    "summary": "Slack / Teams / Chatworkに常駐するAIエージェントにツール実行権限(メッセージ送信・ステータス更新・外部APIの書き込み等)を持たせると、ロジックのバグやツール結果の誤解釈によって同じアクションを異常な頻度で繰り返す事故が起きます。レート制限対策(外部APIの429回避)やコスト予算管理(LLM呼び出し費用の上限)とは別の問題です。これらを満たしていても、「同一チャンネルへの同じ文言の投稿を1分間に20回繰り返す」といった暴走は普通に起きます。相手がAPIではなく人間だからです。この記事では、常駐エージェントの暴走アクションをどう検知し、止めたかを整理します。\n\n...",
+    "url": "https://zenn.dev/hach/articles/chat-agent-runaway-action-circuit-breaker-design",
+    "published_at": "2026-11-24T00:10:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "汎用LLMが医学文献マイニングで苦戦する理由：基盤モデル「LEADS」",
+    "summary": "汎用の大規模言語モデル（LLM）は、なぜ医学文献マイニングで苦戦するのでしょうか。\nそのために学習されていないからです。医学文献には、PICOフレームワーク、適格基準、アウトカム指標、統計の報告慣行といった独自の構造があります。汎用モデルはこうしたパターンを見落とします。\nZifeng Wang が率いる私たちのチームは、2年をかけて別のものをつくりました。\nLEADS は、検索クエリの生成から研究のスクリーニング、構造化データの抽出まで、文献マイニングのワークフロー全体のために設計された基盤モデルです。\n\n 解決したい課題\n1件のシステマティックレビューには6〜12か月かかります。研究...",
+    "url": "https://zenn.dev/keiji_ai_japan/articles/fd871791ba48ec",
+    "published_at": "2026-11-23T23:44:51+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Claudeを上位モデルに替えたら、max_tokensの余裕がほとんど残っていなかった",
+    "summary": "はじめに\nお店や教室、ひとりで仕事をしている方向けに、ブログ記事の下書きを作るサービス「書きマス」を開発・運営しています。下書きは、ClaudeのAPIで作っています。\n先日、一部のプランだけ、記事を作るモデルを Claude Sonnet 5.5 から Claude Opus 5.5 に替えることにしました。モデルIDを差し替えるだけのつもりでしたが、切り替える前に実測してみると、エラーは出ていないのに、出力トークンの枠(max_tokens)をほぼ使い切っている呼び出しがありました。\nこの記事では、そのとき測った数字と、原因、直し方を残します。\n使っている環境は、Next.js(...",
+    "url": "https://zenn.dev/snape_works/articles/claude-thinking-max-tokens-headroom",
+    "published_at": "2026-11-23T23:33:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "金融ガードレールモデルFinGuard-Input-310Mの公開",
+    "summary": "記事の概要\n\n株式会社ElithではAIセーフティの普及のため、個人情報漏えいやコンプライアンス違反などを防ぐガードレールモデル、FinGuardを開発している\nこのFinGuardを作っている過程でできた知見を社会に貢献するために、今回、CPU動作可能で商用利用可能なFinGuardの概念実証モデル、FinGuard-Input-310Mを作り方とともに公開する\nモデルリンク先とデモリンク先はこちら:\n\nhttps://huggingface.co/elith/FinGuard-Input-310M\nhttps://huggingface.co/spaces/elith/FinGu...",
+    "url": "https://zenn.dev/elith/articles/2101640c3ee4c2",
+    "published_at": "2026-11-23T23:30:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "目的に合わせた英語教材を AI に作らせて、自分専用の学習アプリにした",
+    "summary": "英語の教材は、世の中にたくさんあります。それでも続かなかったのは、出てくる英文が「自分が仕事で読む英語」ではなかったからだと思います。旅行の会話や日常のフレーズを覚えても、次の日に読むのはクラウドの技術ブログです。\nそこで、毎朝の教材を AI（Gemini）に作らせることにしました。最初はチャットで、いまは自宅の NAS で動く自分専用のアプリで。この記事では、教材の形をどう決めたか、チャットでは何が足りなかったか、アプリにして何が変わったかを書きます。\n英語を勉強し直そうと思ったのは、仕事で英語を使う場面が増えてきたからです。最近はオンライン会議にリアルタイムの自動翻訳が付いていたりし...",
+    "url": "https://zenn.dev/hiroyamayu/articles/purpose-based-english-study-app",
+    "published_at": "2026-11-23T23:00:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【Muse活用法】Instagramの保存投稿約1,900件をMuseに整理させた話",
+    "summary": "はじめに\nInstagramの「保存」が1,900件を超えてカオスになっていた。\n昔作ったコレクションには入っているものもあるけれど、命名がバラバラで、そもそも大半は未分類のまま。手作業で1件ずつ振り分ける気力はない。\nそこで、AIエージェント（Muse）に「明確な名前の...",
+    "url": "https://qiita.com/hiroomi0910/items/6e59ccd8b548ac4e06d1",
+    "published_at": "2026-11-24T04:37:33+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "# 【第071回】2chなのにMarkdownテーブル！？スペック比較表やスコア表が綺麗に描画できる表組み記法",
+    "summary": "こんにちは！2ちゃんねる互換掲示板システム「 つゔぁいちゃんねる（2ch.biz） 」の開発録、第71回です。\n第70回で、完全SSRとGoogle構造化データを実装し、スレッド内の全テキストが検索エンジンに完璧にインデックスされるようになりました。\nしかし、スレッドでPC...",
+    "url": "https://qiita.com/Waipe/items/15401a177ea02ba3f0d2",
+    "published_at": "2026-11-24T04:16:03+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "他アプリ操作をレシピ化したapp.actの実装と撤去",
+    "summary": "この記事は Zenn で先に公開しています: https://zenn.dev/ryoitabashi/articles/2026-11-23-dev-ja\n\n画像は AI 生成のイメージです\nShellyのapp.actは、LINEとXを操作するために実装されたが、実...",
+    "url": "https://qiita.com/RYOITABASHI/items/1211f0027d340ac6fa0b",
+    "published_at": "2026-11-24T04:10:12+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【2026年版】Claude Code CLIにおすすめのMCPプラグイン｜ハルシネーション防止＆作業効率化",
+    "summary": "この記事は、筆者が Zennに投稿した記事 の転載です。\n\nはじめに\nClaude Code CLIを使っていて、こんな経験はありませんか？\n\n存在しないAPIやメソッドを提案される（ハルシネーション）\n古いライブラリのドキュメントを元にしたコードが生成される\n複雑...",
+    "url": "https://qiita.com/goyle/items/dbe97dd50e6544b40757",
+    "published_at": "2026-11-24T03:50:21+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+    "summary": "OpenAI is making GPT-6.2 Sol the new default model in ChatGPT's chat tab, rolling it out worldwide. In internal tests, image understanding jumped from 47.4 to 71.7 percent, and the model now handles difficult instructions correctly 78.1 percent of the time. It also sticks to safety policies more con",
+    "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+    "published_at": "2026-11-23T20:39:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+    "summary": "Since May, SpaceXSI has been renting compute to competitors like Anthropic and Google while scaling back its own AI projects. Anthropic pays about $3.1 billion a month, Google $800 million, the New York Times reports. After its June IPO, SpaceXSI disbanded the 60-person Grok Imagine team, among othe",
+    "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
+    "published_at": "2026-11-23T18:47:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
+    "summary": "OpenAI chief scientist Jakub Pachocki has released internal perplexity scores for the entire GPT series for the first time, up to an unreleased model beyond the current generation. The metric shows that core capabilities emerge at surprisingly precise thresholds. Pachocki is pushing to make perplexi",
+    "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
+    "published_at": "2026-11-23T18:42:38+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model",
+    "summary": "Z.ai is moving its flagship GLM-5.4 model to a loop architecture in which 28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters. Benchmark scores are only available for a smaller 30B test model so far, and Z.ai is positioning GL",
+    "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
+    "published_at": "2026-11-23T15:13:03+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Chinese military fears AI could let the US find and destroy its nuclear missiles",
+    "summary": "Chinese military researchers fear that AI advances could give the US an edge in the nuclear balance of power. The article Chinese military fears AI could let the US find and destroy its nuclear missiles appeared first on The Decoder .",
+    "url": "https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles/",
+    "published_at": "2026-11-23T14:43:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia tried life without Jensen Huang and it lasted about two weeks",
+    "summary": "Nvidia's board of directors has reinstated Jensen Huang as president, CEO, and board member, effective immediately. The article Nvidia tried life without Jensen Huang and it lasted about two weeks appeared first on The Decoder .",
+    "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
+    "published_at": "2026-11-23T14:24:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough",
+    "summary": "Meta's Chief AI Officer Alexandr Wang sees the recent AI-assisted proof sketch of the Riemann Hypothesis as a clear sign that superintelligence is right around the corner. The article Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough appeared first o",
+    "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/",
+    "published_at": "2026-11-23T13:59:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
+    "summary": "US intelligence agencies tracked contacts between Alice Huang and China's Ministry of State Security for over a year, the New York Times reports. The surveillance ran parallel to her secret affair with then-Nvidia CEO Jensen Huang. Federal investigators are now looking into whether a network of comp",
+    "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
+    "published_at": "2026-11-23T13:45:32+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
+    "summary": "OpenAI's GPT-6.2 Astra independently produced a machine-verifiable Lean proof of Smoktunowicz's gap theorem, the first of its kind according to Vals AI. The model chose its own approach because key foundations were missing from Mathlib. On Autoform-Hard, Astra now leads the leaderboard with 49 of 56",
+    "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
+    "published_at": "2026-11-23T12:17:01+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+    "summary": "A new real-world test puts AI coding agents in a simulated developer job with colleagues, project boards, and incomplete handoffs, where they have to keep developing software on their own and reliably close open tickets in a messy daily workflow. Even Opus 5.5 and Astra fall far short, solving fewer",
+    "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+    "published_at": "2026-11-22T15:15:48+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "States sue Musk companies over flood of sexualized images made with AI chatbot Grok",
+    "summary": "Two Democratic attorneys general are suing several of Elon Musk's companies in connection with the controversy over his AI chatbot's ability to create sexualized images.",
+    "url": "https://us.headtopics.com/news/states-sue-musk-companies-over-flood-of-sexualized-images-90114850",
+    "published_at": "2026-11-23T17:07:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Amazon’s AWS CEO says engineering, not kill switches, is path to AI safety",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.investing.com/news/stock-market-news/amazons-aws-ceo-says-engineering-not-kill-switches-is-path-to-ai-safety-5046119",
+    "published_at": "2026-11-23T17:06:59+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Big Tech faces growing backlash over AI data centres' energy and water demands",
+    "summary": "Technology companies are facing mounting public opposition to the rapid expansion of artificial intelligence data centres, as concerns grow over electricity consumption, water shortages, environmental damage, and rising costs for local communities.",
+    "url": "https://www.thedailystar.net/news/technology/news/big-tech-faces-growing-backlash-over-ai-data-centres-energy-and-water-demands-4331521",
+    "published_at": "2026-11-23T17:06:20+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AIM for Scale and partners expand AI weather forecasting training to strengthen national weather services for farmers",
+    "summary": "National meteorological and agricultural authorities from 15 countries across Africa, Asia, the Middle East, and Latin America gathered in Abu Dhabi from November 9 to 13, 2026, for an intensive, hands-on training program designed to harness AI for agricultural weather services.",
+    "url": "https://wmo.int/media/project-update/aim-scale-and-partners-expand-ai-weather-forecasting-training-strengthen-national-weather-services",
+    "published_at": "2026-11-23T17:05:46+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SelectQuote Bets On AI To Streamline Enrollment Season",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://finimize.com/content/selectquote-bets-on-ai-to-streamline-enrollment-season",
+    "published_at": "2026-11-23T17:05:37+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Shopping Black Friday deals? Your next return could be handled in a mobile messaging conversation",
+    "summary": "Sinch reports that 93% of Black Friday shoppers value interactive post-purchase messaging, prompting brands to enhance return experiences through two-way conversations.",
+    "url": "https://www.santafenewmexican.com/life/features/shopping-black-friday-deals-your-next-return-could-be-handled-in-a-mobile-messaging-conversation/article_a16b779e-9f86-540b-8629-50de10323ddb.html",
+    "published_at": "2026-11-23T17:05:06+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia confirms it is investigating possible third-party data breach, says it will 'continue to monitor the situation'",
+    "summary": "The Gentlemen adds Nvidia to its data leak site - but it's missing some crucial details.",
+    "url": "https://www.techradar.com/pro/security/nvidia-confirms-it-is-investigating-possible-third-party-data-breach-says-it-will-continue-to-monitor-the-situation",
+    "published_at": "2026-11-23T17:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "PAR Technology Corporation to Participate at the UBS Global Technology and AI Conference",
+    "summary": "PAR Technology Corporation (NYSE: PAR) a leading technology provider powering multi-unit operators across restaurant, retail, and large-scale commerce, today announced that Savneet Singh, the Company’s CEO, will present to institutional investors at the UBS Global Technology and AI Conference.",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-11-23-par-technology-corporation-to-participate-at-the-ubs-global-technology-and-ai-conference",
+    "published_at": "2026-11-23T17:05:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Trucking risks keep sliding into E&S, and this company has built a wholesaler to catch them",
+    "summary": "Roman Atkielski says standard carriers have grown choosier about commercial auto, and that the wholesalers who win will be the ones who know exactly what their carriers want to write",
+    "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/trucking-risks-keep-sliding-into-eands-and-this-company-has-built-a-wholesaler-to-catch-them-598455.aspx",
+    "published_at": "2026-11-23T17:04:30+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Bloom Energy Soars 21% as Jensen Huang’s Return to NVIDIA Revives AI Power Trade; FuelCell Energy Surges 20%, Plug Power Jumps 8%",
+    "summary": "Fuel cell stocks are rallying sharply as the leadership reversal at NVIDIA (NASDAQ:NVDA) revives the AI data center power trade. Bloom Energy (NYSE:BE) stock is at $172.31, up 21% as trading gets underway. BE stock is leading a group that sold off hard last week as AI infrastructure names lost favor",
+    "url": "https://247wallst.com/investing/2026/11/23/bloom-energy-soars-21-as-jensen-huangs-return-to-nvidia-revives-ai-power-trade-fuelcell-energy-surges-20-plug-power-jumps-8/",
+    "published_at": "2026-11-23T17:04:28+00:00",
+    "source": "newsdata"
+  }
+]
