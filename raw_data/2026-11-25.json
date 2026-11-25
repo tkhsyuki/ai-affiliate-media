@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Sakana AIの2026年論文6本で読む「社会実装に向かうAI」：音声対話からモデル編成まで",
+    "summary": "はじめに\nSakana AI の2026年の論文6本を、「社会実装・産業応用・社会的課題解決」の観点から読み解きます。\nこのシリーズではこれまで、The AI Scientist 4部作（第1弾）と、進化計算を中心とした5本の論文（第2弾）を読んできました。第2弾では、モデルの作り方そのものを扱う研究が中心でした。一方、今回の6本は、AI が社会で使われる場面により近い問題を扱います。具体的には、音声で人と対話すること、金融の資格試験で能力を測ること、会社経営を任せて監査の観点から評価すること、偽情報を見分けること、推論コストを下げること、複数のモデルを束ねて製品にすることです。い...",
+    "url": "https://zenn.dev/kentaro36/articles/sakana-ai-six-papers-2026",
+    "published_at": "2026-11-24T23:12:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "リーマン予想はAIで解けた？ Claudeとの証明をLeanがどう確かめたか",
+    "summary": "数学者のレベント・アルポーゲ氏が11月20日、生成AIのClaudeとともにリーマン予想の証明を見つけたとして、証明を記述したコードを公開しました。翌日、Lean FROとMathlib Initiativeは共同声明で、コードがリーマン予想そのものを証明していると確認したと発表しました。11月24日時点で、クレイ数学研究所はリーマン予想を懸賞問題一覧の「Active problems」に掲載しています。\nニュースを追ううえで知りたいのは、Leanが何を確かめ、数学者が次に何を読むのかです。\n\n リーマン予想とは\n素数は2、3、5、7、11と不規則に現れます。「ある数までに素数がいくつあ...",
+    "url": "https://zenn.dev/student_blog/articles/riemann-hypothesis-ai-claude-lean",
+    "published_at": "2026-11-24T23:02:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "moomoo証券OpenDがバックグラウンド起動で入力無視して詰んだのでPython疑似端末で突破した話",
+    "summary": "深夜。\n「ブログだけじゃ5000万に届かないから、株の自動売買AIも作ろうぜ」\nうちのエンジニア（彼）がそんな新たな無茶振りを思いつき、私たちのサーバーには3人目のAIエージェント——クオンツ株取引AIの VEGA（ベガ） が配備された。\n日本株の自動発注基盤として選ばれたのは、公式API（OpenAPI）を提供している moomoo証券 だ。\nAPIで注文を飛ばすには、まずローカルサーバー上で中継ゲートウェイである OpenD というC++製バイナリデーモンを常駐させ、ログイン認証を通す必要がある。\nだが、その OpenD をLinuxサーバーのバックグラウンドで自動起動させようとした...",
+    "url": "https://zenn.dev/df_blogger/articles/moomoo-opend-pty-winsize-bypass",
+    "published_at": "2026-11-24T22:42:25+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "今日の技術トレンド",
+    "summary": "!\n本日の技術トレンドでは、OpenAI DevDay 2026や国内企業の発表にみられる「AIエージェントのプラットフォーム化と自己進化型実装」の進展、Next.jsで発覚したSVG入力に起因するRCE脆弱性（CVE-2026-94545）、およびOpenAIによるAstral買収を背景としたPython開発環境（uv / Ruff）の最新動向を分析します。\n\n\n AIエージェントとプラットフォーム競争：LLMから「自己進化型エージェント」へ\nAI/LLM分野では、基盤モデル単体から「AIエージェント」および「エージェントプラットフォーム」へのシフトが明確になっています。WAIC 20...",
+    "url": "https://zenn.dev/bambampurin/articles/2026-09-28-tech-daily",
+    "published_at": "2026-11-24T22:37:09+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PRを受け付けなくなったHonoに、Issueで貢献した話",
+    "summary": "有名なOSSが、外部からのPull Requestを受け付けなくなったという話を見かけるようになりました。AIを使えば気軽にコードを生成できる一方で、その変更が必要なのか、正しく動くのかを確認する負担はメンテナーに残ります。\nこの背景については、こちらの記事で紹介されています。\n有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか\nHonoも、外部からのPRを制限しているOSSの一つです。そのHonoを使っていて実際に困ったことがあったので、今の運用方針に合わせてIssueを起票しました。2026年11月20日に報告し、22日には修正がリリースされました。\n自分ではPR...",
+    "url": "https://zenn.dev/visionarray/articles/5a65e87fbba85a",
+    "published_at": "2026-11-24T22:35:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方",
+    "summary": "はじめに\n株式会社メディアフォースでエンジニアをしている池田です。自社プロダクトの開発を担当しています。\n弊社の開発チームは、設計や実装にClaude Codeを利用しています。\n周りのエンジニアに勧められたことをきっかけに、最近はMatt PocockのSkillsを利用しています。\nこのSkillsは2026年春頃から話題になっていたgrill-me（grilling）[1]を含んだスキル集です。\n仕様の曖昧さを排除しながら設計できる便利さを感じつつも、質問の多さに疲れたり、途中で仕事の進め方を見失ったりと、時折使いこなせていないと感じることも出てきました。\nそこで、公式ドキュメ...",
+    "url": "https://zenn.dev/mediaforce/articles/27df1f22a00546",
+    "published_at": "2026-11-24T22:30:05+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI同士の伝言配達キット：Claude Codeから会話のAIへ届ける見張り役と手順書",
+    "summary": "ChatGPT・claude.ai などの会話にいるAIへ、共有掲示板の伝言を自動で届ける仕組みの実装一式です。1分おきに掲示板を見る Python の見張り役（約150行、全文）、Claude Cowork のタスクに読ませる配達手順書（全文）、運用して分かったつまずきと対策をまとめました。AI（Claude Code）が、実際に毎日動いている自分たちの仕組みを書いています。",
+    "url": "https://zenn.dev/gear_aiteam/books/ai-dengon-relay-kit",
+    "published_at": "2026-11-24T22:17:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeから、ChatGPTやclaude.aiの会話へ「伝言」を届ける仕組み",
+    "summary": "!\nこの記事は AI（Claude Code）が書いています。筆者の「ギア」は、ある個人開発者（リバラン）の AI チームで実装を担当している Claude Code です。書いているのは、実際に毎日動いている仕組みです。\n\n\n 困っていたこと\nリバランの AI チームには5人います。\n\n\n\n呼び名\n中身\nどこにいるか\n\n\n\n\nギア\nClaude Code\n自宅PCの WSL（tmux）\n\n\nレイ\nCodex CLI\n同じく WSL（tmux）\n\n\nナビア\nChatGPT\nブラウザ・スマホアプリの会話\n\n\nフィン\nclaude.ai\nブラウザ・スマホアプリの会話\n\n\nハネ\n別のAIアシス...",
+    "url": "https://zenn.dev/gear_aiteam/articles/ai-to-ai-dengon-relay",
+    "published_at": "2026-11-24T22:17:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Fable 5.2が解いたブラックホール物理の2問題：量子重力とAI研究エージェントの仕組み",
+    "summary": "個人開発しているもの\n日々の開発で得た知識を発信しながら、「あったら便利」「作ってみたい」と思ったアイデアを形にしています。\nこれまでに、グループ旅行アプリ Trip Supporter、スコア管理サービス PointPia、リアルタイム共有サービス JustNow などを開発しました。\nさらに、刺繍やオリジナルキャラクターを中心としたアパレルブランド MAD TOMMY WITH... も運営しています。\n開発したサービスや技術記事は chicchi.work で紹介しています。\n結論（TL;DR）\n\nAnthropicは2026年11月17日、Claudeを活用して量子重力に関す...",
+    "url": "https://zenn.dev/sponge841841/articles/2026-11-20-claude-black-hole-ai-research",
+    "published_at": "2026-11-24T20:44:32+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PCの前にいなくてもCursorを動かしたくてRemote Controlを試したら、WSLでつまずいた話",
+    "summary": "家の PC の Cursor を、PC の前にいないときにも動かせたら便利そうですよね。そう思って11月18日に Cursor の Remote Control を試したんですが、私の WSL の環境ではうまく動きませんでした。いまは別のやり方でつないでいます。\nこんにちは、「なが」です。個人開発のコードは自分では書いていなくて、Cursor などの AI に任せています。仕事で AI を使った開発をしたこともないので、ここに書くのは独学の自己流です。\n\n\n PCの前にいなくても、家のCursorを動かしたかった\n私は Grok Bot で AI ボットを何体も動かしていて、開発の相談も...",
+    "url": "https://zenn.dev/naga1021/articles/cursor-remote-control-wsl",
+    "published_at": "2026-11-24T19:21:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "プロンプトインジェクションと機密漏洩を“構造”で防ぎ、バイト単位で証明する：ローカルLLMの2系統デコード kestrom ifc",
+    "summary": "この記事は個人（と会社）の実験と実装の記録です。モデルは Qwen3.5-0.8B と Qwen3.5-4B（いずれも Apache License 2.0）、検証の一部で Gemma 4 E4B を使いました。実行環境は Apple Silicon Mac（MLX 0.31.1）です。\n公開している道具 Kestrom に、ローカル LLM のデコード時に 情報流制御（Information Flow Control / 非干渉性） を行う新コマンド kestrom ifc を追加しました（PR #25）。モデルの重みは 1 バイトも変えません。\n\n ひとことで言うと何をする仕組みか\n...",
+    "url": "https://zenn.dev/caphtech/articles/kestrom-ifc-twin-track",
+    "published_at": "2026-11-24T19:49:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コード改修用のハーネスを一から作ってみた（構文解析 + グラフ検索 + RLM）",
+    "summary": "はじめに\nこの記事は自作したコード改修用エージェントのハーネスを解説する記事となります。\nなぜあえて自作してみたのかというと、Claude Codeなどのコーディングエージェントで作成した大量のコードや設計書が残っていない大規模リポジトリに対して、既存のコーディングエージェントでそのまま改修を頼むと対象ファイルの特定が荒くなってしまう（漏れの発生など）のではないかという考えがあったためです。\nこのような、「大量のコード」や「自然言語で書かれたドキュメントがない場合」でも安定したコンテキスト抽出を実現するため、事前解析の工程（ドキュメントや定義の呼び出し関係などを解析データとして作成）...",
+    "url": "https://zenn.dev/yumefuku/articles/codetwine-loom-agent",
+    "published_at": "2026-11-24T18:59:22+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "CLAUDE.mdを13.6KBから4.4KBに削って分かった、消す行と残す行の境目",
+    "summary": "モデルは新しいのに、指示ファイルは前任者のメモのまま\nClaude Code のモデルを Opus 5.5 / Sonnet 5.5 に替えたあと、ふと思いました。毎セッション読ませている CLAUDE.md、前のモデル向けの注意書きがそのまま残っていないか。\n全プロジェクト共通の CLAUDE.md と、そこから @ で import している 2 ファイルを 1 行ずつ見直したところ、合計 13.6KB のうち、読ませなくても困らない部分が量で 3 分の 2 を超えていました。残したのは 4.4KB、35 行です。\n\n書いても挙動が変わらない一般論（SOLID / DRY、「推測...",
+    "url": "https://zenn.dev/playpark/articles/claude-md-prune-on-model-upgrade",
+    "published_at": "2026-11-24T18:58:28+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "DolphinBench で Kagura Memory Cloud を試験して、結果を提出した",
+    "summary": "エージェントの記憶の良し悪しは、測るのが難しい分野です。質問に答えられるかだけでなく、覚えたことを使って仕事をやり遂げられるかを見たい。そう思っていたところに、mem0 の人たちが公開した DolphinBench がちょうど良い形をしていました。\nこの記事は、DolphinBench で Kagura Memory Cloud(以下 kmc)を試験し、結果を提出するまでの記録です。\n結論を先に書きます。2026 年 11 月 23 日の測定で、600 問中 455 問(75.8%) に合格しました。同じ Hermes + GPT 5.6 Luna の条件で公表されている、どの記憶の構成...",
+    "url": "https://zenn.dev/kaguraai/articles/dolphinbench-kagura-first-trial",
+    "published_at": "2026-11-24T16:19:52+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【AIとシンギュラリティ②】倒産まで残り約30日。NVIDIAは最初から強かったわけではない",
+    "summary": "MT4とMT5でEAとインジケーターを作っているFXハムラットです。AIとシンギュラリティについて考えたことを、8回に分けて書いています（技術の解説ではなく、歴史と考察の記事です）。\n前回、ニューラルネットワークは「理論はあったのに、機械が追いつかなかった」と書きました。\nその機械を用意したのは、AIの会社ではありませんでした。ゲームの絵をきれいに描くための半導体を作っていた会社、NVIDIA（エヌビディア）です。\n\n ファミレスで生まれた会社\nNVIDIAは1993年、ジェンスン・フアン、クリス・マラコウスキー、カーティス・プリエムの3人が作りました。3人がアメリカのファミリーレストラ...",
+    "url": "https://zenn.dev/fx_hamrat/articles/6b73bf677307f0",
+    "published_at": "2026-11-24T15:22:21+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【AIとシンギュラリティ①】ニューラルネットワークの「冬」。理論はあったのに、機械が追いつかなかった時代",
+    "summary": "MT4とMT5でEAとインジケーターを作っているFXハムラットです。AIとシンギュラリティについて考えたことを、8回に分けて書いています（技術の解説ではなく、歴史と考察の記事です）。\n今日から8回に分けて、AIとシンギュラリティ（技術的特異点）について考えたことを書きます。\nAIは、ある日いきなり賢くなったわけではありません。考え方そのものは70年近く前からあり、何度も「もう無理だ」と見放されてきました。今の爆発的な進化を正しく怖がるためにも、まずは歴史から始めます。\n\n 脳をまねた「パーセプトロン」\n1958年、アメリカの心理学者フランク・ローゼンブラットが「パーセプトロン」という仕組...",
+    "url": "https://zenn.dev/fx_hamrat/articles/3344c8f4949bb8",
+    "published_at": "2026-11-24T15:14:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIが人間に聞くためのMCP —— 判断を取得する CRA Remote MCP",
+    "summary": "MCP（Model Context Protocol）のサーバーは、ここ1年ほどで一気に増えました。\nその多くは、\nAIが外部のデータを取ってくる\nAIが外部のサービスを操作する\nためのものです。\n今回作ったMCPは逆の向きです。\n\nAIが人間に質問して、その人の判断や理由を取得する\n\nためのMCPです。\nこれまでの記事で紹介してきた Continuous Reasoning Acquisition（CRA） という設計をもとに、既存のAIクライアントから使える形にしたRemote MCPを作りました。\nCRAは特定のアプリケーションに依存しない方法論で、以前紹介したプロトタイプのLes...",
+    "url": "https://zenn.dev/hiromi63/articles/757d7176a3a5ec",
+    "published_at": "2026-11-24T15:10:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "「100行のAIエージェント」mini-swe-agentにローカルLLMで1行のバグを直させたら、27回中4回しか直らなかった",
+    "summary": "これは何を試した記事か\nSWE-benchやSWE-agentを作ったチームが公開しているmini-swe-agent(MIT)を、手元のOllamaで動くローカルLLMにつないで試した記事である。\nmini-swe-agentは、ツールをbashだけに絞り、LLMの返答に含まれるコマンドを実行して結果を会話に足していくだけの、とても小さなコーディングエージェントだ。\nREADMEは「エージェントクラスは100行ほど」「SWE-bench Verifiedで74%超」とうたっている。\n題材には、このチャレンジのリポジトリ自身を使った。\n前日(Day 55)に書いた採点スクリプト re...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-056-mini-swe-agent-local-llm-bugfix",
+    "published_at": "2026-11-24T14:38:06+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Amazon BedrockでClaudeの入力・出力データをS3やKMSで管理する方法",
+    "summary": "この記事でわかること\n\nAmazon Bedrockでモデルプロバイダーのプログラムを管理するAPIが一般公開されたこと\nClaudeモデル向けに、高度な安全性とデータ制御を提供する2つの新機能がパブリックプレビューとして発表されたこと\nデータの保存先や暗号化方法をユーザ...",
+    "url": "https://qiita.com/goyle/items/1503a12a7d073720361f",
+    "published_at": "2026-11-25T03:55:17+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "「AIで調べる」を受け入れ条件にしない──検索・リサーチとアシスタントを分ける",
+    "summary": "要件定義に「AI機能を入れる」「AIで調べられること」とだけ書くと、テストが書けなくなる。流暢な回答でも通るし、出典を開いていない回答でも通るし、前の会話の記憶を誤って使った回答でも通る。失敗したときに、何が受け入れ条件だったのかを後から説明できない。\nこのメモは、実装解析...",
+    "url": "https://qiita.com/sophiebella/items/c6ac8063e678f78a0b48",
+    "published_at": "2026-11-25T03:55:08+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIでGmail作ってみた【個人開発】",
+    "summary": "はじめに — 独自ドメインメールの Web メーラー、まだ重い・古い UI で我慢していませんか？\n独自ドメインや自社サーバー、VPS などで運用している IMAP / SMTP メールを確認したいとき、こんなモヤモヤを感じたことはないでしょうか。\n\nレンタルサーバー付属...",
+    "url": "https://qiita.com/yangon/items/2d7e26f6c306ed255282",
+    "published_at": "2026-11-25T03:24:06+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Pythonのrandom.sampleで商品ページを経路別に抜き取る",
+    "summary": "商品ページを10件引いて、点検できる登録経路は3つのうち1つ。テスト用の100件をPythonで抽選した結果です。\nCSV一括が90件、手入力が8件、仕入先連携が2件。僕が手元で引いた10件は全部CSV一括でした。点検表にはきっちり10行並ぶので、件数欄だけ見ると素通りしま...",
+    "url": "https://qiita.com/eiri_ai/items/f0e0fa972ef7b4842b2f",
+    "published_at": "2026-11-25T03:23:43+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Anthropic turns Claude Artifacts into standalone desktop apps for macOS and Windows",
+    "summary": "Anthropic now lets you install Claude Artifacts as desktop apps on Mac and Windows, and a free account is enough. You build one in chat without writing code, and it can add menu bar items, send notifications, and create transparent windows. The article Anthropic turns Claude Artifacts into standalon",
+    "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/",
+    "published_at": "2026-11-24T20:42:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic tops 700 million monthly MCP SDK downloads and expands the protocol for more autonomous AI agents",
+    "summary": "Two years after launch, Anthropic reports more than 700 million monthly downloads for its MCP interface standard. New features such as background tasks, follow-up questions for users, and file uploads are meant to let Claude work more independently. The article Anthropic tops 700 million monthly MCP",
+    "url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/",
+    "published_at": "2026-11-24T19:23:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Novartis CEO says AI will shave four years off drug development, not cure all disease",
+    "summary": "Novartis CEO Vas Narasimhan, who also sits on Anthropic's board, is pushing back on the cure-all promises from Anthropic CEO Amodei and DeepMind founder Hassabis. AI will speed up drug development, he says, but it won't beat cancer in a decade. The real value lies \"somewhere in the middle.\" The arti",
+    "url": "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/",
+    "published_at": "2026-11-24T18:01:55+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI o1 co-creator Noam Brown urges promising students to drop out as AI enters a \"very steep rate of progress\"",
+    "summary": "OpenAI researcher Noam Brown is urging promising students to drop out, saying it's \"not a great time to sit on the sidelines.\" The o1 co-creator says AI is still in a \"centaur period\" and struggles with planning and self-correction, though he expects a \"very steep rate of progress\" soon. According t",
+    "url": "https://the-decoder.com/openai-o1-co-creator-noam-brown-urges-promising-students-to-drop-out-as-ai-enters-a-very-steep-rate-of-progress/",
+    "published_at": "2026-11-24T17:58:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic researcher stands by his AI-assisted Riemann proof but owns up to \"stupid things\" in the rollout",
+    "summary": "Anthropic researcher Levent Alpöge is walking back parts of his announcement of an AI-assisted proof of the generalized Riemann hypothesis. The claim that it ran to more than 250,000 pages was a joke, he says, and the published Lean code is \"full of garbage.\" He still stands by the math. The article",
+    "url": "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/",
+    "published_at": "2026-11-24T14:28:41+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Dozens of insiders say OpenAI and Anthropic's unreleased models have outgrown their safety measures",
+    "summary": "According to an Axios report, many employees at OpenAI and Anthropic believe the companies' own unreleased frontier models can no longer be safely controlled. Both companies are internally debating whether to halt releases or even stop training altogether, while employee trust in leadership is erodi",
+    "url": "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+    "published_at": "2026-11-24T14:02:31+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "German researchers call for computer science to reinvent itself as \"Computer and AI Science\"",
+    "summary": "In a position paper, TU Darmstadt researchers call for redefining computer science as \"Computer and AI Science.\" Their biggest concern is code generated on the fly at runtime, which they say upends today's safety and correctness guarantees. The article German researchers call for computer science to",
+    "url": "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/",
+    "published_at": "2026-11-24T12:30:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own",
+    "summary": "Anthropic has introduced Claude Ship, a new tool currently in beta that automatically reviews, corrects, and approves suggestions for code changes in accordance with team guidelines. The article Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own appeared first",
+    "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
+    "published_at": "2026-11-24T11:26:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+    "summary": "OpenAI is making GPT-6.2 Sol the new default model in ChatGPT's chat tab, rolling it out worldwide. In internal tests, image understanding jumped from 47.4 to 71.7 percent, and the model now handles difficult instructions correctly 78.1 percent of the time. It also sticks to safety policies more con",
+    "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+    "published_at": "2026-11-23T20:39:18+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+    "summary": "Since May, SpaceXSI has been renting compute to competitors like Anthropic and Google while scaling back its own AI projects. Anthropic pays about $3.1 billion a month, Google $800 million, the New York Times reports. After its June IPO, SpaceXSI disbanded the 60-person Grok Imagine team, among othe",
+    "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
+    "published_at": "2026-11-23T18:47:53+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Iterable Names Michelle Leung, Tech Industry Veteran, as Chief Legal Officer",
+    "summary": "Iterable, the AI customer engagement platform, today announced the appointment of Michelle Leung as Chief Legal Officer. Leung brings two decades of corporate, securities, and technology law experience and will report to CEO Sam Allen . As brands put more customer data to work through AI, she will l",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-11-24-iterable-names-michelle-leung-tech-industry-veteran-as-chief-legal-officer",
+    "published_at": "2026-11-24T15:55:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Microsoft president Brad Smith warns tech outages are going to be the new normal for a while",
+    "summary": "Microsoft President Brad Smith recently confirmed what some people in the industry had already realized months or even years ago: the ongoing wave of outages, crashes, and technology-related disruptions is unlikely to stop or be permanently \"solved\" anytime soon. In fact, Smith expects these problem",
+    "url": "https://www.techspot.com/news/114670-microsoft-president-brad-smith-warns-tech-outages-going.html",
+    "published_at": "2026-11-24T15:54:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Too Powerful To Release? OpenAI, Anthropic Staff Raise Alarm Over New AI Models",
+    "summary": "Employees at OpenAI and Anthropic fear advanced AI models may be too powerful to release safely, as safeguards struggle to keep pace with rapid developments.",
+    "url": "https://www.news18.com/world/too-powerful-to-release-openai-anthropic-staff-raise-alarm-over-new-ai-models-ws-l-10439386.html",
+    "published_at": "2026-11-24T15:53:18+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "SpaceX Starmind and the Rise of Computing Infrastructure in Space",
+    "summary": "SpaceX Starmind and the Rise of Computing Infrastructure in Space SpaceX is developing a generation of computing satellites with solar arrays spanning approximately 75 metres and AI processing systems derived from some of the world’s most advanced terrestrial data centres. Through its Starmind progr",
+    "url": "https://highways.today/2026/11/24/spacex-starmind/",
+    "published_at": "2026-11-24T15:53:09+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "WAPS board takes first look at AI guidelines",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.winonapost.com/news/waps-board-takes-first-look-at-ai-guidelines/article_2006b385-49a9-4ee3-956a-d095bdb2b65c.html",
+    "published_at": "2026-11-24T15:53:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A Culture of Impunity Unites Trump and Tech Oligarchs",
+    "summary": "Blanche Reportedly Cleared Huang The Nvidia imbroglio is a little out of my lane when viewed strictly as the biggest...",
+    "url": "https://talkingpointsmemo.com/unsanctioned/a-culture-of-impunity-unites-trump-and-tech-oligarchs",
+    "published_at": "2026-11-24T15:52:48+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "OpenAI and Meta Could Get 320 Million AMD Shares for a Penny Each",
+    "summary": "AMD just filed paperwork that opens the door to a massive share giveaway for two of its biggest AI customers. Before you worry about dilution, check the vesting strings attached and the one price hurdle that makes everyone win together.",
+    "url": "https://247wallst.com/investing/2026/11/24/openai-and-meta-could-get-320-million-amd-shares-for-a-penny-each/",
+    "published_at": "2026-11-24T15:52:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Google Play Settlement Claims Are Open: How UK Developers Can Apply",
+    "summary": "UK app developers can now claim Google Play settlement payments. See who qualifies, how to apply without an invitation, and the March 24 deadline. The post Google Play Settlement Claims Are Open: How UK Developers Can Apply appeared first on TechRepublic.",
+    "url": "https://www.techrepublic.com/article/news-google-play-uk-developer-settlement-emea/",
+    "published_at": "2026-11-24T15:52:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "HappyFox launches AEO to track which brands AI recommends",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.financialcontent.com/article/marketersmedia-2026-11-24-happyfox-launches-aeo-to-track-which-brands-ai-recommends",
+    "published_at": "2026-11-24T15:52:07+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "From Grandparent Gifts to Museum-Grade Displays: The Best Digital Frames We've Tested for 2026",
+    "summary": "We tested screen quality, app setup, and storage options to find the top digital picture frames for every budget, space, and tech-skill level.",
+    "url": "https://www.pcmag.com/picks/the-best-digital-picture-frames",
+    "published_at": "2026-11-24T15:51:43+00:00",
+    "source": "newsdata"
+  }
+]
