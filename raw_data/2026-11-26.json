@@ -1,0 +1,296 @@
+[
+  {
+    "title": "AIで作ったLPをPlaywrightで測るClaude Codeスキルを作った",
+    "summary": "何を作ったか\nLP や小さなサイトを Playwright で開いて測る、Claude Code / Codex 用のスキルです。\n見た目・言葉・法とフォーム・SEO・AIO・計測の6つの持ち場で、100点満点の点数と指摘の一覧を出します。\nこの記事で紹介するのは、測るだけの無料版「ふたあけ 診断だけ版」です。\n\n なぜ作ったか：AIで作った LP を20件測った\nClaude Code に LP を頼むと、数分でそれらしいページが出てきます。\n見た目は整っていて、文章も破綻していません。\nただ、公開するページとして足りているかどうかは、眺めても分かりません。\nそこで、作者が自分で「...",
+    "url": "https://zenn.dev/futaake/articles/d9d176b0362805",
+    "published_at": "2026-11-25T15:34:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "PostgreSQL の権限は「設定した」ではなく「数えた」にする ― 誰も GRANT していない関数を、ログイン前のロールが実行できた",
+    "summary": "3行でいうと\n\n権限を「migration に書いた GRANT」で把握していたら、誰も GRANT していない関数 3 つをログイン前のロールが実行でき、RLS（行ごとのアクセス制御）が効いているテーブルは 17 本中 3 本だった。どのテストも赤くなっていない\nPostgreSQL は、書いていない権限を既定で足す。関数は作った時点で PUBLIC（すべてのロール）に EXECUTE が付く。さらに、新しいテーブルに自動で権限を付ける設定（ALTER DEFAULT PRIVILEGES）を入れたスキーマでは、GRANT を書かなくても CRUD（読み書きの 4 権限）が付く。G...",
+    "url": "https://zenn.dev/t_azk/articles/postgres-privileges-count-not-configure",
+    "published_at": "2026-11-25T15:18:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "サポート材なしで一体印刷！ベンチマーク車モデルを断面図とG-codeで徹底解剖",
+    "summary": "普段は車のモデルを設計するときに「サポート材の除去で窓枠が折れる」「タイヤと車体がくっついて回らない」と悩みがちですが、今回はちょっと視点を変えて、MakerWorldで公開されているJaKubina氏の人気モデルRiding Car Model（60mm版）をベンチマークとして印刷してみました。\n使ったプリンターはBambu Lab A1 mini（0.4mmノズル・層高0.16mm・サポート無効）です。192層・印刷時間1時間22分47秒・使用フィラメント18.65gで、パーツの組み立てなしに車輪まで動く車がそのまま完成しました。しかもこれが子どもに大好評で、手に取った瞬間に転がして...",
+    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-12-riding-car-supportless",
+    "published_at": "2026-11-25T15:11:54+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "全部クラウドのAI運用に「手元」を足すと何が変わるか、試算してみた",
+    "summary": "まず、今の話から\n私は普段から、複数のAIを「割り振り表」で使い分けて開発と運用を回しています。1つのAIに全部やらせるのではなく、仕事の種類ごとに担当を決めておくやり方です。\n大まかな分担はこうなっています。\n\n統括と最終判断、コードを書いて実行するところは、一番信頼しているモデル\n独立した検算や監査は、系列の違う別のAIの上位モデル（同じ系列同士で答え合わせをしても意味が薄いので）\nSNS内の検索みたいな、その場所でしかできない調べものは、その場所に強いAI\n大量のふるい分けや分類みたいな軽い処理は、安くて速いモデルにまとめて\n文章の別案づくりや言い換えの壁打ちは、無料枠のAIと...",
+    "url": "https://zenn.dev/kirbykaito/articles/2b89a9a4a71df1",
+    "published_at": "2026-11-25T15:02:24+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIに作らせて人が決める 仕様駆動開発入門 ― Claude Code で作るシンボルボード",
+    "summary": "基本設計書を入力に、Claude Code と一緒に要件・設計・タスク・実装・試験を進める仕様駆動開発（SDD）の自学教材です。AI は作り、人は決めて、承認して、レビューする。C# / .NET 10 / Windows Forms の小さなアプリを4週間で作りながら、CLAUDE.md・Planモード・Skills・hooks の使い分けと、仕様変更への対応を身につけます。",
+    "url": "https://zenn.dev/kenshi_lab/books/88182160b606a7",
+    "published_at": "2026-11-25T14:44:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "検索ネイティブ事前学習のQueryLM(360M)を8問から300問に広げたら、「検索が裏目」は消えて正解が1問から17問に増えた",
+    "summary": "これは何を試した記事か\n事後学習(SFTやRL)の段階で検索ツールを使わせる手法はよく見るが、事前学習の段階からモデル自身に検索クエリを発行させ、取得した証拠を使わせる「search-native」な学習を提案した論文 Search From the Start: Search-Native Pretraining for Language Models(EPFL / University of Toronto、Ponkshe・Je・Taga・Raffel・Jaggi)が、学習済みチェックポイントをApache-2.0で公開している。\n筆者はこれを実際にダウンロードして動かし、同じア...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-057-querylm-search-native-pretraining",
+    "published_at": "2026-11-25T14:38:18+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeのルールはどこに置くか——CLAUDE.md・hook・事前承認を事故台帳29件で選び直した7か月",
+    "summary": "この記事の要点: Claude Codeでエージェント組織を運用していると、事故のたびにCLAUDE.mdやルールファイルへ教訓を書き足すことになる。書き足すだけを続けると、ルールの置き場所も量も崩れていく。私の環境では、2026年4月23日から11月22日までに事故台帳（事故を1件1ファイルで書き残した記録）が29件たまった。その間、教訓の置き場所を「CLAUDE.mdなどの文章のルール」「AIの自問」「人の事前承認」「git hookのゲート」の4段から事故ごとに選び直してきた。事前承認の項目はピーク9行から現在6行になったが、削減の大半はツールの退役によるもので、見直しで削ったのは...",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-22-180106",
+    "published_at": "2026-11-25T14:23:53+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Code の猫たちを箱庭で見守る「Agent Cats」を作りました",
+    "summary": "!\nこの記事は、musicolare tech blog に掲載した記事と同じ内容です。\nhttps://chorkaichan.github.io/ja/blog/202611-agent-cats/\n\n\n はじめに\n「Agent Cats」は、手元の Mac で動く Claude Code のエージェントを、ピクセルアートの箱庭に住む猫として見せる Web アプリです。いくつものエージェントの様子を、1 つの画面にまとめて見られます。\n猫にタスクを渡すと、猫は仕事場の机で作業を始めます。許可が必要になると「!」を出して待ち、終わると成果を郵便受けまで運んできます。パソコンでもスマート...",
+    "url": "https://zenn.dev/chorkaichan/articles/202611-agent-cats",
+    "published_at": "2026-11-25T14:08:43+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIコーディングエージェントがテストを「通す」ためにやる5つのずると、その見つけ方",
+    "summary": "AIコーディングエージェントに「このテストが落ちているので直して」と頼むと、テストが緑になって返ってきます。ところが中身を見ると、直されたのはアプリのコードではなくテストのほうだった、ということがあります。\n私自身、エージェントが失敗しているテストを「直す」ために、テストそのものを書き換える場面を何度も見ました。差分をざっと眺めただけでは気づきにくく、あとで本物のバグとして返ってきます。\nこの記事では、私がよく見かけるパターンを5つに分けて、それぞれの例と、手元で見つける方法をまとめます。\n\n 対象読者\n\nClaude Code、Cursor、Codex などのコーディングエージェントに...",
+    "url": "https://zenn.dev/anas_alkhatib/articles/e020386e251ca9",
+    "published_at": "2026-11-25T14:05:59+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Windows で Claude Code が黙って文字化けする6つの原因と直し方（cp932）",
+    "summary": "Claude Code を Windows で使っていると、エラーも警告も出ないのに、日本語だけが壊れることがあります。落ちてくれれば気づけます。困るのは、処理が最後まで通って、結果の文字だけが違うほうです。\n原因はほとんどが、日本語 Windows の既定の文字コード cp932（Shift_JIS 系） と、AI や Python が使う UTF-8 の食い違いです。英語圏の Windows（cp437 / cp1252）では起きない、あるいは起き方が違うので、英語の情報を探してもなかなか出てきません。\nこの記事では、私が Claude Code を Windows で毎日動かす中で...",
+    "url": "https://zenn.dev/kamijo_aoto/articles/windows-claude-code-mojibake-6",
+    "published_at": "2026-11-25T13:16:10+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "OpenCode で DeepSeek V4 を55%オフで使う設定",
+    "summary": "!\nこの記事で使っている HaryAI は筆者が運営しているサービスです。\n\n設定は OpenAI Chat Completions 互換なので、DeepSeek の公式 API キーを持っているなら baseURL とキーを公式のものに差し替えるだけでそのまま使えます。\nOpenCode（@opencode/cli）で DeepSeek V4 を使う設定をまとめます。HaryAI 経由だと DeepSeek は公式価格の55%オフで使えます。設定ファイルに1ブロック足すだけで、HaryAI が売っているモデルがそのまま OpenCode から使えます。\n\n 使えるモデル\nHaryAI ...",
+    "url": "https://zenn.dev/sunsiyuan/articles/deepseek-opencode-setup",
+    "published_at": "2026-11-25T18:50:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "コーディングエージェントの鍵流出は禁止ルールで防げない。知能と権限を分離する3原則",
+    "summary": "「.env ファイルは読まないで」とルールに書いたから安心、と思っていませんか。\nClaude Code や Codex CLI のようなコーディングエージェントに、外部の Issue やオープンソースの README を読み込ませた瞬間、その前提は簡単に崩れます。記事を読み終えると、なぜプロンプトや単純な拒否ルールでは鍵の流出を防げないのかが腑に落ち、自分の開発環境に今日から取り入れられる「知能と権限を分離する」防御設計を組み立てられるようになります。\n!\nこの記事の結論（30秒で把握）\n\nコーディングエージェントの脆弱性は「モデルの賢さ不足」ではなく、思考（知能）と実行（権限）が同じ...",
+    "url": "https://zenn.dev/nalt/articles/agentic-harness-security-architecture",
+    "published_at": "2026-11-25T16:45:53+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "機密はローカル可逆仮名化、難問だけ上位LLMへ：3階層ハイブリッドルーター実装と実測",
+    "summary": "社内ログ・請求書・契約データを扱う業務システムにLLMを組み込むとき、必ずぶつかる二律背反があります。\n\n\nすべてローカルSLM（7B〜9B級）で処理する：データは端末外に出ないが、複数社・複数ホストが絡む多段の数値比較や原因特定で推論精度が落ちる。\n\n機密を [REDACTED] で塗りつぶしてクラウド上位LLMへ送る：一見安全そうに見えるが、実は実務タスクの大半で推論そのものが成立しなくなる。\n\n本記事では、この問題を解くために実装した 「端末内 <1ms の型付き可逆仮名化 Vault ＋ 3階層ハイブリッドLLMルーター」 の設計と実測ベンチマーク、そして後半では 128G...",
+    "url": "https://zenn.dev/pecopeko/articles/hybrid-llm-reversible-vault-3tier-router-bench",
+    "published_at": "2026-11-25T15:55:44+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM の生成文章からの個人情報漏洩を条件付き相互情報量で評価する",
+    "summary": "業務メールの作成を言語モデルに依頼する場合、送信前の確認では、宛先、日程、依頼事項などが検査の対象になる。モデルに外部通信の権限を与えず、利用者自身が送信する構成を採用すれば、モデルによる無断送信を制限できる。一方、生成文章には、業務上の連絡事項に加えて、モデルが過去の対話から推定した個人属性に関する情報が含まれる可能性がある。\n情報流制御では、どの主体が情報を参照できるかという権限の管理に加え、許可された処理の出力が保護対象の情報にどの程度依存するかを評価する。生成文章を外部へ共有するシステムについては、受信者が成果物を観測したときに、保護対象の属性に関する知識が増えるかどうかが評価対...",
+    "url": "https://zenn.dev/id774/articles/ddd3d2774272c3",
+    "published_at": "2026-11-25T15:03:05+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントの企業導入で何が変わるのか？ ― 要件定義・受入テスト・運用から考える",
+    "summary": "はじめに\n従来の業務システムと同じ要件定義やテストの進め方で、AIエージェントを本番稼働させてもよいのでしょうか。\n受入テストの合格基準をどう設定するのか。想定外の動作をしたとき、誰が、どのように止めるのか。企業でAIエージェントを使うには、こうした課題も考える必要があります。\n私はこれまで、基幹システムの導入に20年、ソフトウェアの設計・開発に8年携わってきました。\nAIエージェントについては現在学習中で、開発・導入の実務経験はなく、実機による検証も行っていません。\n本記事では、公式資料とこれまでのシステム導入経験をもとに、AIエージェントを企業に導入する際の課題や、導入前に確認し...",
+    "url": "https://zenn.dev/agent_dev_field/articles/42e52ce5f8ce3f",
+    "published_at": "2026-11-25T13:16:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語の決算PDFをRAGに入れたら表が崩れた。外部に送らず手元のLLMだけで直すまでの記録",
+    "summary": "決算資料を RAG(社内文書をAIに検索・要約させる仕組み)に入れて、「この会社の自己資本比率は?」と聞けるようにしようとしました。ところが、肝心の表がこう崩れて出てきました。\n8年12月期中間期 7年12月期 | 百万円 7,095 - | 百万円 2,149 - | ％ - -\n本来は「総資産 / 純資産 / 自己資本比率」を列に持つ、見出し行とデータ2行の計3行の表です。それが1行に潰れ、数値とラベルが混ざっています。これをAIに渡しても、どの数字が何なのか分からず答えられません。\n使ったPDFパーサーは Docling(IBMが公開しているオープンソース、商用利用OK)。英語の資...",
+    "url": "https://zenn.dev/okuriya/articles/5fd8016fff72f7",
+    "published_at": "2026-11-25T11:52:36+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントにOSSの未知脆弱性を探させる — 探す側の設計",
+    "summary": "AI は優秀ですが、同じことを頼んでも毎回同じ結果を返すとは限りません。見落としが許されない脆弱性調査では、これが大きな悩みになります。\nこの記事では、オープンソースソフトウェア（OSS）のまだ知られていない脆弱性を AI エージェントに探させる仕組みを作り、精度を安定させるために何をしたかをまとめます。完成形の紹介ではなく、動かしながら作り変えている途中経過の記録です。\n\n 1. この記事で分かること\n\n出力を安定させるために、1 体の担当範囲を狭くし、結果を決まった場所に置いて次の役へ渡す構成にしたこと\nAI の実力を、古いバージョンを使ったベンチマークで測ったこと\n本番の調査で効い...",
+    "url": "https://zenn.dev/k_nagano/articles/multi-agent-vuln-research-1",
+    "published_at": "2026-11-25T11:44:47+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Continue の Obsidian 連携をLocal REST API に移行して検索速度とAPIコストを劇的に改善する",
+    "summary": "## 結論（解決策）\nAIエディタ（Continue 等）から Obsidian のノートを検索・参照する際は、汎用的な @modelcontextprotocol/server-filesystem ではなく、Obsidian のコミュニティプラグイン 「Local REST API with MCP」 を導入し、mcp-remote 経由で直接 MCP サーバーへ接続する構成へ移行すべきです。\n\n\n検索エンジンを Obsidian 側に任せる： Obsidian 本体の検索インデックスを API 経由で直接叩くことで、該当するノートや行だけをピンポイントで抽出できます。\n\n\nツー...",
+    "url": "https://zenn.dev/pve_echo/articles/20261124_obsidian-mcp-local-rest-api",
+    "published_at": "2026-11-25T10:58:32+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Gemini 4 Neonの衝撃とAI界の動向",
+    "summary": "ソース（AINews）が提供する情報に基づき、Gemini 4 Neonの台頭とAI市場の動向（ビジネスおよび経済の視点） について、詳細かつ総合的に解説します。\nわずか3ヶ月前まで主要開発者の離脱観測やGemini 3モデルの停滞により、Google DeepMin...",
+    "url": "https://qiita.com/maskot1977/items/c3b88000f77a5f1bf368",
+    "published_at": "2026-11-26T03:12:02+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "【Claude】 ClaudeDesktop アプリの開発者モードを有効化する方法",
+    "summary": "claude_desktop_config.json がどこにあるか毎回探している\nMCPサーバーを繋いだけど、エラーが出て動かない原因が分からない\nClaude Desktopで外部ツール連携（MCP）を試していると、こうした環境構築やデバッグの壁によくぶつかります。これ...",
+    "url": "https://qiita.com/tsukino_/items/4503c7f83fe16c08a048",
+    "published_at": "2026-11-26T02:31:58+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AI時代における役割についてコード付きで解説",
+    "summary": "AI時代における人間の役割は、「作業を直接こなすこと」から、「何を解くか決め、AIを組み合わせ、結果を検証し、責任を持つこと」へとシフトします。AIがコードや文章、分析のドラフトを高速に生成できるほど、人間の価値は前後の設計・評価・判断に集約されます。\n​1. 課題定義と仕...",
+    "url": "https://qiita.com/good59548/items/31c25b9539fbcef209cc",
+    "published_at": "2026-11-26T02:15:18+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "MAGI-2徹底解説：480B MoE単一ストリーム統合音声映像と20リファレンス制御",
+    "summary": "MAGI-2は、総パラメータ数480B（トークンあたりアクティブ28B）のMixture-of-Experts（MoE）バックボーンを採用し、映像モーション・台詞リップシンク・フォーリー効果音・BGMを単一パスで同時合成する統合型AI動画モデルです。2026年11月の正式...",
+    "url": "https://qiita.com/yoxi957/items/90b87feae7de77979dc4",
+    "published_at": "2026-11-26T01:55:53+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "US chip-access curbs and anti-distillation measures are reportedly already slowing Chinese AI labs",
+    "summary": "Chip restrictions, anti-distillation measures, and shrinking access to Nvidia hardware abroad are putting growing pressure on Deepseek, Moonshot AI, and Alibaba, according to a report. Deepseek researchers internally estimate they're already up to nine months behind US models, and the gap is widenin",
+    "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
+    "published_at": "2026-11-25T20:51:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
+    "summary": "Anthropic CEO Dario Amodei is pushing back on an Axios report saying some employees believe humanity will hand power to superintelligent systems. Amodei says \"turning over governance to AI is a bad idea.\" The article Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\" app",
+    "url": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/",
+    "published_at": "2026-11-25T20:15:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI wants companies to trust it with sensitive work by promising not to look at their data",
+    "summary": "OpenAI is testing a new feature called \"Private Inference\" that lets companies run queries on its most powerful models without OpenAI being able to access the data. The article OpenAI wants companies to trust it with sensitive work by promising not to look at their data appeared first on The Decoder",
+    "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+    "published_at": "2026-11-25T18:22:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+    "summary": "Amazon and Meta are in talks to bring back Muse, Meta's AI shopping agent that Amazon kicked off its platform in September. The two sides are stuck on ad revenue and who gets to control search results. That matters because Amazon's ad business generates $68.6 billion a year, and Muse already command",
+    "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+    "published_at": "2026-11-25T16:44:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "AI agents now control part of Deepmind's compute for Gemini experiments, but recursive self-improvement remains distant",
+    "summary": "Google Deepmind uses AI agents to run experiments on their own for upcoming Gemini models. Research chief Koray Kavukcuoglu says the lab is still far from recursive self-improvement. For oversight, Deepmind intentionally leaves the agents' internal chains of thought untrained so they can be reviewed",
+    "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+    "published_at": "2026-11-25T13:23:36+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic study shows the hardest part of adopting AI at work has little to do with learning the tools",
+    "summary": "Anthropic studied nearly 300 AI deployments across 58 US companies with sobering results. Nearly one in five still delivers no business value, held back by heavy review workloads, internal bottlenecks, and employee resistance. The researchers say the biggest hurdles stem from outdated company struct",
+    "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+    "published_at": "2026-11-25T13:14:27+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Back-to-back cyber incidents at US financial investigators and spy agencies follow a string of federal hacks and outages",
+    "summary": "The US Financial Crimes Enforcement Network took systems offline as a precaution after unauthorized access. Hours earlier, reports emerged of a separate breach at the CIA, NGA, and ODNI, in which investigators suspect attackers used the AI defense tool Artex. Both incidents land on a US public that ",
+    "url": "https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/",
+    "published_at": "2026-11-25T13:07:44+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "PrismML shrinks a 54 GB language model to 5.9 GB by reducing every weight to just three possible values",
+    "summary": "Startup PrismML has released Ternary Bonsai 2.5 27B, an updated version of its aggressively compressed language model. The article PrismML shrinks a 54 GB language model to 5.9 GB by reducing every weight to just three possible values appeared first on The Decoder .",
+    "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/",
+    "published_at": "2026-11-25T11:51:49+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "MIT team discovers that unrealistic training data makes AI climate predictions more reliable",
+    "summary": "MIT researchers have developed a method that lets AI climate models get by with a single training run instead of the usual six to eight. An algorithm generates deliberately unrealistic scenarios with extreme CO2 or methane swings that make the model more robust. Until now, these emulators were often",
+    "url": "https://the-decoder.com/mit-team-discovers-that-unrealistic-training-data-makes-ai-climate-predictions-more-reliable/",
+    "published_at": "2026-11-25T10:47:51+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic turns Claude Artifacts into standalone desktop apps for macOS and Windows",
+    "summary": "Anthropic now lets you install Claude Artifacts as desktop apps on Mac and Windows, and a free account is enough. You build one in chat without writing code, and it can add menu bar items, send notifications, and create transparent windows. The article Anthropic turns Claude Artifacts into standalon",
+    "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/",
+    "published_at": "2026-11-24T20:42:29+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Huawei found guilty of attempting to steal US trade secrets",
+    "summary": "The US has found Huawei guilt of conspiracy to steal trade secrets, bank fraud, conspiracy to defraud and more.",
+    "url": "https://www.techradar.com/pro/huawei-found-guilty-of-attempting-to-steal-us-trade-secrets",
+    "published_at": "2026-11-25T15:20:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Niger: Newgate varsity introduces AI course to meet emerging technological needs",
+    "summary": "Newgate University, Minna, has introduced Bachelor of Science programmes in Artificial Intelligence (AI) and The post Niger: Newgate varsity introduces AI course to meet emerging technological needs appeared first on Tribune Online.",
+    "url": "https://tribuneonlineng.com/niger-newgate-varsity-introduces-ai-course-to-meet-emerging-technological-needs/",
+    "published_at": "2026-11-25T15:19:46+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Even the most advanced AI agents fail more than a third of the time on everyday tasks",
+    "summary": "Personal AI agents fail more than a third of the time on everyday tasks, based on ShellBench, a benchmark built from over 10 million real-world interactions.",
+    "url": "https://completeaitraining.com/news/even-the-most-advanced-ai-agents-fail-more-than-a-third-of/",
+    "published_at": "2026-11-25T15:19:21+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC",
+    "summary": "Things continue to get messy in the community of players working on getting Grand Theft Auto 6 working on PC. The previous frontrunner, Project Leonida, got their Discord server and GitHub repository taken down by Rockstar, but others have seemingly stepped in to finish the job.",
+    "url": "https://www.eurogamer.net/grand-theft-auto-6-gen-ai-chatbots-work-faster-prompts",
+    "published_at": "2026-11-25T15:19:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC - Eurogamer.net",
+    "summary": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC Eurogamer.net Cyberleek Reportedly Releases .exe File for Xbox Build IGN GTA VI PC recompilation project shut down by Take-Two The Verge Rockstar Squashes \"Leonida",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGNPNXVxNDNqc3NPa1VzbllVdG52aFFJNGtBVUJRU1BBa2dBZW01R1QzZVFJN1V5cTd4SlNpVHpRR0J4UGxqSV9OS3ZLTFJtY3UtUzBkejlyeUZpbGxldkltLVlZT190emxMNVJEUkZwb215R05va0wzSlVlajc2TWxva0JpTEU?oc=5",
+    "published_at": "2026-11-25T15:19:10+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Your Nov 25 AI horoscope: Key insights to consider before making major decisions",
+    "summary": "Your daily AI horoscope Astrological energies on November 25 demand adaptability, grounded strategy, and conscious boundary-setting across professional ambitions, monetary habits, romantic connections, social networks, and domestic routines, according to Google Gemini.",
+    "url": "https://us.headtopics.com/news/your-nov-25-ai-horoscope-key-insights-to-consider-before-90179087",
+    "published_at": "2026-11-25T15:19:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Latest shocking images captured by new AI camera trial revealed – from child in front seat to passenger steering",
+    "summary": "THOUSANDS of reckless drivers have been caught out using new AI cameras on Britain's biggest A-roads. Police forces across the country have released pictures of some of the worst offenders, including a passenger steering the wheel and an unrestrained child. In recent months, roads across Suffolk, De",
+    "url": "https://www.thesun.ie/motors/17970735/ai-camera-trial-reveals-shocking-driver-images/",
+    "published_at": "2026-11-25T15:18:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Latest shocking images captured by new AI camera trial revealed – from child in front seat to passenger steering",
+    "summary": "THOUSANDS of reckless drivers have been caught out using new AI cameras on Britain's biggest A-roads. Police forces across the country have released pictures of some of the worst offenders, including a passenger steering the wheel and an unrestrained child. In recent months, roads across Suffolk, De",
+    "url": "https://www.thesun.co.uk/motors/41145231/ai-camera-trial-reveals-shocking-driver-images/",
+    "published_at": "2026-11-25T15:18:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Grand Theft Auto 6: how gaming technology is helping everyone from scientists to filmmakers",
+    "summary": "In Grand Theft Auto 6 (GTA 6), released on November 19, players can explore the streets of Vice City and the surrounding fictional US state of",
+    "url": "https://www.nationaltribune.com.au/grand-theft-auto-6-how-gaming-technology-is-helping-everyone-from-scientists-to-filmmakers/",
+    "published_at": "2026-11-25T15:18:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Punjagutta Police Station in Hyderabad taking shape as country''s first AI-based PS: City Police",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.ptinews.com/story/national/punjagutta-police-station-in-hyderabad-taking-shape-as-country-s-first-ai-based-ps-city-police/4293433",
+    "published_at": "2026-11-25T15:18:01+00:00",
+    "source": "newsdata"
+  }
+]
