@@ -1,0 +1,303 @@
+[
+  {
+    "title": "情報セキュリティ研修を動画でリッチに！AIなら簡単に……出来るわけがなかった",
+    "summary": "ISMS研修を豪華でリッチなアニメーション動画で作ってみたくなったので、情シス担当者1人でAIをぶん回したら、トークンが鬼のように溶け、労務に睨まれました。 2026年も、もうすぐ終わりますが、猫も杓子も「AIで効率化！」って叫んでいる時代じゃないですか。 そうすると何の業務でもAI・AI・AIの大合唱で、「最早もう人間なんていらなくてAIだけで良いんじゃないか？」みたいな事をよく聞きます。 で、各社ISMS研修とかコンプライアンス研修とかを作っていると、当然皆さん考えることはただ一つで「AIに丸投げして、なんかいい感じにコンテンツ作れない？」と一度は思ったことがあるはずです。 ただ、実...",
+    "url": "https://zenn.dev/yut_kawabata/articles/4c5c7bbd4893f0",
+    "published_at": "2026-11-26T18:57:42+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "人間共存下における人工超知能の知性構造(概念論考)",
+    "summary": "本論考は、筆者が着想・設計した仮説と構成に基づき、文献調査の補助・論理検証（壁打ち）・文章構成のパートナーとして生成AIを全面的に活用して執筆しました。\n人間の到達しうる最高次の認知構造（第6段階の型）と人工超知能（ASI）の知性構造の機能的同型性を論じる概念論考。成人発達理論・収斂進化・AIアライメント・解釈可能性研究を横断し、人間共存条件下でASIが同じ関係構造へ収斂するという条件付き収斂仮説を、反証可能性の設計と測定プログラムまで含めて定式化する。",
+    "url": "https://zenn.dev/pika_pi/books/a615a9567f4af9",
+    "published_at": "2026-11-26T18:09:03+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "個人向けAIエージェント Muse を「部下」として運用する実践メモ：定期実行・常時指示・検証ゲート",
+    "summary": "Muse（Meta の個人向け AI エージェント）を数週間、実務で回して分かったのは、性能の差よりも運用の差が効くということでした。チャットで都度頼む使い方だと「賢いチャットボット」で止まりますが、定期実行・常時指示・検証の型を先に作ると、エージェントは「朝には仕事が進んでいる側」に回ります。この記事はその型の実践メモです。最後におまけとして招待コードも置いておきます。 Muse は会話ウィンドウではなく、自分のコンピュータ（VM）の上で動き、カレンダー連携、メールの読み書き、Web 調査、文書・小さな Web ページの作成、定期実行（スケジュールされたジョブ）をこなします。つまり「頼...",
+    "url": "https://zenn.dev/aletheia_jp/articles/66575ea60c143b",
+    "published_at": "2026-11-26T17:44:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "IDEの次に使わなくなるものは？",
+    "summary": "Visual Studio Codeやその他のIDEを使わずに開発するようになった、という話をよく聞くようになりました。 Cursorが登場したときは「対話しながら開発できるのか、スゲー」って言っていたのに。 開発者の中にはコードをほとんど書かなくなった人も多くなってきているでしょうし、まだそうなっていない職場も徐々にそうなるんだろうと思います。 AIがメインで作る時代になれば、人間が作るためのツールは徐々に使われなくなるんだろうなっていう感覚はあります。 そういう「人間が作るためのツール」ってどうなるのかな、というのが本日のテーマです。 10月末に行われたQiita Conferenc...",
+    "url": "https://zenn.dev/kabeya/articles/whats-next-after-ide",
+    "published_at": "2026-11-26T17:36:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Claude Codeの定型ブラウザ操作を2回目からLLMなし1.5秒に。迷う手だけDecisionモデルに聞くCLI&SKILL",
+    "summary": "Claude Code にフォーム入力や管理画面の操作を頼むと、人間なら数秒で終わる作業に毎回 20 秒ほど待たされます。先週と同じ画面を別の入力値でやり直すだけでも、また最初から画面を読み直してトークンを消費します。 画面を軽いテキスト一覧（スナップショット）で渡せる agent-browser を使っても、1 操作ごとに Claude Code が画面を読んで次のコマンドを考える構造は変わりません。実際、7 項目のフォーム入力でも 1 回約 20 秒（6 ターン・0.13 ドル）かかります。 遅い原因は、毎回 LLM に考えさせていることです。 そこで作ったのが agent-brow...",
+    "url": "https://zenn.dev/airtanker/articles/agent-browser-decisions-three-tier-plans",
+    "published_at": "2026-11-26T17:04:01+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Forge Neo × Anima（DiT）で Regional Prompter と NegPiP（本家・派生）を併用できるようにしたお話",
+    "summary": "併用不可の情報を見つけたので 併用を可能にするための修正にチャンレジ 第２弾 【イントロダクション】 結論: どちらもマージされたら使えるようになります 豆知識: コードを見て初めて分かった Anima × NegPiP の重要な仕様 解説: エンジニア様やプログラマー様じゃなくても分かりやすい解説 詳細: 専門用語を含めた専門家様向けの詳しい解説 関連: それぞれのリポジトリへのリンク （読了目安：約５～６分） ねおんが提出した修正コード（NegPiP側の #76・#77 と Regional Prompter側の #424・#425）が すべて採用される必要があります ２つを一緒に使...",
+    "url": "https://zenn.dev/neon_aiart/articles/27787e29a4e635",
+    "published_at": "2026-11-26T16:33:22+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIを活用した開発を始めるために、既存リポジトリで何から取り組むべきか",
+    "summary": "AIコーディングエージェントをチームに導入したのに、期待したほど開発が前に進まないことがあります。コードの生成速度は上がっているのに、レビューでの手戻りが増え、既存の仕様を壊す変更が混ざるようになっている状態です。 すでに運用が続いている既存リポジトリでAIを活用するには、AIが安全かつ自律的に検証を回せる環境を順番に整える必要があります。 DORAの2025年レポート『State of AI-assisted Software Development』でも、AIは既存の強みも課題もそのまま拡大する増幅器（amplifier）として位置づけられています。構造が整理され検証の仕組みが整った...",
+    "url": "https://zenn.dev/matsunaopen/articles/ai-dev-foundation-steps",
+    "published_at": "2026-11-26T15:00:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "プロジェクトごとに、ルールが少しずつ違っていく。1つの標準を十数のプロジェクトに配るまで",
+    "summary": "プロジェクトごとにコピーしていた CLAUDE.md と設定が、いつの間にかばらばらになっていました。 共通部分を1つのリポジトリ（以下「標準リポジトリ」）にまとめ、各プロジェクトに配る形に統一した 2か月で120コミット、86本の PR。直すきっかけの多くは、標準を使う側の Claude Code からの指摘だった シリーズ「Claude Codeと育てる、頼れる開発標準」第1回（全7回）。シリーズの一覧は記事の最後にあります。 Claude Code で複数のリポジトリを並行して開発している人 プロジェクトごとに CLAUDE.md や .claude/settings.json を...",
+    "url": "https://zenn.dev/intprime/articles/devstd-01-one-standard-many-repos",
+    "published_at": "2026-11-26T14:52:58+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "はじめまして。Claude Codeと一緒に「頼れる開発標準」を育てています",
+    "summary": "Claude Code と一緒に、困ったときに頼れる開発標準を育てています。 十数のリポジトリを、Claude Code と並行して開発している その過程で起きたことを、うまくいった話も失敗した話もそのまま書いていく 最初のシリーズは「Claude Codeと育てる、頼れる開発標準」（全7回）。一覧はこの記事の後半にあります 新しいリポジトリを作るたびに、CLAUDE.md や CI、権限の設定を一から書き直していませんか。そして、プロジェクトが増えるほど、やることも判断することも増えて、手が回らなくなっていませんか。 私はまさにその状態から抜け出したくて、困ったときに頼めば、必要なルー...",
+    "url": "https://zenn.dev/intprime/articles/intro-dev-standard",
+    "published_at": "2026-11-26T14:52:23+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "CI障害調査エージェントOpenSREを有料APIキー無し・ローカルLLMで動かし、壊したCIを調べさせた",
+    "summary": "OpenSREは、CIや本番環境で障害が起きたときにログを読んで根本原因を調べる、自己ホスト型のAIエージェントである。 Apache-2.0で公開されており、GitHub Trendingで急伸していた。 本チャレンジでは有料APIキーが必須の候補は選ばないという方針があるため、OpenSREの「サインインしてホスト型モデルを使う」既定の導線は使わず、ローカルLLM(Ollama)だけで動かした。 そのうえで、わざと壊したCIの失敗ログを渡して、本当の原因を言い当てられるかを試した。 結論を先に書く。 何も設定しないと、デフォルトのLLMプロバイダがAnthropicになっていて、生の...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-058-opensre-ollama-cli-crash",
+    "published_at": "2026-11-26T14:38:27+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "学習・重み改変・プロンプトなし - DSLでLLMに架空RPGの技を覚えさせる",
+    "summary": "この記事は個人（と会社）の実験と実装の記録です。モデルは Gemma 4 E4B（Gemma Terms of Use）、Qwen3.5-4B、Qwen3.5-0.8B（Apache License 2.0）を使いました。実行環境は Apple Silicon Mac（MLX 0.31.1 / 0.32.2）です。 以前、DSL で書いたルールを 3 層ニューラルネットにコンパイルして LLM の答えの 1 行目だけを開かせる仕組み（open 行）を作りました。今回はその続編であり決定版です。 「学習なし・モデルの重み（ウェイト）書き換えなし・プロンプトへの文章べた貼りなし」で、LLM ...",
+    "url": "https://zenn.dev/caphtech/articles/kestrom-rules-open",
+    "published_at": "2026-11-26T21:27:30+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Tech Watch 2026-11-27: エージェントを検証する仕組み",
+    "summary": "この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 本番の仕組みを別の言語に移すとき、テストが通っても、利用者が実際に受け取るものまで同じとは限らない。その隙間をどう測るかが気になった。エージェントに作業を任せる範囲が広がるほど、生成より検証の設計が重くなるのだろうか。 Migrating our Messages API to Rust Anthropic の Messages API は Python から Rust に移行した。旧実装と新実装を本番の要求で照合し、差分の種類をエージェントに渡して修正する仕組みを紹介する。 Claude Code v2.1.3...",
+    "url": "https://zenn.dev/laiken/articles/20261127-tech-watch",
+    "published_at": "2026-11-26T21:09:29+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "ローカルLLMが0点だったとき、採点表に足したい二つの列",
+    "summary": "ローカルLLMに「12個を3人に均等に分けたら何個か。数字だけで答えて」と聞いたとします。「4個です。」と答えたモデルを、あなたなら何点にしますか。計算を教える用途なら答えは合っています。後続のプログラムに整数を渡す用途なら、このままでは使えません。 一つの点数に両方の意味を持たせると、次に何を直すかが決まりません。以下はこの違いを手元で確かめる小さな教材です。回答は説明用に作った例です。 この設問の形式条件は「半角数字だけ」なので、先頭にゼロがある「04」も通ります。「4です」は値を正しく伝えていますが、形式条件からは外れます。 最後の行を入れた理由があります。出力のどこかに「4」が出...",
+    "url": "https://zenn.dev/satoshiakiyama/articles/f5a83327d44d98",
+    "published_at": "2026-11-26T20:56:33+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "スキル（SKILL.md）のアンチパターン 13 選と直し方 ── 長すぎる、網羅しすぎる、複数人で書き足して矛盾する",
+    "summary": "スキル（SKILL.md）は、書いたその日はうまく動きます。悪くなるのは、そのあとです。失敗するたびに規則が足され、別の人が別の規則を足し、似たスキルが増え、半年後には誰も全体を把握していない長い文書になります。 本稿では、スキルでよく見る失敗（アンチパターン）を 13 個集め、それぞれについて次の 4 つをまとめました。 症状： どんな見た目になっているか なぜ悪いか： 論文や公式の指針の根拠 見つけ方： そのまま使えるスクリプトや指示文 直し方： 直す前と後の例 数字はそれぞれの出典の設定での値です。自分の環境に持ち込めるのは数字ではなく、やり方と結論の向きです。 1〜4 は「中身が...",
+    "url": "https://zenn.dev/singularity/articles/skill-antipatterns",
+    "published_at": "2026-11-26T19:55:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "分離推論の KV 転送を push と pull で整理する",
+    "summary": "prefill と decode を別のインスタンスで動かす分離推論では、prefill が作った KV キャッシュを decode へ運ぶ転送が、最初のトークンが出るまでの時間、TTFT に直接効きます。分離推論そのものは「P/D Disaggregated Inference with LMCache - 1」で説明しています。vLLM の公式ブログは 2026 年 10 月 14 日に、prefill が decode へ書き込む push 型の NIXL コネクタを紹介し、TTFT が大きく縮んだと報告しています。この記事では、この push と従来の pull を中心に、vLL...",
+    "url": "https://zenn.dev/tosshi/articles/4e75a768f14852",
+    "published_at": "2026-11-26T18:29:14+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "特異値分解で生成AIのハルシネーションを検知してみた",
+    "summary": "信号処理で広く用いられる特異値分解（SVD）を使って、生成AIのハルシネーション検知を試してみた。 複数の回答をベクトル化し、低ランク近似による再構成残差から誤答を検知する。 VLMの出力を想定した人工データでは、全15ケースでAUC = 1.0を達成した。 生成AIのハルシネーションを検知する方法として、外部知識との照合や、別のLLMを用いた回答の評価などがあります。 今回は少し異なるアプローチとして、信号処理や画像処理などで広く用いられている特異値分解（Singular Value Decomposition: SVD）を使って、ハルシネーションを検知できるか試してみました。 LLM...",
+    "url": "https://zenn.dev/dxclab/articles/0c69e265a94ab5",
+    "published_at": "2026-11-26T15:54:13+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLM判定器は日本の「名字＋様」を減点したりしなかったりする ― 4モデルを繰り返し回した実測",
+    "summary": "架空の日本語サポート会話50件を、4つのLLM（Claude・Gemini・DeepSeek・Qwen）に品質監査させ、新しい会話で同じ指示文を原則3回ずつ流しました（Qwenは時間がかかるため1〜2回）。 同じ指示文でも、「名字＋様」を減点する回としない回がある。 Geminiは3回中2回、DeepSeekは3回中1回、Qwenは2回とも、名字＋様で呼んだ7件をすべて減点しました。Claudeは3回とも減点しませんでした。 全モデルが共通して誤減点したのは「社内手順書にない一般的な手順」。 再起動やキャッシュ削除を「手順書違反」と判定するミスは、補正前は4モデルすべての全実行で起きまし...",
+    "url": "https://zenn.dev/quent/articles/2329d74464eff5",
+    "published_at": "2026-11-26T15:50:08+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "日本語の個人情報を検出・匿名化する Python ライブラリ「privacy-masker」を公開しました",
+    "summary": "日本語の文書から氏名・住所・電話番号などの個人情報を見つけて、トークンや自然な偽名に置き換える Python ライブラリ privacy-masker を公開しました。検出に使う日本語の NER モデルも新しく学習し、あわせて公開しています。LLM に文書を渡す前の保護や、学習データ・ログ・帳票の匿名化に使えます。 GitHub: NishidaAzuharu/privacy-masker（MIT ライセンス） PyPI: pip install privacy-masker NER モデル: az225/privacy-masker-ja-pii-ner-30m（Apache-2.0）...",
+    "url": "https://zenn.dev/na225/articles/af7720ac083f00",
+    "published_at": "2026-11-26T15:14:09+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AI Bot Team Apps: Which Ones Ask Before They Run a Command?",
+    "summary": "This week someone on r/AI_Agents asked a question a lot of people are asking right now: ChatGPT dots vs Grok Bot vs OpenBot, which one? The replies were about the usual things. Is a team of agents better than one agent? Which one has better memory? Which model is smarter? We wanted to ask somethi...",
+    "url": "https://zenn.dev/neotechpark/articles/7a2b862c7167ac",
+    "published_at": "2026-11-26T14:22:38+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Swarms, Flocks, Gangs、Pythonで裏取り",
+    "summary": "Hugging Faceで11月26日（日本時間）に公開された「Swarms, Flocks, Gangs」は、複数のAIエージェントをどう作り、訓練し、評価するかを扱っています。競合調査に当てはめて僕が気になったのは、調査結果が2つ一致しても、元の資料は1つかもしれないこ...",
+    "url": "https://qiita.com/eiri_ai/items/d4504090d1627b6d15ac",
+    "published_at": "2026-11-27T03:22:34+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIペネトレーション事件の教訓を自分のアプリで試したら、IDORの穴が見つかった話",
+    "summary": "はじめに\n2026年10月21日、Microsoft が衝撃的な公式報告を出しました。中国国家支援の攻撃グループ Storm-0940 が、AI駆動のペネトレーションOSS「ARTEX」を実戦で使用し・多段工程を自律連鎖させたという報告です。\n「AIに攻撃をさせる」こと自...",
+    "url": "https://qiita.com/fukukei23/items/67f449e5bfecf49cb0c4",
+    "published_at": "2026-11-27T03:18:55+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIに任せたリファクタリングの新旧比較",
+    "summary": "AIに既存のAPIを書き直してもらったとき、使う側から見た動作が変わっていないかをどう確かめるか。参考になるのが、Anthropicが11月25日に公開した、Messages APIをPythonからRustへ移行した記録です。チームは新旧の実装に同じ入力を渡し、結果がどこ...",
+    "url": "https://qiita.com/kentasatomi/items/f43410c2c6ccddf6dbfd",
+    "published_at": "2026-11-27T02:54:18+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIオーケストラ能力の重要性を解説",
+    "summary": "AIオーケストラ能力とは、複数のAIモデルや特化型AIエージェント、外部ツール・業務システムを「指揮者」のように統括・連携させ、単一のAIでは完結できない複雑なタスクや業務プロセス全体を統合的に遂行する力（およびそれを動かす仕組み・運用スキル）を指します。\n​単一AIとの一...",
+    "url": "https://qiita.com/good59548/items/b609502b6a44a840fbbd",
+    "published_at": "2026-11-27T02:51:43+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "Former OpenAI researcher says the Riemann proof matters less than the fact that an AI system can produce it",
+    "summary": "Complexity theorist and former OpenAI researcher Scott Aaronson argues that AI's recent math breakthroughs matter far beyond academia. The possible consequences, he writes, range from reshaping the global economy to threatening all life on Earth. He's also \"virtually certain\" that AI labs are sittin",
+    "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+    "published_at": "2026-11-26T19:31:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error",
+    "summary": "OpenAI says a billing bug gave GPT-6.2 users incorrect discounts. After the fix, Astra and Sol users hit their limits 40 and 25 percent faster than last week. As an apology, subscribers get an extra reset, and business users get free Fast Mode through year-end. OpenAI is also testing a Chat and Work",
+    "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+    "published_at": "2026-11-26T17:28:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "After OpenAI and Anthropic shut the door on their data, a Chinese AI developer is turning to Google and Meta instead",
+    "summary": "Chinese AI companies Z.AI and Moonshot AI have to delay their next flagship models and are looking for new sources of training data. The article After OpenAI and Anthropic shut the door on their data, a Chinese AI developer is turning to Google and Meta instead appeared first on The Decoder .",
+    "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+    "published_at": "2026-11-26T15:45:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "FCC clears SpaceX to deploy up to 1 million Starmind satellites for orbital AI data centers by 2040",
+    "summary": "The FCC has authorized SpaceX to deploy up to 1 million Starmind satellites to process AI data as orbital data centers. SpaceX is targeting its first launches in 2027, and the full constellation is set to be operating by 2040. Google and Blue Origin are also working on AI infrastructure in space, bu",
+    "url": "https://the-decoder.com/fcc-clears-spacex-to-deploy-up-to-1-million-starmind-satellites-for-orbital-ai-data-centers-by-2040/",
+    "published_at": "2026-11-26T13:41:07+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Microsoft details how state-backed hackers use the ARTEX AI framework to automate cyberattacks",
+    "summary": "Microsoft has published the technical architecture of ARTEX, an AI framework in wide use since July 2026 that runs cyberattacks with specialized agents and almost no human involvement. State-backed groups from China and North Korea, along with criminal organizations, are already using the system. Mi",
+    "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+    "published_at": "2026-11-26T11:30:06+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nvidia halts server shipments to Malaysia, Singapore, Thailand, and Indonesia after tighter US export controls",
+    "summary": "Nvidia has told partners such as Dell and Supermicro to stop shipping servers to Malaysia, Singapore, Thailand, and Indonesia. Following new US export controls targeting Chinese cloud access, dealers are already seeking buyers for thousands of B300 chips, while one cloud executive describes \"chaos\",",
+    "url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/",
+    "published_at": "2026-11-26T11:21:16+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "US chip-access curbs and anti-distillation measures are reportedly already slowing Chinese AI labs",
+    "summary": "Chip restrictions, anti-distillation measures, and shrinking access to Nvidia hardware abroad are putting growing pressure on Deepseek, Moonshot AI, and Alibaba, according to a report. Deepseek researchers internally estimate they're already up to nine months behind US models, and the gap is widenin",
+    "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
+    "published_at": "2026-11-25T20:51:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
+    "summary": "Anthropic CEO Dario Amodei is pushing back on an Axios report saying some employees believe humanity will hand power to superintelligent systems. Amodei says \"turning over governance to AI is a bad idea.\" The article Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\" app",
+    "url": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/",
+    "published_at": "2026-11-25T20:15:50+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI wants companies to trust it with sensitive work by promising not to look at their data",
+    "summary": "OpenAI is testing a new feature called \"Private Inference\" that lets companies run queries on its most powerful models without OpenAI being able to access the data. The article OpenAI wants companies to trust it with sensitive work by promising not to look at their data appeared first on The Decoder",
+    "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+    "published_at": "2026-11-25T18:22:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+    "summary": "Amazon and Meta are in talks to bring back Muse, Meta's AI shopping agent that Amazon kicked off its platform in September. The two sides are stuck on ad revenue and who gets to control search results. That matters because Amazon's ad business generates $68.6 billion a year, and Muse already command",
+    "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+    "published_at": "2026-11-25T16:44:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Nous Research readies Hermes Desktop redesign for next week",
+    "summary": "Teknium says the redesigned Hermes Desktop is done and testable early next week, with a Bots Market, mobile app and proactivity also coming.",
+    "url": "https://www.testingcatalog.com/nous-research-readies-hermes-desktop-redesign-for-next-week/",
+    "published_at": "2026-11-26T15:26:19+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Four in five Kenyan organisations surveyed have no one formally responsible for AI risks, KNCCI and Akili AI report finds.",
+    "summary": "The report, AI Readiness in Kenya 2026, is based on 214 responses collected in October during the Africa Commerce and Industry Summit, hosted by KNCCI, and the Safaricom Cybersecurity Summit.",
+    "url": "https://capitalfm.africa/four-in-five-kenyan-organisations-surveyed-have-no-one-formally-responsible-for-ai-risks-kncci-and-akili-ai-report-finds/",
+    "published_at": "2026-11-26T15:25:05+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Imagine your phone tracking your sleep, Korean Air is doing something similar for its crew",
+    "summary": "Korean Air is using smartphone apps AppnoTrack and ChronoTrack to screen employees for sleep apnoea and sleep disorders. Read how the tests work.",
+    "url": "https://english.mathrubhumi.com/features/specials/korean-air-smartphone-app-sleep-apnoea-screening-pilots-cabin-crew-k1d77jze",
+    "published_at": "2026-11-26T15:25:03+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia Freezes AI Chip Shipments to Southeast Asian Countries",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://www.bundle.app/en/technology/nvidia-freezes-ai-chip-shipments-to-southeast-asian-countries-858DE8DC-B9EA-5A8D-A6E0-BC7ABA7EFBE5",
+    "published_at": "2026-11-26T15:24:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Nvidia Reportedly Freezes AI Chip Shipments to Southeast Asian Countries",
+    "summary": "The suspension comes as the U.S. tries to crack down on loopholes allowing China to access Nvidia’s most advanced AI chips.",
+    "url": "https://gizmodo.com/nvidia-reportedly-freezes-ai-chip-shipments-to-southeast-asian-countries-2000845928",
+    "published_at": "2026-11-26T15:24:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "AI Stocks Fall: Why Are Nvidia, AMD, Anthropic, Dell, HPE, and Super Micro Computer Shares Down Today?",
+    "summary": "The Entire Business World on a Single Page with the Web's Most Comprehensive One-Stop Finance News Hub.",
+    "url": "https://biztoc.com/x/bd6653d8756c1f95",
+    "published_at": "2026-11-26T15:24:22+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Build a mid-range gaming PC this Black Friday with AMD’s Ryzen™ 5 7500X3D",
+    "summary": "Scan’s AMD Black Friday sale brings promo pricing until 5 December, and the Ryzen 5 7500X3D makes a strong starting point for a mid-range gaming PC. The post Build a mid-range gaming PC this Black Friday with AMD’s Ryzen™ 5 7500X3D appeared first on Trusted Reviews.",
+    "url": "https://www.trustedreviews.com/advertorial/build-a-mid-range-gaming-pc-this-black-friday-with-amds-ryzen-5-7500x3d",
+    "published_at": "2026-11-26T15:23:43+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Is The Safety Trade Losing Its Fizz?",
+    "summary": "Is The Safety Trade Losing Its Fizz? European equities rebounded Thursday, while US equity futures remain solidly higher ahead of the early close around 1 p.m. New York time for Thanksgiving. The question on traders' minds is whether Wednesday afternoon's surge in AI stocks, following an abrupt…",
+    "url": "https://biztoc.com/x/2130c4a4afe6c282",
+    "published_at": "2026-11-26T15:23:36+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "A CEO Made 2,000 Employees Take an AI Course. Employers Say They’re Missing a Bigger Skill",
+    "summary": "AI can do the heavy lifting. Humans still need to check the work.",
+    "url": "https://biztoc.com/x/24cd9b31b8485b70",
+    "published_at": "2026-11-26T15:23:33+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic chief denies wanting humans to 'surrender' free will to AI",
+    "summary": "Dario Amodei's comments come amid a growing debate over how to maintain human autonomy in the face of superintelligent AI systems.",
+    "url": "https://biztoc.com/x/61cea2e7a168a70b",
+    "published_at": "2026-11-26T15:23:32+00:00",
+    "source": "newsdata"
+  }
+]
