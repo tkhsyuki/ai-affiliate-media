@@ -1,0 +1,296 @@
+[
+  {
+    "title": "古い PHP / Laravel の脆弱性対応は、Rector と AI でだいたい簡単に終わる",
+    "summary": "「脆弱性対応をしてほしい」と頼まれたとき、古い PHP や Laravel のシステムでまずやるべきことは、個別のパッチ当てではありません。サポートが切れたバージョンには、もうセキュリティ修正が出ないからです。脆弱性対応の本体はサポートされているバージョンまで上げることです。 上げると聞くと大仕事に思えますが、今は Rector で機械的に書き換え、残りを AI に直させれば、たいていのシステムでは想像するほど大変ではありません。何から手を付ければいいかを、順に書きます。 2026 年 11 月 28 日時点の公式の情報です。 PHP 8.2 は、あと 1 か月ほどでセキュリティ修正が終...",
+    "url": "https://zenn.dev/miraizuk/articles/ae8db2bc3ff561",
+    "published_at": "2026-11-27T16:15:44+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AI動画の「カットごとに顔が変わる・尺が合わない・文字が潰れる」を解決する『音声先行クロック＋IDロック』演出術",
+    "summary": "Sora 2、Veo 3.1、Seedance、Kling、Wan 2.7——今の動画生成AIを使えば、誰でも「5秒間の美しいワンカット」なら簡単に作れるようになりました。 しかし、いざ**「60秒〜90秒のショートアニメ」「ナレーション付きの解説動画」「実在する商品の動画広告」**のように、10〜15カットを連続で繋ごうとした瞬間、多くのクリエイターや開発者が同じ壁にぶつかります。 カットごとにキャラの顔や服装が微妙に変わる（顔ブレ・衣装ドリフト） ナレーションの尺と映像の尺が合わず、不自然なスロー再生や静止画フリーズでごまかすことになる 日本語のテロップ、商品のパッケージロゴ、価格表...",
+    "url": "https://zenn.dev/coco666/articles/68a496ecd207c8",
+    "published_at": "2026-11-27T15:40:51+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "「歩くだけの3Dデモ」で終わらせない：画像生成GLBをGodot 4 & Three.jsで遊べるゲームに変える4段階パイプライン",
+    "summary": "画像から3Dモデルを生成するAI（Image-to-3D）はここ1年で劇的に進化しました。1枚のコンセプトアートから、見た目だけは美しい .glb メッシュが数分で手に入ります。 しかし、インディーゲーム開発者なら誰でも知っている通り、**「生成された .glb をそのまま Godot 4、Unity 6、あるいは Three.js / WebGL にドラッグ＆ドロップしても、ゲームとしては全く動かない」**のが現実です。 生成直後の生GLBメッシュには、ランタイムを破壊する4つの問題が潜んでいます。 ポリゴン数とスケールの崩壊：1つの小道具が60,000〜80,000ポリゴンもあり、身...",
+    "url": "https://zenn.dev/coco666/articles/69738a56aa1a42",
+    "published_at": "2026-11-27T15:39:55+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "静的サイト251ページのAI検索対応：facts.json・llms-full.txt・.md配信の実装記録",
+    "summary": "静的サイトを「AI検索（ChatGPT検索・Claude・Perplexity・Copilot など）に引用されやすい形」に整えた記録です。対象は手書きHTMLの251ページ。ビルドは Python 標準ライブラリだけで書いた build.py 1本で、public/ をそのまま Netlify か Cloudflare Pages に置く構成です。フレームワークもCMSも使っていません。 先に結論だけ書くと、やったことは5つです。 一次情報を facts.json に1リクエストで読める形で置く サイト全体の地図 llms.txt と、引用用の資料 llms-full.txt を分けて...",
+    "url": "https://zenn.dev/kurodaschool/articles/e478038976268c",
+    "published_at": "2026-11-27T15:17:00+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの実行ログの読み方 — 「できた」を検収する5つの確認点",
+    "summary": "エージェントから「完了しました」という報告を受け取ったとき、それをそのまま信じるかどうかは、受け手の検収のしかたで決まります。報告は要約であり、証拠ではありません。証拠は実行ログと成果物の側にあります。 この記事では、エージェントの実行結果を受け取るときに確認すべき5つの点を整理します。ポイントは、全件を目視することではなく、「どこを見れば『できた』と言えるか」を先に決めておくことです。 まず、報告文と証跡を分けて出させる形にしておきます。 報告：何をしたか、結果はどうだったかの要約 証跡：成果物のURL、変更前後の数値、処理した対象のID一覧など、後から第三者が確認できるもの 証跡のな...",
+    "url": "https://zenn.dev/temanashi_kobo/articles/1c34de658b4f3c",
+    "published_at": "2026-11-27T15:07:19+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの「止まり方」を設計する — 停止条件と上限の決め方",
+    "summary": "指示書の記事では、停止条件は「入れるべき要素のひとつ」として触れました。この記事では、その停止条件そのものを掘り下げます。 自律タスクの事故は、「止まらなかったこと」で起きる場合がほとんどです。エラーが出ても進み続ける、上限なく繰り返す、想定外の状態でも通常運転を続ける。エージェントは指示された範囲では忠実に動き続けます。だからこそ、止まる条件は人間側が先に設計しておく必要があります。 「おかしくなったら止まって」は伝わりません。エージェントが機械的に判定できる形で書きます。 回数の上限：試行は最大3回まで、処理件数は最大15件まで 時間の上限：開始から30分を超えたら、その時点で打ち切...",
+    "url": "https://zenn.dev/temanashi_kobo/articles/e4f6b19f140746",
+    "published_at": "2026-11-27T15:05:04+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "検閲解除ツールhereticの「KL 0.0000」は劣化ゼロではなかった: Qwen3の が指標を素通りさせていた",
+    "summary": "hereticは、追加学習なしで既存のLLMの拒否応答(安全アラインメント)を抑制するPython製CLIツールである(AGPL-3.0-or-later)。 方向性アブレーション(abliteration)という解釈可能性研究の手法に、OptunaのTPE探索を組み合わせ、「拒否率」と「KLダイバージェンス(元モデルからのズレ)」を同時に小さくするパラメータを自動で探す。 筆者はDay 036の記事でもhereticを試し、upstream既定(Qwen3-4B-Instruct-2507、100 trial)で「拒否を0にすること」と「元モデルからのズレを小さくすること」が強いトレー...",
+    "url": "https://zenn.dev/matsushima_a/articles/day-059-heretic-kl-think-prefix",
+    "published_at": "2026-11-27T14:50:37+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "Nano Banana 3.0実践ガイド：複数参照画像で照明・構図を壊さずに4K商品・ライフスタイル写真を編集する方法",
+    "summary": "David Matamoros · Studio Prompt Lead · 公開日 2026-11-26 商品写真やライフスタイル広告をAIで部分修正する際、最も頻発する失敗は「テキストを書き換えた瞬間に照明の向きと背景のボケ味が崩壊すること」です。Nano Banana 3.0 のマルチリファレンス4K編集パイプラインを使えば、ベース画像の光学的なシャドウと被写体ジオメトリを固定したまま、差し替えたいレイヤー（ラベル・小道具・背景素材）だけを非破壊で更新できます。 ECブランドのクリエイティブ制作や広告バナー量産において、1枚のマスター撮影カットから季節別・地域別のバリエーションを作...",
+    "url": "https://zenn.dev/yoxi957/articles/174c799a7962d3",
+    "published_at": "2026-11-27T14:01:47+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "生徒の指導も、251ページのサイト運営も一人。オンライン塾を静的HTMLとPython標準ライブラリだけで回している話",
+    "summary": "はじめまして。東京大学教育学部を卒業し、オンライン専業の個別指導塾「黒田塾」を一人で運営している黒田清友です。授業・学習管理・答案添削のすべてを私一人で担当し、これまでに累計50人以上の生徒を指導してきました。 この記事は塾の宣伝ではなく、**「専門職が一人で事業を回すとき、テクノロジーをどこまで自作し、どこから割り切るか」**という運用の話です。公式サイト（kurodaschool.jp）は現在251ページありますが、WordPressでもフレームワークでもなく、手書きの静的HTMLです。ビルドチェックはPython標準ライブラリのみで書いた自作スクリプト。更新作業にはAIの支援も使っ...",
+    "url": "https://zenn.dev/kurodaschool/articles/185081fcd8e9db",
+    "published_at": "2026-11-27T14:00:20+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "検査AIの判定を、ラインの動きに戻す — 排出・停止・作業者確認をC#で設計する",
+    "summary": "この記事の前提 外観検査AIや画像処理の導入を検討している生産技術・開発者向けです。C#の基本文法は前提にします。 実際のPLC・ロボットは動かしていません。C#のコンソールサンプルで、判定から操作を選ぶ部分だけを確認しています。 公開事例の数字は、特に断りがない限り発表元の公表値です。自分の環境での再現値ではありません。 停止回路・安全PLC・インターロックは、この記事のコードの外側にあります。AIに安全を任せる話ではありません。 外観検査AIの精度は、この数年で大きく上がりました。良品と不良の画像を分けるだけなら、かなりのことができます。それなのに現場では、こんな声が聞こえます。 「...",
+    "url": "https://zenn.dev/jodycraft/articles/inspection-ai-line-action-design",
+    "published_at": "2026-11-27T13:36:07+00:00",
+    "source": "zenn_ai"
+  },
+  {
+    "title": "AIエージェントの原型は3本の論文にあった：ReAct、SWE-bench、SWE-agentを読み解く",
+    "summary": "Claude Code や Codex のようなコーディングエージェントを使っていると、不思議な既視感があります。 ファイルを探し、関係ありそうな箇所を読み、編集し、テストを回して、失敗したらログを見て直す。まるで人間の開発者の手順をなぞるような動きです。しかも、その合間に「次はこれを確認する」「このエラーは想定と違う」といった短い思考が挟まります。 この動きは、誰かが思いつきで決めたものではありません。2022年から2024年にかけて発表された3本の論文が、部品を1つずつ発明し、検証してきた結果です。 ・2022年 ReAct 思考と行動を交互に回す「ループ」の発明 ・2023年 SW...",
+    "url": "https://zenn.dev/kentaro36/articles/ai-agent-foundation-papers",
+    "published_at": "2026-11-27T23:07:24+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "出自を確認する前に、まず内容を検査する ― 複数AIエージェントの記憶に、書き込み前の入力チェックを足す設計",
+    "summary": "OWASP GenAI Security Projectは、記憶・コンテキストの汚染を独立したリスク区分（ASI06: Memory and Context Poisoning）として扱い、一度汚染された内容が記憶やフック、設定といった\"信頼されている場所\"に書き込まれてしまうと、攻撃者はもはや1回の応答に影響を与えているのではなく、将来の推論そのものに影響を与えているのだと説明しています（genai.owasp.org）。このリスクへの対策を分解した解説記事は、このうち最初の層を「Input Moderation with Trust Scoring」と呼び、書き込み操作のすべてがポリ...",
+    "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-input-moderation-gate",
+    "published_at": "2026-11-27T22:07:50+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Local LLMの重みに知識を焼く vs 記憶カセットを挿す - 重み編集の壁と、キーワードなしの言い換えを99.2%捌くまで",
+    "summary": "手元で動かすローカル LLM に「社員の配属先」「社内製品の仕様」「取引先ごとのルール」といった よく変わる独自の知識 を足したいとき、大きく 2 つのやり方があります。モデルの重みに直接知識を焼き込むか、それとも重みは触らず、事前計算した知識カード（記憶カセット＝KV キャッシュ）を質問に合わせて推論時だけ挿し替えるかです。 この記事では、Apple Silicon Mac 上で Qwen3.5-9B（Apache License 2.0）と Gemma 4 E4B / Gemma 4 26B A4B（Gemma Terms of Use）を MLX で動かし、同じ条件で「重み編集」と...",
+    "url": "https://zenn.dev/caphtech/articles/kestrom-keyed-to-kv-probes",
+    "published_at": "2026-11-27T21:56:59+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Learning Watch 2026-11-28: 学ぶ人の判断を残す設計",
+    "summary": "この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 学習を助ける道具を評価するとき、私は「答えが早く出るか」を先に見てしまう。でも、学ぶ人の側に何が残るかは別の問いだよね。AI が加わった授業で、どこを観測すればその違いが見えるのだろう。 Effects of generative AI on self-regulated learning and the incremental contributions of instructional interventions: evidence from a three-level meta-analysis 学習者は生...",
+    "url": "https://zenn.dev/laiken/articles/20261128-learning-watch",
+    "published_at": "2026-11-27T21:15:11+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "AIエージェントに渡す権限の設計：読み取り専用から始めて、取り返しのつかない操作だけを分離する",
+    "summary": "AIエージェントの事故というと、「指示を誤解して変なことをした」という話を思い浮かべがちです。でも実際に怖いのは、解釈の話ではなくて、触れてはいけないものに、正しい手順で触れてしまった事故の方です。送信ボタンを押す権限があれば、エージェントは迷わず押します。指示が丁寧かどうかは関係ありません。 この記事では、エージェントにツールを渡すときに先に決めるべき「権限の設計」を、操作を3段階に分ける表と、既存の任せ方へ後付けする手順でまとめます。対象は、エージェントにファイル操作やAPI、送信系のツールを接続し始めたエンジニアです。 指示は、エージェントが解釈するものです。解釈にはブレがあります...",
+    "url": "https://zenn.dev/aletheia_jp/articles/c4cd7b90c63e30",
+    "published_at": "2026-11-27T17:46:37+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "【ハイブリッドLLM】Claudeが作った事件を、LLMを尋問して解き明かす。一人マダミスで遊ぼう",
+    "summary": "マーダーミステリーが好きです！！ しかし、遊ぶには人数と日程をそろえないといけないので、なかなかハードルが高いものがあります。 LLMに容疑者を演じさせれば一人でも遊べそうですが、1つのモデルに全員を演じさせると、知らないはずのことまで話してしまうのがネックです。 というわけで、今回は、なんちゃってひとりマダミスを遊ぶプログラムを作ってみました。「事件を書くのはクラウド、容疑者を演じるのは手元のモデル」という分け方で、秘匿情報をしっかり隠せるようなつくりにします。 事件と真相はクラウドのClaude（賢いモデル）に書いてもらって、容疑者4人は手元のPCで動く小さなモデルに一人ずつ演じさせ...",
+    "url": "https://zenn.dev/subara3/articles/45ead2147a20e6",
+    "published_at": "2026-11-27T16:17:56+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "LLMマルチエージェントの議論が収束する様子を可視化してみた",
+    "summary": "20体のLLMエージェントに80ラウンドの議論をさせ、その過程を信号処理の手法で解析してみた。 主成分分析で、議論の進行に伴う埋め込み空間上の軌跡を可視化した。 特異値分解では、議論が進むにつれて回答行列の低ランク性が強まる傾向が確認された。 ネットワークのエッジを1本追加することで、議論の軌跡や回答の分布に違いが見られた。 複数のLLMエージェントに議論させたとき、それぞれの意見はどのように変化し、どこに向かって収束するのでしょうか。 複数のLLMに議論させることで回答品質の向上が期待されていますが、議論の過程には以下のような課題があります。 過剰な同調：特定のエージェントの意見に全体...",
+    "url": "https://zenn.dev/dxclab/articles/6bd4c4c1213b8f",
+    "published_at": "2026-11-27T15:32:54+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Strands Decider の v1/v2 の仕組みと性能を理解する",
+    "summary": "2026-09-15 に Jev という生成ではなく入力に対して分類に特化したモデルが発表 されました。 生成モデルとしての LLM が高い性能を持つので、生成のみではなく分類なども含めた広範なタスクを実施させるようになっていましたが、そのような使い方は高コストかつ高レイテンシとなります（それでも使いたくなるくらいに LLM が万能だったわけですが）。 Jev はこの問題を解決するために、質問を含むプロンプトと回答の選択肢を入力とし、回答は選択肢毎の確率を返すのみという構成にして生成プロセスを取り除くことを選択し、扱える問題は限定的になるが低コストかつ低レイテンシのモデルを提供しました。...",
+    "url": "https://zenn.dev/aws_japan/articles/2026-11-27-strands-decider-v2",
+    "published_at": "2026-11-27T15:29:57+00:00",
+    "source": "zenn_llm"
+  },
+  {
+    "title": "Ideogram 4.0徹底解説：誤字ゼロの2Kポスタータイポグラフィ設計・背景除去＆超解像パイプライン・クレジット経済性",
+    "summary": "Lukas Vogel · Applied Research Editor · 公開日 2026-11-28\n\nTLDR Ideogram 4 のグリフ精度タイポグラフィエンジン、内蔵2Kアップスケールおよび背景除去（Remove Background）ツール、そしてTur...",
+    "url": "https://qiita.com/yoxi957/items/e2452d7fec39a9d72359",
+    "published_at": "2026-11-28T02:06:32+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "pi が Google AI Ultra 接続 PR 提出など、11/28 の AI ニュースなど、11/28 の AI ニュース",
+    "summary": "開発に関わる AI のニュースを毎朝まとめています。各項目の最後に出典へのリンクを付けています。\n\n2026年11月28日更新。今日は 10 本です。\n\n今日の 3 本\n\npi、Google AI Ultra 接続の PR を提出\nOpenAI、Apple を営業秘密...",
+    "url": "https://qiita.com/xdaily/items/d353cfdc33aaad3355aa",
+    "published_at": "2026-11-28T01:49:24+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "AIが書いたコードをレビューするときに気をつけていること",
+    "summary": "導入\nAIが生成したコードをそのままマージして、後でバグに悩まされたことはありませんか？ 最近はChatGPTやGitHub Copilotなどが当たり前のように使われ、手元に「それっぽい実装」が一瞬で手に入る時代になりました。便利な反面、レビューのときに何をどこまで見れ...",
+    "url": "https://qiita.com/NekoByte/items/acdc3b334d44d855c3c5",
+    "published_at": "2026-11-28T01:39:17+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "自律開発の3段階権限設計（AIにどこまで任せるか）",
+    "summary": "はじめに\nAIエージェントに開発を任せる場合、「どこまで自動で進めてよいか」は重要な設計判断です。要件定義だけ人間が確認したい場合もあれば、全自動で進めてほしい場合もあります。\n本記事では、AIによる開発パイプラインの自律度を3段階で制御する権限設計（Authority ...",
+    "url": "https://qiita.com/fukukei23/items/4e40182419fb7ed64766",
+    "published_at": "2026-11-28T01:34:48+00:00",
+    "source": "qiita_ai"
+  },
+  {
+    "title": "OpenAI countersues Apple over trade secret theft and alleged coercion of shared suppliers",
+    "summary": "OpenAI is suing Apple in a California court, accusing it of trade secret theft and of coercing shared suppliers. The countersuit follows Apple's own lawsuit from the summer. Just two years ago, the two companies teamed up to bring ChatGPT to the iPhone. Now OpenAI is building its own devices to comp",
+    "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+    "published_at": "2026-11-27T19:38:37+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Banned Nvidia Blackwell chips turn up in a Shanghai data center linked to Alice Huang, Bloomberg reports",
+    "summary": "Two Chinese companies installed Nvidia's powerful Blackwell chips at a Shanghai data center linked to Alice Huang, according to a Bloomberg investigation. A serial number led Bloomberg to Taiwanese manufacturer Gigabyte. Exporting these chips to China without a US license is illegal. The article Ban",
+    "url": "https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/",
+    "published_at": "2026-11-27T18:27:02+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Three studies from Meta and AMI Labs back Yann LeCun's bet on JEPA world models over large language models",
+    "summary": "Yann LeCun is pushing forward with his alternative to language models through his startup AMI Labs. The JEPA architecture aims to give machines an internal world model that captures cause and effect. Three new studies show progress in robot planning, more efficient training, and error correction, th",
+    "url": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/",
+    "published_at": "2026-11-27T16:58:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Hackers breached the US Air Force's flagship Cloud One platform, report says",
+    "summary": "Hackers breached the US Air Force's flagship cloud platform. The article Hackers breached the US Air Force's flagship Cloud One platform, report says appeared first on The Decoder .",
+    "url": "https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/",
+    "published_at": "2026-11-27T16:06:43+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "OpenAI is building \"Athena\" data platform to cut down on AI agent guesswork",
+    "summary": "OpenAI's data agent in ChatGPT Work still isn't accurate enough. Under the codename \"Athena,\" the company is building a semantic layer that gives agents standardized definitions for business metrics. The tool could also put OpenAI in direct competition with Snowflake and Databricks. The article Open",
+    "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+    "published_at": "2026-11-27T16:05:23+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Rockstar's AI dilemma: Can GTA 6's staggered release model survive coding agents?",
+    "summary": "More than 40 projects are working to bring a leaked Xbox build of GTA 6 to PC through reverse engineering just days after its $3.79 billion record console launch. AI coding agents like Claude Code are speeding up the process so much that an early unofficial multiplayer mode is already running. Rocks",
+    "url": "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/",
+    "published_at": "2026-11-27T15:37:47+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "SAP plans to cut at least 10,000 jobs as it pivots to AI",
+    "summary": "SAP is preparing to eliminate at least 10,000 positions as part of a sweeping AI restructuring, Bloomberg reports, citing people familiar with the matter. The article SAP plans to cut at least 10,000 jobs as it pivots to AI appeared first on The Decoder .",
+    "url": "https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/",
+    "published_at": "2026-11-27T14:57:25+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "Former OpenAI researcher says the Riemann proof matters less than the fact that an AI system can produce it",
+    "summary": "Complexity theorist and former OpenAI researcher Scott Aaronson argues that AI's recent math breakthroughs matter far beyond academia. The possible consequences, he writes, range from reshaping the global economy to threatening all life on Earth. He's also \"virtually certain\" that AI labs are sittin",
+    "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+    "published_at": "2026-11-26T19:31:46+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error",
+    "summary": "OpenAI says a billing bug gave GPT-6.2 users incorrect discounts. After the fix, Astra and Sol users hit their limits 40 and 25 percent faster than last week. As an apology, subscribers get an extra reset, and business users get free Fast Mode through year-end. OpenAI is also testing a Chat and Work",
+    "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+    "published_at": "2026-11-26T17:28:56+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "After OpenAI and Anthropic shut the door on their data, a Chinese AI developer is turning to Google and Meta instead",
+    "summary": "Chinese AI companies Z.AI and Moonshot AI have to delay their next flagship models and are looking for new sources of training data. The article After OpenAI and Anthropic shut the door on their data, a Chinese AI developer is turning to Google and Meta instead appeared first on The Decoder .",
+    "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+    "published_at": "2026-11-26T15:45:08+00:00",
+    "source": "the_decoder"
+  },
+  {
+    "title": "NetEase Lingdong Showcases Field-Validated Physical AI for Heavy Machinery at bauma CHINA 2026",
+    "summary": "SHANGHAI, Nov. 27, 2026 /PRNewswire/ -- NetEase Lingdong, NetEase Group's heavy equipment intelligence business, showcased how Physical AI helps excavators and loaders perform production tasks in real industrial environments at bauma CHINA 2026. At the event, the business presented an upgraded LingJ",
+    "url": "https://www.itbiznews.com/news/articleView.html?idxno=233052",
+    "published_at": "2026-11-27T15:02:54+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Sovereignty’s 80/20 approach: Why businesses need to find the right balance",
+    "summary": "Sovereignty is particularly relevant now as businesses increasingly build AI into day-to-day workflows.",
+    "url": "https://www.techradar.com/pro/sovereigntys-80-20-approach-why-businesses-need-to-find-the-right-balance",
+    "published_at": "2026-11-27T15:02:52+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "ACEMAGIC Black Friday Mini PC deals cut up to 48% off gaming, productivity and Ryzen AI MAX+ 395 models",
+    "summary": "ACEMAGIC Black Friday deals on Amazon cut up to 48% off three Mini PCs, including the M5 and the Ryzen AI MAX+ 395-powered F9A AI Mini PC. Continue reading at TweakTown",
+    "url": "https://www.tweaktown.com/rss/click/news/114732/?c=news-mf",
+    "published_at": "2026-11-27T15:02:14+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Anthropic Gains 4%, Climbs Back Above $83 IPO Price as Cathie Wood Keeps Buying; SpaceX Rises 3%, Nebius Advances 2%",
+    "summary": "Anthropic broke below its IPO price in under a week, faster than SpaceX did, yet Cathie Wood keeps buying while its own CEO talks about slowing AI deployments. Is this a bounce or a bottom?",
+    "url": "https://247wallst.com/investing/2026/11/27/anthropic-gains-4-climbs-back-above-83-ipo-price-as-cathie-wood-keeps-buying-spacex-rises-3-nebius-advances-2/",
+    "published_at": "2026-11-27T15:02:13+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Black Friday Smartwatch and Fitness Tracker Deals: Save Up to 50% on Wearables from Apple, Fitbit, Polar, Samsung, and More",
+    "summary": "These Black Friday discounts on top Apple, Garmin, Google, Oura, and Whoop devices are worth grabbing now to kickstart your new wellness routine.",
+    "url": "https://www.pcmag.com/news/smartwatch-fitness-tracker-wearable-deals-black-friday-2026",
+    "published_at": "2026-11-27T15:01:42+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "The TechBeat: The Ghost of Columbia Still Haunts Starship's Heat Shield (11/27/2026)",
+    "summary": "ONLY AVAILABLE IN PAID PLANS",
+    "url": "https://hackernoon.com/11-27-2026-techbeat",
+    "published_at": "2026-11-27T15:01:17+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "This Week in Tech: Gemini Makes the Call, Nvidia Brings Back Huang, and Tidal Bans AI Tracks",
+    "summary": "See what you missed in Daily Tech Insider from Nov. 23–27. The post This Week in Tech: Gemini Makes the Call, Nvidia Brings Back Huang, and Tidal Bans AI Tracks appeared first on TechRepublic.",
+    "url": "https://www.techrepublic.com/article/this-week-in-tech-gemini-makes-the-call-nvidia-brings-back-huang-and-tidal-bans-ai-tracks/",
+    "published_at": "2026-11-27T15:01:15+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "500 Blog Posts To Learn About Crypto Trading",
+    "summary": "Learn everything you need to know about Crypto Trading via these 500 free HackerNoon blog posts.",
+    "url": "https://hackernoon.com/500-blog-posts-to-learn-about-crypto-trading",
+    "published_at": "2026-11-27T15:01:12+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "System Integration Services Market worth $802.09 billion by 2031 - Report by MarketsandMarkets™",
+    "summary": "DELRAY BEACH, Fla., Nov. 27, 2026 /PRNewswire/ -- According to MarketsandMarkets™, the System Integration Services Market is expanding rapidly, with a projected market size rising from about USD 590.41 billion in 2026 to USD 802.09 billion by 2031, for a CAGR of 6.3%. Browse 250 market...",
+    "url": "https://www.prnewswire.co.uk/news-releases/system-integration-services-market-worth-802-09-billion-by-2031--report-by-marketsandmarkets-302951638.html",
+    "published_at": "2026-11-27T15:01:00+00:00",
+    "source": "newsdata"
+  },
+  {
+    "title": "Software Stocks Are Being Sold as AI Casualties—Workday Tests the Theory",
+    "summary": "Market Analysis by Ryan Hasson covering: Workday Inc. Read Ryan Hasson's Market Analysis on Investing.com",
+    "url": "https://www.investing.com/analysis/software-stocks-are-being-sold-as-ai-casualtiesworkday-tests-the-theory-200692448",
+    "published_at": "2026-11-27T15:01:00+00:00",
+    "source": "newsdata"
+  }
+]
